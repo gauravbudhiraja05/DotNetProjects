@@ -1,0 +1,8 @@
+EmpNo	EmpName	DeptNo	EmpSal	EmpLoc
+12	Mohit	10	45000	Noida
+13	Jaykesh	30	30000	Delhi
+5	Pardeep	20	25000	Gurgaon
+6	Gaurav	10	14000	Noida
+7	Akhil	40	20000	Delhi
+8	Saurav	30	40000	Noida
+

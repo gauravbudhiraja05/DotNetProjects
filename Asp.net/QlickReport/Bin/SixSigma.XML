@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SixSigma</name>
+    </assembly>
+    <members>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.C_Chart">
+            <summary>
+            Create a C type chart related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.SixSigmaBase">
+            <summary>
+            SixSigmaBase is the base class for the SixSigma classes. It provides 
+            public math methods and ControlLineStyles properties for the UCL, BCL, 
+            and LCL control lines.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.mysBar">
+            <summary>
+            sBar holds a value if an S chart has been created. sBar is used for a XBAR chart.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.myrBar">
+            <summary>
+            rBar holds a value if an R chart has been created. rBar is used for a XBAR chart.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.mynValue">
+            <summary>
+            Holds the n value passed into sChart or rChart for use by XBAR.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.myUCLstyle">
+            <summary>
+            Holds the control line style for Upper Control Line (UCL).
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.myBCLstyle">
+            <summary>
+            Holds the control line style for Bar Control Line (BCL).
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.myLCLstyle">
+            <summary>
+            Holds the control line style for Lower Control Line (LCL).
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.myAutoFitLines">
+            <summary>
+            Fit lines to the ChartArea's GridLines?
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.Mean(System.Single[])">
+            <summary>
+            Calculates the mean of an array of numbers.
+            </summary>
+            <param name="data">The input array of items of which the mean will be calculated.</param>
+            <returns>The mean of the data.</returns>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.Range(System.Single[])">
+            <summary>
+            Calculates the range of an array of numbers.
+            </summary>
+            <param name="data">The input array of items of which the range will be calculated.</param>
+            <returns>The range of the data.</returns>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.StandardDeviation(System.Single[])">
+            <summary>
+            Calculates the standard deviation of an array of numbers.
+            </summary>
+            <param name="data">The input array of items of which the standard deviation will be calculated.</param>
+            <returns>The standard deviation of the data.</returns>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.FitChart(System.Single,System.String,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Scales the chart so that the UCL line will always be within the chart.
+            </summary>
+            <param name="UCL">The maximum UCL value.</param>
+            <param name="ChartArea">The name of the chart area we are plotting to.</param>
+            <param name="output">The chart which contains the chart area.</param>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.addLineAnnotation(Dundas.Charting.WinControl.Axis,Dundas.Charting.WinControl.Axis,System.Double,System.Double,System.Double,System.Double,Dundas.Charting.WinControl.Chart,Dundas.Charting.Utilities.SixSigma.ControlLineStyle)">
+            <summary>
+            Function to add a line annotation to the desired chart in the format which is followed by
+            all the line annotations in this add-on.
+            </summary>
+            <param name="AxisX">X-Axis that the line annotation is to use for co-ordinates.</param>
+            <param name="AxisY">Y-Axis that the line annotation is to use for co-ordinates.</param>
+            <param name="X">X value for the start of the line.</param>
+            <param name="Y">Y value for the start of the line.</param>
+            <param name="Width">Width of the line.</param>
+            <param name="Height">Height of the line.</param>
+            <param name="output">The chart that the line annotation is being added to.</param>
+            <param name="lineStyle">The controlLineStyle that has LineStyle, LineColor and LineWidth values for annotation.</param>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.addTextAnnotation(System.String,Dundas.Charting.WinControl.Axis,Dundas.Charting.WinControl.Axis,System.Double,System.Double,Dundas.Charting.WinControl.Chart,Dundas.Charting.Utilities.SixSigma.ControlLineStyle)">
+            <summary>
+            Function to add text as an annotation to the chart.
+            </summary>
+            <param name="text">The text that we wish to display.</param>
+            <param name="AxisX">X-Axis that the text annotation is to use for co-ordinates.</param>
+            <param name="AxisY">Y-Axis that the text annotation is to use for co-ordinates.</param>
+            <param name="X">X value for the start of the text.</param>
+            <param name="Y">Y value for the start of the text.</param>
+            <param name="output">The chart that the line annotation is being added to.</param>
+            <param name="controlLineStyle">The control line style that has TextColor, TextFont values for annotation.</param>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.CreateSeries(Dundas.Charting.WinControl.Chart,System.String)">
+            <summary>
+            Create a series with a unique name.
+            </summary>
+            <param name="chart">Chart to create the series in.</param>
+            <param name="seriesName">Base name of the series.</param>
+            <returns>The newly created series.</returns>
+        </member>
+        <member name="P:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.AutoFitLines">
+            <summary>
+            Controls whether AxisY will have an automatic Maximum set so 
+            that the chart will always contain the UCL annotation. If false, 
+            the user must set a maximum AxisY value so all annotations appear 
+            on the graph.
+            </summary>
+        </member>
+        <member name="P:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.UCLstyle">
+            <summary>
+            Style of Upper Control Line. This style will be applyed to UCL lines.
+            </summary>
+        </member>
+        <member name="P:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.BCLstyle">
+            <summary>
+            Style of Bar Control Line. This style will be applyed to Bar lines.
+            </summary>
+        </member>
+        <member name="P:Dundas.Charting.Utilities.SixSigma.SixSigmaBase.LCLstyle">
+            <summary>
+            Style of Lower Control Line. This style will be applyed to LCL lines.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.C_Chart.CreateSeries(System.Single[],System.Single[],Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates a C-Chart with lines indicating cBar, UCL and LCL. 
+            A C-Chart measures the number of non-conformities per unit, 
+            where unit is a fixed rate.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the nonconform array.</param>
+            <param name="nonconform">An array holding the non-conformity data associated with the subgroups. Must align with the subgroups.</param>
+            <param name="output">The chart which will receive the C-Chart series.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.P_Chart">
+            <summary>
+            Create a P type chart related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.P_Chart.CreateSeries(System.Single[],System.Single[],System.Single[],Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates a P-Chart with lines indicating pBar, UCL and LCL. A 
+            P-Chart is the same as an NP-Chart except with a variable number 
+            of items in each subgroup.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the nonconform array and the number tested.</param>
+            <param name="nonconform">An array holding the non-conformity data associated with the subgroups. Must align with the subgroups and the number tested.</param>
+            <param name="numbertested">An array holding the number of items in each subgroup. Must align with the subgroups and the nonconform array.</param>
+            <param name="output">The chart which will receive the P chart series.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.NP_Chart">
+            <summary>
+            Create NP type charts related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.NP_Chart.CreateSeries(System.Single[],System.Single[],System.Int32,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates an NP-Chart with lines indicating CL, UCL and LCL. An 
+            NP-Chart is the same as a P-chart except that the number of 
+            items in each subgroup is the same.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the nonconform array.</param>
+            <param name="nonconform">An array holding the non-conformity data associated with the subgroups. Must align with the subgroups.</param>
+            <param name="numbertested">An array holding the number of items in each subgroup. Must align with the subgroups and the nonconform array.</param>
+            <param name="output">The chart which will receive the NP-Chart series.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the or input arrays have different length.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.U_Chart">
+            <summary>
+            Create U type charts related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.U_Chart.CreateSeries(System.Single[],System.Single[],System.Single[],Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates a U-Chart with UBar, UCL and LCL lines. A U-Chart is used 
+            when to chart the number of non-conformities per inspection unit, 
+            where the inspection unit is variable size.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the nonconform array.</param>
+            <param name="nonconform">An array holding the non-conformity data associated with the subgroups. Must align with the subgroups.</param>
+            <param name="numbertested">The number of items in each subgroup.</param>
+            <param name="output">The chart which will receive the U-Chart series.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.S_Chart">
+            <summary>
+            Create S type charts related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.S_Chart.CreateSeries(System.Single[],System.Single[],System.Int32,System.Single@,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates an S-Chart of prepared data that can be evaluated. If the 
+            data is deemed to be in statistical control an XBAR chart can be 
+            created via the XBAR_Chart class.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array. There must be at least 20 subgroups.</param>
+            <param name="data">Array holding the Standard Deviation of each subgroup.</param>
+            <param name="n">Number of measurements per subgroup. Must be between 2 and 9.</param>
+            <param name="processStdDev">Variable returning the process standard deviation estimation.</param>
+            <param name="output">The chart which will receive the S-Chart series.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when a number of subgroups is less than 20 or the n parameter is not between 2 and 9.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.R_Chart">
+            <summary>
+            Create R type charts related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.R_Chart.CreateSeries(System.Single[],System.Single[],System.Int32,System.Single@,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates an R-Chart of prepared data that can be evaluated. If the 
+            data is deemed to be in statistical control an XBAR chart can be 
+            created via XBAR_Chart class.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array. There must be at least 20 subgroups.</param>
+            <param name="data">Array holding the Range (biggest value - smallest value) of each subgroup.</param>
+            <param name="n">Number of measurements per subgroup. Must be between 2 and 9.</param>
+            <param name="processStdDev">Variable returning the process standard deviation estimation.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown when a number of subgroups is less than 20 or n parameter is not between 2 and 9.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.Run_Chart">
+            <summary>
+            Create a Run type chart related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.Run_Chart.CreateSeries(System.Single[],System.Single[],Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates a Run Chart of the data and adds an average line. A run 
+            chart is a plot of the data without manipulation with a line 
+            indicating the average.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array.</param>
+            <param name="data">An array holding the data. Must align with the subgroup array.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.XBAR_Chart">
+            <summary>
+            Creates an XBAR type chart related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.XBAR_Chart.CreateSeries(System.Single[],System.Single[],Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates an XBAR chart of the prepared data. An sChart or rChart 
+            must have already been created.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array.</param>
+            <param name="data">Array holding the Mean of each subgroup. Must align with the subgroup array.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length.</exception>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.XBAR_Chart.ExecuteS_Chart(System.Single[],System.Single[],System.Int32,System.Single@,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            The ExecuteS_Chart() or ExecuteR_Chart() method must be called 
+            before CreateSeries() for XBAR charts.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array. There must be at least 20 subgroups.</param>
+            <param name="data">Array holding the Standard Deviation of each subgroup.</param>
+            <param name="n">Number of measurements per subgroup. Must be between 2 and 9.</param>
+            <param name="processStdDev">Variable returning the process standard deviation estimation.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.XBAR_Chart.ExecuteR_Chart(System.Single[],System.Single[],System.Int32,System.Single@,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            The ExecuteS_Chart() or ExecuteR_Chart() method must be called 
+            before CreateSeries() for XBAR charts.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array. There must be at least 20 subgroups.</param>
+            <param name="data">Array holding the Range (biggest value - smallest value) of each subgroup.</param>
+            <param name="n">Number of measurements per subgroup. Must be between 2 and 9.</param>
+            <param name="processStdDev">Variable returning the process standard deviation estimation.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.XBAR_Chart.XBARChartImplementation(System.Single[],System.Single[],Dundas.Charting.WinControl.Chart,System.Single)">
+            <summary>
+            Creates an XBAR chart of the prepared data. This function contains the implementation for the public function with one extra
+            parameter for MRBAR. If MRBAR is specified, then only one chart is created with all the values.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array.</param>
+            <param name="data">Array holding the Mean of each subgroup. Must align with the subgroup array.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <param name="mrbar">The value of MRBAR if it has been calculated by Individuals Chart.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.IndividualsChart">
+            <summary>
+            Create Individuals type charts related to the Six Sigma strategy.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.IndividualsChart.CreateSeries(System.Single[],System.Single[],System.Single@,Dundas.Charting.WinControl.Chart)">
+            <summary>
+            Creates an Individuals Chart of the data and places the MRBar, 
+            XBAR, UCL and LCL upon it.
+            </summary>
+            <param name="subgroup">An array holding the subgroups. Must align with the data array.</param>
+            <param name="data">An array holding the data. Must align with the subgroup array.</param>
+            <param name="processStdDev">Variable returning the process standard deviation estimation.</param>
+            <param name="output">The chart which will have the created series added to it.</param>
+            <returns>Series which has been created and added to the output chart.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when the chart parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when the input arrays have different length, or an sChart or rChart were not created before the XBAR.</exception>
+        </member>
+        <member name="T:Dundas.Charting.Utilities.SixSigma.ControlLineStyle">
+            <summary>
+            Store Line and Text properties.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.LineStyle">
+            <summary>
+            Gets and sets LineStyle
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.LineColor">
+            <summary>
+            Gets and sets LineColor
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.LineWidth">
+            <summary>
+            Gets and sets LineWidth
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.ShowText">
+            <summary>
+            Controls whether text is added to the lines to label what they are.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.TextColor">
+            <summary>
+            Specifies the color of the text that will label the lines.
+            </summary>
+        </member>
+        <member name="F:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.TextFont">
+            <summary>
+            Specifies the font of the text that will label the lines.
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.#ctor">
+            <summary>
+            Default constructor. Create instance of ControlLineStyle class 
+            with default values of properties:
+            
+            LineStyle = Solid
+            LineColor = Red
+            LineWidth = 1
+            ShowText = true
+            TextColor = Red
+            TextFont = Arial,8
+            </summary>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.#ctor(Dundas.Charting.WinControl.ChartDashStyle,System.Drawing.Color,System.Int32,System.Boolean,System.Drawing.Color,System.Drawing.Font)">
+            <summary>
+            Create instance of ControlLineStyle with the passed parameters.
+            </summary>
+            <param name="lineStyle">LineStyle</param>
+            <param name="lineColor">LineColor</param>
+            <param name="lineWidth">LineWidth</param>
+            <param name="showText">Flag to show text with the line</param>
+            <param name="textColor">TextColor</param>
+            <param name="textFont">TextFont</param>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.#ctor(Dundas.Charting.Utilities.SixSigma.ControlLineStyle)">
+            <summary>
+            Create instance of ControlLineStyle and get values from another ControlLineStyle instance.
+            </summary>
+            <param name="otherStyle">Source of properties for style.</param>
+        </member>
+        <member name="M:Dundas.Charting.Utilities.SixSigma.ControlLineStyle.CopyTo(Dundas.Charting.Utilities.SixSigma.ControlLineStyle)">
+            <summary>
+            Copies properties of current instance to another instance of ControlLineStyle.
+            </summary>
+            <param name="otherStyle"></param>
+        </member>
+    </members>
+</doc>

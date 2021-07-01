@@ -1,0 +1,1 @@
+Candidatename	Sub1	Mark1	Grd1	Sub2	Mark2	Grd2	Sub3	Mark3	Grd3	Sub4	Mark4	Grd4	Sub5	Mark5	Grd5	Sub6	Mark6	Grd6	in	tl	sub7	Result	Total	Percentage

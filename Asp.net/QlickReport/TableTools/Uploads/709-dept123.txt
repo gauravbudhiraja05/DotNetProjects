@@ -1,0 +1,6 @@
+deptid 	deptno	deptname
+1	10	Mgt
+2	20	IT
+3	30	Hr
+4	40	Ac
+5	50	Sales

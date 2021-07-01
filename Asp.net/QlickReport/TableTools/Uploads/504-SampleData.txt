@@ -1,0 +1,45 @@
+OrderDate	Region	Rep	Item	Units	Unit Cost	Total
+01/06/10	Quebec	Jones	Pencil	95	2	189.05
+01/23/10	Ontario	Kivell	Binder	50	20	999.50
+02/09/10	Ontario	Jardine	Pencil	36	5	179.64
+02/26/10	Ontario	Gill	Pen	27	20	539.73
+03/15/10	Alberta	Sorvino	Pencil	56	3	167.44
+04/01/10	Quebec	Jones	Binder	60	5	299.40
+04/18/10	Ontario	Andrews	Pencil	75	2	149.25
+05/05/10	Ontario	Jardine	Pencil	90	5	449.10
+05/22/10	Alberta	Thompson	Pencil	32	2	63.68
+06/08/10	Quebec	Jones	Binder	60	9	539.40
+06/25/10	Ontario	Morgan	Pencil	90	5	449.10
+07/12/10	Quebec	Howard	Binder	29	2	57.71
+07/29/10	Quebec	Parent	Binder	81	20	1619.19
+08/15/10	Quebec	Jones	Pencil	35	5	174.65
+09/01/10	Ontario	Smith	Desk	2	125	250.00
+09/18/10	Quebec	Jones	Pen Set	16	16	255.84
+10/05/10	Ontario	Morgan	Binder	28	9	251.72
+10/22/10	Quebec	Jones	Pen	64	9	575.36
+11/08/10	Quebec	Parent	Pen	15	20	299.85
+11/25/10	Ontario	Kivell	Pen Set	96	5	479.04
+12/12/10	Ontario	Smith	Pencil	67	1	86.43
+12/29/10	Quebec	Parent	Pen Set	74	16	1183.26
+01/15/11	Ontario	Gill	Binder	46	9	413.54
+02/01/11	Ontario	Smith	Binder	87	15	1305.00
+02/18/11	Quebec	Jones	Binder	4	5	19.96
+03/07/11	Alberta	Sorvino	Binder	7	20	139.93
+03/24/11	Ontario	Jardine	Pen Set	50	5	249.50
+04/10/11	Ontario	Andrews	Pencil	66	2	131.34
+04/27/11	Quebec	Howard	Pen	96	5	479.04
+05/14/11	Ontario	Gill	Pencil	53	1	68.37
+05/31/11	Ontario	Gill	Binder	80	9	719.20
+06/17/11	Ontario	Kivell	Desk	5	125	625.00
+07/04/11	Quebec	Jones	Pen Set	62	5	309.38
+07/21/11	Ontario	Morgan	Pen Set	55	12	686.95
+08/07/11	Ontario	Kivell	Pen Set	42	24	1005.90
+08/24/11	Alberta	Sorvino	Desk	3	275	825.00
+09/10/11	Ontario	Gill	Pencil	7	1	9.03
+09/27/11	Alberta	Sorvino	Pen	76	2	151.24
+10/14/11	Alberta	Thompson	Binder	57	20	1139.43
+10/31/11	Ontario	Andrews	Pencil	14	1	18.06
+11/17/11	Ontario	Jardine	Binder	11	5	54.89
+12/04/11	Ontario	Jardine	Binder	94	20	1879.06
+12/21/11	Ontario	Andrews	Binder	28	5	139.72
+

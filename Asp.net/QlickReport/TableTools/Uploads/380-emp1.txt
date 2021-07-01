@@ -1,0 +1,9 @@
+eno	ename	ecity	ecourse	esal
+1	mohit	gzb	mca	20000
+34	jaykesh	delhi	mba	10000
+56	rahul	kanpur	mba	25000
+2	manish	lucknow	mca	26000
+4	ronak	delhi	mca	15000
+5	sachin	ghz	mba	45000
+7	pardeep	lahor	mca	27000
+

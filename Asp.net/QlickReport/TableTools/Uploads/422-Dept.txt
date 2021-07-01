@@ -1,0 +1,6 @@
+DeptNo	DeptName	DeptLoc
+10	account	Delhi
+20	management	Noida
+30	Resarch	Gurgaon
+40	Sales	Kanpur
+

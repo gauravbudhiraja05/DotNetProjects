@@ -1,0 +1,404 @@
+SR_NO	STUD_ID	NAME	AGE	SEX	BRANCH	PERCENTAGE
+1	101	sunita	23	F	med	87.5
+2	102	diya	22	F	non med	56.7
+3	103	devi	24	F	med	67.5
+4	104	bindu	20	F	med	55.7
+5	105	sonika	20	F	arts	66.7
+6	106	sonika	21	F	non med	68.7
+7	107	ritu	20	F	com	80.5
+8	108	divya	25	F	com	79.7
+9	109	sweety	19	F	non med	90.4
+10	110	sumitra	18	F	arts	45.6
+11	111	seema	18	F	arts	46.7
+12	112	neetu	21	F	non med	66.4
+13	113	anita	25	F	non med	66.7
+14	114	aakrti	20	F	non med	65.9
+15	115	aarushi	20	F	non med	78.9
+16	116	seema	18	F	non med	87.8
+17	117	anjali	19	F	non med	74.6
+18	118	deep	21	M	med	55.8
+19	119	daizy	22	M	med	77.9
+20	120	divyansh	25	M	arts	56.7
+21	121	bindiya	18	F	non med	67.7
+22	122	gareema	22	F	com	78.8
+23	123	reena	18	F	com	77.8
+24	124	preeti	19	F	non med	45.6
+25	125	fatima	21	F	arts	44.5
+26	126	zoha	21	F	non med	49.88
+27	127	akshara	22	F	med	35.5
+28	128	anita	25	F	non med	65.9
+29	129	neena	24	F	med	89.22
+30	130	ritu	22	F	med	87.6
+31	131	neeru	21	F	med	56.7
+32	132	pranjal	18	F	med	65.5
+33	133	anjali	20	F	com	45.6
+34	134	dipika	21	F	arts	56.7
+35	135	wazir	20	M	non med	67.8
+36	136	deepak	20	M	arts	47.8
+37	137	meera	20	F	arts	23.4
+38	138	neeru	20	F	non med	57
+39	139	nirmal	21	F	arts	69.7
+40	140	kapil	22	M	non med	87.8
+41	141	neeraj	25	M	com	88.7
+42	142	nitasha	24	F	com	65.5
+43	143	namarta	21	F	non med	66.5
+44	144	pooja	22	F	arts	67.7
+45	145	pradeep	20	M	non med	63.6
+46	146	sumitra	21	F	med	54.6
+47	147	sumit	21	M	arts	56.7
+48	148	manisha	21	F	com	58.7
+49	149	mahak	25	F	com	54.8
+50	150	amit	20	M	arts	45.6
+51	151	amita	21	F	non med	66.7
+52	152	sachin	21	M	non med	56.7
+53	153	suchita	20	F	med	56.7
+54	154	aarti	24	F	med	77.6
+55	155	harjeet	18	F	non med	78.6
+56	156	jyoti	18	F	arts	77.6
+57	157	kavita	18	F	arts	87.4
+58	158	sudesh	19	F	non med	79.3
+59	159	raman	19	M	arts	56.7
+60	160	ankit	21	M	med	66.9
+61	161	arpit	22	M	arts	45.8
+62	162	sagar	18	M	non med	67.7
+63	163	neha	18	F	com	69.77
+64	164	kamal	18	M	com	78.66
+65	165	keshav	21	M	med	77.4
+66	166	kirti	25	F	arts	55.7
+67	167	prerna	21	F	non med	56.78
+68	168	preetam	20	M	med	78.7
+69	169	roopam	21	F	arts	65.6
+70	170	preeti	22	F	non med	34.55
+71	171	rupali	22	F	com	45.66
+72	172	vishal	22	M	com	67.89
+73	173	neelam	24	F	non med	78.66
+74	174	monika	18	F	arts	89.77
+75	175	suman	19	F	med	65.7
+76	176	sumanlata	18	F	com	67.77
+77	177	sheetal	18	F	com	65.9
+78	178	harish	18	M	com	56.78
+79	179	harvinder	19	M	med	67.77
+80	180	harpreet	20	M	arts	67.4
+81	181	harender	20	M	non med	68.8
+82	182	jitender	20	M	com	64.6
+83	183	jatin	20	M	com	65.88
+84	184	gajana	25	F	non med	65.77
+85	185	gobind	21	M	med	988.3
+86	186	gareema	20	F	arts	88.4
+87	187	tripti	21	F	non med	67.4
+88	188	zoha	21	F	med	66
+89	189	nitesh	20	M	arts	87
+90	190	nikhil	24	M	non med	76.7
+91	191	prachi	25	F	med	54
+92	192	payal	22	F	arts	57.6
+93	193	neeraj	24	M	non med	55
+94	194	lakshit	21	M	med	65.6
+95	195	kushal	20	M	arts	65.6
+96	196	yash	18	M	non med	76.8
+97	197	khushi	18	F	com	77.8
+98	198	rashmi	18	F	com	76.8
+99	199	anu	24	F	non med	67.88
+100	200	dinesh	25	F	com	76.77
+101	201	rano	24	F	com	45.66
+102	202	rajni	21	F	non med	56.77
+103	203	pooja	24	F	med	56.7
+104	204	shahibala	20	F	arts	45.6
+105	205	anju	24	F	non med	56.7
+106	206	indu	24	F	med	67.7
+107	207	mamta	24	F	arts	78.5
+108	208	priyanka	20	F	non med	66.7
+109	209	rachna	25	F	med	56.8
+110	210	varsha	24	F	arts	76.9
+111	211	sanjeet	25	F	med	77.6
+112	212	ganga	23	F	arts	58
+113	213	rachit	24	M	non med	68.7
+114	214	durga	21	F	med	67.7
+115	215	mohita	25	F	arts	67
+116	216	manpreet	24	F	non med	89.66
+117	217	savita	23	F	com	88.7
+118	218	rajbala	23	F	com	76.7
+119	219	dipti	23	F	non med	77.5
+120	220	nikhil	20	M	com	65.5
+121	221	ankesh	20	M	med	45.6
+122	222	ketan	21	M	arts	56.7
+123	223	mahesh	21	M	non med	67.8
+124	224	ankit	23	M	med	47.8
+125	225	puspendar	23	M	arts	23.4
+126	226	shaffi	21	M	non med	57
+127	227	nitika	25	F	com	69.7
+128	228	kirti	23	F	com	87.8
+129	229	payal	21	F	non med	88.7
+130	230	swati	23	F	arts	65.5
+131	231	aakansha	23	F	non med	66.5
+132	232	priyanka	25	F	com	67.7
+133	233	amita	24	F	com	63.6
+134	234	anurita	25	F	med	54.6
+135	235	sonam	20	F	arts	56.7
+136	236	katrina	25	F	non med	58.7
+137	237	vicky	20	M	med	54.8
+138	238	shubham	21	M	arts	45.6
+139	239	chanky	24	M	non med	66.7
+140	240	deepak	20	M	com	56.7
+141	241	sagar	18	M	com	56.7
+142	242	ombir	18	M	non med	77.6
+143	243	chanderkala	19	F	med	78.6
+144	244	kanwal	18	M	arts	77.6
+145	245	shilpa	21	F	non med	87.4
+146	246	punit	21	M	com	79.3
+147	247	sorab	20	M	com	56.7
+148	248	virat	25	M	non med	66.9
+149	249	kusal	23	M	med	45.8
+150	250	antrisk	25	M	arts	67.7
+151	251	vikas	24	M	non med	69.77
+152	252	neeraj	24	M	med	78.66
+153	253	avinash	25	M	arts	77.4
+154	254	arjun	23	M	non med	34.6
+155	255	anita	23	F	com	55.6
+156	256	nisha	24	F	com	66.5
+157	257	priya	21	F	non med	67.6
+158	258	golu	21	M	med	66.5
+159	259	sunita	21	F	arts	78.9
+160	260	diya	20	F	non med	87.6
+161	261	devi	2	F	med	67.5
+162	262	bindu	0	F	arts	65.6
+163	263	sonika	25	F	non med	77.5
+164	264	sonika	25	F	com	76
+165	265	ritu	24	F	com	68.7
+166	266	divya	23	F	non med	56.6
+167	267	sweety	25	F		65.7
+168	268	sumitra	23	F	med	87.6
+169	269	seema	23	F	arts	87
+170	270	neetu	23	F	non med	65.5
+171	271	anita	21	F	med	45.6
+172	272	aakrti	18	F	arts	56.7
+173	273	aarushi	18	F	non med	67.8
+174	274	seema	18	F	med	47.8
+175	275	anjali	19	F	arts	23.4
+176	276	deep	18	M	non med	57
+177	277	daizy	24	F	com	69.7
+178	278	divyansh	21	F	com	87.8
+179	279	bindiya	21	F	med	88.7
+180	280	gareema	23	F	arts	65.5
+181	281	reena	25	F	non med	66.5
+182	282	preeti	24	F	med	67.7
+183	283	fatima	21	F	arts	63.6
+184	284	zoha	25	F	non med	54.6
+185	285	akshara	21	F	com	56.7
+186	286	anita	24	F	com	58.7
+187	287	neena	23	F	non med	54.8
+188	288	ritu	25	F	non med	45.6
+189	289	neeru	20	F	med	66.7
+190	290	pranjal	21	F	arts	56.7
+191	291	anjali	21	F	non med	56.7
+192	292	dipika	2	F	com	77.6
+193	293	wazir	22	M	com	78.6
+194	294	deepak	22	M	non med	77.6
+195	295	meera	21	F	arts	87.4
+196	296	neeru	25	F	com	79.3
+197	297	nirmal	24	F	com	56.7
+198	298	kapil	23	M	com	66.9
+199	299	neeraj	23	M	med	45.8
+200	300	nitasha	23	F	arts	67.7
+201	301	namarta	25	F	non med	69.77
+202	302	pooja	24	F	med	78.66
+203	303	pradeep	20	M	arts	77.4
+204	304	sumitra	20	F	non med	87.7
+205	305	sumit	20	M	com	76.5
+206	306	manisha	20	F	com	66.7
+207	307	mahak	24	F	non med	77
+208	308	amit	22	M	com	66.5
+209	309	amita	23	F	com	68.5
+210	310	sachin	24	M	med	87.6
+211	311	suchita	25	F	arts	76.7
+212	312	aarti	26	F	non med	56.66
+213	313	harjeet	27	F	com	89.7
+214	314	jyoti	28	F	com	76.4
+215	315	kavita	29	F	non med	66.3
+216	316	sudesh	30	F	med	56.4
+217	317	raman	31	M	arts	76.3
+218	318	ankit	32	M	non med	57.3
+219	319	arpit	33	M	med	76.5
+220	320	sagar	34	M	arts	76.4
+221	321	neha	35	F	non med	66.5
+222	322	kamal	36	M	com	54.5
+223	323	keshav	37	M	med	68.6
+224	324	kirti	38	F	arts	60.6
+225	325	prerna	39	F	non med	65.7
+226	326	preetam	40	F	med	76.9
+227	327	roopam	41	F	arts	72.4
+228	328	preeti	42	F	non med	65.5
+229	329	rupali	43	F	com	68.2
+230	330	vishal	44	M	com	32.1
+231	331	neelam	45	F	non med	63.2
+232	332	monika	46	F	non med	65.4
+233	333	suman	19	F	com	54.2
+234	334	sumanlata	25	F	com	61.2
+235	335	sheetal	21	F	non med	51.2
+236	336	harish	25	M	arts	54.8
+237	337	harvinder	23	M	com	63.5
+238	338	harpreet	22	M	med	64
+239	339	harender	21	M	arts	55.4
+240	340	jitender	22	M	non med	57.5
+241	341	jatin	22	M	med	77.6
+242	342	gajana	18	F	arts	47.6
+243	343	gobind	23	M	non med	80
+244	344	gareema	25	F	com	85.5
+245	345	tripti	24	F	com	69.7
+246	346	zoha	24	F	non med	74.1
+247	347	nitesh	24	M	com	45.3
+248	348	nikhil	25	M	non med	56.4
+249	349	prachi	25	F	non med	52.9
+250	350	payal	24	F	med	54.2
+251	351	neeraj	25	M	arts	65.5
+252	352	lakshit	25	M	non med	45.6
+253	353	kushal	23	M	med	56.7
+254	354	yash	21	M	arts	67.8
+255	355	khushi	20	F	non med	47.8
+256	356	rashmi	20	F	com	23.4
+257	357	anu	20	F	com	57
+258	358	dinesh	21	F	med	69.7
+259	359	rano	21	F	arts	87.8
+260	360	rajni	21	F	non med	88.7
+261	361	pooja	24	F	med	65.5
+262	362	shahibala	24	F	arts	66.5
+263	363	anju	24	F	non med	67.7
+264	364	indu	21	F	com	63.6
+265	365	mamta	21	F	com	54.6
+266	366	priyanka	21	F	non med	56.7
+267	367	rachna	23	F	med	58.7
+268	368	varsha	23	F	arts	54.8
+269	369	sanjeet	23	F	non med	45.6
+270	370	ganga	25	F	med	66.7
+271	371	rachit	25	M	arts	56.7
+272	372	durga	25	F	non med	56.7
+273	373	mohita	24	F	com	77.6
+274	374	manpreet	24	F	com	78.6
+275	375	savita	24	F	non med	77.6
+276	376	rajbala	18	F	com	87.4
+277	377	dipti	18	F	med	79.3
+278	378	nikhil	19	M	arts	56.7
+279	379	ankesh	19	M	non med	66.9
+280	380	ketan	19	M	med	45.8
+281	381	mahesh	25	M	arts	67.7
+282	382	ankit	25	M	non med	69.77
+283	383	puspendar	20	M	com	69.77
+284	384	shaffi	20	M	com	69.77
+285	385	nitika	21	F	non med	69.77
+286	386	kirti	21	F	med	69.77
+287	387	payal	24	F	arts	69.77
+288	388	swati	25	F	non med	69.77
+289	389	aakansha	22	F	com	69.77
+290	390	priyanka	23	F	com	69.77
+291	391	amita	20	F	non med	69.77
+292	392	anurita	20	F	med	69.77
+293	393	sonam	20	F	arts	69.77
+294	394	katrina	25	F	non med	69.77
+295	395	vicky	21	M	com	69.77
+296	396	shubham	21	M	com	69.77
+297	397	chanky	24	M	non med	69.77
+298	398	deepak	25	M	arts	69.77
+299	399	sagar	18	M	com	69.77
+300	400	ombir	18	M	non med	69.77
+301	401	chanderkala	19	F	arts	69.77
+302	402	kanwal	18	M	med	69.77
+303	403	shilpa	18	F	med	70.21
+304	404	punit	19	M	arts	67.9
+305	405	saroj	21	F	non med	88.1
+306	406	virat	21	M	com	56.9
+307	407	kusal	21	M	com	57.6
+308	408	antrisk	20	M	non med	58.9
+309	409	vikas	20	M	arts	57.6
+310	410	neeraj	25	M	med	57.6
+311	411	avinash	25	M	arts	51.4
+312	412	arjun	24	M	non med	47.3
+313	413	anita	24	F	com	45.6
+314	414	nisha	24	F	com	52.9
+315	415	priya	23	F	non med	57.6
+316	416	deepnshi	23	F	arts	51.3
+317	417	saroj	23	F	med	52.6
+318	418	sapna	23	F	arts	81.3
+319	419	rajat	22	M	non med	74.32
+320	420	rohit	25	M	com	57.6
+321	421	monu	24	M	com	52.6
+322	422	shabhit	21	M	non med	52.6
+323	423	sushma	20	F	arts	28.7
+324	424	sharmila	18	F	com	55.6
+325	425	susheela	18	F	non med	87.6
+326	426	smriti	19	F	arts	88
+327	427	kirti	24	F	med	59.6
+328	428	karan singh	24	M	arts	75.2
+329	429	manjeet	28	M	non med	65.4
+330	430	joginder	24	M	com	63
+331	431	veeraj	21	M	com	75
+332	432	abhi	21	M	non med	74.66
+333	433	vishu	20	M	arts	72.9
+334	434	paras	23	M	med	57.6
+335	435	happy	23	M	arts	52.6
+336	436	sunny	25	M	non med	54.9
+337	437	shalu	20	F	com	58.6
+338	438	kajal	21	F	com	58.6
+339	439	preet	25	F	non med	88.5
+340	440	deepanshi	23	F	arts	77.5
+341	441	dinesh	22	M	med	74.2
+342	442	diya	22	F	arts	74.6
+343	443	tanmay	21	M	non med	71
+344	444	anubhav	20	M	com	77
+345	445	anuj	18	M	com	62.6
+346	446	varun	18	M	non med	60.5
+347	447	saurabh	18	M	arts	64.3
+348	448	sumit	19	M	non med	57.6
+349	449	pawan	19	M	med	86.2
+350	450	amita	22	F	non med	69.77
+351	451	anurita	23	F	med	69.77
+352	452	sonam	24	F	com	69.77
+353	453	katrina	25	F	med	69.77
+354	454	vicky	22	M	com	69.77
+355	455	shubham	21	M	arts	69.77
+356	456	chanky	19	M	arts	69.77
+357	457	deepak	21	M	arts	69.77
+358	458	sagar	18	M	com	69.77
+359	459	ombir	18	M	non med	69.77
+360	460	chanderkala	19	F	arts	69.77
+361	461	kanwal	20	M	med	69.77
+362	462	shilpa	25	F	arts	69.77
+363	463	punit	24	M	non med	69.77
+364	464	saroj	25	F	com	69.77
+365	465	virat	23	M	com	69.77
+366	466	kusal	22	M	non med	69.77
+367	467	antrisk	24	M	arts	69.77
+368	468	vikas	24	M	med	69.77
+369	469	neeraj	24	M	arts	69.77
+370	470	avinash	21	M	non med	69.77
+371	471	arjun	21	M	com	69.77
+372	472	anita	22	F	com	54.55
+373	473	nisha	20	F	non med	77.6
+374	474	priya	20	F	arts	87.4
+375	475	deepnshi	20	F	arts	79.3
+376	476	saroj	21	F	com	56.7
+377	477	sapna	18	F	non med	66.9
+378	478	rajat	19	M	arts	45.8
+379	479	rohit	19	M	med	67.7
+380	480	monu	18	M	arts	69.77
+381	481	shabhit	18	M	arts	78.66
+382	482	sushma	19	F	com	77.4
+383	483	sharmila	22	F	non med	34.6
+384	484	susheela	21	F	arts	55.6
+385	485	rohit	21	M	med	66.5
+386	486	ankit	22	M	arts	67.6
+387	487	arun	20	M	non med	66.5
+388	488	amrit	21	M	com	78.9
+389	489	tarun	18	M	com	87.6
+390	490	rupali	19	F	non med	67.5
+391	491	arjun	19	M	arts	54
+392	492	bindu	18	M	med	65
+393	493	dheeraj	18	M	arts	85
+394	494	shobhit	19	M	non med	56
+395	495	ankita	22	F	com	84
+396	496	annu	21	F	com	44
+397	497	preet	21	M	non med	35
+398	498	navjot	21	M	arts	91
+399	499	nikhil	20	M	med	45
+400	500	ishan	22	M	non med	50
+						
+						
+

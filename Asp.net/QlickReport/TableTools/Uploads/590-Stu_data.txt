@@ -1,0 +1,8 @@
+Stu_RollNo	Stu_name	Stu_cource	Stu_city	Stu_state
+1	Mohit	MCA	Gzb	UP
+2	Gaurav	MCA	Meerut	UP
+3	Akhil	MCA	Meerut	UP
+4	Mukesh	MCA	Gurgaon	Haryana
+5	Nitish	MCA	Delhi	Delhi
+6	Ravi	MCA	Delhi	Delhi
+

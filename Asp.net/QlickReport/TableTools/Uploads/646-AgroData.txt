@@ -1,0 +1,129 @@
+Userid	Name	Village	City	MemAge	UnderKPK	Land	AnnualIncome
+khatibabulalCFC008	Babu Lal Khati	Sirsali	Jaipur	0	CFC008	1	10000
+sawaiCFC005	Sawai Singh Rajput	Sewapura	Jaipur	0	CFC005	1	10000
+haribhaiCFC015	Hari  Narayan	Girdharilalpura	Jaipur	0	CFC015	4	40000
+kishanchanda012	Kishanlal  	Manpura Macheri	JAIPUR	0	CFC012	3	35000
+jaggkalCFC014	Jagdish  Gurjar	Kauhalya	Jaipur	0	CFC014	3	30000
+shaitancfc009	Shaitan  Jat	Amarpura	JAIPUR	0	CFC009	3	30000
+kajodCFC001	Kajodmal  Raigar	Anoppura	Jaipur	0	CFC001	3	30000
+rpyadav0969	Rishi Pal Yadav	Nangal Koju	Jaipur	28	KPK0969	7	24000
+rram1030	ramsi ram jugar	dantli ki dhani	Jaipur	47	kpk1030	7	24000
+babu1238	Babu lal` yadav	sunderpura	Jaipur	28	kpk1238	15	30000
+meva1285	ram chandra jat	santwas	Jaipur	35	kpk1285	3	20000
+suraj1077	suraj ram yadav	khori	Jaipur	40	kpk1077	5	70000
+dhola1077	dhola ram gurjar	sherapura	Jaipur	30	kpk1077	2	70000
+ra1285	ra mu jat	jajai kaila	Jaipur	37	kpk1285	4	30000
+ranwas1285	suraj mal ranwa	santwas	Jaipur	42	kpk1285	3	12000
+hanumany1077	hanuman  yadav	sherapura	Jaipur	45	kpk1077	3	50000
+mohanlal1036	mohan lal gurjar	govindpuradhabhai	Jaipur	35	kpk1036	6	30000
+jagd1285	jag desh jat	surpura	Jaipur	30	kpk1285	5	18000
+koyal1285	laksman parsad jat	nijher	Jaipur	26	kpk1285	4	31000
+bharu1077	bharu ram gurjar	sherapura	Jaipur	60	kpk1077	2	70000
+ramc1077	ramchand  yadav	sherapura	Jaipur	50	kpk1077	3	70000
+ganga1077	ganga lal yadav	sherapura	Jaipur	40	kpk1077	1	90000
+ranwa1285	suraj mal ranwa	santwas	Jaipur	42	kpk1285	3	12000
+hanuman1036	hanuman  palsaniya	nigher	Jaipur	40	kpk1036	3	30000
+gaja1285	gaja nand jat	nijher	Jaipur	23	kpk1285	4	18000
+sadu1077	sadu ram yadav	sherapura	Jaipur	70	kpk1077	3	70000
+bharta1077	bharta ram yadav	sherapura	Jaipur	35	kpk1077	4	50000
+girdhrilalg1077	girdhri lal gurjar	sherapura	Jaipur	60	kpk1077	1	50000
+madan1077	madan lal gurjar	sherapura	Jaipur	35	kpk1077	1	50000
+hanu1285	hanu man jat	jajai kaila	Jaipur	33	kpk1285	8	18000
+babu1077	babu lal gurjar	nayavas	Jaipur	30	kpk1077	1	40000
+bansi1077	bansi  yadav	sherapura	Jaipur	31	kpk1077	3	35000
+ramkumar1077	ram kumar gurjar	sherapura	Jaipur	50	kpk1077	2	70000
+mintu1285	ram singh jat	surpura	Jaipur	27	kpk1285	5	28000
+umrav1285	umrav parsad jat	nijher	Jaipur	25	kpk1285	3	24000
+ramy1077	bhartaram  yadav	baldev	Jaipur	35	kpk1077	3	70000
+ramj1036	ghisa ram jat	nigher	Jaipur	65	kpk1036	3	30000
+kaluram1036	kalu ram gurjar	govindpuradhabhai	Jaipur	60	kpk1036	3	25000
+mulchand1077	mulchand  kumawat	sherapura	Jaipur	45	kpk1077	1	50000
+laxman1036	laxman singh gurjar	govindpuradhabhai	Jaipur	40	kpk1036	3	30000
+gopi1077	gopi ram yadav	sherapura	Jaipur	65	kpk1077	4	70000
+arjun1077	arjun lal gurjar	sherapura	Jaipur	65	kpk1077	2	60000
+ram1077	ramavater  yadav	bisangad	Jaipur	30	kpk1077	2	70000
+girdhari1077	girdhari lal yadav	sherapura	Jaipur	38	kpk1077	1	40000
+go1285	go vind jat	jajai kaila	Jaipur	30	kpk1285	2	24000
+sitaram	sita ram gurjar	govindpuradhabhai	Jaipur	35	kpk1036	9	30000
+gangag1036	ganga ram gurjar	govindpuradhabhai	Jaipur	65	kpk1036	12	40000
+kara1285	ram karan jat	surpura	Jaipur	40	kpk1285	5	18000
+manbhari1077	manbhari devi gurjar	sherapura	Jaipur	40	kpk1077	2	40000
+girdhrilal1077	girdhri lal gurjar	sherapura	Jaipur	60	kpk1077	1	50000
+amar1036	amar singh gurjar	govindpura dhabhai	Jaipur	35	kpk1036	6	30000
+suga1285	suga ram jat	jawanpura dhabai	Jaipur	20	kpk1285	3	18000
+jat1285	shimbhu dyal jat	jajai kaila	Jaipur	24	kpk1285	3	18000
+hari1285	hari singh shekhwat	nejher	Jaipur	45	kpk1285	3	18000
+syonarayandt1239	syonarayan  yadav	jaitpu khichi	Jaipur	40	KPK1239	4	20000
+boduram1239	bodu ram gurjar	jaitpu khichi	Jaipur	50	KPK1239	8	22000
+phool1036	phool chand gurjar	nigher	Jaipur	45	kpk1036	6	30000
+kanaram1239	kana ram gurjar	jaitpu khichi	Jaipur	40	KPK1239	5	20000
+om1285	om perkash jat	jawanpura dhabai	Jaipur	19	kpk1285	3	18000
+mothu1239	mothu ram gurjar	jaitpu khichi	Jaipur	55	KPK1239	8	22000
+ram1036	madhoram  jat	nigher	Jaipur	50	kpk1036	8	30000
+gaya1285	shiv ram kharwal	jawanpura dhabai	Jaipur	40	kpk1285	3	20000
+lora1285	ram shran lora	nejher	Jaipur	20	kpk1285	15	24000
+choti1285	rood mal jat	surpura	Jaipur	32	kpk1285	5	24000
+chitarmal1239	Chitar mal gurjar	jaitpu khichi	Jaipur	35	KPK1239	6	20000
+prabhu1036	prabhu dayal ravat	nigher	Jaipur	50	kpk1036	6	20000
+Bhagwana1239	Bhagwan singh yadav	jaitpu khichi	Jaipur	40	KPK1239	10	20000
+narayan1036	narayan  gurjar	nigher	Jaipur	40	kpk1036	6	30000
+bhagi1285	bhagi rath gurjar	nejher	Jaipur	38	kpk1285	5	18000
+phoola1285	phoola ram jat	jajai kaila	Jaipur	70	kpk1285	25	24000
+suraj1285	ram chandra jat	jajai kaila	Jaipur	30	kpk1285	10	18000
+bkana1285	kana ram bunker	jawanpura dhabai	Jaipur	42	kpk1285	3	30000
+jagdisha1239	Jagdish  gurjar	jaitpu khichi	Jaipur	50	KPK1239	10	20000
+bhola1036	bhola ram jat	nigher	Jaipur	50	kpk1036	3	30000
+omji1285	phool chandra jat	jajai kaila	Jaipur	27	kpk1285	2	18000
+kalyann1239	kalyan sahay gurjar	jaitpu khichi	Jaipur	33	KPK1239	10	20000
+nanuram1239	Nanu ram gurjar	jaitpu khichi	Jaipur	50	KPK1239	10	25000
+man1285	hanu man jat	jajai kaila	Jaipur	30	kpk1285	5	40000
+girdhari1036	girdhari lal jat	nigher	Jaipur	65	kpk1036	3	40000
+onkar1036	onkar mal gurjar	nigher	Jaipur	45	kpk1036	3	35000
+tara1036	tara chand gurjar	nigher	Jaipur	30	kpk1036	3	25000
+madan1036	madan lal gurjar	nigher	Jaipur	35	kpk1036	5	20000
+anokhi1285	ram chandra jat	jajai kaila	Jaipur	26	kpk1285	2	18000
+barphi1285	sita ram jat	jajai kaila	Jaipur	26	kpk1285	12	18000
+bansidhar1239	Bansi dhar gurjar	jaitpu khichi	Jaipur	35	KPK1239	4	20000
+sharvandt1239	Sharvan lal gurjar	jaitpu khichi	Jaipur	35	KPK1239	10	20000
+papur1285	papu ram rundla	jajai kaila	Jaipur	28	kpk1285	3	24000
+sharvanlal1239	sharvan lal gurjar	jaitpu khichi	Jaipur	25	KPK1239	8	20000
+sharvan1239	sharvan lal gurjar	jaitpu khichi	Jaipur	40	KPK1239	5	20000
+suraj1036	suraj ram gurjar	nigher	Jaipur	60	kpk1036	3	35000
+saroj1285	shiv ram jat	surpura	Jaipur	25	kpk1285	5	24000
+gularam1239	Gula ram yadav	jaitpu khichi	Jaipur	60	KPK1239	9	20000
+mamraj1036	mamraj  gurjar	nigher	Jaipur	60	kpk1036	3	36000
+kram1036	khyaliram  jat	nigher	Jaipur	45	kpk1036	3	30000
+hari1036	hari singh gurjar	govindpura	Jaipur	50	kpk1036	8	35000
+chandaram1239	Chanda ram gurjar	jaitpu khichi	Jaipur	55	KPK1239	10	20000
+mangala1239	Mangal ram gurjar	jaitpu khichi	Jaipur	55	KPK1239	10	20000
+sualal1239	sua lal gurjar	jaitpu khichi	Jaipur	38	KPK1239	10	20000
+dolat1285	dolat ram chodhary	nijher	Jaipur	20	kpk1285	4	18000
+Ramful1300	Ramful  Meena	jandoli	Jaipur	50	kpk1300	9	50000
+bcmeena1238	brdhi chand meena	salarwas	Jaipur	40	kpk1238	20	35000
+sgurjer1238	sita ram gurjer	rajpura	Jaipur	30	kpk1238	7	30000
+tajmal1238	tajmal  yadav	sundar ka bass	Jaipur	25	kpk1238	2	30000
+lchand1238	lal chand gurjer	peelwa	Jaipur	30	kpk1238	7	20000
+prgurjer1239	prata ram gurjer	jaitpura khinchi	Jaipur	35	kpk1239	15	24000
+yadav1238	bana ram yadav	sunderpura	Jaipur	25	kpk1238	20	25000
+bodhu1238	Bodhu Ram Gurjar	Sundarpura	Jaipur	36	kpk1238	10	30000
+sultan1238	sultan ram gurjer	sundar ka bass	Jaipur	35	kpk1238	10	25000
+madan1232	madhan lal sharma	chop	Jaipur	29	kpk1232	8	50000
+mukti1238	mukti lal sardhana	peelwa	Jaipur	33	kpk1238	10	30000
+rkumar1238	ram kumar meena	salarwas	Jaipur	33	kpk1238	15	30000
+someena1238	syodhan  meena	salarwas	Jaipur	32	kpk1238	7	35000
+bhanwarlal1238	bhanwar lal gurjer	peelwa	Jaipur	30	kpk1238	15	25000
+murli1238	murli dhar meena	salarwas	Jaipur	40	kpk1238	10	35000
+bajrang1238	bajrang lal gurjer	jugalpura	Jaipur	24	kpk1238	4	25000
+shankarmeena1238	shankar lal meena	salarwas	Jaipur	45	kpk1238	10	35000
+rkyadav1238	ram kumar yadav	sundarpura	Jaipur	30	kpk1238	10	25000
+cmgurjer1238	chhitar mal gurjer	sunder ka bass	Jaipur	35	kpk1238	7	25000
+sultana1238	sultana  gurjer	sundarpura	Jaipur	40	kpk1238	6	25000
+rmeena1238	rohitash  meena	sundar ka bass	Jaipur	28	kpk1238	5	25000
+mangla1232	mangla ram jat	isarwala	Jaipur	58	kpk1232	3	40000
+gulla1232	gulla ram jat 50	isarwala	Jaipur	50	kpk1232	3	40000
+mohanlal1076	mohan lal yadav	khannipura	Jaipur	32	kpk1076	6	36000
+mohan1076	Mohan lal yadav	khneepura	Jaipur	32	kpk1076	6	36000
+Pdyadav1076	Prabhu dyal yadav	kaladera	Jaipur	37	kpk1076	8	24000
+Mryadav1076	Mali ram yadav	kaladera	Jaipur	45	kpk1076	9	24000
+Klraiger1076	Kishan lal raiger	Nasinghpura	Jaipur	28	kpk1076	1	20000
+Krsaini1076	Kana ram saini	kaladera	Jaipur	45	kpk1076	4	10000

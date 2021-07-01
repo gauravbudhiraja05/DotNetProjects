@@ -1,0 +1,5 @@
+EmpID	Name	Dep	Exp	Skill
+1002	Dev	IT	10	
+1003	Rana	HR	6	
+1004	Shilpa	Sales	4	
+1005	Neha	Business	6	

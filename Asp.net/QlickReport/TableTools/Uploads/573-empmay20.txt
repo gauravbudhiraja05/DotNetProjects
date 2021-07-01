@@ -1,0 +1,11 @@
+empid	empname	empsal	empcity	empdep
+1	ravin	7000	roorkee	it
+2	satendra	7500	saharan	mech
+3	mayank	10000	roorkee	electrical
+4	mohit	15000	haridwar	cs
+5	ankur	23000	delhi	civil
+6	raju	22800	dehradun	electroncs
+7	arjun	35000	haridwar	mech
+8	pankaj	18000	gurgaon	civil
+9	arun	25000	gaziabad	it
+10	pradeep	21000	bijnor	cs

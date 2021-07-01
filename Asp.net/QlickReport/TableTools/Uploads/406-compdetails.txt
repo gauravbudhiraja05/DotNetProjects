@@ -1,0 +1,20 @@
+companyid	companyname	industry	country	states	totalsales	profit	years
+yah11	yahoo	IT	usa	California	1.000billion	1.232 billion	2010-2011
+pan12	pantaloon	retail	india	mumbai	4380.42billion	439.14billion	2010-2011
+ril13	Reliance Industries Limited	Conglomerate	india	mumbai	4000.22billion	4.54 billion	2010-2011
+gec14	General Electric Company	Conglomerate	usa	New York	3222.00billion	5.1billion	2010-2011
+vgp15	Vodafone Group Plc	Telecommunication	uk	london	31.33billion	7.968 billion	2010-2011
+abb16	ABB Grain	Agribusiness	australia	sydney	201.1billion	1.1billion	2010-2011
+amp17	amp limited	finance	new zealand	aukland	739.22billion	739million	2010-2011
+
+
+
+
+
+
+
+
+
+
+
+

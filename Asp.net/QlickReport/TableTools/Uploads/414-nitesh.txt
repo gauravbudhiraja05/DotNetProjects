@@ -1,0 +1,18 @@
+companyid	companyname	industry	country	states	totalsales	profit	years
+yah11	yahoo	IT	usa	California	11	2	2010-2011
+pan12	pantaloon	retail	india	mumbai	4380	4	2010-2011
+ril13	Reliance Industries Limited	Conglomerate	india	mumbai	4000	4	2010-2011
+gec14	General Electric Company	Conglomerate	usa	New York	3222	5	2010-2011
+vgp15	Vodafone Group Plc	Telecommunication	uk	london	31	7	2010-2011
+abb16	ABB Grain	Agribusiness	australia	sydney	20	3	2010-2011
+amp17	amp limited	finance	new zealand	aukland	73	1	2010-2011
+
+
+
+
+
+
+
+
+
+
