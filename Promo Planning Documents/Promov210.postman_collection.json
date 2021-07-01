@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "83776a27-f928-436a-b95a-8ba67911ff0d",
+		"name": "Promov210",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Attribute",
+			"item": [
+				{
+					"name": "Attribute/AttributesConfig",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://testplan.toolsgroup.com/PromoPlanning210_DataModel/rest/Attribute/AttributesConfig?promoTypeId=2",
+							"protocol": "https",
+							"host": [
+								"testplan",
+								"toolsgroup",
+								"com"
+							],
+							"path": [
+								"PromoPlanning210_DataModel",
+								"rest",
+								"Attribute",
+								"AttributesConfig"
+							],
+							"query": [
+								{
+									"key": "promoTypeId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cache",
+			"item": [
+				{
+					"name": "Promo",
+					"item": [
+						{
+							"name": "promo/cache",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://testplan.toolsgroup.com/PromoPlanning210_DataModel/rest/promo/cache/11",
+									"protocol": "https",
+									"host": [
+										"testplan",
+										"toolsgroup",
+										"com"
+									],
+									"path": [
+										"PromoPlanning210_DataModel",
+										"rest",
+										"promo",
+										"cache",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "promo/cache",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://testplan.toolsgroup.com/PromoPlanning210_DataModel/rest/promo/cache/11",
+									"protocol": "https",
+									"host": [
+										"testplan",
+										"toolsgroup",
+										"com"
+									],
+									"path": [
+										"PromoPlanning210_DataModel",
+										"rest",
+										"promo",
+										"cache",
+										"11"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Campaign",
+			"item": [
+				{
+					"name": "campaigns id 0 (error)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"campaignId\": 0,\r\n  \"campaignDto\": {\r\n    \"campaignId\": 0,\r\n    \"campaignName\": \"hiii\",\r\n    \"description\": \"sfe\",\r\n    \"startDate\": \"2020-08-06T00:00:00.000Z\",\r\n    \"endDate\": \"2020-09-18T00:00:00.000Z\",\r\n    \"units\": 0,\r\n    \"baseline\": 0,\r\n    \"value\": 0,\r\n    \"upliftCalculated\": 0,\r\n    \"upliftPercent\": 0\r\n  },\r\n  \"attributeCampaignDtos\": [\r\n    {\r\n      \"campaignId\": 0,\r\n      \"attributeId\": 3,\r\n      \"value\": \"Summer\",\r\n      \"promoTypeId\": -1\r\n    },\r\n    {\r\n      \"campaignId\": 0,\r\n      \"attributeId\": 4,\r\n      \"value\": \"8\",\r\n      \"promoTypeId\": -1\r\n    },\r\n    {\r\n      \"campaignId\": 0,\r\n      \"attributeId\": 24,\r\n      \"value\": \"90\",\r\n      \"promoTypeId\": -1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:54790/rest/campaigns",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54790",
+							"path": [
+								"rest",
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "campaigns CampaingDto Null",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"campaignId\": 38,\r\n  \"campaignDto\": null,\r\n  \"attributeCampaignDtos\": [\r\n    {\r\n      \"campaignId\": 0,\r\n      \"attributeId\": 3,\r\n      \"value\": \"Summer\",\r\n      \"promoTypeId\": -1\r\n    },\r\n    {\r\n      \"campaignId\": 0,\r\n      \"attributeId\": 4,\r\n      \"value\": \"8\",\r\n      \"promoTypeId\": -1\r\n    },\r\n    {\r\n      \"campaignId\": 0,\r\n      \"attributeId\": 24,\r\n      \"value\": \"90\",\r\n      \"promoTypeId\": -1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:54790/rest/campaigns",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54790",
+							"path": [
+								"rest",
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PromoTypeRules",
+			"item": [
+				{
+					"name": "promotypeRules",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"promotypeId\": 1,\r\n    \"promotypeSO99\": \"D01\",\r\n    \"description\": \"Discount - 1 week duration\",\r\n    \"durationFrom\": -1,\r\n    \"durationTo\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://testplan.toolsgroup.com/PromoPlanning210_DataModel/rest/promotypeRules",
+							"protocol": "https",
+							"host": [
+								"testplan",
+								"toolsgroup",
+								"com"
+							],
+							"path": [
+								"PromoPlanning210_DataModel",
+								"rest",
+								"promotypeRules"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "FreeAttributes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:54790/rest/products/freeAttributes?selectcolumn=attr_1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "54790",
+							"path": [
+								"rest",
+								"products",
+								"freeAttributes"
+							],
+							"query": [
+								{
+									"key": "selectcolumn",
+									"value": "attr_1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Participant",
+			"item": [
+				{
+					"name": "Participant SearchCriteria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/participants?promoId=48&productId=CG103&marketId=CL10_X1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"participants"
+							],
+							"query": [
+								{
+									"key": "promoId",
+									"value": "48"
+								},
+								{
+									"key": "productId",
+									"value": "CG103"
+								},
+								{
+									"key": "marketId",
+									"value": "CL10_X1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Participants/{promoId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/rest/participants/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"rest",
+								"participants",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\": \"system\",\n\t\"password\" : \"toolsgroupSO99+\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/rest/Account/Login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rest",
+						"Account",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

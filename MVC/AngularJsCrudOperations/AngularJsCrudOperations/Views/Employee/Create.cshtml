@@ -1,0 +1,78 @@
+﻿@model AngularJsCrudOperations.EmployeeData
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    textbox {
+        padding: 5px;
+        border: 1px solid groove;
+    }
+
+    input.ng-dirty.ng-invalid {
+        border: 1px solid red;
+        background-color: rgb(255, 244, 244);
+    }
+
+    .error {
+        color: red;
+    }
+</style>
+
+<div>
+    <h2 style="text-align:center;">Add New Employee</h2>
+</div>
+<br />
+<hr />
+<div ng-controller="EmpController">
+    <form name="CreateForm" ng-submit="EmployeeRecord(Employee)" novalidate>
+        <div style="color:red">{{message}}</div>
+        <table class="table table-responsive table-bordered">
+            <tr>
+                <td>ID</td>
+                <td>
+                    <input class="textbox" type="number" ng-model="Employee.Id" name="eId" ng-class="submitted?'ng-dirty':''" required autofocus />
+                    <span class="error" ng-show="(CreateForm.eId.$dirty || submitted) && CreateForm.eId.$error.required">ID is Required</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input class="textbox" type="text" ng-model="Employee.Name" name="eName" ng-class="submitted?'ng-dirty':''" required autofocus />
+                    <span class="error" ng-show="(CreateForm.eName.$dirty || submitted) && CreateForm.eName.$error.required">Name Is Required</span>
+                </td>
+            </tr>
+            <tr>
+                <td>FatherName</td>
+                <td>
+                    <input class="textbox" type="text" ng-model="Employee.FatherName" name="eFatherName" ng-class="submitted?'ng-dirty':''" required autofocus />
+                    <span class="error" ng-show="(CreateForm.eFatherName.$dirty || submitted) && CreateForm.eFatherName.$error.required">Father Name Is Required</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td>
+                    <input class="textbox" type="text" ng-model="Employee.EmailID" name="eEmailID" ng-class="submitted?'ng-dirty':''" required autofocus />
+                    <span class="error" ng-show="(CreateForm.eEmailID.$dirty || submitted) && CreateForm.eEmailID.$error.required">Email Is Required</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td>
+                    <input class="textbox" type="text" ng-model="Employee.PhoneNo" name="ePhoneNo" ng-class="submitted?'ng-dirty':''" required autofocus />
+                    <span class="error" ng-show="(CreateForm.ePhoneNo.$dirty || submitted) && CreateForm.ePhoneNo.$error.required">Phone Number Is Required</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <input class="textbox" type="text" ng-model="Employee.Address" name="eAddress" ng-class="submitted?'ng-dirty':''" required autofocus />
+                    <span class="error" ng-show="(CreateForm.eAddress.$dirty || submitted) && CreateForm.eAddress.$error.required">Address Is Required</span>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" class="btn btn-success" style="" value="Create" />
+        <p class="btn btn-primary"> @Html.ActionLink("Back to List", "Index", null, new { style = "color:White" })</p>
+    </form>
+</div>

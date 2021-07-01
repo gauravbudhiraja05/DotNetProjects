@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#txtDOB").datepicker();
+
+        $("#btnSubmit").on("click", function () {
+
+            if ($('#txtFName').val().trim() == undefined || $('#txtFName').val().trim() == "") {
+                alert("First Name is required");
+                return false;
+            }
+            if ($('#txtLName').val().trim() == undefined || $('#txtLName').val().trim() == "") {
+                alert("Last Name is required");
+                return false;
+            }
+            if ($('#txtLName').val().trim() == undefined || $('#txtLName').val().trim() == "") {
+                alert("Last Name is required");
+                return false;
+            }
+            if ($('#txtSalary').val().trim() == undefined || $('#txtSalary').val().trim() == "") {
+                alert("Salary is required");
+                return false;
+            }
+            if ($('#txtDOB').val().trim() == undefined || $('#txtDOB').val().trim() == "") {
+                alert("DOB is required");
+                return false;
+            }
+            if ($('#txtHighestQualification').val().trim() == undefined || $('#txtHighestQualification').val().trim() == "" || $('#txtHighestQualification').val().trim() == "") {
+                alert("Highest Qualification is required");
+                return false;
+            }
+            else {
+                var employee =
+                {
+                    FirstName: $('#txtFName').val().trim(),
+                    LastName: $('#txtLName').val().trim(),
+                    Salary: $('#txtSalary').val().trim(),
+                    DOB: $('#txtDOB').val().trim(),
+                    HighestQualification: $('#txtHighestQualification').val().trim()
+                };
+
+                $.ajax({
+                    url: 'https://localhost:44325/api/EmployeesApi/SaveEmployee',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: employee,
+                    success: function (data) {
+                        if (data == "Data Saved Successfully")
+                            window.location.href = "/Employee/Index";
+                    },
+                    error: function () {
+                        console.log('Error in Operation');
+                    }
+                });
+            }
+        });
+
+        $("#btnBack").on("click", function () {
+            window.location.href = "/Employee/Index";
+        });
+    });
+</script>
+<h2>Create New Employee</h2>
+
+<table class="table">
+    <tr>
+        <td>First Name</td>
+        <td style="width:20px"></td>
+        <td><input type="text" id="txtFName" required /></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="height:20px;"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td style="width:20px"></td>
+        <td><input type="text" id="txtLName" required /></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="height:20px;"></td>
+    </tr>
+    <tr>
+        <td>Salary</td>
+        <td style="width:20px"></td>
+        <td><input type="text" id="txtSalary" required /></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="height:20px;"></td>
+    </tr>
+    <tr>
+        <td>DOB</td>
+        <td style="width:20px"></td>
+        <td><input type="text" id="txtDOB" required /></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="height:20px;"></td>
+    </tr>
+    <tr>
+        <td>HighestQualification</td>
+        <td style="width:20px"></td>
+        <td><input type="text" id="txtHighestQualification" required /></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="height:20px;"></td>
+    </tr>
+    <tr>
+        <td><input type="submit" class="bottom-right" id="btnSubmit" value="Save" /></td>
+        <td style="width:20px"></td>
+        <td><input type="submit" class="bottom-right" id="btnBack" value="Back" /></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="height:20px;"></td>
+    </tr>
+</table>
+

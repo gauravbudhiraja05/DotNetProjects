@@ -1,0 +1,45 @@
+﻿@model  IEnumerable<AngularJsCrudOperations.EmployeeData>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center">List of All Employee</h2>
+<br>
+<hr />
+<div ng-controller="EmpController">
+    @* Use ng-controller *@
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Email ID</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+        <tr ng-repeat="emp in employee">
+            @* Fetch All the Employee record using ng-repeat *@
+            <td>{{emp.Id}}</td>
+            <td>{{emp.Name}}</td>
+            <td>{{emp.FatherName}}</td>
+            <td>{{emp.EmailID}}</td>
+            <td>{{emp.PhoneNo}}</td>
+            <td>{{emp.Address}}</td>
+            <td>
+                <input type="button" class="btn btn-toolbar" value="Edit" ng-click="RedirectToEdit(emp)" /> |
+                <input type="button" class="btn btn-success" value="Details" ng-click="RedirectToDetails(emp)" /> |
+                <input type="button" class="btn btn-warning" style="color:white" value="Delete" ng-click="DelEmployee(emp)" />
+            </td>
+        </tr>
+        <tr>
+            <td><p class="btn btn-primary"> @Html.ActionLink("Create New", "Create", null, new { style = "color:white" }) </p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
