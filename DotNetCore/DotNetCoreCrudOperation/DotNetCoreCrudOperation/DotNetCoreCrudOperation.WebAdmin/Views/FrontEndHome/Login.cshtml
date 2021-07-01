@@ -1,0 +1,218 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.EndUser.Registration
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Pickfords Intranet</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+    <!--Global CSS-->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!--Theme CSS-->
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="~/FrontEnd/css/style.css" asp-append-version="true" />
+
+</head>
+
+<body>
+    <input type="hidden" id="hdnWidnowsUserId" value="@User.Identity.Name" />
+    <input type="hidden" id="hdnEmployeeId" />
+    <div class="main_wrapper">
+        <div class="header">
+
+            <div class="center_wrap">
+                <div class="top_menu">
+                    <a href="/" class="logo"><img src="@Url.Content("~/images/pickfords_logo_w.png")" alt="pickfords" /></a>
+                    <div class="extra_links">
+                        <a href="#" style="padding-top: 10px;text-decoration: none !important;cursor: default !important;"><span>Intranet</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="full_width">
+            <div class="banner" style="background-image:url(@Url.Content("~/images/filter_banner.jpg"));"></div>
+
+            <div class="center_wrap">
+
+                @*<div class="content_wrap login_content">
+
+                        <div class="page_heading">
+                            <h2>Pickfords User Login</h2>
+                        </div>
+                        <!--End page_heading-->
+
+                        <form id="formLogInEndUser">
+                            <div class="form_wrap">
+                                <div class="login_panel">
+                                    @if (TempData["UserLoginFailed"] != null)
+                                    {
+                                        <p class="error_label">@TempData["UserLoginFailed"]</p>
+                                    }
+                                    <div class="form_fields_box">
+                                        <fieldset>
+
+                                            <div class="form_field">
+                                                <label for="userid">User ID</label>
+                                                <input id="loginEmail" type="text">
+                                                <span class="error_label" id="loginEmailError"></span>
+
+                                            </div>
+
+
+
+                                            <div class="form_field">
+                                                <button type="button" id="fELoginBtn" class="btn_field">SUBMIT</button>
+                                            </div>
+
+
+
+                                        </fieldset>
+
+                                    </div>
+                                    <!--End form_fields_box-->
+
+                                </div>
+
+
+                            </div>
+                            <!--End forom_wrap-->
+                        </form>
+
+                    </div>*@
+                <!--End content_wrap-->
+
+
+            </div>
+            <!--End center_wrap-->
+        </div>
+
+
+    </div>
+
+
+    <div class="search_star_modal" id="registrationPopup">
+        <div class="search_star_popup reg_model">
+
+            <input type="hidden" id="SeacrhImagePopupHiddenTabId" />
+            <div class="star_popup_inner">
+                <form id="formProfile" name="formProfile">
+                    <div class="edit_profile_popup">
+                        <div class="title">Create your intranet profile</div>
+                        <a href="#" class="profile_popup_close"></a>
+                        <p class="shortIntro">
+                            Fill in the fields below to create your profile. Please take a few moments to complete the requested information correctly as this will be used to help your colleagues find you on the intranet.
+                        </p>
+                        <div class="input_field">
+                            <label for="userAddressType">Photo:</label>
+
+                            <div class="update_photo">
+                                <span>Upload an image</span>
+                                <input type="file" accept="image/*" name="filename" class="upload_btn" asp-for="@Model.User.UploadImage" id="upload1" />
+                                @{ var Photo = "defaultuser.png";}
+                                @*<div class="upload_bg" id="bg_Upload_img1" style="background-image: url(/Uploads/Images/FrontEndUser/@Photo);"></div>*@
+                                <div class="upload_bg" id="bg_Upload_img1"></div>
+                            </div>
+                            <input type="hidden" asp-for="@Model.User.Photo" value="@Photo" />
+                            <input type="hidden" asp-for="@Model.User.Id" />
+                            <span class="error_label" asp-validation-for="@Model.User.UploadImage"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label>First Name:*</label>
+                            <input type="text" asp-for="@Model.User.FirstName" placeholder="First name" />
+                            <span class="error_label" asp-validation-for="@Model.User.FirstName"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Surname:*</label>
+                            <input type="text" asp-for="@Model.User.SurName" placeholder="Surname" />
+                            <span class="error_label" asp-validation-for="@Model.User.SurName"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Job Title:*</label>
+                            <input type="text" asp-for="@Model.User.JobTitle" placeholder="Job title" />
+                            <span class="error_label" asp-validation-for="@Model.User.JobTitle"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Department:*</label>
+                            @if (Model.EndUserDepartmentList != null)
+                            {
+                                <select name="ddlEndUser_Department" id="ddlEndUser_Department" asp-items="@(new SelectList(Model.EndUserDepartmentList, "DepartmentId", "DepartmentName" ))"></select>
+                            }
+                            <span class="error_label" asp-validation-for="@Model.User.MyDepartmentName"></span>
+
+
+                        </div>
+
+                        <div class="input_field">
+                            <label>Location:*</label>
+                            <input type="text" asp-for="@Model.User.Location" placeholder="Location" />
+                            <span class="error_label" asp-validation-for="@Model.User.Location"></span>
+                        </div>
+                        <div class="input_field">
+                            <label>Windows User Id:*</label>
+                            <input type="email" asp-for="@Model.User.WindowsUserId" readonly />
+                            <span class="error_label" asp-validation-for="@Model.User.WindowsUserId"></span>
+                        </div>+
+                        <div class="input_field">
+                            <label>Email Address:*</label>
+                            <input type="email" asp-for="@Model.User.EmailAddress" placeholder="Email address" />
+                            <span class="error_label" id="lblError_EmailAddress" asp-validation-for="@Model.User.EmailAddress"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Telephone Number:*</label>
+                            <input type="text" asp-for="@Model.User.TelephoneNumber" placeholder="Telephone number" max="10" />
+                            <span class="error_label" asp-validation-for="@Model.User.TelephoneNumber"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label>Mobile Number:</label>
+                            <input type="text" asp-for="@Model.User.Mobile" placeholder="Mobile" max="10" />
+                            <span class="error_label" asp-validation-for="@Model.User.Mobile"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <input type="button" id="btnEditProfile" value="Register" />
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+        </div>
+        <div class="search_star_popup_overlay"></div>
+    </div>
+
+
+
+    <!--End main_wrapper-->
+    <!--Custom Js-->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/sweetalert2.js"></script>
+    <script src="~/js/sweetalert2.promise.min.js"></script>
+    <script type="text/javascript" src="js/custom.js" asp-append-version="true"></script>
+    <script src="~/FrontEnd/js/FrontEndHome/frontendLogin.js" asp-append-version="true"></script>
+
+</body>
+
+</html>

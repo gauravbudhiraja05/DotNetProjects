@@ -1,0 +1,103 @@
+
+MagentoPGSage
+DB : sage.pebblegrey.co.uk
+userID:   pebblesage-user
+Password: Pe8blEM@g$age
+
+admin site
+user id : webrestapi2
+password: sunil@1981
+
+
+https://www.pebblegrey.co.uk/admin
+
+
+sage.pebblegrey.co.uk/Ebay-Stock-Update.aspx
+
+
+ <add key="MagentoAPIUrl" value="http://test.pebblegrey.co.uk/"/>
+
+sage.pebblegrey.co.uk/Pebblegrey_Amazon_orders.aspx
+
+http://sage.pebblegrey.co.uk/Pebblegrey_Amazon_orders.aspx?delivery=free
+
+http://sage.pebblegrey.co.uk/Pebblegrey_Amazon_orders.aspx?delivery=amstrates
+
+
+sage.pebblegrey.co.uk/pebblegrey_ebay_order.aspx
+
+http://sage.pebblegrey.co.uk/Pebblegrey_Amazon_orders.aspx?delivery=free
+
+-------------Queries--------------
+
+select * from sys.tables
+
+PROC_GetAmazonOrdersForRequest
+
+PROC_GetEbayOrders
+
+Proc_GetProductsForUpdate 'Ebay'
+
+Proc_GetProductsForUpdate 'Amazon'
+
+[Proc_GetProductsForDelete] 'Ebay'
+
+[Proc_GetProductsForDelete] 'Amazon'
+
+
+select * from tbl_Errorlog order by CreatedDate desc
+
+select * from tbl_OrderStatus where isnull(IsUpdated,0)=0
+
+select * from tbl_ProductInStockQty order by CreatedDate desc
+
+select * from tbl_ProductInStockQty where IsUpdatedOnEbay = 0 and CreatedDate > (CONVERT(date, GETDATE()-1))
+
+select * from tbl_ProductInStockQty where IsUpdatedOnEbay = 1 and CreatedDate > (CONVERT(date, GETDATE()-1))
+
+select * from tbl_ProductInStockQty where IsUpdatedOnAmazon = 0 and CreatedDate > (CONVERT(date, GETDATE()-1))
+
+select * from tbl_ProductInStockQty where IsUpdatedOnAmazon = 1 and CreatedDate > (CONVERT(date, GETDATE()-1))
+
+select * from tbl_UFL_Discontinued_Product
+
+
+select * from tbl_Products where ChannelType = 'Ebay'
+
+select * from tbl_Products where ChannelType = 'Amazon'
+
+select * from tbl_StockDueDate where IsNull(IsUpdated,0)=0
+
+select * from tbl_AmazonFBA_Order order by CreatedDate desc 
+
+select amazon_order_id,SageOrderNumber,IsSageUpdated,SageUpdatedStatus,CreatedDate from tbl_AmazonFBA_Order where ISNULL(IsSageUpdated,0)=0 Order by CreatedDate desc
+
+
+select * from tbl_AmazonFBA_Order where SageOrderNumber  is null
+    
+select * from tbl_PushOrderToMagentoErrors   
+
+select distinct OrderId from tbl_PushOrderToMagentoErrors  
+
+select distinct OrderId,OrderType from tbl_PushOrderToMagentoErrors  
+
+select * from tbl_AmazonFBA_Order where amazon_order_id = '202-5652344-2345122/CCM002'
+
+
+select * from tbl_OnlineProductsOrderStatus where OrderID in ('204-1685836-8198705','205-7436432-1922763')
+
+
+select * from tbl_ProductInStockQty where SKU in ('500.40.04','201.30.01')
+
+
+select * from tbl_OrderStatus where OrderID in ('204-1685836-8198705','205-7436432-1922763')
+
+
+select * from tbl_SageOrderImportStatus where MagentoOrderEntityID in ('14851','14852')
+
+
+
+--truncate table tbl_PushOrderToMagentoErrors
+
+
+

@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Registeration";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+    var code = TempData["ProductCode"];
+    var productType = TempData["ProductType"];
+    var databaseType = TempData["DatabaseType"];
+    var database = TempData["Database"];
+}
+
+<div class="grid_10 omega" style="width:550px;text-align:justify;">
+    <!--Detail Content panel START-->
+    <h2>Registration</h2>
+    <input type="hidden" id="hdnProductType" value="@productType" />
+    <input type="hidden" id="hdnDatabaseType" value="@databaseType"  />
+    <input type="hidden" id="hdnProductCode" value="@code"  />
+    <input type="hidden" id="hdnDatabase" value="@database"  />
+
+    <h5 style="height:10px;">You Selected : @code</h5>
+    <h5 style="height:10px;">
+        <span style="font-weight:bold; color:blue;" id="mailMsg">`</span>
+    </h5>
+    <table cellpadding="0" cellspacing="0" border="1" style="width:550px;">
+        <tr>
+            <td style="font-family:Verdana; font-size:11px; color:Black; width:50px;"><b>Name</b></td>
+            <td style="width:20px;"></td>
+            <td><input type="text" id="txtName" style="border:1px solid #D7D6D6;width:150px;font-family:Verdana;" /></td>
+            <td style="width:10px;"></td>
+            <td style="font-family:Verdana; font-size:11px; color:Red; width:320px;">
+                <span id="txtNameError">@*Plz enter characters only*@</span>
+            </td>
+        </tr>
+        <tr><td style="height:15px;"></td></tr>
+        <tr>
+            <td style="font-family:Verdana; font-size:11px; color:Black; width:50px;"><b>Company</b></td>
+            <td style="width:20px;"></td>
+            <td><input type="text" ID="txtCompany" style="border: 1px solid #D7D6D6;width:150px;font-family:Verdana;" /></td>
+            <td style="width:10px;"></td>
+            <td style="font-family:Verdana; font-size:11px; color:Red; width:320px;">
+                <span id="txtCompanyError">@*Plz enter characters only*@</span>
+            </td>
+        </tr>
+        <tr><td style="height:15px;"></td></tr>
+        <tr>
+            <td style="font-family:Verdana; font-size:11px; color:Black; width:50px;"><b>Email</b></td>
+            <td style="width:20px;"></td>
+            <td><input type="text" ID="txtEmail" style="border: 1px solid #D7D6D6;width:150px;font-family:Verdana;" /></td>
+            <td style="width:10px;"></td>
+            <td style="font-family:Verdana; font-size:11px; color:Red; width:320px;">
+                <span id="txtEmailError">@*Plz enter characters only*@</span>
+            </td>
+        </tr>
+        <tr><td style="height:15px;"></td></tr>
+        <tr>
+            <td style="font-family:Verdana; font-size:11px; color:Black; width:50px;"><b>Mobile</b></td>
+            <td style="width:20px;"></td>
+            <td><input type="text" ID="txtMobile" runat="server" style="border: 1px solid #D7D6D6;width:150px;font-family:Verdana;" /></td>
+            <td style="width:10px;"></td>
+            <td style="font-family:Verdana; font-size:11px; color:Red; width:320px;">
+                <span id="txtMobileError">@*Plz enter numeric and only 11 digit number !!*@</span>
+            </td>
+        </tr>
+        <tr><td style="height:15px;"></td></tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="button" id="btnSubmit" style="color:black;font-weight:bold;" value="Submit" />
+            </td>
+        </tr>
+    </table>
+    <!--Detail Content panel END-->
+</div>
+
+<script src="~/js/user/user.registeration.js"></script>

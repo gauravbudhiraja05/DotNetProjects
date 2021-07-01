@@ -1,0 +1,20 @@
+﻿{
+
+  "ServerEnd": {
+    // Keep Keys and values Controller-wise
+    "Reward": {
+
+    },
+
+    "SuperAdmin": {
+      "LineManagerCanTextRecogniseOnly": "Recognise Only",
+      "LineManagerCanValueRecogniseOnly": "RecogniseOnly",
+      "LineManagerCanTextRecogniseAndReward": "Recognise and Reward",
+      "LineManagerCanValueRecogniseAndReward": "RecogniseAndRewardBoth"
+    }
+  },
+
+  "ClientEnd": {
+
+  }
+}

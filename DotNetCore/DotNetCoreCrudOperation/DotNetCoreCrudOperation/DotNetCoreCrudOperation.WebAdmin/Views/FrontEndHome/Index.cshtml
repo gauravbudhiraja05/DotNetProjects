@@ -1,0 +1,208 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+
+<div class="filter_banner">
+
+    <div class="banner_center_area">
+        <div class="inner_page_banner" style="background-image:url(/FrontEnd/images/filter_banner.jpg);">
+            <div class="container">
+                <div class="intranet_title">
+                    The Pickfords Intranet <span> The information you need, when you need it</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- filter_banner -->
+
+<div class="full_width">
+
+    <div class="container">
+
+
+
+        <div class="news_slider_section">
+            <div class="news_items_slider owl-carousel">
+                @if (Model.FrontEndNewsList != null)
+                {
+                    @foreach (var news in Model.FrontEndNewsList)
+                    {
+                        var title = news.Title.Trim().Replace(' ', '_');
+
+                        <div class="news_slide_item">
+
+                            <div class="inner">
+                                <div class="img">
+                                    <span class="tag">@news.DepartmentName News</span>
+                                    @if (news.ThumbnailImagePath != null)
+                                    {
+                                        <a href="#" mytag="@title" id="@news.Id" style="background-image:url('/fileserver/uploads/images/news/@news.ThumbnailImagePath')" class="news_detail item_bg"></a>
+                                    }
+                                    else
+                                    {
+                                        <a href="#" mytag="@title" id="@news.Id" style="background-image:url('/fileserver/uploads/images/news/thumbnail_no_image.jpg')" class="news_detail item_bg"></a>
+                                    }
+                                </div>
+                                <div class="detail">
+                                    <span class="item_date">@news.PublishDateDisplay</span>
+                                    <p>
+                                        <a href="#" mytag="@title" id="@news.Id" class="news_detail">
+                                            @news.Title
+                                        </a>
+                                    </p>
+
+
+                                    <a href="#" mytag="@title" id="@news.Id" class="read_more_btn news_detail">Read More</a>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+            @if (Model.FrontEndNewsList != null && Model.FrontEndNewsList.Count > 4)
+            {
+                <a href="#" class="read_allnews">Read all news</a>
+            }
+        </div>
+        <!-- news_slider_section -->
+
+
+        <div class="message_stars_area">
+
+            <div class="area_row">
+
+                @if (Model.FeatureMessagesDetail != null)
+                {
+                    <div class="md_message">
+                        <div class="md_message_inner">
+
+                            <div class="md_img">
+                                <div class="md_tag">
+                                    Featured Message
+                                </div>
+                                <img src="~/fileserver/Uploads/Admin/FeaturedMessage/@Model.FeatureMessagesDetail.Image" />
+                            </div>
+                            <div class="detail">
+                                @if (!Model.FeatureMessagesDetail.Content.StartsWith("<p>"))
+                                {
+                                    Model.FeatureMessagesDetail.Content = "<p>" + Model.FeatureMessagesDetail.Content + "</p>";
+                                }
+                                @Html.Raw(Model.FeatureMessagesDetail.Content)
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- md_message -->
+                }
+
+
+                <div class="month_stars">
+
+                    <div class="stars_inner">
+                        <div class="title">Wall of Stars</div>
+
+                        <div class="stars_slider_wrap">
+                            <div class="stars_text_slider owl-carousel">
+                                @foreach (var star in Model.MonthStarList)
+                                {
+                                    if ((!string.IsNullOrEmpty(star.StarTestimonial)) && (star.StarValueType != "Select..."))
+                                    {
+                                        if (star.StarValueType == "Communication")
+                                        {
+
+                                            <div class="item">
+                                                <div class="stars_icon"><img src="/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.CommunicationIcon" alt="" /> </div>
+                                                <div class="stars_text">@(star.StarTestimonial)</div>
+                                            </div>
+                                        }
+                                        else if (star.StarValueType == "Dedication")
+                                        {
+                                            <div class="item">
+                                                <div class="stars_icon"><img src="/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.DedicationIcon" alt="" /> </div>
+                                                <div class="stars_text">@(star.StarTestimonial)</div>
+                                            </div>
+
+                                        }
+                                        else if (star.StarValueType == "Excellence")
+                                        {
+                                            <div class="item">
+                                                <div class="stars_icon"><img src="/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.ExcellentIcon" alt="" /> </div>
+                                                <div class="stars_text">@(star.StarTestimonial)</div>
+                                            </div>
+
+                                        }
+                                        else if (star.StarValueType == "Care")
+                                        {
+
+                                            <div class="item">
+                                                <div class="stars_icon"><img src="/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.CareIcon" alt="" /> </div>
+                                                <div class="stars_text">@(star.StarTestimonial)</div>
+                                            </div>
+                                        }
+
+                                    }
+                                }
+                            </div>
+                        </div>
+
+                        <div class="stars_grid">
+                            <div class="scrollbar-inner">
+
+                                @if (Model.MonthStarList != null)
+                                {
+                                    @foreach (var star in Model.MonthStarList)
+                                    {
+                                        <div class="stars_grid_item">
+                                            <div class="star_image" style="background-image: url(/fileserver/Uploads/Images/FrontEndUser/@star.StarPhoto);"></div>
+                                            <div class="stars_name">@star.StarName</div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+
+                        <div class="our_values_btn">
+                            <a href="#" class="load_more_star">More Stars</a>
+                            <a href="#" class="our-values">Our Values</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- month_stars -->
+
+            </div>
+
+
+        </div>
+        <!-- message_stars_area -->
+
+
+        <div class="trustpilot_widget">
+            <div class="widget_heading">Here's what our customers think of us...</div>
+
+            <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="5193b70d00006400052d7736" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="4,5">
+                <ahref ="https://www.trustpilot.com/review/pickfords.co.uk" target="_blank">Trustpilot</a>
+            </div>
+        </div>
+        <!-- trustpilot_widget -->
+
+
+    </div>
+
+
+</div>
+<!-- full_width -->
+<script src="~/FrontEnd/js/FrontEndHome/frontendhome.index.js" asp-append-version="true"></script>
+<script src="~/FrontEnd/js/jquery.scrollbar.js" asp-append-version="true"></script>

@@ -1,0 +1,12 @@
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\bin\Debug\net5.0\HiveReport.Entity.deps.json
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\bin\Debug\net5.0\HiveReport.Entity.dll
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\bin\Debug\net5.0\ref\HiveReport.Entity.dll
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\bin\Debug\net5.0\HiveReport.Entity.pdb
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.AssemblyInfoInputs.cache
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.AssemblyInfo.cs
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.csproj.CoreCompileInputs.cache
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.dll
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\ref\HiveReport.Entity.dll
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.pdb
+D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Entity\obj\Debug\net5.0\HiveReport.Entity.csprojAssemblyReference.cache

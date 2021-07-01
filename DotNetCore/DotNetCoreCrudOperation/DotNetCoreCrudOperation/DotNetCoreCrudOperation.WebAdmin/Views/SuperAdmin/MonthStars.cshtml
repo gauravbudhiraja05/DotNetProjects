@@ -1,0 +1,113 @@
+﻿@model IEnumerable<PickfordsIntranet.ViewModels.SuperAdmin.MonthStarGridItemVM>
+@{
+    //ViewData["Title"] = "Month Stars";
+    ViewData["Title"] = "Latest Stars";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("AddMonthStars","SuperAdmin")'">Add new</button>
+            <button id="btnDeleteAllCheckedMonthStars" type="button" class="delete_list_item">delete</button>
+
+        </div>
+
+        <div class="top_filter_right">
+
+            <div class="form_group">
+                <fieldset>
+                    <input id="txtSearchMonthStars" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                @*<h1>This month's stars</h1>*@
+                <h1>Latest Stars</h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="table_wrap">
+                <table id="tblMonthStars" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 80px;">
+                                <button type="button" class="table_title"><i class="icon"></i> ID</button>
+                            </th>
+                            <th style="width: 400px;">
+                                <button type="button" class="table_title active"><i class="icon asc"></i> Month</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Live?</button>
+                            </th>
+                            <th style="width:75px;text-align: center;">Edit</th>
+                            <th style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td style="width: 70px;">
+                                    <div class="table_checkbox">
+                                        <input type="checkbox" id="checkitem1" class="check_item">
+                                        <label for="checkitem1"></label>
+                                    </div>
+                                </td>
+                                <td>#@item.Id</td>
+                                @*<td><a href='@Url.Action("EditMonthStars","SuperAdmin",new { Id=item.Id})'>@item.MonthYear</a></td>*@
+                                <td><a href='@Url.Action("EditMonthStars","SuperAdmin",new { Id=item.Id})'>@item.NewMonthName</a></td>
+                                <td>
+                                    @if (item.IsActive == true)
+                                    {<img src="../images/yes_icon.png" alt="yes">
+                                        <input type="hidden" value="1" />
+                                    }
+                                    else
+                                    {<img src="../images/no_icon.png" alt="no">
+                                        <input type="hidden" value="0" />
+                                    }
+
+                                </td>
+                                <td style="width:75px;text-align: center;">
+                                    <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditMonthStars","SuperAdmin",new { Id=item.Id})'">edit</button>
+                                </td>
+                                <td style="width:75px;text-align: center;">
+                                    <span style="display:none">@item.Id</span>
+                                    <button type="button" class="delete_item monthStarItem">delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!--End content_wrap-->
+
+
+
+    </div>
+    <!--End center_wrap-->
+
+</div>
+<script src="~/js/Admin/admin.monthStars.js" asp-append-version="true"></script>

@@ -1,0 +1,56 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+
+
+
+<div class="full_width">
+    <div class="container">
+
+        <div class="all_case_box">
+            <h2>Manage Your Leave</h2>
+            <p>Your annual leave entitlement is: <span>@Model.leaveCount.HolidayEntitlementCount days</span></p>
+            <p>You have booked 
+                <span>
+                    @if (Convert.ToInt32(Model.leaveCount.ApprovedCount) > 1)
+                    {
+                        @(Convert.ToString(Model.leaveCount.ApprovedCount) + " days");
+                    }
+                    else
+                    {
+                        @(Convert.ToString(Model.leaveCount.ApprovedCount) + " day");
+                    }
+                </span> 
+            so far this year, and have 
+            <span>@(Convert.ToDecimal(Model.leaveCount.HolidayEntitlementCount) - Convert.ToDecimal(this.Model.leaveCount.ApprovedCount)) days</span> remaining.</p>
+
+            <a href="/intranet/leaverequest" class="leave_req_btn">Make a new Leave Request</a>
+        </div>
+        <div class="line_manager_name">
+            <p>@(Model.FrontEndUserDetails.LineManagerName != null ? "Your line manager is" : "") <span>@Model.FrontEndUserDetails.LineManagerName</span></p>
+        </div>
+        <div class="request_leave_wrap">
+            <div id="partialPendingLeaveRequests" style="display:none;" class="content_wrap"></div>
+            <div id="partialApprovedLeaveRequests" style="display:none;" class="content_wrap"></div>
+            <input type="hidden" id="hdnLeaveId" value="" />
+            <div class="confirmation_popup" id="cancel_popup">
+                <div class="popup_title">Confirmation</div>
+                <p>You‘re about to cancel one of your existing leave requests. </p>
+                <p id="pLeaveMsg"></p>
+                <p><strong>To cancel this request click Confirm, otherwise you can click Update to update the request or Cancel to close this box. </strong></p>
+                <a href="javascript:void()" class="rq_confirm_btn confirm_btn" onclick="ChangePendingLeaveStatus()">Confirm</a>
+                <a href="javascript:void()" class="rq_confirm_btn confirm_btn" onclick="UpdateLeave()">Update</a>
+                <a href="#" class="rq_cancel_btn confirm_btn">Cancel</a>
+            </div>
+            <div class="confirmation_popup_overlay"></div>
+        </div>
+    </div>
+</div>
+
+<script src="~/FrontEnd/js/FrontEndHome/frontendhome.index.js" asp-append-version="true"></script>
+<script src="~/FrontEnd/js/jquery.scrollbar.js" asp-append-version="true"></script>
+<script src="~/FrontEnd/js/LeaveManagement/PendingLeaveRequest.js" asp-append-version="true"></script>
+<script src="~/FrontEnd/js/LeaveManagement/approvedLeaveRequest.js" asp-append-version="true"></script>

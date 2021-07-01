@@ -1,0 +1,177 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <!--<MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>-->
+    <UserSecretsId>de76174e-645d-49fc-8afa-3321d5e88d9c</UserSecretsId>
+    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
+  </PropertyGroup>
+	<Target Name="CreateLogsFolder" AfterTargets="Publish">
+		<MakeDir Directories="$(PublishDir)Logs" Condition="!Exists('$(PublishDir)Logs')" />
+		<WriteLinesToFile File="$(PublishDir)Logs\.log" Lines="Generated file" Overwrite="True" Condition="!Exists('$(PublishDir)Logs\.log')" />
+	</Target>
+	<ItemGroup>
+	  <Compile Remove="wwwroot\Uploads\Images\NewFolder\**" />
+	  <Content Remove="wwwroot\Uploads\Images\NewFolder\**" />
+	  <EmbeddedResource Remove="wwwroot\Uploads\Images\NewFolder\**" />
+	  <None Remove="wwwroot\Uploads\Images\NewFolder\**" />
+	</ItemGroup>
+	<!--<Target Name="MyPreCompileTarget" BeforeTargets="Build">
+		<Exec Command="generateCode.cmd" />
+	</Target>
+
+	<Target Name="MyPostCompileTarget" AfterTargets="Publish">
+		<Exec Command="obfuscate.cmd" />
+		<Exec Command="removeTempFiles.cmd" />
+	</Target>-->
+  <ItemGroup>
+    <Content Remove="Views\FAQs\Add.cshtml" />
+    <Content Remove="wwwroot\images\loader4_old.gif" />
+    <Content Remove="wwwroot\LineManager.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile4.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="wwwroot\Uploads\Admin\FeaturedMessage\" />
+    <Folder Include="wwwroot\Uploads\Admin\Gazetteers\" />
+    <Folder Include="wwwroot\Uploads\Admin\Gazetteers\" />
+    <Folder Include="wwwroot\Uploads\Admin\FeaturedMessage\" />
+    <Folder Include="wwwroot\Uploads\Admin\Department\" />
+    <Folder Include="wwwroot\Uploads\Admin\Leave\" />
+    <Folder Include="wwwroot\Uploads\Admin\Stars\" />
+    <Folder Include="wwwroot\Uploads\Admin\OurValues\" />
+    <Folder Include="wwwroot\Uploads\Admin\Stars\" />
+    <Folder Include="wwwroot\Uploads\Admin\OurValues\" />
+    <Folder Include="wwwroot\Uploads\Documents\" />
+    <Folder Include="wwwroot\Uploads\Images\FrontEndUser\" />
+    <Folder Include="wwwroot\Uploads\AwardIcons\" />
+    <Folder Include="wwwroot\Uploads\Images\News\" />
+    <Folder Include="wwwroot\Uploads\Images\Vacancy\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\FrontEnd\doc\annual-leave-request-form.pdf" />
+    <None Include="wwwroot\FrontEnd\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\HelveticaNeueLTStdBd.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\HelveticaNeueLTStdBd.woff2" />
+    <None Include="wwwroot\FrontEnd\fonts\HelveticaNeueLTStdLt.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\HelveticaNeueLTStdLt.woff2" />
+    <None Include="wwwroot\FrontEnd\fonts\HelveticaNeueLTStdRoman.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\HelveticaNeueLTStdRoman.woff2" />
+    <None Include="wwwroot\FrontEnd\fonts\PickfordsDisplay.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\PickfordsDisplay.woff2" />
+    <None Include="wwwroot\FrontEnd\fonts\PickfordsDispTwo.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\PickfordsDispTwo.woff2" />
+    <None Include="wwwroot\FrontEnd\js\bootstrap-select.js" />
+    <None Include="wwwroot\FrontEnd\js\bootstrap.min.js" />
+    <None Include="wwwroot\FrontEnd\js\custom.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery-ui.js" />
+    <None Include="wwwroot\FrontEnd\js\owl.carousel.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetCoreCrudOperation.Core\DotNetCoreCrudOperation.Core.csproj" />
+    <ProjectReference Include="..\DotNetCoreCrudOperation.Repo\DotNetCoreCrudOperation.Repo.csproj" />
+    <ProjectReference Include="..\DotNetCoreCrudOperation.Services\DotnetCoreCrudOperation.Services.csproj" />
+    <ProjectReference Include="..\DotNetCoreCrudOperation.ViewModels\DotNetCoreCrudOperation.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <Content Update="Views\FrontEndHome\whathappensnext.cshtml">
+	    <Pack>$(IncludeRazorContentInPack)</Pack>
+	  </Content>
+	  <Content Update="Views\FrontEndHome\IntranetLeaveRequest.cshtml">
+	    <Pack>$(IncludeRazorContentInPack)</Pack>
+	  </Content>
+	  <Content Update="Views\FrontEndHome\IntranetManageLeave.cshtml">
+	    <Pack>$(IncludeRazorContentInPack)</Pack>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Admin\FeaturedMessage">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Admin\Gazetteers">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Admin\OurValues">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Admin\Stars">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+
+
+	  <Content Update="wwwroot\Uploads\Documents">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\IconImages">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Images\FrontEndUser">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Images\News">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="wwwroot\Uploads\Images\Vacancy">
+		  <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+	  </Content>
+	  
+    <Content Update="Views\Vacancies\Add.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Vacancies\Edit.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Vacancies\Index.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Views\Vacancies\_VacancyList.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>Preserve</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewData["Title"] = "Add Featured Message";
+}
+
+<div class="tab_menu">
+    <div class="center_wrap">
+
+        <button type="button" class="back_btn" onClick="window.location.href='md-message-listing.html'">Back</button>
+
+        <ul class="tab_list">
+            <li class="current"><a href="#tab_1">Message Details </a></li>
+            <li><a href="#tab_2">Dates and Publishing</a></li>
+        </ul>
+
+        <button type="button" class="tab_save">Save</button>
+
+        @*<button type="button" class="delete_btn">delete</button>*@
+
+
+
+    </div>
+</div>
+<!--End tab_menu-->
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Add  / Edit Message from the MD</h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="form_wrap">
+
+                <div class="tab_content" id="tab_1">
+
+                    <div class="form_fields_box">
+                        <fieldset>
+                            <div class="form_field">
+                                <label for="Message_ID">ID* </label>
+                                <input id="Message_ID" type="text" disabled>
+                            </div>
+                            <div class="form_field">
+                                <label for="Message_Image">
+                                    Image*
+                                    <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the image you'd like to show for this month's message from the MD. (x * y pixels).">Tooltip</small>
+                                </label>
+                                <div class="image_upload">
+                                    <span>Upload an image</span>
+                                    <input type="file" class="upload" id="Message_Image" disabled />
+                                    <img src="images/search_img_1.jpg" id="img1" />
+                                </div>
+                            </div>
+
+                            <div class="form_field">
+                                <label for="Message_Content">Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the description of the document as it will appear in the intranet.">Tooltip</small></label>
+                                <textarea name="area" id="Message_Content" style="width:100%;height:150px;"></textarea>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+                    <!--End form_fields_box-->
+
+                </div>
+
+
+                <div class="tab_content" id="tab_2">
+
+                    <div class="form_fields_box">
+                        <fieldset>
+
+                            <div class="form_field">
+                                <label for="QA_Creation-Date">Creation Date</label>
+                                <input id="QA_Creation-Date" type="text" disabled placeholder="10/26/2017">
+
+                            </div>
+
+                            <div class="form_field">
+                                <div class="check_field">
+                                    <input type="checkbox" id="userStemAmbassador">
+                                    <label for="userStemAmbassador">Live?<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(Required) Select this checkbox to show this message on the Home Page. This will replace the current message.">Tooltip</small></label>
+                                </div>
+                            </div>
+
+                            <div class="form_field">
+                                <label for="QA_AuthorName">Author Name</label>
+                                <input id="QA_AuthorName" type="text" disabled placeholder="Admin Name">
+                            </div>
+
+
+
+                        </fieldset>
+
+                    </div>
+                    <!--End form_fields_box-->
+
+                </div>
+
+
+            </div>
+            <!--End forom_wrap-->
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+    </div>
+    <!--End center_wrap-->
+</div>
+<!--End full_width-->
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+
+    $("input:file[class=upload]").change(function (e) {
+    var FileUpload = $(this).attr('id');
+    if (this.files && this.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+
+    $("#" + FileUpload).next("img").attr('src', e.target.result);
+
+    }
+    reader.readAsDataURL(this.files[0]);
+    }
+
+
+    });
+
+    /<![CDATA[
+    bkLib.onDomLoaded(function() {
+    new nicEditor({fullPanel : true,maxHeight : 200}).panelInstance('Message_Content');
+    });
+    //]]>
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemAdminUsers').addClass('current');
+}

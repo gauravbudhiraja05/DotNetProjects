@@ -1,0 +1,126 @@
+﻿@model PickfordsIntranet.ViewModels.EndUser.EndUserVM
+@{
+    ViewData["Title"] = "Edit End User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form id="formEndUser" asp-controller="EndUser" asp-action="EditEndUser"
+      data-ajax-begin="onUpdateBegin" data-ajax-complete="onUpdateComplete"
+      data-ajax-failure="onFailed" data-ajax-success="onUpdateSuccess"
+      data-ajax="true" data-ajax-method="POST">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","EndUser")'">Back</button>
+
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">User Details</a></li>
+            </ul>
+
+            @*<button id="btnSave" type="submit" class="tab_save" onclick="formAdminUser.action = 'formEndUser'; return true;">Save</button>*@
+
+            <button type="button" class="delete_btn">delete</button>
+
+
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Edit End User</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_ID">User ID </label>
+                                    <input asp-for="Id" type="text" disabled>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        First Name*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) First Name.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="FirstName" type="text">
+                                    <span class="error_label" asp-validation-for="FirstName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="User_SecondName">
+                                        Surname*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Surname.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Surname" type="text">
+                                    <span class="error_label" asp-validation-for="Surname"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="User_EmailAddress">
+                                        Email Address*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Email Address.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="EmailAddress" type="text">
+                                    <span class="error_label" asp-validation-for="EmailAddress"></span>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+
+                                <div class="form_field">
+                                    <label for="User_Password">
+                                        Password*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Password.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Password" type="password">
+                                    <span class="error_label" asp-validation-for="Password"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <button type="submit" class="btn_field">Save</button>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+
+</form>
+<!--End full_width-->
+
+<script src="~/js/EndUser/endUser.editEndUser.js" asp-append-version="true"></script>

@@ -1,0 +1,82 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "IntranetVacancies";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+
+<div class="full_width">
+
+    <div class="container">
+
+        <div class="all_case_box">
+            <h2>Pickfords Vacancies</h2>
+            <p>Catch up on the latest vacancies around the business.</p>
+
+            <div class="select_case_studies">
+                <select name="" id="ddlVacanciesDepartment" class="selectpicker">
+                    @if (Model.VacancyDepartmentsList != null)
+                    {
+                        @foreach (var item in Model.VacancyDepartmentsList)
+                        {
+                            <option value="@item.DepartmentId">@item.DepartmentName</option>
+                        }
+                    }
+                    @*<option value="">Show: All Vacancies</option>
+                        <option value="Apprenticeship">Apprenticeship</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Operations">Operations</option>
+                        <option value="Customer Service">Customer Service</option>*@
+                </select>
+            </div>
+
+            <div id="PartialVacancyDiv" class="case_studies_detail news_detail_section news_article">
+
+            </div>
+
+            @*<div class="case_studies_detail news_detail_section news_article">
+
+                    <ul>
+                        @if (Model.VacancyList != null)
+                        {
+                            @foreach (var vacancy in Model.VacancyList)
+                            {
+                                <li>
+                                    <div class="all_case_detail">
+                                        <div class="case_img">
+                                            <span class="case_title">@vacancy.DepartmentName</span>
+                                            <a href="#" id="@vacancy.Id" class="vacancy_detail">
+                                               <img src="@vacancy.ThumbnailImagePath" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="case_detail">
+                                            <p>
+                                                <a href="#" id="@vacancy.Id" class="vacancy_detail">
+                                                    @vacancy.Title
+                                                </a>
+                                            </p>
+                                            <a href="#" id="@vacancy.Id" class="read_more_btn vacancy_detail">Read More</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>*@
+            <!--case_studies_detail end-->
+
+
+        </div>
+
+        <!--all_case_box-->
+
+        <div class="show_more_item more_case_studies"><a href="#">Show More Vacancies</a></div>
+
+
+
+
+    </div>
+    <!-- container -->
+
+</div>
+
+<script src="~/FrontEnd/js/FrontEndHome/vacancyPartialView.js" asp-append-version="true"></script>

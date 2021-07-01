@@ -1,0 +1,377 @@
+﻿@model PickfordsIntranet.ViewModels.Documents.DocumentGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+}
+
+<style>
+    /*.noRecords {
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        padding: 16px 0;
+        float: left;
+    }
+    .noRecords p
+    {
+        margin:0;
+    }*/
+
+</style>
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1 id="headingH1"></h1>
+                <input type="hidden" id="hiddenDepartmentId" value="@(Model.DepartmentId)" />
+                <a href="#" class="create_folder heading_anchor">+ Create New Folder</a>
+            </div>
+            <!--End page_heading-->
+            <input type="hidden" id="OnlyForOpenParentFolder" />
+            <input type="hidden" id="OnlyForOpenSubFolder" />
+
+            <div class="document_listing">
+
+
+
+
+                <div class="doc_table_head">
+
+                    <div class="inner_doc_table">
+                        <div class="th" style="width: 112px;">Document ID</div>
+                        <div class="th" style="width: 420px;">Document Title</div>
+                        <div class="th" style="width: 145px;">Creation Date</div>
+                        <div class="th" style="width: 145px;">Publish Date</div>
+                        <div class="th" style="width: 145px;">Author Name</div>
+                        <div class="th" style="width:75px;text-align: center;">Edit</div>
+                        <div class="th" style="width:75px;text-align: center;">Delete</div>
+                    </div>
+
+
+                </div>
+
+
+                @{ var addChars = "D";
+                    var FolderIdStartChar = "Folder";
+                    var OrderParentFolder = "OrderParentFolder";
+                    var OrderSubFolder = "OrderSubFolder";
+                    var OrderDocuments = "OrderDocuments";
+                }
+
+                @if (Model.Folders.Count > 0)
+                {
+                    <div class="drag_list drag_list_parentFolder parent_folder">
+                        @*for loop first*@
+                        @foreach (var Folder in Model.Folders)
+                        {
+                            @if (Folder.FolderParentId == 0)
+                            {
+
+                                <div class="ui-state-default parentIdFinderDiv" id="@(OrderParentFolder + Folder.FolderId)">
+                                    <span class="ui-icon"></span>
+
+                                    <div class="folder_name openParentFolder">@Folder.FolderName</div>
+
+                                    <div class="add_sub_folder folder_popup " FolderDepartmentId="@Folder.DepartMentId" id="@(FolderIdStartChar + Folder.FolderId)">+ Add Sub Folder</div>
+                                    <input type="hidden" id="getHdnFolderDepartmentId" />
+
+                                    <div class="folder_delete">
+                                        <div class="th" style="width:75px;text-align: center;">
+                                            <button type="button" class="edit_item editFolderName" FolderDepartmentId="@Folder.DepartMentId" parentFolderId="0" folderName="@Folder.FolderName" id="@Folder.FolderId">edit</button>
+                                        </div>
+                                        <div class="th" style="width:75px;text-align: center;">
+                                            <button type="button" id="@Folder.FolderId" class="delete_item parentfolder">delete</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="drag_list drag_list_SubFolder sub_folder">
+                                        @*foor loop second*@
+                                        @foreach (var SubFolder in Model.Folders)
+                                        {
+                                            if (SubFolder.FolderParentId == Folder.FolderId)
+                                            {
+                                                <div class="ui-state-default subFolderCountDiv" id="@(OrderSubFolder + SubFolder.FolderId)">
+                                                    <span class="ui-icon"></span>
+                                                    <div class="folder_name openSubFolder">@SubFolder.FolderName</div>
+                                                    <div class="add_sub_folder doc_popup" FolderDepartmentId="@Folder.DepartMentId" ParentFolderpopupid="@Folder.FolderId" id="@(FolderIdStartChar + SubFolder.FolderId)">+ Add Document</div>
+
+                                                    <div class="folder_delete">
+                                                        <div class="th" style="width:75px;text-align: center;">
+                                                            <button type="button" class="edit_item editFolderName" FolderDepartmentId="@Folder.DepartMentId" parentFolderId="@Folder.FolderId" folderName="@SubFolder.FolderName" id="@SubFolder.FolderId">edit</button>
+                                                        </div>
+                                                        <div class="th" style="width:75px;text-align: center;">
+                                                            <button type="button" id="@SubFolder.FolderId" ParentFolderpopupid="@Folder.FolderId" SubFolderpopId="0" class="delete_item childfolder">delete</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="drag_list drag_list_Documents sub_doc">
+
+                                                        @*for loop third*@
+                                                        @foreach (var document in Model.Documents)
+                                                        {
+                                                            if (document.ParentFolderId == Folder.FolderId && document.SubFolderId == SubFolder.FolderId)
+                                                            {
+                                                                <div class="ui-state-default documentCountDiv" id="@(OrderDocuments + document.DocumentId)">
+                                                                    <span class="ui-icon"></span>
+
+                                                                    <div class="th_table">
+                                                                        <div class="th" style="width: 112px;">@document.DocumentCode</div>
+                                                                        <div class="th" style="width: 420px;">@document.Title</div>
+                                                                        <div class="th" style="width: 145px;">@document.DocCreationDate</div>
+                                                                        <div class="th" style="width: 145px;">@document.DocPublishDate</div>
+                                                                        <div class="th" style="width: 145px;">@document.ListAuthorName</div>
+                                                                        <div class="th" style="width:75px;text-align: center;">
+                                                                            <button type="button" class="edit_item  editDocumentbtn" FolderDepartmentId="@Folder.DepartMentId" ParentFolderpopupid="@Folder.FolderId" SubFolderpopId="@SubFolder.FolderId" id="@document.DocumentId">edit</button>
+                                                                        </div>
+                                                                        <div class="th" style="width:75px;text-align: center;">
+                                                                            <button type="button" id="@document.DocumentId" ParentFolderpopupid="@Folder.FolderId" SubFolderpopId="@SubFolder.FolderId" class="delete_item documentfolder">delete</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            }
+                                                        }
+
+
+                                                    </div>
+
+                                                </div>
+
+                                            }
+
+
+                                        }
+
+                                    </div>
+
+                                </div>
+                            }
+
+
+                        }
+
+                    </div>
+                }
+                else
+                {
+                    <div class="noRecords">
+                        <p>There is no documents yet!</p>
+                    </div>
+
+                }
+                <div class="create_folder_area">
+
+                    <a href="#" class="create_folder">+ Create New Folder</a>
+
+                </div>
+
+
+            </div>
+            <!--End document_listing-->
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+
+    </div>
+    <!--End center_wrap-->
+
+</div>
+<!--End full_width-->
+@*Add Edit Documents Starts*@
+<div class="popup_window" id="add_doc_popup">
+
+    <button type="button" class="popup_close_btn"></button>
+
+    <input type="hidden" id="subfolderIdForDoc" />
+    <input type="hidden" id="docDocumentId" />
+    <input type="hidden" id="docFileTypeId" />
+
+    <div class="popup_title" id="div_docHeading">Add / Edit Document</div>
+    <form id="FormUpload"
+          enctype="multipart/form-data" method="post">
+        <div class="popup_form_fields">
+
+            <fieldset>
+                <div class="form_field">
+                    <label for="User_ID">Document ID* </label>
+                    <input id="User_ID" type="text" disabled>
+                    <input id="HiddenDocumentId" type="hidden" />
+                </div>
+
+                <div class="form_field">
+                    <label for="Choose_Type"> Type </label>
+                    <div class="select_div">
+                        <select asp-for="Type" name="Type">
+                            <option value="Document">Document</option>
+                            <option value="Link">Link</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form_field">
+                    <label for="Document_Title">
+                        Document Title*
+                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the title of the document as it will appear in the intranet.">Tooltip</small>
+                    </label>
+                    <input asp-for="DocumentTitle" type="text" id="doctitle">
+                    <span class="error_label" asp-validation-for="DocumentTitle"></span>
+                    <div id="lblDocTitleError" style="color: red;"></div>
+                </div>
+
+                <div class="form_field">
+                    <label for="User_SecondName">
+                        Document Description
+                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the description of the document as it will appear in the intranet.">Tooltip</small>
+                    </label>
+                    <input asp-for="DocumentDescription" type="text" id="docdescription">
+                    <span class="error_label" asp-validation-for="DocumentDescription"></span>
+                    <div id="lblDocDescriptionError" style="color: red;"></div>
+                </div>
+                <div class="form_field">
+                    <label for="Choose_Folder">     Folder </label>
+                    <div class="select_div">
+                        <select id="ChooseFolderName"></select>
+                    </div>
+                </div>
+
+                <div class="form_field">
+                    <label for="Choose_SubFolder"> Sub Folder </label>
+                    <div class="select_div">
+                        <select id="ChooseSubFolderName"></select>
+                    </div>
+                </div>
+
+                <div class="form_field">
+                    <label for="datetimepicker1">Creation Date</label>
+                    <input type="text" asp-for="CreationDate" disabled placeholder="MM/DD/YYYY">
+
+                </div>
+
+                <div class="form_field">
+                    <label for="datetimepicker2">Publish Date</label>
+                    <div class="datepicker_field">
+                        <input type="text" class="datepicker-here" asp-for="PublishDateDisplay" readonly data-language='en' />
+                        <div id="lblDocPublishDateError" style="color: red;"></div>
+                    </div>
+
+                </div>
+
+                <div class="form_field">
+                    <label for="NewsAuthorName">Author Name</label>
+                    <input disabled="disabled" asp-for="DefaultDocumentAddAuthorName" type="text" placeholder="Admin Name">
+                    <input type="hidden" asp-for="DefaultDocumentAddAuthorName" />
+                    <div id="lblDocAuthorNameError" style="color: red;"></div>
+                </div>
+
+                <div class="form_field">
+                    <div class="check_field">
+                        <input type="checkbox" asp-for="IsFeatureDocument" id="IsFeaturedDocBox">
+                        <label for="Documents_FeatureOnHomePage?">Featured Document<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(Optional) Check this box to show this document in the quick links menu on the Department Landing Page. ">Tooltip</small></label>
+                    </div>
+                </div>
+
+                <div class="form_field">
+                    <div class="check_field">
+                        <input type="checkbox" asp-for="IsPublishDocument" id="IsPublishedDocBox">
+                        <label for="Documents_PublishOnHomePage?">Publish this Document<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(Optional) Check this to publish this document. ">Tooltip</small></label>
+                    </div>
+                </div>
+
+
+                <div class="form_field" id="divLinkDestination">
+
+                    <label for="Link_Destination">
+                        Link Destination
+                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the link of this document">Tooltip</small>
+                    </label>
+                    <input asp-for="LinkDestination" type="text" >
+                    <span class="error_label" asp-validation-for="LinkDestination" id="errorLinkDestination"></span>
+                </div>
+
+
+                <div class="form_field" id="divFileUpload">
+                    <div class="form_field">
+                        <span class="error_label" asp-validation-for="UploadFile"></span>
+                        <label for="Message_Image">
+                            Upload file
+                            <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) For download items, select a file you would link to link to for this item.">Tooltip</small>
+
+                        </label>
+                        <div class="image_upload">
+                            <span>Select Document</span>
+                            <input type="file" class="upload" asp-for="UploadFile" />
+                        </div>
+                        <div id="docFileName"></div>
+                        <div id="lblDocError" style="color: red;"></div>
+                        <span id="errorDuplicateDocTitleName" style="color: red;margin-top:15px;">The document title already exists in this sub folder. Please enter an alternative.</span>
+                    </div>
+                    @*</div>*@
+
+                </div>
+
+                <div class="form_field save_field">
+                    <input type="button" value="Save" id="AddDocumentBtn" class="save_btn" />
+                </div>
+
+
+            </fieldset>
+
+        </div>
+    </form>
+
+</div>
+@*Add Edit Documents ends*@
+
+@*Add Edit Folder starts*@
+<div class="popup_window" id="add_folder_popup">
+
+    <button type="button" class="popup_close_btn"></button>
+
+    <div class="popup_title">Add / Edit Folder</div>
+
+    <div class="popup_form_fields">
+
+        <fieldset>
+            <div class="form_field">
+                <label for="folder_name">Folder Name</label>
+
+                <input id="folder_name" class="txtfolderNamePopUp" type="text">
+                <span id="errorMsgFolderName" style="color: red;margin-top:15px;">
+                    Please enter a folder name.
+                </span>
+                <span id="errorMsgSubFolderName" style="color: red;margin-top:15px;">
+                    Please enter a sub folder name.
+                </span>
+                <span id="errorDuplicateFolderName" style="color: red;margin-top:15px;">
+                    The folder name already exists in this department! Please enter an alternative.
+                </span>
+                <span id="errorDuplicateSubFolderName" style="color: red;margin-top:15px;">
+                    The sub folder name already exists in this folder! Try with another name
+                </span>
+            </div>
+
+
+            <div class="form_field save_field">
+                <input type="submit" value="Save" id="saveFolderBtn" class="save_btn" />
+            </div>
+
+
+        </fieldset>
+
+    </div>
+
+
+</div>
+@*Add Edit Folder end*@
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>
+<script src="~/js/Documents/documents.partial.js" asp-append-version="true"></script>
+<script src="~/js/DocumentDragDrop.js" asp-append-version="true"></script>

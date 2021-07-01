@@ -1,0 +1,275 @@
+﻿@model PickfordsIntranet.ViewModels.LeaveRequest.LeaveRequestLM
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+.leave_step_title, .leave_step_content, .leave_step_content p, .leave_reason_list, .leave_reason_list ul li label, .leave_reason_list ul li input[type="text"], .upload_doc_field label, .doc_upload .file_path, .doc_upload span {font-family: 'Roboto', sans-serif;}
+</style>
+
+<form id="formAddLeaveRequestLM" name="formAddLeaveRequestLM" data-ajax="true" data-ajax-method="POST">
+    <div class="tab_menu">
+        <div class="center_wrap">
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","LeaveManagement")'">Back</button>
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">Leave Request</a></li>
+            </ul>
+            <button id="btnCreateLMLeaves" type="button" class="tab_save">Save</button>
+            <input type="hidden" asp-for="LeaveID" />
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Add / Edit Leave Request</h1>
+                </div>
+                <div class="form_wrap">
+                    <div class="tab_content" id="tab_1">
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field" id="divEmployee">
+                                    <label for="EmployeeId">Select Employee*</label>
+                                    <div class="select_div">
+                                        <select asp-for="UserId" asp-items="@(new SelectList(Model.employees,"Id", "EmployeeName"))"></select>
+                                    </div>
+                                    <span class="error_label error_msg" asp-validation-for="UserId"></span>
+                                </div>
+                                <div id="partialEmployeeDetails" style="display:none;"></div>
+                            </fieldset>
+
+                            <div class="booked_leave_list">
+                                <p>Other Approved Leave in your Team</p>
+                                <div class="booked_leave_table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                            </tr>
+                                            @foreach (var item in Model.ApprovedLeaveMembers)
+                                            {
+                                                <tr>
+                                                    <td>@item.Name</td>
+                                                    <td>@item.StartDayName @item.StartDayOfMonth @item.StartMonth (@item.StartTime)</td>
+                                                    <td>@item.EndDayName @item.EndDayOfMonth @item.EndMonth (@item.EndTime)</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div id="divbankholidays" style="display:none;">
+                                    @for (int index = 0; index < Model.BankHolidays.Count; index++)
+                                    {
+                                        @Model.BankHolidays[index].BankHolidays.Replace(@Model.BankHolidays[index].BankHolidays, "'" + @Model.BankHolidays[index].BankHolidays + "',")
+
+                                    }
+                                </div>
+                                <input type="hidden" asp-for="BankHolidayCount" value="" />
+                                <input type="hidden" asp-for="FileName" />
+                                <input type="hidden" id="LeaveTypeDescriptionId" />
+                                <div class="form_field" id="divDateLeaveRequest">
+                                    <label for="DateLeaveRequest">Date Leave Request was submitted</label>
+                                    <input asp-for="DateLeaveRequest" type="text" disabled="">
+                                </div>
+                                <div style="clear:both;"></div>
+                                @*<div class="leave_step leave_step_3">*@
+                                <div class="leave_step_title">About your leave</div>
+                                <div class="leave_step_content">
+                                    <p>Please select the reason for leave below. </p>
+                                    <div class="leave_reason_list">
+                                        <div class="left_side">
+                                            <input type="hidden" asp-for="LeaveTypeId" />
+                                            <ul>
+                                                @{string isAlternativeRow = "False";}
+                                                @foreach (var item in Model.LeaveTypeList)
+                                                {
+                                                    @if (@item.Type.ToLower() == "paid medical")
+                                                    {
+                                                        <li style="@(isAlternativeRow == "True" ? "background: #E9EDF4;" : "")">
+                                                            <div class="reason_radio">
+                                                                <input type="radio" id="@item.LeaveTypeID" class="reason_radio_input" name="LeaveType" onclick="getId(this)">
+                                                                <label for="@item.LeaveTypeID">@item.Type</label>
+                                                            </div>
+                                                            <div class="other_reason_field">
+                                                                <input id="Description_@item.LeaveTypeID" asp-for="Description" type="text" placeholder="Brief Description">
+                                                            </div>
+                                                            <div class="descri_text">
+                                                                <p>SELF - CERTIFICATION</p>
+                                                                <p>(Use this for periods of sickness of up to 7 working days. For 8 days or more, a Doctors certificate MUST be provided.)</p>
+                                                                <p>I was unable to attend work for the period shown above because of illness / injury.</p>
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                    else if (@item.Type.ToLower() == "other")
+                                                    {
+                                                        <li class="other_reason" style="@(isAlternativeRow == "True" ? "background: #E9EDF4;" : "")">
+                                                            <div class="reason_radio">
+                                                                <input type="radio" id="@item.LeaveTypeID" name="LeaveType" class="reason_radio_input other_reason_radio" onclick="getId(this)">
+                                                                <label for="@item.LeaveTypeID">@item.Type <small>(please specify):</small></label>
+                                                            </div>
+                                                            <div class="other_reason_field">
+                                                                <input id="Description_@item.LeaveTypeID" asp-for="Description" type="text" placeholder="Brief Description">
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                    else if (@item.Type.ToLower() == "paid sickness")
+                                                    {
+                                                        <li>
+                                                            <div class="reason_radio" style="@(isAlternativeRow == "True" ? "background: #E9EDF4;" : "")">
+                                                                <input type="radio" id="@item.LeaveTypeID" class="reason_radio_input" name="LeaveType" onclick="getId(this)">
+                                                                <label for="@item.LeaveTypeID">@item.Type</label>
+                                                            </div>
+                                                            <div class="other_reason_field">
+                                                                <input id="Description_@item.LeaveTypeID" asp-for="Description" type="text" placeholder="Brief Description">
+                                                            </div>
+                                                            <div class="descri_text">
+                                                                <p>SELF - CERTIFICATION</p>
+                                                                <p>(Use this for periods of sickness of up to 7 working days. For 8 days or more, a Doctors certificate MUST be provided.)</p>
+                                                                <p>I was unable to attend work for the period shown above because of illness / injury.</p>
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                    else
+                                                    {
+                                                        <li style="@(isAlternativeRow == "True" ? "background: #E9EDF4;" : "")">
+                                                            <div class="reason_radio">
+                                                                <input type="radio" id="@item.LeaveTypeID" class="reason_radio_input" name="LeaveType" onclick="getId(this)">
+                                                                <label for="@item.LeaveTypeID">@item.Type</label>
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                    @if (isAlternativeRow == "True")
+                                                    {
+                                                        isAlternativeRow = "False";
+                                                    }
+                                                    else
+                                                    {
+                                                        isAlternativeRow = "True";
+                                                    }
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span class="error_label error_msg" asp-validation-for="LeaveTypeId"></span>
+                                    <div class="upload_doc_field">
+                                        <label>Are there any documents to support your reason for leave? Please upload here</label>
+
+                                        <div class="doc_upload">
+                                            <input type="file" class="upload" id="upload1" asp-for="FileNameData">
+                                            <div class="file_path">No file chosen</div>
+                                            <span>browse</span>
+                                            <div style="float: right;margin-top: 10px;" id="divDownloadedFileLink">
+                                                <a id="aDownloadLink" href="#" target="_blank" class="doc_name">Downloaded file link</a>
+                                            </div>
+                                        </div>
+                                        <span class="error_label" asp-validation-for="FileNameData"></span>
+                                    </div>
+                                </div>
+                                @*</div>*@
+
+                                <div class="form_field">
+                                    <label for="peu_f_date">First Day of Leave*</label>
+                                    <div class="datepicker_field">
+                                        <input asp-for="StartDate" type="text" class="LMLeaveRequestDate" data-language="en">
+                                    </div>
+                                    <span class="error_label" asp-validation-for="StartDate"></span>
+                                </div>
+
+                                <div class="step_time_radio">
+                                    <div class="time_radio_field">
+                                        <input type="radio" id="am_1" name="StartTime" asp-for="StartTime" value="MORNING" />
+                                        <label for="am_1">MORNING</label>
+                                    </div>
+                                    <div class="time_radio_field">
+                                        <input type="radio" id="pm_1" name="StartTime" asp-for="StartTime" value="AFTERNOON" />
+                                        <label for="pm_1">AFTERNOON</label>
+                                    </div>
+                                    <br />
+                                    <span class="error_label" asp-validation-for="StartTime"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="peu_back_date">Returns Back to Work on*</label>
+                                    <div class="datepicker_field">
+                                        <input asp-for="EndDate" type="text" class="LMLeaveRequestEndDate" data-language="en">
+                                    </div>
+                                    <span class="error_label" asp-validation-for="EndDate"></span>
+                                </div>
+
+                                <div class="step_time_radio">
+                                    <div class="time_radio_field">
+                                        <input type="radio" id="am_2" name="EndTime" asp-for="EndTime" value="MORNING" />
+                                        <label for="am_2">MORNING</label>
+                                    </div>
+                                    <div class="time_radio_field">
+                                        <input type="radio" id="pm_2" name="EndTime" asp-for="EndTime" value="AFTERNOON" />
+                                        <label for="pm_2">AFTERNOON</label>
+                                    </div>
+                                    <br />
+                                    <span class="error_label" asp-validation-for="EndTime"></span>
+                                </div>
+
+                                <div class="form_field" id="divLeaveDurationDays">
+                                    <label asp-for="LeaveDuration">Leave Duration (Days)</label>
+                                    <input asp-for="LeaveDuration" type="text" disabled="">
+                                </div>
+
+
+                                <div class="form_field">
+                                    <label for="News_Department">Status*</label>
+                                    <div class="select_div">
+                                        <select asp-for="Status" asp-items="@(new SelectList(Model.StatusList,"LeaveStatus", "LeaveStatus"))"></select>
+                                    </div>
+                                    <span class="error_label error_msg" asp-validation-for="Status"></span>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label asp-for="ApprovedDate">Approved on</label>
+                                    <input asp-for="ApprovedDate" type="text" disabled="">
+                                </div>
+
+
+
+                                <div class="form_field rewards_testi-1">
+                                    <label for="News_Department">Note about leave (if present, these notes will be included in the email that is sent to the member of staff who requested this leave)</label>
+                                    <textarea asp-for="Comment"></textarea>
+                                </div>
+
+                                <div class="confirm_popup">
+                                    <button type="button" class="confclose_btn"></button>
+
+                                    <div class="confirm_popup_inner">
+                                        <div class="title">Confirm</div>
+                                        <div class="desc">Are you sure you want to send this award? If so, the Award Recipient will receive their thank you email and HR will be notified to fulfil this award.</div>
+                                        <input type="submit" value="Yes">
+                                        <input type="submit" value="No">
+                                    </div>
+
+                                </div>
+                                <input asp-for="PreviousLeaveStatus" type="hidden" />
+                                <div class="confirm_popup_overlay"></div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script asp-append-version="true" src="~/FrontEnd/js/LeaveManagement/datepicker.min.js"></script>
+<script asp-append-version="true" src="~/FrontEnd/js/LeaveManagement/datepicker.en.js"></script>
+<script src="~/js/LeaveRequest/EmployeeDetails.js" asp-append-version="true"></script>

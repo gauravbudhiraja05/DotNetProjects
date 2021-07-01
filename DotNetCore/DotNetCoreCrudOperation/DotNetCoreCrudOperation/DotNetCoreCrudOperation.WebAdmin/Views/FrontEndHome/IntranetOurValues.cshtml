@@ -1,0 +1,131 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "IntranetOurValues";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+
+@if (Model.OurValuesDetail != null)
+{
+    <div class="about-banner">
+        <div class="banner_center_area">
+            <div class="inner_page_banner" style="background-image:url(/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.ValueBackgroundImage);">
+                <div class="container">
+
+                    <div class="banner_inner_section">
+                        <div class="banner_title">
+                            @Model.OurValuesDetail.ValueTitle
+                        </div>
+                    </div>
+                </div>
+                <!-- container -->
+
+            </div>
+            <!-- inner_page_banner -->
+
+        </div>
+        <!-- banner_center_area -->
+
+    </div>
+    <!-- banner -->
+
+    <div class="full_width">
+        <div class="container">
+
+            <div class="about-quote-main">
+                <div class="resource_box_area pickfords-uk-main">
+                    <div class="col-sm-6">
+                        @Html.Raw(Model.OurValuesDetail.ValueTopLeftText)
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="blue_large_title">
+                            @Html.Raw(Model.OurValuesDetail.ValueTopRightText)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----about Pickford  end--->
+
+            <div class="news_advice_area international_news_area international-about-us">
+                <div class="col-sm-6 international_network">
+                    <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.CommunicationImage" />
+                    <div class="international_content">
+                        <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.CommunicationIcon" alt="" />
+                    </div>
+                </div>
+                <!-- news_area -->
+
+                <div class="col-sm-6 advice_area">
+                    <div class="big_title">@Model.OurValuesDetail.CommunicationTitle</div>
+                    <p>@Html.Raw(Model.OurValuesDetail.CommunicationContent)</p>
+                </div>
+                <!-- advice_area -->
+
+            </div>
+            <!-- news_advice_area -->
+
+            <div class="news_advice_area international_news_area international-about-us">
+
+
+                <div class="col-sm-6 advice_area">
+                    <div class="big_title">@Model.OurValuesDetail.DedicationTitle</div>
+                    <p> @Html.Raw(Model.OurValuesDetail.DedicationContent)</p>
+                </div>
+                <!-- advice_area -->
+
+                <div class="col-sm-6 international_network">
+                    <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.DedicationImage" alt="image">
+                    <div class="international_content">
+                        <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.DedicationIcon" alt="" />
+                    </div>
+                </div>
+                <!-- news_area -->
+
+            </div>
+            <!-- news_advice_area -->
+
+            <div class="news_advice_area international_news_area international-about-us">
+                <div class="col-sm-6 international_network">
+                    <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.CareImage" alt="image">
+                    <div class="international_content">
+                        <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.CareIcon" alt="" />
+                    </div>
+                </div>
+                <!-- news_area -->
+
+                <div class="col-sm-6 advice_area">
+                    <div class="big_title">@Model.OurValuesDetail.CareTitle</div>
+                    <p>@Html.Raw(Model.OurValuesDetail.CareContent)</p>
+                </div>
+                <!-- advice_area -->
+
+            </div>
+            <!-- news_advice_area -->
+
+            <div class="news_advice_area international_news_area international-about-us">
+
+
+                <div class="col-sm-6 advice_area">
+                    <div class="big_title">@Model.OurValuesDetail.ExcellentTitle</div>
+                   <p>@Html.Raw(Model.OurValuesDetail.ExcellentContent)</p>
+                </div>
+                <!-- advice_area -->
+
+                <div class="col-sm-6 international_network">
+                    <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.ExcellentImage" alt="image">
+                    <div class="international_content">
+                        <img src="~/fileserver/Uploads/Admin/OurValues/@Model.OurValuesDetail.ExcellentIcon" alt="" />
+                    </div>
+                </div>
+                <!-- news_area -->
+
+            </div>
+            <!-- news_advice_area -->
+
+        </div>
+        <!-- container -->
+
+    </div>
+
+}

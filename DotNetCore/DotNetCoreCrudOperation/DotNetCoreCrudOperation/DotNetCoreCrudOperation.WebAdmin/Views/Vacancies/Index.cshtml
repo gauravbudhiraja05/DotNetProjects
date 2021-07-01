@@ -1,0 +1,65 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.Vacancy.VacancyListGridItemVM
+@{
+    ViewData["Title"] = "Vacancy";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            <button type="button" id="btnAddVacancy" class="add_new_list_item">Add new</button>
+            <button type="button" id="btnDeleteSelected" disabled="disabled" class="delete_list_item">delete</button>
+        </div>
+
+        <div class="top_filter_right">
+            @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value == "SA")
+            {
+                <div class="drop_menu">
+                    <ul>
+                        <li>
+                            <a href="#">Filter by department...</a>
+                            <ul class="drop_menu_sub">
+                                @foreach (var dept in Model.AllDepartments)
+                                {
+                                    <li><a class="deptClick" href="#" id="@dept.DepartmentId">@dept.DepartmentName</a></li>
+                                }
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            }
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchNewsUp" disabled="disabled" class="form-control" placeholder="Search">
+                    <input type="submit" disabled id="btnSearch" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnUserRoleType" value="@HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value" />
+
+                    @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value == "DA")
+                    {
+                        <input type="hidden" id="hdnDepartmentId" value="@Model.SelectedDepartmentDetails.DepartmentId" />
+                        <input type="hidden" id="hdnDepartmentName" value="@Model.SelectedDepartmentDetails.DepartmentName" />
+                        <input type="hidden" id="hdnDepartmentId_Back" />
+                    }
+                    @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value == "SA")
+                    {
+                        <input type="hidden" id="hdnDepartmentId" />
+                        <input type="hidden" id="hdnDepartmentName" />
+                        <input type="hidden" id="hdnDepartmentId_Back" />
+                    }
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+        <div id="partialVacancy" style="display:none;" class="content_wrap"></div>
+    </div>
+</div>
+<script src="~/js/Vacancy/vacancy.index.js" asp-append-version="true"></script>
+@*<script src="~/js/common.js"></script>*@

@@ -1,0 +1,139 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "IntranetNewsDetail";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+<div class="inner_page">
+    <div class="container">
+
+        @if (Model.NewsDetail != null)
+        {
+
+            <div class="breadcrumb_area">
+                <ul>
+                    <li><a href="#" class="my_index">Home</a></li>
+                    <li><a href="#" class="read_allnews">News</a></li>
+                    <li>
+                        @Model.NewsDetail.Title
+                    </li>
+                </ul>
+
+            </div>
+            <!-- breadcrumb_area -->
+
+            <div class="back_link"><a href="#" class="read_allnews">Back to News</a></div>
+
+            @if (Model.NewsDetail.MainImage != null)
+            {
+                <div class="inner_banner">
+                    <img src="~/fileserver/Uploads/Images/News/@Model.NewsDetail.MainImagePath" alt="" />
+                    <div class="inner_banner_title">
+                        <h1>
+                            <span>
+                                @Model.NewsDetail.Title
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="case_detail_area">
+                    <div class="business_moving">
+                        <span>
+                            @Model.NewsDetail.PublishDateDisplay
+                        </span>
+                    </div>
+                    <div class="case_detail_content">
+                        <h2>@Model.NewsDetail.TeaserText</h2>
+
+                        @if (!string.IsNullOrEmpty(Model.NewsDetail.Content1) && !Model.NewsDetail.Content1.StartsWith("<p>"))
+                        {
+                            Model.NewsDetail.Content1 = "<p>" + Model.NewsDetail.Content1 + "</p>";
+                        }
+                        @Html.Raw(Model.NewsDetail.Content1)
+
+                        @if (Model.NewsDetail.AdditionalImage1Path != null && Model.NewsDetail.AdditionalImage2Path != null)
+                        {
+                            <div class="content_img_area">
+                                @if (Model.NewsDetail.AdditionalImage1Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="~/fileserver/Uploads/Images/News/@Model.NewsDetail.AdditionalImage1Path" alt="" />
+                                    </div>
+                                }
+                                @if (Model.NewsDetail.AdditionalImage2Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="~/fileserver/Uploads/Images/News/@Model.NewsDetail.AdditionalImage2Path" alt="" />
+                                    </div>
+                                }
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.NewsDetail.Content2) && !Model.NewsDetail.Content2.StartsWith("<p>"))
+                        {
+                            Model.NewsDetail.Content2 = "<p>" + Model.NewsDetail.Content2 + "</p>";
+                        }
+                        @Html.Raw(Model.NewsDetail.Content2)
+
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="inner_banner">
+                    @*<img alt="" />*@
+                    <div class="inner_banner_title">
+                        <h1>
+                            <span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="case_detail_area">
+                    <div class="article_heading">
+                        <h1>@Model.NewsDetail.Title</h1>
+                    </div>
+                    <div class="business_moving">
+                        <span>
+                            @Model.NewsDetail.PublishDateDisplay
+                        </span>
+                    </div>
+                    <div class="case_detail_content">
+                        <h2> @Model.NewsDetail.TeaserText</h2>
+
+                        @if (!string.IsNullOrEmpty(Model.NewsDetail.Content1) && !Model.NewsDetail.Content1.StartsWith("<p>"))
+                        {
+                            Model.NewsDetail.Content1 = "<p>" + Model.NewsDetail.Content1 + "</p>";
+                        }
+                        @Html.Raw(Model.NewsDetail.Content1)
+
+                        @if (Model.NewsDetail.AdditionalImage1Path != null && Model.NewsDetail.AdditionalImage2Path != null)
+                        {
+                            <div class="content_img_area">
+                                @if (Model.NewsDetail.AdditionalImage1Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="~/fileserver/Uploads/Images/News/@Model.NewsDetail.AdditionalImage1Path" alt="" />
+                                    </div>
+                                }
+                                @if (Model.NewsDetail.AdditionalImage2Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="~/fileserver/Uploads/Images/News/@Model.NewsDetail.AdditionalImage2Path" alt="" />
+                                    </div>
+                                }
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.NewsDetail.Content2) && !Model.NewsDetail.Content2.StartsWith("<p>"))
+                        {
+                            Model.NewsDetail.Content2 = "<p>" + Model.NewsDetail.Content2 + "</p>";
+                        }
+                        @Html.Raw(Model.NewsDetail.Content2)
+
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+

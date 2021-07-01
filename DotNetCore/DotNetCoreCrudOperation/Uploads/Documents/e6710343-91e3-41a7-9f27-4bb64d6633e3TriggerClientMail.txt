@@ -1,0 +1,129 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Net.Mail;
+using MagentoPGSage.code;
+using System.Configuration;
+
+namespace MagentoPGSage
+{
+    public partial class TriggerClientMail : System.Web.UI.Page
+    {
+
+        //public string EbayDownloadedFilePath = "ebayAPI/EbayStockUpdateFiles/ResponseFile/";
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            SendMail();
+        }
+
+        #region send Mail
+        public void SendMail()
+        {
+
+            #region Sage order import error logs
+            string textBody = Environment.NewLine + Environment.NewLine + "SageOrderImportdata Errors" + Environment.NewLine;
+            var SageOrderImportdata_table = GetSageOrderImportErrorLogs();
+            textBody += " <table border=" + 1 + " cellpadding=" + 5 + " cellspacing=" + 2 + "><tr bgcolor='#4da6ff'><td><b>Row No</b></td> <td> <b>Magento Order EntityID</b> </td> <td><b>IncrementID</b></td> <td><b>IsSageUpdated</b></td> <td><b>SageImportStatus</b></td> <td><b>ErrorDetail</b></td> <td><b>Created Date</b></td> </tr>";
+            for (int loopCount = 0; loopCount < SageOrderImportdata_table.Rows.Count; loopCount++)
+            {
+                textBody += "<tr><td>" + (loopCount + 1) + "</td><td> " + SageOrderImportdata_table.Rows[loopCount]["MagentoOrderEntityID"] + "</td><td> " + SageOrderImportdata_table.Rows[loopCount]["IncrementID"] + "</td><td> " + SageOrderImportdata_table.Rows[loopCount]["IsSageUpdated"] + "</td><td> " + SageOrderImportdata_table.Rows[loopCount]["SageImportStatus"] + "</td><td> " + SageOrderImportdata_table.Rows[loopCount]["ErrorDetail"] + "</td><td> " + SageOrderImportdata_table.Rows[loopCount]["CreatedDate"] + "</td> </tr>";
+            }
+            textBody += "</table>";
+            #endregion
+
+         
+
+            #region Amazon Orders Update Error
+            var data_table = GetAmazonFragilisticOrders();
+            textBody += Environment.NewLine + Environment.NewLine + "Amazon Orders Update " + Environment.NewLine;
+            textBody += " <table border=" + 1 + " cellpadding=" + 5 + " cellspacing=" + 2 + "><tr bgcolor='#4da6ff'><td><b>Row No</b></td> <td> <b>OrderId</b> </td> <td><b>Order Status</b></td> <td><b>Delivery Company</b></td> <td><b>Update Status</b></td> <td><b>Logged Date</b></td> </tr>";
+
+            for (int loopCount = 0; loopCount < data_table.Rows.Count; loopCount++)
+            {
+                textBody += "<tr><td>" + (loopCount + 1) + "</td><td> " + data_table.Rows[loopCount]["OrderId"] + "</td><td> " + data_table.Rows[loopCount]["OrderStatus"] + "</td><td> " + data_table.Rows[loopCount]["DeliveryCompany"] + "</td><td> " + "Failed" + "</td><td> " + data_table.Rows[loopCount]["CreatedDate"] + "</td> </tr>";
+            }
+            textBody += "</table>";
+
+            #endregion
+
+            #region Ebay Stock Update Error
+            var EbayDataTable = GetEbayFailedStockUpdate();
+
+            foreach (var error in EbayDataTable.Rows)
+            {
+ 
+            
+            }
+
+
+            textBody += Environment.NewLine + Environment.NewLine + "Ebay Stcok Update " + Environment.NewLine;
+            textBody += " <table border=" + 1 + " cellpadding=" + 5 + " cellspacing=" + 2 + "><tr bgcolor='#4da6ff'><td><b>Row No</b></td> <td> <b>OrderId</b> </td> <td><b>Order Status</b></td> <td><b>Delivery Company</b></td> <td><b>Update Status</b></td> <td><b>Logged Date</b></td> </tr>";
+
+            for (int loopCount = 0; loopCount < data_table.Rows.Count; loopCount++)
+            {
+                textBody += "<tr><td>" + (loopCount + 1) + "</td><td> " + data_table.Rows[loopCount]["OrderId"] + "</td><td> " + data_table.Rows[loopCount]["OrderStatus"] + "</td><td> " + data_table.Rows[loopCount]["DeliveryCompany"] + "</td><td> " + "Failed" + "</td><td> " + data_table.Rows[loopCount]["CreatedDate"] + "</td> </tr>";
+            }
+            textBody += "</table>";
+
+            #endregion
+
+
+            #region send mail
+            string MailFrom = ConfigurationManager.AppSettings["UploadXMLErrorMailFrom"].ToString();
+            string MailTo = ConfigurationManager.AppSettings["UploadXMLErrorMailTo"].ToString();
+            String Subject = "PG Sage System Error Logs";
+
+            //CustomUtility.SendMail(MailFrom, MailTo, "", "", Subject, textBody);
+
+            string MailFromPassword = "rajeshmishra741";
+            MailMessage mail = new MailMessage();
+            System.Net.Mail.SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+            mail.From = new MailAddress(MailFrom);
+            mail.To.Add(MailTo);
+            mail.Subject = Subject;
+            mail.Body = textBody;
+            mail.IsBodyHtml = true;
+            SmtpServer.Port = 587;
+
+            SmtpServer.Credentials = new System.Net.NetworkCredential(MailFrom, MailFromPassword);
+            SmtpServer.EnableSsl = true;
+
+            SmtpServer.Send(mail);
+
+            #endregion
+
+        }
+        #endregion
+
+
+        #region Get failed Sage order  import logs
+        private DataTable GetSageOrderImportErrorLogs()
+        {
+            MySqlCommands SQL = new MySqlCommands();
+            return SQL.GetDataTableSP("PROC_GetErrorLogsForSageOrderImport", CommandType.StoredProcedure);
+        }
+        #endregion
+
+        #region Get Amazon Fragilistic orders
+        private DataTable GetAmazonFragilisticOrders()
+        {
+            MySqlCommands SQL = new MySqlCommands();
+            return SQL.GetDataTableSP("PROC_GetAmazonFragilisticOrders", CommandType.StoredProcedure);
+        }
+        #endregion
+
+        #region Get Ebay Failed Stock Update 
+        private DataTable GetEbayFailedStockUpdate()
+        {
+            MySqlCommands SQL = new MySqlCommands();
+            return SQL.GetDataTableSP("PROC_GetEbayFailedStockUpdate", CommandType.StoredProcedure);
+        }
+        #endregion
+    }
+}

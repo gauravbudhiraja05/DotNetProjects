@@ -1,0 +1,130 @@
+﻿@model PickfordsIntranet.ViewModels.SuperAdmin.FeaturedMessageVM
+@{
+    ViewData["Title"] = "Edit Featured Message";
+}
+
+<form id="formFeaturedMessage" name="formFeaturedMessage">
+    -
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("FeaturedMessage","SuperAdmin")'">Back</button>
+
+            <ul class="tab_list">
+                <li class="current"><a id="tab1" href="#tab_1">Message Details </a></li>
+                <li><a id="tab2" href="#tab_2">Dates and Publishing</a></li>
+            </ul>
+
+            <button id="btnUpdate" type="button" class="tab_save">Update</button>
+
+                
+        </div>
+
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Edit Featured Message</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Message_ID">ID* </label>
+                                    <input asp-for="MessageCode" type="text" disabled>
+                                    <input type="hidden" asp-for="Id" />
+                                </div>
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorMessageImage"></span>
+                                    <label for="Message_Image">
+                                        Image*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the image you'd like to show for this month's message. (500 * 250 pixels).">Tooltip</small>
+
+                                    </label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="MessageImage" id="fileUploaderImg1" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/FeaturedMessage/" + Model.ImageName)" id="img1" />
+                                        <input type="hidden" asp-for="ImageName" />
+                                    </div>
+                                </div>
+
+                                <div id="divValueFeaturedMeesageContent" class="form_field">
+                                    <label for="Message_Content">Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the description of the document as it will appear in the intranet.">Tooltip</small></label>
+                                    <textarea asp-for="Content" style="width:100%;height:150px;"></textarea>
+                                    <span class="error_label" asp-validation-for="Content"></span>
+                                </div>
+
+                                <div id="hdnDivValueFeaturedMeesageContent" style="display:none"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla tempor, vulputate lectus a, pharetra diam. Fusce hendrerit eros a ipsum malesuada accumsan. Nam venenatis accumsan blandit.</b><br><br>Phasellus maximus sed ipsum at malesuada. Pellentesque sollicitudin mollis dui quis tincidunt. Suspendisse non purus nec elit consequat aliquam. Donec dignissim dignissim felis eu vestibulum. Aliquam auctor posuere nisi vestibulum tempus. Morbi consectetur dui condimentum tincidunt convallis. Praesent ultrices gravida rhoncus.<br><br>Orci varius natoque penatibus et magnis dis parturient montes.<br><br><b>Vestibulum faucibus</b> ,massa sit</div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="QA_Creation-Date">Creation Date</label>
+                                    <div class="datepicker_field">
+                                        <input type="text" asp-for="CreationDateToDisplay" readonly  disabled />
+                                        <span class="error_label" asp-validation-for="CreationDate"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <div class="check_field">
+                                        <input type="checkbox" asp-for="Live">
+                                        <label for="userStemAmbassador">Publish the feature message?<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(Required) Check this to publish the feature message.">Tooltip</small></label>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="QA_AuthorName">Author Name</label>
+                                    <input asp-for="AuthorName" type="text">
+                                    <span class="error_label" asp-validation-for="AuthorName"></span>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+    <!--End full_width-->
+
+</form>
+<script src="~/js/Admin/admin.editFeaturedMessage.js" asp-append-version="true"></script>
+

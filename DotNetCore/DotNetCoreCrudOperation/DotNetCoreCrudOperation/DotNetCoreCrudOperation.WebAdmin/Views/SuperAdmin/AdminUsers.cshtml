@@ -1,0 +1,57 @@
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Admin Users";
+    var roles = HttpContextAccessor.HttpContext.User.Claims?.Where(c => c.Type == ClaimTypes.Role).Select(r => r.Value).ToList();
+}
+
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("AddAdminUser","SuperAdmin")'">Add new</button>
+            <button id="btnDeleteAllCheckedAdminUser" type="button" class="delete_list_item">delete</button>
+
+        </div>
+
+        <div class="top_filter_right">
+            
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#" class="text-center">Filter by Role...</a>
+                        <ul class="drop_menu_sub ">
+                            <li><a class="roleClick" href="#">All</a></li>
+                            <li><a class="roleClick" href="#">Super Administrator</a></li>
+                            <li><a class="roleClick" href="#">Departmental Administrator</a></li>
+                            <li><a class="roleClick" href="#">Line Manager</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchAdminUserList" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div id="divAdminUserList" class="center_wrap">
+
+    </div>
+
+</div>
+<!--End full_width-->
+<!--Modal Popup-->
+<script src="~/js/Admin/admin.adminUsers.js" asp-append-version="true"></script>
+
+

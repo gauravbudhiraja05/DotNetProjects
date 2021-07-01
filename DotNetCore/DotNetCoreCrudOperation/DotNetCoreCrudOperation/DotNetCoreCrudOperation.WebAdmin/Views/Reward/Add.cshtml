@@ -1,0 +1,195 @@
+﻿@model PickfordsIntranet.ViewModels.Rewards.RewardVM
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form id="formAddReward" >
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button"  class="back_btn" onClick="window.location.href='@Url.Action("Rewards","Reward")'">Back</button>
+
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">User Details</a></li>
+            </ul>
+
+            <button id="btnSave" type="button" class="tab_save" disabled >Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Add/Edit Rewards</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_ID">Award ID </label>
+                                    <input type="text" disabled>
+                                </div>
+                               
+                                <div class="form_field">
+                                    <label for="News_Title">Select Reward Recipient*</label>
+
+                                    <div class="search_award_recipt">
+                                        <input id="News_Title" type="text" onkeypress="SearchUserListOnEnterForRewardAdd(event)">
+                                        <input id="RecipientByNamesearchBtn" type="button" class="search_filter_btn" >
+                                    </div>
+                                </div>
+
+                                <div class="reward_rept__list_wrap">
+
+                                </div>
+
+                                <div class="reward_rept_item">
+
+                                    <div class="rept_item_img">
+                                        <img src="" alt="" />
+                                        <input id="hiddenIdSelectedEndUser" type="hidden" val="" />
+                                    </div>
+                                    <div class="rept_item_text">
+                                        <div><strong></strong></div>
+                                        <div></div>
+                                        <div style="margin-bottom: 10px;"></div>
+                                        <div style="font-size: 14px;"><a href="#"></a></div>
+
+                                    </div>
+                                </div>
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+
+                                <div class="form_field">
+                                    <label for="User_Type">
+                                        Value*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the value type">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+
+                                        <select asp-for="ValueId"
+                                                asp-items="@(new SelectList(Model.Values,"Key", "Value"))"></select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="User_Type">
+                                        Reward Type*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the reward type.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="AwardId"
+                                                asp-items="@(new SelectList(Model.Award,"Key", "Value"))"></select>
+                                        <span class="error_label" id="lblDepartmentError"></span>
+                                    </div>
+                                </div>
+                                <div class="form_field" id="divRewardAmountDropDown" style="display:none;">
+                                    <label for="User_Type">
+                                        Amount*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the amount.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="RewardAmount"
+                                                asp-items="@(new SelectList(Model.RewardAmountList,"RewardAmountValue", "RewardAmountText"))"></select>
+                                        <span class="error_label" id="lblRewardAmountDropDownError"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form_field" id="divRewardAmountTextBox" style="display:none;">
+                                    <label for="User_Type">
+                                        Amount*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the amount.">Tooltip</small>
+                                    </label>
+                                    
+                                    <div class="input-group">
+                                        <span class="input-group-addon">£</span>
+                                        <input asp-for="RewardAmountVariable" type="number" value="" step=".01" min="0" max="100">
+
+                                    </div>
+                                    <span class="error_label" id="lblRewardAmountTextBoxError"></span>
+                                </div>
+
+                                <div class="form_field rewards_testi-1">
+                                    <label for="User_FirstName">
+                                        Testimonial
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) First Name.">Tooltip</small>
+                                    </label>
+                                    <textarea asp-for="Testimonial" type="text"></textarea>
+                                    <span class="error_label" asp-validation-for="Testimonial"></span>
+                                </div>
+
+                                <div class="form_field rewards_testi-2">
+                                    <label for="User_FirstName">
+                                        Thank You Message
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) First Name.">Tooltip</small>
+                                    </label>
+                                    <textarea asp-for="ThankYouMsg" type="text"></textarea>
+                                    <span class="error_label" asp-validation-for="ThankYouMsg"></span>
+                                </div>
+
+                                <div class="form_field send_award">
+                                    <button id="btnSendEmail" type="button" disabled class="btn_field">Send Reward</button>
+                                </div>
+
+                                @*<div class="confirm_popup">
+            <button type="button" class="confclose_btn"></button>
+
+            <div class="confirm_popup_inner">
+                <div class="title">Confirm</div>
+                <div class="desc">Are you sure you want to send this award? If so, the Award Recipient will receive their thank you email and HR will be notified to fulfil this award.</div>
+                <input type="button" id="popUpSaveFormAndMail" value="Yes" />
+                <input type="button" id="popUpCancelAction" value="No" />
+            </div>
+
+        </div>
+        <div class="confirm_popup_overlay"></div>*@
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+
+</form>
+<!--End full_width-->
+
+<script src="~/js/Rewards/addReward.js" asp-append-version="true"></script>

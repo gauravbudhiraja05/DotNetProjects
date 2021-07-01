@@ -1,0 +1,283 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.Vacancy.VacancyVM
+@{
+    ViewData["Title"] = "Edit Vacancy";
+}
+
+@* enctype="multipart/form-data" asp-controller="News" asp-action="Update"
+    data-ajax-begin="onBegin" data-ajax-complete="onComplete"
+    data-ajax-failure="onFailed" data-ajax-success="onSuccess"
+    data-ajax="true" data-ajax-method="POST" *@
+<form id="formVacancy" name="formVacancy">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" id="btnBack" class="back_btn">Back</button>
+
+            <ul class="tab_list" id="tabUL">
+                <li class="current"><a href="#tab_1">Vacancy Content</a></li>
+                <li><a href="#tab_2">Vacancy Images</a></li>
+                <li><a href="#tab_3">Publishing and Author</a></li>
+            </ul>
+
+            <button type="button" id="btnSave" class="tab_save">Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Edit Vacancy</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="userId">Vacancy Id* </label>
+                                    <input value="#@Model.VacancyCode" asp-for="VacancyCode" type="text" disabled>
+                                    <input type="hidden" asp-for="Id" />
+                                </div>
+                                <div class="form_field">
+                                    <label for="News_Title">
+                                        Title* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) The title of the News item.">Tooltip</small>
+                                    </label>
+                                    @*<input id="NewsTitle" type="text">*@
+                                    <input asp-for="Title" type="text">
+                                    <span class="error_label" asp-validation-for="Title"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="News_Department">Department* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select which department  this News item belongs to.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value == "SA")
+                                        {
+                                            <select asp-for="DepartmentId"
+                                                    asp-items="@(new SelectList(Model.AllDepartments, "DepartmentId", "DepartmentName"))"></select>
+                                            <input type="hidden" id="hdnDepartmentId" asp-for="DepartmentId" />
+                                        }
+                                        else
+                                        {
+                                            <select disabled="disabled" asp-for="DepartmentId"
+                                                    asp-items="@(new SelectList(Model.AllDepartments, "DepartmentId", "DepartmentName"))"></select>
+                                            <input type="hidden" id="hdnDepartmentId" asp-for="DepartmentId" />
+
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="TeaserText">Teaser Text* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="A short intro for the News item to appear at the top of the News detail page.">Tooltip</small></label>
+                                    <textarea asp-for="TeaserText"></textarea>
+                                    <span class="error_label" asp-validation-for="TeaserText"></span>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+
+                                <div id="divValueVacancyContent1" class="form_field">
+                                    <label for="VacancyContent1">Content 1* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required)The first content field content of the News item shown on the News detail page.">Tooltip</small></label>
+                                    <textarea asp-for="Content1" style="width:100%;height:150px;"></textarea>
+                                    <span class="error_label" asp-validation-for="Content1"></span>
+                                </div>
+
+
+                                <div id="hdnDivValueVacancyContent1" style="display:none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+
+
+                                <div id="divValueVacancyContent2" class="form_field">
+                                    <label for="VacancyContent2">Content 2 <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional) Additional content shown on the News detail page.">Tooltip</small></label>
+                                    <textarea asp-for="Content2" style="width:100%;height:150px;"></textarea>
+                                    <span class="error_label" asp-validation-for="Content2"></span>
+                                </div>
+
+
+                                <div id="hdnDivValueVacancyContent2" style="display:none">Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</div>
+
+                                @*<div class="form_field">
+                                        <div class="check_field">
+                                            <input type="checkbox" asp-for="IsFeatureOnHomePage">
+                                            <label for="News_FeatureOnHomePage?">Feature on Intranet Home Page?<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(Optional) Check this to feature this news item on the Home Page.">Tooltip</small></label>
+                                        </div>
+                                    </div>*@
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+
+
+                    </div>
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Thumbnail Image <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the Vacancy listing page. 235 * 160 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="ThumbnailImg" id="EditfileUploaderImg1" />
+                                        @if (Model.ThumbnailImage != null)
+                                        {
+                                            <img src="@Url.Content("~/fileserver/Uploads/Images/Vacancy/" + Model.ThumbnailImage)" id="img1" />
+                                            <input type="hidden" asp-for="ThumbnailImage" />
+                                            <div class="upload_remove" title="Remove Selected Thumbnail Image" id="remove_EditfileUploaderImg1_img1"></div>
+                                        }
+                                        else
+                                        {
+                                            <img id="img1" />
+                                            <input type="hidden" asp-for="ThumbnailImage" />
+                                            <div class="upload_remove" title="Remove Selected Thumbnail Image" id="remove_EditfileUploaderImg1_img1" style="display:none;"></div>
+                                        }
+                                        <input type="hidden" asp-for="ThumbnailImage" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="ThumbnailImg"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Main Image <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the Vacancy detail page. 1000 * 500 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="MainImg" id="EditfileUploaderImg2" />
+                                        @if (Model.MainImage != null)
+                                        {
+                                            <img src="@Url.Content("~/fileserver/Uploads/Images/Vacancy/" + Model.MainImage)" id="img2" />
+                                            <input type="hidden" asp-for="MainImage" />
+                                            <div class="upload_remove" title="Remove Selected Main Image" id="remove_EditfileUploaderImg2_img2"></div>
+                                        }
+                                        else
+                                        {
+                                            <img id="img2" />
+                                            <input type="hidden" asp-for="MainImage" />
+                                            <div class="upload_remove" title="Remove Selected Main Image" id="remove_EditfileUploaderImg2_img2" style="display:none;"></div>
+                                        }
+                                        <input type="hidden" asp-for="MainImage" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="MainImg"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Additional Image 1 <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the Vacancy detail page. 750 * 500 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="AdditionalImg1" id="EditfileUploaderImg3" />
+                                        @if (Model.AdditionalImage1 != null)
+                                        {
+                                            <img src="@Url.Content("~/fileserver/Uploads/Images/Vacancy/" + Model.AdditionalImage1)" id="img3" />
+                                            <input type="hidden" asp-for="AdditionalImage1" />
+                                            <div class="upload_remove" title="Remove Selected Additional Image" id="remove_EditfileUploaderImg3_img3"></div>
+                                        }
+                                        else
+                                        {
+                                            <img id="img3" />
+                                            <input type="hidden" asp-for="AdditionalImage1" />
+                                            <div class="upload_remove" title="Remove Selected Additional Image" id="remove_EditfileUploaderImg3_img3" style="display:none;"></div>
+                                        }
+                                        <input type="hidden" asp-for="AdditionalImage1" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="AdditionalImg1"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Additional Image 2 <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the Vacancy detail page. 750 * 500 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="AdditionalImg2" id="EditfileUploaderImg4" />
+                                        @if (Model.AdditionalImage2 != null)
+                                        {
+                                            <img src="@Url.Content("~/fileserver/Uploads/Images/Vacancy/" + Model.AdditionalImage2)" id="img4" />
+                                            <input type="hidden" asp-for="AdditionalImage2" />
+                                            <div class="upload_remove" title="Remove Selected Additional Image" id="remove_EditfileUploaderImg4_img4"></div>
+                                        }
+                                        else
+                                        {
+                                            <img id="img4" />
+                                            <input type="hidden" asp-for="AdditionalImage2" />
+                                            <div class="upload_remove" title="Remove Selected Additional Image" id="remove_EditfileUploaderImg4_img4" style="display:none;"></div>
+                                        }
+                                        <input type="hidden" asp-for="AdditionalImage2" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="AdditionalImg2"></span>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+                    <div class="tab_content" id="tab_3">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="datetimepicker1">Creation Date</label>
+                                    <input id="datetimepicker1" type="text" asp-for="CreationDate" disabled placeholder="MM/DD/YYYY">
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="datetimepicker2">Publish Date*</label>
+                                    <div class="datepicker_field">
+
+                                        @*@Html.TextBoxFor(model => model.PublishDateDisplay, new { @class = "form-control datepicker-here publishDate" })*@
+                                        <input type="text" class="form-control date-picker publishDate" asp-for="PublishDateDisplay" readonly data-language='en' />
+                                        <span class="error_label" asp-validation-for="PublishDateDisplay"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="NewsAuthorName">Author Name*</label>
+                                    <input asp-for="AuthorName" type="text" placeholder="Admin Name">
+                                    <span class="error_label" asp-validation-for="AuthorName"></span>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+    <input type="hidden" id='hdnSelectedDepartmentId' name='hdnSelectedDepartmentId' value='@ViewBag.SelectedDepartmentId' />
+</form>
+<script src="~/js/Vacancy/vacancy.editVacancy.js" asp-append-version="true"></script>
+@*<script src="~/js/common.js"></script>*@

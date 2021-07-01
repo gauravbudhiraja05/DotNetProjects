@@ -1,0 +1,341 @@
+﻿@model PickfordsIntranet.ViewModels.SuperAdmin.OurValuesVM
+@{
+    ViewData["Title"] = "Our Values";
+}
+<form id="formOurValues" data-ajax="true" data-ajax-method="POST">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            @*<button type="button" class="back_btn" onClick="window.location.href='index.html'">Back</button>*@
+
+            <ul class="tab_list">
+                <li class="current"><a id="tab1" href="#tab_1">Intro Content</a></li>
+                <li><a href="#tab_2" id="tab2">Communication Content</a></li>
+                <li><a href="#tab_3" id="tab3">Dedication Content</a></li>
+                <li><a href="#tab_4" id="tab4">Care Content</a></li>
+                <li><a href="#tab_5" id="tab5">Excellence Content</a></li>
+            </ul>
+
+            <button id="btnSave" type="button" class="tab_save">Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Edit Our Values</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Values_Title">Title* </label>
+                                    <input id="txtValueTitle" asp-for="ValueTitle" type="text" disabled="disabled">
+                                    <input asp-for="ValueTitle" type="hidden">
+                                    <span class="error_label" asp-validation-for="ValueTitle"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorValueBackgrountImageData"></span>
+                                    <label for="Values_Background-Image">Banner Image* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the banner image for the Our Values page (1349 * 267 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="ValueBackgrountImageData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.ValueBackgroundImage)" id="img1" />
+                                        <input type="hidden" asp-for="ValueBackgroundImage" />
+                                    </div>
+                                </div>
+
+                                <div id="divValueTopLeftText" class="form_field">
+                                    <label for="Values_Top-Left-Text">Top Left Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the content for the top left content panel.">Tooltip</small></label>
+                                    <textarea asp-for="ValueTopLeftText"></textarea>
+                                    <span class="error_label" asp-validation-for="ValueTopLeftText"></span>
+                                    @*<input type="hidden" asp-for="ValueTopLeftText" />*@
+                                </div>
+                                <div id="hdnDivValueTopLeftText" style="display:none">
+                                    <p class="values_heading">What matters to us?</p><p class="Body-Copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales sit amet dolor id scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget luctus augue, imperdiet dictum orci.</p><p class="Body-Copy">Etiam pretium in nulla et consequa nunc viverra, nisi sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget luctus augue, imperdiet dictum orci.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget luctus augue, imperdiet dictum orci.</p>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div id="divValueTopRightText" class="form_field">
+                                    <label for="Values_Top-Right-Text">Top Right Content *<small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the content for the top right content panel.">Tooltip</small></label>
+                                    <textarea asp-for="ValueTopRightText"></textarea>
+                                    <span class="error_label" asp-validation-for="ValueTopRightText"></span>
+                                    <input type="hidden" asp-for="ValueTopRightText" />
+                                </div>
+
+                                <div id="hdnDivValueTopRightText" style="display:none">
+                                    Vestibulum faucibus, massa sit amet purus hendrerit, in pharetra est lacinia. Duis fringilla vestibulum neque in tincidunt.
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+
+
+                    </div>
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Communication_Title">Title* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the title for this value. ">Tooltip</small> </label>
+                                    <input id="txtCommunicationTitle" asp-for="CommunicationTitle" type="text" disabled="disabled">
+                                    <input asp-for="CommunicationTitle" type="hidden">
+                                    <span class="error_label" asp-validation-for="CommunicationTitle"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorCommunicationIcon"></span>
+                                    <label for="Communication_Icon">Icon* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the icon you'd like to show for this value. (206 * 157 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="CommunicationIconData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.CommunicationIcon)" id="img2" />
+                                        <input type="hidden" asp-for="CommunicationIcon" />
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorCommunicationImage"></span>
+                                    <label for="Communication_Image">Image* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the image you'd like to show for this value. (500 * 450 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="CommunicationImageData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.CommunicationImage)" id="img22" />
+                                        <input type="hidden" asp-for="CommunicationImage" />
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div id="divCommunicationContent" class="form_field">
+                                    <label for="Communication_Content">Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the content for this value.">Tooltip</small></label>
+                                    <textarea asp-for="CommunicationContent"></textarea>
+                                    <span class="error_label" asp-validation-for="CommunicationContent"></span>
+                                    <input type="hidden" asp-for="CommunicationContent" />
+                                </div>
+
+                                <div id="hdnDivValueCommunicationContent" style="display:none">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus. Dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus.
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+                    <div class="tab_content" id="tab_3">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Dedication_Title">Title* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the title for this value. ">Tooltip</small> </label>
+                                    <input id="txtDedicationTitle" asp-for="DedicationTitle" type="text" disabled="disabled">
+                                    <input asp-for="DedicationTitle" type="hidden">
+                                    <span class="error_label" asp-validation-for="DedicationTitle"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorDedicationIconData"></span>
+                                    <label for="Dedication_Icon">Icon* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the icon you'd like to show for this value. (213 * 212 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="DedicationIconData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.DedicationIcon)" id="img3" />
+                                        <input type="hidden" asp-for="DedicationIcon" />
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorDedicationImageData"></span>
+                                    <label for="Dedication_Image">Image* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the image you'd like to show for this value. (500 * 450 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="DedicationImageData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.DedicationImage)" id="img33" />
+                                        <input type="hidden" asp-for="DedicationImage" />
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div id="divDedicationContent" class="form_field">
+                                    <label for="Dedication_Content">Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the content for this value.">Tooltip</small></label>
+                                    <textarea asp-for="DedicationContent"></textarea>
+                                    <span class="error_label" asp-validation-for="DedicationContent"></span>
+                                    <input type="hidden" asp-for="DedicationContent" />
+                                </div>
+
+                                <div id="hdnDivValueDedicationContent" style="display:none">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus. Dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus.
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+                    <div class="tab_content" id="tab_4">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Care_Title">Title* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the title for this value. ">Tooltip</small> </label>
+                                    <input id="txtCareTitle" asp-for="CareTitle" type="text" disabled="disabled">
+                                    <input asp-for="CareTitle" type="hidden">
+                                    <span class="error_label" asp-validation-for="CareTitle"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorCareIconData"></span>
+                                    <label for="Care_Icon">Icon* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the icon you'd like to show for this value. (185 * 161 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="CareIconData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.CareIcon)" id="img4" />
+                                        <input type="hidden" asp-for="CareIcon" />
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorCareImageData"></span>
+                                    <label for="Care_Image">Image* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the image you'd like to show for this value. (500 * 450 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="CareImageData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.CareImage)" id="img44" />
+                                        <input type="hidden" asp-for="CareImage" />
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div id="divCareContent" class="form_field">
+                                    <label for="Care_Content">Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the content for this value.">Tooltip</small></label>
+                                    <textarea asp-for="CareContent"></textarea>
+                                    <span class="error_label" asp-validation-for="CareContent"></span>
+                                    <input type="hidden" asp-for="CareContent" />
+                                </div>
+
+                                <div id="hdnDivValueCareContent" style="display:none">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus. Dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus.
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+                    <div class="tab_content" id="tab_5">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Excellent_Title">Title* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the title for this value. ">Tooltip</small> </label>
+                                    <input id="txtExcellentTitle" asp-for="ExcellentTitle" type="text" disabled="disabled">
+                                    <input asp-for="ExcellentTitle" type="hidden">
+                                    <span class="error_label" asp-validation-for="ExcellentTitle"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorExcellentIconData"></span>
+                                    <label for="Excellent_Icon">Icon* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the icon you'd like to show for this value. (154 * 203 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="ExcellentIconData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.ExcellentIcon)" id="img5" />
+                                        <input type="hidden" asp-for="ExcellentIcon" />
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <span class="error_label" id="lblErrorExcellentImageData"></span>
+                                    <label for="Excellent_Image">Image* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select the image you'd like to show for this value. (500 * 450 pixels).">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="ExcellentImageData" />
+                                        <img src="@Url.Content("~/fileserver/Uploads/Admin/OurValues/" + Model.ExcellentImage)" id="img55" />
+                                        <input type="hidden" asp-for="ExcellentImage" />
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div id="divExcellentContent" class="form_field">
+                                    <label for="Excellent_Content">Content* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the content for this value.">Tooltip</small></label>
+                                    <textarea asp-for="ExcellentContent"></textarea>
+                                    <span class="error_label" asp-validation-for="ExcellentContent"></span>
+                                    <input type="hidden" asp-for="ExcellentContent" />
+                                </div>
+
+                                <div id="hdnDivValueExcellentContent" style="display:none">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus. Dolor sit amet, consectetur adipiscing elit. Sed auctor felis ipsum, ornare laoreet metus rhoncus.
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+    <!--End full_width-->
+</form>
+<script src="~/js/Admin/admin.ourValues.js" asp-append-version="true"></script>

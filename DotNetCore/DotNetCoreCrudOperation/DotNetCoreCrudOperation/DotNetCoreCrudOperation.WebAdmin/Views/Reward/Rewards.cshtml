@@ -1,0 +1,147 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model IEnumerable<PickfordsIntranet.ViewModels.Rewards.RewardGridItemVM>
+
+@{
+    ViewData["Title"] = "Rewards";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("Add","Reward")'">Add new</button>
+            <button id="btnDeleteAllCheckedRewards" type="button" class="delete_list_item">delete</button>
+
+        </div>
+
+        <div class="top_filter_right">
+
+
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchRewardList" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Rewards</h1>
+                @if (Model.Any(m=>m.IsSend==true) )
+                {
+                    <a href="#" class="downlaod_rept" onClick="window.location.href='@Url.Action("ExportToExcelRewards", "Reward")'">Download Report</a>
+                }
+
+                else
+                {
+
+                    <a  class="downlaod_rept">Download Report</a>
+                }
+            </div>
+            <!--End page_heading-->
+
+            <div class="table_wrap">
+                <table id="tblRewards" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 100px;">
+                                <button type="button" class="table_title active"><i class="icon asc"></i> Reward ID</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Reward Recipient</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Date of Reward</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Line Manager</button>
+                            </th>
+                            <th class="editAdminUser" style="width:75px;text-align: center;">Edit</th>
+                            <th class="deleteAdminUser" style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var reward in Model)
+                        {
+                            <tr>
+                                <td style="width: 70px;">
+                                    <div class="table_checkbox">
+                                        <input type="checkbox" id="checkitem1" class="check_item">
+                                        <label for="checkitem1"></label>
+                                    </div>
+                                </td>
+                                <td>#@reward.Id</td>
+
+                                <td>
+                                    @if (reward.IsSend == true)
+                                    {
+                                        <a onclick="window.location.href='/Reward/Details?id=@reward.Id'">@reward.RewardRecipientName</a>
+                                    }
+
+                                    else
+                                    {
+
+                                        <a onclick="window.location.href='/Reward/Edit?id=@reward.Id'">@reward.RewardRecipientName</a>
+                                    }
+                                </td>
+                                <td>@reward.CreationDate</td>
+                                <td>@reward.RewardGivenByName</td>
+                                <td style="width:75px;text-align: center;">
+                                    @*@if (reward.IsSend == true)
+                                    {
+                                        <button type="button" class="edit_item" disabled>edit</button>
+
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("Edit","Reward",new { Id=reward.Id})'">edit</button>
+                                    }*@
+                                    <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("Edit","Reward",new { Id=reward.Id})'">edit</button>
+
+                                </td>
+                                <td style="width:75px;text-align: center;">
+                                    <span style="display:none">@reward.Id</span>
+                                    <button type="button" class="delete_item deleteRewardItem">delete</button>
+                                </td>
+
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+
+    </div>
+    <!--End center_wrap-->
+
+</div>
+<!--End full_width-->
+<!--Modal Popup-->
+
+<script src="~/js/Rewards/rewards.js" asp-append-version="true"></script>

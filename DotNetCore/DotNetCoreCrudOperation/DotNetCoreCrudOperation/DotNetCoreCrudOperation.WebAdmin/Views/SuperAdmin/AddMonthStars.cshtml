@@ -1,0 +1,1046 @@
+﻿@model PickfordsIntranet.ViewModels.SuperAdmin.MonthStarVM
+@{
+    //ViewData["Title"] = "Add Month Stars";
+    ViewData["Title"] = "Add Latest Stars";
+}
+<script src="~/js/Admin/admin.addMonthStars.js" asp-append-version="true"></script>
+<form id="formMonthStars" name="formMonthStars">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='/SuperAdmin/MonthStars'">Back</button>
+
+            <ul class="tab_list">
+                <li class="current"><a id="tab1" href="#tab_1">Stars Attributes</a></li>
+                <li><a href="#tab_2">Star 1</a></li>
+                <li><a href="#tab_3">Star 2</a></li>
+                <li><a href="#tab_4">Star 3</a></li>
+                <li><a href="#tab_5">Star 4</a></li>
+                <li><a href="#tab_6">Star 5</a></li>
+                <li><a href="#tab_7">Star 6</a></li>
+                <li><a href="#tab_8">Star 7</a></li>
+                <li><a href="#tab_9">Star 8</a></li>
+                <li><a href="#tab_10">Star 9</a></li>
+                <li><a href="#tab_11">Star 10</a></li>
+                <li><a href="#tab_12">Star 11</a></li>
+                <li><a href="#tab_13">Star 12</a></li>
+            </ul>
+
+            <button id="btnSave" type="button" class="tab_save">Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+
+
+        </div>
+    </div>
+
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    @*<h1>Add month's stars</h1>*@
+                    <h1>Add Latest Stars</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="Stars_ID">Id </label>
+                                    <input id="Stars_ID" type="text" disabled>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Latest_Stars">
+                                        Month*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Please enter an identifying name for this set of stars.">Tooltip</small>
+                                    </label>
+                                    <input type="text" asp-for="NewMonthName" />
+                                    <span class="error_label" id="spanError_NewMonthName" asp-validation-for="NewMonthName"></span>
+
+                                </div>
+                                <div class="form_field">
+                                    <div class="check_field">
+                                        <input type="checkbox" asp-for="IsActive">
+                                        <label for="Latest_Stars_IsActive?">Publish the month stars<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(optional) Check this to publish the month stars.">Tooltip</small></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star1.Id" />
+                                <div class="form_field">
+                                    <label for="Star1_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star1.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star1.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star1_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star1.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star1.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star1_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star1.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star1.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star1_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star1.StarPhotoData" id="fileUploaderImg1" />
+                                        <img src="#" id="img1" />
+                                        <div class="upload_remove"  title="Remove Selected Star Image" style="display:none;"  id="remove_fileUploaderImg1_img1"></div>
+                                        <input type="hidden" asp-for="Star1.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star1_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+
+                                        <select asp-for="Star1.StarValueType" title="Select star value type" class="selectpicker">
+                                            <option>Select...</option>
+                                            <option data-thumbnail="Uploads/Admin/FeaturedMessage/02726687-4193-4e46-b92c-f5016d6aac0eHydrangeas.jpg">Communication</option>
+                                            <option data-thumbnail="images/icon-firefox.png">Dedication</option>
+                                            <option data-thumbnail="images/icon-ie.png">Care</option>
+                                            <option data-thumbnail="images/icon-opera.png">Excellence</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star1_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star1.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star1.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_3">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star2.Id" />
+                                <div class="form_field">
+                                    <label for="Star2_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star2.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star2.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star2_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star2.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star2.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star2_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star2.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star2.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star2_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels)..">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star2.StarPhotoData" id="fileUploaderImg2" />
+                                        <img src="#" id="img2" />
+                                        <input type="hidden" asp-for="Star2.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg2_img2"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star2_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star2.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star2_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star2.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star2.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_4">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star3.Id" />
+                                <div class="form_field">
+                                    <label for="Star3_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star3.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star3.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star3_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star3.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star3.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star3_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star3.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star3.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star3_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star3.StarPhotoData" id="fileUploaderImg3" />
+                                        <img src="#" id="img3" />
+                                        <input type="hidden" asp-for="Star3.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg3_img3"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star3_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star3.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star3_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star3.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star3.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_5">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star4.Id" />
+                                <div class="form_field">
+                                    <label for="Star4_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star4.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star4.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star4_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star4.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star4.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star4_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star4.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star4.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star4_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star4.StarPhotoData" id="fileUploaderImg4" />
+                                        <img src="#" id="img4" />
+                                        <input type="hidden" asp-for="Star4.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg4_img4"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star4_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star4.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star4_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star4.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star4.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_6">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star5.Id" />
+                                <div class="form_field">
+                                    <label for="Star5_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star5.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star5.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star5_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star5.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star5.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star5_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star5.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star5.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star5_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star5.StarPhotoData" id="fileUploaderImg5" />
+                                        <img src="#" id="img5" />
+                                        <input type="hidden" asp-for="Star5.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg5_img5"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star5_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star5.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star5_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star5.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star5.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_7">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star6.Id" />
+                                <div class="form_field">
+                                    <label for="Star6_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star6.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star6.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star6_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star6.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star6.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star6_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star6.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star6.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star6_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star6.StarPhotoData" id="fileUploaderImg6" />
+                                        <img src="#" id="img6" />
+                                        <input type="hidden" asp-for="Star6.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg6_img6"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star6_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star6.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star6_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star6.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star6.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_8">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star7.Id" />
+                                <div class="form_field">
+                                    <label for="Star7_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star7.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star7.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star7_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star7.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star7.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star7_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star7.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star7.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star7_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star7.StarPhotoData" id="fileUploaderImg7" />
+                                        <img src="#" id="img7" />
+                                        <input type="hidden" asp-for="Star7.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg7_img7"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star7_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star7.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star7_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star7.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star7.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_9">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star8.Id" />
+                                <div class="form_field">
+                                    <label for="Star8_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star8.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star8.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star8_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star8.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star8.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star8_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star8.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star8.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star8_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star8.StarPhotoData" id="fileUploaderImg8" />
+                                        <img src="#" id="img8" />
+                                        <input type="hidden" asp-for="Star8.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg8_img8"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star8_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star8.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star8_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star8.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star8.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_10">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star9.Id" />
+                                <div class="form_field">
+                                    <label for="Star9_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star9.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star9.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star9_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star9.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star9.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star9_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star9.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star9.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star9_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star9.StarPhotoData" id="fileUploaderImg9" />
+                                        <img src="#" id="img9" />
+                                        <input type="hidden" asp-for="Star9.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg9_img9"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star9_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star9.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star9_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star9.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star9.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_11">
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star10.Id" />
+                                <div class="form_field">
+                                    <label for="Star10_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star10.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star10.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star10_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star10.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star10.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star10_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star10.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star10.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star10_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star10.StarPhotoData" id="fileUploaderImg10" />
+                                        <img src="#" id="img10" />
+                                        <input type="hidden" asp-for="Star10.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg10_img10"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star10_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star10.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="form_field">
+                                    <label for="Star10_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star10.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star10.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_12">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star11.Id" />
+                                <div class="form_field">
+                                    <label for="Star11_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star11.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star11.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star11_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star11.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star11.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star11_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star11.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star11.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star11_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star11.StarPhotoData" id="fileUploaderImg11" />
+                                        <img src="#" id="img11" />
+                                        <input type="hidden" asp-for="Star11.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg11_img11"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star11_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star11.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star11_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star11.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star11.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="tab_13">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <input type="hidden" asp-for="Star12.Id" />
+                                <div class="form_field">
+                                    <label for="Star12_Name">
+                                        Name
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the name of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star12.StarName" type="text">
+                                    <span class="error_label" asp-validation-for="Star12.StarName"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star12_Role">
+                                        Role
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the role of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star12.StarRole" type="text">
+                                    <span class="error_label" asp-validation-for="Star12.StarRole"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star12_Location">
+                                        Location
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the location of the star.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Star12.StarLocation" type="text">
+                                    <span class="error_label" asp-validation-for="Star12.StarLocation"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star12_Photo">Photo <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the photo of the star for this month (40 * 40 pixels).">Tooltip</small></label>
+                                    <div class="image_upload right_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" asp-for="Star12.StarPhotoData" id="fileUploaderImg12" />
+                                        <img src="#" id="img12" />
+                                        <input type="hidden" asp-for="Star12.FrontEndUserImageForStar" class="hiddenFrontEndUserImageForStar" />
+                                        <div class="upload_remove" title="Remove Selected Star Image" style="display:none;" id="remove_fileUploaderImg12_img12"></div>
+                                        <button type="button" class="OpenImagesPopUpForStar">Choose Pic</button>
+                                    </div>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="Star12_Value">Icon <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Select the  value for this star.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="Star12.StarValueType">
+                                            <option>Select...</option>
+                                            <option>Communication</option>
+                                            <option>Dedication</option>
+                                            <option>Care</option>
+                                            <option>Excellence</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="Star12_testtimonial">Testimonial <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Enter the testimonial of the star.">Tooltip</small></label>
+                                    <textarea asp-for="Star12.StarTestimonial"></textarea>
+                                    <span class="error_label" asp-validation-for="Star12.StarTestimonial"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+
+</form>
+
+<div class="search_star_popup" id="Search_image_popup">
+
+    <button type="button" class="popup_close_btn"></button>
+    <input type="hidden" id="SeacrhImagePopupHiddenTabId" />
+    <div class="star_popup_inner">
+        <div class="title">Select User's Image</div>
+        <div class="form_field">
+            <label for="search_image">Search image by user name</label>
+            <input type="text" id="search_image_text" placeholder="User Name" onkeypress="SearchPersonWithImageOnEnter(event)" />
+            <button type="button" id="search_image_btn"></button>
+        </div>
+
+        <div class="search_star_list_wrap" id="SearchByNameStarListForImage">
+
+            <div class="search_star_list">
+                <a href="#" class="search_star_link"></a>
+                @*<div class="search_star_img" style="background-image: url(http://pickfords-html.ouronlineserver.com/intranet-home-page/images/person_img.jpg);"></div>
+                <div class="search_star_text">
+                    <div class="search_star_name">Jenny Smith</div>
+                    <div class="search_star_post">Senior Process Coordinator</div>
+                    <div class="search_star_loc">Kings Langley</div>
+                </div>*@
+            </div>
+           
+        </div>
+
+    </div>
+
+
+
+</div>
+<div class="search_star_popup_overlay"></div>
+
+

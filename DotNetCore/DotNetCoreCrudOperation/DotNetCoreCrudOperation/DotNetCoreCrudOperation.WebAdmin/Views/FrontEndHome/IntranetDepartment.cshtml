@@ -1,0 +1,65 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "IntranetDepartment";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+<div class="department_banner">
+    <div class="banner_center_area">
+        <div class="inner_page_banner deptBanner" style="background-image:url(/fileserver/uploads/Admin/Department/@(Model.SelectedDepartmentValues.HeaderImage));">
+
+            <div class="container">
+                <div class="banner_inner_section">
+                    <div class="banner_title" id="div_header">@(Model.SelectedDepartmentValues.DepartmentName)</div>
+                    @*<a href="#" class="make_dep_btn">+ Make this my department</a>*@
+                    @*<a href="tel:01223 567 567" class="dep_number">Tel: 01223 567 567</a>*@
+                    @if (!string.IsNullOrEmpty(Model.SelectedDepartmentValues.DepartmentHead))
+                    {
+                        <div class="depart_heading_text">@Html.Raw(Model.SelectedDepartmentValues.DepartmentHead)</div>
+                    }
+
+                    <a class="dep_number" href="Tel:@(Model.SelectedDepartmentValues.TelephoneNumber)">Tel: @(Model.SelectedDepartmentValues.TelephoneNumber)</a>
+
+                    <div class="append_select_pk"></div>
+                </div>
+            </div>
+            <!-- container -->
+        </div>
+        <!-- inner_page_banner -->
+    </div>
+    <!-- banner_center_area -->
+</div>
+<!-- department_banner -->
+
+<div class="select_picker_area">
+
+    @* onchange="window.location.href='@Url.Action("IntranetDepartment","FrontEndHome",new { Id=1})'" *@
+    <select name="" id="ddlSelectDepartment" class="selectpicker">
+        @if (Model.FeaturedDocumentList != null)
+        {
+           
+           
+            <option>Take Me Straight To</option>
+            @foreach (var item in Model.FeaturedDocumentList)
+            {
+                item.LinkDestination = string.IsNullOrEmpty(item.LinkDestination) ? "" : item.LinkDestination;
+                <option id="@(item.DepartmentId)" fileNameattr="@(item.DocumentName)" docTypeAttr="@(item.Type)" linkDestinationAttr="@(item.LinkDestination)">@(item.DocumentTitle)</option>
+            }
+        }
+
+    </select>
+
+</div>
+
+
+<div class="full_width">
+
+    <div class="container">
+        <div id="partialDepartment" style="display:none;"></div>
+
+        <div id="partialNewsByDepartment" style="display:none;"></div>
+
+    </div>
+
+
+</div>
+<script src="~/FrontEnd/js/FrontEndHome/intranetdocument.js" asp-append-version="true"></script>

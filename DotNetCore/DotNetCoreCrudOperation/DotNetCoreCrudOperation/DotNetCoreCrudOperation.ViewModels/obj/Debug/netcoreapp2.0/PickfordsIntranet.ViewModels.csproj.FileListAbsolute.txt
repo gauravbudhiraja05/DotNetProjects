@@ -1,0 +1,9 @@
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\bin\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.deps.json
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\bin\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.dll
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\bin\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.pdb
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\obj\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.csprojAssemblyReference.cache
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\obj\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.csproj.CoreCompileInputs.cache
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\obj\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.AssemblyInfoInputs.cache
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\obj\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.AssemblyInfo.cs
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\obj\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.dll
+D:\Projects\Other Projects\PickfordsIntranet.online\tags\PickfordsIntranet\PickfordsIntranet.ViewModels\obj\Debug\netcoreapp2.0\PickfordsIntranet.ViewModels.pdb

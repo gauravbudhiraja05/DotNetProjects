@@ -1,0 +1,108 @@
+﻿@model PickfordsIntranet.ViewModels.SuperAdmin.GazetteersVM
+@{
+    ViewData["Title"] = "Add Gazetteers";
+}
+<form id="formGazetteers" name="formGazetteers">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Gazetteers","SuperAdmin")'">Back</button>
+
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">File Upload</a></li>
+            </ul>
+
+            <button id="btnSave" type="button" class="tab_save">Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Add Gazetteers</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="QA_ID">Upload* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Upload the Gazateer file that contains the latest data for use in the Find a Location function. ">Tooltip</small> </label>
+                                    <div class="image_upload">
+                                        <span>Upload a file</span>
+                                        <input type="file" class="upload" asp-for="FileNameData" />
+                                        <img src="" id="img1" />
+                                        <div id="docFileName"></div>
+                                        <div id="lblDocError" style="color: red;"></div>
+                                    </div>
+                                    <a href='~/Sample_Gazetteers.xlsx' target="_blank" class="anchor_Gazetteer">Download sample gazetteer</a>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="QA_Creation-Date">Creation Date</label>
+                                    <input asp-for="CreationDateToDisplay" type="text" disabled>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="QA_Publish-Date">Publish Date</label>
+                                    <div class="datepicker_field">
+                                        <input asp-for="PublishDate" type="text" class="datepicker-here" data-language='en' />
+                                    </div>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="QA_AuthorName">Author Name</label>
+                                    <input asp-for="AuthorName" type="text"  placeholder="Admin Name">
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+    <!--End full_width-->
+
+    </form>
+<script src="~/js/Admin/admin.addGazetteers.js" asp-append-version="true"></script>

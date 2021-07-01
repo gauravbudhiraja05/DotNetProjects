@@ -1,0 +1,233 @@
+﻿@using HiveReport.Dto.Common
+@{
+    SharedLayoutDto sharedLayoutDto = ViewBag.sharedLayoutDto as SharedLayoutDto;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Welcome Page</title>
+
+    <!--Theme CSS-->
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script src="~/js/Partial/outerlayout.js"></script>
+
+    <link href="~/css/treeview.css" rel="stylesheet" />
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            //start the tree in an autocollapsed state
+            $('#TreeView ul').hide(400);
+
+            $('#TreeView li').on('click', function (e) {
+                e.stopPropagation(); // prevent links from toggling the nodes
+                $(this).children('ul').slideToggle();
+            });
+
+            // This code opens all hyperlinks in a new window
+            // and avoids anchors
+            $('#TreeView a').not('[href="#"]').attr('target', '_blank');
+        });
+    </script>
+    <style type="text/css">
+        <!--
+
+        #demo-container {
+            padding: 1px 5px 0 15px;
+            background: #67A897;
+        }
+
+        ul#simple-menu {
+            list-style-type: none;
+            width: 100%;
+            position: relative;
+            height: 27px;
+            font-family: "Trebuchet MS",Arial,sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+            padding: 11px 0 0 0;
+        }
+
+            ul#simple-menu li {
+                display: block;
+                float: left;
+                margin: 0 0 0 4px;
+                height: 27px;
+            }
+
+                ul#simple-menu li.left {
+                    margin: 0;
+                }
+
+                ul#simple-menu li a {
+                    display: block;
+                    float: right;
+                    color: #fff;
+                    background: #4A6867;
+                    line-height: 27px;
+                    text-decoration: none;
+                    padding: 0 17px 0 18px;
+                    height: 27px;
+                }
+
+                    ul#simple-menu li a.right {
+                        padding-right: 19px;
+                    }
+
+                    ul#simple-menu li a:hover {
+                        background: #000000;
+                        color: Gold;
+                    }
+
+                    ul#simple-menu li a.current {
+                        color: #2E4560;
+                        background: #fff;
+                    }
+
+                        ul#simple-menu li a.current:hover {
+                            color: #2E4560;
+                            background: #fff;
+                        }
+        -->
+    </style>
+</head>
+<body style="margin-top:0; margin-left:0; margin-right:0; margin-right:0;">
+    <table style="background-color:#000000; width:100%;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td style="background-color:#000000;width:40%; height:55px;" valign="middle" align="left">
+                <img src="~/images/Black_logo.gif" alt="QlickReport Logo" border="0" class="logo" title="QlickReport Logo" />
+            </td>
+            <td style="background-color:#000000;width:60%; height:55px;" align="right">
+                <table style="width:100%" cellpadding="0" cellspacing="0" border="0" align="right">
+                    <tr>
+                        <td style="font-family:Verdana; Font-size:11px; color:gold;">
+                            <b>Welcome @sharedLayoutDto.UserName ( @sharedLayoutDto.UserId )&nbsp;&nbsp;</b>|&nbsp;&nbsp;
+                            <b><a href='@Url.Action("Dashboad", "Home")' style="color:gold;">Home Page</a>&nbsp;&nbsp;</b>|&nbsp;&nbsp;
+                            <b><a href='@Url.Action("Cart", "Home")' style="color:gold;">Subscribe Now!</a>&nbsp;&nbsp;</b>|&nbsp;&nbsp;
+                            <b><a href='@Url.Action("ChangePassword", "Account")' style="color:gold;">Change Password</a>&nbsp;&nbsp;</b>|&nbsp;&nbsp;
+                            <b><a href='@Url.Action("Logout", "Account")' style="color:gold;">Logout</a>&nbsp;&nbsp;</b>&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:LinkButton ID="useradmin" runat="server" style="font-size:14px; font-weight:bold;" CssClass="a2" ToolTip="Switch as Admin">Switch As Admin</asp:LinkButton>
+                            @if (sharedLayoutDto.UserAdminCheck == "yes")
+                            {
+                                <input type="button" id="useradmin1" style="font-size:14px; font-weight:bold;" class="a2" title="Switch as User" value="Switch As User" />
+                            }
+
+                        </td>
+                    </tr>
+                    <tr>
+                        &nbsp;&nbsp;
+                        <td align="center" style="font-family:Verdana; Font-size:11px; color:gold;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            You are working as a
+                            <span style="color:gold; font-weight:bold">@sharedLayoutDto.UserType</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <div id="demo-container">
+                    <ul id="simple-menu">
+                        @foreach (var menuDto in sharedLayoutDto.TopMenuDtoList)
+                        {
+                            <li>
+                                <a class="a2" title="@menuDto.Name" href="@menuDto.Url">
+                                    @menuDto.Name
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td valign="top" style="width:230px; background-color:#EBEBEB; height:524px;">
+                <div style="font-weight:Bold;width:200px;height:100%;overflow:hidden;" runat="server" id="divTree">
+                    <table border="0" cellpadding="0" cellspacing="0" width="206">
+                        <tr>
+                            <td align="left" valign="top" style="width:100px">
+                                <table class="grid">
+                                    <tr>
+                                        <td style="width:100px; ">
+                                            @if (sharedLayoutDto.IsDashboard)
+                                            {
+                                                <ul id="TreeView">
+                                                    <li class="level1">
+                                                        <a href="#">Dashboard</a>
+                                                        <ul>
+                                                            @foreach (var department in sharedLayoutDto.DepartmentDtoList)
+                                                            {
+                                                                <li class="level2">
+                                                                    <a href="#">@department.DepartmentName</a>
+                                                                    <ul>
+                                                                        @foreach (var client in sharedLayoutDto.ClientDtoList.Where(c => c.DepartmentId == department.DepartmentId).ToList())
+                                                                        {
+                                                                            <li class="level3">
+                                                                                <a href="#">@client.ClientName</a>
+                                                                                <ul style="list-style:none;">
+                                                                                    @foreach (var lob in sharedLayoutDto.LOBDtoList.Where(l => l.DepartmentId == department.DepartmentId && l.ClientId == client.ClientId).ToList())
+                                                                                    {
+                                                                                        <li class="level4"><a href="#">@lob.LOBName</a></li>
+                                                                                    }
+                                                                                </ul>
+                                                                            </li>
+                                                                        }
+                                                                    </ul>
+                                                                </li>
+                                                            }
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            }
+                                            else
+                                            {
+                                                <div class="a2" style="color:Black;">
+                                                    @foreach (var menu in sharedLayoutDto.LeftMenuDtoList)
+                                                    {
+                                                        <table cellpadding="0" cellspacing="0" style="border-width:0;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="white-space:nowrap; padding:5px;">
+                                                                        <a href="@menu.UrlLink" style="margin-left: 15px;" title="@menu.ToolTip">@menu.MenuDescription</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="height:0px;">
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    }
+                                                </div>
+                                            }
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div><br />
+            </td>
+            <td style="width:1px; background-color:#67A897; height:524px;">
+            </td>
+            <td valign="top">
+                <div id="divFrm" style="height:100%;width:100%; display:none;">
+                    <iframe id="frmTarget" scrolling="no" frameborder="0" style="height:1000px;width:100%;overflow:hidden;" title="Reports Panel"></iframe>
+                </div>
+                @RenderBody()
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

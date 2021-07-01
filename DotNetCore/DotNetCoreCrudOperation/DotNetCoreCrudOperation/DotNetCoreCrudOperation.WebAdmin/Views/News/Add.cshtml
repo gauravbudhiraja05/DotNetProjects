@@ -1,0 +1,237 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.News.NewsVM
+@{
+    ViewData["Title"] = "Add News";
+}
+
+@* enctype="multipart/form-data" asp-controller="News" asp-action="Add"
+    data-ajax-begin="onBegin" data-ajax-complete="onComplete"
+    data-ajax-failure="onFailed" data-ajax-success="onSuccess"
+    data-ajax="true" data-ajax-method="POST" *@
+<form id="formNews" name="formNews"  data-ajax="true" data-ajax-method="POST">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" id="btnBack" class="back_btn">Back</button>
+
+            <ul class="tab_list" id="tabUL">
+                <li class="current"><a href="#tab_1">News Content</a></li>
+                <li><a href="#tab_2">News Images</a></li>
+                <li><a href="#tab_3">Publishing and Author</a></li>
+            </ul>
+
+            <button type="button" id="btnSave" class="tab_save">Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Add News Content</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="codeId">News Id* </label>
+                                    <input type="text" disabled>
+                                </div>
+                                <div class="form_field">
+                                    <label for="News_Title">
+                                        Title* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) The title of the News item.">Tooltip</small>
+                                    </label>
+                                    @*<input id="NewsTitle" type="text">*@
+                                    <input asp-for="Title" type="text">
+                                    <span class="error_label" asp-validation-for="Title"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="News_Department">Department* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select which department  this News item belongs to.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value == "SA")
+                                        {
+                                            <select asp-for="DepartmentId"
+                                                    asp-items="@(new SelectList(Model.AllDepartments,"DepartmentId", "DepartmentName"))"></select>
+                                            @*<input type="hidden" asp-for="DepartmentId" />*@
+                                        }
+                                        else
+                                        {
+                                            <select disabled="disabled" asp-for="DepartmentId"
+                                                    asp-items="@(new SelectList(Model.AllDepartments,"DepartmentId", "DepartmentName"))"></select>
+                                            <input type="hidden" asp-for="DepartmentId" />
+                                        }
+
+                                    </div>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="TeaserText">Teaser Text* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="A short intro for the News item to appear at the top of the News detail page.">Tooltip</small></label>
+                                    <textarea asp-for="TeaserText"></textarea>
+                                    <span class="error_label" asp-validation-for="TeaserText"></span>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+
+                                <div id="divValueNewsContent1" class="form_field">
+                                    <label for="NewsContent1">Content 1* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required)The first content field content of the News item shown on the News detail page.">Tooltip</small></label>
+                                    <textarea asp-for="Content1" style="width:100%;height:150px;"></textarea>
+                                    <span class="error_label" asp-validation-for="Content1"></span>
+                                </div>
+
+                                <div id="hdnDivValueNewsContent1" style="display:none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+
+                                <div id="divValueNewsContent2" class="form_field">
+                                    <label for="NewsContent2">Content 2 <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional) Additional content shown on the News detail page.">Tooltip</small></label>
+                                    <textarea asp-for="Content2" style="width:100%;height:150px;"></textarea>
+                                    <span class="error_label" asp-validation-for="Content2"></span>
+                                </div>
+
+                                <div id="hdnDivValueNewsContent2" style="display:none">Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</div>
+
+                                <div class="form_field">
+                                    <div class="check_field">
+                                        <input type="checkbox" asp-for="IsFeatureOnHomePage">
+                                        <label for="News_FeatureOnHomePage?">Feature on Intranet Home Page?<small class="info_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="(Optional) Check this to publish this news item on the Home Page.">Tooltip</small></label>
+                                    </div>
+                                </div>
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+
+
+                    </div>
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+    
+                                <div class="form_field">
+                                    <label>Thumbnail Image <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the News listing page. 235 * 160 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="ThumbnailImg" id="fileUploaderImg1" />
+                                        <img src="#" id="img1" />
+                                        <div class="upload_remove" title="Remove Selected Thumbnail Image" id="remove_fileUploaderImg1_img1" style="display:none;"></div>
+                                    </div>
+                                    <span class="error_label" asp-validation-for="ThumbnailImg"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Main Image <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the News detail page. 1000 * 500 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="MainImg" id="fileUploaderImg2" />
+                                        <img src="#" id="img2" />
+                                        <div class="upload_remove" title="Remove Selected Main Image" id="remove_fileUploaderImg2_img2" style="display:none;"></div>
+                                    </div>
+                                    <span class="error_label" asp-validation-for="MainImg"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Additional Image 1 <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the News detail page. 750 * 500 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="AdditionalImg1" id="fileUploaderImg3" />
+                                        <img src="#" id="img3" />
+                                        <div class="upload_remove" title="Remove Selected Additional Image" id="remove_fileUploaderImg3_img3" style="display:none;"></div>
+                                    </div>
+                                    <span class="error_label" asp-validation-for="AdditionalImg1"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="userAddressType">Additional Image 2 <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Optional): Shown on the News detail page. 750 * 500 pixels">Tooltip</small></label>
+                                    <div class="image_upload">
+                                        <span>Upload an image</span>
+                                        <input type="file" class="upload" accept="image/*" asp-for="AdditionalImg2" id="fileUploaderImg4" />
+                                        <img src="#" id="img4" />
+                                        <div class="upload_remove" title="Remove Selected Additional Image" id="remove_fileUploaderImg4_img4" style="display:none;"></div>
+                                    </div>
+                                    <span class="error_label" asp-validation-for="AdditionalImg2"></span>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+                    <div class="tab_content" id="tab_3">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="datetimepicker1">Creation Date</label>
+                                    <input  type="text" asp-for="CreationDate" disabled placeholder="MM/DD/YYYY">
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="datetimepicker2">Publish Date*</label>
+                                    <div class="datepicker_field">
+                                        <input type="text" class="datepicker-here" asp-for="PublishDateDisplay" readonly data-language='en' />
+                                        <span class="error_label" asp-validation-for="PublishDateDisplay"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="NewsAuthorName">Author Name*</label>
+                                    <input asp-for="AuthorName" type="text" placeholder="Admin Name">
+                                    <span class="error_label" asp-validation-for="AuthorName"></span>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+
+</form>
+@*<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>*@
+<script src="~/js/News/news.addNews.js" asp-append-version="true"></script>
+@*<script src="~/js/common.js"></script>*@

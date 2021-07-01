@@ -1,0 +1,7 @@
+D:\Projects\Test Projects\FascadeApp\FascadeApp\bin\Debug\FascadeApp.exe.config
+D:\Projects\Test Projects\FascadeApp\FascadeApp\bin\Debug\FascadeApp.exe
+D:\Projects\Test Projects\FascadeApp\FascadeApp\bin\Debug\FascadeApp.pdb
+D:\Projects\Test Projects\FascadeApp\FascadeApp\obj\Debug\FascadeApp.csprojAssemblyReference.cache
+D:\Projects\Test Projects\FascadeApp\FascadeApp\obj\Debug\FascadeApp.csproj.CoreCompileInputs.cache
+D:\Projects\Test Projects\FascadeApp\FascadeApp\obj\Debug\FascadeApp.exe
+D:\Projects\Test Projects\FascadeApp\FascadeApp\obj\Debug\FascadeApp.pdb

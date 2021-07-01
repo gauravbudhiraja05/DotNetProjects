@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\Common\Repository\Dao.cs" />
+    <Compile Remove="src\Common\Repository\IDao.cs" />
+    <Compile Remove="src\Common\Repository\IUnitOfWork.cs" />
+    <Compile Remove="src\Common\Repository\UnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HiveReport.Dto\HiveReport.Dto.csproj" />
+    <ProjectReference Include="..\HiveReport.Entity\HiveReport.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Account\Exception\" />
+    <Folder Include="src\Dashboard\Exception\" />
+    <Folder Include="src\Home\Af\" />
+    <Folder Include="src\Home\Exception\" />
+    <Folder Include="src\Home\Mapping\" />
+    <Folder Include="src\Home\Repository\" />
+    <Folder Include="src\Home\Service\" />
+    <Folder Include="src\User\Exception\" />
+  </ItemGroup>
+
+</Project>

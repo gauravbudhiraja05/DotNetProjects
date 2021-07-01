@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>QlickReport Software combines your Financial and Operational data into a single, seamless source of information for better business decisions</title>
+
+    <!--Theme CSS-->
+    <link href="~/css/base.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script src="~/js/Partial/outerlayout.js"></script>
+    <script type="text/javascript" language="javascript">
+
+        //function windowForPassword() {
+        //    window.open("Misc/ForgotPassword.aspx", "Forgot Password", "height=200,width=200,scrollbars=yes,status=yes");
+        //    return false;
+        //}
+
+
+    </script>
+</head>
+<body>
+    <!--navigation -->
+    <div class="container_16">
+        <div class="grid_16 navbg">
+            <ul class="navlink">
+                <li><a href="@Url.Action("Index","Home")" title="Home">Home</a></li>
+                <li><a href="@Url.Action("About","Home")" title="About">Company</a></li>
+                <li><a href="@Url.Action("Product","Home")" title="Product">Products</a></li>
+                <li><a href="@Url.Action("Support","Home")" title="Support">Support</a></li>
+                <li><a href="@Url.Action("Licence","Home")" title="Solution">Qlick License</a></li>
+                <li class="nodivider"><a href="@Url.Action("Contact","Home")" title="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--navigation -->
+    <!--header -->
+    <div class="container_16">
+        <div class="grid_16 hdrBg">
+            <a href="index.html"><img src="~/images/logo.gif" alt="Business.com" border="0" class="logo" title="Business.com" /></a>
+            <h1>
+                Extensive Core Reporting Functionality
+                <span>It is an evolving business intelligence MIS & reporting software provides easy and enhanced MIS reporting, data analysis and customized email-alerts.</span>
+            </h1>
+            <a href="Content/PDF/CP_Qlickreport.pdf" target="_blank" title="read more" class="readmore">read more</a>
+        </div>
+    </div>
+    <!--header -->
+    <!--body -->
+    <div class="container_16">
+        <div class="grid_16" id="body">
+            <div class="grid_6  alpha">
+                <!--left panel -->
+                <div id="lftPan">
+                    <form action="" method="get" class="one" runat="server">
+                        @*<asp:Label runat="server" ID="lblmsg" Visible="false" ForeColor="Red"></asp:Label>
+                            <asp:Label runat="server" ID="lbldays" Visible="false" ForeColor="Red"></asp:Label>*@
+                        <p class="member">Member login</p>
+                        <label style="width: 80px;">Username :</label>
+                        <input id="txtUsername" name="txtUsername" type="text" class="txtfield" style="width: 183px;" />
+                        <span style="color:red; display:none;" id="lblUserNameError"></span>
+                        <label style="width: 80px;">Password :</label>
+                        <input id="txtPassword" name="txtPassword" type="password" class="txtfield" style="width: 183px;" />
+                        <span style="color:red; display:none;" id="lblPasswordError"></span>
+                        <b>
+                            <label runat="server" style="color: red" onclick="return windowForPassword()">Forgot Password?</label>
+                        </b>
+                        @*onclick="Login_onclick();"*@
+                        <input id="btnLogin" name="btnLogin" type="button" class="login" value="" title="login" />
+                        <div class="clear"></div>
+                    </form>
+                    <h2 class="service">Salient Features </h2>
+                    <p class="genareted">To build any type of report, Query, Analysis & Graphs</p>
+                    <div class="clear"></div>
+                    <p class="pic">&nbsp;</p>
+                    <ul class="numberLink">
+                        <li><span>01</span>To enable dynamic, interactive analysis like calculations, grouping and filtering for end users</li>
+                        <li><span>02</span>To control who can view reports as well as the data within those reports. </li>
+                        <li><span>03</span>For end users to select, view, compare and visualize the data most meaningful to them.</li>
+                        <li><span>04</span>Make effective use of the graphical presentation of your data with powerful mapping capabilities </li>
+                        <li><span>05</span>able to provide various analysis base data tables and views. </li>
+                    </ul>
+                </div>
+                <!--left panel -->
+            </div>
+            @RenderBody()
+        </div>
+    </div>
+    <!--body -->
+    <!--footer -->
+    <div class="container_16">
+        <div class="grid_16" id="footer">
+            <ul class="footerlink">
+                <li><a href="@Url.Action("Index","Home")" title="Home">Home</a></li>
+                <li>|</li>
+                <li><a href="@Url.Action("About","Home")" title="About">Company</a></li>
+                <li>|</li>
+                <li><a href="@Url.Action("Product","Home")" title="Product">Products</a></li>
+                <li>|</li>
+                <li><a href="@Url.Action("Support","Home")" title="Support">Support</a></li>
+                <li>|</li>
+                <li><a href="@Url.Action("Licence","Home")" title="Solution">Qlick License</a></li>
+                <li>|</li>
+                <li><a href="@Url.Action("Contact","Home")" title="Contact">Contact</a></li>
+            </ul>
+            <p class="clear">&nbsp;</p>
+            <p class="copyright">
+                © Copyright Information Goes Here. All Rights Reserved.
+                <span>
+                    Designed By : Gaurav Budhiraja
+                    @*<a href="http://www.bmprojects.co.in" target="_blank" title="bmprojects.co.in">B M Project Engineers Pvt. Ltd.</a>*@
+                </span>
+            </p>
+        </div>
+    </div>
+    <!--footer -->
+</body>
+</html>

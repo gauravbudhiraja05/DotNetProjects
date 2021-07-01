@@ -1,0 +1,62 @@
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.News.NewsListGridItemVM
+@{
+    ViewData["Title"] = "Documents";
+    var roles = HttpContextAccessor.HttpContext.User.Claims?.Where(c => c.Type == ClaimTypes.Role).Select(r => r.Value).ToList();
+}
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            @if (roles.Any(r => r == "SA"))
+            {
+                <div class="drop_menu">
+                    <input type="hidden" class="hiddenUserType" value="@(Model.UserType)">
+                    <ul>
+                        <li>
+                            <a href="#">Filter by department...</a>
+                            <ul class="drop_menu_sub">
+                                @foreach (var dept in Model.AllDepartments)
+                                {
+                                    <li><a class="deptClick" href="#" id="@dept.DepartmentId">@dept.DepartmentName</a></li>
+                                }
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <input type="hidden" class="hiddenUserType" value="@(Model.UserType)">
+                <input type="hidden" id="hiddenDepartmentIdIndex" value="@(Model.SelectedDepartmentDetails.DepartmentId)" />
+
+            }
+        </div>
+
+        <div class="top_filter_right">
+
+
+
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchNewsUp" disabled="disabled" class="form-control" placeholder="Search">
+                    <input type="submit" id="btnSearch" disabled="disabled" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnDepartmentId" />
+                    <input type="hidden" id="hdnDepartmentName" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="full_width">
+    <div class="center_wrap">
+        <div id="partialDocumentList" style="display:none;" class="full_width"></div>
+    </div>
+</div>
+
+<div class="popup_window_overlay"></div>
+
+<script src="~/js/Documents/documents.index.js" asp-append-version="true"></script>
+

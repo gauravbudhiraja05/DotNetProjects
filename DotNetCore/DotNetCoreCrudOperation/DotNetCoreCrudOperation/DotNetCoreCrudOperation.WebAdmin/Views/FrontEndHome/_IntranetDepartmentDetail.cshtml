@@ -1,0 +1,97 @@
+﻿@inject PickfordsIntranet.Core.DomainServices.IPathProvider _pathProvider
+@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    Layout = null;
+}
+
+@if (Model.DocumentsByDepartment != null && Model.DocumentsByDepartment.Documents != null)
+{
+    @foreach (var Folder in Model.DocumentsByDepartment.Folders)
+    {
+        <div class="accordion_wapper" style="display:none">
+            @if (Folder.FolderParentId == 0)
+            {
+                <div class="title">
+                    @Folder.FolderName
+                </div>
+            }
+            @foreach (var SubFolder in Model.DocumentsByDepartment.Folders)
+            {
+                <div class="SubFolderArea">
+                    @if (SubFolder.FolderParentId == Folder.FolderId)
+                    {
+
+                        <div class="accordion_list_area">
+                            <div class="accordion_section" style="display:none">
+                                <div class="accordion_title">
+                                    @SubFolder.FolderName
+                                </div>
+                                <div class="accordion_content">
+                                    <div class="guidance_list">
+                                        @foreach (var document in Model.DocumentsByDepartment.Documents)
+                                        {
+
+                                            @if (document.ParentFolderId == Folder.FolderId && document.SubFolderId == SubFolder.FolderId)
+                                            {
+                                                var imageLastName = "_icon.png";
+                                                <div class="guidance_item">
+                                                    <input type="checkbox" id="item_1" />
+
+                                                    @if (document.IsFavouriteDocumentForUser)
+                                                    {
+                                                        <label class="item_star_icon AddMyFavIcon" style="background-position:left top" id="@document.DocumentId" for="item_1" data-toggle="tooltip" data-placement="top" title="Add to My Favourites"></label>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <label class="item_star_icon AddMyFavIcon" id="@document.DocumentId" for="item_1" data-toggle="tooltip" data-placement="top" title="Add to My Favourites"></label>
+                                                    }
+                                                    <div class="doc_icon"><img src="~/fileserver/Uploads/IconImages/@(document.FileTypeName+imageLastName)" alt="icon" /></div>
+
+                                                    @if (document.Type.Equals("Document"))
+                                                    {
+                                                        string filePath = _pathProvider.MapPath("") + @"\Uploads\Documents\" + document.DocumentName;
+
+                                                        if (System.IO.Path.GetExtension(filePath).Equals(".pdf"))
+                                                        {
+
+                                                            <a href="~/fileserver/Uploads/Documents/@document.DocumentName" target="_blank" class="doc_name">@document.Title <span>(@document.Filesize)</span></a>
+                                                        }
+
+                                                        else
+                                                        {
+
+                                                            <a href="@Url.Action("GetDocumentToDownload", "FrontEndHome",new { documentName=document.DocumentName})" class="doc_name">@document.Title <span>(@document.Filesize)</span></a>
+
+                                                        }
+
+                                                    }
+
+                                                    else
+                                                    {
+                                                        <a href="@document.LinkDestination" target="_blank" class="doc_name">@document.Title </a>
+
+                                                    }
+
+
+                                                    @if (document.Description == null) { document.Description = ""; }
+                                                    <a href="#" class="info_icon" data-toggle="tooltip" data-placement="right" title="@document.Description">Tooltip</a>
+                                                </div>
+                                            }
+
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+            }
+        </div>
+    }
+}
+@*<script type="text/javascript" src="~/FrontEnd/js/intranet.js"></script>*@
+<script src="~/FrontEnd/js/FrontEndHome/partialview.js" asp-append-version="true"></script>
+
+

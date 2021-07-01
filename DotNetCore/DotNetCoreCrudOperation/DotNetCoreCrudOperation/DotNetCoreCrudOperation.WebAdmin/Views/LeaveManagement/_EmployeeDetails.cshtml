@@ -1,0 +1,44 @@
+﻿@model PickfordsIntranet.ViewModels.LeaveRequest.EmployeeDetails;
+@{
+    Layout = null;
+}
+<div class="form_field">
+    <label asp-for="EmployeeNumber">Employee Reference Number </label>
+    <input asp-for="EmployeeNumber" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="FirstName">First Name </label>
+    <input asp-for="FirstName" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="SurName">Last Name</label>
+    <input asp-for="SurName" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="Department">Department</label>
+    <input asp-for="Department" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="TelephoneNumber">Telephone Number</label>
+    <input asp-for="TelephoneNumber" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="EmailAddress">Email Address</label>
+    <input asp-for="EmailAddress" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="AnnualLeaveEntitlement">Annual Leave Entitlement </label>
+    <input asp-for="AnnualLeaveEntitlement" type="text" disabled>
+</div>
+
+<div class="form_field">
+    <label asp-for="RemainingAnnualLeaveEntitlement">Remaining Annual Leave Entitlement (inc. Leave Duration of this request) </label>
+    <input asp-for="RemainingAnnualLeaveEntitlement" type="text" disabled>
+</div>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

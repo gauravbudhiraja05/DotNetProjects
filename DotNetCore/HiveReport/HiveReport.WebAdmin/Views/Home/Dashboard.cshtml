@@ -1,0 +1,299 @@
+﻿@model HiveReport.Dto.User.UserDetailDto
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table style="background-image:url(/images/cent.jpg) ; background-repeat:no-repeat; width: 600px; height: 274px;">
+    <tr>
+        <td style="height:10PX;"></td>
+    </tr>
+    <tr>
+        <td valign="top">
+            <div>
+                <table style="margin-left:10px">
+                    <tr>
+                        <td style="width: 79px" class="label">Welcome:</td>
+                        <td style="width: 138px"><span style="font-weight:bold; width:243px;" class="label">@Model.UserName</span></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 79px" class="label">Login Time: </td>
+                        <td style="width: 138px"><span style="font-weight:bold; width:243px;" class="label">@DateTime.Now.ToString()</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 18px">
+                            <span>
+                                @Model.PasswordExpirationMessage
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="height:10PX;"></td>
+    </tr>
+    <tr>
+        <td>
+            <table style="width:900px;" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="Width:10PX;"></td>
+                    <td style="Width:180PX;" valign="top">
+                        @if (Model.HasReport)
+                        {
+                            <table style="width:100%;" runat="server" id="tblreport" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="background-color:#000000; font-family:Verdana; color:White;">Report Designer</td>
+                                </tr>
+                                <tr>
+                                    <td style="height:135px; background-color:#e7e7e7;" valign="top">
+                                        @if (Model.ReportMasterDtoList.Count > 0)
+                                        {
+                                            <table cellspacing="0" cellpadding="4" rules="rows" border="3" style="background-color:White;border-color:#336666;border-width:3px;border-style:Double;height:135px;border-collapse:collapse;">
+                                                <tbody>
+                                                    <tr style="color:White;background-color:#336666;font-weight:bold;">
+                                                        <th scope="col">S.No</th>
+                                                        <th scope="col">Report Name</th>
+                                                        <th scope="col">Created By</th>
+                                                    </tr>
+                                                    @{
+                                                        int index = 1;
+                                                        foreach (var reportMasterDto in Model.ReportMasterDtoList)
+                                                        {
+                                                            <tr style="color:#333333;background-color:White;">
+                                                                <td>@index</td>
+                                                                <td>@reportMasterDto.Queryname</td>
+                                                                <td>@reportMasterDto.SavedBy</td>
+                                                            </tr>
+                                                            index++;
+                                                        }
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        }
+                                        else
+                                        {
+                                            <span style="font-weight:bold;color:Blue;">No Recent Report Available</span>
+                                        }
+                                    </td>
+                                </tr>
+                            </table>
+                        }
+                    </td>
+                    <td style="Width:10PX;"></td>
+                    <td style="Width:180PX;" valign="top">
+                        <table style="width:100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="background-color:#000000; font-family:Verdana; color:White;">HTML Reports</td>
+                            </tr>
+                            <tr>
+                                <td style="height:135px; background-color:#e7e7e7;" valign="top">
+                                    @if (Model.HTMLFileDtoList.Count > 0)
+                                    {
+                                        <table cellspacing="0" cellpadding="4" rules="rows" border="3" style="background-color:White;border-color:#336666;border-width:3px;border-style:Double;height:135px;border-collapse:collapse;">
+                                            <tbody>
+                                                <tr style="color:White;background-color:#336666;font-weight:bold;">
+                                                    <th scope="col">S.No</th>
+                                                    <th scope="col">HtmlFile Name</th>
+                                                    <th scope="col">Created By</th>
+                                                </tr>
+                                                @{
+                                                    int index = 1;
+                                                    foreach (var htmlFileMasterDto in Model.HTMLFileDtoList)
+                                                    {
+                                                        <tr style="color:#333333;background-color:White;">
+                                                            <td>@index</td>
+                                                            <td>@htmlFileMasterDto.SavedFileName</td>
+                                                            <td>@htmlFileMasterDto.SavedBy</td>
+                                                        </tr>
+                                                        index++;
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <span style="font-weight:bold;color:Blue;">No Recent HTML Report Available</span>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="Width:10PX;"></td>
+                    <td style="Width:180PX;" valign="top">
+                        <table style="width:100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="background-color:#000000; font-family:Verdana; color:White;">Recent Graphs</td>
+                            </tr>
+                            <tr>
+                                <td style="height:135px; background-color:#e7e7e7;" valign="top">
+                                    @if (Model.GraphMasterDtoList.Count > 0)
+                                    {
+                                        <table cellspacing="0" cellpadding="4" rules="rows" border="3" style="background-color:White;border-color:#336666;border-width:3px;border-style:Double;height:135px;border-collapse:collapse;">
+                                            <tbody>
+                                                <tr style="color:White;background-color:#336666;font-weight:bold;">
+                                                    <th scope="col">S.No</th>
+                                                    <th scope="col">Graph Name</th>
+                                                    <th scope="col">Created By</th>
+                                                </tr>
+                                                @{
+                                                    int index = 1;
+                                                    foreach (var graphMasterDto in Model.GraphMasterDtoList)
+                                                    {
+                                                        <tr style="color:#333333;background-color:White;">
+                                                            <td>@index</td>
+                                                            <td>@graphMasterDto.GraphName</td>
+                                                            <td>@graphMasterDto.SavedBy</td>
+                                                        </tr>
+                                                        index++;
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <span style="font-weight:bold;color:Blue;">No Recent Graph Available</span>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr><td style="height:10px;"></td></tr>
+                <tr>
+                    <td style="Width:10PX;"></td>
+                    <td style="Width:180PX;" valign="top">
+                        <table style="width:100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="background-color:#000000; font-family:Verdana; color:White;">Recent Views</td>
+                            </tr>
+                            <tr>
+                                <td style="height:135px; background-color:#e7e7e7;" valign="top">
+                                    @if (Model.ViewMasterDtoList.Count > 0)
+                                    {
+                                        <table cellspacing="0" cellpadding="4" rules="rows" border="3" style="background-color:White;border-color:#336666;border-width:3px;border-style:Double;height:135px;border-collapse:collapse;">
+                                            <tbody>
+                                                <tr style="color:White;background-color:#336666;font-weight:bold;">
+                                                    <th scope="col">S.No</th>
+                                                    <th scope="col">View Name</th>
+                                                    <th scope="col">Created By</th>
+                                                </tr>
+                                                @{
+                                                    int index = 1;
+                                                    foreach (var viewMasterDto in Model.ViewMasterDtoList)
+                                                    {
+                                                        <tr style="color:#333333;background-color:White;">
+                                                            <td>@index</td>
+                                                            <td>@viewMasterDto.ViewName</td>
+                                                            <td>@viewMasterDto.CreatedBy</td>
+                                                        </tr>
+                                                        index++;
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <span style="font-weight:bold;color:Blue;">No Recent View Available</span>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="Width:10PX;"></td>
+                    <td style="Width:180PX;" valign="top">
+                        <table style="width:100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="background-color:#000000; font-family:Verdana; color:White;">Recent Tables</td>
+                            </tr>
+                            <tr>
+                                <td style="height:135px; background-color:#e7e7e7;" valign="top">
+                                    @if (Model.TableMasterDtoList.Count > 0)
+                                    {
+                                        <table cellspacing="0" cellpadding="4" rules="rows" border="3" style="background-color:White;border-color:#336666;border-width:3px;border-style:Double;height:135px;border-collapse:collapse;">
+                                            <tbody>
+                                                <tr style="color:White;background-color:#336666;font-weight:bold;">
+                                                    <th scope="col">S.No</th>
+                                                    <th scope="col">Table Name</th>
+                                                    <th scope="col">Created By</th>
+                                                </tr>
+                                                @{
+                                                    int index = 1;
+                                                    foreach (var tableMasterDto in Model.TableMasterDtoList)
+                                                    {
+                                                        <tr style="color:#333333;background-color:White;">
+                                                            <td>@index</td>
+                                                            <td>@tableMasterDto.TableName</td>
+                                                            <td>@tableMasterDto.CreatedBy</td>
+                                                        </tr>
+                                                        index++;
+                                                    }
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <span style="font-weight:bold;color:Blue;">No Recent Table Available</span>
+                                    }
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="Width:10PX;"></td>
+                    <td style="Width:180PX;" valign="top">
+                        @if (Model.HasQuery)
+                        {
+                            <table style="width:100%;" cellpadding="0" id="tblquery" cellspacing="0">
+                                <tr>
+                                    <td style="background-color:#000000; font-family:Verdana; color:White;">
+                                        Recent Query 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:135px; background-color:#e7e7e7;" valign="top">
+                                        @if (Model.QueryMasterDtoList.Count > 0)
+                                        {
+                                            <table cellspacing="0" cellpadding="4" rules="rows" border="3" style="background-color:White;border-color:#336666;border-width:3px;border-style:Double;height:135px;border-collapse:collapse;">
+                                                <tbody>
+                                                    <tr style="color:White;background-color:#336666;font-weight:bold;">
+                                                        <th scope="col">S.No</th>
+                                                        <th scope="col">Table Name</th>
+                                                        <th scope="col">Created By</th>
+                                                    </tr>
+                                                    @{
+                                                        int index = 1;
+                                                        foreach (var queryMasterDto in Model.QueryMasterDtoList)
+                                                        {
+                                                            <tr style="color:#333333;background-color:White;">
+                                                                <td>@index</td>
+                                                                <td>@queryMasterDto.QueryName</td>
+                                                                <td>@queryMasterDto.SavedBy</td>
+                                                            </tr>
+                                                            index++;
+                                                        }
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        }
+                                        else
+                                        {
+                                            <span style="font-weight:bold;color:Blue;">No Recent Query Available</span>
+                                        }
+                                    </td>
+                                </tr>
+                            </table>
+                        }
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+

@@ -1,0 +1,11 @@
+timetracker
+http://timetracker.ouronlineserver.com/
+staging db
+45.113.189.66
+timetracker
+T!M#Tr@CK3RID$
+
+local db
+221
+timetracker
+ids@12345

@@ -1,0 +1,19 @@
+Telerik.Sitefinity.Compiler.exe /url="http://staging.hpa.online" /appdir="D:\SVN Projects\staging.hpa.online\trunk\website" /username="sfadmin" /password="admin@2" /strategy="Frontend" /membershipprovider="Default"
+
+
+Telerik.Sitefinity.Compiler.exe /url="http://pickfordscms.local" /appdir="D:\SVN Projects\pickfordscms" /username="admin" /password="admin123" /strategy="Frontend" /membershipprovider="Default"
+
+
+
+8u3#u8u3#u8u3#u
+
+
+Telerik.Sitefinity.Compiler.exe /url="http://staging.hpa.online" /appdir="D:\SVN Projects\staging.hpa.online\trunk\website" /authKey="8u3#u8u3#u8u3#u" /strategy="Frontend"
+
+Telerik.Sitefinity.Compiler.exe /url="http://pickfordscms.local" /appdir="D:\SVN Projects\pickfordscms" /authKey="8u3#u8u3#u8u3#u" /strategy="Frontend"
+
+
+
+Telerik.Sitefinity.Compiler.exe /url="https://staging.emmasdiary.co.uk" /appdir="C:\inetpub\sf10-2.emmasdiary.co.uk" /authKey="8u3#u8u3#u8u3#u" /strategy="Frontend"
+
+C:\inetpub\sf10-2.emmasdiary.co.uk

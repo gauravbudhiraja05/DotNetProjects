@@ -1,0 +1,12 @@
+﻿
+/*table th, table td {
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #BEF2F5
+}*/
+
+.pagination121 li:hover {
+    cursor: pointer;
+}

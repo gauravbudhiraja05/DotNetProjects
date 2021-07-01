@@ -1,0 +1,326 @@
+﻿@{
+    ViewData["Title"] = "Featured Message";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item">Add new</button>
+            <button type="button" class="delete_list_item">delete</button>
+
+        </div>
+
+        <div class="top_filter_right">
+
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#">Filter by department...</a>
+                        <ul class="drop_menu_sub">
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Finance</a></li>
+                            <li><a href="#">Health and Safety</a></li>
+                            <li><a href="#">HR</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Operations</a></li>
+                            <li><a href="#">Shipping Services</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="search" class="form-control" placeholder="Search">
+                    <input type="submit" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Message from the MD</h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="table_wrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 100px;">
+                                <button type="button" class="table_title active"><i class="icon asc"></i> Message ID</button>
+                            </th>
+                            <th style="width: 490px;">
+                                <button type="button" class="table_title"><i class="icon"></i> Content</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Creation Date</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Live?</button>
+                            </th>
+                            <th style="width: 115px;">
+                                <button type="button" class="table_title"><i class="icon"></i> Author Name</button>
+                            </th>
+                            <th style="width:75px;text-align: center;">Edit</th>
+                            <th style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem1" class="check_item">
+                                    <label for="checkitem1"></label>
+                                </div>
+                            </td>
+                            <td>#2025</td>
+                            <td><a href="md-message-detail.html">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/yes_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem2" class="check_item">
+                                    <label for="checkitem2"></label>
+                                </div>
+                            </td>
+                            <td>#1054</td>
+                            <td><a href="md-message-detail.html">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem3" class="check_item">
+                                    <label for="checkitem3"></label>
+                                </div>
+                            </td>
+                            <td>#9957</td>
+                            <td><a href="md-message-detail.html">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="no"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem4" class="check_item">
+                                    <label for="checkitem4"></label>
+                                </div>
+                            </td>
+                            <td>#4747</td>
+                            <td><a href="md-message-detail.html">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem5" class="check_item">
+                                    <label for="checkitem5"></label>
+                                </div>
+                            </td>
+                            <td>#4025</td>
+                            <td><a href="md-message-detail.html">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem6" class="check_item">
+                                    <label for="checkitem6"></label>
+                                </div>
+                            </td>
+                            <td>#4040</td>
+                            <td><a href="md-message-detail.html">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="no"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem7" class="check_item">
+                                    <label for="checkitem7"></label>
+                                </div>
+                            </td>
+                            <td>#5050</td>
+                            <td><a href="md-message-detail.html">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="no"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem8" class="check_item">
+                                    <label for="checkitem8"></label>
+                                </div>
+                            </td>
+                            <td>#2025</td>
+                            <td><a href="md-message-detail.html">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem9" class="check_item">
+                                    <label for="checkitem9"></label>
+                                </div>
+                            </td>
+                            <td>#4747</td>
+                            <td><a href="md-message-detail.html">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkitem10" class="check_item">
+                                    <label for="checkitem10"></label>
+                                </div>
+                            </td>
+                            <td>#5050</td>
+                            <td><a href="md-message-detail.html">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</a></td>
+                            <td>10/26/2017</td>
+                            <td><img src="images/no_icon.png" alt="yes"></td>
+                            <td>Dan Sacker</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="window.location.href='md-message-detail.html'">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="delete_item">delete</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table_pagination">
+
+                <div class="dataTables_paginate">
+                    <a class="paginate_button previous">Previous</a>
+                    <span>
+                        <a class="paginate_button current">1</a>
+                        <a class="paginate_button">2</a>
+                        <a class="paginate_button">3</a>
+                        <a class="paginate_button">4</a>
+                        <a class="paginate_button">5</a>
+                        <a class="paginate_button">6</a>
+                    </span>
+                    <a class="paginate_button next">Next</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+
+    </div>
+    <!--End center_wrap-->
+
+</div>
+<!--End full_width-->
+
+@section DocumentReady{
+ 
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemAdminUsers').addClass('current');
+}

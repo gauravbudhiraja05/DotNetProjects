@@ -1,0 +1,231 @@
+2020-05-11T11:15:09.8495409+05:30 0HLVLDIJ6M77B:00000005 [ERR] Could not find stored procedure 'usp_GetPreRequisitesDataToCreateNews'. (f221782b)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetPreRequisitesDataToCreateNews'.
+   at PickfordsIntranet.Services.NewsService.GetNewsDataToCreateNews(UserActionLoggingDetails userActionLoggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 122
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Add(Int32 DepartmentId, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 84
+ClientConnectionId:03c382bf-02d9-45c4-aa0a-5499c16c5d52
+Error Number:2812,State:62,Class:16
+2020-05-11T11:15:09.8632043+05:30 0HLVLDIJ6M77B:00000005 [ERR] The view '"/Error"' was not found. Searched locations: ["/Error"] (9bb2756c)
+2020-05-11T11:15:10.0769474+05:30 0HLVLDIJ6M77B:00000005 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view '/Error' was not found. The following locations were searched:
+/Error
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2020-05-11T11:45:01.8031864+05:30 0HLVLDIJ6M77F:00000002 [ERR] Could not find stored procedure 'usp_AddNews'. (2ae9fc16)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_AddNews'.
+   at PickfordsIntranet.Services.NewsService.SaveNews(NewsVM news) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 136
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Add(NewsVM news, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 168
+ClientConnectionId:0985f5ea-5732-4c3a-a3ca-3a6b9d83a6ea
+Error Number:2812,State:62,Class:16
+2020-05-11T12:41:12.2513903+05:30 0HLVLF9CM923P:00000002 [ERR] A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) (5ee8393c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+   at PickfordsIntranet.Services.AuthService.UserAuthenticate(AuthUserVM user) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\AuthService.cs:line 51
+   at PickfordsIntranet.WebAdmin.Controllers.AccountController.Login(AuthUserVM user) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\AccountController.cs:line 70
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2020-05-11T12:41:12.2677133+05:30 0HLVLF9CM923P:00000002 [ERR] The view '"/Error"' was not found. Searched locations: ["/Error"] (9bb2756c)
+2020-05-11T12:41:12.3208872+05:30 0HLVLF9CM923P:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view '/Error' was not found. The following locations were searched:
+/Error
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2020-05-11T12:50:11.9859160+05:30 0HLVLF9CM923S:00000002 [ERR] A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) (5ee8393c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+   at PickfordsIntranet.Services.AuthService.UserAuthenticate(AuthUserVM user) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\AuthService.cs:line 51
+   at PickfordsIntranet.WebAdmin.Controllers.AccountController.Login(AuthUserVM user) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\AccountController.cs:line 70
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2020-05-11T12:50:11.9931264+05:30 0HLVLF9CM923S:00000002 [ERR] The view '"/Error"' was not found. Searched locations: ["/Error"] (9bb2756c)
+2020-05-11T12:50:12.0485976+05:30 0HLVLF9CM923S:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view '/Error' was not found. The following locations were searched:
+/Error
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2020-05-11T14:07:12.0025583+05:30 0HLVLFTOHVIO7:00000003 [ERR] Could not find stored procedure 'usp_AddNews'. (2ae9fc16)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_AddNews'.
+   at PickfordsIntranet.Services.NewsService.SaveNews(NewsVM news) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 136
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Add(NewsVM news, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 168
+ClientConnectionId:f971014d-7348-4581-be27-a116d099b12f
+Error Number:2812,State:62,Class:16
+2020-05-11T14:09:05.3817988+05:30 0HLVLFTOHVIOA:00000001 [ERR] Could not find stored procedure 'usp_GetNewsById'. (bc5a0c3c)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetNewsById'.
+   at PickfordsIntranet.Services.NewsService.GetNewsById(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 149
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Edit(Int32 NewsId, Int32 SelectedDepartmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 193
+ClientConnectionId:f971014d-7348-4581-be27-a116d099b12f
+Error Number:2812,State:62,Class:16
+2020-05-11T14:09:09.7672504+05:30 0HLVLFTOHVIOA:00000004 [ERR] Could not find stored procedure 'usp_GetNewsById'. (bc5a0c3c)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetNewsById'.
+   at PickfordsIntranet.Services.NewsService.GetNewsById(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 149
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Edit(Int32 NewsId, Int32 SelectedDepartmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 193
+ClientConnectionId:f971014d-7348-4581-be27-a116d099b12f
+Error Number:2812,State:62,Class:16
+2020-05-11T14:09:13.1728346+05:30 0HLVLFTOHVIOA:00000007 [ERR] Could not find stored procedure 'usp_GetNewsById'. (bc5a0c3c)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetNewsById'.
+   at PickfordsIntranet.Services.NewsService.GetNewsById(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 149
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Edit(Int32 NewsId, Int32 SelectedDepartmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 193
+ClientConnectionId:f971014d-7348-4581-be27-a116d099b12f
+Error Number:2812,State:62,Class:16
+2020-05-11T14:44:10.3498259+05:30 0HLVLHD6DC39S:00000008 [ERR] The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'. (63380098)
+System.ObjectDisposedException: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+   at PickfordsIntranet.Services.NewsService.GetNewsById(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 149
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Edit(Int32 NewsId, Int32 SelectedDepartmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 193
+2020-05-11T14:45:26.2457847+05:30 0HLVLHD6DC39S:00000009 [ERR] The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'. (63380098)
+System.ObjectDisposedException: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+   at PickfordsIntranet.Services.NewsService.GetNewsById(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 149
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Edit(Int32 NewsId, Int32 SelectedDepartmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 193
+2020-05-11T14:47:03.0350173+05:30 0HLVLHD6DC39T:00000003 [ERR] Could not find stored procedure 'usp_UpdateNews'. (a156f0b0)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_UpdateNews'.
+   at PickfordsIntranet.Services.NewsService.UpdateNews(NewsVM news) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 163
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.Update(NewsVM news, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 282
+ClientConnectionId:dd700efa-c781-4879-9002-25f4b52ea172
+Error Number:2812,State:62,Class:16
+2020-05-11T17:52:36.6114443+05:30 0HLVLKMSSGIVB:0000000E [ERR] Could not find stored procedure 'usp_GetImageNames'. (78b86c0b)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetImageNames'.
+   at PickfordsIntranet.Services.NewsService.DeleteNewsByIds(DeleteItemVM targetIds) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 178
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.DeleteNews(DeleteItemVM targetIds, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 313
+ClientConnectionId:ec837873-f561-4046-a83c-4c650318a6a9
+Error Number:2812,State:62,Class:16
+2020-05-11T17:58:10.7043504+05:30 0HLVLKMSSGIVD:00000007 [ERR] Could not find stored procedure 'usp_GetImageNames'. (78b86c0b)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetImageNames'.
+   at PickfordsIntranet.Services.NewsService.DeleteNewsByIds(DeleteItemVM targetIds) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\NewsService.cs:line 178
+   at PickfordsIntranet.WebAdmin.Controllers.NewsController.DeleteNews(DeleteItemVM targetIds, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\NewsController.cs:line 313
+ClientConnectionId:ec837873-f561-4046-a83c-4c650318a6a9
+Error Number:2812,State:62,Class:16

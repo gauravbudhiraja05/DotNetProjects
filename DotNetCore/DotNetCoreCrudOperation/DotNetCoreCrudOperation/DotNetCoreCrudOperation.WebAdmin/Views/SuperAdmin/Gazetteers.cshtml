@@ -1,0 +1,98 @@
+﻿@model IEnumerable<PickfordsIntranet.ViewModels.SuperAdmin.GazetteersGridItemVM>
+@{
+    ViewData["Title"] = "Gazetteers";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("AddGazetteers","SuperAdmin")'">Add new</button>
+
+            @if (Model.Count() > 0)
+            {
+
+                <button id="btnDeleteGazetteers" type="button" class="delete_list_item">delete</button>
+            }
+
+
+
+
+        </div>
+
+        @*<a href='~/Sample_Gazetteers.xlsx' target="_blank" class="heading_anchor_Gazetteer">Download sample gazetteer</a>*@
+
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Gazetteers Upload</h1>
+
+
+            </div>
+            <!--End page_heading-->
+
+
+            <div class="table_wrap">
+                <table id="tblGazetteers" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 600px;">
+                                <button type="button" class="table_title"><i class="icon"></i> File Name</button>
+                            </th>
+                            <th style="width:115px;">
+                                <button type="button" class="table_title"><i class="icon"></i>Uploaded Date</button>
+                            </th>
+                            <th style="width: 115px;">
+                                <button type="button" class="table_title"><i class="icon"></i> Author Name</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td style="width: 70px;">
+                                    <div class="table_checkbox">
+                                        <input type="checkbox" id="checkitem1" class="check_item">
+                                        <label for="checkitem1"></label>
+                                    </div>
+                                </td>
+                                <td>@item.FileName</td>
+                                <td>@item.UploadedDateToDisplay</td>
+                                <td>@item.AuthorName <span style="display:none">@item.Id</span></td>
+                            </tr>
+
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+
+    </div>
+    <!--End center_wrap-->
+
+</div>
+<!--End full_width-->
+<script src="~/js/Admin/admin.gazetteers.js" asp-append-version="true"></script>

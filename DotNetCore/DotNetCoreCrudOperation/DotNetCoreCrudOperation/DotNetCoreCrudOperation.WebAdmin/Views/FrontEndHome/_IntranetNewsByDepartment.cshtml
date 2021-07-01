@@ -1,0 +1,73 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    Layout = null;
+}
+
+
+
+@if (Model.NewsListByDepartmentWise != null && Model.NewsListByDepartmentWise.Count != 0)
+{
+    @*class="news_slider_section"*@
+    <div class="news_slider_section">
+        @* class="news_items_slider " *@
+        <div class="news_items_no_slider">
+
+            <div class="news_items_row">
+
+                @foreach (var news in Model.NewsListByDepartmentWise)
+                {
+                    var title = news.Title.Trim().Replace(' ', '_');
+
+                    <div class="news_slide_item">
+
+                        <div class="inner">
+                            <div class="img">
+                                <span class="tag">@(news.DepartmentName) News</span>
+
+                                @if (news.ThumbnailImagePath != null)
+                                {
+                                    <a href="#" mytag="@title" id="@news.Id" style="background-image:url('/fileserver/uploads/images/news/@news.ThumbnailImagePath')" class="news_detail item_bg"></a>
+                                }
+                                else
+                                {
+                                    <a href="#" mytag="@title" id="@news.Id" style="background-image:url('/fileserver/uploads/images/news/thumbnail_no_image.jpg')" class="news_detail item_bg"></a>
+                                }
+                            </div>
+                            <div class="detail">
+                                <span class="item_date">@(news.PublishDateDisplay)</span>
+                                <p>
+                                   <a href="#" mytag="@title" id="@news.Id" class="news_detail">
+                                        @news.Title
+                                    </a>
+                                </p>
+                                <a href="#" id="@(news.Id)" mytag="@title" class="read_more_btn news_detail">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+            @*<a href="#" class="read_allnews">Read all news</a>*@
+
+        </div>
+    </div>
+
+}
+<script>
+    $(document).ready(function () {
+
+        $('.news_detail').on('click', function () {
+            //var NewsId = this.id;
+            //window.location.href = '/FrontEndHome/IntranetNewsDetail/' + NewsId;
+            var NewsId = this.id;
+            var NewsTitle = $(this).attr('mytag');
+            //window.location.href = '/FrontEndHome/IntranetNewsDetail/' + NewsId;
+            window.location.href = '/intranet/news/' + NewsId + '/' + NewsTitle;
+        });
+    });
+
+</script>
+
+<script type="text/javascript" src="~/FrontEnd/js/owl.carousel.js" asp-append-version="true"></script>

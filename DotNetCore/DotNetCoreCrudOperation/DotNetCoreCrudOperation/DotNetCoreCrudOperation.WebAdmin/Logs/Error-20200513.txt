@@ -1,0 +1,15 @@
+2020-05-13T15:28:16.5314676+05:30  [FTL] Application startup exception (6c57a5ba)
+System.ArgumentException: The directory name D:\Projects\Test Projects\DotNetCoreCrudOperation\ is invalid.
+Parameter name: path
+   at System.IO.FileSystemWatcher..ctor(String path, String filter)
+   at System.IO.FileSystemWatcher..ctor(String path)
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider.CreateFileWatcher(String root)
+   at Microsoft.Extensions.FileProviders.PhysicalFileProvider..ctor(String root)
+   at PickfordsIntranet.WebAdmin.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IMessage emailMessage) in E:\Git Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Startup.cs:line 172
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.ApplicationInsights.HostingStartup.ApplicationInsightsLoggerStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.ApplicationInsights.AspNetCore.ApplicationInsightsStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()

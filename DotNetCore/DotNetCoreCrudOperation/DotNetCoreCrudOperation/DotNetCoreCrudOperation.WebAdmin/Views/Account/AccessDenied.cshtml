@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Pickfords Intranet</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true"/>
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="header">
+
+            <div class="center_wrap">
+                <div class="top_menu">
+                    <a href="@Url.Action("Dashboard","Home")" class="logo"><img src="@Url.Content("~/images/pickfords_logo_w.png")" alt="pickfords" /></a>
+                    <div class="extra_links">
+                        <a href="#" style="padding-top: 10px;text-decoration: none !important;cursor: default !important;"><span>Intranet Admin</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="full_width">
+            <div class="banner" style="background-image:url(@Url.Content("~/images/filter_banner.jpg"));"></div>
+            <div class="center_wrap">
+
+                <div class="content_wrap login_content">
+
+                    <div class="page_heading">
+                        <h2>Sorry, please login to Pickfords Intranet Admin <a href="@Url.Action("Login","Account")">here</a></h2>
+                    </div>
+                    <!--End page_heading-->
+
+                    
+
+
+
+                </div>
+                <!--End content_wrap-->
+
+
+            </div>
+            <!--End center_wrap-->
+        </div>
+
+
+    </div>
+    <!--End main_wrapper-->
+   
+</body>
+</html>

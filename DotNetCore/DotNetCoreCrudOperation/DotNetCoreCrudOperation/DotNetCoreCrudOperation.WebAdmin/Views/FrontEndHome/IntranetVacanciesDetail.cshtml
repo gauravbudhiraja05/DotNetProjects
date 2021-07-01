@@ -1,0 +1,240 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "IntranetVacanciesDetail";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+<div class="inner_page">
+    <div class="container">
+        @if (Model.VacancyDetail != null)
+        {
+
+            <div class="breadcrumb_area">
+                <ul>
+                    <li><a href="#" class="my_index">Home</a></li>
+                    <li><a class="my-vacancies" href="#">Vacancies</a></li>
+                    <li>
+                        @Model.VacancyDetail.Title
+                    </li>
+                </ul>
+
+            </div>
+            <!-- breadcrumb_area -->
+
+            <div class="back_link"><a class="my-vacancies" href="#">Back to Vacancies</a></div>
+
+            @if (Model.VacancyDetail.MainImagePath != null)
+            {
+                <div class="inner_banner">
+                    <img src="/fileserver/uploads/images/Vacancy/@Model.VacancyDetail.MainImagePath" alt="" />
+                    <div class="inner_banner_title">
+                        <h1>
+                            <span>
+                                @Model.VacancyDetail.Title
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="case_detail_area">
+                    <div class="business_moving">
+                        <span>
+                            @Model.VacancyDetail.PublishDateDisplay
+                        </span>
+                    </div>
+                    <div class="case_detail_content">
+                        <h2>@Model.VacancyDetail.TeaserText</h2>
+
+                        @if (!string.IsNullOrEmpty(Model.VacancyDetail.Content1) && !Model.VacancyDetail.Content1.StartsWith("<p>"))
+                        {
+                            Model.VacancyDetail.Content1 = "<p>" + Model.VacancyDetail.Content1 + "</p>";
+                        }
+                        @Html.Raw(Model.VacancyDetail.Content1)
+
+                        @if (Model.VacancyDetail.AdditionalImage1Path != null && Model.VacancyDetail.AdditionalImage2Path != null)
+                        {
+                            <div class="content_img_area">
+                                @if (Model.VacancyDetail.AdditionalImage1Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="/fileserver/uploads/images/Vacancy/@Model.VacancyDetail.AdditionalImage1Path" alt="" />
+                                    </div>
+                                }
+                                @if (Model.VacancyDetail.AdditionalImage2Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="/fileserver/uploads/images/Vacancy/@Model.VacancyDetail.AdditionalImage2Path" alt="" />
+                                    </div>
+                                }
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.VacancyDetail.Content2) && !Model.VacancyDetail.Content2.StartsWith("<p>"))
+                        {
+                            Model.VacancyDetail.Content2 = "<p>" + Model.VacancyDetail.Content2 + "</p>";
+                        }
+                        @Html.Raw(Model.VacancyDetail.Content2)
+
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="inner_banner">
+                    @*<img alt="" />*@
+                    <div class="inner_banner_title">
+                        <h1>
+                            <span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="case_detail_area">
+                    <div class="article_heading">
+                        <h1>@Model.VacancyDetail.Title</h1>
+                    </div>
+                    <div class="business_moving">
+                        <span>
+                            @Model.VacancyDetail.PublishDateDisplay
+                        </span>
+                    </div>
+                    <div class="case_detail_content">
+                        <h2>@Model.VacancyDetail.TeaserText</h2>
+
+                        @if (!string.IsNullOrEmpty(Model.VacancyDetail.Content1) && !Model.VacancyDetail.Content1.StartsWith("<p>"))
+                        {
+                            Model.VacancyDetail.Content1 = "<p>" + Model.VacancyDetail.Content1 + "</p>";
+                        }
+                        @Html.Raw(Model.VacancyDetail.Content1)
+
+                        @if (Model.VacancyDetail.AdditionalImage1Path != null && Model.VacancyDetail.AdditionalImage2Path != null)
+                        {
+                            <div class="content_img_area">
+                                @if (Model.VacancyDetail.AdditionalImage1Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="/fileserver/uploads/images/Vacancy/@Model.VacancyDetail.AdditionalImage1Path" alt="" />
+                                    </div>
+                                }
+                                @if (Model.VacancyDetail.AdditionalImage2Path != null)
+                                {
+                                    <div class="content_img">
+                                        <img src="/fileserver/uploads/images/Vacancy/@Model.VacancyDetail.AdditionalImage2Path" alt="" />
+                                    </div>
+                                }
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(Model.VacancyDetail.Content2) && !Model.VacancyDetail.Content2.StartsWith("<p>"))
+                        {
+                            Model.VacancyDetail.Content2 = "<p>" + Model.VacancyDetail.Content2 + "</p>";
+                        }
+                        @Html.Raw(Model.VacancyDetail.Content2)
+
+                    </div>
+                </div>
+            }
+        }
+
+        <div class="all_case_box">
+            <h2>More Vacancies</h2>
+
+            <div class="case_studies_detail news_detail_section details_article ">
+                <ul>
+                    @if (Model.VacancyList != null)
+                    {
+                        @foreach (var vacancy in Model.VacancyList)
+                        {
+                            var title = vacancy.Title.Trim().Replace(' ', '_');
+                            <li>
+                                <div class="all_case_detail">
+                                    <div class="case_img">
+                                        <span class="case_title">@vacancy.DepartmentName</span>
+                                        @if (vacancy.ThumbnailImagePath != null)
+                                        {
+                                            <a href="#" mytag="@title" id="@vacancy.Id" style="background-image:url('/fileserver/uploads/images/Vacancy/@vacancy.ThumbnailImagePath')" class="vacancy_detail item_bg"></a>
+                                        }
+                                        else
+                                        {
+                                            <a href="#" mytag="@title" id="@vacancy.Id" style="background-image:url('/fileserver/uploads/images/Vacancy/thumbnail_no_image.jpg')" class="vacancy_detail item_bg"></a>
+                                        }
+                                    </div>
+                                    <div class="case_detail">
+                                        <span class="up_date">
+                                            @vacancy.PublishDateDisplay
+                                        </span>
+                                        @*@{
+                                                var title = vacancy.Title.Trim().Replace(' ', '_');
+                                                <input type="hidden" id="hdnVacancyTitle" value="@title" />
+                                            }*@
+                                        <p><a mytag="@title" href="#" id="@vacancy.Id" class="vacancy_detail">@vacancy.Title</a></p>
+                                        <a href="#" mytag="@title" id="@vacancy.Id" class="read_more_btn vacancy_detail">Read More</a>
+
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+
+        </div>
+
+        <!--all_case_box-->
+
+        <div class="show_more_item more_case_studies deatils_btn"><a href="#">Show More Vacancies</a></div>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        setTimeout(function () {
+            equalheight('.case_studies_detail > ul > li');
+        }, 300);
+        size_li = $(".case_studies_detail > ul > li").size();
+
+        if (size_li <= 4) {
+            $(".more_case_studies").hide()
+        }
+
+        if (size_li <= 4) {
+            $(".more_case_studies a").hide();
+        }
+
+        if (size_li <= 4) {
+            $(".deatils_btn a").hide();
+        }
+
+        x = 4
+        $('.news_article > ul > li:lt(' + x + ')').show();
+
+        //$('.more_case_studies a').click(function (event) {
+        //    event.preventDefault();
+        //    x = (x + 4 <= size_li) ? x + 4 : size_li;
+        //    $('.news_article > ul > li:lt(' + x + ')').slideDown();
+
+        //    setTimeout(function () {
+        //        equalheight('.case_studies_detail > ul > li')
+        //    }, 200)
+
+        //    if (x == size_li) {
+        //        $(this).hide();
+        //    }
+
+        //});
+        $('.details_article > ul > li:lt(' + z + ')').show();
+        $('.deatils_btn a').click(function (event) {
+            event.preventDefault();
+            z = (z + 4 <= size_li) ? z + 4 : size_li;
+            $('.details_article > ul > li:lt(' + z + ')').slideDown();
+
+            setTimeout(function () {
+                equalheight('.case_studies_detail > ul > li')
+            }, 500)
+
+            if (z == size_li) {
+                $(this).hide();
+            }
+
+        });
+    });
+</script>

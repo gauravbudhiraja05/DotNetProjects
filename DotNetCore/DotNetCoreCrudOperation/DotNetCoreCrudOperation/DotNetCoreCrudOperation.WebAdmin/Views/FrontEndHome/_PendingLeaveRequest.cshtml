@@ -1,0 +1,64 @@
+﻿@model IEnumerable<PickfordsIntranet.ViewModels.FrontEnd.LeaveManagement>
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+<div class="leave_req_panel">
+    <div class="leave_step_title">Your Pending Leave Requests</div>
+    <div class="leave_req_content">
+        <p>Your pending leave requests are detailed below.  If you want to update your pending requests please use the update button to update your absence management record.  You can cancel your pending request using the Cancel button.    All new requests will be submitted to your Manager for sign off.</p>
+        <div class="table_wrap">
+            <table id="tblPendingLeaveRequestList" class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Start Date
+                        </th>
+                        <th>
+                            End date
+                        </th>
+                        <th style="width: 150px;">
+                            Duration
+                        </th>
+                        <th style="width: 150px;">
+                            Type
+                        </th>
+                        <th style="width:75px;text-align: center;">Update</th>
+                        <th style="width:75px;text-align: center;">Cancel</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.StartDate</td>
+                            <td>@item.EndDate</td>
+                            <td>
+                                @if (Convert.ToInt32(item.LeaveDuration) > 1)
+                                {
+                                    @(Convert.ToString(item.LeaveDuration) + " days");
+                                }
+                                else
+                                {
+                                    @(Convert.ToString(item.LeaveDuration) + " day");
+                                }
+                            </td>
+                            <td>@item.LeaveType</td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="edit_item" onClick="EditPendingLeaveRequest(@item.LeaveID)">edit</button>
+                            </td>
+                            <td style="width:75px;text-align: center;">
+                                <button type="button" class="cancel_item" onClick="ChangePendingLeavePopUp(@item.LeaveID,'@item.StartTime','@item.StartDayName','@item.StartDayOfMonth','@item.StartMonth','@item.EndTime','@item.EndDayName','@item.EndDayOfMonth','@item.EndMonth','@item.LeaveDuration')">delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>     
+    </div>
+</div>
+<script src="~/FrontEnd/js/LeaveManagement/PendingLeaveRequestPaging.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

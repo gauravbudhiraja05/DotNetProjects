@@ -1,0 +1,37 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    ViewData["Title"] = "IntranetNews";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+
+<div class="full_width">
+    <div class="container">
+
+        <div class="all_case_box">
+            <h2>Internal News</h2>
+            <p>Catch up on all the latest news from around the business.</p>
+
+            <div class="select_case_studies">
+                <select name="" id="ddlNewsDepartment" class="selectpicker">
+                    @foreach (var item in Model.NewsDepartmentsList)
+                    {
+                        <option value="@item.DepartmentId">@item.DepartmentName</option>
+                    }
+                </select>
+            </div>
+
+            <div id="PartialNewsDiv" class="case_studies_detail news_detail_section news_article">
+            </div>
+
+
+        </div>
+        <!--all_case_box-->
+        <div class="show_more_item more_case_studies"><a href="#">Show More News</a></div>
+    </div>
+    <!-- container -->
+
+</div>
+@*@{
+        await Html.RenderPartialAsync("_IntranetNewsDetail");
+    }*@
+<script src="~/FrontEnd/js/FrontEndHome/newsPartialView.js" asp-append-version="true"></script>

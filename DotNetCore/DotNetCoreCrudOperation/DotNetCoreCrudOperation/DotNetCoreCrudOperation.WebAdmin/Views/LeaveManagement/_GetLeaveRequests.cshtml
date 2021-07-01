@@ -1,0 +1,67 @@
+﻿@model PickfordsIntranet.ViewModels.LeaveRequest.LeaveRequest;
+@{
+    Layout = null;
+}
+
+<div class="content_wrap">
+    <div class="table_wrap">
+        <table id="tblLeaveRequests" class="table">
+            <thead>
+                <tr>
+                    <th style="width: 70px;">
+                        <div class="table_checkbox">
+                            <input type="checkbox" id="checkall" class="check_all">
+                            <label for="checkall">Accept</label>
+                        </div>
+                    </th>
+                    <th style="width: 100px;">
+                        <button type="button" class="table_title active"><i class="icon asc"></i> Request ID</button>
+                    </th>
+                    <th>
+                        <button type="button" class="table_title"><i class="icon"></i> First Name</button>
+                    </th>
+                    <th>
+                        <button type="button" class="table_title"><i class="icon"></i> Last Name</button>
+                    </th>
+                    <th>
+                        <button type="button" class="table_title"><i class="icon"></i>  Status</button>
+                    </th>
+                    <th>
+                        <button type="button" class="table_title"><i class="icon"></i> Leave Request Submission Date</button>
+                    </th>
+                    <th class="editAdminUser" style="width:75px;text-align: center;">Edit</th>
+                    <th class="deleteAdminUser" style="width:75px;text-align: center;">Cancel</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.LeaveDetailList)
+                {
+                    <tr>
+                        <td style="width: 70px;">
+                            <div class="table_checkbox">
+                                <input type="checkbox" id="checkitem1" class="check_item">
+                                <label for="checkitem1"></label>
+                            </div>
+                        </td>
+                        <td>@item.LeaveID</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.SurName</td>
+                        <td>@item.Status</td>
+                        <td>@item.CreatedDate</td>
+                        <td style="width:75px;text-align: center;">
+                            <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("Add","LeaveManagement",new { leaveId=item.LeaveID})'">edit</button>
+                        </td>
+                        <td style="width:75px;text-align: center;">
+                            <span style="display:none">@item.LeaveID</span>
+                            <button type="button" class="delete_item deleteRewardItem"  onclick="DeleteLeaveRequest('@item.LeaveID')">delete</button>
+                        </td>
+
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="~/js/LeaveRequest/LeaveRequestPaging.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

@@ -1,0 +1,183 @@
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model IEnumerable<PickfordsIntranet.ViewModels.FAQS.FaqsGridItemVM>
+@{
+    ViewData["Title"] = "FAQs";
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+}
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("AddFaqs","FAQs")'">Add new</button>
+            <button type="button" id="btnDeleteAllCheckedFaqs" class="delete_list_item">delete</button>
+
+        </div>
+
+        <div class="top_filter_right">
+
+            @*<div class="drop_menu">
+                    <ul>
+                        <li>
+                            <a href="#">Filter by department...</a>
+                            <ul class="drop_menu_sub">
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">Facilities</a></li>
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Health and Safety</a></li>
+                                <li><a href="#">HR</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Operations</a></li>
+                                <li><a href="#">Shipping Services</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>*@
+
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchFaqList" class="form-control" placeholder="Search">
+                    <input type="submit" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>FAQs</h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="table_wrap">
+                <table id="tblAdminFAQs" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall_Faq" class="check_all1">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 100px;">
+                                <button type="button" class="table_title active"><i class="icon asc"></i> Question ID</button>
+                            </th>
+                            <th style="width: 400px;">
+                                <button type="button" class="table_title"><i class="icon"></i> Question Text</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Creation Date</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i> Publish Date</button>
+                            </th>
+                            <th style="width: 115px;">
+                                <button type="button" class="table_title"><i class="icon"></i> Author Name</button>
+                            </th>
+                            <th style="width:75px;text-align: center;">Edit</th>
+                            <th style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var faq in Model)
+                        {
+                            <tr>
+                                <td style="width: 70px;">
+                                    <div class="table_checkbox">
+                                        <input type="hidden" id="hdnUserLoggedInType" value="@HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value" />
+                                        @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value == "DA")
+                                        {
+                                            <input type="hidden" id="hdnDeptAdminLoggedInId" value="@HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value" />
+                                            @if (faq.ISEditable_Deletable == true)
+                                            {
+                                                <input type="checkbox" id="checkFaqItem_@faq.CreatedBy" class="check_item">
+                                                <label for="checkFaqItem"></label>
+                                            }
+                                            else
+                                            {
+                                                <input type="checkbox" disabled="disabled" id="checkFaqItem_@faq.CreatedBy" class="check_item">
+                                                <label for="checkFaqItem"></label>
+                                            }
+
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" id="checkFaqItem_@faq.CreatedBy" class="check_item">
+                                            <label for="checkFaqItem"></label>
+                                        }
+                                    </div>
+                                </td>
+                                <td>@faq.Id</td>
+                                <td><a onClick="window.location.href='@Url.Action("EditFaqs","FAQs",new { Id=faq.Id})'">@faq.QuestionText</a></td>
+                                <td>@faq.CreationDateString</td>
+                                <td>@faq.PublishDateString</td>
+                                <td>@faq.AuthorName</td>
+
+                                @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value == "DA")
+                                {
+                                    <td style="width:75px;text-align: center;">
+                                        @if (faq.ISEditable_Deletable == true)
+                                        {
+                                            <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditFaqs", "FAQs", new { Id = faq.Id })'">edit</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" class="edit_item isDisabled">edit</button>
+                                        }
+                                    </td>
+                                    <td style="width:75px;text-align: center;">
+                                        <span style="display:none">@faq.Id</span>
+                                        @if (faq.ISEditable_Deletable == true)
+                                        {
+                                            <button type="button" class="delete_item FaqItem">delete</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" class="delete_item isDisabled">delete</button>
+                                        }
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td style="width:75px;text-align: center;">
+                                        <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditFaqs", "FAQs", new { Id = faq.Id })'">edit</button>
+                                    </td>
+                                    <td style="width:75px;text-align: center;">
+                                        <span style="display:none">@faq.Id</span>
+                                        <button type="button" class="delete_item FaqItem">delete</button>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+
+    </div>
+    <!--End center_wrap-->
+
+</div>
+<!--End full_width-->
+<script src="~/js/FAQs/faq.index.js" asp-append-version="true"></script>
+@section DocumentReady{
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

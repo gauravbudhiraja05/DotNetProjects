@@ -1,0 +1,451 @@
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.FAQs.AddFaqVM
+@{
+    ViewData["Title"] = "Edit FAQs";
+    var roles = HttpContextAccessor.HttpContext.User.Claims?.Where(c => c.Type == ClaimTypes.Role).Select(r => r.Value).ToList();
+}
+<form id="EditformFaqs" asp-controller="FAQs" asp-action="EditFaqs"
+      data-ajax-begin="onBeginEdit" data-ajax-complete="onCompleteEdit"
+      data-ajax-failure="onFailedEdit" data-ajax-success="onSuccessEdit"
+      data-ajax="true" data-ajax-method="POST">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index", "FAQs")'">Back</button>
+
+            <ul class="tab_list" id="EditTabUL">
+                <li class="current"><a href="#tab_1">Question & Answer</a></li>
+                <li><a href="#tab_2">Publishing and Author</a></li>
+            </ul>
+            @if (Model.IsReadableOnly == true)
+            {
+                <button type="button" class="tab_save isDisabled">Save</button>
+            }
+            else
+            {
+                <button type="button" id="btnEdit" class="tab_save">Save</button>
+
+            }
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+            <input type="hidden" asp-for="IsReadableOnly" />
+            <input type="hidden" id="hdnLoggedInUserRoleType" value="@HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value" />
+            <input type="hidden" id="hdnLoggedInUserId" value="@HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.NameIdentifier)?.Value" />
+            <input type="hidden" id="hdnCreatedBy" value="@Model.CreatedBy" />
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    @if (Model.IsReadableOnly == true)
+                    {
+                        <h1>View FAQ</h1>
+                    }
+                    else
+                    {
+                        <h1>Edit FAQ</h1>
+                    }
+                </div>
+                <!--End page_heading-->
+
+                @if (HttpContextAccessor.HttpContext.User.Claims?.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value == "DA")
+                {
+                    <div class="form_wrap">
+
+                        <div class="tab_content" id="tab_1">
+
+                            <div class="form_fields_box">
+                                <fieldset>
+                                    <div class="form_field">
+                                        <label for="QA_ID">Question ID* </label>
+                                        <input asp-for="QuestionId" type="text" disabled>
+                                        <input type="hidden" asp-for="QuestionId" />
+                                    </div>
+                                    <div class="form_field">
+                                        <label for="QA_Question-Title">
+                                            Question Text*
+                                            <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the question text.">Tooltip</small>
+                                        </label>
+                                        @if (Model.IsReadableOnly == true)
+                                        {
+                                            <input asp-for="QuestionText" disabled="disabled" class="isDisabled" type="text">
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="QuestionText" type="text">
+                                        }
+                                        <span class="error_label" asp-validation-for="QuestionText"></span>
+                                    </div>
+                                    <div id="divValueFAQAnswerText" class="form_field">
+                                        <label for="QA_Question-Answer">Answer Text* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the answer text.">Tooltip</small></label>
+                                        @if (Model.IsReadableOnly == true)
+                                        {
+                                            <textarea name="area" disabled="disabled" class="isDisabled" id="QA_Question-Answer" asp-for="AnswerText" style="width:100%;height:150px;"></textarea>
+                                        }
+                                        else
+                                        {
+                                            <textarea name="area" id="QA_Question-Answer" asp-for="AnswerText" style="width:100%;height:150px;"></textarea>
+                                        }
+                                        <span class="error_label" asp-validation-for="AnswerText"></span>
+                                    </div>
+
+                                    @*<div id="hdnDivValueFAQAnswerText" style="display:none">
+                                            <p style="margin-bottom: 0px; padding: 0px 0px 20px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; color: rgb(62, 62, 62); font-family: &quot;Droid Serif&quot;, serif; line-height: 28px;">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p><p style="margin-bottom: 0px; padding: 0px 0px 20px; border: 0px; outline: 0px; font-size: 16px; vertical-align: baseline; color: rgb(62, 62, 62); font-family: &quot;Droid Serif&quot;, serif; line-height: 28px;">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                                        </div>*@
+                                    <div id="hdnDivValueFAQAnswerText" style="display:none">"Sed ut perspiciatis <a href="doc/annual-leave-request-form.pdf" target="_blank">important link</a> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"<br />But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</div>
+
+                                </fieldset>
+
+                            </div>
+                            <!--End form_fields_box-->
+
+                            <div class="form_fields_box">
+                                <fieldset>
+                                    <div class="form_field">
+                                        <label for="ChooseToAttachDocs">
+                                            Attach Reference Document
+                                            <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Attach any document for the question.">Tooltip</small>
+                                        </label>
+
+                                        @if (string.IsNullOrEmpty(Model.DocumentIds))
+                                        {
+                                            <div class="select_div">
+                                                @if (Model.IsReadableOnly == true)
+                                                {
+                                                    <select disabled id="ChooseToAttachDocs">
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No" selected="selected">No</option>
+                                                    </select>
+                                                }
+                                                else
+                                                {
+                                                    <select id="ChooseToAttachDocs">
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No" selected="selected">No</option>
+                                                    </select>
+                                                }
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            @if (Model.IsReadableOnly == true)
+                                            {
+                                                <div class="select_div">
+                                                    <select disabled id="ChooseToAttachDocs">
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="select_div">
+                                                    <select id="ChooseToAttachDocs">
+                                                        <option value="Yes" selected="selected">Yes</option>
+                                                        <option value="No">No</option>
+                                                    </select>
+                                                </div>
+
+                                            }
+                                        }
+
+
+
+
+                                    </div>
+                                    @if (Model.IsReadableOnly == true)
+                                    {
+                                        <div class="form_field isDisabled" id="showHideMultiSelectDiv">
+                                            @Html.HiddenFor(m => m.DocumentIds)
+                                            <select id="Multiple_select_docs" disabled="disabled" multiple="multiple">
+                                                @foreach (var doc in Model.AttachDocuments)
+                                                {
+                                                    if (!string.IsNullOrEmpty(Model.DocumentIds))
+                                                    {
+                                                        if (Model.DocumentIds.IndexOf(doc.DocumentId.ToString()) == -1)
+                                                        {
+                                                            <option class="isDisabled" disabled="disabled" value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                        }
+                                                        else
+                                                        {
+                                                            <option class="isDisabled" disabled="disabled" value=@doc.DocumentId selected="selected" data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <option class="isDisabled" disabled="disabled" value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                    }
+                                                }
+
+                                            </select>
+
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="form_field" id="showHideMultiSelectDiv">
+                                            @Html.HiddenFor(m => m.DocumentIds)
+                                            <select id="Multiple_select_docs" multiple="multiple" onchange="getCheckedTree()">
+                                                @foreach (var doc in Model.AttachDocuments)
+                                                {
+                                                    if (!string.IsNullOrEmpty(Model.DocumentIds))
+                                                    {
+                                                        if (Model.DocumentIds.IndexOf(doc.DocumentId.ToString()) == -1)
+                                                        {
+                                                            <option value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                        }
+                                                        else
+                                                        {
+                                                            <option value=@doc.DocumentId selected="selected" data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        <option value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                    }
+                                                }
+
+                                            </select>
+
+                                        </div>
+
+                                    }
+                                </fieldset>
+                            </div>
+
+                        </div>
+
+
+                        <div class="tab_content" id="tab_2">
+
+                            <div class="form_fields_box">
+                                <fieldset>
+
+                                    <div class="form_field">
+                                        <label for="datetimepicker1">Creation Date</label>
+                                        @if (Model.IsReadableOnly == true)
+                                        {
+                                            <input id="datetimepicker1" asp-for="CreationDate" type="text" disabled placeholder="MM/DD/YYYY">
+                                        }
+                                        else
+                                        {
+                                            <input class="isDisabled" id="datetimepicker1" asp-for="CreationDate" type="text" disabled placeholder="MM/DD/YYYY">
+                                        }
+                                    </div>
+
+                                    @if (Model.IsReadableOnly == true)
+                                    {
+                                        <div class="form_field">
+                                            <label for="QA_Publish-Date">Publish Date*</label>
+                                            <input type="text" disabled="disabled" class="form-control" asp-for="PublishDateString" />
+                                            <span class="error_label" asp-validation-for="PublishDateString"></span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="datepicker_field">
+                                            <label for="QA_Publish-Date">Publish Date*</label>
+                                            <input type="text" class="form-control date-picker publishDate" asp-for="PublishDateString" readonly data-language='en' />
+                                            <span class="error_label" asp-validation-for="PublishDateString"></span>
+                                        </div>
+                                    }
+                                    @*<div class="datepicker_field">
+                                            @if (Model.IsReadableOnly == true)
+                                            {
+                                                <input type="text" class="form-control" asp-for="PublishDateString" readonly data-language='en' />
+                                            }
+                                            else
+                                            {
+                                                <input type="text" class="form-control date-picker publishDate" asp-for="PublishDateString" readonly data-language='en' />
+                                            }
+                                            <span class="error_label" asp-validation-for="PublishDateString"></span>
+                                        </div>*@
+
+
+
+                                    <div class="form_field">
+                                        <label for="QA_AuthorName">Author Name*</label>
+                                        @if (Model.IsReadableOnly == true)
+                                        {
+                                            <input class="isDisabled" disabled="disabled" asp-for="AuthorName" type="text">
+                                            <input type="hidden" asp-for="AuthorName" />
+                                        }
+                                        else
+                                        {
+                                            <input disabled="disabled" asp-for="AuthorName" type="text">
+                                            <input type="hidden" asp-for="AuthorName" />
+
+
+                                        }
+                                        <span class="error_label" asp-validation-for="AuthorName"></span>
+                                    </div>
+
+
+
+                                </fieldset>
+
+                            </div>
+                            <!--End form_fields_box-->
+
+                        </div>
+
+
+                    </div>
+                }
+                else
+                {
+                    <div class="form_wrap">
+
+                        <div class="tab_content" id="tab_1">
+
+                            <div class="form_fields_box">
+                                <fieldset>
+                                    <div class="form_field">
+                                        <label for="QA_ID">Question ID* </label>
+                                        <input asp-for="QuestionId" type="text" disabled>
+                                        <input type="hidden" asp-for="QuestionId" />
+                                    </div>
+                                    <div class="form_field">
+                                        <label for="QA_Question-Title">
+                                            Question Text*
+                                            <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the question text.">Tooltip</small>
+                                        </label>
+                                        <input asp-for="QuestionText" type="text">
+                                        <span class="error_label" asp-validation-for="QuestionText"></span>
+                                    </div>
+                                    <div id="divValueFAQAnswerText" class="form_field">
+                                        <label for="QA_Question-Answer">Answer Text* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the answer text.">Tooltip</small></label>
+                                        <textarea name="area" id="QA_Question-Answer" asp-for="AnswerText" style="width:100%;height:150px;"></textarea>
+                                        <span class="error_label" asp-validation-for="AnswerText"></span>
+                                    </div>
+
+                                    <div id="hdnDivValueFAQAnswerText" style="display:none">"Sed ut perspiciatis <a href="doc/annual-leave-request-form.pdf" target="_blank">important link</a> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"<br />But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</div>
+
+                                </fieldset>
+
+                            </div>
+                            <!--End form_fields_box-->
+
+                            <div class="form_fields_box">
+                                <fieldset>
+                                    <div class="form_field">
+                                        <label for="ChooseToAttachDocs">
+                                            Attach Reference Document
+                                            <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Attach any document for the question.">Tooltip</small>
+                                        </label>
+
+                                        @if (string.IsNullOrEmpty(Model.DocumentIds))
+                                        {
+                                            <div class="select_div">
+                                                <select id="ChooseToAttachDocs">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No" selected="selected">No</option>
+                                                </select>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="select_div">
+                                                <select id="ChooseToAttachDocs">
+                                                    <option value="Yes" selected="selected">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        }
+
+
+
+
+                                    </div>
+                                    <div class="form_field" id="showHideMultiSelectDiv">
+                                        @Html.HiddenFor(m => m.DocumentIds)
+                                        <select id="Multiple_select_docs" multiple="multiple" onchange="getCheckedTree()">
+                                            @foreach (var doc in Model.AttachDocuments)
+                                            {
+                                                if (!string.IsNullOrEmpty(Model.DocumentIds))
+                                                {
+                                                    if (Model.DocumentIds.IndexOf(doc.DocumentId.ToString()) == -1)
+                                                    {
+                                                        <option value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                    }
+                                                    else
+                                                    {
+                                                        <option value=@doc.DocumentId selected="selected" data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <option value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                                }
+                                            }
+
+                                        </select>
+
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                        </div>
+
+
+                        <div class="tab_content" id="tab_2">
+
+                            <div class="form_fields_box">
+                                <fieldset>
+
+                                    <div class="form_field">
+                                        <label for="datetimepicker1">Creation Date</label>
+                                        <input id="datetimepicker1" asp-for="CreationDate" type="text" disabled placeholder="MM/DD/YYYY">
+
+                                    </div>
+
+                                    <div class="form_field">
+                                        <label for="QA_Publish-Date">Publish Date*</label>
+                                        <div class="datepicker_field">
+                                            <input type="text" class="form-control date-picker publishDate" asp-for="PublishDateString" readonly data-language='en' />
+                                            <span class="error_label" asp-validation-for="PublishDateString"></span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form_field">
+                                        <label for="QA_AuthorName">Author Name*</label>
+                                        <input disabled="disabled" asp-for="AuthorName" type="text">
+                                        <input type="hidden" asp-for="AuthorName" />
+                                        <span class="error_label" asp-validation-for="AuthorName"></span>
+                                    </div>
+
+
+
+                                </fieldset>
+
+                            </div>
+                            <!--End form_fields_box-->
+
+                        </div>
+
+
+                    </div>
+                }
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+    <!--End full_width-->
+</form>
+
+<script src="~/js/FAQs/faq.editFaqs.js" asp-append-version="true"></script>
+
+

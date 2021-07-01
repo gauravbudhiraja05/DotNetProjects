@@ -1,0 +1,181 @@
+﻿@model PickfordsIntranet.ViewModels.FAQs.AddFaqVM
+@{
+    ViewData["Title"] = "AddFAQs";
+}
+
+<form id="formFaqs" asp-controller="FAQs" asp-action="AddFaqs"
+      data-ajax-begin="onBegin" data-ajax-complete="onComplete"
+      data-ajax-failure="onFailed" data-ajax-success="onSuccess"
+      data-ajax="true" data-ajax-method="POST">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","FAQs")'">Back</button>
+
+            <ul class="tab_list" id="tabUL">
+                <li class="current"><a href="#tab_1">Question & Answer</a></li>
+                <li><a href="#tab_2">Publishing and Author</a></li>
+            </ul>
+
+            <button id="btnSave" type="button" class="tab_save">Save</button>
+
+            @*<button type="button" class="delete_btn">delete</button>*@
+
+
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Add FAQ</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+                    @* add_faq_main *@
+                    <div class="tab_content " id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="QA_ID">Question ID* </label>
+                                    @*<input id="QA_ID" type="text" disabled>*@
+                                    <input type="text" disabled>
+                                </div>
+                                <div class="form_field ">
+                                    <label for="QA_Question-Title">
+                                        Question Text*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the question text.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="QuestionText" type="text">
+                                    <span class="error_label" asp-validation-for="QuestionText"></span>
+                                    @*<input id="QA_Question-Title" type="text">*@
+                                </div>
+                                <div id="divValueFAQAnswerText" class="form_field">
+                                    <label for="QA_Question-Answer">Answer Text* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the answer text.">Tooltip</small></label>
+                                    @*<textarea name="area" id="QA_Question-Answer" style="width:100%;height:150px;"></textarea>*@
+                                    <textarea name="area" id="QA_Question-Answer" asp-for="AnswerText" style="width:100%;height:150px;"></textarea>
+                                    <span class="error_label" asp-validation-for="AnswerText"></span>
+                                </div>
+
+                                <div id="hdnDivValueFAQAnswerText" style="display:none">"Sed ut perspiciatis <a href="doc/annual-leave-request-form.pdf" target="_blank">important link</a> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"<br /> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+                            @*<div id="partialDocumentList" style="display:none;" class="full_width"></div>*@
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="ChooseToAttachDocs">
+                                        Attach Reference Document
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="Attach any document for the question.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select id="ChooseToAttachDocs">
+                                            <option value="Yes">Yes</option>
+                                            <option value="No" selected="selected">No</option>
+                                        </select>
+                                    </div>
+                                   
+                                </div>
+                                <div class="form_field field_scroll" id="showHideMultiSelectDiv">
+                                    @*<input asp-for="DocumentIds" id="hiddenDocsId" type="hidden" />*@
+                                    @Html.HiddenFor(m => m.DocumentIds)
+                                    <select id="Multiple_select_docs" multiple="multiple" onchange="getCheckedTree()">
+                                        @foreach (var doc in Model.AttachDocuments)
+                                        {
+                                            <option class="multiselectOption" value=@doc.DocumentId data-section=@doc.DepartmentName/@doc.ParentFolderName/@doc.SubFolderName>@doc.Title</option>
+                                        }
+
+                                    </select>
+
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab_content" id="tab_2">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+
+                                <div class="form_field">
+                                    <label for="QA_Creation-Date">Creation Date*</label>
+                                    @*<input id="QA_Creation-Date" type="text" disabled placeholder="10/26/2017">*@
+                                    <input asp-for="CreationDate" type="text" disabled>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="QA_Publish-Date">Publish Date*</label>
+                                    <div class="datepicker_field">
+                                        @*<input type="text" class="datepicker-here" data-language='en' />*@
+                                        <input asp-for="PublishDateString" id="publishDate" type="text" class="datepicker-here" readonly data-language='en'>
+                                        <span class="error_label" asp-validation-for="PublishDateString"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="QA_AuthorName">Author Name</label>
+                                    <input asp-for="AuthorName" disabled="disabled" id="AuthorName" type="text">
+                                    <input type="hidden" asp-for="AuthorName" />
+                                    <span class="error_label" asp-validation-for="AuthorName"></span>
+                                </div>
+
+
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+    <!--End full_width-->
+</form>
+<script src="~/js/FAQs/faq.addFaqs.js" asp-append-version="true"></script>
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+    // Nice Editor
+    //<![CDATA[
+    bkLib.onDomLoaded(function () {
+    new nicEditor({ fullPanel: true, maxHeight: 200 }).panelInstance('QA_Question-Answer');
+    });
+    //]]>
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

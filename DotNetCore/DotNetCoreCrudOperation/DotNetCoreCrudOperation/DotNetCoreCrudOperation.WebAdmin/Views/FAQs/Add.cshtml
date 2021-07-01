@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewData["Title"] = "FAQs";
+}
+
+<div class="tab_menu">
+    <div class="center_wrap">
+
+        <button type="button" class="back_btn" onClick="window.location.href='faqs-listing.html'">Back</button>
+
+        <ul class="tab_list">
+            <li class="current"><a href="#tab_1">Question & Answer</a></li>
+            <li><a href="#tab_2">Publishing and Author</a></li>
+        </ul>
+
+        <button type="button" class="tab_save">Save</button>
+
+        <button type="button" class="delete_btn">delete</button>
+
+
+
+    </div>
+</div>
+<!--End tab_menu-->
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Add / Edit FAQ</h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="form_wrap">
+
+                <div class="tab_content" id="tab_1">
+
+                    <div class="form_fields_box">
+                        <fieldset>
+                            <div class="form_field">
+                                <label for="QA_ID">Question ID* </label>
+                                <input id="QA_ID" type="text" disabled>
+                            </div>
+                            <div class="form_field">
+                                <label for="QA_Question-Title">
+                                    Question Text*
+                                    <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the question text.">Tooltip</small>
+                                </label>
+                                <input id="QA_Question-Title" type="text">
+                            </div>
+
+                            <div class="form_field">
+                                <label for="QA_Question-Answer">Answer Text* <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the answer text.">Tooltip</small></label>
+                                <textarea name="area" id="QA_Question-Answer" style="width:100%;height:150px;"></textarea>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+                    <!--End form_fields_box-->
+
+                </div>
+
+
+                <div class="tab_content" id="tab_2">
+
+                    <div class="form_fields_box">
+                        <fieldset>
+
+                            <div class="form_field">
+                                <label for="QA_Creation-Date">Creation Date</label>
+                                <input id="QA_Creation-Date" type="text" disabled placeholder="10/26/2017">
+
+                            </div>
+
+                            <div class="form_field">
+                                <label for="QA_Publish-Date">Publish Date</label>
+                                <div class="datepicker_field">
+                                    <input type="text" class="datepicker-here" data-language='en' />
+                                </div>
+
+                            </div>
+
+                            <div class="form_field">
+                                <label for="QA_AuthorName">Author Name</label>
+                                <input id="QA_AuthorName" type="text" disabled placeholder="Admin Name">
+                            </div>
+
+
+
+                        </fieldset>
+
+                    </div>
+                    <!--End form_fields_box-->
+
+                </div>
+
+
+            </div>
+            <!--End forom_wrap-->
+
+
+        </div>
+        <!--End content_wrap-->
+
+
+    </div>
+    <!--End center_wrap-->
+</div>
+<!--End full_width-->
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+
+    $("input:file[class=upload]").change(function (e) {
+    var FileUpload = $(this).attr('id');
+    if (this.files && this.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+
+    $("#" + FileUpload).next("img").attr('src', e.target.result);
+
+    }
+    reader.readAsDataURL(this.files[0]);
+    }
+
+
+    });
+
+    // Nice Editor
+    //<![CDATA[
+    bkLib.onDomLoaded(function() {
+    new nicEditor({fullPanel : true,maxHeight : 200}).panelInstance('QA_Question-Answer');
+    });
+    //]]>
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

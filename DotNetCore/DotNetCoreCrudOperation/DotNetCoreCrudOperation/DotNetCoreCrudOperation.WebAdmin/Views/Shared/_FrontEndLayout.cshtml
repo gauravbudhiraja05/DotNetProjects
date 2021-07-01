@@ -1,0 +1,821 @@
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Pickfords Intranet</title>
+
+    <!--Global Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <!--Global CSS-->
+    <link href="~/FrontEnd/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/FrontEnd/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/FrontEnd/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/FrontEnd/css/datepicker.min.css">
+
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="~/FrontEnd/css/style.css" asp-append-version="true">
+    <link rel="stylesheet" type="text/css" href="~/FrontEnd/css/responsive.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FrontEnd/css/bootstrap-select.css" asp-append-version="true" />
+
+
+    @*<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*@
+    <link href="~/FrontEnd/css/pagingstyle.css" rel="stylesheet" asp-append-version="true" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!--Custom Js-->
+    <script type="text/javascript" src="~/FrontEnd/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/FrontEnd/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/FrontEnd/js/custom.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="http://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <script type="text/javascript" src="~/FrontEnd/js/bootstrap-select.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/FrontEnd/js/jquery-ui.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/js/sweetalert2.js"></script>
+    <script type="text/javascript" src="~/js/sweetalert2.promise.min.js"></script>
+
+    <script src="~/FrontEnd/js/FrontEndHome/frontendhome.index.js" asp-append-version="true"></script>
+    @*<script src="~/FrontEnd/js/FrontEndHome/paging.js"></script>*@
+    @*<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>*@
+    <script src="~/FrontEnd/js/FrontEndHome/js.js" asp-append-version="true"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#PostalCode").select2();
+        });
+        $(function () {
+            var availableTags = [
+                "How do I request annual leave? ", "How much annual leave do I get?", "Can I carry annual leave over into the next year?"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+        $(function () {
+            var availableTags = [
+                "How do I request annual leave? ", "How much annual leave do I get?", "Can I carry annual leave over into the next year?"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+    <div class="main_wrapper">
+
+        <div class="header_area">
+
+            <div class="header_top_area">
+
+                <div class="container">
+
+                    <div class="header_top_inner_area">
+
+                        <div class="header_call_on_area">
+                            <p class="date">Friday 2 February, 2018</p>
+                        </div>
+                        <!-- header_call_on_area -->
+
+                        <div class="header_logged_area">
+                            <div class="my_reward">
+                                <a id="myDepartmentlnk" class="my_department" href="#" onClick="window.location.href='/account/login'">Manager's Login</a>
+                            </div>
+                            <div class="my_reward">
+                                <a id="myDepartmentlnk" class="my_department" href="#" onClick="window.location.href='/intranet/manageleave'">My Leave</a>
+                            </div>
+                            <div class="my_favrt">
+                                <a href="#" id="openMyFavDiv" class="title">My Favourites</a>
+                                <div class="my_fav_popup">
+                                    <div class="title">My Favourite Documents</div>
+                                    <a href="#" class="fav_popup_close"></a>
+                                    <div class="guidance_list" id="myFavCollectionDiv">
+                                    </div>
+                                </div>
+                                <!-- my_fav_popup -->
+
+                            </div>
+
+                            <div class="my_dep">
+                                @*<a href="#" id="myDepartmentlnk" class="my_department">My Department</a>*@
+                                @if (!string.IsNullOrEmpty(Model.FrontEndUserDetails.MyDepartmentId))
+                                {
+                                    @*<a href="#" onClick="window.location.href='/FrontEndHome/IntranetDepartment?DepartmentId=@Model.FrontEndUserDetails.MyDepartmentId'" id="myDepartmentlnk" class="my_department">My Department</a>*@
+                                    <a id="myDepartmentlnk" class="my_department" href="#" onClick="window.location.href='/intranet/department/@Model.FrontEndUserDetails.MyDepartmentId/@Model.FrontEndUserDetails.MyDepartmentName.Replace(' ','_').Replace('/','_')'">My Department</a>
+                                }
+                                else
+                                {
+                                    <a href="#" id="myDepartmentlnk" class="my_department isDisabled">My Department</a>
+                                }
+                            </div>
+
+                            <div id="div_user_logged" class="user_logged">
+                                <a href="#" class="title">Logged in as <span id="span_FullName">@Model.FrontEndUserDetails.FirstName   @Model.FrontEndUserDetails.SurName</span></a>
+                                <div class="user_logged_drop">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="edit_profile_btn">Edit Profile</a>
+                                            @*<a href="#" class="edit_logout_btn">Logout</a>*@
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            @if (Model.FrontEndUserDetails.Photo != null)
+                            {
+                                <div class="user_logged_icon" id="div_endUserImg" style="background-image:url('/fileserver/Uploads/Images/FrontEndUser/@Model.FrontEndUserDetails.Photo')">
+                                    <input type="hidden" asp-for="FrontEndUserDetails.Id" />
+                                    <img id="imgUpload" />
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="user_logged_icon" id="div_endUserImg" style="background-image:url('/fileserver/Uploads/Images/FrontEndUser/defaultuser.png')">
+                                    <input type="hidden" asp-for="FrontEndUserDetails.Id" />
+                                    <img id="imgUpload" />
+                                </div>
+                            }
+
+
+                        </div>
+                        <!-- header_logged_area -->
+                        <form id="formProfile" name="formProfile">
+                            <div class="edit_profile_popup">
+                                <div class="title">Edit Your Profile</div>
+                                <a href="#" class="profile_popup_close"></a>
+
+                                <div class="input_field">
+                                    <label for="userAddressType">Photo:</label>
+
+                                    <div class="update_photo">
+                                        <span>Upload an image</span>
+                                        <input type="file" accept="image/*" asp-for="FrontEndUserDetails.UploadImage" name="filename" class="upload_btn" id="upload1" />
+                                        @*<img src="" id="img1" />*@
+                                        @if (Model.FrontEndUserDetails.Photo != null)
+                                        {
+                                            <div class="upload_bg" id="bg_Upload_img1" style="background-image: url(/fileserver/Uploads/Images/FrontEndUser/@Model.FrontEndUserDetails.Photo);"></div>
+                                            @*<img id="img1" src="~/Uploads/Images/FrontEndUser/@Model.FrontEndUserDetails.Photo" alt="" />*@
+                                        }
+                                        else
+                                        {
+                                            <div class="upload_bg" id="bg_Upload_img1" style="background-image: url(/fileserver/Uploads/Images/FrontEndUser/defaultuser.png);"></div>
+                                            @*<img id="img1" src="~/Uploads/Images/FrontEndUser/defaultuser.png" alt="" />*@
+                                        }
+
+                                        <input type="hidden" asp-for="FrontEndUserDetails.Photo" />
+                                        <input type="hidden" asp-for="FrontEndUserDetails.Id" />
+                                        <input type="hidden" asp-for="FrontEndUserDetails.WindowsUserId" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.UploadImage"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>First Name:*</label>
+                                    <input type="text" asp-for="FrontEndUserDetails.FirstName" placeholder="First name" />
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.FirstName"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Surname:*</label>
+                                    <input type="text" asp-for="FrontEndUserDetails.SurName" placeholder="Sur name" />
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.SurName"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Job Title:*</label>
+                                    <input type="text" asp-for="FrontEndUserDetails.JobTitle" placeholder="Job title" />
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.JobTitle"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Department:*</label>
+                                    @if (Model.EndUserDepartmentList != null)
+                                    {
+                                        <select name="ddlEndUser_Department" id="ddlEndUser_Department" asp-items="@(new SelectList(Model.EndUserDepartmentList, "DepartmentId", "DepartmentName"))"></select>
+                                    }
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.MyDepartmentName"></span>
+                                    @*<input type="text" asp-for="FrontEndUserDetails.Department" placeholder="Department" />*@
+                                    <input type="hidden" asp-for="FrontEndUserDetails.MyDepartmentId" />
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Location:*</label>
+                                    <input type="text" asp-for="FrontEndUserDetails.Location" placeholder="Location" />
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.Location"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Email Address:*</label>
+                                    <input type="email" asp-for="@Model.FrontEndUserDetails.EmailAddress"  placeholder="Email address" />
+                                    <span class="error_label" id="lblError_EmailAddress" asp-validation-for="FrontEndUserDetails.EmailAddress"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Telephone Number:*</label>
+                                    <input type="text" asp-for="FrontEndUserDetails.TelephoneNumber" placeholder="Telephone number" max="10" />
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.TelephoneNumber"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <label>Mobile Number:</label>
+                                    <input type="text" asp-for="FrontEndUserDetails.Mobile" placeholder="Mobile" max="10" />
+                                    <span class="error_label" asp-validation-for="FrontEndUserDetails.Mobile"></span>
+                                </div>
+
+                                <div class="input_field">
+                                    <input type="button" id="btnEditProfile" value="Update Profile" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- header_top_inner_area -->
+
+
+                </div>
+                <!-- container -->
+
+            </div>
+            <!-- header_top_area -->
+
+            <div class="header_mid_area html_mid_header">
+
+                <div class="container">
+
+                    <div class="logo">
+                        <a href=@string.Format("{0}://{1}", HttpContextAccessor.HttpContext.Request.Scheme, HttpContextAccessor.HttpContext.Request.Host) class="my_index"><img src="~/FrontEnd/images/pickfords_logo.png" /></a>
+                    </div>
+                    <!-- logo -->
+
+                    <div class="mid_menu">
+
+                        <ul class="navMegaMenu">
+                            <li>
+                                @* onClick="window.location.href='@Url.Action("IntranetDepartment","FrontEndHome",new { Id=0})'" *@
+                                <a href="#" class="my_department">Departments</a>
+                                <div class="dropdown_menu fullwidth">
+                                    <div class="container">
+
+                                        <div class="inner_dropdown_content">
+                                            <div class="home_moving_title">Departments</div>
+
+                                            <div class="home_moving">
+                                                <p>Select a department to read relevant news and find documents.</p>
+
+                                            </div>
+                                            @{
+                                                if (Model.DepartmentsList != null)
+                                                {
+                                                    @if (Model.DepartmentsList.Count() % 2 == 0)
+                                                    {
+                                                        Model.MideValue = (Model.DepartmentsList.Count) / 2;
+                                                    }
+                                                    else
+                                                    {
+                                                        Model.MideValue = (Model.DepartmentsList.Count) / 2 + 1;
+                                                    }
+                                                }
+                                            }
+                                            <div class="home_moving_area">
+
+                                                <div class="dropdwon_menu_list">
+                                                    <ul>
+                                                        @{int count = 0; }
+                                                        @if (Model.DepartmentsList != null)
+                                                        {
+                                                            @foreach (var depart in Model.DepartmentsList)
+                                                            {
+                                                                if (count < Model.MideValue)
+                                                                {
+                                                                    @*<li onClick="window.location.href='/FrontEndHome/IntranetDepartment?DepartmentId=@depart.DepartmentId'"><a href="#"><span>@depart.DepartmentName</span></a></li>*@
+                                                                    <li onClick="window.location.href='/intranet/department/@depart.DepartmentId/@depart.DepartmentName.Replace(' ','_').Replace('/','_')'"><a href="#"><span>@depart.DepartmentName</span></a></li>
+                                                                    count++;
+                                                                }
+                                                            }
+                                                        }
+                                                    </ul>
+
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="dropdwon_menu_list">
+                                                <ul>
+                                                    @{int countLast = 0;
+                                                        if (Model.DepartmentsList != null)
+                                                        {
+                                                            if (Model.DepartmentsList.Count() % 2 == 0)
+                                                            {
+                                                                countLast = Model.DepartmentsList.Count;
+                                                            }
+                                                            else
+                                                            {
+                                                                countLast = Model.DepartmentsList.Count + 1;
+                                                            }
+                                                        }
+                                                    }
+                                                    @if (Model.DepartmentsList != null)
+                                                    {
+                                                        @foreach (var depart in Model.DepartmentsList)
+                                                        {
+                                                            countLast--;
+                                                            if (countLast < Model.MideValue)
+                                                            {
+                                                                @*<li onClick="window.location.href='/FrontEndHome/IntranetDepartment?DepartmentId=@depart.DepartmentId'"><a href="#"><span>@depart.DepartmentName</span></a></li>*@
+                                                                <li onClick="window.location.href='/intranet/department/@depart.DepartmentId/@depart.DepartmentName.Replace(' ','_').Replace('/','_')'"><a href="#"><span>@depart.DepartmentName</span></a></li>
+                                                                count++;
+                                                            }
+                                                        }
+                                                    }
+                                                </ul>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li><a href="#" class="my-vacancies">Vacancies</a></li>
+                            <li><a href="#" class="read_allnews">News</a></li>
+                            <li><a href="#" class="our-values">Our Values</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- mid_menu -->
+
+
+
+                </div>
+                <!-- container -->
+
+            </div>
+            <!-- header_mid_area -->
+
+            <div class="iphone_header">
+
+                <div class="iphone_logo">
+                    <a href="#" class="my_index"><img src="~/FrontEnd/images/pickfords_logo.png"></a>
+                </div>
+                <!-- iphone_logo -->
+
+                <div class="iphone_menu_icon">
+                    <span></span>
+                </div>
+                <!-- iphone_menu_icon -->
+
+
+                <div class="iphone_menu_area">
+
+
+                    <div class="iphone_collpsed_menu">
+
+                        <ul class="mobile_ul">
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">Vacancies</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Our Values</a></li>
+                        </ul>
+
+
+                    </div>
+                    <!-- iphone_collpsed_menu -->
+
+
+                </div>
+                <!-- iphone_menu_area -->
+
+
+
+            </div>
+            <!-- iphone_header -->
+
+        </div>
+        <!-- header_area -->
+        @*<div id="progress" class="loaderModal">
+                <div class="loaderCenter">
+                    <img src="~/~/FrontEnd/images/loader4.gif" />
+                </div>
+            </div>*@
+        <!--End Loader Div-->
+        <div class="content_area">
+
+            <div class="top_filter_section">
+
+                <div class="container">
+
+                    <div class="filter_select_items">
+
+                        <div class="filter_select_item" id="find_location_filter">
+                            <a id="findALocation" class="select_item_btn">Find a location…</a>
+                        </div>
+
+                        <div class="filter_select_item" id="find_person_filter">
+                            <a class="select_item_btn">Find a person…</a>
+                        </div>
+
+                        <div class="filter_select_item" id="search_anything_filter">
+                            <div class="search_filter_field">
+                                <input type="text" class="search_filter tagsDocsAutoSearch" id="TopSearchDocumentInput" placeholder="Find a document..." onkeypress="SearchDocumentPressTop(event)" />
+                                <input type="button" class="search_filter_btn" id="TopSearchDocumentBtn" />
+                            </div>
+                        </div>
+
+                        <div class="filter_select_item" id="how_do_filter">
+                            <div class="search_filter_field">
+                                <div class="ui-widget">
+                                    <input type="text" class="search_filter topFaqSearchInput tagsFaqAutoSearch" id="tags" placeholder="How do I?" onkeypress="SearchFAQPressTop(event)" />
+                                </div>
+                                <input type="button" class="search_filter_btn" id="topFaqSearchBtn" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- container -->
+
+            </div>
+            <!-- top_filter_section -->
+
+            <div class="find_location_filter">
+                <div class="banner_center_area">
+                    <div class="inner_page_banner" style="background-image:url(/FrontEnd/images/reginal.jpg);">
+                        <div class="container">
+
+                            <div class="find_location_wrap">
+
+                                <a href="#" class="location_close_btn"></a>
+
+                                <div class="find_location_search">
+                                    <div class="title">Find a location</div>
+                                    <div class="select_div">
+                                        <select name="" id="PostalCode">
+                                            @foreach (var v in Model.PostalCodesList)
+                                            {
+                                                <option value="@v.Code">@v.Code</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="botm_desc">Select the first letter/s of the Postal Code to find sales and operations contacts.</div>
+                                </div>
+
+                                <div class="location_center" id="div_Location" style="display:none;">
+
+                                    <div class="full_width">
+                                        <div class="center_numbers_wrap">
+
+                                            <div class="center_numbers">
+                                                <small>SALES CENTRE: <cite id="span_SalesCenter"></cite></small>
+                                            </div>
+
+                                            <div class="center_numbers">
+                                                <small>CUSTOMER NUMBER: </small>
+                                                <span id="span_CustomerNumber"></span>
+                                            </div>
+
+                                            <div class="center_numbers">
+                                                <small>GROUP SALES MANAGER:</small>
+                                                <span id="span1_GroupSalesManager"></span>
+                                                <span id="span2_GroupSalesManager"></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="center_numbers_wrap">
+
+                                            <div class="center_numbers">
+                                                <small>OPERATIONS LOCATION: </small>
+                                                <span id="span_OperationsLocation"></span>
+                                            </div>
+
+                                            <div class="center_numbers">
+                                                <small>BOOKING DEPT CODE: </small>
+                                                <span id="span_BookingDeptCode"></span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="full_width">
+                                        <div class="center_numbers_wrap">
+
+                                            <div class="center_numbers">
+                                                <small>CUSTOMER SERVICE MANAGER:</small>
+                                                <span id="span1_CustomerServiceManager"></span>
+                                                <span id="span2_CustomerServiceManager"></span>
+                                            </div>
+
+                                            <div class="center_numbers">
+                                                <small>AREA MANAGER:</small>
+                                                <span id="span1_AreaManager"></span>
+                                                <span id="span2_AreaManager"></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="center_numbers_wrap">
+
+                                            <div class="center_numbers">
+                                                <small>RESOURCE & QUALITY MANAGER:</small>
+                                                <span id="span1_ResourceQualtiyManager"></span>
+                                                <span id="span2_ResourceQualtiyManager"></span>
+                                            </div>
+
+                                            <div class="center_numbers">
+                                                <small>OPERATIONAL CONTACT:</small>
+                                                <span id="span1_OperationalContact"></span>
+                                                <span id="span2_OperationalContact"></span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- banner_center_area -->
+
+            </div>
+            <!-- find_location_filter -->
+
+            <div class="find_person_filter">
+                <div class="banner_center_area">
+                    <div class="inner_page_banner" style="background-image:url(/FrontEnd/images/reginal.jpg);">
+                        <div class="container">
+
+                            <div class="find_location_wrap">
+
+                                <a href="#" class="location_close_btn CloseSearchByPersonBtn"></a>
+
+                                <div class="find_location_search">
+                                    <div class="title">Find a person</div>
+
+                                    <div class="find_person_field">
+                                        <input type="text" class="search_filter searchByPersonNameTxt" placeholder="Full Name" onkeypress="SearchPersonByNamePressBtn(event)">
+                                        <input type="button" class="search_filter_btn searchByPersonNameBtn">
+                                    </div>
+
+                                    <div class="find_person_field">
+                                        <input type="text" class="search_filter searchByPersonJobTxt" placeholder="Job Title" onkeypress="SearchPersonByJobPressBtn(event)">
+                                        <input type="button" class="search_filter_btn searchByPersonJobBtn">
+                                    </div>
+
+                                    <div class="botm_desc">Enter the full name or job title of the person you’d like to find.</div>
+                                </div>
+
+                                <div class="location_center" id="SearchByPersonValuesDiv">
+
+                                   
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- banner_center_area -->
+
+            </div>
+            <!-- find_person_filter -->
+
+
+            <div class="search_anything_filter">
+                <div class="banner_center_area">
+                    <div class="inner_page_banner" style="background-image:url(/FrontEnd/images/reginal.jpg);">
+                        <div class="container">
+
+                            <div class="find_location_wrap">
+
+                                <a href="#" class="location_close_btn" id="bottomDocumentSearchClose"></a>
+
+                                <div class="find_location_search">
+                                    <div class="title">Find a document</div>
+
+                                    <div class="find_person_field">
+                                        <input type="text" id="BottomSearchDocInput" class="search_filter tagsDocsAutoSearch" placeholder="Find a document..." onkeypress="SearchDocumentPressBottom(event)">
+                                        <input type="button" id="BottomSearchDocBtn" class="search_filter_btn">
+                                    </div>
+
+                                    <div class="botm_desc">Enter a search term to find any document within the intranet.</div>
+                                </div>
+
+                                <div class="location_center">
+
+                                    <div class="intranet_search_result">
+
+                                        <div id="searchDocumnetTextHeading" class="heading">We found the following results for <span id="searchKeywordSpan"></span></div>
+
+                                        <div id="ZerosearchDocumnetTextHeading" class="heading">No results found for <span id="ZerosearchKeywordSpan"></span></div>
+
+                                        <table id="searchDocumentListhtml" class="intranet_result_list"></table>
+
+
+                                        <!--		Start Pagination -->
+                                        <div class='pagination-container intranet_result_pangi'>
+
+                                            <ul class="pagination121">
+                                                <!--	Here the JS Function Will Add the Rows -->
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- location_center -->
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- banner_center_area -->
+
+            </div>
+            <!-- find_person_filter -->
+
+
+            <div class="how_do_filter">
+                <div class="banner_center_area">
+                    <div class="inner_page_banner" style="background-image:url(/FrontEnd/images/reginal.jpg);">
+                        <div class="container">
+
+                            <div class="find_location_wrap">
+
+                                <a href="#" class="location_close_btn" id="btnFaqsearchClose"></a>
+
+                                <div class="find_location_search">
+                                    <div class="title">How do I?</div>
+
+                                    <div class="find_person_field">
+                                        <input type="text" class="search_filter tagsFaqAutoSearch" id="BottomFaqSearchInput" placeholder="How do I?" onkeypress="SearchFAQPressBottom(event)">
+                                        <input type="button" class="search_filter_btn" id="BottomFaqSearchBtn">
+                                    </div>
+
+                                    <div class="botm_desc">Start typing a question and we'll suggest relevant topics and answers.</div>
+                                </div>
+
+                                <div class="location_center">
+
+                                    <div class="how_do_result">
+                                        <div class="title" id="FAQsQuestion"></div>
+                                        <p id="FAQsAnswer"></p>
+                                    </div>
+
+                                    <div class="intranet_search_result">
+
+                                        <div class="related_title" id="searchFaqDocumentHead">Related Documents</div>
+
+                                        <div class="intranet_result_list" id="searchFaqDocumentHtml">
+
+                                            @*<div class="result_list_item">
+                                                    <a href="#">
+                                                        <span class="file_icon"><img src="~/FrontEnd/images/big_pdf_icon.png" /> </span>
+                                                        <span>ANNUAL LEAVE REQUEST FORM <cite>(700kByte)</cite> </span>
+                                                        <small>Form to request annual leave. </small>
+                                                    </a>
+                                                </div>*@
+
+
+                                        </div>
+                                        <!-- intranet_result_list -->
+
+
+
+                                    </div>
+
+                                </div>
+                                <!-- location_center -->
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- banner_center_area -->
+
+            </div>
+            <!-- find_person_filter -->
+
+
+
+            @RenderBody()
+        </div>
+        <!-- content_area -->
+
+
+        <div class="footer_area">
+
+            <div class="container">
+
+                <div class="inner_footer">
+                    <div class="row">
+
+                        <div class="col-sm-3 logo_section">
+
+                            <div class="footer_logo">
+                                <img src="~/FrontEnd/images/pickfords_logo.png" />
+                            </div>
+
+                            <div class="footer_connect">
+                                <div class="footer_contact_title">Connect</div>
+                                <a href="https://www.facebook.com/pickfords" title="Facebbok" target="_blank" class="icon1"></a>
+                                <a href="https://twitter.com/pickfords" title="Twitter" target="_blank" class="icon2"></a>
+                                <a href="https://www.linkedin.com/company/pickfords" title="Linkedin" target="_blank" class="icon3"></a>
+                                <a href="https://www.youtube.com/user/PickfordsTV" title="Youtube" target="_blank" class="icon4"></a>
+                                <a href="https://www.houzz.co.uk/pro/pickfordsuk" title="Houzz" target="_blank" class="icon5"></a>
+                            </div>
+
+
+                        </div>
+
+                        <div>
+                            <div class="col-sm-3 footer_menu depart_menu">
+
+                                <div class="footer_menu_section">
+
+                                    <div class="footer_menu_title">
+                                        Departments
+                                    </div>
+                                    <ul>
+                                        @foreach (var obj in Model.DepartmentsList)
+                                        {
+                                            @*<li onClick="window.location.href='/FrontEndHome/IntranetDepartment?DepartmentId=@obj.DepartmentId'"><a href="#">@obj.DepartmentName </a></li>*@
+                                            <li onClick="window.location.href='/intranet/department/@obj.DepartmentId/@obj.DepartmentName.Replace(' ','_')'"><a href="#">@obj.DepartmentName</a></li>
+                                        }
+
+                                        @*<li><a href="#">CSM</a></li>
+                                            <li><a href="#">Finance</a></li>
+                                            <li><a href="#">HR</a></li>
+                                            <li><a href="#">Facilities</a></li>
+                                            <li><a href="#">Health and Safety</a></li>
+                                            <li><a href="#">Shipping services</a></li>
+                                            <li><a href="#">Operations</a></li>*@
+                                    </ul>
+
+                                </div>
+                                <!-- footer_menu_section -->
+
+
+                            </div>
+                            <!-- footer_menu -->
+                            <div class="col-sm-3 footer_menu">
+
+                                <div class="footer_menu_section">
+
+                                    <div class="footer_menu_title">
+                                        Other Sites
+                                    </div>
+                                    <ul>
+                                       
+                                        <li><a href="#">GSC Move Authorisation Portal</a></li>
+                                        <li><a href="#">GSC Extranet</a></li>
+                                        <li><a href="#">PWC Customer Portal</a></li>
+                                        <li><a href="#">IT Help Desk</a></li>
+                                        <li><a href="http://www.pickfords.co.uk/" target="_blank">Pickfords UK Website</a></li>
+                                        <li><a href="@string.Format("{0}://{1}/{2}", HttpContextAccessor.HttpContext.Request.Scheme, HttpContextAccessor.HttpContext.Request.Host,"Account")" target="_blank">Intranet Admin</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!-- footer_menu -->
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- inner_footer -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- footer_area -->
+    </div>
+
+
+</body>
+</html>

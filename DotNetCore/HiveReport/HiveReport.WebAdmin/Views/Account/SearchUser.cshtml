@@ -1,0 +1,870 @@
+﻿@{
+    ViewData["Title"] = "Search User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/account/account.searchUser.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.jqueryui.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/rowgroup/1.1.2/js/dataTables.rowGroup.min.js" type="text/javascript"></script>
+
+<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.datatables.net/1.10.24/css/dataTables.jqueryui.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.datatables.net/rowgroup/1.1.2/css/rowGroup.jqueryui.min.css" rel="stylesheet" type="text/css" />
+
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            order: [[2, 'asc']],
+            rowGroup: {
+                dataSrc: 2
+            }
+        });
+    });
+</script>
+
+<table cellspacing="0" cellpadding="0" width="90%" align="center" class="table" summary="purpose of this page is, searching information about member">
+    <tr>
+        <td style="background-color: #CC6666; height: 22px; width: 10px" scope="col">
+            <img src="~/images/MemSearch.jpg" alt="Member Search" />
+        </td>
+        <td style="background-color: #CC6666; height: 22px; width: 10px" colspan="2" scope="colgroup">
+        </td>
+        <td style="background-color: #CC6666; height: 22px; width: 350px" align="right" valign="bottom" scope="col">
+            <span style="font-size: 12pt; color: White;"><strong>Member Data - Search/Edit/Delete&nbsp;&nbsp;&nbsp;</strong></span>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color: #df9f9f; height: 5px" colspan="4" scope="colgroup">
+        </td>
+    </tr>
+    <tr>
+        <td style="height: 12px" scope="col">
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" class="label" scope="col" style="color: black">
+            <label for="ddlSearchCriteria">Search Criteria</label>
+        </td>
+        <td scope="col">
+            <select tabindex="1" id="ddlSearchCriteria" class="dropdownlist" title="Select Criteria">
+                <option value="--Select--">--Select--</option>
+                <option value="userid">UserId</option>
+                <option value="UserName">UserName</option>
+                <option value="EMPId">EMPId</option>
+                <option value="Designation">Designation</option>
+                <option value="BU">BU</option>
+                <option value="Email">Email</option>
+                <option value="LOBID">LOB</option>
+                <option value="DeptId">Department</option>
+                <option value="ClientId">Client</option>
+                <option value="Search All">Search All</option>
+                <option value="Resigned">Resigned</option>
+                <option value="Transfered">Transfered</option>
+            </select>
+        </td>
+        <td valign="top" class="label" style="color: black;text-align: center" scope="col">
+            <label for="txtSearch">Type Text</label>
+        </td>
+        <td valign="top" scope="col">
+            <input tytpe="text" tabindex="2" id="txtSearch" maxlength="50" style="width:265px;" title="Enter Text For Search" />            &nbsp;
+            <img id="imgBtnSearch" src="~/images/Search.gif" style="width:20px; border-width:0px;height:20px;" alt="Search" accesskey="r" tabindex="3" title="Search Record [alt+r]" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="height: 12px" scope="colgroup">
+            <label id="lblMsgBox" style="width:424px; color:#C00000; font-weight:bold;font-style:italic;"></label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" scope="colgroup">
+            <label id="lblLink" style="width:424px; color:navy; font-weight:bold;font-style:italic;"></label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" scope="colgroup" style="color: black; height: 408px;">
+            @*<table id="example" tabindex="4" class="datagrid" cellspacing="0" cellpadding="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_grdSearchMember" style="border-collapse:collapse;">
+                    <tbody>
+                        <tr class="datagridHeader">
+                            <td class="Head" style="width:10%; white-space:nowrap;"><a>User Name</a></td>
+                            <td class="Head" style="white-space:nowrap;"><a>UserId</a></td>
+                            <td class="Head" style="white-space:nowrap;"><a>Designation</a></td>
+                            <td class="Head" style="white-space:nowrap;"><a>Status</a></td>
+                            <td><span>Working Status</span></td>
+                            <td class="Head" style="white-space:nowrap;"><a>CreatedDate</a></td>
+                            <td class="Head" style="white-space:nowrap;"><a>CreatedBy</a></td>
+                            <td class="Head" style="white-space:nowrap;">
+                                <center>
+                                    <a><font size="0">Select All/</font></a>
+                                    <a><font size="0">DeSelect All</font></a>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="white-space:nowrap;"><a>abc</a></td>
+                            <td style="white-space:nowrap;">abc123@gmail.com</td>
+                            <td style="white-space:nowrap;">Null</td>
+                            <td style="white-space:nowrap;">Active</td>
+                            <td><span>Working</span></td>
+                            <td style="white-space:nowrap;">2012/05/11</td>
+                            <td style="white-space:nowrap;">&nbsp;</td>
+                            <td style="white-space:nowrap;">
+                                <center>
+                                    <input type="checkbox">
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>*@
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>User Id</th>
+                        <th>Designation</th>
+                        <th>Status</th>
+                        <th>Working Status</th>
+                        <th>CreatedDate</th>
+                        <th>CreatedBy</th>
+                        <th>Select All/DeSelect All
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tobody">
+                     @*<tr>
+                            <td style="white-space:nowrap;"><a>abc</a></td>
+                            <td style="white-space:nowrap;">abc123@gmail.com</td>
+                            <td style="white-space:nowrap;">Null</td>
+                            <td style="white-space:nowrap;">Active</td>
+                            <td><span>Working</span></td>
+                            <td style="white-space:nowrap;">2012/05/11</td>
+                            <td style="white-space:nowrap;">&nbsp;</td>
+                            <td style="white-space:nowrap;">
+                                <center>
+                                    <input type="checkbox">
+                                </center>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                    </tr>
+                    <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                    </tr>
+                    <tr>
+                        <td>Cedric Kelly</td>
+                        <td>Senior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2012/03/29</td>
+                        <td>$433,060</td>
+                    </tr>
+                    <tr>
+                        <td>Airi Satou</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>33</td>
+                        <td>2008/11/28</td>
+                        <td>$162,700</td>
+                    </tr>
+                    <tr>
+                        <td>Brielle Williamson</td>
+                        <td>Integration Specialist</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td>2012/12/02</td>
+                        <td>$372,000</td>
+                    </tr>
+                    <tr>
+                        <td>Herrod Chandler</td>
+                        <td>Sales Assistant</td>
+                        <td>San Francisco</td>
+                        <td>59</td>
+                        <td>2012/08/06</td>
+                        <td>$137,500</td>
+                    </tr>
+                    <tr>
+                        <td>Rhona Davidson</td>
+                        <td>Integration Specialist</td>
+                        <td>Tokyo</td>
+                        <td>55</td>
+                        <td>2010/10/14</td>
+                        <td>$327,900</td>
+                    </tr>
+                    <tr>
+                        <td>Colleen Hurst</td>
+                        <td>Javascript Developer</td>
+                        <td>San Francisco</td>
+                        <td>39</td>
+                        <td>2009/09/15</td>
+                        <td>$205,500</td>
+                    </tr>
+                    <tr>
+                        <td>Sonya Frost</td>
+                        <td>Software Engineer</td>
+                        <td>Edinburgh</td>
+                        <td>23</td>
+                        <td>2008/12/13</td>
+                        <td>$103,600</td>
+                    </tr>
+                    <tr>
+                        <td>Jena Gaines</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>30</td>
+                        <td>2008/12/19</td>
+                        <td>$90,560</td>
+                    </tr>
+                    <tr>
+                        <td>Quinn Flynn</td>
+                        <td>Support Lead</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2013/03/03</td>
+                        <td>$342,000</td>
+                    </tr>
+                    <tr>
+                        <td>Charde Marshall</td>
+                        <td>Regional Director</td>
+                        <td>San Francisco</td>
+                        <td>36</td>
+                        <td>2008/10/16</td>
+                        <td>$470,600</td>
+                    </tr>
+                    <tr>
+                        <td>Haley Kennedy</td>
+                        <td>Senior Marketing Designer</td>
+                        <td>London</td>
+                        <td>43</td>
+                        <td>2012/12/18</td>
+                        <td>$313,500</td>
+                    </tr>
+                    <tr>
+                        <td>Tatyana Fitzpatrick</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>19</td>
+                        <td>2010/03/17</td>
+                        <td>$385,750</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Silva</td>
+                        <td>Marketing Designer</td>
+                        <td>London</td>
+                        <td>66</td>
+                        <td>2012/11/27</td>
+                        <td>$198,500</td>
+                    </tr>
+                    <tr>
+                        <td>Paul Byrd</td>
+                        <td>Chief Financial Officer (CFO)</td>
+                        <td>New York</td>
+                        <td>64</td>
+                        <td>2010/06/09</td>
+                        <td>$725,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gloria Little</td>
+                        <td>Systems Administrator</td>
+                        <td>New York</td>
+                        <td>59</td>
+                        <td>2009/04/10</td>
+                        <td>$237,500</td>
+                    </tr>
+                    <tr>
+                        <td>Bradley Greer</td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>41</td>
+                        <td>2012/10/13</td>
+                        <td>$132,000</td>
+                    </tr>
+                    <tr>
+                        <td>Dai Rios</td>
+                        <td>Personnel Lead</td>
+                        <td>Edinburgh</td>
+                        <td>35</td>
+                        <td>2012/09/26</td>
+                        <td>$217,500</td>
+                    </tr>
+                    <tr>
+                        <td>Jenette Caldwell</td>
+                        <td>Development Lead</td>
+                        <td>New York</td>
+                        <td>30</td>
+                        <td>2011/09/03</td>
+                        <td>$345,000</td>
+                    </tr>
+                    <tr>
+                        <td>Yuri Berry</td>
+                        <td>Chief Marketing Officer (CMO)</td>
+                        <td>New York</td>
+                        <td>40</td>
+                        <td>2009/06/25</td>
+                        <td>$675,000</td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Vance</td>
+                        <td>Pre-Sales Support</td>
+                        <td>New York</td>
+                        <td>21</td>
+                        <td>2011/12/12</td>
+                        <td>$106,450</td>
+                    </tr>
+                    <tr>
+                        <td>Doris Wilder</td>
+                        <td>Sales Assistant</td>
+                        <td>Sydney</td>
+                        <td>23</td>
+                        <td>2010/09/20</td>
+                        <td>$85,600</td>
+                    </tr>
+                    <tr>
+                        <td>Angelica Ramos</td>
+                        <td>Chief Executive Officer (CEO)</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td>2009/10/09</td>
+                        <td>$1,200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gavin Joyce</td>
+                        <td>Developer</td>
+                        <td>Edinburgh</td>
+                        <td>42</td>
+                        <td>2010/12/22</td>
+                        <td>$92,575</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Chang</td>
+                        <td>Regional Director</td>
+                        <td>Singapore</td>
+                        <td>28</td>
+                        <td>2010/11/14</td>
+                        <td>$357,650</td>
+                    </tr>
+                    <tr>
+                        <td>Brenden Wagner</td>
+                        <td>Software Engineer</td>
+                        <td>San Francisco</td>
+                        <td>28</td>
+                        <td>2011/06/07</td>
+                        <td>$206,850</td>
+                    </tr>
+                    <tr>
+                        <td>Fiona Green</td>
+                        <td>Chief Operating Officer (COO)</td>
+                        <td>San Francisco</td>
+                        <td>48</td>
+                        <td>2010/03/11</td>
+                        <td>$850,000</td>
+                    </tr>
+                    <tr>
+                        <td>Shou Itou</td>
+                        <td>Regional Marketing</td>
+                        <td>Tokyo</td>
+                        <td>20</td>
+                        <td>2011/08/14</td>
+                        <td>$163,000</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle House</td>
+                        <td>Integration Specialist</td>
+                        <td>Sydney</td>
+                        <td>37</td>
+                        <td>2011/06/02</td>
+                        <td>$95,400</td>
+                    </tr>
+                    <tr>
+                        <td>Suki Burks</td>
+                        <td>Developer</td>
+                        <td>London</td>
+                        <td>53</td>
+                        <td>2009/10/22</td>
+                        <td>$114,500</td>
+                    </tr>
+                    <tr>
+                        <td>Prescott Bartlett</td>
+                        <td>Technical Author</td>
+                        <td>London</td>
+                        <td>27</td>
+                        <td>2011/05/07</td>
+                        <td>$145,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gavin Cortez</td>
+                        <td>Team Leader</td>
+                        <td>San Francisco</td>
+                        <td>22</td>
+                        <td>2008/10/26</td>
+                        <td>$235,500</td>
+                    </tr>
+                    <tr>
+                        <td>Martena Mccray</td>
+                        <td>Post-Sales support</td>
+                        <td>Edinburgh</td>
+                        <td>46</td>
+                        <td>2011/03/09</td>
+                        <td>$324,050</td>
+                    </tr>
+                    <tr>
+                        <td>Unity Butler</td>
+                        <td>Marketing Designer</td>
+                        <td>San Francisco</td>
+                        <td>47</td>
+                        <td>2009/12/09</td>
+                        <td>$85,675</td>
+                    </tr>
+                    <tr>
+                        <td>Howard Hatfield</td>
+                        <td>Office Manager</td>
+                        <td>San Francisco</td>
+                        <td>51</td>
+                        <td>2008/12/16</td>
+                        <td>$164,500</td>
+                    </tr>
+                    <tr>
+                        <td>Hope Fuentes</td>
+                        <td>Secretary</td>
+                        <td>San Francisco</td>
+                        <td>41</td>
+                        <td>2010/02/12</td>
+                        <td>$109,850</td>
+                    </tr>
+                    <tr>
+                        <td>Vivian Harrell</td>
+                        <td>Financial Controller</td>
+                        <td>San Francisco</td>
+                        <td>62</td>
+                        <td>2009/02/14</td>
+                        <td>$452,500</td>
+                    </tr>
+                    <tr>
+                        <td>Timothy Mooney</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>37</td>
+                        <td>2008/12/11</td>
+                        <td>$136,200</td>
+                    </tr>
+                    <tr>
+                        <td>Jackson Bradshaw</td>
+                        <td>Director</td>
+                        <td>New York</td>
+                        <td>65</td>
+                        <td>2008/09/26</td>
+                        <td>$645,750</td>
+                    </tr>
+                    <tr>
+                        <td>Olivia Liang</td>
+                        <td>Support Engineer</td>
+                        <td>Singapore</td>
+                        <td>64</td>
+                        <td>2011/02/03</td>
+                        <td>$234,500</td>
+                    </tr>
+                    <tr>
+                        <td>Bruno Nash</td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>38</td>
+                        <td>2011/05/03</td>
+                        <td>$163,500</td>
+                    </tr>
+                    <tr>
+                        <td>Sakura Yamamoto</td>
+                        <td>Support Engineer</td>
+                        <td>Tokyo</td>
+                        <td>37</td>
+                        <td>2009/08/19</td>
+                        <td>$139,575</td>
+                    </tr>
+                    <tr>
+                        <td>Thor Walton</td>
+                        <td>Developer</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td>2013/08/11</td>
+                        <td>$98,540</td>
+                    </tr>
+                    <tr>
+                        <td>Finn Camacho</td>
+                        <td>Support Engineer</td>
+                        <td>San Francisco</td>
+                        <td>47</td>
+                        <td>2009/07/07</td>
+                        <td>$87,500</td>
+                    </tr>
+                    <tr>
+                        <td>Serge Baldwin</td>
+                        <td>Data Coordinator</td>
+                        <td>Singapore</td>
+                        <td>64</td>
+                        <td>2012/04/09</td>
+                        <td>$138,575</td>
+                    </tr>
+                    <tr>
+                        <td>Zenaida Frank</td>
+                        <td>Software Engineer</td>
+                        <td>New York</td>
+                        <td>63</td>
+                        <td>2010/01/04</td>
+                        <td>$125,250</td>
+                    </tr>
+                    <tr>
+                        <td>Zorita Serrano</td>
+                        <td>Software Engineer</td>
+                        <td>San Francisco</td>
+                        <td>56</td>
+                        <td>2012/06/01</td>
+                        <td>$115,000</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer Acosta</td>
+                        <td>Junior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>43</td>
+                        <td>2013/02/01</td>
+                        <td>$75,650</td>
+                    </tr>
+                    <tr>
+                        <td>Cara Stevens</td>
+                        <td>Sales Assistant</td>
+                        <td>New York</td>
+                        <td>46</td>
+                        <td>2011/12/06</td>
+                        <td>$145,600</td>
+                    </tr>
+                    <tr>
+                        <td>Hermione Butler</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td>2011/03/21</td>
+                        <td>$356,250</td>
+                    </tr>
+                    <tr>
+                        <td>Lael Greer</td>
+                        <td>Systems Administrator</td>
+                        <td>London</td>
+                        <td>21</td>
+                        <td>2009/02/27</td>
+                        <td>$103,500</td>
+                    </tr>
+                    <tr>
+                        <td>Jonas Alexander</td>
+                        <td>Developer</td>
+                        <td>San Francisco</td>
+                        <td>30</td>
+                        <td>2010/07/14</td>
+                        <td>$86,500</td>
+                    </tr>
+                    <tr>
+                        <td>Shad Decker</td>
+                        <td>Regional Director</td>
+                        <td>Edinburgh</td>
+                        <td>51</td>
+                        <td>2008/11/13</td>
+                        <td>$183,000</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Bruce</td>
+                        <td>Javascript Developer</td>
+                        <td>Singapore</td>
+                        <td>29</td>
+                        <td>2011/06/27</td>
+                        <td>$183,000</td>
+                    </tr>
+                    <tr>
+                        <td>Donna Snider</td>
+                        <td>Customer Support</td>
+                        <td>New York</td>
+                        <td>27</td>
+                        <td>2011/01/25</td>
+                        <td>$112,000</td>
+                    </tr>*@
+                </tbody>
+                @*<tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </tfoot>*@
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="height: 372px" scope="colgroup">
+            @*<div id="ctl00_ContentPlaceHolder1_PnlRegDetails" style="border-color:Gray;border-style:Double;height:100%;width:100%;">
+
+                    <table id="tabMainRegistrationTable" cellspacing="0" cellpadding="0" width="100%" align="center">
+                        <tbody>
+                            <tr class="tableHeader">
+                                <th align="left" colspan="2" scope="colgroup" style="height: 14px;background-color:#67A897">
+                                    <strong>Login Information</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="width: 163px; height: 3px" class="label" scope="col">
+                                </td>
+                                <td style="height: 3px" class="label" scope="col">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr style="visibility: hidden; position: absolute">
+                                <td class="label" scope="col">
+                                    <span id="ctl00_ContentPlaceHolder1_lblUserType" style="color:black">User Type</span>
+                                    <span id="ctl00_ContentPlaceHolder1_lbls1" style="color:#C00000;">*</span>
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_cboUserType"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$cboUserType" id="ctl00_ContentPlaceHolder1_cboUserType" tabindex="5" class="dropdownlist">
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="height: 28px; width: 163px;color:black" scope="col">
+                                    <span id="ctl00_ContentPlaceHolder1_lblUserId">User Id</span>
+                                    <span id="ctl00_ContentPlaceHolder1_lblls2" style="color:#C00000;">*</span>
+                                </td>
+                                <td style="height: 28px" scope="col">
+                                    <label for="ctl00_MainPlaceHolder_txtUserId"></label>
+                                    <input name="ctl00$ContentPlaceHolder1$txtUserId" type="text" value="akhil.johri@gmail.com" maxlength="20" readonly="readonly" id="ctl00_ContentPlaceHolder1_txtUserId" tabindex="2" class="textBox">&nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 163px; height: 1px" scope="col">
+                                </td>
+                                <td style="height: 1px" scope="col">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <th align="left" colspan="2" class="tableHeader" style="background-color:#67A897">
+                                    <strong>Personal&nbsp;Information</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="width: 163px; height: 15px" scope="col">
+                                </td>
+                                <td style="height: 15px" scope="col">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="width: 163px; color : Black " scope="col">
+                                    &nbsp;Name
+                                    <span id="ctl00_ContentPlaceHolder1_lblName" style="color:#C00000;">*</span>
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_cboPrefix"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$cboPrefix" id="ctl00_ContentPlaceHolder1_cboPrefix" tabindex="6" class="dropdownlist" style="width:38px;">
+                                        <option selected="selected" value="Mr.">Null</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Mrs.">Mrs.</option>
+
+                                    </select>
+                                    <label for="ctl00_MainPlaceHolder_txtName"></label>
+                                    <input name="ctl00$ContentPlaceHolder1$txtName" type="text" value="Akhil Johri" maxlength="50" id="ctl00_ContentPlaceHolder1_txtName" tabindex="7" title="Enter Name" class="textBox" style="width:100px;">
+                                    <span id="ctl00_ContentPlaceHolder1_RegularExpressionValidator2" style="display:inline-block;color:Red;width:124px;display:none;">Enter Alphabets Only!</span><span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator3" style="display:inline-block;color:Red;width:155px;display:none;">Employee Name is required</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col" class="label" style="width: 163px; height: 28px; color :Black ">
+                                    &nbsp;Employee Id
+                                    <span id="ctl00_ContentPlaceHolder1_lblCountry0" style="color:#C00000;">*</span>
+                                </td>
+                                <td style="height: 28px" scope="col">
+                                    <label for="ctl00_MainPlaceHolder_txtEmpId"></label>
+                                    <input name="ctl00$ContentPlaceHolder1$txtEmpId" type="text" value="Null" maxlength="50" id="ctl00_ContentPlaceHolder1_txtEmpId" disabled="disabled" tabindex="7" title="Enter Employee ID" class="textBox" style="width:142px;">
+                                    <span id="ctl00_ContentPlaceHolder1_CompareValidator1" style="display:inline-block;color:Red;width:125px;display:none;">Enter Numerics Only!</span><span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator1" style="display:inline-block;color:Red;width:152px;display:none;">Employee Id is required</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="width: 163px; color :Black " scope="col">
+                                    &nbsp;Designation
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_cboDesignation"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$cboDesignation" id="ctl00_ContentPlaceHolder1_cboDesignation" tabindex="8" class="dropdownlist">
+                                        <option value="--Select--">--Select--</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Team Lead">Team Lead</option>
+                                        <option value=".">.</option>
+                                        <option value="q">q</option>
+                                        <option value="Software Trainee">Software Trainee</option>
+                                        <option value="Trainee">Trainee</option>
+                                        <option value="Software Developer">Software Developer</option>
+                                        <option value="GIS Engineer">GIS Engineer</option>
+                                        <option value="District Incharge">District Incharge</option>
+                                        <option value="Distict Incharge">Distict Incharge</option>
+                                        <option value="Managing Director">Managing Director</option>
+                                        <option value="Consultant">Consultant</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr style="visibility: hidden">
+                                <td style="width: 163px; text-align: right; height: 32px; color : Black " scope="col">
+                                    <span id="ctl00_ContentPlaceHolder1_Label2" style="display:inline-block;color:#C00000;font-weight:bold;font-style:italic;width:80px;">If Not in list</span>
+                                </td>
+                                <td style="height: 32px" scope="col">
+                                    <label for="ctl00_MainPlaceHolder_txtDesig"></label>
+                                    <input name="ctl00$ContentPlaceHolder1$txtDesig" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtDesig" tabindex="9" title="Enter Designation" class="textBox" style="width:143px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="width: 163px; color :Black " scope="col">
+                                    &nbsp;Department
+                                    <span id="ctl00_ContentPlaceHolder1_Label5" style="color:#C00000;">*</span>
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_DepartmentName"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$DepartmentName" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$DepartmentName\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_DepartmentName" tabindex="10" class="dropdownlist">
+                                        <option selected="selected" value="--Select--">--Select--</option>
+                                        <option value="1">Operation</option>
+                                        <option value="55">Development</option>
+                                        <option value="56">testing</option>
+                                        <option value="57">Research</option>
+                                        <option value="29">HR_dept</option>
+                                        <option value="35">Technical</option>
+                                        <option value="58">ANPL</option>
+                                        <option value="33">Accounts</option>
+                                        <option value="50">Test_Newa</option>
+                                        <option value="37">Marketing</option>
+                                        <option value="38">AutoExpo</option>
+                                        <option value="39">testingl</option>
+                                        <option value="40">Testpodkk</option>
+                                        <option value="51">DeptA</option>
+                                        <option value="52">DeptB</option>
+                                        <option value="59">IYCWorld</option>
+                                        <option value="54">BSAITM</option>
+                                        <option value="60">BMPEPL</option>
+                                        <option value="61">ABC</option>
+                                        <option value="75">BMPEL</option>
+                                        <option value="63">A</option>
+                                        <option value="76">Dept</option>
+                                        <option value="77">deptnew</option>
+                                        <option value="67">zz</option>
+                                        <option value="78">mayank</option>
+                                        <option value="70">A1</option>
+                                        <option value="71">mm</option>
+                                        <option value="72">BMProject</option>
+                                        <option value="73">BMProject2</option>
+                                        <option value="74">a</option>
+                                        <option value="79">Gurgaon</option>
+                                        <option value="80">Gaurav_dept</option>
+                                        <option value="81">Gaurav_dept</option>
+                                        <option value="82">Dept</option>
+                                        <option value="83">Dept</option>
+                                        <option value="84">Dept</option>
+                                        <option value="85">Dept</option>
+                                        <option value="86">Dept</option>
+                                        <option value="87">DepartmentName</option>
+                                        <option value="88">InfoxenTechnologies</option>
+                                        <option value="89">InfoxenTechnologies</option>
+                                        <option value="66">cc</option>
+                                        <option value="69">mm</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="width: 163px; color : Black " scope="col">
+                                    &nbsp;Client
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_ClientName"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$ClientName" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ClientName\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ClientName" tabindex="11" class="dropdownlist">
+                                        <option selected="selected" value="--Select--">--Select--</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" style="height: 20px; width: 163px; color : Black " scope="col">
+                                    &nbsp;LOB
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_cboLOBDept"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$cboLOBDept" id="ctl00_ContentPlaceHolder1_cboLOBDept" tabindex="12" class="dropdownlist">
+                                        <option selected="selected" value="--Select--">--Select--</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label" scope="col" style="height: 22px; width: 163px; color : Black ">
+                                    &nbsp;BU
+                                </td>
+                                <td style="height: 22px" scope="col">
+                                    <label for="ctl00_MainPlaceHolder_CBOBU"></label>
+                                    <select name="ctl00$ContentPlaceHolder1$CBOBU" id="ctl00_ContentPlaceHolder1_CBOBU" tabindex="13" class="dropdownlist">
+                                        <option selected="selected" value="BFI">Null</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr style="visibility: hidden">
+                                <td style="width: 163px; height: 19px; text-align: right;" scope="col">
+                                    <span id="ctl00_ContentPlaceHolder1_lblNil" style="display:inline-block;color:#C00000;font-weight:bold;font-style:italic;width:80px;">If Not in list</span>
+                                </td>
+                                <td style="height: 19px" scope="col">
+                                    <label for="ctl00_MainPlaceHolder_txtBU"></label>
+                                    &nbsp;<input name="ctl00$ContentPlaceHolder1$txtBU" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtBU" tabindex="14" title="Enter BU" class="textBox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 163px" scope="col">
+                                    <span id="ctl00_ContentPlaceHolder1_lblEmail" class="label" style="color:black">Email</span>
+                                    &nbsp;<span id="ctl00_ContentPlaceHolder1_lblCountry" style="color:#C00000;">*</span>
+                                </td>
+                                <td scope="col">
+                                    <label for="ctl00_MainPlaceHolder_txtEmail"></label>
+                                    <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" value="akhil.johri@gmail.com" maxlength="50" id="ctl00_ContentPlaceHolder1_txtEmail" tabindex="15" title="Enter Email" class="textBox">
+                                    <span id="ctl00_ContentPlaceHolder1_RegularExpressionValidator1" style="display:inline-block;color:Red;width:117px;display:none;">Fill Valid Email Id</span>
+                                    <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator2" style="color:Red;display:none;">Employee Email is Required</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="2" scope="colgroup" class="label" style="height: 20px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="2" style="height: 8px" scope="colgroup">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$cmdUpdate" value="Update" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$cmdUpdate&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_cmdUpdate" accesskey="u" tabindex="16" title="Update Record [alt+u]" class="button">&nbsp;
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$cmdCancel" value="Cancel" id="ctl00_ContentPlaceHolder1_cmdCancel" accesskey="c" tabindex="17" title="Cancel update [alt+c]" class="button">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>*@
+        </td>
+    </tr>
+</table>

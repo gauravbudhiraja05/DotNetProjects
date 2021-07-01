@@ -1,0 +1,41 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    Layout = null;
+}
+
+<ul>
+    @if (Model.VacancyList != null)
+    {
+        @foreach (var vacancy in Model.VacancyList)
+        {
+            var title = vacancy.Title.Trim().Replace(' ', '_');
+            <li>
+                <div class="all_case_detail">
+                    <div class="case_img">
+                        <span class="case_title">@vacancy.DepartmentName</span>
+                        @if (vacancy.ThumbnailImagePath != null)
+                        {
+                            <a href="#" mytag="@title" id="@vacancy.Id" style="background-image:url('/fileserver/uploads/images/Vacancy/@vacancy.ThumbnailImagePath')" class="vacancy_detail item_bg"></a>
+                        }
+                        else
+                        {
+                            <a href="#" mytag="@title" id="@vacancy.Id" style="background-image:url('/fileserver/uploads/images/Vacancy/thumbnail_no_image.jpg')" class="vacancy_detail item_bg"></a>
+                        }
+
+                    </div>
+                    <div class="case_detail">
+                        <span class="up_date">
+                            @vacancy.PublishDateDisplay
+                        </span>
+                        <p>
+                            <a href="#" id="@vacancy.Id" mytag="@title" class="vacancy_detail">
+                                @vacancy.Title
+                            </a>
+                        </p>
+                        <a href="#" mytag="@title" id="@vacancy.Id" class="read_more_btn vacancy_detail">Read More</a>
+                    </div>
+                </div>
+            </li>
+        }
+    }
+</ul>

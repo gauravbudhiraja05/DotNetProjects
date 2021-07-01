@@ -1,0 +1,224 @@
+﻿@{
+    ViewData["Title"] = "Registeration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/account/account.registration.js"></script>
+<table class="table" border="0" style="background-color:#CC6666" summary="Purpose of this form:Reset User Password, Unlock/Unlock Account, Set Default Password, Set Password Duration" cellpadding="0" cellspacing="0" width="90%" align="center">
+    <tr>
+        <td style="background-color:#CC6666; height:22px; width:10px" scope="col"></td>
+        <td style="background-color:#CC6666; height:22px; width:15px" align="left" scope="col">
+            <img src="~/images/UserLogo.jpg" alt="User image" />
+        </td>
+        <td scope="col" style="background-color:#CC6666; height:22px" valign="bottom" align="right"><span style="font-size: 12pt; color:White;"><strong>Create New User Account&nbsp;&nbsp;</strong></span></td>
+    </tr>
+    <tr><td scope="colgroup" style="background-color:#df9f9f; height:5px" colspan="3"></td></tr>
+</table>
+<table width="90%" align="center" style="background:#cccccc;">
+    <tr>
+        <td scope="rowgroup">
+            <table cellspacing="0" cellpadding="0" width="85%" style="background:#cccccc;" align="center" class="table" summary="purpose of this page is registration of new employee">
+                <caption style="background:#666666">Personal Information</caption>
+                <tr>
+                    <td style="width: 199px; height: 15px" scope="col"></td>
+                    <td style="width: 166px; height: 15px" scope="col">&nbsp;</td>
+                    <td style="width: 167px" scope="col"></td>
+                    <td style="width: 173px" scope="col"></td>
+                </tr>
+                <tr>
+                    <td class="label" style="background:#cccccc; width: 199px; height: 37px;" scope="col">
+                        Name<span style="color:#C00000">*</span>
+                    </td>
+                    <td colspan="3" style="height: 37px" scope="colgroup">
+                        <label for="ddlPrefix"></label>
+                        <select id="ddlPrefix" class="dropdownlist" title="Select Name Prefix" style="width:55px;">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mrs.">Mrs. </option>
+                        </select>
+                        <label for="txtName"></label>
+                        <input type="text" id="txtName" tabindex="2" maxlength="50" class="textBox" style="border:1px solid #000000; height:15px;" title="Enter Name" />
+                        <label id="lblNameError"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 12px; width: 199px;" scope="col"></td>
+                    <td colspan="3" scope="colgroup" style="height: 12px">
+                        Name must contain Alphabets Only
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <label for="txtEmpId">Employee ID</label>
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td>
+                        <input type="text" id="txtEmpId" tabIndex="3" maxlength="10" class="textBox" style="width:145px; border:1px solid #000000; height:15px;" title="Enter Name" />
+                        <input type="button" ID="btnAvailableEmployeeId" tabindex="13" style="width:125px;" title="To Check User Id Availability" value="Check Availability" class="button" />
+
+                    </td>
+                    <td colspan="2">
+                        &nbsp;
+                        <label id="lblEmpId"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 199px" scope="col"></td>
+                    <td colspan="3" scope="colgroup">
+                        Employee Id must contain Numerics Only
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#cccccc;height: 20px; width: 199px;" class="label" scope="col">
+                        <label for="ddlDesignation">Designation</label>
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td>
+                        <select id="ddlDesignation" tabIndex="4" class="dropdownlist" title="Select Designation" />
+                    </td>
+                    <td style="text-align: right;background:#cccccc" class="label" scope="col">
+                        If Not in list&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td style="width: 173px;" scope="col">
+                        <input type="text" id="txtDesignation" tabIndex="5" maxlength="40" class="textBox" style="border:1px solid #000000; height:15px;" title="Enter Designation" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 8px; width: 199px;" scope="col"></td>
+                    <td colspan="3" scope="colgroup">
+                        <label id="lblDesignationError"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <strong><label>Level 1</label></strong>
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td colspan="3" scope="colgroup">
+                        <select id="ddlDepartmentName" tabIndex="6" class="dropdownlist" style="border:1px solid #000000; height:20px;" title="Select Department"></select>
+                        <label id="lblDepartmentNameError"></label>
+                    </td>
+                </tr>
+                <tr><td style="height: 8px; width: 199px;" scope="col"></td></tr>
+                <tr>
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <strong><label>Level 2</label></strong>
+                    </td>
+                    <td style="height: 20px" colspan="2" scope="colgroup">
+                        <select id="ddlClientName" tabIndex="7" class="dropdownlist" style="border:1px solid #000000; height:20px;" title="Select Client"></select>
+                        <label id="lblClientNameError"></label>
+                    </td>
+                </tr>
+                <tr><td style="height: 8px; width: 199px;" scope="col"></td></tr>
+                <tr>
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <strong><label>Level 3</label></strong>
+                    </td>
+                    <td style="height: 8px" colspan="2" scope="colgroup">
+                        <select id="ddlLOBName" tabIndex="8" class="dropdownlist" style="border:1px solid #000000; height:20px;" title="Select Lob"></select>
+                        <label id="lblLOBNameError"></label>
+                    </td>
+                </tr>
+                <tr><td style="height: 8px; width: 199px;" scope="col"></td></tr>
+                <tr style="display:none;">
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <strong><label>BU</label></strong>
+                    </td>
+                    <td style="height: 8px" colspan="2" scope="colgroup">
+                        <select id="ddlBU" tabIndex="8" class="dropdownlist" style="border:1px solid #000000; height:20px;" title="Select BU"></select>
+                        <label id="lblBUError"></label>
+                    </td>
+                </tr>
+                <tr><td style="height: 8px; width: 199px;" scope="col"></td></tr>
+                <tr>
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <label for="txtEmail">Email</label>
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td colspan="3" scope="colgroup">
+                        <input type="text" id="txtEmail" tabIndex="10" style="border:1px solid #000000; width:145px;height:15px;" maxlength="40" class="textBox" title="Enter Email Id" />
+                        <label id="lblEmailError"></label>
+                    </td>
+                </tr>
+                <tr><td style="height: 8px; width: 199px;" scope="col"></td></tr>
+                <tr>
+                    <td style="background:#cccccc; width: 199px;" class="label" scope="col">
+                        <label for="chkSelectscope">Scope</label>
+                        <span style="color:#C00000; display:none;">*</span>
+                    </td>
+                    <td colspan="3" scope="colgroup">
+                        <input type="checkbox" id="chkSelectscope" tabindex="11" title="Making Local" value="Local" />
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="0" cellpadding="0" width="90%" class="table" summary="purpose of this page is registration of new employee">
+                <caption class="caption" style="background:#666666">Login Information</caption>
+                <tr>
+                    <td style="width: 198px; height: 3px" scope="col"></td>
+                    <td style="height: 3px" scope="col">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="background:#cccccc; height: 39px;" class="label" scope="col">
+                        &nbsp;Email Id
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td style="height: 28px" scope="col">
+                        <label for="txtUserId"></label>
+                        <input type="text" id="txtUserId" tabindex="12" style="border:1px solid #000000;" maxlength="20" tooltip="Enter User Id" runat="server" class="textBox" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="button" ID="btnAvailableUserId" tabindex="13" style="width:125px;" title="To Check User Id Availability" value="Check Availability" class="button" />
+                        <label id="lblUserIdError"></label>
+                     </td>
+                </tr>
+                <tr>
+                    <td scope="col"></td>
+                    <td scope="col">(Min 8 and Max 15 char in length)</td>
+                </tr>
+                <tr>
+                    <td scope="col" style="height: 28px; font-weight: bold;background:#cccccc" class="label">
+                        <label for="txtPwd">Password</label>
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td style="height: 28px" scope="col">
+                        <input type="password" id="txtPwd" tabindex="14" style="border:1px solid #000000;" maxlength="15" class="textBox" title="Enter Password" />
+                        <label id="lblPwdError"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="col"></td>
+                    <td scope="col">(Min 8 and Max 15 char in length)</td>
+                </tr>
+                <tr>
+                    <td scope="col" style="background:#cccccc" class="label">
+                        <label for="txtConfirmPwd">Confirm Password</label>
+                        <span style="color:#C00000">*</span>
+                    </td>
+                    <td scope="col">
+                        <input type="password" id="txtConfirmPwd" tabindex="15" style="border:1px solid #000000;" maxlength="15" class="textBox" title="Enter Password again" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 1px" scope="col"></td>
+                    <td style="height: 1px" scope="col">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center" scope="colgroup" colspan="2">
+                        <br />
+                        <input type="button" id="btnSave" tabindex="16" class="button" value="Save" style="border:1px solid #000000; height:18px;" ToolTip="Click to Register New User" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="font-style:italic;" scope="col">
+                        <font color="red">*</font>Indicate Mandatory Field
+                    </td>
+                </tr>
+                <tr><td height=10></td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height:10px;"></td>
+    </tr>
+</table>
+

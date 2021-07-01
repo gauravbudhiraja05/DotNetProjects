@@ -1,0 +1,183 @@
+2020-05-12T09:12:56.8206048+05:30 0HLVM4MPTP3LO:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetVacancyByDepartmentId'.
+   at PickfordsIntranet.Services.VacancyService.GetVacancyByDepartmentWise(Int32 departmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\VacancyService.cs:line 90
+   at PickfordsIntranet.WebAdmin.Controllers.VacanciesController.GetVacancyByDepartmentWise(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\VacanciesController.cs:line 67
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+ClientConnectionId:f2e59ea4-48df-4baf-927d-b54a6d0d8e2b
+Error Number:2812,State:62,Class:16
+2020-05-12T09:43:41.6656791+05:30 0HLVM4MPTP3LO:00000005 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetVacancyByDepartmentId'.
+   at PickfordsIntranet.Services.VacancyService.GetVacancyByDepartmentWise(Int32 departmentId) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\VacancyService.cs:line 90
+   at PickfordsIntranet.WebAdmin.Controllers.VacanciesController.GetVacancyByDepartmentWise(Int32 id) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\VacanciesController.cs:line 67
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+ClientConnectionId:f2e59ea4-48df-4baf-927d-b54a6d0d8e2b
+Error Number:2812,State:62,Class:16
+2020-05-12T09:47:02.6020087+05:30 0HLVM5BGOUN7N:0000000A [ERR] Could not find stored procedure 'usp_GetPreRequisitesDataToCreateVacancy'. (272848df)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetPreRequisitesDataToCreateVacancy'.
+   at PickfordsIntranet.Services.VacancyService.GetVacancyDataToCreateVacancy(UserActionLoggingDetails userActionLoggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\VacancyService.cs:line 104
+   at PickfordsIntranet.WebAdmin.Controllers.VacanciesController.Add(Int32 DepartmentId, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\VacanciesController.cs:line 81
+ClientConnectionId:91a17d6d-dab7-4ed8-aa91-78f0e7927aa9
+Error Number:2812,State:62,Class:16
+2020-05-12T09:47:02.6312583+05:30 0HLVM5BGOUN7N:0000000A [ERR] The view '"/Error"' was not found. Searched locations: ["/Error"] (9bb2756c)
+2020-05-12T09:47:02.7299840+05:30 0HLVM5BGOUN7N:0000000A [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view '/Error' was not found. The following locations were searched:
+/Error
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2020-05-12T10:45:09.4024493+05:30 0HLVM5BGOUN82:00000003 [ERR] Could not find stored procedure 'usp_GetImageNamesForVacancy'. (15bba161)
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'usp_GetImageNamesForVacancy'.
+   at PickfordsIntranet.Services.VacancyService.DeleteVacancyByIds(DeleteItemVM targetIds) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\VacancyService.cs:line 160
+   at PickfordsIntranet.WebAdmin.Controllers.VacanciesController.DeleteVacancy(DeleteItemVM targetIds, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\VacanciesController.cs:line 310
+ClientConnectionId:d0cd6853-53a2-4be9-9460-6e40c74147e4
+Error Number:2812,State:62,Class:16
+2020-05-12T10:47:04.5290377+05:30 0HLVM5BGOUN85:00000002 [ERR] Procedure or function 'usp_GetImageNamesForVacancy' expects parameter '@NewsIds', which was not supplied. (fff815ae)
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'usp_GetImageNamesForVacancy' expects parameter '@NewsIds', which was not supplied.
+   at PickfordsIntranet.Services.VacancyService.DeleteVacancyByIds(DeleteItemVM targetIds) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\VacancyService.cs:line 160
+   at PickfordsIntranet.WebAdmin.Controllers.VacanciesController.DeleteVacancy(DeleteItemVM targetIds, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\VacanciesController.cs:line 310
+ClientConnectionId:e568bda4-334d-4998-a20e-6ed6f1e5c8f4
+Error Number:201,State:4,Class:16
+2020-05-12T10:48:07.4702887+05:30 0HLVM5BGOUN84:00000009 [ERR] Procedure or function 'usp_GetImageNamesForVacancy' expects parameter '@NewsIds', which was not supplied. (fff815ae)
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'usp_GetImageNamesForVacancy' expects parameter '@NewsIds', which was not supplied.
+   at PickfordsIntranet.Services.VacancyService.DeleteVacancyByIds(DeleteItemVM targetIds) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Services\VacancyService.cs:line 160
+   at PickfordsIntranet.WebAdmin.Controllers.VacanciesController.DeleteVacancy(DeleteItemVM targetIds, UserActionLoggingDetails loggingDetails) in D:\Projects\Test Projects\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.WebAdmin\Controllers\VacanciesController.cs:line 310
+ClientConnectionId:e568bda4-334d-4998-a20e-6ed6f1e5c8f4
+Error Number:201,State:4,Class:16

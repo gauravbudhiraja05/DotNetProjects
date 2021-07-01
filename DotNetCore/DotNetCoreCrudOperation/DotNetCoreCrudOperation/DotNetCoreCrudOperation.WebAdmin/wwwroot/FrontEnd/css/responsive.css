@@ -1,0 +1,898 @@
+@media (min-width:768px){.container{width:758px;}
+}
+@media (min-width:992px){.container{width:992px;}
+}
+@media (min-width:1030px){.container{width:1030px;}
+}
+@media (max-width:1029px){.banner_content_area{width:962px;}
+.header_local_pickfords .search_field{}
+.banner_slider.owl-theme .owl-controls .owl-nav div.owl-prev{right:155px;top:98px;}
+.banner_slider.owl-theme .owl-controls .owl-nav div.owl-next{right:97px;top:98px;}
+.where_feild{width:116px;}
+.where_arrow{margin:20px 0 0;}
+.when_area input[type="text"]{width:132px;}
+.quality_service{height:432px;}
+.learn_more_area .btn_1:hover::before,.learn_more_area .btn_2:hover::before{bottom:50%;left:50%;right:50%;top:50%;}
+.learn_more_area .btn_2:hover,.learn_more_area .btn_1:hover{border:2px solid hsl(0, 0%, 100%);}
+.learn_more_area .btn_2:hover{background:hsl(194, 89%, 48%) none repeat scroll 0 0;border:2px solid hsl(194, 89%, 48%);}
+.wide_range{min-height:458px;}
+.guide_news_area .news_area{min-height:433px;}
+.reginal_content_area .advice_area{min-height:432px;}
+.reginal_content_area .international_network img{min-height:inherit;}
+.places_section .col-sm-4:hover .places_bg{opacity:0;visibility:hidden;}
+.places_section .col-sm-4:hover .place_conent{top:102%;}
+.places_section .col-sm-4:hover .place_conent p{opacity:0;}
+.website_link_area{height:100%;left:0;position:absolute;top:0;width:100%;z-index:99;}
+.places_section .col-sm-4.open_place_conent .places_bg{opacity:0.8;visibility:visible;}
+.places_section .col-sm-4.open_place_conent .place_conent{top:50%;}
+.places_section .col-sm-4.open_place_conent .place_conent p{opacity:1;}
+.k-animation-container{max-width:964px;}
+
+	/**Intranet**/
+	.star_hover{    line-height: 15px;opacity: 1;display: none;}
+	.open_star_hover .star_hover{display: block;}
+	
+}
+@media (max-width:992px){.header_call_on_area{margin-right:5px;}
+/*.header_call_on_area p span{display:none;}*/
+.header_top_menu ul li{padding:0 8px;}
+.header_local_pickfords .my_local_btn{padding:14px 20px 15px;}
+.header_local_pickfords .search_field{width:calc(100% - 276px);}
+.header_local_pickfords .sfsearchBox input.sfsearchTxt{width:calc(100% - 276px)!important;}
+.header_top_menu ul li a{transition:all 0.3s ease 0s;-webkit-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;}
+.header_top_menu.hide_top_menu ul li a{font-size:9px;}
+.mid_menu ul li.drop_down{border:none;}
+.mid_menu ul li.drop_down:first-child > a::after{display:none;}
+.mid_menu ul li.drop_down > a::after{border-left:1px solid #cccccc;content:"";height:62%;left:0;position:absolute;top:12px;z-index:8;}
+.logo{width:100%;text-align:center;padding:22px 0 25px;}
+.logo img{width:125px;}
+.html_mid_header{padding:0 0 20px;}
+.mid_menu{width:100%;border:medium none;}
+.mid_menu ul li.drop_down > a{font-size:15px;padding:20px 24px;}
+div.dropdown_menu{top:124px;border:none;padding:30px 0 40px;}
+.home_moving_title{font-size:38px;}
+.home_moving_sub_line{font-size:22px;}
+.home_moving p{font-size:14px;}
+.home_moving .learn_btn{padding:10px 30px;}
+.dropdwon_menu_list{margin:-13px 0 0;}
+.dropdwon_menu_list ul li{padding:14px 64px 18px 0;}
+.dropdwon_menu_list ul li a span{font-size:20px;}
+.dropdwon_menu_list ul li a small{font-size:14px;}
+.dropdwon_menu_list ul li a::before{top:50%;width:40px;height:40px;margin-top:-20px;background:url("../images/tb_menu_arrow_icon.png") no-repeat scroll center 9px}
+.dropdwon_menu_list ul li a:hover::before{background-position:center -83px;}
+.breadcrumb_area,.breadcrumb_main_area{display:none;}
+.banner_inner_section{padding:25px 0 0;}
+.reginal_title_section{padding:40px 0 0;}
+.moving_europe_banner .banner_inner_section{padding:15px 0 0;}
+.header_top_area .container{margin:0;padding:0 0 0 15px;width:100%;}
+.k-animation-container{max-width:100%;left:14px !important;}
+.learn_more_area .left_text span img{height:auto !important;width:327px !important;}
+.banner_content_area{width:728px;}
+.banner_slider .banner_title{font-size:39px;line-height:42px;}
+.learn_more_area .left_text{width:100%;}
+.learn_more_area .bnr_right_btn{width:100%;}
+.banner_slider.owl-theme .owl-controls .owl-nav div.owl-next{right:10px;top:20px;}
+.banner_slider.owl-theme .owl-controls .owl-nav div.owl-prev{right:70px;top:20px;}
+.quality_service{height:328px;padding:30px 22px;}
+.quality_service .quality_title{font-size:21px;line-height:25px;margin-bottom:30px;}
+.quality_service h1,.quality_service h2,.quality_service h3,.quality_service h4,.quality_service h5,.quality_service h6,.quality_service p.Sub-Heading,.quality_service .Sub-Heading{font-size:21px!important;line-height:25px!important;margin-bottom:30px!important;}
+.Sub-Heading{font-size:21px!important;line-height:25px!important;}
+.quality_service p.Body-Copy,.quality_service .Body-Copy{font-size:14px !important;line-height:20px!important;margin-bottom:34px!important;}
+.Body-Copy{font-size:14px !important;line-height:20px!important;}
+.news_advice_area{margin-bottom:40px;}
+.pickfords_gold_content{padding:0;top:50%;transform:translate(0px, -50%);-webkit-transform:translate(0px, -50%);-o-transform:translate(0px, -50%);height:initial;}
+.pickfords_gold_content .pickfords_title{font-size:24px;margin-bottom:51px;}
+.pickfords_gold_content img{margin:0 0 40px;width:187px !important;}
+.pickfords_gold_content .find_more_btn{font-size:15px;}
+.personalised_text{padding:0 30px;}
+.personalised_area .personalised_title{font-size:24px;padding:0 0 12px;}
+.personalised_area p{font-size:14px;}
+.price_move_text{padding:25px 0;font-size:24px;margin:0 25px;}
+.price_move_content{padding:0 25px 35px;}
+.price_move_content .col-sm-4{padding:0;}
+.field_row{margin:0 -10px;}
+.price_move_content .email_field_area .col-sm-4{padding:0 10px;}
+.price_move_content .row{margin:0;}
+.where_area{margin-right:15px;width:66.333%;padding:0;}
+.where_feild{width:100px;margin-right:10px;}
+.mileage_feild{width:226px;}
+.where_feild input[type="text"]{font-size:14px;}
+.where_arrow, .where_or{display:none;}
+.where_feild:last-child{float:right;}
+.where_area_title{margin:0 0 8px;font-size:23px;}
+.when_area input[type="text"]{width:147px;font-size:14px;}
+.property_feild select{font-size:14px;}
+.when_area{width:31.333%;}
+.when_area_title{margin:0 0 8px;font-size:23px;}
+.property_area{}
+.user_email_field .price_input_field{font-size:14px;}
+.user_email_field .sel_div select{font-size:14px;}
+.inner_page_banner{height:auto;background-size:992px auto;min-height:initial;}
+.search-criteria-up{margin:0 25px;}
+.places_section{padding:0;}
+.moving_advice_center .inner_page_banner{min-height:initial;}
+.news_area{min-height:360px;}
+.new_content{padding:0 16px;}
+.news_area .news_title{font-size:22px;margin:0 0 10px;}
+.news_area p{font-size:14px;}
+.advice_area{padding:0 20px 0;min-height:360px;}
+.advice_area .title_area{font-size:24px;line-height:34px;margin:0 0 30px;}
+.advice_area p{font-size:14px;line-height:20px;margin:0 0 40px;}
+.advice_area .advice_btn{padding:10px 20px;}
+.logo_section{margin-bottom:23px;margin-right:0;width:50%;}
+.footer_contact{float:left;width:100%;}
+.footer_connect{float:left;padding:0;width:32%;}
+.footer_menu{width:33.33%;}
+.footer_menu:nth-child(3n){width:33.33%;}
+.footer_menu:nth-child(2n){width:33.33%;}
+.banner_inner_section .banner_title{font-size:30px;}
+.banner_inner_section h1{font-size:22px;}
+.place_conent{padding:0 24px;}
+.place_conent .place_title{font-size:20px;}
+.place_conent p{font-size:13px;}
+.place_conent a{font-size:13px;}
+.twitter_post_area .twitter_post_content{font-size:24px;line-height:28px;}
+.pickford_pet_text .pickford_pet_title{font-size:24px;padding:0 0 15px;}
+.pickford_pet_text p{font-size:14px;}
+.pickford_pet_text p a{font-size:14px;}
+.call_u_back_area{padding:40px 30px 35px;}
+.call_u_title{font-size:23px;padding:5px 0 0;}
+.resource_box_area p.Body-Copy{font-size:14px;}
+.international_content{padding:0 40px 20px;}
+.international_content .international_title{font-size:24px;line-height:28px;}
+.international_content .learn_btn{font-size:14px;}
+.international_network img{min-height:328px;}
+.international_news_area .advice_area{min-height:328px;padding:0 20px 0;}
+.resource_box_area{padding:50px 0;}
+.mid_section_select_country{display:none;}
+.bottom_section_select_country{padding:10px 0 0;}
+.country_title{text-align:right;}
+.country_title span{width:50px;padding:6px 10px;text-align:center;height:40px;line-height:normal;}
+.country_section ul li{font-size:50px;line-height:45px;}
+.country_section ul li a{line-height:45px;}
+.about-banner .banner_inner_section{padding:40px 0 0;}
+.moving_europe_banner .banner_inner_section{padding:40px 0 0;}
+.moving_europe_banner .banner_inner_section .banner_title{line-height:38px;}
+.moving_europe_banner .inner_page_banner{min-height:inherit;}
+	.wide_range_section{margin: -173px 0 30px;}
+.wide_range{padding:44px 30px;}
+.wide_range h1,.wide_range h2,.wide_range h3,.wide_range h4,.wide_range h5,.wide_range h6,.wide_range p.Service-Title,.wide_range p span.Service-Title,.wide_range span.Service-Title{font-size:30px;line-height:37px;}
+.wide_range .title{font-size:30px;line-height:37px;}
+.wide_range p{font-size:14px;}
+.wide_range .btn_1{font-size:15px;}
+.exclusive_direct_area{padding:44px 30px 37px;}
+.exclusive_direct_area ul li .title{font-size:17px;}
+.exclusive_direct_area ul li p{font-size:14px;}
+.exclusive_direct_area .btn_1{font-size:13px;padding:12px 18px;line-height:19px;}
+.exclusive_direct_area .btn_2{font-size:13px;padding:12px;margin-left:9px;line-height:19px;}
+.exclusive_direct_area h1,.exclusive_direct_area h2,.exclusive_direct_area h3,.exclusive_direct_area h4,.exclusive_direct_area h5,.exclusive_direct_area h6,.exclusive_direct_area p.Sub-Heading,.exclusive_direct_area p span.Sub-Heading,.exclusive_direct_area span.Sub-Heading{font-size:17px!important;color:#404040;line-height:24px!important;margin:0!important;padding:0;font-weight:400;}
+.guide_news_area .news_area{min-height:327px;}
+.guide_news_area .news_area .news_title{margin:0 0 12px;font-size:18px;}
+.guide_news_area .news_area p{font-size:13px;margin:0 0 15px;}
+.news_area p .read_more_btn{font-size:13px;}
+.resource_box_area .col-sm-6{padding:0 30px;}
+.resource_box_title{font-size:22px;line-height:28px;margin:0 0 15px;}
+.resource_box_area h1,.resource_box_area h2,.resource_box_area h3,.resource_box_area h4,.resource_box_area h5,.resource_box_area h6,.resource_box_area p.Sub-Heading{font-size:22px;line-height:28px;margin:0 0 15px;}
+.resource_box_area ul li{font-size:14px;}
+.resource_box_area ul li::before{height:6px;width:6px;}
+.guide_content{padding:45px 0 0;}
+.guide_content .guide_title{padding:0 20%;font-size:22px;}
+.inner_banner_title h1,.all_case_box h2,.case_detail_area h1{font-size:45px;}
+.case_detail_area{padding:35px 75px 40px;}
+.case_detail_content h2{font-size:24px;}
+.case_detail p{font-size:14px;}
+.case_detail .read_more_btn{font-size:14px;}
+.show_more_item a{font-size:14px;}
+.about-banner .inner_page_banner{min-height:inherit;padding-bottom:125px;background-size:auto 100%;}
+.about-banner .banner_inner_section h1{margin:20px 0 80px;}
+.about-banner .banner_inner_section .banner_title{line-height:38px;}
+.moving_advice_banner .banner_inner_section .banner_title{line-height:38px;}
+.about-quote-main{margin-top:-125px;}
+.resource_box_area .blue_large_title{font-size:35px;line-height:41px;margin:0 0 15px;}
+.pickfords-left .title{margin:0 0 10px;}
+.resource_box_area .pickfords-left p{margin:0 0 12px;}
+.pickford_pet_moving_area.about-history,.about-content-section,.twitter-about{margin-bottom:20px;}
+.about-quote-main .pickfords-uk-main{padding:40px 0;margin-bottom:20px;}
+.about-history .pickford_pet_text .pickford_pet_title{font-size:22px;}
+.page_title h1{font-size:45px;}
+.quality_programme_area .quality_programme_content{padding:14px 40px;}
+.quality_programme_area .title{font-size:22px;line-height:25px;margin-bottom:19px;}
+.quality_programme_area ul li{font-size:14px;padding:0 0 5px 30px;}
+.comminity_relations_area .read_next{font-size:14px;}
+.comminity_relations_area .title{font-size:25px;margin:0 0 10px;}
+.comminity_relations_area p{font-size:14px;margin:0 0 20px;line-height:21px;}
+.reginal_banner .inner_page_banner{min-height:inherit;background-size:auto 100%;padding-bottom:210px;}
+.reginal_title_section .banner_title{font-size:46px;line-height:50px;}
+.banner_title_detail h4,.banner_title_detail h1{font-size:24px;}
+.banner_title_detail p{font-size:14px;}
+.banner_title_detail a{margin-bottom:15px;}
+.contact_detail h2{font-size:24px;}
+.pick_number{width:100%;}
+.reginal_main_sction{margin-top:-210px;}
+.reginal_banner .banner_slider.owl-theme .owl-controls .owl-nav div.owl-prev{right:70px;top:20px;}
+.reginal_banner .banner_slider.owl-theme .owl-controls .owl-nav div.owl-next{right:10px;top:20px;}
+.reginal_banner .banner_img{background-size:cover;height:370px;}
+.learn_more_area .left_text{font-size:24px;line-height:33px;}
+.learn_more_area .left_text span{font-size:24px;}
+.reginal_personal_service_area .col-sm-6{padding:0 30px;}
+.service_left h3{font-size:22px;}
+.reginal_personal_service_area p{font-size:14px;}
+.international_text a{font-size:15px;}
+.service_right h3{font-size:20px;}
+.reginal_content_area .quality_service{height:350px;}
+.reginal_content_area .advice_area{min-height:350px;}
+.reginal_content_area .call_u_back_area{margin:20px 0;}
+.moving_advice_banner .inner_page_banner{min-height:inherit;background-size:auto 100%;}
+.banner_disp{width:93%;}
+.moving_video_section{padding:30px 45px 45px;}
+.moving_video_section .title{font-size:25px;}
+.moving_video_section ul li .video_title{font-size:13px;}
+.moving_video_section .see_more_video_btn{padding:10px 20px;}
+.accordion_wapper{padding:30px 45px 45px;}
+.accordion_wapper .title{font-size:25px;}
+.accordion_title{font-size:18px;}
+.accordion_content{padding:10px 0 15px;}
+.find_the_answer{padding:30px 45px 45px;}
+.find_the_answer .title{font-size:25px;}
+.find_the_answer p{font-size:14px;}
+.groupage_area{width:100%;}
+.find-branch-title{font-size:38px;margin-bottom:0;padding:15px 0 0;}
+.search-post-main span a::before{height:83px;width:83px;}
+.search-post-main span input{padding:20px 100px 20px 20px;font-size:30px;}
+.search-post-main span a::before{background-size:40px;}
+.select-region-main a.learn_btn{margin-bottom:10px;}
+.nearest-area{font-size:27px;}
+.removals-main .removals-heading{font-size:20px;}
+.removals-main p{font-size:14px;}
+.inner-title{margin-bottom:10px;}
+.content_area.find-branch{padding:10px 0 0;}
+.search-post-main{margin-bottom:10px;}
+.search-criteria-main{margin-top:0;}
+.calendar-main .weekdays li{width:13.8%;}
+.calendar-main .days li{margin:0 10px 10px 0;width:12.9%;min-height:90px;}
+.date-inner-main .date{font-size:40px;}
+.price-guide-left ul{padding:15px 0;}
+.prices-section{font-size:12px;}
+.price-guide-left ul li span{font-size:18px;padding-left:0;}
+.price-guide-left ul li{padding-left:0px;}
+.price-guide-right span{padding:0 5px;}
+.form_detail{padding:0px 20px;}
+.form_title{padding-left:20px;font-size:20px;}
+.form_title span{font-size:12px;}
+.date_detail{min-height:323px;}
+.enquiry_title{font-size:21px;line-height:25px;}
+.enquiry_text p{font-size:13px;}
+.enquiry_contact p{font-size:21px;}
+.enquiry_contact p span{font-size:35px;}
+.international_text{margin-top:15px;}
+.baggage_btn .btn_1{padding:13px 20px;}
+.international_baggage_page .call_u_title{font-size:17px;}
+.british_association_logo{float:right;text-align:left;width:100%;padding:22px 0 0;}
+.british_association_logo > img{width:70px;}
+	
+/**Intranet**/	
+	.search_filter_field .search_filter{font-size: 13px;padding: 5px 35px 5px 8px;height: 35px;}
+	.search_filter_field .search_filter_btn{width:35px;height:35px;}
+	.filter_select_item .select_item_btn{    padding: 5px 35px 5px 8px;height: 35px;font-size: 13px;}
+	.filter_select_item .select_item_btn:before{width: 35px;height: 35px;background-size:35px;}
+	
+	.filter_banner .page_date{padding:15% 0 2%;}
+	
+	.news_slide_item .detail .item_date{font-size: 14px;}
+	.news_slide_item .detail p{font-size: 14px;}
+	.news_slide_item .detail .read_more_btn{font-size: 14px;}
+	.news_slider_section .read_allnews{width: 230px;}
+	
+	.md_message .detail p{font-size: 14px;}
+	
+	.month_stars .title{font-size: 20px;}
+	.star_img{width: 60px;}
+	.star_text{width: calc(100% - 75px);    line-height: 17px;padding:0 56px 0 0;    font-size: 13px;}
+	.star_icon{width:50px;}
+	.star_hover{    line-height: 15px;opacity: 1;display: none;}
+	.open_star_hover .star_hover{display: block;}
+	.star_hover .hover_star_icon img{width:45px;}
+	.hover_text{    width: calc(100% - 70px);}
+	.hover_title{    font-size: 13px;    padding: 0 0 4px;}
+	.hover_desc{font-size: 13px;}
+	
+	
+}
+@media (max-width:770px){.header_top_menu ul li{padding:0 6px;}
+}
+@media (max-width:767px){.moving_europe_banner .inner_page_banner{padding-bottom:170px;background-size:auto 100%;}
+.pea_cook_wrapper{padding:0 57px 10px 0;text-align:center;background:hsl(0, 0%, 94%) none repeat scroll 0 0;}
+.left_cook_bar{padding:5px 8px 0 0;width:100%;}
+.pea_cook_wrapper p{font-size:14px;line-height:20px;background:hsl(0, 0%, 94%) none repeat scroll 0 0;}
+.right_cook_bar{width:100%;}
+.pea_cook_wrapper p a{float:none;}
+.pea_cook_wrapper .pea_cook_btn{position:absolute;right:0;top:0;}
+.banner_slider .owl-dot{display:inline-block;}
+.header_mid_area{display:none;}
+.iphone_header{display:block;}
+.banner_content_area{width:auto;left:25px;right:25px;}
+.banner_slider.owl-theme .owl-controls .owl-nav{display:none;}
+.banner_slider .owl-dots{display:block;}
+.price_move_text{margin:0 25px;}
+.price_move_content{padding:0 25px 35px;}
+.price_move_content{padding:0 25px 35px;}
+.price_move_text span{display:block;}
+.price_move_text{padding:12px 0;line-height:30px;font-size:22px;}
+.where_area,.when_area,.property_area{width:100%;display:inline-block;margin:0 0 8px;padding:0 15px;}
+.where_area_title,.when_area_title{display:none;}
+.where_feild{width:44%;text-align:left;}
+.where_feild input[type="text"]{text-align:left;}
+.where_arrow{width:12%;display:block;}
+.when_area input[type="text"]{width:calc(100% - 65px);text-align:left;}
+.email_field_area{margin-top:0;padding:0;border:none;}
+.user_email_field{width:100%;display:inline-block;margin:0 0 10px;}
+.infor_check{margin:4px 0 13px;}
+.see_prices_btn{padding:13px 15px;}
+.quality_service{height:inherit;margin:0 0 20px;padding:30px 22px;}
+.pickfords_gold{display:inline-block;margin:0 0 15px;padding:0;width:100%;}
+.news_area{display:inline-block;margin:0 0 15px;min-height:initial;width:100%;}
+.personalised_area{margin:0 0 20px;}
+.personalised_area::before{display:none;}
+.personalised_text{background:#fff;height:auto;position:static;padding:23px 30px;text-align:center;}
+.personalised_area .personalised_title{color:#404040;font-size:24px;padding:0 0 12px;}
+.personalised_area p{color:#404040;}
+.personalised_area p a{color:hsl(194, 89%, 48%);display:table;float:none;margin:29px 0 0;text-align:center;width:100%;}
+.advice_area{min-height:inherit;padding:40px 20px;display:inline-block;width:100%;}
+.logo_section{width:100%;}
+.footer_menu{width:100% !important;}
+.footer_menu:nth-child(4n),.footer_menu:nth-child(3n){padding:0 15px;}
+.footer_contact{display:inline-block;float:none;width:100%;}
+.footer_connect{display:inline-block;float:none;padding:11px 0 0;width:100%;}
+.british_association_logo{display:inline-block;float:none;text-align:left;}
+.price_move_now{margin-bottom:20px;}
+.inner_page_banner{background-size:800px auto;}
+.banner_inner_section .banner_title{font-size:26px;}
+.banner_inner_section h1{font-size:20px;margin:12px 0 25px;width:inherit;}
+.banner_inner_section .btn-group.bootstrap-select{margin-bottom:15px;width:82% !important;}
+.select_country_area{display:block;margin-left:0;width:82%;}
+.banner_get_quote_area{margin-top:25px;padding:20px 20px 25px;width:100%;}
+.banner_get_quote_area p{font-size:13px;line-height:19px;margin:0 0 15px;}
+.banner_get_quote_area a{line-height:15px;}
+.banner_get_quote_area .get_quote_btn{font-size:13px;padding:14px 23px;}
+.banner_get_quote_area .track_shipment_btn{font-size:13px;padding:14px 25px;margin-left:10px;}
+.moving_advice_center .banner_get_quote_area{margin-top:15px;}
+.places_section{padding:0;}
+.places_section .col-sm-4{margin-bottom:20px;}
+.twitter_post_slider{padding:85px 0 35px;margin:0 35px;width:calc(100% - 70px) !important;}
+.twitter_post_area{margin-bottom:20px;}
+.twitter_post_area::before{top:24px;left:34px;}
+.twitter_post_area::before{top:24px;left:34px;}
+.twitter_post_area .twitter_post_content{font-size:20px;line-height:26px;}
+.twitter_post_area .twitter_post_content{padding:0;}
+.twitter_post_area .twitter_post_author{left:68px;padding-right:0;position:absolute;text-align:left;top:-47px;}
+.pickford_pet_text{padding:23px 55px;position:static;height:auto;text-align:center;background:#fff;}
+.pickford_pet_text .pickford_pet_title{color:hsl(0, 0%, 25%);font-size:20px;padding:0 0 15px;}
+.pickford_pet_text p{font-size:14px;color:hsl(0, 0%, 25%);}
+.pickford_pet_text p a{color:hsl(194, 89%, 48%);margin:15px 0 0;display:table;width:100%;float:none;}
+.call_u_btn{width:50px;border:medium none;text-indent:-9999px;}
+.call_u_btn::before{right:0;top:0;}
+.resource_box_area{padding:8px 0;margin-bottom:20px;}
+.resource_box_area .col-sm-6:first-child{padding-top:18px;}
+.resource_box_area .col-sm-6{padding:0 25px;}
+.news_advice_area{margin-bottom:0;}
+.international_network{margin-bottom:20px;display:inline-block;width:100%;}
+.international_network img{min-height:initial;}
+.international_news_area .advice_area{min-height:initial;padding:30px 20px;margin-bottom:20px;}
+.popup_select_country{top:0;}
+.top_section_select_country{padding:0;}
+.popup_logo{float:none;display:block;clear:left;padding-left:3px;padding-top:12px;}
+.popup_logo img{width:125px;}
+.top_section_select_country .popup_title{padding-top:20px;font-size:20px;padding-left:0;}
+.popup_close{right:0;top:0;position:absolute;}
+.country_section ul li{font-size:39px;line-height:30px;}
+.country_section ul li a{line-height:35px;}
+.country_title{line-height:20px;}
+.call_u_back_area{padding:27px 20px 21px;margin:0 0 20px;}
+.guide_news_area .news_area{margin:0 0 20px;}
+.call_u_title{font-size:17px;line-height:20px;padding:0;}
+.call_u_title span{display:block;}
+.moving_europe_banner .banner_inner_section h1{margin:20px 0 50px;}
+.moving_europe_banner.ppc_new_header .banner_inner_section h1{margin:20px 0 75px;}
+.wide_range_section{background:none;margin-bottom:0;}
+.wide_range_section .col-sm-6{float:left;width:100%;min-height:inherit;margin-bottom:20px;}
+.exclusive_direct_area{background:#fff;padding:25px 30px;}
+.wide_range{padding:25px 30px;}
+.wide_range .title{font-size:24px;line-height:30px;margin-bottom:25px;}
+.wide_range h1,.wide_range h2,.wide_range h3,.wide_range h4,.wide_range h5,.wide_range h6,.wide_range p.Service-Title,.wide_range p span.Service-Title,.wide_range span.Service-Title{font-size:24px;line-height:30px;margin-bottom:25px;}
+.moving_europe_page .resource_box_area{margin-bottom:0;}
+.moving_europe_page .pickfords_gold{margin:0;}
+.inner_banner_title{position:static;background:#fff;width:100%;float:left;padding:0px 35px;}
+.inner_banner_title h1{color:#505050;font-size:30px;margin:20px 0;}
+.case_detail_area{padding:20px 35px 40px;margin-bottom:20px;}
+.case_detail_content h2{font-size:18px;}
+.case_detail_area h1{font-size:30px;}
+.case_detail_content p{font-size:14px;margin:14px 0 0;}
+.business_moving span{font-size:14px;}
+.case_detail_content ul li{font-size:14px;}
+.case_studies_page .news_advice_area{margin-bottom:0;}
+.inner_banner_title h1,.all_case_box h2{font-size:30px;}
+.all_case_box h2{margin:0 0 20px;}
+.inner_form_deail_area{margin-top:20px;}
+.case_studies_detail ul li{width:100%;margin:0 0 20px;}
+.case_studies_detail ul li:nth-child(4n+4){margin:0 0 20px;}
+.case_detail ul li{margin:0 0 5px;}
+.case_img{width:150px;}
+.case_img .case_title{padding:5px 8px;font-size:11px;text-align:left;line-height:13px;}
+.case_detail{float:none;width:auto;padding:7px 10px 0 160px;}
+.case_detail .read_more_btn{display:none;}
+.case_detail .up_date{display:block;font-size:13px;}
+.show_more_item a{text-align:center !important;width:100%;}
+.select_case_studies .btn-group.bootstrap-select{width:82% !important;}
+.content_img_area{margin:20px 0;}
+.content_img{width:100%;padding:0px!important;}
+.content_img:last-child{margin-top:25px;}
+.about-banner .banner_inner_section .banner_title{font-size:28px;line-height:28px;}
+.moving_advice_banner .banner_inner_section .banner_title{line-height:28px;}
+.about-banner .inner_page_banner{padding-bottom:105px;}
+.about-banner .banner_inner_section h1{margin:20px 0 130px;}
+.about-history .pickford_pet_text p{position:inherit;}
+.pickford_pet_moving_area.about-history{margin-bottom:20px;}
+.about_us_page .twitter-about .twitter_post_author span{display:block;}
+.resource_box_area .blue_large_title{font-size:30px;line-height:35px;}
+.about-quote-main .pickfords-uk-main{padding:5px 0;}
+.about_detail_page .resource_box_area{margin-bottom:0;}
+.quality_programme_area{background:none;}
+.about-history .pickford_pet_text{padding:23px 30px;}
+.about-history .pickford_pet_text .pickford_pet_title span{display:inline;}
+.about_detail_select .btn-group.bootstrap-select{width:82% !important;}
+.about_detail_select .we_call_back_btn{display:table;margin-left:0;margin-top:20px;}
+.page_title h1{font-size:36px;}
+.comminity_relations_area{padding:35px 8% 15px;}
+.quality_programme_area .quality_programme_content{padding:25px 40px;background:#1e2d6a;margin-top:20px;}
+.quality_programme_area ul li::before{height:10px;width:10px;}
+.quality_programme_area ul li{padding:0 0 5px 25px;}
+.banner_title_detail{padding-right:0;}
+.reginal_banner .inner_page_banner{height:auto;padding-bottom:0;}
+.reginal_main_sction{margin:0;}
+.reginal_title_section .banner_title{font-size:35px;line-height:38px;}
+.banner_title_detail h4,.banner_title_detail h1{font-size:22px;margin-bottom:20px;}
+.banner_title_detail a{padding:10px 20px;margin-right:10px;font-size:13px;}
+.detail_button a:last-child{background:#0eb6e7;border-color:#0eb6e7;}
+.contact_detail{padding-left:0;padding-top:10px;padding-bottom:10px;}
+.pick_number{width:50%;}
+.pick_number span,.pick_number a,.pick_number:last-child span,.pick_number:last-child a{font-size:26px;}
+.contact_number{margin-top:10px;}
+.reginal_banner .learn_more_area{padding:0;bottom:28px;}
+.banner.reginal_banner{margin-bottom:20px;}
+.reginal_banner .learn_more_area .btn_1{padding:13px 20px;}
+.reginal_banner .learn_more_area .btn_2{padding:13px 20px;margin-left:15px;}
+.reginal_banner .banner_slider .owl-dots{bottom:auto;display:block;left:auto;right:15px;top:15px;}
+.international_text{margin-bottom:25px;margin-top:0;}
+.reginal_content_area .quality_service{display:inline-block;height:auto;width:100%;}
+.reginal_content_area .advice_area{min-height:inherit;}
+.banner_disp{margin-bottom:20px;margin-top:15px;width:100%;}
+.moving_advice_banner .banner_inner_section p{font-size:14px;}
+.moving_advice_banner .banner_inner_section .banner_title{font-size:28px;line-height:28px;}
+.moving_advice_banner .banner_inner_section .we_call_back_btn{margin-left:0;}
+.moving_video_section ul li{width:50%;padding:0 10px 20px;}
+.moving_video_section ul li:nth-child(2n+3){clear:left;}
+.moving_video_section .see_more_video_btn{text-align:center;margin-top:15px;width:100%;}
+.moving_video_section{padding:20px 25px 25px;}
+.accordion_wapper{padding:20px 25px 10px;}
+.find_the_answer{padding:20px 25px 25px;}
+.check_area{margin-top:5px;}
+.moving_advice_banner .banner_inner_section .we_call_back_btn{padding:10px 25px;font-size:12px;}
+.answer_form_area .submit_btn{width:100%;text-align:center;}
+.groupage_area .title{font-size:20px;}
+.shipment_table_area table{margin:5px 10px;width:calc(100% - 20px);}
+.shipment_table_area table tr{display:block;margin-bottom:10px;}
+.shipment_table_area table th{display:none;}
+.shipment_table_area table td{display:block;padding:3px 0 3px 50%;position:relative;}
+.shipment_table_area table td::before{content:attr(data-th) ":";display:inline-block;font-weight:bold;width:50%;left:0;position:absolute;top:4px;}
+.search-post-main span a::before{height:66px;width:66px;}
+.search-post-main span input{padding:15px 90px 15px 10px;font-size:25px;}
+.inner-title{font-size:24px;}
+.search-post-main span a::before{background-size:25px;}
+.inner-title span{display:block;}
+.content_area.find-branch{padding:10px 0 0;}
+.nearest-area{font-size:23px;line-height:28px;margin-bottom:15px;}
+.midlands-main{padding:25px 20px;}
+.area-padding{padding-left:15px;}
+.midlands-main hr{margin:15px 0 25px;}
+.removals-main-left{padding-right:0;width:100%;}
+.removals-main-right{padding-left:0;width:100%;}
+.removals-main p{font-size:16px;}
+.removals-main .removals-heading{line-height:25px;}
+.nearest-area span{display:block;}
+.nearest-area label{display:none;}
+.removals-heading span{display:block;}
+.select-region-main ul{padding:20px;}
+.midlands-main .resource_box_area .col-sm-6:first-child,.midlands-main .resource_box_area .col-sm-6:last-child{padding:10px 0;}
+.midlands-main .resource_box_area{margin-bottom:0;padding:0;}
+.calendar-content_area{padding-top:20px;}
+.search-criteria-main{margin-bottom:15px;}
+.mobile-date{font-size:24px;margin-bottom:5px;}
+.calendar-title{font-size:21px;margin-bottom:5px;}
+.search-criteria-up{margin:0 25px;}
+.search-criteria-up::before{}
+.date-inner-main .date-content{display:none;}
+.calendar-main .days li{min-height:60px;}
+.date-inner-main .date{font-size:28px;padding:12px 0;}
+.calendar-main .weekdays li{width:13.4%;}
+.calendar-main .days li{margin:0 3px 3px 0;width:13.4%;}
+.august-month{margin-top:15px;}
+.show-more-dates{width:100%;padding:12px 50px 12px 20px;font-size:14px;}
+.more-dates{margin-bottom:25px;}
+.price_guide_section{padding:0 0 15px 0;}
+.price-guide-left ul{padding:15px 0 18px;}
+.prices-section p{font-size:16px;padding-bottom:0;}
+.prices-section p span{display:block;}
+.search-criteria-up.open_location::before{}
+.calendar-main{margin-bottom:20px;}
+.find-branch-title{padding:10px 0 0;}
+.price-guide-left{margin:0 auto;width:420px;float:none;}
+.price-guide-left ul li:first-child{display:block;padding:0 0 13px;text-align:center;width:100%;}
+.price-guide-left ul li span{font-size:26px;}
+.price-guide-left ul li{width:197px;}
+.price-guide-left ul li+li{padding-left:59px;}
+.price-guide-left ul li:last-child{padding-left:10px;}
+.price-guide-right{margin:0 auto;width:420px;float:none;}
+.price-guide-right .book_my_btn{border:medium none;text-indent:initial;height:45px;font-size:14px;}
+.price-guide-right .advice_btn{font-size:13px;padding:11px 55px;}
+.price-guide-right span{display:none;}
+.price-guide-right .book_my_btn::before{height:45px;background-size:45px;}
+.form_detail_left,.form_detail_right{width:100%;}
+.main_form_section{width:100%;}
+.form_title span{font-size:14px;}
+.post_code input{width:100%;}
+.field_name .bootstrap-select.btn-group .dropdown-toggle .caret{height:58px;margin-top:-29px;right:-2px;width:58px;}
+.field_name .bootstrap-select.btn-group.open .dropdown-toggle .caret{background-position:0 -58px;}
+.form_botton{text-align:left;}
+.form_botton .book_submit_btn{width:100%;}
+.survey_date{padding-right:65px;}
+.date_detail{min-height:auto;}
+.check_generic{width:100px;}
+.generic_contct_row{display:none;}
+.k-animation-container{left:0 !important;}
+.all_case_box > img{margin-bottom:14px;float:none;width:150px;margin-top:0;}
+
+.img_append img{width:100px;margin-bottom:12px;}
+.affiliate_page .all_case_box h2{padding-right:0;}
+.baggage_btn .btn_2,.baggage_btn .btn_1{margin:0 20px 0 0;}
+.international_baggage_page .call_u_title{width:78%;}
+.baggage_form_area .see_prices_btn{margin-top:0;}
+.baggage_form_area{padding:25px 0 0;}
+.inner_page .search_results_area.case_detail_area{padding:35px 20px;}
+.ppc_landing_banner .baggage_btn{margin-top:10px;}
+.banner_inner_section .get_btn{margin-left:0;margin-top:10px;}
+.banner_inner_section .call_you_back_btn{margin-top:11px;}
+.fullscreen_form_detail .field_name{width:100%;}
+.bottom_checkbox{width:100%;}
+.no_heading_text{}
+.no_heading_text .main_form_section{padding-top:15px;padding-bottom:0;margin-bottom:0;}
+.no_heading_text .main_form_section:nth-child(2n){padding-top:0;margin-bottom:20px;padding-bottom:10px;}
+.no_heading_text .form_detail_right .main_form_section{padding-bottom:10px;padding-top:0;margin-bottom:20px;}
+.main_form_section{min-height:inherit !important;}
+.ppc_footer_area .logo_section{width:100%;}
+.ppc_landing_content .wide_range_section{margin:-178px 0 0;}
+.inner_page .case_detail_area{padding:20px;}
+.midlands-inner ul{-moz-column-count:1;-webkit-column-count:1;-o-column-count:1;column-count:1;}
+.midlands-inner ul li{width:100%;}
+.international_baggage_page .resource_box_area{margin:0;}
+.moving_europe_banner .inner_page_banner .append_select_pk{float:left;position:static;width:100%;}
+.portal_login_box{background:hsl(0, 0%, 100%) none repeat scroll 0 0;padding:26px 30px 30px;}
+.portal_login_box h2{font-size:24px;}
+.portal_login_box p{font-size:14px;}
+.protal_login_btn{padding:10px 28px 11px;font-size:14px;margin-top:10px;}
+.banner_inner_section > img{float:right;width:80px;margin-top:5px;}
+.login_banner .banner_inner_section .banner_title{}
+.login_banner .banner_inner_section h1{width:100%; margin: 20px 0 95px;}
+.manager_box{background:#fff;}
+.manager_content{padding:20px;}
+.listing_box_area{padding:18px 20px;margin:0 0 20px;}
+.listing_box_title{font-size:17px;line-height:20px;padding:11px 0 0;}
+.listing_box_btn{border:medium none;text-indent:-9999px;width:50px;}
+.listing_box_btn::before{right:0;top:0;}
+.listing_box_nowork_btn{border:medium none;text-indent:-9999px;width:50px;}
+.listing_box_nowork_btn::before{right:0;top:0;}
+.list_item_checkbox{float:right;height:44px;padding:4px 0 0;position:absolute;right:15px;width:41px;}
+.list_item_checkbox input[type="checkbox"]{right:0;}
+.list_item_checkbox .checkbox_lble::before{right:0;}
+.listing_box_content{padding:18px 0 0;}
+.box_list_item .title{font-size:14px;}
+.list_item_text p{font-size:13px;}
+.item_date{font-size:13px;}
+.listing_box_content a.view_full_plan{font-size:13px;}
+.col-md-8.col-sm-6.list_item_text{float:left;width:80%;}
+.col-md-3.col-sm-4.list_item_date{float:left;width:80%;}
+.watch_video_btn{background-size:70px auto;}
+.move_manager{font-size:14px;}
+.manager_name{font-size:20px;}
+.manager_content p{font-size:13px;}
+.manager_content .can_help_btn{font-size:14px;}
+.moving_europe_banner.login_banner_area .inner_page_banner{padding-bottom:80px;}
+	
+	/**Intranet**/
+	.area_row{margin: 0;}
+	.md_message{width:100%;padding: 10px 0;}
+	.md_message .md_message_inner{height: auto !important;}
+	
+	.month_stars{width:100%;padding: 10px 0;}
+	.month_stars .stars_inner{height: auto !important;}
+	
+	
+	
+	
+}
+@media (max-width:759px){.groupage_area.hide_iframe{display:none;}
+.iframe_information_details{display:block;}
+}
+@media (max-width:480px){.banner_slider .banner_title{font-size:34px;line-height:40px;width:90%;}
+.banner_img{background-position:69% top;background-size:auto 430px;height:430px;}
+.notification_popupbox{width:345px;right:50px;}
+.notification_popupbox ul li img{margin-right:9px;}
+.notifcn_content{width:187px;}
+.notifcn_readmore a{font-size:10px;}
+.notifcn_readmore{width:60px;}
+	.field_name.post_date .sel_div {
+    margin: 5px 0;
+    width: 100%;
+}
+	.forgot_field_area{
+		width: 90%;
+	}
+}
+@media (max-width:414px){.banner_img{background-position:69% top;background-size:auto 430px;height:430px;}
+.banner_content_area{left:15px;right:15px;width:auto;}
+.banner_slider .banner_title{font-size:24px;line-height:29px;width:92%;top:11px;}
+.learn_more_area .left_text{font-size:17px;line-height:26px;}
+.learn_more_area .left_text span{font-size:15px;}
+.learn_more_area .btn_2,.learn_more_area .btn_1{margin-top:26px;}
+.learn_more_area .btn_1{font-size:13px;padding:6px 15px;}
+.learn_more_area .btn_2{font-size:13px;padding:6px 15px;}
+.learn_more_area .left_text span img{width:200px !important;}
+.content_area{padding:20px 0 0;}
+.price_move_text::before{background:hsl(194, 89%, 48%) url("../images/iphone_plus_less.png") no-repeat scroll center 0;height:30px;margin-top:-15px;width:30px;}
+.price_move_text.open_form::before{background-position:center -34px;}
+.price_move_text{font-size:15px;line-height:19px;padding:2px 0;margin:0 15px;}
+.price_move_content{padding:13px 15px 15px;}
+.where_arrow{height:38px;}
+.where_feild input[type="text"]{height:40px;font-size:14px;}
+.when_area input[type="text"]{font-size:14px;height:40px;}
+.when_feild .ui-datepicker-trigger{background:hsl(194, 89%, 48%) url("../images/date_picker_icon.png") no-repeat scroll center top / auto 100%;height:40px;}
+.property_feild select{height:40px;font-size:14px;padding:0 5px;}
+.property_feild .select_div::before{height:40px;width:40px;}
+.baggage_form_area .user_email_field{padding:0 20px 10px;}
+.user_email_field .price_input_field{height:40px;font-size:14px;padding:0 8px;}
+.user_email_field .sel_div select{height:40px;font-size:14px;padding:0 38px 0 5px;}
+.user_email_field .sel_div::before{height:40px;}
+.infor_check label{font-size:13px;line-height:18px;}
+.see_prices_btn{padding:12px 15px;font-size:14px;}
+.quality_service .quality_title{font-size:16px;line-height:23px;margin-bottom:20px;}
+.quality_service h1,.quality_service h2,.quality_service h3,.quality_service h4,.quality_service h5,.quality_service h6,.quality_service p.Sub-Heading,.Sub-Heading{font-size:16px!important;line-height:23px!important;margin-bottom:20px!important;}
+.Sub-Heading{font-size:20px!important;line-height:23px!important;}
+.quality_service p.Body-Copy,.quality_service .Body-Copy{font-size:12px!important;line-height:18px!important;margin-bottom:20px!important;}
+.Body-Copy{font-size:12px!important;line-height:18px!important;margin-bottom:20px!important;}
+.quality_service p.Body-Copy a,.quality_service p a{font-size:12px;}
+.pickfords_gold_content .pickfords_title{font-size:17px;margin-bottom:25px;}
+.pickfords_gold_content img{margin:0 0 25px;width:143px !important;}
+.pickfords_gold_content .find_more_btn{font-size:13px;}
+.personalised_area .personalised_title{font-size:16px;}
+.personalised_area p{font-size:12px;}
+.personalised_area p a{margin:18px 0 0;font-size:12px;}
+.news_area .news_title{font-size:14px;}
+.news_area .news_tag{font-size:13px;}
+.news_area p{font-size:11px;line-height:18px;}
+.news_area p .read_more_btn{font-size:12px;}
+.advice_area .title_area{font-size:16px;line-height:22px;margin:0 0 23px;}
+.advice_area p{font-size:11px;line-height:17px;margin:0 0 35px;}
+.advice_area .advice_btn{font-size:12px;}
+.advice_area{min-height:initial;padding:40px 20px 35px;}
+.news_advice_area{margin-bottom:0;}
+.footer_logo img{width:125px;}
+.inner_footer{padding:32px 0 15px;}
+.copyright_area{padding:12px 10px 0;}
+.copyright_area p{font-size:12px;}
+.footer_logo{margin:0 0 24px;}
+.footer_menu_section{margin-bottom:20px;}
+.copyright_area{padding:6px 10px 0;}
+.footer_menu_section .footer_menu_title{font-size:16px;}
+.footer_menu_section ul li{font-size:14px;}
+.footer_contact_title{font-size:16px;}
+.banner_inner_section .banner_title{font-size:24px;line-height:31px;}
+.banner_inner_section h1{font-size:17px;margin:20px 0 80px;}
+.banner_inner_section .btn-group.bootstrap-select{margin-bottom:15px;width:82% !important;}
+.inner_page_banner{background-position:68% top;}
+.top_section_select_country{padding:0;}
+.popup_logo{padding-left:3px;padding-top:12px;}
+.popup_logo img{width:125px;}
+.top_section_select_country .popup_title{padding-top:20px;font-size:20px;}
+.popup_close{right:0;top:0;}
+.select_country_area{display:block;margin-left:0;width:82%;}
+.banner_get_quote_area{margin-top:25px;padding:20px 20px 25px;width:100%;}
+.banner_get_quote_area p{font-size:13px;line-height:19px;margin:0 0 15px;}
+.banner_get_quote_area .get_quote_btn{display:inline-block;padding:8px 5px;font-size:11px;text-align:center;width:107px;}
+.banner_get_quote_area .track_shipment_btn{display:inline-block;padding:8px 5px;font-size:11px;margin-left:5px;text-align:center;width:130px;}
+.banner_inner_section .dropdown-toggle.btn-default{font-size:12px;height:42px;padding:4px 20px;}
+.banner_inner_section .bootstrap-select.btn-group .dropdown-toggle .caret{height:42px;width:42px;margin-top:-21px;background-size:cover;}
+.banner_inner_section .bootstrap-select.btn-group.open .dropdown-toggle .caret{background-position:0 -42px;}
+.select_country_area span{font-size:12px;line-height:25px;background-size:42px auto;height:42px;padding:8px 20px;}
+.banner_inner_section .bootstrap-select.btn-group .dropdown-menu li a{font-size:12px;}
+.twitter_post_slider{padding:103px 0 25px;margin:0 25px;width:calc(100% - 50px) !important;}
+.twitter_post_area{padding:0;}
+.twitter_post_area .twitter_post_author{left:68px;top:-78px;}
+.twitter_post_area .twitter_post_content{font-size:17px;line-height:22px;}
+.twitter_post_area::before{left:27px;}
+.pickford_pet_text{padding:20px 15px;}
+.pickford_pet_text .pickford_pet_title{font-size:16px;padding:0 0 10px;}
+.pickford_pet_text p,.pickford_pet_text p a{font-size:13px;}
+.call_u_back_area{padding:27px 20px 21px;}
+.call_u_title{font-size:17px;line-height:20px;}
+.call_u_title span{display:block;}
+.resource_box_area{padding:5px 0;}
+.resource_box_area .col-sm-6:first-child{padding-top:15px;}
+.resource_box_area .col-sm-6{padding:0 20px;}
+.resource_box_title{font-size:20px !important;margin:0 0 10px;}
+.resource_box_area h1,.resource_box_area h2,.resource_box_area h3,.resource_box_area h4,.resource_box_area h5,.resource_box_area h6,.resource_box_area p.Sub-Heading{font-size:20px !important;margin:0 0 10px;}
+.resource_box_area p.Body-Copy,.resource_box_area p.Body-Copy a{font-size:13px;line-height:18px;}
+.resource_box_area p.Body-Copy{margin:0 0 15px;}
+.international_content .international_title{font-size:18px;line-height:22px;margin:0 0 10px;}
+.international_content{padding:0 25px 20px;}
+.country_section ul li{font-size:28px;line-height:24px;}
+.country_section ul li a{line-height:28px;}
+.iphone_search_area .search_field,.iphone_search_area .sfsearchBox input.sfsearchTxt{font-size:14px;}
+.banner_inner_section .banner_title span{display:inline;}
+.moving_europe_banner .banner_inner_section .banner_title{line-height:30px;}
+.wide_range{padding:20px;}
+.wide_range p{font-size:13px;}
+.wide_range .btn_1{font-size:13px;}
+.exclusive_direct_area{padding:20px;}
+.exclusive_direct_area .btn_1{display:inline-block;padding:10px 5px;font-size:11px;text-align:center;width:107px;}
+.exclusive_direct_area .btn_2{display:inline-block;padding:10px 5px;font-size:11px;margin-left:5px;text-align:center;width:130px;}
+.exclusive_direct_area ul li p{font-size:13px;}
+.exclusive_direct_area ul li .title{font-size:15px;}
+.exclusive_direct_area p.Body-Copy,.exclusive_direct_area p span.Body-Copy,.exclusive_direct_area span.Body-Copy{font-family:'HelveticaNeueLTStdRoman';font-size:14px!important;line-height:20px!important;}
+.exclusive_direct_area h1,.exclusive_direct_area h2,.exclusive_direct_area h3,.exclusive_direct_area h4,.exclusive_direct_area h5,.exclusive_direct_area h6,.exclusive_direct_area p.Sub-Heading,.exclusive_direct_area p span.Sub-Heading,.exclusive_direct_area span.Sub-Heading{font-size:16px!important;color:#404040;line-height:23px!important;margin:0!important;padding:0;font-weight:400;}
+.back_link a{font-size:13px;}
+.back_link a::before{top:-2px;}
+.inner_banner_title{padding:0 15px;}
+.inner_banner_title h1,.case_detail_area h1,.all_case_box h2{font-size:20px;line-height: 29px;}
+.business_moving{margin-bottom:15px;}
+.business_moving span{font-size:12px;}
+.case_detail_area{padding:10px 15px 30px;}
+.case_detail_content h2{font-size:16px;}
+.case_detail_content p{font-size:13px;margin:15px 0 0;}
+.case_detail_area h1{margin:0 0 20px;}
+.case_detail_content ul li{font-size:13px;}
+.case_detail_content ul li::before{height:5px;width:5px;}
+.share_this{margin-top:30px;}
+.share_this span{font-size:16px;padding:2px 15px 2px 0;}
+.all_case_box p{font-size:13px;}
+.case_detail{padding:4px 10px 0 160px;}
+.case_detail .up_date{font-size:11px;}
+.case_detail p{font-size:12px;margin:0 0 5px;}
+.special_offers .case_img{width:100%;}
+.special_offers .case_detail p{font-size:14px;}
+.special_offers .case_detail{padding:10px 14px;width:100%;float:left;}
+.special_offers .case_detail .read_more_btn{display:block;font-size:12px;}
+.select_case_studies{margin:10px 0 20px;}
+.select_case_studies .dropdown-toggle.btn-default{font-size:12px;height:42px;padding:4px 20px;}
+.select_case_studies .bootstrap-select.btn-group .dropdown-toggle .caret{background-size:cover;height:42px;margin-top:-21px;width:42px;}
+.select_case_studies .bootstrap-select.btn-group.open .dropdown-toggle .caret{background-position:0 -42px;}
+.select_case_studies .bootstrap-select.btn-group .dropdown-menu li a{font-size:12px;}
+.about-banner .banner_inner_section .banner_title{font-size:24px;}
+.about-banner .inner_page_banner{background-position:45% top;}
+.about-banner .banner_inner_section h1{font-size:17px;}
+.resource_box_area .blue_large_title{font-size:24px;line-height:30px;}
+.about-quote-main{margin-top:-120px;}
+.about-history .pickford_pet_text .pickford_pet_title{font-size:18px;}
+.pickfords-left .title{font-size:22px;}
+.page_title h1{font-size:25px;}
+.about_detail_select .dropdown-toggle.btn-default{font-size:12px;height:42px;padding:4px 20px;}
+.about_detail_select .bootstrap-select.btn-group .dropdown-toggle .caret{height:42px;width:42px;margin-top:-21px;background-size:cover;}
+.about_detail_select .bootstrap-select.btn-group.open .dropdown-toggle .caret{background-position:0 -42px;}
+body .bootstrap-select.btn-group .dropdown-menu li{font-size:12px;}
+.about_detail_select .we_call_back_btn{padding:12px 20px;font-size:12px;}
+.quality_programme_area .quality_programme_content{padding:20px;}
+.quality_programme_area .title{font-size:17px;margin-bottom:18px;line-height:25px;}
+.quality_programme_area ul li{font-size:13px;}
+.comminity_relations_area{padding:30px 8% 15px;}
+.comminity_relations_area .read_next{font-size:13px;}
+.comminity_relations_area .title{font-size:20px;margin:0 0 10px;}
+.comminity_relations_area p{line-height:18px;font-size:12px;margin:0 0 15px;}
+.comminity_relations_area p .find_more_btn{font-size:13px;}
+.reginal_title_section .banner_title{font-size:25px;line-height:33px;}
+.banner_title_detail h4,.banner_title_detail h1{font-size:17px;}
+.banner_title_detail p{font-size:13px;}
+.banner_title_detail a{padding:10px 15px;margin-right:7px;font-size:12px;}
+.pick_number small{font-size:11px;}
+.pick_number span,.pick_number a,.pick_number:last-child span{font-size:18px;}
+.reginal_banner .banner_img{height:280px;}
+.reginal_banner .learn_more_area .btn_1{padding:6px 15px;font-size:11px;}
+.reginal_banner .learn_more_area .btn_2{margin-left:10px;font-size:11px;padding:6px 14px;}
+.reginal_personal_service_area .col-sm-6{padding:0 20px;}
+.service_left h3{font-size:17px;margin-bottom:20px;}
+.international_text a{font-size:13px;}
+.service_right h3{font-size:17px;}
+.moving_video_section{padding:20px 20px 25px;}
+.moving_video_section .title{font-size:18px;padding-bottom:15px;}
+.moving_video_section ul li .video_title{font-size:12px;}
+.moving_video_section .see_more_video_btn{font-size:14px;}
+.accordion_wapper{padding:20px 20px 10px;}
+.accordion_wapper .title{font-size:18px;padding-bottom:15px;}
+.accordion_title{font-size:15px;}
+.accordion_title::before{top:24px;width:20px;}
+.accordion_title::after{height:20px;top:15px;right:9px;}
+.accordion_content{padding:0 0 15px;}
+.accordion_content ul li{font-size:12px;}
+.find_the_answer{padding:20px 20px 25px;}
+.find_the_answer .title{font-size:18px;padding-bottom:15px;}
+.find_the_answer p{font-size:13px;}
+.answer_form_area label{font-size:12px;}
+.answer_form_area .field_input{font-size:12px;height:30px;}
+.answer_form_area .field_textarea{font-size:12px;}
+.answer_form_area .submit_btn{font-size:13px;padding:11px 29px;}
+.find-branch-title{font-size:23px;margin-bottom:5px;}
+.search-post-main span input{padding:8px 56px 8px 10px;font-size:21px;}
+.inner-title{font-size:17px;}
+.search-post-main span a::before{background-size:18px;height:46px;width:46px;}
+.select-region-main ul li{font-size:13px;margin:0 0 10px;}
+.branch_back_link a{font-size:13px;}
+.branch_back_link{padding-bottom:15px;}
+.nearest-area{font-size:17px;line-height:21px;margin-bottom:15px;}
+.midlands-inner ul li{font-size:13px;margin-bottom:10px;}
+.midlands-main hr{margin:10px 0 15px;}
+.removals-main .removals-heading{font-size:15px;line-height:21px;margin-bottom:15px;}
+.removals-main p{font-size:10px;margin-bottom:0;}
+.search-criteria-up{font-size:14px;margin:0 15px;padding:9px 0;}
+.search-criteria-main .price_move_content{padding-top:15px;}
+.search-criteria-main{padding:5px 0;margin-bottom:20px;}
+.search-criteria-up::before{}
+.mobile-date{font-size:17px;margin-bottom:0px;}
+.calendar-title{font-size:15px;margin-bottom:0;}
+.calendar-main .days li{min-height:40px;}
+.date-inner-main .date{font-size:20px;padding:7px 0;}
+.calendar-main .weekdays li{width:13.1%;font-size:11px;}
+.calendar-main .days li{width:13.1%;}
+.search-criteria-up.open_location::before{}
+.prices-section p{font-size:11px;}
+.price-guide-left ul li span{font-size:18px;}
+.price-guide-right .advice_btn{padding:7px 20px 6px;}
+.price-guide-right .book_my_btn{width:152px;font-size:11px;height:35px;padding:10px 50px 9px 0;}
+.price-guide-right .book_my_btn::before{background-size:35px auto;height:35px;width:35px;}
+.price-guide-left{width:290px;}
+.price-guide-left ul li + li{padding-left:20px;}
+.price-guide-left ul li:last-child{padding-left:5px;}
+.price-guide-left ul li{width:130px;}
+.price-guide-right{width:290px;}
+.main_form_section{margin-bottom:10px;}
+.form_title{font-size:20px;}
+.form_title span{font-size:13px;display:block;}
+.field_name label{font-size:13px;}
+.field_name .sel_div select{padding:0 38px 0 8px;}
+.pickford_term label:before{top:1px;}
+.pickford_term input[type="checkbox"]{margin:0;}
+.date_field{padding-right:45px;}
+.check_generic{width:75px;}
+.check_generic label{font-size:14px;}
+.form_botton p{font-size:13px;margin-bottom:10px;}
+.form_botton .book_submit_btn{font-size:13px;}
+.form_botton{margin-bottom:10px;}
+.pickford_term label{font-size:13px;}
+.pickford_term{margin-bottom:10px;}
+.moving_advice_center .banner_get_quote_area .get_quote_btn{width:155px;}
+.baggage_btn .btn_2,.baggage_btn .btn_1{font-size:13px;padding:6px 12px;margin:0 10px 0 0;}
+.search_list ul li img{margin-bottom:10px;width:100%;}
+.search_list ul li .search_content_area{padding-left:0;}
+.logo_number_area{padding:15px 0 10px;}
+.logo_2{padding-bottom:10px;}
+.logo_2 img{width:100px;}
+.ppc_header_number_area span{font-size:13px;line-height:21px;}
+.ppc_header_number_area span + span{font-size:18px;}
+.iphone_search_area .gsc-search-box-tools .gsc-search-box input.gsc-input{background-size:auto 10px !important;}
+.portal_login_box h2{margin:0 0 20px;}
+.portal_login_box p{font-size:13px;margin:0 0 20px;}
+.portal_login_box{padding:20px;}
+.banner_inner_section > img{width:85px;}
+a.Forgotten_text{margin:20px 0 13px;}
+.notification_popupbox{width:100%;right:0;}
+.notification_popupbox ul li img{width:50px;margin-right:9px;}
+.notifcn_content{width:60%;}
+.notifcn_readmore a{font-size:10px;}
+.notifcn_readmore{width:20%;}
+}

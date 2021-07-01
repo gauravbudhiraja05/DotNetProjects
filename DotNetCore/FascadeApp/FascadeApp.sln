@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FascadeApp", "FascadeApp\FascadeApp.csproj", "{55D2709E-2F1F-4865-B59F-13F3E038FEBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55D2709E-2F1F-4865-B59F-13F3E038FEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D2709E-2F1F-4865-B59F-13F3E038FEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D2709E-2F1F-4865-B59F-13F3E038FEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D2709E-2F1F-4865-B59F-13F3E038FEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23A3DA20-BDC6-4B66-8CFD-7408F5CF9231}
+	EndGlobalSection
+EndGlobal

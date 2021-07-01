@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HiveReport.Entity/1.0.0": {
+        "runtime": {
+          "HiveReport.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HiveReport.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

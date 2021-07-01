@@ -1,0 +1,48 @@
+﻿@model PickfordsIntranet.ViewModels.FrontEnd.FrontEndVM
+@{
+    Layout = null;
+}
+
+
+
+
+
+@if (Model.NewsList != null)
+{
+    @foreach (var v in Model.NewsList)
+    {
+        
+            var title = v.Title.Trim().Replace(' ', '_');
+            @*<input type="hidden" id="hdnNewsTitle" value="@title" />*@
+        
+        <li>
+            <div class="all_case_detail">
+                <div class="case_img">
+                    <span class="case_title">
+                        @*@v.DepartmentName News*@
+                        @v.DepartmentName
+                    </span>
+                    <a href="#" id="@v.Id" mytag="@title" class="news_detail">
+                        <img src="@v.ThumbnailImagePath" alt="" />
+                    </a>
+                </div>
+                <div class="case_detail">
+                    <span class="up_date">
+                        @v.PublishDateDisplay
+                    </span>
+                    <p>
+
+                        <a href="#" mytag="@title" id="@v.Id" class="news_detail">
+                            @v.Title
+                        </a>
+                    </p>
+                    <a href="#" mytag="@title" id="@v.Id" class="read_more_btn news_detail">Read More</a>
+                </div>
+            </div>
+        </li>
+    }
+}
+
+
+
+@*<script src="~/FrontEnd/js/FrontEndHome/newsPartialView.js"></script>*@
