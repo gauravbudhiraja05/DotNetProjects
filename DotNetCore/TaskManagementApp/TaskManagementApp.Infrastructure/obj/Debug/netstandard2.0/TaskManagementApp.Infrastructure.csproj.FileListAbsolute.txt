@@ -1,0 +1,14 @@
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Infrastructure.deps.json
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Infrastructure.dll
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Infrastructure.pdb
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Application.dll
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Core.dll
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Application.pdb
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\bin\Debug\netstandard2.0\TaskManagementApp.Core.pdb
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.csprojAssemblyReference.cache
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.AssemblyInfo.cs
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.csproj.CopyComplete
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.dll
+D:\Projects\Test Projects\TaskManagementApp\TaskManagementApp.Infrastructure\obj\Debug\netstandard2.0\TaskManagementApp.Infrastructure.pdb

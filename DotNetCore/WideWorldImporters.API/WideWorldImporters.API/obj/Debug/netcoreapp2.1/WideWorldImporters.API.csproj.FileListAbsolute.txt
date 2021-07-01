@@ -1,0 +1,15 @@
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\bin\Debug\netcoreapp2.1\WideWorldImporters.API.deps.json
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\bin\Debug\netcoreapp2.1\WideWorldImporters.API.runtimeconfig.json
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\bin\Debug\netcoreapp2.1\WideWorldImporters.API.runtimeconfig.dev.json
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\bin\Debug\netcoreapp2.1\WideWorldImporters.API.dll
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.csprojAssemblyReference.cache
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.csproj.CoreCompileInputs.cache
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.RazorAssemblyInfo.cache
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.RazorAssemblyInfo.cs
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.AssemblyInfoInputs.cache
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.AssemblyInfo.cs
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.RazorTargetAssemblyInfo.cache
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\bin\Debug\netcoreapp2.1\WideWorldImporters.API.pdb
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.dll
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\obj\Debug\netcoreapp2.1\WideWorldImporters.API.pdb
+D:\Projects\Test Projects\WideWorldImporters.API\WideWorldImporters.API\bin\Debug\netcoreapp2.1\WideWorldImporters.API.xml
