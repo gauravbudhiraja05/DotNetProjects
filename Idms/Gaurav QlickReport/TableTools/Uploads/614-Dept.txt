@@ -1,0 +1,7 @@
+deptno	deptname	deptloc
+1	Account	Mrt
+2	IT	Delhi
+3	Mgt	Kanpur
+4	Sales	Lucknow
+5	others	Pune
+

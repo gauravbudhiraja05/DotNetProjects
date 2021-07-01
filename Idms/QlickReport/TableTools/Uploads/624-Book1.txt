@@ -1,0 +1,6 @@
+Name	Salary	Salary1
+Gaurav	20000	22000
+Akhil	15000	17000
+Rajat	16000	18000
+Mohit	19000	21000
+

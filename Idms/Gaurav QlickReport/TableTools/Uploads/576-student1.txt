@@ -1,0 +1,8 @@
+std_nam	std_cty	std_cors	std_fa
+ram	delhi	mca	vind
+shyam	noida	mba	raju
+geeta	luckn	pgdm	subdh
+lucky	ahmd	bba	abhsk
+shyam	raibra	bca	ashok
+rahul	mahip	ihm	avinsh
+

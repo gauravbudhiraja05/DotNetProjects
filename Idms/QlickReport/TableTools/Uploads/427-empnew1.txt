@@ -1,0 +1,8 @@
+empno	empname	deptno	empcourse	empcity
+1	mohit	10	mba	delhi
+2	jaykesh	35	mca	ghaziabad
+3	jeetu	20	mca	kanpur
+4	pardeep	30	mba	delhi
+5	gaurav	40	mca	lucknow
+				
+

@@ -1,0 +1,12 @@
+id	name	salary	city
+1	mayank	10000	delhi
+2	raju	20000	roorkee
+3	ravi	15000	gurgaon
+4	arjun	22000	gaziabad
+5	pankaj	25000	haridwar
+6	satend	24000	noida
+7	pradeep	30000	saharanpur
+8	mohit	18000	roorkee
+9	gaurav	32000	delhi
+10	akhil	19000	haridwar
+

@@ -1,0 +1,866 @@
+Product	Duration	DEL	MUM	PUN	GGN	GOA	CDG	RAJ	KOL
+DUVEL	Apr-12	0	0	0	0	0	0	0	0
+LIEFMANS	Apr-12	0	0	0	0	0	0	0	0
+CHIMAY	Apr-12	0	0	0	0	0	0	0	0
+WEIHENSTEPHANER	Apr-12	0	0	0	0	0	0	0	0
+FRUEH	Apr-12	0	0	0	0	0	0	0	0
+ESTRELLA DAMM	Apr-12	0	0	0	0	0	0	0	0
+BROOKLYN LAGER	Apr-12	0	0	0	0	0	0	0	0
+BROOKLYN IPA	Apr-12	0	0	0	0	0	0	0	0
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	150	35	20	15	20	10	0	30
+LIEFMANS	Apr-12	100	20	15	15	0	0	0	0
+CHIMAY	Apr-12	75	25	20	15	0	10	0	0
+WEIHENSTEPHANER	Apr-12	75	40	25	20	20	0	0	0
+FRUEH	Apr-12	75	40	25	20	0	10	0	0
+ESTRELLA DAMM	Apr-12	100	75	50	40	40	20	0	40
+BROOKLYN LAGER	Apr-12	75	20	15	10	20	0	0	0
+BROOKLYN IPA	Apr-12	50	20	10	5	0	0	0	30
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	125	25	15	10	0	5	0	15
+LIEFMANS	Apr-12	100	15	10	5	0	0	0	0
+CHIMAY	Apr-12	75	10	10	10	0	5	0	0
+WEIHENSTEPHANER	Apr-12	75	25	15	10	0	0	0	0
+FRUEH	Apr-12	75	25	15	10	0	5	0	0
+ESTRELLA DAMM	Apr-12	150	75	40	50	0	10	0	20
+BROOKLYN LAGER	Apr-12	75	15	15	5	0	0	0	0
+BROOKLYN IPA	Apr-12	50	15	5	0	0	0	0	15
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	125	15	10	10	0	10	0	30
+LIEFMANS	Apr-12	100	10	5	5	0	0	0	0
+CHIMAY	Apr-12	75	10	10	10	0	10	0	0
+WEIHENSTEPHANER	Apr-12	75	15	10	10	0	0	0	0
+FRUEH	Apr-12	75	15	10	10	0	10	0	0
+ESTRELLA DAMM	Apr-12	100	40	25	35	50	20	0	40
+BROOKLYN LAGER	Apr-12	150	15	15	10	0	0	0	0
+BROOKLYN IPA	Apr-12	75	15	15	10	0	0	0	30
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	125	15	10	10	0	5	5	15
+LIEFMANS	Apr-12	100	10	5	5	0	0	5	0
+CHIMAY	Apr-12	75	10	10	10	0	5	5	0
+WEIHENSTEPHANER	Apr-12	75	15	10	10	0	0	5	0
+FRUEH	Apr-12	75	15	10	10	0	5	5	0
+ESTRELLA DAMM	Apr-12	100	30	25	35	0	10	15	20
+BROOKLYN LAGER	Apr-12	150	15	15	10	0	0	5	0
+BROOKLYN IPA	Apr-12	75	15	15	10	0	0	5	15
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	125	20	20	10	50	10	3	30
+LIEFMANS	Apr-12	100	20	15	5	0	0	3	0
+CHIMAY	Apr-12	75	25	20	10	0	10	3	0
+WEIHENSTEPHANER	Apr-12	150	40	25	25	50	0	3	0
+FRUEH	Apr-12	150	40	25	25	0	10	3	0
+ESTRELLA DAMM	Apr-12	100	75	50	30	50	20	10	40
+BROOKLYN LAGER	Apr-12	75	15	15	5	0	0	2	0
+BROOKLYN IPA	Apr-12	50	15	5	5	0	0	3	30
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	50	20	20	10	10	5	5	15
+LIEFMANS	Apr-12	50	20	15	5	0	0	5	0
+CHIMAY	Apr-12	40	25	20	10	10	5	5	0
+WEIHENSTEPHANER	Apr-12	150	40	25	15	0	0	5	0
+FRUEH	Apr-12	150	40	25	15	10	5	5	0
+ESTRELLA DAMM	Apr-12	75	75	50	25	20	10	15	20
+BROOKLYN LAGER	Apr-12	50	15	15	10	0	0	5	0
+BROOKLYN IPA	Apr-12	35	15	5	10	0	0	5	15
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	Apr-12	100	40	20	5	10	0	3	30
+LIEFMANS	Apr-12	75	20	15	5	0	0	3	0
+CHIMAY	Apr-12	50	25	20	5	10	0	3	0
+WEIHENSTEPHANER	Apr-12	50	30	15	5	0	0	3	0
+FRUEH	Apr-12	50	30	15	5	10	0	3	0
+ESTRELLA DAMM	Apr-12	100	75	45	15	20	0	10	40
+BROOKLYN LAGER	Apr-12	50	15	15	5	0	0	2	0
+BROOKLYN IPA	Apr-12	35	15	5	5	0	0	3	30
+SAISON DUPONT	Apr-12	0	0	0	0	0	0	0	0
+DUVEL	May-12	100	40	20	5	10	0	5	15
+LIEFMANS	May-12	75	20	15	5	0	0	5	0
+CHIMAY	May-12	50	25	20	5	10	0	5	0
+WEIHENSTEPHANER	May-12	50	30	15	5	0	0	5	0
+FRUEH	May-12	50	30	15	5	10	0	5	0
+ESTRELLA DAMM	May-12	100	75	45	15	20	0	15	20
+BROOKLYN LAGER	May-12	50	15	15	5	0	0	5	0
+BROOKLYN IPA	May-12	35	15	5	5	0	0	5	15
+SAISON DUPONT	May-12	0	0	0	0	0	0	0	0
+DUVEL	May-12	50	15	10	2	0	0	0	15
+LIEFMANS	May-12	50	5	5	2	0	0	0	0
+CHIMAY	May-12	40	10	10	2	0	0	0	0
+WEIHENSTEPHANER	May-12	50	10	10	3	0	0	0	0
+FRUEH	May-12	50	10	10	2	0	0	0	0
+ESTRELLA DAMM	May-12	75	30	25	10	0	0	0	20
+BROOKLYN LAGER	May-12	50	10	5	2	0	0	0	0
+BROOKLYN IPA	May-12	35	10	5	2	0	0	0	15
+SAISON DUPONT	May-12	0	0	0	0	0	0	0	0
+DUVEL	May-12	50	15	10	2	10	0	3	15
+LIEFMANS	May-12	75	5	5	2	0	0	3	0
+CHIMAY	May-12	40	10	10	2	10	0	3	0
+WEIHENSTEPHANER	May-12	50	10	10	3	0	0	3	0
+FRUEH	May-12	50	10	10	2	10	0	3	0
+ESTRELLA DAMM	May-12	75	30	25	10	20	0	10	20
+BROOKLYN LAGER	May-12	50	10	5	2	0	0	2	0
+BROOKLYN IPA	May-12	35	10	5	2	0	0	3	15
+SAISON DUPONT	May-12	0	0	0	0	0	0	0	0
+DUVEL	May-12	150	40	20	5	50	0	0	15
+LIEFMANS	May-12	100	20	15	5	0	0	0	0
+CHIMAY	May-12	75	25	20	5	0	0	0	0
+WEIHENSTEPHANER	May-12	100	30	15	5	50	0	0	0
+FRUEH	May-12	100	30	15	5	0	0	0	0
+ESTRELLA DAMM	May-12	150	75	45	15	50	0	0	20
+BROOKLYN LAGER	May-12	100	15	15	5	0	0	0	0
+BROOKLYN IPA	May-12	75	15	5	5	0	0	0	15
+SAISON DUPONT	May-12	0	0	0	0	0	0	0	0
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+May-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jun-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Jul-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Aug-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Sep-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Oct-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Nov-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Dec-12								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Jan-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Feb-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+Mar-13								
+

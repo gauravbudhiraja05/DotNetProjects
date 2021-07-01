@@ -1,0 +1,222 @@
+<%--Project Name: IDMS Phase 2
+    Module Name: Advance Report Designer
+    Page Name: Share Report
+    Summary: Share new and existing reports
+    Created on: 10/03/08
+    Created By: Usha Sehokand
+    Last Modified On:01/10/08
+    Version: 1.0
+    
+
+--%>
+
+<%@ Page Language="VB" AutoEventWireup="false" ValidateRequest="false"   CodeFile="ShareReport.aspx.vb" Inherits="ReportDesigner_ShareReport" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <title>ShareReport</title>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" content="Visual Basic .NET 7.1">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK href="../App_Themes/Themes/StyleSheet.css" type="text/css" rel="stylesheet">
+		<script language="javascript">
+		   //
+		function CheckAllDataGridCheckBoxes(aspCheckBoxID,checkVal)
+		{
+            re = new RegExp(':' + aspCheckBoxID + '$')  //generated control name starts with a colon
+           
+            
+            for(i = 0; i < document.forms[0].elements.length; i++) {
+               elm = document.forms[0].elements[i];
+                if (elm.type == 'checkbox') {
+               
+                         elm.checked = checkVal;
+                        
+                        
+                }
+            }
+        }
+
+		</script>
+		
+</head>
+<body>
+  <form id="formSharereport" runat="server">
+    <div>
+        <span style="font-size:10pt ">Click On Get Buddy To View All Buddy List. Or Select Span And Get Buddy List.</span>
+        <hr />
+        <table style="width: 515px" summary ="table">
+            <thead title="ShareReport"></thead>
+                <tr>
+                    <td valign="top" scope ="col" >
+                        <table style="width: 249px" summary ="table">
+                            <thead title="SelectReport"></thead>
+                         <caption style ="background-color:#0591D3">Select Report</caption>
+		            
+<%--		            <tr>
+		                <td style="width: 79px; height: 24px; color : Black " scope ="col">
+                           <label class="label" for="ddlDepartment" title="Department">Department</label>
+		                </td>
+		                <td style="width: 9px; height: 24px;" scope ="col">
+		                <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlDepartment" AutoPostBack="True"></asp:DropDownList>
+		                </td>
+		            </tr>--%>
+		           <%-- <tr>
+		                <td style="width: 79px; height: 24px; color : Black " scope ="col">
+                           <label class="label" for="ddlClient" title="Client">Client</label>
+		                </td>
+		                <td style="width: 9px; height: 24px;" scope ="col">
+		                    <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlClient" AutoPostBack="True"></asp:DropDownList>
+		                </td>
+		            </tr>--%>
+		           <%-- <tr>
+		                <td style="width: 79px; height: 24px; color : Black " scope ="col">
+                            <label class="label" for="ddlLob" title="LOB">LOB</label>
+		                </td>
+		                <td style="width: 9px; height: 24px;" scope ="col">
+		                    <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlLob" AutoPostBack="True"></asp:DropDownList>
+		                </td>
+		            </tr>--%>
+		            <tr>
+		                <td style="width: 79px; height: 24px; color : Black " scope ="col">
+                            <label class="label" for="ddlReport" title="Report">Report</label>
+		                </td>
+		                <td style="width: 9px; height: 24px;" scope ="col">
+		                    <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlReport" AutoPostBack="True"></asp:DropDownList>
+		                </td>
+		            </tr>
+		          </table>
+                    </td>
+                    <td>
+                        <table summary ="table">
+                            <thead title="SelectUser"></thead>
+                               <caption style ="background-color:#0591D3">Select Buddy</caption>
+		         
+<%--		            <tr>
+		                <td style="width: 68px; height: 25px; color : Black " scope ="col">
+                            <label class="label" for="ddlDepartmentuser" title="Department">Department</label>
+		                </td>
+		                <td style="width: 8px; height: 25px;" scope ="col">
+		                <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlDepartmentuser" AutoPostBack="True"></asp:DropDownList>
+		                </td>
+		            </tr>--%>
+<%--		            <tr>
+		                <td style="width: 68px; height: 25px; color : Black " scope ="col">
+                            <label class="label" for="ddlClientuser" title="Client">Client</label>
+		                </td>
+		                <td style="width: 8px; height: 25px;" scope ="col">
+		                    <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlClientuser" AutoPostBack="True"></asp:DropDownList>
+		                </td>
+		            </tr>--%>
+<%--		            <tr>
+		                <td style="width: 68px; height: 24px; color : Black " scope ="col">
+                             <label class="label" for="ddlLobuser" title="LOB">LOB</label>
+		                </td>
+		                <td style="width: 8px; height: 24px;" scope ="col">
+		                    <asp:DropDownList runat="server" CssClass="dropdownlist" ID="ddlLobuser"></asp:DropDownList>
+		                </td>
+		            </tr>--%>
+		            <tr>
+		                <td></td>
+		                <td scope="col" style="height: 27px">
+                            <asp:Button runat="server" ID="btnUser" Text="Get Buddy" ToolTip="Get Buddy" cssclass="button" />
+		                </td>
+		            </tr>
+		          
+                        </table>
+                    </td>
+                </tr>
+        </table>
+       <asp:Label ID="lblreportname1" runat="server" Text="" width="600px"></asp:Label>
+        <asp:Label runat="server" ID="lblMsg" Font-Bold="True" Font-Size="8pt" ForeColor="#FF3300" Width="506px" ></asp:Label>
+       
+        <table style="width: 515px" summary ="table">
+            <thead title="DataGrid"></thead>
+                <tr>
+                    <td scope ="col">
+                      <%-- This grid is used to bind users to share reports with --%>
+                        <asp:DataGrid runat="server" AutoGenerateColumns="false" Width="500" ID="datagridUser" style ="color:Black" AllowPaging="True" PageSize="15">
+                            <Columns>
+                                <asp:TemplateColumn>
+                                    <HeaderStyle  CssClass="datagridHeader" Width="50%" />
+                                    <HeaderTemplate>
+                                       <%-- <input id="chkAllItems" type="checkbox" onclick="CheckAllDataGridCheckBoxes('chkItem',document.forms[0].chkAllItems.checked)" />--%>
+                                  
+                                        <asp:LinkButton ID="chkAllItems" CssClass="a2" CommandName="chkall" runat="server">Select All</asp:LinkButton>
+                                       <asp:LinkButton ID="unchkall" CssClass="a2" CommandName="chkall1" runat="server">/Deselect All</asp:LinkButton>
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <asp:checkbox runat="server"   id="chkItem" />  
+                                        <asp:Label ID="lblUserid" Text='<%#Container.DataItem("userid")%>'   runat="server"></asp:Label>
+                                        <asp:Label ID="Label1" Text='<%#Container.DataItem("username")%>'   runat="server"></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>                                   
+                                <asp:TemplateColumn>
+                                    <HeaderStyle  CssClass="datagridHeader" Width="8%" />
+                                    <HeaderTemplate>
+                                       View
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <asp:checkbox runat="server"  OnCheckedChanged="oncheckchanged"  AutoPostBack="true"  id="chkView"  />   
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>
+                                 <asp:TemplateColumn>
+                                    <HeaderStyle  CssClass="datagridHeader" Width="8%" />
+                                    <HeaderTemplate>
+                                       Edit
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <asp:checkbox runat="server"  id="chkEdit"  />   
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>
+                                 <asp:TemplateColumn>
+                                    <HeaderStyle  CssClass="datagridHeader" Width="8%" />
+                                    <HeaderTemplate>
+                                       Save As
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <asp:checkbox runat="server"  id="chkSaveas"  />   
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>
+                                 <asp:TemplateColumn>
+                                    <HeaderStyle  CssClass="datagridHeader" Width="8%"/>
+                                    <HeaderTemplate>
+                                       Delete
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <asp:checkbox runat="server"  id="chkDelete"  />   
+                                    </ItemTemplate>
+                                </asp:TemplateColumn>
+                            </Columns>
+                            <PagerStyle Mode="NumericPages" />
+                            
+                        </asp:DataGrid>
+                    </td>
+                </tr>
+                <tr>
+                <td align="center" scope ="col">
+                <asp:Button runat="server" ID="btnShare" CssClass="button" Text="Share Report" />
+                <input type="button" id="btnClose" class="button" value="Close" onclick="window.close()" />
+            
+                </td>
+                </tr>
+        </table>
+        <table style="width: 515px" summary ="table">
+            <thead title="Commands"></thead>
+                <tr align="center" >
+                    <td style="width: 189px; text-align: center;" align="center" scope ="col">
+                        
+                    </td>
+                </tr>
+        </table>
+    </div>
+    <asp:HiddenField ID="msg" runat="server" />
+   </form>
+</body>
+</html>
+<%--
+Change History:none
+--%>

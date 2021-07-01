@@ -1,0 +1,45 @@
+order date	region	rep	item	units	cost	total
+1/6/2010	Quebec	Jones	Pencil	95	1.99	189.05
+1/23/2010	Ontario	Kivell	Binder	50	19.99	999.5
+2/9/2010	Ontario	Jardine	Pencil	36	4.99	179.64
+2/26/2010	Ontario	Gill	Pen	27	19.99	539.73
+3/15/2010	Alberta	Sorvino	Pencil	56	2.99	167.44
+4/1/2010	Quebec	Jones	Binder	60	4.99	299.4
+4/18/2010	Ontario	Andrews	Pencil	75	1.99	149.25
+5/5/2010	Ontario	Jardine	Pencil	90	4.99	449.1
+5/22/2010	Alberta	Thompson	Pencil	32	1.99	63.68
+6/8/2010	Quebec	Jones	Binder	60	8.99	539.4
+6/25/2010	Ontario	Morgan	Pencil	90	4.99	449.1
+7/12/2010	Quebec	Howard	Binder	29	1.99	57.71
+7/29/2010	Quebec	Parent	Binder	81	19.99	"1,619.19"
+8/15/2010	Quebec	Jones	Pencil	35	4.99	174.65
+9/1/2010	Ontario	Smith	Desk	2	125	250
+9/18/2010	Quebec	Jones	Pen Set	16	15.99	255.84
+10/5/2010	Ontario	Morgan	Binder	28	8.99	251.72
+10/5/2010	Quebec	Jones	Pen	64	8.99	575.36
+11/8/2010	Quebec	Parent	Pen	15	19.99	299.85
+10/5/2010	Ontario	Kivell	Pen Set	96	4.99	479.04
+10/5/2010	Ontario	Smith	Pencil	67	1.29	86.43
+10/5/2010	Quebec	Parent	Pen Set	74	15.99	"1,183.26"
+1/15/2011	Ontario	Gill	Binder	46	8.99	413.54
+2/1/2011	Ontario	Smith	Binder	87	15	"1,305.00"
+2/18/2011	Quebec	Jones	Binder	4	4.99	19.96
+3/7/2011	Alberta	Sorvino	Binder	7	19.99	139.93
+3/24/2011	Ontario	Jardine	Pen Set	50	4.99	249.5
+4/10/2011	Ontario	Andrews	Pencil	66	1.99	131.34
+4/27/2011	Quebec	Howard	Pen	96	4.99	479.04
+5/14/2011	Ontario	Gill	Pencil	53	1.29	68.37
+5/31/2011	Ontario	Gill	Binder	80	8.99	719.2
+6/17/2011	Ontario	Kivell	Desk	5	125	625
+7/4/2011	Quebec	Jones	Pen Set	62	4.99	309.38
+7/21/2011	Ontario	Morgan	Pen Set	55	12.49	686.95
+8/7/2011	Ontario	Kivell	Pen Set	42	23.95	"1,005.90"
+8/24/2011	Alberta	Sorvino	Desk	3	275	825
+9/10/2011	Ontario	Gill	Pencil	7	1.29	9.03
+9/27/2011	Alberta	Sorvino	Pen	76	1.99	151.24
+10/5/2010	Alberta	Thompson	Binder	57	19.99	"1,139.43"
+10/5/2010	Ontario	Andrews	Pencil	14	1.29	18.06
+10/5/2010	Ontario	Jardine	Binder	11	4.99	54.89
+12/4/2011	Ontario	Jardine	Binder	94	19.99	"1,879.06"
+12/4/2011	Ontario	Andrews	Binder	28	4.99	139.72
+

@@ -1,0 +1,8 @@
+ID	Name	Address	Phone	salary	Age	Email
+1090	Brij	Meerut	9999222222	30000	22	brij@gmail.com
+1091	Priya	Jammu	9999222223	30000	22	priya@gmail.com
+1092	Simmi	HP	9999222224	27000	23	simmi@gmail.com
+1093	Arpana	Delhi	9999222225	33000	24	arpana@gmail.com
+1094	Ravinder	Punjab	9999222226	22000	22	ravinder@gmail.com
+1095	Gagan	Punjab	9999222227	19000	24	gagan@gmail.com
+

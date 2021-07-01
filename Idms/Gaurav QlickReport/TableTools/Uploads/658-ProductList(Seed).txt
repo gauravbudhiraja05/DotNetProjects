@@ -1,0 +1,17 @@
+Crop	Price															
+Wheat	14															
+Barley	14															
+Mustard	14															
+Gram	14															
+Bajra	150															
+Maize	15															
+GroudNt	30															
+Pea	45															
+Tomatao	15000															
+Chilli	17000															
+Brinjal	3000															
+Onion	250															
+Cauller	600															
+Bhindi	150															
+BottGrd	3500															
+Watmlon	3000															

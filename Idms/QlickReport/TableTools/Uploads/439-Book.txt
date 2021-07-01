@@ -1,0 +1,13 @@
+Sr No.	Name 	Registration		Course 	Roll No
+1	Brij	1001		MCA	1
+2	Anil	1002		MCA	2
+3	Vimal	1003		MCA	3
+4	Amrit	1004		MCA	4
+5	Deepak	1005		MCA	5
+6	Shikha	1006		MCA	6
+7	Arsh	1007		MCA	7
+8	Deesha	1008		MCA	8
+9	Anjali	1009		MCA	9
+10	Raman	1010		MCA	10
+11	Esha	1011		MCA	11
+12	Navdeep	1012		MCA	12

@@ -1,0 +1,592 @@
+UserId	RecId	ItemType	Variety	Item	ForeQty	ForeMonth	UnderKPK	UOM	ForeYear
+skumar0804	4331	Wheat	343	Crops	160	April	KPK0804	qntls	2012
+satbir0804	888	Wheat	711	Crops	125	April	KPK0804	qntls	2012
+ranvir0804	1121	Paddy	NA	Crops	2000	November	KPK0804	qntls	2012
+satbir0804	1332	Wheat	343	Crops	125	April	KPK0804	qntls	2012
+mahendra0804	5086	Paddy	BAsmati	Crops	50	November	KPK0804	qntls	2012
+nasvir0804	877	Wheat	343	Crops	160	April	KPK0804	qntls	2012
+ranvir0804	1579	Wheat	NA	Crops	600	April	KPK0804	qntls	2012
+dharmendra0804	4593	Wheat	343	Crops	50	April	KPK0804	qntls	2012
+sukhbir0804	4456	Paddy	NA	Crops	200	November	KPK0804	qntls	2012
+satyavan0804	1274	Wheat	NA	Crops	60	April	KPK0804	qntls	2012
+ranbir0804	1078	Wheat	NA	Crops	120	April	KPK0804	qntls	2012
+naresh0804	1070	Paddy	Basmati 30	Crops	250	November	KPK0804	qntls	2012
+dharmendra0804	5164	Paddy	Duplicate	Crops	30	November	KPK0804	qntls	2012
+ajad0804	4512	Wheat	NA	Crops	150	April	KPK0804	qntls	2012
+mahendra0804	4819	Wheat	343	Crops	80	April	KPK0804	qntls	2012
+raay0804	3880	Paddy	BAsmati	Crops	80	November	KPK0804	qntls	2012
+suresh0804	3198	Paddy	Basmati	Crops	300	November	KPK0804	qntls	2012
+roshan0804	3734	Paddy	NA	Crops	80	November	KPK0804	qntls	2012
+suraj0804	4822	Wheat	NA	Crops	180	April	KPK0804	qntls	2012
+ajad0804	5290	Paddy	NA	Crops	100	November	KPK0804	qntls	2012
+dharam0804	3388	Paddy	Basmati Muchal	Crops	50	November	KPK0804	qntls	2012
+roshan0804	4160	Wheat	343	Crops	130	April	KPK0804	qntls	2012
+naresh0804	1012	Wheat	2329	Crops	250	April	KPK0804	qntls	2012
+satbir0804	2385	Paddy	Basmati	Crops	150	November	KPK0804	qntls	2012
+dharam0804	3591	Wheat	343	Crops	80	April	KPK0804	qntls	2012
+suresh0804	3320	Wheat	343	Crops	500	April	KPK0804	qntls	2012
+naresh0804	1562	Wheat	343	Crops	250	April	KPK0804	qntls	2012
+raay0804	4098	Wheat	343	Crops	130	April	KPK0804	qntls	2012
+skumar0804	4954	Paddy	Basmati	Crops	100	November	KPK0804	qntls	2012
+nasvir0804	1277	Paddy	Basmati	Crops	100	November	KPK0804	qntls	2012
+sukhbir0804	4953	Wheat	NA	Crops	150	April	KPK0804	qntls	2012
+satyavan0804	961	Paddy	NA	Crops	30	November	KPK0804	qntls	2012
+shiv0966	98	Tomato	N/A	Vegetables	350	September	KPK0966	qntls	2012
+badri10966	7738	Jowar		Crops	4	April	kpk0966	qntls	2012
+jagannath0966	7765	Wheat		Crops	50	April	kpk0966	qntls	2012
+mdsaini0966	110	Coriander	N/A	Spices	10	October	KPK0966	qntls	2012
+mohan30966	7849	Wheat		Crops	8	April	kpk0966	qntls	2012
+ram0966	7685	Groundnut		Crops	80	October	kpk0966	qntls	2012
+rakeshnathu0966	7861	Groundnut		Crops	80	November	kpk0966	qntls	2012
+pappu0966	163	Tomato	N/A	Vegetables	80	September	KPK0966	qntls	2012
+mohan10966	7820	Bajra		Crops	30	September	kpk0966	qntls	2012
+badri10966	7736	Lady Finger		Vegetables	120	July	kpk0966	qntls	2012
+ganga0966	7700	Barley		Crops	200	May	kpk0966	qntls	2012
+ravi0966	7681	Potato		Vegetables	2	October	kpk0966	qntls	2012
+babu20966	7836	Tomato		Vegetables	80	April	kpk0966	qntls	2012
+mangal0966	7706	Peas		Vegetables	40	February	kpk0966	qntls	2012
+banshi0966	7746	Groundnut		Crops	6	October	kpk0966	qntls	2012
+bhagirath0966	7848	Tomato		Vegetables	40	July	kpk0966	qntls	2012
+mangal0966	7707	Brinjal		Vegetables	40	July	kpk0966	qntls	2012
+badri30966	7794	Tomato		Vegetables	40	July	kpk0966	qntls	2012
+kajod0966	40	Cauliflower	N/A	Vegetables	40	September	KPK0966	qntls	2012
+nandi0966	7856	Tomato		Vegetables	120	July	kpk0966	qntls	2012
+bodu0966	7871	Tomato		Vegetables	100	August	kpk0966	qntls	2012
+sagar0966	7844	Cauliflower		Vegetables	150	November	kpk0966	qntls	2012
+kajod0966	25	Cauliflower	N/A	Vegetables	250	October	KPK0966	qntls	2012
+bhagirath0966	7845	Wheat		Crops	13	April	kpk0966	qntls	2012
+banshi0966	7747	Bajra		Crops	10	October	kpk0966	qntls	2012
+rameshwar10966	7832	Wheat		Crops	6	April	kpk0966	qntls	2012
+ravi0966	7680	Chilly		Vegetables	2	July	kpk0966	qntls	2012
+bodu10966	7875	Gram		Crops	10	April	kpk0966	qntls	2012
+surya0966	7841	Cauliflower		Vegetables	60	July	kpk0966	qntls	2012
+mohan10966	7821	Jowar		Crops	50	August	kpk0966	qntls	2012
+maliram0966	186	Tomato	N/A	Vegetables	250	September	KPK0966	qntls	2012
+jagdish0966	7812	Jowar		Crops	40	April	kpk0966	qntls	2012
+kcjaat0966	162	Brinjal	N/A	Vegetables	50	September	KPK0966	qntls	2012
+jagannath0966	7767	Gram		Crops	10	April	kpk0966	qntls	2012
+ramchander0966	7786	Wheat		Crops	10	April	kpk0966	qntls	2012
+bodu10966	7873	Barley		Crops	10	April	kpk0966	qntls	2012
+mangal10966	7867	Jowar		Crops	20	July	kpk0966	qntls	2012
+ganga0966	7698	Peas		Vegetables	200	February	kpk0966	qntls	2012
+mohan30966	7850	Barley		Crops	5	April	kpk0966	qntls	2012
+mali0966	7713	Amla	Desi	Fruits	300	February	kpk0966	qntls	2012
+babu0966	7725	Tomato		Vegetables	20	April	kpk0966	qntls	2012
+mangilal10966	177	Tomato	N/A	Vegetables	200	September	KPK0966	qntls	2012
+puran0966	7771	Tomato		Vegetables	100	May	kpk0966	qntls	2012
+kailashchand0966	140	Tomato	N/A	Vegetables	180	October	KPK0966	qntls	2012
+dinesh0966	7757	Chilly		Vegetables	30	May	kpk0966	qntls	2012
+mukesh0966	7779	Carrot		Vegetables	160	October	kpk0966	qntls	2012
+sagar0966	7842	Wheat		Crops	20	April	kpk0966	qntls	2012
+krishan0966	7780	Cauliflower		Vegetables	30	November	kpk0966	qntls	2012
+shiv0966	165	Tomato	N/A	Vegetables	40	October	KPK0966	qntls	2012
+phool0966	7740	Lady Finger		Vegetables	50	April	kpk0966	qntls	2012
+ravi0966	7682	Groundnut		Crops	3	October	kpk0966	qntls	2012
+babu0966	7729	Chilly		Vegetables	30	August	kpk0966	qntls	2012
+mukesh0966	7778	Bajra		Crops	10	November	kpk0966	qntls	2012
+jagannath0966	7769	Carrot		Vegetables	50	November	kpk0966	qntls	2012
+badri40966	7816	Cauliflower		Vegetables	60	November	kpk0966	qntls	2012
+mangal0966	7705	Tomato		Vegetables	150	July	kpk0966	qntls	2012
+mohan0966	83	Tomato	N/A	Vegetables	120	September	KPK0966	qntls	2012
+babu0966	7728	Lady Finger		Vegetables	40	August	kpk0966	qntls	2012
+ramsingh0966	7691	Peas		Vegetables	32	NULL	kpk0966	qntls	2012
+rakesh0966	7826	Cauliflower		Vegetables	250	November	kpk0966	qntls	2012
+mangal10966	7866	Lady Finger		Vegetables	20	July	kpk0966	qntls	2012
+bhagirath0966	7847	Cauliflower		Vegetables	100	November	kpk0966	qntls	2012
+ganesh0966	191	Tomato	N/A	Vegetables	30	September	KPK0966	qntls	2012
+ramprasad0966	7799	Tomato		Vegetables	50	July	kpk0966	qntls	2012
+buddi0966	7753	Bajra		Crops	4	October	kpk0966	qntls	2012
+ganpat0966	7732	Carrot		Vegetables	8	December	kpk0966	qntls	2012
+jagdish0966	7811	Carrot		Vegetables	40	November	kpk0966	qntls	2012
+ganpat0966	7734	Jowar		Crops	50	July	kpk0966	qntls	2012
+banshi20966	7773	Cauliflower		Vegetables	6	December	kpk0966	qntls	2012
+ramchander0966	7788	Cauliflower		Vegetables	40	November	kpk0966	qntls	2012
+ganga0966	7697	Tomato		Vegetables	150	April	kpk0966	qntls	2012
+rajiv0966	200	Musk Melon	N/A	Fruits	180	October	KPK0966	qntls	2012
+surender0966	7724	Carrot		Vegetables	1	December	kpk0966	qntls	2012
+mukesh0966	7775	Barley		Crops	40	April	kpk0966	qntls	2012
+mangal10966	7865	Cauliflower		Vegetables	100	August	kpk0966	qntls	2012
+mangal0966	7701	Amla		Fruits	160	February	kpk0966	qntls	2012
+ramsingh0966	7692	Lady Finger		Vegetables	8	July	kpk0966	qntls	2012
+babu0966	7727	Cauliflower		Vegetables	70	December	kpk0966	qntls	2012
+hanuman0966	7805	Cauliflower		Vegetables	12	November	kpk0966	qntls	2012
+ravi0966	7684	Jowar		Crops	1	October	kpk0966	qntls	2012
+badri40966	7817	Lady Finger		Vegetables	90	July	kpk0966	qntls	2012
+ganesh0966	139	Tomato	N/A	Vegetables	120	October	KPK0966	qntls	2012
+babu0966	7726	Chilly		Vegetables	15	April	kpk0966	qntls	2012
+kailash30966	7878	Cauliflower		Vegetables	400	November	kpk0966	qntls	2012
+banshi0966	7744	Cauliflower		Vegetables	90	October	kpk0966	qntls	2012
+gopal0966	7807	Cauliflower		Vegetables	60	November	kpk0966	qntls	2012
+mangilal10966	203	Tomato	N/A	Vegetables	20	September	KPK0966	qntls	2012
+mohan0966	204	Tomato	N/A	Vegetables	300	September	KPK0966	qntls	2012
+surender0966	7722	Cauliflower		Vegetables	50	November	kpk0966	qntls	2012
+mohan10966	7822	Cauliflower		Vegetables	80	December	kpk0966	qntls	2012
+shiv0966	128	Tomato	N/A	Vegetables	25	October	KPK0966	qntls	2012
+badri30966	7792	Lady Finger		Vegetables	40	July	kpk0966	qntls	2012
+mukesh0966	7776	Wheat		Crops	15	April	kpk0966	qntls	2012
+bhagirath0966	7846	Barley		Crops	8	April	kpk0966	qntls	2012
+nandi0966	7858	Wheat		Crops	15	April	kpk0966	qntls	2012
+banshi10966	7761	Tomato		Vegetables	30	May	kpk0966	qntls	2012
+devi0966	7853	Cauliflower		Vegetables	7	December	kpk0966	qntls	2012
+ganga0966	7699	Wheat		Crops	400	May	kpk0966	qntls	2012
+bodu10966	7877	Carrot		Vegetables	25	November	kpk0966	qntls	2012
+babu20966	7835	Cauliflower		Vegetables	40	December	kpk0966	qntls	2012
+kcjaat0966	96	Tomato	N/A	Vegetables	50	October	KPK0966	qntls	2012
+banshi20966	7774	Tomato		Vegetables	400	May	kpk0966	qntls	2012
+buddi0966	7751	Mustard		Crops	4	April	kpk0966	qntls	2012
+nand0966	7834	Bajra		Crops	12	September	kpk0966	qntls	2012
+mohan30966	7852	Tomato		Vegetables	30	April	kpk0966	qntls	2012
+mangal0966	7702	Beal		Fruits	10	April	kpk0966	qntls	2012
+mali10966	7863	Cauliflower		Vegetables	200	November	kpk0966	qntls	2012
+rampal0966	7790	Carrot		Vegetables	20	October	kpk0966	qntls	2012
+bodu10966	7876	Cauliflower		Vegetables	160	November	kpk0966	qntls	2012
+govind0966	124	Tomato	N/A	Vegetables	12	September	KPK0966	qntls	2012
+ganesh0966	230	Tomato	N/A	Vegetables	6	September	KPK0966	qntls	2012
+mohan10966	7819	Carrot		Vegetables	40	February	kpk0966	qntls	2012
+bodu10966	7874	Wheat		Crops	15	April	kpk0966	qntls	2012
+bodu0966	7872	Cauliflower		Vegetables	120	November	kpk0966	qntls	2012
+jagannath0966	7766	Mustard		Crops	15	April	kpk0966	qntls	2012
+jagannath0966	7768	Barley		Crops	20	April	kpk0966	qntls	2012
+ramavtar0966	213	Tomato	N/A	Vegetables	80	October	KPK0966	qntls	2012
+mukesh0966	7777	Mustard		Crops	2	April	kpk0966	qntls	2012
+sagar0966	7843	Lady Finger		Vegetables	60	July	kpk0966	qntls	2012
+badri40966	7818	Brinjal		Vegetables	20	June	kpk0966	qntls	2012
+surender0966	7719	Wheat		Crops	15	April	kpk0966	qntls	2012
+govind0966	214	Tomato	N/A	Vegetables	160	September	KPK0966	qntls	2012
+babu10966	7784	Cauliflower		Vegetables	300	December	kpk0966	qntls	2012
+mali0966	7711	Ber	Desi	Fruits	400	March	kpk0966	qntls	2012
+badri10966	7735	Cauliflower		Vegetables	40	November	kpk0966	qntls	2012
+badri30966	7793	Jowar		Crops	40	July	kpk0966	qntls	2012
+rameshwar10966	7833	Barley		Crops	9	April	kpk0966	qntls	2012
+hanuman0966	7806	Bajra		Crops	5	October	kpk0966	qntls	2012
+mangu0966	7795	Jowar		Crops	100	July	kpk0966	qntls	2012
+jagannath0966	7770	Cauliflower		Vegetables	30	November	kpk0966	qntls	2012
+chatar0966	7828	Cauliflower		Vegetables	4000	December	kpk0966	qntls	2012
+shiv0966	129	Tomato	N/A	Vegetables	10	October	KPK0966	qntls	2012
+hanuman0966	7804	Tomato		Vegetables	60	July	kpk0966	qntls	2012
+krishan0966	7781	Lady Finger		Vegetables	20	August	kpk0966	qntls	2012
+jagdish10966	7869	Cauliflower		Vegetables	200	December	kpk0966	qntls	2012
+babu0966	7730	Carrot		Vegetables	1	December	kpk0966	qntls	2012
+rakeshnathu0966	7860	Bajra		Crops	10	September	kpk0966	qntls	2012
+badri30966	7791	Cauliflower		Vegetables	80	December	kpk0966	qntls	2012
+mali10966	7862	Jowar		Crops	100	August	kpk0966	qntls	2012
+ramavtar0966	145	Chilly	N/A	Vegetables	50	September	KPK0966	qntls	2012
+dinesh0966	7756	Tomato		Vegetables	100	April	kpk0966	qntls	2012
+dinesh0966	7759	Wheat		Crops	10	May	kpk0966	qntls	2012
+rampal0966	7789	Groundnut		Crops	60	October	kpk0966	qntls	2012
+rakesh0966	7825	Tomato		Vegetables	100	August	kpk0966	qntls	2012
+ramlal10966	137	Tomato	N/A	Vegetables	120	October	KPK0966	qntls	2012
+ganga0966	7695	Cauliflower		Vegetables	400	December	kpk0966	qntls	2012
+kanahiya0966	82	Tomato	N/A	Vegetables	60	September	KPK0966	qntls	2012
+surya0966	7839	Tomato		Vegetables	80	July	kpk0966	qntls	2012
+mangilal10966	138	Tomato	N/A	Vegetables	70	October	KPK0966	qntls	2012
+ganga0966	7696	Lady Finger		Vegetables	200	August	kpk0966	qntls	2012
+pappu0966	189	Tomato	N/A	Vegetables	300	October	KPK0966	qntls	2012
+kanahiya0966	112	Tomato	N/A	Vegetables	150	October	KPK0966	qntls	2012
+ram0966	7687	Jowar		Crops	10	July	kpk0966	qntls	2012
+chatar0966	7831	Bajra		Crops	150	September	kpk0966	qntls	2012
+badri10966	7737	Tomato		Vegetables	130	July	kpk0966	qntls	2012
+kanahiya0966	190	Tomato	N/A	Vegetables	60	September	KPK0966	qntls	2012
+gangamujrli0966	7755	Brinjal		Vegetables	20	August	kpk0966	qntls	2012
+phool0966	7739	Cauliflower		Vegetables	50	October	kpk0966	qntls	2012
+buddi0966	7750	Gram		Crops	8	April	kpk0966	qntls	2012
+dinesh0966	7758	Amla		Fruits	50	March	kpk0966	qntls	2012
+ravi0966	7683	Bajra		Crops	3	October	kpk0966	qntls	2012
+ramavtar0966	198	Tomato	N/A	Vegetables	60	October	KPK0966	qntls	2012
+mohan30966	7851	Lady Finger		Vegetables	70	April	kpk0966	qntls	2012
+kailash0966	84	Tomato	N/A	Vegetables	5	October	KPK0966	qntls	2012
+babu10966	7782	Jowar		Crops	40	May	kpk0966	qntls	2012
+banshi10966	7760	Cauliflower		Vegetables	100	December	kpk0966	qntls	2012
+puran0966	7772	Groundnut		Crops	60	December	kpk0966	qntls	2012
+mangu0966	7796	Groundnut		Crops	60	October	kpk0966	qntls	2012
+kailash0966	205	Tomato	N/A	Vegetables	30	October	KPK0966	qntls	2012
+mangu0966	7797	Bajra		Crops	30	October	kpk0966	qntls	2012
+mali0966	7715	Sitafal	Desi	Vegetables	50	November	kpk0966	qntls	2012
+mali10966	7864	Lady Finger		Vegetables	80	July	kpk0966	qntls	2012
+mangilal10966	126	Tomato	N/A	Vegetables	20	October	KPK0966	qntls	2012
+gopi0966	7710	Bajra		Crops	80	October	kpk0966	qntls	2012
+buddi0966	7749	Barley		Crops	12	April	kpk0966	qntls	2012
+kailash10966	7837	Tomato		Vegetables	90	April	kpk0966	qntls	2012
+ramsingh0966	7690	Tomato		Vegetables	30	July	kpk0966	qntls	2012
+gangamujrli0966	7754	Cauliflower		Vegetables	90	October	kpk0966	qntls	2012
+nandi0966	7857	Lady Finger		Vegetables	50	July	kpk0966	qntls	2012
+gopal0966	7808	Tomato		Vegetables	20	April	kpk0966	qntls	2012
+rajiv0966	92	Rose	N/A	Flowers	50	September	KPK0966	qntls	2012
+Braj0966	218	Tomato	N/A	Vegetables	20	October	KPK0966	qntls	2012
+kailashchand0966	99	Tomato	N/A	Vegetables	150	September	KPK0966	qntls	2012
+rajiv0966	46	Tomato	N/A	Vegetables	60	September	KPK0966	qntls	2012
+surender0966	7720	Barley		Crops	20	April	kpk0966	qntls	2012
+shiv0966	229	Tomato	N/A	Vegetables	15	September	KPK0966	qntls	2012
+lalaram0966	7802	Tomato		Vegetables	40	April	kpk0966	qntls	2012
+Braj0966	49	Tomato	N/A	Vegetables	20	September	KPK0966	qntls	2012
+maliram0966	148	Tomato	N/A	Vegetables	16	September	KPK0966	qntls	2012
+mdsaini0966	111	Tomato	N/A	Vegetables	50	October	KPK0966	qntls	2012
+kajod0966	171	Amla	N/A	Fruits	100	September	KPK0966	qntls	2012
+jagdish10966	7870	Lady Finger		Vegetables	50	August	kpk0966	qntls	2012
+ram0966	7686	Bajra		Crops	20	October	kpk0966	qntls	2012
+mali0966	7712	Lemon	Desi Kagji	Vegetables	50	August	kpk0966	qntls	2012
+rakesh0966	7827	Wheat		Crops	100	August	kpk0966	qntls	2012
+ganesh0966	113	Tomato	N/A	Vegetables	50	October	KPK0966	qntls	2012
+mdsaini0966	70	Tomato	N/A	Vegetables	70	October	KPK0966	qntls	2012
+kajod0966	39	Lemon	N/A	Vegetables	20	October	KPK0966	qntls	2012
+ramavtar0966	134	Tomato	N/A	Vegetables	40	September	KPK0966	qntls	2012
+rlsharma0966	69	Tomato	N/A	Vegetables	20	October	KPK0966	qntls	2012
+nanu0966	7824	Brinjal		Vegetables	100	August	kpk0966	qntls	2012
+ganpat0966	7733	Bajra		Crops	40	October	kpk0966	qntls	2012
+badri0966	7694	Jowar		Crops	30	July	kpk0966	qntls	2012
+ramprasad0966	7798	Wheat		Crops	70	July	kpk0966	qntls	2012
+suresh0966	7815	Bajra		Crops	25	September	kpk0966	qntls	2012
+shiv0966	166	Kakadi	N/A	Vegetables	350	September	KPK0966	qntls	2012
+mdsaini0966	135	Tomato	N/A	Vegetables	70	September	KPK0966	qntls	2012
+nandi0966	7855	Peas		Vegetables	100	February	kpk0966	qntls	2012
+devi0966	7854	Wheat		Crops	5	April	kpk0966	qntls	2012
+kajod0966	107	Beal	N/A	Fruits	20	September	KPK0966	qntls	2012
+mangal0966	7703	Ber		Fruits	20	January	kpk0966	qntls	2012
+babu10966	7783	Lady Finger		Vegetables	50	August	kpk0966	qntls	2012
+lalaram0966	7801	Jowar		Crops	10	April	kpk0966	qntls	2012
+kajod0966	180	Ber	N/A	Fruits	200	September	KPK0966	qntls	2012
+kanahiya0966	178	Bottle Gourd	N/A	Vegetables	40	October	KPK0966	qntls	2012
+rakeshnathu0966	7859	Jowar		Crops	80	May	kpk0966	qntls	2012
+ramchander0966	7787	Tomato		Vegetables	80	July	kpk0966	qntls	2012
+buddi0966	7748	Wheat		Crops	10	April	kpk0966	qntls	2012
+ramsingh0966	7689	Barley		Crops	5	April	kpk0966	qntls	2012
+gopi0966	7708	Jowar		Crops	10	October	kpk0966	qntls	2012
+rlsharma0966	48	Tomato	N/A	Vegetables	100	September	KPK0966	qntls	2012
+suresh0966	7814	Groundnut		Crops	40	November	kpk0966	qntls	2012
+surender0966	7721	Tomato		Vegetables	40	September	kpk0966	qntls	2012
+ramlal10966	187	Tomato	N/A	Vegetables	10	October	KPK0966	qntls	2012
+phool0966	7741	Tomato		Vegetables	20	December	kpk0966	qntls	2012
+kailash0966	167	Tomato	N/A	Vegetables	60	September	KPK0966	qntls	2012
+chotu0966	7718	Barley		Crops	22	May	kpk0966	qntls	2012
+gopal0966	7810	Barley		Crops	2	May	kpk0966	qntls	2012
+rajiv0966	108	Tomato	N/A	Vegetables	2	September	KPK0966	qntls	2012
+radhey0966	71	Tomato	N/A	Vegetables	5	September	KPK0966	qntls	2012
+ramprasad0966	7800	Cauliflower		Vegetables	40	November	kpk0966	qntls	2012
+ramkishor0966	7764	Cauliflower		Vegetables	300	December	kpk0966	qntls	2012
+ramkishor0966	7762	Chilly		Vegetables	40	June	kpk0966	qntls	2012
+govind0966	64	Tomato	N/A	Vegetables	250	October	KPK0966	qntls	2012
+mangal10966	7868	Bajra		Crops	10	October	kpk0966	qntls	2012
+phool0966	7742	Wheat		Crops	6	April	kpk0966	qntls	2012
+ramchander0966	7785	Mustard		Crops	3	April	kpk0966	qntls	2012
+rajiv0966	160	Tomato	N/A	Vegetables	25	October	KPK0966	qntls	2012
+surender0966	7723	Chilly		Vegetables	30	August	kpk0966	qntls	2012
+chotu0966	7717	Wheat		Crops	50	May	kpk0966	qntls	2012
+buddi0966	7752	Groundnut		Crops	24	October	kpk0966	qntls	2012
+badriruda0966	7743	Groundnut		Crops	12	October	kpk0966	qntls	2012
+mdsaini0966	19	Tomato	N/A	Vegetables	50	September	KPK0966	qntls	2012
+shiv0966	228	Tomato	N/A	Vegetables	10	September	KPK0966	qntls	2012
+mohan0966	97	Tomato	N/A	Vegetables	50	October	KPK0966	qntls	2012
+maliram0966	47	Tomato	N/A	Vegetables	500	October	KPK0966	qntls	2012
+gopi0966	7709	Carrot		Vegetables	40	October	kpk0966	qntls	2012
+banshi0966	7745	Carrot		Vegetables	60	October	kpk0966	qntls	2012
+mdsaini0966	81	Bottle Gourd	N/A	Vegetables	50	September	KPK0966	qntls	2012
+ramkishor0966	7763	Lady Finger		Vegetables	20	August	kpk0966	qntls	2012
+chatar0966	7830	Jowar		Crops	90	August	kpk0966	qntls	2012
+mdsaini0966	175	Lady Finger	N/A	Vegetables	100	September	KPK0966	qntls	2012
+ramlal10966	176	Tomato	N/A	Vegetables	65	September	KPK0966	qntls	2012
+kcjaat0966	202	Tomato	N/A	Vegetables	400	September	KPK0966	qntls	2012
+kanahiya0966	127	Tomato	N/A	Vegetables	25	September	KPK0966	qntls	2012
+ramsingh0966	7688	Wheat		Crops	15	April	kpk0966	qntls	2012
+kailash10966	7838	Groundnut		Crops	10	November	kpk0966	qntls	2012
+pappu0966	227	Tomato	N/A	Vegetables	600	September	KPK0966	qntls	2012
+Braj0966	188	Tomato	N/A	Vegetables	10	September	KPK0966	qntls	2012
+chatar0966	7829	Chilly		Vegetables	100	June	kpk0966	qntls	2012
+ramlal10966	136	Tomato	N/A	Vegetables	100	September	KPK0966	qntls	2012
+jagdish0966	7813	Bajra		Crops	10	July	kpk0966	qntls	2012
+kanahiya0966	164	Tomato	N/A	Vegetables	70	October	KPK0966	qntls	2012
+lalaram0966	7803	Cauliflower		Vegetables	20	May	kpk0966	qntls	2012
+gopal0966	7809	Wheat		Crops	4	May	kpk0966	qntls	2012
+surya0966	7840	Peas		Vegetables	100	February	kpk0966	qntls	2012
+badri0966	7693	Carrot		Vegetables	300	October	kpk0966	qntls	2012
+nanu0966	7823	Tomato		Vegetables	300	August	kpk0966	qntls	2012
+mali0966	7716	Wheat	Desi	Crops	10	May	kpk0966	qntls	2012
+ganpat0966	7731	Wheat		Crops	10	April	kpk0966	qntls	2012
+kailash0966	20	Tomato	N/A	Vegetables	80	September	KPK0966	qntls	2012
+kana10970	7953	Groundnut		Crops	40	October	kpk0970	qntls	2012
+sunda0970	53	Bajra	Pioneer	Crops	25	September	KPK0970	qntls	2012
+ypsyadav0970	304	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+pyadav0970	319	Groundnut	Rasdar	Crops	10	September	KPK0970	qntls	2012
+kajod0970	7656	Bajra	Mahyco	Crops	10	October	KPK0970	qntls	2012
+durgo0970	331	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+rlgurjar0970	7666	Groundnut	Rasdar	Crops	80	October	KPK0970	qntls	2012
+pyadav0970	337	Bajra	Mahyco	Crops	15	September	KPK0970	qntls	2012
+bhura0970	291	Bajra	Pioneer	Crops	20	September	KPK0970	qntls	2012
+suwalal0970	7650	Bajra	Mahyco	Crops	8	October	KPK0970	qntls	2012
+lacha0970	290	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+raghunath0970	378	Groundnut	Rasdar	Crops	50	September	KPK0970	qntls	2012
+hanuman0970	283	Bajra	Pioneer	Crops	30	September	KPK0970	qntls	2012
+klyadav0970	311	Groundnut	Rasdar	Crops	25	September	KPK0970	qntls	2012
+sitaram0970	373	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+Mohan0970	31	Groundnut	Rasdar	Crops	5	September	KPK0970	qntls	2012
+babulal0970	7653	Groundnut	Rasdar	Crops	40	October	KPK0970	qntls	2012
+godharam0970	89	Bajra	Desi	Crops	10	September	KPK0970	qntls	2012
+babu0970	154	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+jagdish0970	7659	Groundnut	Rasdar	Crops	30	October	KPK0970	qntls	2012
+kajod0970	7655	Groundnut	Rasdar	Crops	40	October	KPK0970	qntls	2012
+mlyadav	102	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+bhomaram0970	315	Bajra	Desi	Crops	30	September	KPK0970	qntls	2012
+kcyadav0970	317	Groundnut	Rasdar	Crops	15	September	KPK0970	qntls	2012
+bhagwan0970	7675	Groundnut	Rasdar	Crops	40	October	KPK0970	qntls	2012
+jagmal0970	179	Jowar	Pioneer	Crops	15	September	KPK0970	qntls	2012
+pdyadav10970	194	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+madanlal0970	105	Bajra	Mahyco	Crops	10	September	KPK0970	qntls	2012
+Choturam0970	285	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+mana0970	11	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+jnyadav0970	192	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+glyadav0970	342	Groundnut	Rasdar	Crops	50	September	KPK0970	qntls	2012
+raghu0970	278	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+narayanji0970	7654	Groundnut	Rasdar	Crops	60	October	KPK0970	qntls	2012
+jagmal0970	58	Bajra	Pioneer	Crops	25	September	KPK0970	qntls	2012
+gyadav0970	257	Bajra	Mahyco	Crops	20	September	KPK0970	qntls	2012
+sunda0970	118	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+ram0970	7660	Groundnut	Rasdar	Crops	20	October	KPK0970	qntls	2012
+blsaini	6	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+Choturam0970	245	Bajra	Pioneer	Crops	15	September	KPK0970	qntls	2012
+nacchuram0970	298	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+pdyadav10970	207	Groundnut	Rasdar	Crops	25	September	KPK0970	qntls	2012
+suwalal0970	7649	Groundnut	Rasdar	Crops	20	October	KPK0970	qntls	2012
+pra0970	143	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+shyam0970	260	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+kajod10970	7951	Groundnut		Crops	40	October	kpk0970	qntls	2012
+gcyadav0970	8	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+bhagwan0970	7676	Bajra	Mahyco	Crops	15	October	KPK0970	qntls	2012
+nacchuram0970	306	Bajra	Desi	Crops	10	September	KPK0970	qntls	2012
+bsyadav0970	316	Bajra	Shankar	Crops	10	September	KPK0970	qntls	2012
+kmal0970	277	Bajra	BK-560	Crops	10	September	KPK0970	qntls	2012
+prabhati0970	258	Groundnut	Rasdar	Crops	60	September	KPK0970	qntls	2012
+madanlal0970	37	Groundnut	Rasdar	Crops	25	September	KPK0970	qntls	2012
+gyadav0970	296	Groundnut	Rasdar	Crops	10	September	KPK0970	qntls	2012
+sdyadav	149	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+mana0970	12	Bajra	Shri Ram	Crops	15	September	KPK0970	qntls	2012
+ganga0970	7638	Groundnut	Rasdar	Crops	15	October	KPK0970	qntls	2012
+banwari0970	210	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+mlyadav	117	Bajra	Pioneer	Crops	50	September	KPK0970	qntls	2012
+kishan0970	7658	Groundnut	Rasdar	Crops	60	October	KPK0970	qntls	2012
+raghunath0970	372	Bajra	Pioneer	Crops	30	September	KPK0970	qntls	2012
+ram0970	7661	Bajra	Pioneer	Crops	15	October	KPK0970	qntls	2012
+lryadav0970	266	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+girdhari0970	347	Groundnut	Rasdar	Crops	15	October	KPK0970	qntls	2012
+bryadav	7	Groundnut	Rasdar	Crops	15	October	KPK0970	qntls	2012
+ganpat0970	35	Bajra	Desi	Crops	20	September	KPK0970	qntls	2012
+prahlad0970	329	Groundnut	Rasdar	Crops	10	September	KPK0970	qntls	2012
+bryadav	72	Bajra	Pioneer	Crops	10	October	KPK0970	qntls	2012
+chotu0970	276	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+kajod10970	7952	Bajra		Crops	10	October	kpk0970	qntls	2012
+kcyadav0970	336	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+rich0970	7950	Groundnut		Crops	40	October	kpk0970	qntls	2012
+girdharilal0970	24	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+ganga0970	7639	Bajra	Mahyco	Crops	8	October	KPK0970	qntls	2012
+psyadav0970	343	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+pappu0970	7664	Groundnut	Rasdar	Crops	25	October	KPK0970	qntls	2012
+mohanlal0970	7643	Groundnut	Rasdar	Crops	20	October	KPK0970	qntls	2012
+madan0970	7635	Groundnut	Rasdar	Crops	6	October	KPK0970	qntls	2012
+bhagirath0970	7667	Groundnut	Rasdar	Crops	10	September	KPK0970	qntls	2012
+arjun0970	7672	Bajra	Mahyco	Crops	10	October	KPK0970	qntls	2012
+daula0970	133	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+hanuman0970	270	Groundnut	Rasdar	Crops	80	September	KPK0970	qntls	2012
+sonaram0970	262	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+ganpat0970	196	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+rpyadav0970	256	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+chittarmal0970	346	Groundnut	Rasdar	Crops	70	September	KPK0970	qntls	2012
+jpyadav0970	7662	Groundnut	Rasdar	Crops	40	October	KPK0970	qntls	2012
+gcyadav0970	9	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+arjun0970	7671	Groundnut	Rasdar	Crops	20	October	KPK0970	qntls	2012
+boduram0970	7670	Bajra	Mahyco	Crops	10	September	KPK0970	qntls	2012
+godharam0970	14	Groundnut	Rasdar	Crops	15	September	KPK0970	qntls	2012
+bhagi0970	7673	Groundnut	Rasdar	Crops	45	October	KPK0970	qntls	2012
+jagmal0970	155	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+bhura0970	305	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+prabhati0970	297	Bajra	Desi	Crops	20	September	KPK0970	qntls	2012
+deva0970	103	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+govind0970	7669	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+raghu0970	302	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+prahlad0970	303	Bajra	Pioneer	Crops	5	September	KPK0970	qntls	2012
+skyadav0970	289	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+kanaram0970	353	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+ryadav0970	4	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+lryadav0970	265	Groundnut	Rasdar	Crops	60	September	KPK0970	qntls	2012
+skyadav0970	282	Groundnut	Rasdar	Crops	25	September	KPK0970	qntls	2012
+bhagirath0970	7668	Bajra	Mahyco	Crops	10	September	KPK0970	qntls	2012
+kyadav0970	7665	Groundnut	Rasdar	Crops	25	October	KPK0970	qntls	2012
+kmal0970	318	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+narayan0970	7646	Groundnut	Rasdar	Crops	25	October	KPK0970	qntls	2012
+suvalal0970	377	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+bhomaram0970	349	Groundnut	Rasdar	Crops	60	September	KPK0970	qntls	2012
+pra0970	142	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+chhigan0970	36	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+murli0970	237	Groundnut	Rasdar	Crops	20	October	KPK0970	qntls	2012
+bhagi0970	7674	Bajra	Mahyco	Crops	5	October	KPK0970	qntls	2012
+ramchandra0970	7652	Groundnut	Rasdar	Crops	40	October	KPK0970	qntls	2012
+mohanlal0970	7644	Bajra	Pioneer	Crops	10	October	KPK0970	qntls	2012
+juntha0970	7663	Groundnut	Rasdar	Crops	30	October	KPK0970	qntls	2012
+psyadav0970	247	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+badri0970	240	Groundnut	Rasdar	Crops	30	September	KPK0970	qntls	2012
+chittarmal0970	251	Bajra	Pioneer	Crops	20	September	KPK0970	qntls	2012
+maliram0970	7677	Groundnut	Ganesh	Crops	25	October	KPK0970	qntls	2012
+rudaram0970	169	Groundnut	Rasdar	Crops	10	September	KPK0970	qntls	2012
+deva0970	151	Bajra	Pioneer	Crops	10	September	KPK0970	qntls	2012
+pdyadav0970	341	Groundnut	Rasdar	Crops	40	September	KPK0970	qntls	2012
+bsyadav0970	330	Groundnut	Rasdar	Crops	20	September	KPK0970	qntls	2012
+bdyadav0970	30	Groundnut	Rasdar	Crops	10	September	KPK0970	qntls	2012
+nryadav	115	Groundnut	Rasdar	Crops	15	September	KPK0970	qntls	2012
+ypsyadav0970	295	Bajra	Pioneer	Crops	15	September	KPK0970	qntls	2012
+ramkishor0970	7657	Groundnut	Rasdar	Crops	5	October	KPK0970	qntls	2012
+ballusingh1034	8554	Raj Karan		Crops	25	Select	KPK1034	qntls	2012
+jagnathyadav1034	8562	Wheat		Crops	50	March	KPK1034	qntls	2012
+jagdishyadav1034	8570	Bajra		Crops	40	Select	KPK1034	qntls	2012
+jagdishyadav1034	8571	Raj Karan		Crops	16	Select	KPK1034	qntls	2012
+ghesaram1034	8601	Raj Karan		Crops	15	Select	KPK1034	qntls	2012
+pholsingh1034	8544	Raj Karan		Crops	23	NULL	KPK1034	qntls	2012
+laduram1034	8592	Raj Karan		Crops	35	Select	KPK1034	qntls	2012
+sadhuram1034	8559	Wheat		Crops	32	March	KPK1034	qntls	2012
+harinarayan1034	8602	Bajra		Crops	20	March	KPK1034	qntls	2012
+raghuvir1034	8614	Raj Karan		Crops	8	Select	KPK1034	qntls	2012
+ballusingh1034	8553	Wheat		Crops	20	March	KPK1034	qntls	2012
+bhavaryadav1034	8584	Raj Karan		Crops	12	Select	KPK1034	qntls	2012
+dhanshyam1034	8597	Bajra		Crops	20	Select	KPK1034	qntls	2012
+ghesaram1034	8600	Wheat		Crops	24	March	KPK1034	qntls	2012
+laluyadav1034	8547	Wheat		Crops	12	NULL	KPK1034	qntls	2012
+rgurzer1034	8557	Wheat		Crops	13	NULL	KPK1034	qntls	2012
+ramsharma1034	8575	Bajra		Crops	30	Select	KPK1034	qntls	2012
+dineshsharma11034	8580	Bada Farmi		Crops	4	March	KPK1034	qntls	2012
+dhanshyam1034	8596	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+harinarayan1034	8603	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+harinarayan1034	8605	Raj Karan		Crops	15	Select	KPK1034	qntls	2012
+ramsharma1034	8572	Wheat		Crops	50	March	KPK1034	qntls	2012
+dineshsharma1034	8577	Bada Farmi		Crops	4	March	KPK1034	qntls	2012
+laduram1034	8591	Wheat		Crops	40	March	KPK1034	qntls	2012
+raghuvir1034	8613	Bajra		Crops	16	Select	KPK1034	qntls	2012
+jagnathyadav1034	8564	Bajra		Crops	25	Select	KPK1034	qntls	2012
+ramsharma1034	8573	Raj Karan		Crops	40	Select	KPK1034	qntls	2012
+ganeshram1034	8588	Raj Karan		Crops	25	Select	KPK1034	qntls	2012
+ramyadav1034	8610	Raj Karan		Crops	25	Select	KPK1034	qntls	2012
+raghuvirsharan1034	8619	Wheat		Crops	32	March	KPK1034	qntls	2012
+pholsingh11034	8546	Raj Karan		Crops	43	NULL	KPK1034	qntls	2012
+sadhuram1034	8560	Raj Karan		Crops	55	NULL	KPK1034	qntls	2012
+bhavaryadav1034	8583	Wheat		Crops	28	March	KPK1034	qntls	2012
+dhanshyam1034	8595	Wheat		Crops	32	March	KPK1034	qntls	2012
+raghuvir11034	8615	Wheat		Crops	32	March	KPK1034	qntls	2012
+raghuvir11034	8616	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+laluyadav1034	8548	Raj Karan		Crops	55	NULL	KPK1034	qntls	2012
+laxmanbunkar1034	8550	Raj Karan		Crops	18	Select	KPK1034	qntls	2012
+raghuvir11034	8618	Raj Karan		Crops	16	Select	KPK1034	qntls	2012
+raghuvirsharan1034	8620	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+laxmanbunkar1034	8549	Wheat		Crops	16	March	KPK1034	qntls	2012
+rgurzer1034	8558	Raj Karan		Crops	11	NULL	KPK1034	qntls	2012
+jagnathyadav1034	8565	Bajra		Crops	11	Select	KPK1034	qntls	2012
+jagdishyadav1034	8569	Bajra		Crops	11	Select	KPK1034	qntls	2012
+laduram1034	8594	Bajra		Crops	20	Select	KPK1034	qntls	2012
+raghuvir11034	8617	Bajra		Crops	15	Select	KPK1034	qntls	2012
+ramsharma1034	8576	Raj Karan		Crops	15	Select	KPK1034	qntls	2012
+ganeshram1034	8587	Wheat		Crops	40	March	KPK1034	qntls	2012
+raghuvir1034	8611	Wheat		Crops	32	March	KPK1034	qntls	2012
+jagdishyadav1034	8568	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+laduram1034	8593	Bajra		Crops	16	Select	KPK1034	qntls	2012
+ramyadav1034	8607	Bajra		Crops	30	March	KPK1034	qntls	2012
+ramyadav1034	8608	Raj Karan		Crops	55	Select	KPK1034	qntls	2012
+raghuvir1034	8612	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+ramsharma1034	8574	Bajra		Crops	25	Select	KPK1034	qntls	2012
+bhavaryadav1034	8585	Bajra		Crops	20	Select	KPK1034	qntls	2012
+pholsingh11034	8545	Wheat		Crops	22	NULL	KPK1034	qntls	2012
+laxmanbunkar1034	8551	Raj Karan		Crops	8	Select	KPK1034	qntls	2012
+jagnathyadav1034	8563	Raj Karan		Crops	40	Select	KPK1034	qntls	2012
+jagnathyadav1034	8566	Raj Karan		Crops	15	Select	KPK1034	qntls	2012
+jagdishyadav1034	8567	Wheat		Crops	50	March	KPK1034	qntls	2012
+raghuvirsharan1034	8621	Bajra		Crops	15	Select	KPK1034	qntls	2012
+pholsingh1034	8543	Wheat		Crops	11	NULL	KPK1034	qntls	2012
+ramyadav1034	8609	Kalyan Sona		Crops	60	Select	KPK1034	qntls	2012
+laxmanbunkar1034	8552	Bajra		Crops	8	Select	KPK1034	qntls	2012
+harinarayan1034	8604	Kalyan Sona		Crops	40	Select	KPK1034	qntls	2012
+raghuvirsharan1034	8622	Raj Karan		Crops	16	Select	KPK1034	qntls	2012
+sadhuram11034	8623	Wheat		Crops	32	March	KPK1034	qntls	2012
+dram1034	15649	wheat	kalyan sona	Crops	60	April	kpk1034	qntls	2012
+hng1034	15663	Bajra	560	Crops	20	October	kpk1034	qntls	2012
+ballu1034	15679	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+ramgs1034	15629	Mustard		Crops	20	April	kpk1034	qntls	2012
+dram1034	15650	Barley	rajkaran	Crops	55	April	kpk1034	qntls	2012
+sadhu1034	15605	gram		Crops	8	April	kpk1034	qntls	2012
+jnyadav1034	15656	gram	rajkaran	Crops	15	April	kpk1034	qntls	2012
+ghanshyam1034	15694	Bajra	560	Crops	20	October	kpk1034	qntls	2012
+laxman1034	15700	Bajra	T-59	Crops	8	May	kpk1034	qntls	2012
+dhola1034	15704	Mustard	T-59	Crops	10	April	kpk1034	qntls	2012
+jprasad1034	15645	gram	rajkaran	Crops	16	April	kpk1034	qntls	2012
+jprasad1034	15648	Jowar	759	Crops	25	May	kpk1034	qntls	2012
+jnyadav1034	15658	Mustard	759	Crops	20	May	kpk1034	qntls	2012
+blg1034	15688	Bajra	T-59	Crops	15	May	kpk1034	qntls	2012
+laxman1034	15697	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+ramgs1034	15628	gram	rajkaran	Crops	15	August	kpk1034	qntls	2012
+sadhury1034	15668	Mustard	T-59	Crops	20	May	kpk1034	qntls	2012
+rich1034	15672	gram	rajkaran	Crops	15	April	kpk1034	qntls	2012
+ghasi1034	15677	gram		Crops	15	April	kpk1034	qntls	2012
+laxman1034	15699	Mustard	T-59	Crops	10	April	kpk1034	qntls	2012
+ganpat1034	15620	wheat	3077	Crops	32	April	kpk1034	qntls	2012
+ganpat1034	15624	Bajra	560	Crops	15	October	kpk1034	qntls	2012
+raghu	15638	Barley	rajkaran	Crops	30	April	kpk1034	qntls	2012
+hng1034	15662	gram		Crops	15	April	kpk1034	qntls	2012
+ghanshyam1034	15691	wheat	kalyan sona	Crops	32	April	kpk1034	qntls	2012
+dhola1034	15701	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+raghu	15642	Bajra	jk-560	Crops	16	October	kpk1034	qntls	2012
+sadhury1034	15669	Jowar	T-59	Crops	25	May	kpk1034	qntls	2012
+rich1034	15671	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+ghanshyam1034	15693	gram	Desi	Crops	16	April	kpk1034	qntls	2012
+laxman1034	15696	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+sadhu1034	15603	wheat	3077	Crops	32	April	kpk1034	qntls	2012
+sadhu1034	15607	groundnut	m-13	Crops	16	October	kpk1034	qntls	2012
+ganpat1034	15622	gram		Crops	16	April	kpk1034	qntls	2012
+jnyadav1034	15657	Bajra	560	Crops	30	May	kpk1034	qntls	2012
+ballu1034	15680	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+blg1034	15687	gram	rajkaran	Crops	16	April	kpk1034	qntls	2012
+ghanshyam1034	15695	Tomato	g=600	Vegetables	20	March	kpk1034	qntls	2012
+dhola1034	15702	Barley	rajkaran	Crops	2	April	kpk1034	qntls	2012
+sadhu1034	15604	Barley	rajkaran	Crops	30	April	kpk1034	qntls	2012
+ganpat1034	15623	Mustard	t-59	Crops	8	April	kpk1034	qntls	2012
+ganpat1034	15625	Groundnut	rasdar	Crops	12	October	kpk1034	qntls	2012
+dram1034	15652	Bajra	560	Crops	30	October	kpk1034	qntls	2012
+hng1034	15661	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+sadhury1034	15666	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+dhola1034	15703	gram	rajkaran	Crops	8	April	kpk1034	qntls	2012
+sadhu1034	15608	tomato	goldan	Vegetables	6	March	kpk1034	qntls	2012
+ramgs1034	15626	wheat	3077	Crops	50	April	kpk1034	qntls	2012
+hng1034	15664	Chilly		Vegetables	5	May	kpk1034	qntls	2012
+sadhury1034	15665	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+rich1034	15673	Mustard	T-59	Crops	20	May	kpk1034	qntls	2012
+blg1034	15686	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+sadhu1034	15606	Mustard	t-59	Crops	8	April	kpk1034	qntls	2012
+ramgs1034	15630	Bajra	560	Crops	30	May	kpk1034	qntls	2012
+raghu	15641	groundnut	rasdar	Crops	12	October	kpk1034	qntls	2012
+jprasad1034	15647	Mustard	759	Crops	20	May	kpk1034	qntls	2012
+jnyadav1034	15655	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+jnyadav1034	15659	Jowar	759	Crops	25	May	kpk1034	qntls	2012
+ballu1034	15682	Mustard	T-59	Crops	15	May	kpk1034	qntls	2012
+ghanshyam1034	15692	Barley	rajkaran	Crops	30	April	kpk1034	qntls	2012
+ganpat1034	15621	Barley	rajkaran	Crops	30	April	kpk1034	qntls	2012
+jprasad1034	15643	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+jprasad1034	15644	Barley	rajkaran	Crops	22	April	kpk1034	qntls	2012
+dram1034	15651	Bajra		Crops	25	Select	kpk1034	qntls	2012
+dram1034	15653	Gram		Crops	8	October	kpk1034	qntls	2012
+ghasi1034	15678	Bajra	560	Crops	12	October	kpk1034	qntls	2012
+blg1034	15685	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+ramgs1034	15627	Barley	rajkaran	Crops	40	April	kpk1034	qntls	2012
+raghu	15637	wheat	3077	Crops	32	April	kpk1034	qntls	2012
+raghu	15640	Mustard		Crops	8	April	kpk1034	qntls	2012
+jprasad1034	15646	Bajra		Crops	40	May	kpk1034	qntls	2012
+sadhury1034	15667	gram	rajkaran	Crops	15	April	kpk1034	qntls	2012
+raghu	15639	gram		Crops	8	April	kpk1034	qntls	2012
+jnyadav1034	15654	wheat	3077	Crops	22	April	kpk1034	qntls	2012
+hng1034	15660	wheat	kalyan sona	Crops	40	April	kpk1034	qntls	2012
+rich1034	15674	Jowar	T-59	Crops	25	May	kpk1034	qntls	2012
+ballu1034	15681	gram	rajkaran	Crops	16	April	kpk1034	qntls	2012
+laxman1034	15698	gram	rajkaran	Crops	8	April	kpk1034	qntls	2012
+dhola1034	15705	Bajra	T-59	Crops	8	May	kpk1034	qntls	2012
+rich1034	15670	wheat	3077	Crops	33	April	kpk1034	qntls	2012
+ghasi1034	15675	wheat	kalyan sona	Crops	24	April	kpk1034	qntls	2012
+ghasi1034	15676	Mustard	rajkaran	Crops	8	April	kpk1034	qntls	2012
+sadhuram11034	8624	Raj Karan		Crops	30	Select	KPK1034	qntls	2012
+shubux1034	8630	Bajra		Crops	24	Select	KPK1034	qntls	2012
+shubux1034	8627	Wheat		Crops	40	March	KPK1034	qntls	2012
+lelaram1034	8638	Raj Karan		Crops	15	Select	KPK1034	qntls	2012
+lelaram1034	8639	Bajra		Crops	20	Select	KPK1034	qntls	2012
+sadhuram11034	8626	Raj Karan		Crops	8	Select	KPK1034	qntls	2012
+shubux1034	8629	Raj Karan		Crops	20	Select	KPK1034	qntls	2012
+lelaram1034	8637	Wheat	shriram	Crops	40	March	KPK1034	qntls	2012
+

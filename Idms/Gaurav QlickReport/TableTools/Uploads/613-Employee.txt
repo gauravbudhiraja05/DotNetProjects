@@ -1,0 +1,7 @@
+empno	empdesc	deptno
+10	SE	1
+20	Se	2
+30	Mgr	3
+40	se	4
+50	mgr	5
+

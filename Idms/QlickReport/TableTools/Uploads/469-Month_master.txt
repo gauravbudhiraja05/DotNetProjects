@@ -1,0 +1,13 @@
+Month_Id	Month_Name
+M101	Jan
+M102	Feb
+M103	Mar
+M104	Apr
+M105	May
+M106	Jun
+M107	Jul
+M108	Aug
+M109	Sep
+M110	Oct
+M111	Nov
+M112	Dec

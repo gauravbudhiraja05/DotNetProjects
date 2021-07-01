@@ -1,0 +1,11 @@
+roll	name	marks	address
+1001	pardeep	657	ramnager
+1002	saini	435	mohannager
+1003	kumar	456	ghaziabad
+1004	sandeep	278	rampur
+1005	rajnesh	456	saharanpur
+1006	deepak	483	roorkee
+1007	vivak	345	haridwar
+1008	amit	402	delhi
+			
+

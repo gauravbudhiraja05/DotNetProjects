@@ -1,0 +1,702 @@
+UserId	RecId	Item	ItemType	Variety	ForeQty	ForeMonth	QltyParam	UnderKPK	UOM	ForeYear
+naresh0804	2828	Fertilizer	Urea	NULL	100	May	NULL	KPK0804	bags	2012
+sukhbir0804	1897	Fertilizer	Urea	NULL	50	June	Shri Ram	KPK0804	bags	2012
+dharmendra0804	8231	Fertilizer	DAP	NULL	6	May	Null	KPK0804	bags	2012
+roshan0804	3510	Fertilizer	Urea	NULL	32	May	NULL	KPK0804	bags	2012
+ajad0804	2133	seed	Paddy	NULL	10	June	NULL	KPK0804	NULL	2012
+roshan0804	3417	Seed	Wheat	NULL	4	May	NULL	KPK0804	NULL	2012
+nasvir0804	4480	Fertilizer	Urea	NULL	40	May	NULL	KPK0804	bags	2012
+skumar0804	8269	Fertilizer	DAP	NULL	20	May	NULL	KPK0804	bags	2012
+satyavan0804	2110	Fertilizer	Urea	NULL	15	February	NULL	KPK0804	bags	2012
+naresh0804	2553	Seed	Wheat	NULL	10	May	343	KPK0804	NULL	2012
+satbir0804	3603	Fertilizer	Urea	NULL	40	May	NULL	KPK0804	bags	2012
+ranvir0804	2630	Fertilizer	DAP	NULL	80	February	NULL	KPK0804	bags	2012
+sukhbir0804	2143	Seed	Wheat	NULL	20	June	NULL	KPK0804	NULL	2012
+naresh0804	3328	Fertilizer	DAP	NULL	50	May	NULL	KPK0804	bags	2012
+dharam0804	3421	Fertilizer	Urea	NULL	15	May	Null	KPK0804	bags	2012
+ranbir0804	2754	Fertilizer	DAP	NULL	16	June	Shri Ram	KPK0804	bags	2012
+roshan0804	3509	Fertilizer	DAP	NULL	16	May	NULL	KPK0804	bags	2012
+satbir0804	3332	Fertilizer	DAP	NULL	28	May	NULL	KPK0804	bags	2012
+ajad0804	2657	Fertilizer	DAP	NULL	18	June	Shri Ram	KPK0804	bags	2012
+mahendra0804	8255	Fertilizer	Urea	NULL	10	May	NULL	KPK0804	bags	2012
+naresh0804	2124	Seed	Paddy	NULL	10	May	Basmati	KPK0804	NULL	2012
+ranvir0804	2888	Seed	Wheat	NULL	40	February	343	KPK0804	NULL	2012
+ranbir0804	1971	Seed	Wheat	NULL	8	June	NULL	KPK0804	NULL	2012
+sukhbir0804	3168	seed	Paddy	NULL	20	June	NULL	KPK0804	NULL	2012
+sukhbir0804	2670	Fertilizer	DAP	NULL	18	June	Shri Ram	KPK0804	bags	2012
+mahendra0804	8803	Fertilizer	DAP	NULL	5	May	NULL	KPK0804	bags	2012
+suraj0804	2660	Fertilizer	Urea	NULL	50	June	NULL	KPK0804	bags	2012
+ranbir0804	2317	Fertilizer	Urea	NULL	32	June	Shri Ram	KPK0804	bags	2012
+raay0804	3329	Fertilizer	DAP	NULL	16	May	NULL	KPK0804	bags	2012
+dharmendra0804	4261	Fertilizer	Urea	NULL	12	May	Null	KPK0804	bags	2012
+skumar0804	2108	Seed	Wheat	NULL	10	May	343	KPK0804	NULL	2012
+nasvir0804	4140	Fertilizer	DAP	NULL	20	May	NULL	KPK0804	bags	2012
+ranvir0804	3060	Fertilizer	Urea	NULL	250	February	Oswal	KPK0804	bags	2012
+skumar0804	2107	Fertilizer	Urea	NULL	40	May	NULL	KPK0804	bags	2012
+ranbir0804	2142	seed	Paddy	NULL	8	June	NULL	KPK0804	NULL	2012
+satyavan0804	2536	Fertilizer	DAP	NULL	6	February	NULL	KPK0804	bags	2012
+ajad0804	1964	Seed	Wheat	NULL	10	June	NULL	KPK0804	NULL	2012
+skumar0804	2203	Seed	Paddy	NULL	10	May	Basmati	KPK0804	NULL	2012
+suresh0804	3416	Fertilizer	Urea	IFFCO	120	May	IFFCO	KPK0804	bags	2012
+ajad0804	2310	Fertilizer	Urea	NULL	36	June	Shri Ram	KPK0804	bags	2012
+roshan0804	3511	Seed	Paddy	NULL	4	May	NULL	KPK0804	NULL	2012
+dharam0804	4409	Fertilizer	DAP	NULL	5	May	Null	KPK0804	bags	2012
+raay0804	3783	Fertilizer	Urea	NULL	32	May	NULL	KPK0804	bags	2012
+suraj0804	2475	Fertilizer	DAP	NULL	20	June	NULL	KPK0804	bags	2012
+suresh0804	3971	Fertilizer	DAP	IFFCO	60	May	IFFCO	KPK0804	bags	2012
+Braj0966	244	Seed	Gwar	NULL	0.02	May	NULL	KPK0966	Qntls	2012
+mangal0966	11400	Fertilizer	DAP		20	June	Sardar	kpk0966	bags	2012
+kajod0966	143	Fertilizer	DAP	Shri Ram	25	May	Shri ram	KPK0966	bags	2012
+Braj0966	174	Fertilizer	DAP	Shri Ram	2	May	Shri Ram	KPK0966	bags	2012
+ramlal10966	190	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0966	bags	2012
+kanahiya0966	212	Fertilizer	SSP	NULL	4	May	NULL	KPK0966	bags	2012
+govind0966	57	Seed	Tomato	NULL	0.01	May	Rocky	KPK0966	Qntls	2012
+kailashchand0966	94	Fertilizer	Urea	IFFCO	5	May	IFFCO	KPK0966	bags	2012
+ganpat0966	11526	Fertilizer	DAP	IFFCO	8	June	IFFCO	kpk0966	bags	2012
+kcjaat0966	86	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0966	bags	2012
+prakash0966	293	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0966	bags	2012
+ramkunwar0966	12186	Fertilizer	Potash		10	June	NULL	kpk0966	bags	2012
+lalaram0966	11925	Fertilizer	Potash		1	June	NULL	kpk0966	bags	2012
+nandi0966	12096	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+pappu0966	192	Fertilizer	CAN	NULL	25	May	NULL	KPK0966	bags	2012
+jagdish0966	11955	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+mohan0966	247	Fertilizer	Urea	Shri Ram	15	May	Shri Ram	KPK0966	bags	2012
+kanahiya0966	292	Agrochemicals	Phorate	NULL	10	May	NULL	KPK0966	kgs	2012
+prakash0966	61	Fertilizer	Urea	Shri Ram	8	May	Shri Ram	KPK0966	bags	2012
+ramsingh0966	11293	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+Lala0966	38	Fertilizer	Urea	Shri Ram	15	May	Shri Ram	KPK0966	bags	2012
+babu10966	11847	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+kajod0966	104	Fertilizer	Urea	IFFCO	10	May	IFFCO	KPK0966	bags	2012
+mdsaini0966	147	Agrochemicals	Super Killer	NULL	10	May	NULL	KPK0966	ltrs	2012
+ganesh0966	193	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0966	bags	2012
+kailash0966	176	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0966	bags	2012
+kanahiya0966	89	Fertilizer	Potash	NULL	5	May	NULL	KPK0966	bags	2012
+kcjaat0966	259	Fertilizer	DAP	IFFCO	8	May	IFFCO	KPK0966	bags	2012
+mohan0966	112	Fertilizer	DAP	Shri Ram	8	May	Shri Ram	KPK0966	bags	2012
+kalyan0966	12065	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+maliram0966	285	Fertilizer	Potash	NULL	10	May	NULL	KPK0966	bags	2012
+lalaram0966	11924	Fertilizer	Urea	Shri Ram	2	June	Shri Ram	kpk0966	bags	2012
+suva0966	12134	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+bodu0966	12205	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+Lala0966	103	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0966	bags	2012
+puran0966	11781	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+ravi0966	11217	Fertilizer	Urea		2	June	NULL	kpk0966	bags	2012
+dhanna0966	11993	Fertilizer	DAP	IFFCO	15	June	IFFCO	kpk0966	bags	2012
+kailashchand0966	93	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0966	bags	2012
+badri0966	11324	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+kailash0966	92	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0966	bags	2012
+kailash30966	12244	Fertilizer	DAP	IFFCO	8	June	IFFCO	kpk0966	bags	2012
+rampal0966	11870	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+badriruda0966	11660	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+pappu0966	289	Fertilizer	Potash	NULL	15	May	NULL	KPK0966	bags	2012
+ramkishor0966	11753	Fertilizer	DAP		20	June	Sardar	kpk0966	bags	2012
+banshi20966	11792	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+govind0966	81	Fertilizer	DAP	Shri Ram	15	May	Shri Ram	KPK0966	bags	2012
+Braj0966	175	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0966	bags	2012
+gopal0966	11940	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+bhairu0966	11485	Fertilizer	Urea	Shri Ram	20	June	Shri Ram	kpk0966	bags	2012
+sagar0966	12075	Fertilizer	DAP	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+rakeshnathu0966	12119	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+shankar10966	12058	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+hanuman0966	11926	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+badriruda0966	11661	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+ramlal10966	25	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0966	bags	2012
+jagdish10966	12172	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+nandi0966	12097	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+chotu0966	11470	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+puran0966	11782	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+mukesh0966	11808	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+mangu0966	11886	Fertilizer	DAP	IFFCO	15	June	IFFCO	kpk0966	bags	2012
+chauth0966	11760	Fertilizer	Urea	Shri Ram	3	June	Shri Ram	kpk0966	bags	2012
+banshi0966	11699	Fertilizer	Potash		15	June	NULL	kpk0966	bags	2012
+badri40966	12003	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+ganpat0966	11527	Fertilizer	Urea	Shri Ram	7	June	Shri Ram	kpk0966	bags	2012
+chatar0966	12035	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+banshi10966	11744	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+ramavtar0966	234	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0966	bags	2012
+buddi0966	11707	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+mdsaini0966	109	Agrochemicals	Zonofix	NULL	1	May	NULL	KPK0966	ltrs	2012
+banshi0966	11697	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+kalyan0966	12066	Fertilizer	Urea	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+kailash10966	12069	Fertilizer	Urea	Shri Ram	2	June	Shri Ram	kpk0966	bags	2012
+badri30966	11874	Fertilizer	DAP	IFFCO	15	June	IFFCO	kpk0966	bags	2012
+ravi0966	11219	Fertilizer	Potash		5	June	NULL	kpk0966	bags	2012
+chotu0966	11471	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+banshi0966	11698	Fertilizer	Zinc		0.15	June	NULL	kpk0966	bags	2012
+nand0966	12046	Fertilizer	Urea	Shri Ram	7	June	Shri Ram	kpk0966	bags	2012
+dinesh0966	11731	Fertilizer	DAP		5	November	Sardar	kpk0966	bags	2012
+mohan20966	12014	Fertilizer	Urea	Shri Ram	6	June	Shri Ram	kpk0966	bags	2012
+nand0966	12047	Fertilizer	Potash		20	June	NULL	kpk0966	bags	2012
+mangal10966	12156	Fertilizer	Urea	Shri Ram	2	June	Shri Ram	kpk0966	bags	2012
+ramkunwar0966	12185	Fertilizer	Urea	Shri Ram	3	June	Shri Ram	kpk0966	bags	2012
+mohan10966	12009	Fertilizer	Urea	Shri Ram	20	June	Shri Ram	kpk0966	bags	2012
+mangal0966	11403	Agrochemicals	Insecticide		20	June	NULL	kpk0966	kgs	2012
+jagdish0966	11954	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+chatar0966	12036	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+shankar0966	11988	Fertilizer	Urea	Shri Ram	2	June	Shri Ram	kpk0966	bags	2012
+babu20966	12060	Fertilizer	DAP	IFFCO	8	June	IFFCO	kpk0966	bags	2012
+kailash20966	12165	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+jagannath0966	11773	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+ramkunwar0966	12184	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+rameshwar10966	12037	Fertilizer	DAP	IFFCO	7	June	IFFCO	kpk0966	bags	2012
+badri30966	11875	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+mali0966	11443	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+nand0966	12045	Fertilizer	DAP	IFFCO	4	June	IFFCO	kpk0966	bags	2012
+ramprasad0966	11907	Fertilizer	Potash		14	June	NULL	kpk0966	bags	2012
+babu20966	12061	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+bodu0966	12206	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+jagdish10966	12171	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+ramsingh0966	11292	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+bodu10966	12224	Fertilizer	Zinc		10	June	NULL	kpk0966	bags	2012
+dinesh0966	11732	Fertilizer	Urea	Shri Ram	5	November	Shri Ram	kpk0966	bags	2012
+sagar0966	12076	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+krishan0966	11844	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+nand0966	12048	Fertilizer	Zinc		0.05	June	NULL	kpk0966	bags	2012
+sahay0966	11678	Fertilizer	Zinc		0.1	June	NULL	kpk0966	bags	2012
+krishan0966	11843	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+devi0966	12090	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+mohan30966	12088	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+sahay0966	11677	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+ram0966	11254	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+mangal0966	11402	Fertilizer	SSP		20	June	NULL	kpk0966	bags	2012
+ram10966	11641	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+rameshwar0966	12015	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+rameshwar10966	12038	Fertilizer	Urea	Shri Ram	9	June	Shri Ram	kpk0966	bags	2012
+shankar0966	11989	Seed	Groundnut		0.6	June	Rasdar	kpk0966	qntls	2012
+ravi0966	11216	Fertilizer	DAP		2	June	NULL	kpk0966	bags	2012
+buddi0966	11706	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+sahay0966	11676	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+ramchander0966	11859	Fertilizer	DAP	IFFCO	3	June	IFFCO	kpk0966	bags	2012
+ramkishor0966	11754	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+bodu10966	12222	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+jagannath0966	11772	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+mangu0966	11887	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+kailash30966	12245	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+mohan20966	12013	Fertilizer	DAP	IFFCO	4	June	IFFCO	kpk0966	bags	2012
+gopal0966	11941	Fertilizer	Urea	Shri Ram	7	June	Shri Ram	kpk0966	bags	2012
+bhairu0966	11484	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+babu10966	11849	Fertilizer	Zinc		0.25	June	NULL	kpk0966	bags	2012
+ramchander0966	11860	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+chauth0966	11759	Fertilizer	DAP	IFFCO	5	June	IFFCO	kpk0966	bags	2012
+rakeshnathu0966	12120	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+bodu10966	12221	Fertilizer	DAP		8	June	Sardar	kpk0966	bags	2012
+ganesh0966	213	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0966	bags	2012
+ravi0966	11218	Fertilizer	Zinc		0.1	June	NULL	kpk0966	bags	2012
+bhagirath0966	12079	Fertilizer	Urea	Shri Ram	6	June	Shri Ram	kpk0966	bags	2012
+ram10966	11642	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+dinesh0966	11733	Seed	Groundnut		1	November	Hybrid	kpk0966	qntls	2012
+banshi20966	11793	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+maliram0966	108	Fertilizer	DAP	Shri Ram	15	May	Shri Ram	KPK0966	bags	2012
+mdsaini0966	335	Agrochemicals	Monocrotophos	NULL	10	May	NULL	KPK0966	ltrs	2012
+devi0966	12091	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+kanahiya0966	291	Fertilizer	Urea	Shri Ram	6	May	Shri Ram	KPK0966	bags	2012
+rameshwar0966	12016	Seed	Vegetable		15	December	Pusa	kpk0966	bags	2012
+mangilal10966	111	Seed	Cauliflower	NULL	0.03	May	NULL	KPK0966	Qntls	2012
+kailash20966	12164	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+rampal0966	11869	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+ramprasad0966	11905	Fertilizer	DAP	IFFCO	3	June	IFFCO	kpk0966	bags	2012
+hanuman0966	11927	Fertilizer	Urea	Shri Ram	2	June	Shri Ram	kpk0966	bags	2012
+ram0966	11255	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+lalaram0966	11923	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+shiv0966	337	Fertilizer	DAP	IFFCO	15	May	IFFCO	KPK0966	bags	2012
+badri40966	12004	Fertilizer	Urea	Shri Ram	5	June	Shri Ram	kpk0966	bags	2012
+kanahiya0966	246	Seed	Gwar	Shri Ram	0.04	May	Shri Ram	KPK0966	Qntls	2012
+babu10966	11850	Fertilizer	Potash		5	June	NULL	kpk0966	bags	2012
+mukesh0966	11810	Seed	Gwar	Shri Ram	0.04	June	Shri Ram	kpk0966	Qntls	2012
+suva0966	12133	Fertilizer	DAP	IFFCO	6	June	IFFCO	kpk0966	bags	2012
+bodu10966	12223	Fertilizer	Potash		15	June	NULL	kpk0966	bags	2012
+babu10966	11848	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+mohan10966	12008	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+kailash10966	12068	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+pappu0966	191	Fertilizer	Urea	Shri Ram	25	May	Shri Ram	KPK0966	bags	2012
+govind0966	20	Fertilizer	Potash	Shri Ram	10	May	Shri RAm	KPK0966	bags	2012
+badri0966	11323	Fertilizer	DAP	IFFCO	4	June	IFFCO	kpk0966	bags	2012
+mdsaini0966	146	Agrochemicals	Chloropyriphos	NULL	10	May	NULL	KPK0966	ltrs	2012
+mdsaini0966	44	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0966	bags	2012
+rajiv0966	257	Fertilizer	Urea	Shri Ram	6	May	Shri Ram	KPK0966	bags	2012
+kanahiya0966	290	Fertilizer	DAP	Shri Ram	4	May	Shri Ram	KPK0966	bags	2012
+mangilal10966	110	Fertilizer	CAN	NULL	2	May	NULL	KPK0966	bags	2012
+shankar10966	12059	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+mukesh0966	11809	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+mangilal10966	245	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0966	bags	2012
+mangilal10966	45	Fertilizer	Potash	NULL	2	May	NULL	KPK0966	bags	2012
+dhanna0966	11994	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+banshi10966	11745	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+shiv0966	312	Fertilizer	Urea	Shri Ram	20	May	Shri Ram	KPK0966	bags	2012
+mali0966	11442	Fertilizer	Urea	Shri Ram	10	June	Shri Ram	kpk0966	bags	2012
+govind0966	256	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0966	bags	2012
+mdsaini0966	87	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0966	bags	2012
+Braj0966	288	Seed	Groundnut	NULL	0.5	May	NULL	KPK0966	qntls	2012
+shiv0966	91	Fertilizer	Zinc	NULL	0.5	May	NULL	KPK0966	bags	2012
+maliram0966	242	Seed	Chilly	NULL	4	May	Phagat 4	KPK0966	Qntls	2012
+ramavtar0966	330	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0966	bags	2012
+maliram0966	286	Seed	Tomato	NULL	0.01	May	Rocky	KPK0966	Qntls	2012
+suresh0966	11998	Fertilizer	DAP	IFFCO	10	June	IFFCO	kpk0966	bags	2012
+prakash0966	90	Fertilizer	Potash	NULL	10	May	NULL	KPK0966	bags	2012
+pappu0966	157	Fertilizer	DAP	Shri Ram	20	May	Shri Ram	KPK0966	bags	2012
+suresh0966	11999	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0966	bags	2012
+mohan30966	12087	Fertilizer	DAP	IFFCO	3	June	IFFCO	kpk0966	bags	2012
+ramprasad0966	11906	Fertilizer	Urea	Shri Ram	8	June	Shri Ram	kpk0966	bags	2012
+maliram0966	241	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0966	bags	2012
+mangilal10966	88	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0966	bags	2012
+rlsharma0966	60	Fertilizer	Organic Fertilizers	NULL	80	May	NULL	KPK0966	bags	2012
+govind0966	82	Seed	Chilly	NULL	4	May	Phagat 4	KPK0966	Qntls	2012
+radhey0966	336	Seed	Amla	NULL	10	May	NULL	KPK0966	bags	2012
+shankar0966	11987	Fertilizer	DAP		2	June	Sardar	kpk0966	bags	2012
+bhagirath0966	12078	Fertilizer	DAP	IFFCO	7	June	IFFCO	kpk0966	bags	2012
+mangal0966	11401	Fertilizer	Urea	Shri Ram	25	June	Shri Ram	kpk0966	bags	2012
+rajiv0966	308	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0966	bags	2012
+mangal10966	12155	Fertilizer	DAP	IFFCO	2	June	IFFCO	kpk0966	bags	2012
+girdhari0970	500	Fertilizer	Urea	NULL	5	May	Shriram	KPK0970	bags	2012
+sdyadav	64	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+babulal0970	9907	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0970	bags	2012
+prabhu0970	15241	Fertilizer	DAP	IFFCO	6	June	IFFCO	kpk0970	bags	2012
+kmal0970	481	Seed	Groundnut	NULL	0.3	May	Rasdar	KPK0970	qntls	2012
+jagmal0970	327	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+kishan0970	9920	Fertilizer	Urea	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+blsaini	194	Fertilizer	Urea	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+raghunath0970	606	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+glyadav0970	398	Fertilizer	Urea	NULL	4	May	NULL	KPK0970	bags	2012
+gyadav0970	480	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+durgo0970	411	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+mahesh0970	15248	Fertilizer	DAP	IFFCO	6	May	IFFCO	kpk0970	bags	2012
+suwalal0970	9900	Seed	Pearl Millet		0.02	May	Mahyco	KPK0970	qntls	2012
+sonaram0970	506	Fertilizer	Urea	NULL	6	May	Shri Ram	KPK0970	bags	2012
+kyadav0970	9938	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+badri0970	392	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+kishan0970	9921	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+gcyadav0970	149	Seed	Groundnut	NULL	2	March	Rasdar	KPK0970	qntls	2012
+mohanlal0970	9880	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+kanaram0970	616	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+klyadav0970	427	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+kajod0970	9913	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+durgo0970	376	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+sitaram0970	595	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+babu0970	230	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+kmal0970	410	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+kana10970	15258	Fertilizer	DAP	IFFCO	5	May	IFFCO	kpk0970	bags	2012
+lacha0970	491	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+kanaram0970	590	Fertilizer	Urea	NULL	5	May	Shri Ram	KPK0970	bags	2012
+shyam0970	358	Fertilizer	Urea	NULL	10	May	Shri Ram	KPK0970	bags	2012
+jagmal0970	326	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+mana0970	12	Seed	Pearl Millet	Shri Ram	0.04	May	Shri Ram	KPK0970	qntls	2012
+bryadav	158	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+girdhari0970	534	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+kcyadav0970	435	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+chhigan0970	136	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+blsaini	9	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+blsaini	260	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+rudaram0970	15	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0970	bags	2012
+rpyadav0970	452	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+narayanji0970	9911	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+madanlal0970	139	Seed	Pearl Millet	NULL	0.05	May	Maico 2210	KPK0970	qntls	2012
+narayanji0970	9910	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+mlyadav	28	Seed	Pearl Millet	NULL	25	May	Pioneer	KPK0970	qntls	2012
+Choturam0970	369	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+hanuman0970	415	Fertilizer	Urea	NULL	10	May	Sriam	KPK0970	bags	2012
+nryadav	159	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+ramkishor0970	9919	Seed	Groundnut		1	May	Rasdar	KPK0970	qntls	2012
+nacchuram0970	527	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+ganga0970	9869	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+jpyadav0970	9931	Fertilizer	Potash		2	May	Tata	KPK0970	bags	2012
+jagmal0970	231	Fertilizer	Urea	Shri Ram	30	May	Shri Ram	KPK0970	bags	2012
+kyadav0970	9940	Seed	Groundnut		3	May	Rasdar	KPK0970	qntls	2012
+ramchandra0970	9906	Seed	Groundnut		5	May	Rasdar	KPK0970	qntls	2012
+madan0970	9860	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+pdyadav0970	432	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+chittarmal0970	444	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+lryadav0970	492	Fertilizer	Urea	Shri Ram	4	May	Shri Ram	KPK0970	bags	2012
+rlgurjar0970	9943	Seed	Groundnut		20	May	Rasdar	KPK0970	qntls	2012
+kalu0970	15245	Fertilizer	DAP	IFFCO	7	May	IFFCO	kpk0970	bags	2012
+sunda0970	166	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+raghu0970	556	Seed	Groundnut	NULL	2	March	Rasdar	KPK0970	qntls	2012
+ganpat0970	324	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0970	bags	2012
+chittarmal0970	470	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+bhagwan0970	9963	Fertilizer	Urea	Shri Ram	15	May	Shri Ram	KPK0970	bags	2012
+prabhu0970	15242	Seed	Groundnut		10	June	Rasdar	kpk0970	qntls	2012
+pdyadav10970	164	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+raghu0970	485	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+pyadav0970	493	Seed	Pearl Millet	NULL	0.05	May	Shankar	KPK0970	qntls	2012
+ganpat0970	225	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+godharam0970	227	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+prabhati0970	549	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+psyadav0970	436	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+pra0970	33	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+ryadav0970	477	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+klyadav0970	546	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+jagdish0970	9925	Seed	Groundnut		2	May	Rasdar	KPK0970	qntls	2012
+pyadav0970	551	Fertilizer	Gypsum	NULL	2	May	NULL	KPK0970	bags	2012
+godharam0970	170	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+deva0970	199	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+Mohan0970	273	Seed	Groundnut	NULL	2	May	Rasdar	KPK0970	qntls	2012
+narayan0970	9888	Seed	Groundnut		4	May	Rasdar	KPK0970	qntls	2012
+kajod10970	15255	Seed	Pearl Millet		0.05	May	Mico	kpk0970	Qntls	2012
+prahlad0970	391	Seed	Groundnut	NULL	0.05	May	Rasdar	KPK0970	qntls	2012
+pyadav0970	363	Seed	Groundnut	NULL	2	May	Rasdar	KPK0970	qntls	2012
+kishan0970	9922	Seed	Groundnut		10	May	Rasdar	KPK0970	qntls	2012
+rlgurjar0970	9944	Seed	Pearl Millet		20	May	Pioneer	KPK0970	qntls	2012
+bhagi0970	9959	Fertilizer	Urea	Shri Ram	15	May	Shri Ram	KPK0970	bags	2012
+chotu0970	373	Fertilizer	Urea	NULL	4	May	Shriram	KPK0970	bags	2012
+ramchandra0970	9905	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+ganga0970	9870	Seed	Groundnut		2	May	Rasdar	KPK0970	qntls	2012
+sdyadav	161	Seed	Groundnut	NULL	5	May	Rasdar	KPK0970	qntls	2012
+jagdish0970	9923	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+pdyadav0970	547	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+ypsyadav0970	479	Seed	Groundnut	NULL	3	March	Rasdar	KPK0970	qntls	2012
+mana0970	275	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+juntha0970	9933	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+rich0970	15252	Seed	Groundnut		5	May	Rasdar	kpk0970	qntls	2012
+rudaram0970	102	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+Mohan0970	272	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+hanuman0970	428	Seed	Groundnut	NULL	2	May	Rasdar	KPK0970	qntls	2012
+bhagi0970	9960	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+psyadav0970	514	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+pappu0970	9936	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+lacha0970	451	Fertilizer	Urea	NULL	6	May	Shriram	KPK0970	bags	2012
+rlgurjar0970	9941	Fertilizer	Urea	Shri Ram	18	May	Shri Ram	KPK0970	bags	2012
+kajod10970	15254	Fertilizer	DAP	IFFCO	2	May	IFFCO	kpk0970	bags	2012
+prabhu0970	15240	Fertilizer	Urea	Shri Ram	15	June	Shri Ram	kpk0970	bags	2012
+mana0970	132	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+suvalal0970	605	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+boduram0970	9954	Seed	Pearl Millet		0.05	May	Mahyco	KPK0970	qntls	2012
+psyadav0970	401	Seed	Pearl Millet	NULL	0.05	May	Pioneer	KPK0970	qntls	2012
+bdyadav0970	296	Fertilizer	Urea	Shri Ram	4	May	Shri Ram	KPK0970	bags	2012
+nacchuram0970	413	Fertilizer	Urea	NULL	6	May	Shri Ram	KPK0970	bags	2012
+babu0970	171	Seed	Groundnut	NULL	6	May	Rasdar	KPK0970	qntls	2012
+kcyadav0970	454	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+nryadav	215	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+bhagwan0970	9966	Seed	Pearl Millet		0.1	May	Mahyco	KPK0970	qntls	2012
+daula0970	221	Seed	Groundnut	NULL	2	May	Rasdar	KPK0970	qntls	2012
+deva0970	298	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+suvalal0970	618	Fertilizer	Urea	NULL	4	May	Shri Ram	KPK0970	bags	2012
+badri0970	355	Seed	Groundnut	NULL	2	May	Rasdar	KPK0970	qntls	2012
+lacha0970	395	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+ram0970	9927	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+raghunath0970	582	Seed	Pearl Millet	NULL	0.1	May	Pioneer	KPK0970	qntls	2012
+sdyadav	217	Fertilizer	Urea	Shri Ram	8	May	Shri Ram	KPK0970	bags	2012
+bhura0970	431	Fertilizer	Urea	NULL	10	May	Shri Ram	KPK0970	bags	2012
+kalu0970	15246	Seed	Groundnut		2	May	Rasdar	kpk0970	qntls	2012
+bhagwan0970	9964	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+narayanji0970	9912	Seed	Groundnut		10	May	Rasdar	KPK0970	qntls	2012
+bhagirath0970	9946	Fertilizer	DAP	IFFCO	1	May	IFFCO	KPK0970	bags	2012
+hanuman0970	516	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+ganga0970	9868	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+bhomaram0970	537	Fertilizer	Urea	NULL	10	May	Shri Ram	KPK0970	bags	2012
+sunda0970	249	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+bhagwan0970	9965	Seed	Groundnut		5	May	Rasdar	KPK0970	qntls	2012
+babulal0970	9908	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+maliram0970	9967	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+rich0970	15250	Fertilizer	Urea	Shri Ram	15	May	Shri Ram	kpk0970	bags	2012
+arjun0970	9955	Fertilizer	Urea	Shri Ram	4	May	Shri Ram	KPK0970	bags	2012
+rpyadav0970	409	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+suwalal0970	9899	Seed	Groundnut		5	May	Rasdar	KPK0970	qntls	2012
+bhagirath0970	9948	Seed	Pearl Millet		0.05	May	Mahyco	KPK0970	qntls	2012
+mohanlal0970	9881	Seed	Pearl Millet		0.05	May	Pioneer	KPK0970	qntls	2012
+jpyadav0970	9929	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	KPK0970	bags	2012
+gcyadav0970	117	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+ypsyadav0970	525	Fertilizer	Urea	Shri Ram	4	May	Shri Ram	KPK0970	bags	2012
+ramkishor0970	9917	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+maliram0970	9968	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+bdyadav0970	268	Seed	Pearl Millet	NULL	0.02	May	Maico 2210	KPK0970	qntls	2012
+babu0970	282	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+pra0970	277	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+rlgurjar0970	9942	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+kana10970	15257	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	kpk0970	bags	2012
+prabhati0970	513	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+pappu0970	9935	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+madan0970	9861	Seed	Groundnut		1	May	Rasdar	KPK0970	qntls	2012
+rich0970	15251	Fertilizer	DAP	IFFCO	10	May	IFFCO	kpk0970	bags	2012
+prahlad0970	354	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+ganga0970	9871	Seed	Pearl Millet		0.02	May	Mahyco	KPK0970	qntls	2012
+pra0970	120	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+mohanlal0970	9879	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+chhigan0970	203	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+jpyadav0970	9930	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+ram0970	9926	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+banwari0970	73	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+bsyadav0970	425	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+juntha0970	9934	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+babulal0970	9909	Seed	Groundnut		5	May	Rasdar	KPK0970	qntls	2012
+mlyadav	315	Seed	Groundnut	NULL	5	May	Rasdar	KPK0970	qntls	2012
+bryadav	214	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+Choturam0970	388	Seed	Pearl Millet	NULL	0.08	May	Pioneer	KPK0970	qntls	2012
+sitaram0970	604	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+narayan0970	9886	Fertilizer	Urea	Shri Ram	8	May	Shri Ram	KPK0970	bags	2012
+glyadav0970	510	Fertilizer	DAP	NULL	2	May	NULL	KPK0970	bags	2012
+Choturam0970	420	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+mohanlal0970	9882	Seed	Groundnut		2	May	Rasdar	KPK0970	qntls	2012
+lryadav0970	397	Seed	Groundnut	NULL	6	May	Rasdar	KPK0970	qntls	2012
+bhura0970	374	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+ramkishor0970	9918	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+mlyadav	264	Fertilizer	DAP	IFFCO	7	May	IFFCO	KPK0970	bags	2012
+sunda0970	250	Seed	Groundnut	NULL	5	May	Ganesh	KPK0970	qntls	2012
+psyadav0970	377	Fertilizer	Urea	NULL	10	May	Shri Ram	KPK0970	bags	2012
+banwari0970	35	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+bhagi0970	9962	Seed	Pearl Millet		0.1	May	Mahyco	KPK0970	qntls	2012
+boduram0970	9953	Fertilizer	DAP	IFFCO	1	May	IFFCO	KPK0970	bags	2012
+pappu0970	9937	Seed	Groundnut		4	May	Rasdar	KPK0970	qntls	2012
+kyadav0970	9939	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+murli0970	545	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+kajod0970	9915	Seed	Groundnut		10	May	Rasdar	KPK0970	qntls	2012
+mahesh0970	15249	Seed	Groundnut		10	May	Rasdar	kpk0970	qntls	2012
+jpyadav0970	9932	Seed	Groundnut		5	May	Rasdar	KPK0970	qntls	2012
+bhagirath0970	9945	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+pdyadav0970	442	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+gcyadav0970	118	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+madan0970	9859	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+murli0970	450	Fertilizer	Urea	NULL	6	May	Shriram	KPK0970	bags	2012
+boduram0970	9952	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+skyadav0970	478	Fertilizer	Urea	Shri Ram	6	May	Shri Ram	KPK0970	bags	2012
+arjun0970	9956	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+mlyadav	197	Fertilizer	Urea	Shri Ram	7	May	Shri Ram	KPK0970	bags	2012
+gyadav0970	433	Fertilizer	Urea	Shri Ram	2	May	Shri ram	KPK0970	bags	2012
+murli0970	490	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+jagdish0970	9924	Fertilizer	DAP	IFFCO	1	May	IFFCO	KPK0970	bags	2012
+kmal0970	548	Seed	Pearl Millet	NULL	0.08	May	BK-560	KPK0970	qntls	2012
+madanlal0970	302	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+govind0970	9951	Seed	Groundnut		2	May	Rasdar	KPK0970	qntls	2012
+raghu0970	366	Fertilizer	Urea	NULL	3	May	Shriram	KPK0970	bags	2012
+gyadav0970	375	Seed	Groundnut	NULL	2	May	rasdar	KPK0970	qntls	2012
+kcyadav0970	434	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+ryadav0970	7	Fertilizer	Urea	Shri Ram	4	May	Shri ram	KPK0970	bags	2012
+ypsyadav0970	509	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+girdharilal0970	169	Fertilizer	DAP	IFFCO	10	May	IFFCO	KPK0970	bags	2012
+arjun0970	9957	Seed	Groundnut		5	May	Rasdar	KPK0970	qntls	2012
+kajod0970	9916	Seed	Pearl Millet		0.07	May	Mahyco	KPK0970	qntls	2012
+pyadav0970	482	Fertilizer	Urea	NULL	2	May	Shriram	KPK0970	bags	2012
+suwalal0970	9898	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+rpyadav0970	467	Fertilizer	Urea	Shri Ram	6	May	Shri Ram	KPK0970	bags	2012
+godharam0970	137	Fertilizer	Urea	Shri Ram	3	May	Shri Ram	KPK0970	bags	2012
+Mohan0970	271	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+raghunath0970	570	Fertilizer	Urea	NULL	5	May	Shri Ram	KPK0970	bags	2012
+bhagi0970	9961	Seed	Groundnut		8	May	Rasdar	KPK0970	qntls	2012
+pdyadav10970	198	Fertilizer	DAP	IFFCO	4	May	IFFCO	KPK0970	bags	2012
+girdharilal0970	153	Fertilizer	Urea	Shri Ram	6	May	Shri Ram	KPK0970	bags	2012
+rudaram0970	140	Seed	Groundnut	NULL	5	May	Rasdar	KPK0970	qntls	2012
+govind0970	9950	Fertilizer	DAP	IFFCO	1	May	IFFCO	KPK0970	bags	2012
+jnyadav0970	115	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+bhagirath0970	9947	Seed	Groundnut		1	May	Rasdar	KPK0970	qntls	2012
+kmal0970	400	Fertilizer	Urea	NULL	8	May	Shriram	KPK0970	bags	2012
+klyadav0970	453	Fertilizer	Urea	Shri Ram	7	May	Shri ram	KPK0970	bags	2012
+jnyadav0970	114	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+jnyadav0970	10	Seed	Groundnut	NULL	1	May	Rasdar	KPK0970	qntls	2012
+ganpat0970	101	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+chotu0970	394	Seed	Groundnut	NULL	1	May	Rasdar	KPK0970	qntls	2012
+suwalal0970	9897	Fertilizer	Urea	Shri Ram	1	May	Shri Ram	KPK0970	bags	2012
+gyadav0970	399	Seed	Pearl Millet	NULL	0.05	May	Maico	KPK0970	qntls	2012
+girdhari0970	533	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+bdyadav0970	266	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+skyadav0970	356	Seed	Groundnut	NULL	0.5	May	Rasdar	KPK0970	qntls	2012
+bryadav	294	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+skyadav0970	524	Fertilizer	DAP	IFFCO	6	May	IFFCO	KPK0970	bags	2012
+bhomaram0970	381	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+sitaram0970	617	Fertilizer	Urea	NULL	4	May	Shri Ram	KPK0970	bags	2012
+glyadav0970	357	Seed	Groundnut	NULL	4	May	NULL	KPK0970	qntls	2012
+arjun0970	9958	Seed	Pearl Millet		0.1	May	Mahyco	KPK0970	qntls	2012
+prabhu0970	15243	Seed	Pearl Millet		0.08	June	Mico	kpk0970	Qntls	2012
+daula0970	323	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+bhura0970	396	Seed	Pearl Millet	NULL	0.08	May	Pioneer	KPK0970	qntls	2012
+ram0970	9928	Seed	Groundnut		3	May	Rasdar	KPK0970	qntls	2012
+bhomaram0970	380	Fertilizer	DAP	NULL	5	May	DAP	KPK0970	bags	2012
+shyam0970	437	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+bhura0970	383	Fertilizer	DAP	IFFCO	6	May	IFFCO	KPK0970	bags	2012
+madanlal0970	229	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+girdharilal0970	280	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+kanaram0970	567	Seed	Groundnut	NULL	8	May	Rasdar	KPK0970	qntls	2012
+sunda0970	180	Seed	Pearl Millet	NULL	0.1	May	Pioneer	KPK0970	qntls	2012
+sonaram0970	360	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+madanlal0970	75	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+pdyadav10970	179	Fertilizer	Urea	Shri Ram	5	May	Shri Ram	KPK0970	bags	2012
+shyam0970	497	Seed	Groundnut	NULL	1	May	Rasdar	KPK0970	qntls	2012
+prahlad0970	449	Fertilizer	Urea	NULL	5	May	Shri Ram	KPK0970	bags	2012
+bdyadav0970	267	Seed	Groundnut	NULL	2	May	Rasdar	KPK0970	qntls	2012
+prabhati0970	443	Fertilizer	Urea	NULL	10	May	Shri Ram	KPK0970	bags	2012
+gyadav0970	511	Fertilizer	Gypsum	NULL	2	May	NULL	KPK0970	bags	2012
+chhigan0970	37	Seed	Groundnut	NULL	4	May	Rasdar	KPK0970	qntls	2012
+pyadav0970	550	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+govind0970	9949	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	KPK0970	bags	2012
+bsyadav0970	426	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+bsyadav0970	362	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+chittarmal0970	498	Fertilizer	Urea	NULL	10	May	Shri Ram	KPK0970	bags	2012
+suvalal0970	569	Fertilizer	DAP	IFFCO	2	May	IFFCO	KPK0970	bags	2012
+banwari0970	183	Seed	Groundnut	NULL	5	May	Rasdar	KPK0970	qntls	2012
+ryadav0970	523	Seed	Groundnut	NULL	5	May	Rasdar	KPK0970	qntls	2012
+ramchandra0970	9904	Fertilizer	Urea	Shri Ram	8	May	Shri Ram	KPK0970	bags	2012
+skyadav0970	372	Seed	Potato	NULL	0.5	May	Shankar	KPK0970	Qntls	2012
+nryadav	62	Seed	Groundnut	NULL	5	May	Rasdar	KPK0970	qntls	2012
+durgo0970	512	Fertilizer	Urea	NULL	6	May	Shri Ram	KPK0970	bags	2012
+kana10970	15259	Seed	Groundnut		8	May	Rasdar	kpk0970	qntls	2012
+badri0970	544	Fertilizer	Urea	NULL	2	May	Shri Ram	KPK0970	bags	2012
+nacchuram0970	455	Seed	Groundnut	NULL	10	May	Rasdar	KPK0970	qntls	2012
+maliram0970	9969	Seed	Groundnut		8	May	Ganesh	KPK0970	qntls	2012
+daula0970	182	Fertilizer	DAP	IFFCO	1	May	IFFCO	KPK0970	bags	2012
+jagmal0970	141	Seed	Groundnut	NULL	0.25	May	Pioneer	KPK0970	qntls	2012
+chotu0970	393	Fertilizer	DAP	IFFCO	3	May	IFFCO	KPK0970	bags	2012
+deva0970	50	Seed	Groundnut	NULL	3	May	Rasdar	KPK0970	qntls	2012
+mahesh0970	15247	Fertilizer	Urea	Shri Ram	10	May	Shri Ram	kpk0970	bags	2012
+kajod0970	9914	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+kajod10970	15253	Fertilizer	Urea	Shri Ram	2	May	Shri Ram	kpk0970	bags	2012
+kalu0970	15244	Fertilizer	Urea	Shri Ram	7	May	Shri Ram	kpk0970	bags	2012
+raghunath0970	589	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+narayan0970	9887	Fertilizer	DAP	IFFCO	5	May	IFFCO	KPK0970	bags	2012
+Choturam0970	557	Fertilizer	Urea	NULL	4	May	Shri Ram	KPK0970	bags	2012
+lryadav0970	384	Fertilizer	DAP	IFFCO	8	May	IFFCO	KPK0970	bags	2012
+kajod10970	15256	Seed	Groundnut		3	May	Rasdar	kpk0970	qntls	2012
+bhavaryadav1034	16353	Fertilizer	Potash		30	March	NULL	KPK1034	kgs	2012
+ganeshram1034	16358	Agrochemicals	Phorate		35	March	NULL	KPK1034	kgs	2012
+raghuvir11034	16388	Fertilizer	DAP		1.6	March	NULL	KPK1034	Bags	2012
+sadhuram11034	16402	Fertilizer	Urea		100	May	NULL	KPK1034	bags	2012
+ramyadav1034	16380	Agrochemicals	Phorate		15	March	NULL	KPK1034	kgs	2012
+ramyadav1034	16381	Agrochemicals	powder		21	Select	NULL	KPK1034	kgs	2012
+raghuvirsharan1034	16393	Fertilizer	DAP		1.6	March	NULL	KPK1034	Bags	2012
+bhavaryadav1034	16352	Fertilizer	DAP		80	March	NULL	KPK1034	Bags	2012
+ghesaram1034	16370	Agrochemicals	Phorate		15	March	NULL	KPK1034	kgs	2012
+raghuvir1034	16383	Fertilizer	DAP		1.6	March	NULL	KPK1034	Bags	2012
+ganeshram1034	16357	Fertilizer	Potash		20	March	NULL	KPK1034	kgs	2012
+laduram1034	16360	Fertilizer	DAP		100	March	NULL	KPK1034	Bags	2012
+laduram1034	16361	Fertilizer	Potash		50	March	NULL	KPK1034	kgs	2012
+harinarayan1034	16376	Agrochemicals	powder		15	Select	NULL	KPK1034	kgs	2012
+sadhuram11034	16399	Fertilizer	Potash		30	March	NULL	KPK1034	kgs	2012
+lelaram1034	16417	Agrochemicals	Phorate		10	Select	NULL	KPK1034	kgs	2012
+bhavaryadav1034	16355	Agrochemicals	powder		12	Select	NULL	KPK1034	kgs	2012
+laduram1034	16363	Agrochemicals	powder		70	Select	NULL	KPK1034	kgs	2012
+ghesaram1034	16371	Agrochemicals	powder		10	Select	NULL	KPK1034	kgs	2012
+raghuvir11034	16390	Agrochemicals	Phorate		8	March	NULL	KPK1034	kgs	2012
+raghuvirsharan1034	16397	Fertilizer	Urea		65	May	NULL	KPK1034	bags	2012
+lelaram1034	16415	Fertilizer	Urea		2	March	NULL	KPK1034	Bags	2012
+raghuvirsharan1034	16396	Agrochemicals	powder		10	Select	NULL	KPK1034	kgs	2012
+ramkumar1034	16405	Agrochemicals	Phorate		2	March	NULL	KPK1034	bags	2012
+dhanshyam1034	16367	Agrochemicals	powder		10	Select	NULL	KPK1034	kgs	2012
+harinarayan1034	16377	Fertilizer	Urea		100	May	NULL	KPK1034	bags	2012
+ramyadav1034	16382	Fertilizer	Urea		150	May	NULL	KPK1034	bags	2012
+sadhuram11034	16398	Fertilizer	DAP		1.6	March	NULL	KPK1034	Bags	2012
+laduram1034	16362	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+raghuvir11034	16391	Agrochemicals	powder		10	Select	NULL	KPK1034	kgs	2012
+raghuvirsharan1034	16394	Fertilizer	Potash		40	March	NULL	KPK1034	kgs	2012
+lelaram1034	16416	Fertilizer	Potash		50	March	NULL	KPK1034	kgs	2012
+sadhu1034	29065	Fertilizer	DAP		1.6	May	shriram	kpk1034	Bags	2012
+hng1034	29129	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+sadhury1034	29132	Fertilizer	Urea		16	May	NULL	kpk1034	Bags	2012
+blg1034	29152	Fertilizer	DAP		1.6	May	shriram	kpk1034	Bags	2012
+ghanshyam1034	29164	Agrochemicals	Phorate		8	Select	NULL	kpk1034	kgs	2012
+dhola1034	29173	Agrochemicals	potash		30	Select	NULL	kpk1034	kgs	2012
+sadhu1034	29066	Fertilizer	Urea		2	May	shriram	kpk1034	Bags	2012
+ramgs1034	29090	Fertilizer	Urea		1.6	May	shriram	kpk1034	Bags	2012
+raghu	29108	Agrochemicals	Dust		15	Select	NULL	kpk1034	kgs	2012
+hng1034	29128	Fertilizer	potash		50	Select	NULL	kpk1034	kgs	2012
+raghu	29106	Fertilizer	Urea		1.6	May	NULL	kpk1034	Bags	2012
+ramgs1034	29094	Agrochemicals	Dust		15	Select	NULL	kpk1034	kgs	2012
+dram1034	29117	Fertilizer	Urea		3	May	shriram	kpk1034	Bags	2012
+ghasi1034	29141	Agrochemicals	Phorate		15	Select	NULL	kpk1034	kgs	2012
+ballu1034	29144	Fertilizer	Urea		2	May	NULL	kpk1034	Bags	2012
+blg1034	29153	Fertilizer	Urea		2	May	NULL	kpk1034	Bags	2012
+jnyadav1034	29121	Fertilizer	DAP		2	May	shriram	kpk1034	Bags	2012
+dhola1034	29171	Fertilizer	DAP		40	March	shriram	kpk1034	Bags	2012
+jnyadav1034	29123	Agrochemicals	potash		40	Select	NULL	kpk1034	kgs	2012
+ghasi1034	29138	Fertilizer	DAP		1.4	May	shriram	kpk1034	Bags	2012
+ghasi1034	29142	Agrochemicals	Dust		14	Select	NULL	kpk1034	kgs	2012
+blg1034	29154	Agrochemicals	potash		40	Select	NULL	kpk1034	kgs	2012
+ghanshyam1034	29163	Fertilizer	potash		50	Select	NULL	kpk1034	kgs	2012
+raghu	29110	Agrochemicals	Culture		5	Select	NULL	kpk1034	kgs	2012
+jnyadav1034	29122	Fertilizer	Urea		1.6	May	NULL	kpk1034	Bags	2012
+ghasi1034	29139	Fertilizer	Urea		30	May	shriram	kpk1034	Bags	2012
+ballu1034	29145	Agrochemicals	potash		40	Select	NULL	kpk1034	kgs	2012
+sadhu1034	29067	Fertilizer	Potash		30	Select	NULL	kpk1034	kgs	2012
+ganpat1034	29088	Fertilizer	Dust		10	Select	NULL	kpk1034	kgs	2012
+ramgs1034	29092	Agrochemicals	potash		40	Select	NULL	kpk1034	kgs	2012
+jprasad1034	29112	Fertilizer	Urea		2	May	NULL	kpk1034	Bags	2012
+sadhury1034	29131	Fertilizer	DAP		32	March	shriram	kpk1034	Bags	2012
+raghu	29109	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+hng1034	29127	Fertilizer	Urea		2	May	shriram	kpk1034	Bags	2012
+rich1034	29135	Agrochemicals	potash		40	Select	NULL	kpk1034	kgs	2012
+hng1034	29130	Agrochemicals	Dust		15	Select	NULL	kpk1034	kgs	2012
+blg1034	29156	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+ghanshyam1034	29162	Fertilizer	Urea		3	May	shriram	kpk1034	Bags	2012
+laxman1034	29170	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+dhola1034	29172	Fertilizer	Urea		1.4	May	NULL	kpk1034	Bags	2012
+dhola1034	29174	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+ganpat1034	29087	Fertilizer	Urea	IFFCO	1.3	May	IFFCO	kpk1034	Bags	2012
+ganpat1034	29089	Agrochemicals	Phorate		8	Select	NULL	kpk1034	kgs	2012
+ramgs1034	29093	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+dram1034	29116	Fertilizer	DAP		2	May	shriram	kpk1034	Bags	2012
+dram1034	29118	Fertilizer	potash		50	Select	NULL	kpk1034	kgs	2012
+ghasi1034	29140	Fertilizer	potash		40	Select	NULL	kpk1034	kgs	2012
+ballu1034	29143	Fertilizer	DAP		1.6	May	shriram	kpk1034	Bags	2012
+blg1034	29155	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+laxman1034	29169	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+dhola1034	29175	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+jprasad1034	29114	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+jprasad1034	29115	Agrochemicals	Dust		15	Select	NULL	kpk1034	kgs	2012
+jnyadav1034	29125	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+rich1034	29134	Fertilizer	Urea		2	May	NULL	kpk1034	Bags	2012
+ballu1034	29146	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+raghu	29107	Fertilizer	SSP		60	Select	shriram	kpk1034	kgs	2012
+jnyadav1034	29124	Agrochemicals	Phorate		15	Select	NULL	kpk1034	kgs	2012
+ballu1034	29147	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+ghanshyam1034	29161	Fertilizer	DAP		1.6	May	shriram	kpk1034	Bags	2012
+ghanshyam1034	29165	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+ganpat1034	29086	Fertilizer	DAP		1.6	May	shriram	kpk1034	Bags	2012
+ramgs1034	29091	Fertilizer	DAP		2	May	NULL	kpk1034	Bags	2012
+dram1034	29120	Agrochemicals	Dust		21	Select	NULL	kpk1034	kgs	2012
+rich1034	29133	Fertilizer	DAP		1.6	May	shriram	kpk1034	Bags	2012
+laxman1034	29166	Fertilizer	DAP		40	March	shriram	kpk1034	Bags	2012
+laxman1034	29167	Fertilizer	Urea		30	May	NULL	kpk1034	Bags	2012
+laxman1034	29168	Agrochemicals	potash		20	Select	NULL	kpk1034	kgs	2012
+jprasad1034	29111	Fertilizer	DAP		1	May	shriram	kpk1034	Bags	2012
+jprasad1034	29113	Agrochemicals	potash		40	Select	NULL	kpk1034	kgs	2012
+dram1034	29119	Agrochemicals	Phorate		15	Select	NULL	kpk1034	kgs	2012
+hng1034	29126	Fertilizer	DAP		1.8	May	shriram	kpk1034	Bags	2012
+rich1034	29136	Agrochemicals	Phorate		10	Select	NULL	kpk1034	kgs	2012
+rich1034	29137	Agrochemicals	Dust		10	Select	NULL	kpk1034	kgs	2012
+ganeshram1034	16359	Agrochemicals	powder		35	Select	NULL	KPK1034	kgs	2012
+ghesaram1034	16369	Fertilizer	Potash		90	March	NULL	KPK1034	kgs	2012
+harinarayan1034	16373	Fertilizer	DAP		1.8	March	NULL	KPK1034	Bags	2012
+raghuvir1034	16384	Fertilizer	Potash		50	March	NULL	KPK1034	kgs	2012
+raghuvir1034	16386	Agrochemicals	powder		15	Select	NULL	KPK1034	kgs	2012
+harinarayan1034	16374	Fertilizer	Potash		50	March	NULL	KPK1034	kgs	2012
+ramkumar1034	16403	Fertilizer	DAP		1	March	NULL	KPK1034	bags	2012
+ramkumar1034	16404	Fertilizer	Potash		1	March	NULL	KPK1034	bags	2012
+bhavaryadav1034	16354	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+dhanshyam1034	16364	Fertilizer	DAP		80	March	NULL	KPK1034	Bags	2012
+ramyadav1034	16379	Fertilizer	Potash		50	March	NULL	KPK1034	kgs	2012
+raghuvir11034	16389	Fertilizer	Potash		40	March	NULL	KPK1034	kgs	2012
+sadhuram11034	16400	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+ramkumar1034	16406	Agrochemicals	powder		2	Select	NULL	KPK1034	bags	2012
+dholaram1034	16332	Fertilizer	DAP		40	March	NULL	KPK1034	Bags	2012
+ballusingh1034	16341	Fertilizer	Urea		2	March	NULL	KPK1034	Bags	2012
+dholaram1034	16335	Agrochemicals	Phorate		10	Select	NULL	KPK1034	kgs	2012
+dholaram1034	16334	Fertilizer	Urea		1.4	March	NULL	KPK1034	Bags	2012
+laluyadav1034	16330	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+ballusingh1034	16342	Fertilizer	Potash		40	March	NULL	KPK1034	kgs	2012
+laluyadav1034	16331	Fertilizer	DAP		2	March	NULL	KPK1034	Bags	2012
+jagnathyadav1034	16343	Fertilizer	DAP	Sriram	1.6	March	NULL	KPK1034	Bags	2012
+ramsharma1034	16351	Fertilizer	Urea		1.6	May	NULL	KPK1034	Bags	2012
+ramsharma1034	16349	Fertilizer	Potash		40	March	NULL	KPK1034	kgs	2012
+ramsharma1034	16350	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+ramsharma1034	16348	Fertilizer	DAP	Sriram	2	March	NULL	KPK1034	Bags	2012
+jagdishyadav1034	16346	Fertilizer	Potash		100	March	NULL	KPK1034	kgs	2012
+jagdishyadav1034	16345	Fertilizer	DAP	Sriram	1.6	March	NULL	KPK1034	Bags	2012
+jagdishyadav1034	16347	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+jagnathyadav1034	16344	Agrochemicals	Phorate		40	March	NULL	KPK1034	kgs	2012
+dholaram1034	16333	Fertilizer	Potash		30	March	NULL	KPK1034	kgs	2012
+ballusingh1034	16340	Fertilizer	DAP	Sriram	1.6	March	shriram	KPK1034	Bags	2012
+raghuvir1034	16385	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+raghuvirsharan1034	16395	Agrochemicals	Phorate		8	March	NULL	KPK1034	kgs	2012
+ganeshram1034	16356	Fertilizer	DAP		1.2	March	NULL	KPK1034	Bags	2012
+ghesaram1034	16372	Fertilizer	Urea		30	May	NULL	KPK1034	bags	2012
+sadhuram11034	16401	Agrochemicals	powder		10	Select	NULL	KPK1034	kgs	2012
+dhanshyam1034	16365	Fertilizer	Potash		50	March	NULL	KPK1034	kgs	2012
+dhanshyam1034	16366	Agrochemicals	Phorate		50	March	NULL	KPK1034	kgs	2012
+ghesaram1034	16368	Fertilizer	DAP		1.4	March	NULL	KPK1034	Bags	2012
+harinarayan1034	16375	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+ramyadav1034	16378	Fertilizer	DAP		2	March	NULL	KPK1034	Bags	2012
+raghuvir11034	16392	Fertilizer	Urea		65	May	NULL	KPK1034	bags	2012
+ramkumar1034	16407	Fertilizer	Urea		2	May	NULL	KPK1034	bags	2012
+lelaram1034	16414	Fertilizer	DAP	Sriram	2	March	NULL	KPK1034	Bags	2012
+raghuvir1034	16387	Fertilizer	Urea		60	May	NULL	KPK1034	bags	2012
+lelaram1034	16418	Agrochemicals	powder		10	Select	NULL	KPK1034	kgs	2012
+laxmanbunkar1034	16336	Fertilizer	DAP		40	March	NULL	KPK1034	Bags	2012
+laxmanbunkar1034	16339	Agrochemicals	Phorate		10	March	NULL	KPK1034	kgs	2012
+laluyadav1034	16329	Fertilizer	Urea	Sriram	1.6	March	shriram	KPK1034	Bags	2012
+laxmanbunkar1034	16337	Fertilizer	Potash		20	March	NULL	KPK1034	kgs	2012
+laxmanbunkar1034	16338	Fertilizer	Urea		30	March	NULL	KPK1034	Bags	2012

@@ -1,0 +1,7 @@
+empno	empname	deptno	salary
+1	Mohit	10	10000
+2	Akhil	20	50000
+3	gaurav	20	40000
+4	mayank	10	80000
+5	atul	30	30000
+

@@ -1,0 +1,290 @@
+Imports System.data
+Imports System.Data.SqlClient
+Imports System.Configuration.ConfigurationSettings
+Imports System.IO
+Imports System.IO.StreamReader
+Partial Class ReportDesigner_ShareReport
+    Inherits System.Web.UI.Page
+    Dim fun As New Functions
+    Dim selectRep As New ReportDesigner
+    Dim dsRep As New DataSet
+    Dim dsProcess As New DataSet
+    Dim daClient As New SqlDataAdapter
+    Dim con As String = AppSettings("ConnectionString")
+    Dim conn As New SqlConnection(con)
+    Public dept As String = "0"
+    Public client As String = "0"
+    Public lob As String = "0"
+    Public dataqry1
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        lblMsg.Text = ""
+        If Session("userid") = "" Then
+            lblMsg.Text = "Session Expired. Please Login Again."
+            Exit Sub
+        End If
+        If Me.IsPostBack = False Then
+            ddlReport.DataTextField = "QueryName"
+            ddlReport.DataValueField = "Recordid"
+            ddlReport.DataSource = selectRep.reportForuser(Session("userid"))
+            ddlReport.DataBind()
+            If ddlReport.Items.Count > 0 Then
+                ddlReport.Items.Insert(0, "--Select--")
+            End If
+            Me.lblreportname1.Visible = False
+        End If
+    End Sub
+
+    Public Sub ddlUser_bind()
+        Dim user = Session("userid")
+        If user = "" Then
+            lblMsg.Text = "Session Expired. Please Login Again."
+        End If
+        Dim objcmd As New SqlCommand
+        Dim objadp As New SqlDataAdapter
+        Dim objds As New DataSet
+        Dim str4 = ""
+        str4 = "select userid,'('+username+')' as username from registration where userid in(select userbuddy from buddy where userid='" + user + "' and userbuddy<>'0')or userid in(select userid from buddy where userbuddy='" + user + "' ) order by username"
+        objcmd = New SqlCommand(str4, conn)
+
+        Try
+            conn.Open()
+            objadp.SelectCommand = objcmd
+            objadp.Fill(objds)
+            conn.Close()
+            If objds.Tables(0).Rows.Count <> 0 Then
+                datagridUser.DataSource = objds
+                datagridUser.DataBind()
+                datagridUser.Visible = True
+                msg.Value = "nowcheck"
+            Else
+                lblMsg.Text = "No User Buddy Found."
+                datagridUser.Visible = False
+            End If
+        Catch ex As Exception
+            Dim strmsg As String
+            strmsg = Replace(ex.Message.ToString, "'", "")
+            strmsg = Replace(strmsg, vbCrLf, " ")
+            lblMsg.Text = strmsg
+        End Try
+    End Sub
+  
+    ''' <summary>
+    ''' This function is used to show an alert
+    ''' </summary>
+    ''' <param name="strPassed"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Function ShowConfirm(ByVal strPassed As String)
+        Dim Script As String
+        Script = "<script language='javascript'>"
+        Script = Script + "alert('" + strPassed + "')"
+        Script = Script + ("</script>")
+        ClientScript.RegisterClientScriptBlock(Page.GetType(), "ShowConfirm", Script)
+        Return True
+    End Function
+
+    Protected Sub btnUser_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnUser.Click
+        If ddlReport.SelectedValue <> "" And ddlReport.SelectedValue <> "--Select--" Then
+            ddlUser_bind()
+        Else
+            lblMsg.Text = "Please Select Report First."
+        End If
+    End Sub
+    ''' <summary>
+    ''' Item Command of the grid
+    ''' </summary>
+    ''' <param name="source"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+
+    Protected Sub datagridUser_ItemCommand(ByVal source As Object, ByVal e As System.Web.UI.WebControls.DataGridCommandEventArgs) Handles datagridUser.ItemCommand
+        Dim myDataGridItem As DataGridItem
+        Dim val As String = ""
+
+        For Each myDataGridItem In Me.datagridUser.Items
+
+            If e.CommandName = "chkall" Then
+
+
+                CType(myDataGridItem.FindControl("chkItem"), CheckBox).Checked = True
+                val = "mm"
+            End If
+
+            If e.CommandName = "chkall1" Then
+                CType(myDataGridItem.FindControl("chkItem"), CheckBox).Checked = False
+            End If
+
+
+
+        Next
+
+       
+    End Sub
+    ''' <summary>
+    ''' ItemBound Function of the grid
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub datagridUser_ItemDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DataGridItemEventArgs) Handles datagridUser.ItemDataBound
+        Dim myDataGridItem As DataGridItem
+        '' disable rights checkboxes intially
+        For Each myDataGridItem In Me.datagridUser.Items
+          
+            CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Enabled = False
+            CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Enabled = False
+            CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Enabled = False
+
+        Next
+        '' fetch existing user rights
+        Dim daset As New DataSet()
+        daset = selectRep.checkAllReportRight(ddlReport.SelectedValue)
+        For Each myDataGridItem In Me.datagridUser.Items
+            Dim k = 0
+            For k = 0 To daset.Tables(0).Rows.Count - 1
+                If CType(myDataGridItem.FindControl("lblUserid"), Label).Text = daset.Tables(0).Rows(k).Item("userid") Then
+                    '''''''''''''' enable the selected row
+                    CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Enabled = False
+                    CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Enabled = False
+                    CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Enabled = False
+                    '''''''''''
+                    CType(myDataGridItem.FindControl("chkItem"), CheckBox).Checked = True
+                    CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Enabled = True
+                    CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Enabled = True
+                    CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Enabled = True
+
+                    If daset.Tables(0).Rows(k).Item("View").ToString() = "True" Then
+                        CType(myDataGridItem.FindControl("chkView"), CheckBox).Checked = True
+                    End If
+                    If daset.Tables(0).Rows(k).Item("Edit").ToString() = "True" Then
+                        CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Checked = True
+                    End If
+                    If daset.Tables(0).Rows(k).Item("Delete").ToString() = "True" Then
+                        CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Checked = True
+                    End If
+                    If daset.Tables(0).Rows(k).Item("SaveAs").ToString() = "True" Then
+                        CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Checked = True
+                    End If
+                End If
+            Next
+
+        Next
+    End Sub
+    ''' <summary>
+    ''' Bind User on Page Change of the Grid
+    ''' </summary>
+    ''' <param name="source"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub datagridUser_PageIndexChanged(ByVal source As Object, ByVal e As System.Web.UI.WebControls.DataGridPageChangedEventArgs) Handles datagridUser.PageIndexChanged
+        Me.datagridUser.CurrentPageIndex = e.NewPageIndex
+        ddlUser_bind()
+    End Sub
+
+    ''' <summary>
+    ''' To share selected reports
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Protected Sub btnShare_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnShare.Click
+        Dim myDataGridItem As DataGridItem
+       If ddlReport.SelectedValue = "0" Or ddlReport.SelectedValue = "" Then
+            lblMsg.Text = "No Report Found"
+            Exit Sub
+        ElseIf msg.Value <> "nowcheck" Then
+            lblMsg.Text = "No User Is Present To Share Report With! Get Users To Share Report"
+            Exit Sub
+        End If
+
+        Dim chk As String = ""
+        If (ddlReport.SelectedValue <> 0) Then
+            For Each myDataGridItem In Me.datagridUser.Items
+                Dim view = "False"
+                Dim Edit = "False"
+                Dim Delete = "False"
+                Dim Saveas = "False"
+                Dim userid = ""
+
+                If CType(myDataGridItem.FindControl("chkItem"), CheckBox).Checked = True Then
+                    chk = "ranjit"
+                End If
+
+                If CType(myDataGridItem.FindControl("chkItem"), CheckBox).Checked = True Then
+                    userid = CType(myDataGridItem.FindControl("lblUserid"), Label).Text
+                    If CType(myDataGridItem.FindControl("chkView"), CheckBox).Checked = True Then
+                        view = "True"
+                    End If
+                    If CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Checked = True Then
+                        Edit = "True"
+                    End If
+                    If CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Checked = True Then
+                        Delete = "True"
+                    End If
+                    If CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Checked = True Then
+                        Saveas = "True"
+                    End If
+                    '' check for existing record
+                    Dim b As Boolean = selectRep.checkExistingReportRight(userid, ddlReport.SelectedValue)
+                    Dim str As String = ""
+                    If (b = True) Then  '' if reocord exists, update it
+                        str = selectRep.updateReportrights(ddlReport.SelectedValue, userid, ddlReport.SelectedItem.ToString(), view, Edit, Saveas, Delete, Date.Today.ToShortDateString(), Session("userid"))
+
+                    Else  '' otherwise insert new 
+                        str = selectRep.insertReportrights(ddlReport.SelectedValue, userid, ddlReport.SelectedItem.ToString(), view, Edit, Saveas, Delete, Date.Today.ToShortDateString(), Session("userid"))
+                     
+                    End If
+
+                    If str <> "1" Then
+                        lblMsg.Text = "Error Occured.Please try again"
+                        Exit Sub
+                    Else
+                        lblMsg.Text = "Right(s) Assigned"
+                    End If
+                End If
+
+            Next
+        Else
+            lblMsg.Text = "Please Select Report Name."
+        End If
+        If chk = "" Then
+            lblMsg.Text = "Please select At Least One UserId."
+        End If
+    End Sub
+    ''' <summary>
+    ''' oncheckchange function of the grid
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Public Sub oncheckchanged(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim myDataGridItem As DataGridItem
+        For Each myDataGridItem In Me.datagridUser.Items
+            If CType(myDataGridItem.FindControl("chkView"), CheckBox).Checked = True Then
+                CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Enabled = True
+                CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Enabled = True
+                CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Enabled = True
+            Else
+                CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Enabled = False
+                CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Enabled = False
+                CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Enabled = False
+
+                CType(myDataGridItem.FindControl("chkEdit"), CheckBox).Checked = False
+                CType(myDataGridItem.FindControl("chkDelete"), CheckBox).Checked = False
+                CType(myDataGridItem.FindControl("chkSaveas"), CheckBox).Checked = False
+            End If
+        Next
+    End Sub
+
+    Protected Sub ddlReport_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ddlReport.SelectedIndexChanged
+        If (ddlReport.SelectedIndex <> 0) Then
+            Me.lblreportname1.Visible = True
+
+            Me.lblreportname1.Text = ddlReport.SelectedItem.Text
+        Else
+            Me.lblreportname1.Visible = False
+        End If
+
+
+    End Sub
+End Class

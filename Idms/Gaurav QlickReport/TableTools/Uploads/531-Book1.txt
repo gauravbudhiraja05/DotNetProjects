@@ -1,0 +1,10 @@
+S.no	Stud_ID	Name	Father_Name	Address
+1	20212	Chanky	Azad Swami	Jhajjar
+2	20258	Shubham	A.K Bansal	
+3	20263	Vickey	Kanwal singh	Jhajjar
+4	20214	Deepak Dala	Om Parkash	Jhajjar
+5	20240	Nitesh	Bhushan Agarwal	delhi
+6	20241	Nitika	Ramphal	najafgarh
+7	20218	Shubham	Banwari	dadri
+8	20222	Shaffi	Neeraj rathi	bhiwani
+9	20255	Deepti	Sanchit sharma	faridabaad

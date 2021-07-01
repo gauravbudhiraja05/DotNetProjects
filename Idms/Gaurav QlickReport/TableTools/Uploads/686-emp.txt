@@ -1,0 +1,6 @@
+empid	empname	emasal
+1	a	10000
+2	s	3443
+3	d	34545
+4	f	67656
+5	g	345545

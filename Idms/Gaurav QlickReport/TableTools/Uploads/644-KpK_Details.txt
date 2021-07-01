@@ -1,0 +1,1679 @@
+Userid	Name	Village	City	State
+KPK0001	BrahmpalSingh	KhodnaKhurd	Gautam Buddha Nagar	UTTAR PRADESH
+KPK0004	RajeshPrasad	BhutahaKhar	Nalanda	BIHAR
+KPK0005	RohitVerma	SarilChak	Nalanda	BIHAR
+KPK0006	Prithbi Raj Chauhan	Balwa	Nalanda	BIHAR
+KPK0007	Anand Bhushan Sinha	DhaneshwarGhat-ProfColony	Nalanda	BIHAR
+KPK0008	PragyaDevi	Maudihara	Rohtas	BIHAR
+KPK0009	Mani Prasad Singh	DodaChack	Nalanda	BIHAR
+KPK0010	ManojKumar	Muzaffarpur	Nalanda	BIHAR
+KPK0011	NiranjanKumar	SarilChak	Nalanda	BIHAR
+KPK0012	Shashi Kumar Chanchal	NewKarbighiya-NearKabristan	Patna	BIHAR
+KPK0013	SudhirKumar	Karjara	Nalanda	BIHAR
+KPK0014	Nand Kishore Maurya	Shivpura	Lucknow	UTTAR PRADESH
+KPK0017	AjayPrasad	Jagdishpur	Sheikhpura	BIHAR
+KPK0018	Sanjeev Kumar Ranjan	Sonsa	Nalanda	BIHAR
+KPK0019	Birendra Kumar Singh	Koiri Bigha	Sheikhpura	BIHAR
+KPK0020	RamjeePrasad	Dinkarpuri	Begusarai	BIHAR
+KPK0021	Raj Mani Sharma	Fatihabad	Bulandshahr	UTTAR PRADESH
+KPK0022	SanjeevSaini	Near Panipat Chungi	Sonepat	HARYANA
+KPK0023	Suresh Kumar Jaiswal	Surapur	AmbedkarNagar	UTTAR PRADESH
+KPK0024	RajivVerma	Samsuddinpur	AmbedkarNagar	UTTAR PRADESH
+KPK0025	AshutoshDubey	Pratappur Chamukhe	AmbedkarNagar	UTTAR PRADESH
+KPK0026	AshokPandey	Buck Tanda	AmbedkarNagar	UTTAR PRADESH
+KPK0027	Hari Nandan Mishra	Chakdullam	Begusarai	BIHAR
+KPK0028	AnilKumar	Kapatiya	Nalanda	BIHAR
+KPK0029	SatishShekhar	Bihar Road	Nalanda	BIHAR
+KPK0030	BinayKumar	Sikandarpur	Patna	BIHAR
+KPK0031	Virendra Kumar Priyadarshi	Karuna Bag	Nalanda	BIHAR
+KPK0032	RajendraPrasad	Gopay Chack	Patna	BIHAR
+KPK0033	AjitKumar	Sherpur	Nalanda	BIHAR
+KPK0034	Ran Vijay Kumar	Doiya	Nalanda	BIHAR
+KPK0035	Prem Sagar Singh	Kutubpura	Nalanda	BIHAR
+KPK0036	JitendraKumar	Daud NAgar	Aurangabad	BIHAR
+KPK0037	SaudaminiSinha	Bari Dariyapur	Munger	BIHAR
+KPK0038	AmrendraKumar	Alipur	Nalanda	BIHAR
+KPK0039	Sachindra Kumar Sinha	Jahana	Nalanda	BIHAR
+KPK0040	AnilKumar	Gordiha	Aurangabad	BIHAR
+KPK0041	DhananjayKumar	Navadih	Aurangabad	BIHAR
+KPK0042	Om Prakash Singh	Tarari	Aurangabad	BIHAR
+KPK0043	RajuKumar	Kaithi	Rohtas	BIHAR
+KPK0049	NandKishoreSinha	Chorsua	Nalanda	BIHAR
+KPK0050	AnujKumar	Oeyab	Nalanda	BIHAR
+KPK0051	RajmaniKumar	Itoura	Nalanda	BIHAR
+KPK0052	Shiv Balak Verma	Iltifat Ganj	AmbedkarNagar	UTTAR PRADESH
+KPK0053	Naval Kishore Verma	Sulemanpur	AmbedkarNagar	UTTAR PRADESH
+KPK0054	Raj Kamal Pandey	Holder	AmbedkarNagar	UTTAR PRADESH
+KPK0055	RajivVerma	Samsuddinpur	AmbedkarNagar	UTTAR PRADESH
+KPK0056	JagramJaiswal	Path Kholi	Gonda	UTTAR PRADESH
+KPK0057	Jagdish Prasad Chaurasiya	MaharajGanj	MaharajGanj	UTTAR PRADESH
+KPK0058	RajSingh	Safeedon	Jind	HARYANA
+KPK0059	Kashi Prasad Gupta	Rampur Banjaraha	AmbedkarNagar	UTTAR PRADESH
+KPK0060	Shyam Narain Tiwari	Piiyarepur	AmbedkarNagar	UTTAR PRADESH
+KPK0061	AwdeshDubey	Prappurchamrukha	AmbedkarNagar	UTTAR PRADESH
+KPK0062	Ram Dhiraj Singh	Keshavpur	Keshavpur	UTTAR PRADESH
+KPK0063	PoonamShukla	Maskanwa Bazar	Gonda	UTTAR PRADESH
+KPK0064	RangilalKasondan	Bariyawan	Ambedkarnagar	UTTAR PRADESH
+KPK0065	Hira lal Verma	Durgapur	AmbedkarNagar	UTTAR PRADESH
+KPK0066	RajaRam	Koraee Mohiuddin Pur	AmbedkarNagar	UTTAR PRADESH
+KPK0067	Dharmender Kumar Verma	Goushpur	Ambedkarnagar	UTTAR PRADESH
+KPK0068	VishwanathShukla	ChakiyaSalaudinpur	Rampur Rampatti	UTTAR PRADESH
+KPK0069	ShailenderPandey	Ishapur	Faizabad	UTTAR PRADESH
+KPK0070	Kapoor Chand Verma	ambedkar	AmbedkarNagar	UTTAR PRADESH
+KPK0071	BaijnathMishra	Annawa Bazar	AmbedkarNagar	UTTAR PRADESH
+KPK0072	Raghav Ram(Vijay) Gupta	Jhilahi Bazar	Gonda	UTTAR PRADESH
+KPK0073	RameshMourya	Katarya Yakubpur	AmbedkarNagar	UTTAR PRADESH
+KPK0074	Shanti Devi Shukla	Mankapur	Mankapur Bazar	UTTAR PRADESH
+KPK0075	RambhajYadav	Kotwaseehmai	AmbedkarNagar	UTTAR PRADESH
+KPK0076	RabbuLal	Sikarohar	AmbedkarNagar	UTTAR PRADESH
+KPK0077	RanjenderSingh	Khashpur	AmbedkarNagar	UTTAR PRADESH
+KPK0078	Ram Kripal Verma	AshrafPur	AmbedkarNagar	UTTAR PRADESH
+KPK0079	BhanupratapYadav	Battugarh	AmbedkarNagar	UTTAR PRADESH
+KPK0080	Rishikesh Narayan Singh	Ekangar Sarai	Nalanda	BIHAR
+KPK0081	KapilKumar	Adalchak	Nalanda	BIHAR
+KPK0082	HarivanshMahto	Atrua Chakaskhat	Begusarai	BIHAR
+KPK0083	BabliDagar	Ujwa	Najafgarh	DELHI
+KPK0084	RajeshwarSharma	Pandarak	Patna	BIHAR
+KPK0085	Ganesh Prasad Singh	Mishroulia	Samastipur	BIHAR
+KPK0086	Ajay Kumar Maurya	Kuri	Gorakhpur	UTTAR PRADESH
+KPK0088	Sanjay Kumar Murya	Bhanpori Khajuria	Lakhimpur Kheri	UTTAR PRADESH
+KPK0089	Sunil Kumar Gupta	Palia Kalan	Lakhimpur Kheri	UTTAR PRADESH
+KPK0090	SattarAhmed	"Near Sharada Hotel, Khajuria Road"	Lakhimpur Kheri	UTTAR PRADESH
+KPK0091	YogendrapalNishad	Surjanpur	Lakhimpur Kheri	UTTAR PRADESH
+KPK0092	Mahesh Singh Chauhan	Sarriyan Raja Saheb	Sitapur	UTTAR PRADESH
+KPK0093	Rakesh Kumar Verma	Govindpurva	Sitapur	UTTAR PRADESH
+KPK0094	O P Verma	Mehmoodabad Avadh	Sitapur	UTTAR PRADESH
+KPK0095	Shiv Kumar Kushwaha	Devaria	Sitapur	UTTAR PRADESH
+KPK0096	RamnathSethi	Mehtosh	V.S. Nagar	UTTAR PRADESH
+KPK0097	RafiqKhan	Gudacha Chauraha	Sitapur	UTTAR PRADESH
+KPK0102	Yashwant Kumar Singh	Koelwar	Bhojpur	BIHAR
+KPK0103	Mrs. SampattiDevi	Kajipur	AmbedkarNagar	UTTAR PRADESH
+KPK0104	AshishKumar	Maner	Patna	BIHAR
+KPK0105	SushamaKumari	Bidupur Bazar	Vaishali	BIHAR
+KPK0106	Yudhvir Singh Gulia	Daryapur	Jhajjar	HARYANA
+KPK0107	VikashKumar	Harpur Osti	Vaishali	BIHAR
+KPK0108	RavindraSingh	Manpur	Aligarh	UTTAR PRADESH
+KPK0109	Harish Chandra Singh	Syarol	Aligarh	UTTAR PRADESH
+KPK0110	Salik Ram Poarwal	Rauja	Sitapur	UTTAR PRADESH
+KPK0111	Trilok singh Kushwaha	Bhakchuri	Udham Singh Nagar	UTTAR PRADESH
+KPK0112	Shiv Kumar Verma	Belhariyya Biswan	Sitapur	UTTAR PRADESH
+KPK0113	RajdevenderSingh	Billandapur	Shahjahanpur	UTTAR PRADESH
+KPK0114	VinodKumar	Ramnagar Colony	Shahjahanpur	UTTAR PRADESH
+KPK0115	ParamjeetSingh	Suthar Road	Shahjahanpur	UTTAR PRADESH
+KPK0116	Sumeri Lal Verma	Mehmudabad Saladipur	Sitapur	UTTAR PRADESH
+KPK0117	MangalPrasad	Baddupur	Sitapur	UTTAR PRADESH
+KPK0118	Ram Savek Verma	Biswan	Sitapur	UTTAR PRADESH
+KPK0119	Anurudh Kumar Verma	Vikas Clinic Bara Gowan Road	Sitapur	UTTAR PRADESH
+KPK0120	Sachandra Kumar Verma	Sokabsa	Lakhimpur Kheri	UTTAR PRADESH
+KPK0121	Ainesh Kumar Murya	Jhawa Kla	Sitapur	UTTAR PRADESH
+KPK0122	OmkarVerma	Amarpur	Sitapur	UTTAR PRADESH
+KPK0123	IndrasanSingh	Bisanpur	Sitapur	UTTAR PRADESH
+KPK0124	PermanandVerma	Suhadpur	Barabanki	UTTAR PRADESH
+KPK0125	Ashok Kumar Chauhan	Sarai Bheek	Barabanki	UTTAR PRADESH
+KPK0126	AbdulBari	Naughaza	Rampur	UTTAR PRADESH
+KPK0127	Mohd.Jman	Mehtosh	Udham Singh Nagar	UTTAR PRADESH
+KPK0128	Ashish Kumar Shastri	Gayatri Mandir	Barabanki	UTTAR PRADESH
+KPK0129	Hariram A Bhosale	Gorsai	Thane	MAHARASHTRA
+KPK0132	AlakhNiranjan	Mohalla Kazibazar	Nalanda	BIHAR
+KPK0133	Md. TaquiImam	Bura Nagar	Nalanda	BIHAR
+KPK0134	Smt. NeeluKumari	Nagarnausa	Nalanda	BIHAR
+KPK0135	AkhileshKumar	Nonaura	Nalanda	BIHAR
+KPK0136	Jagan Nath Rai	Bijwani	Sambharan	BIHAR
+KPK0137	ArchanaSinha	Nanand	Nalanda	BIHAR
+KPK0138	SanjeebKumar	Gaurhapar	Nalanda	BIHAR
+KPK0139	RajmantiKumari	Badarwali	Nalanda	BIHAR
+KPK0140	Raj Nath Chauhan	Kolhukhor	Azamgarh	UTTAR PRADESH
+KPK0141	Manic Chand Chaurasia	Ibrahimpur	Jaunpur	UTTAR PRADESH
+KPK0142	Gorakh Nath Gond	Gauspur	Ghazipur	UTTAR PRADESH
+KPK0143	Ram Narayan Mehta	Birua Chak	Patna	BIHAR
+KPK0144	Hari Nath Sharan	Shekhpura	Saran (Chappra)	BIHAR
+KPK0145	AshokKumar	Juniyaar	Nalanda	BIHAR
+KPK0146	SanjeevKumar	Pura	Nalanda	BIHAR
+KPK0148	sone Lal Mahto	Sohil Vara	Begusarai	BIHAR
+KPK0149	SunilKumar	Imad Pur	Nalanda	BIHAR
+KPK0150	Ashok Kumar Yadav	Tulsitola	Begusarai	BIHAR
+KPK0151	BijaliMahto	Mansoor Chak	Begusarai	BIHAR
+KPK0152	Dashrath Prasad Sharma	Chandaur	Begusarai	BIHAR
+KPK0153	RanjitSaha	Ahiya Pur	Begusarai	BIHAR
+KPK0154	RohtasSingh	Mohamad pur	Gurgaon	HARYANA
+KPK0155	YogendraPrasad	Annapur	AmbedkarNagar	UTTAR PRADESH
+KPK0156	Ravindra Kumar Sharma	gadahiya	Kushinagar	UTTAR PRADESH
+KPK0157	Pankaj Kumar Barnwal	sasamusa	Gopalganj	BIHAR
+KPK0158	Vijay Kumar Singh	samuhatar	Kushi Nagar	UTTAR PRADESH
+KPK0159	MahendraSingh	asna	Kushinagar	UTTAR PRADESH
+KPK0160	Jitendra Kumar Shahi	Shanti Nagar	Kushinagar	UTTAR PRADESH
+KPK0161	ShailSrivastava	van varia	Kushi Nagar	UTTAR PRADESH
+KPK0163	LalpanchSingh	gahasai	Gorakhpur	UTTAR PRADESH
+KPK0164	munibChauhan	chksa Hussain	Gorakhpur	UTTAR PRADESH
+KPK0165	vijendra Kumar Shahi	Kasia	Kushinagar	UTTAR PRADESH
+KPK0167	Hari shankar Gupta	madhawapur	Gopalganj	BIHAR
+KPK0168	Prahlad prasad Pal	vihar Khurda bangla	Kushinagar	UTTAR PRADESH
+KPK0170	DevvratDwivedi	ShivPur	Gorakhpur	UTTAR PRADESH
+KPK0171	Luv Kumar Singh	ShivPur Sahbajganj	Gorakhpur	UTTAR PRADESH
+KPK0191	Sarvan Kumar Chaudhary	Ramganj	Madhepura	BIHAR
+KPK0192	PradhumanChaudhary	Kumar Khand	Madhepura	BIHAR
+KPK0193	BindheshwariPrasad	Lalunagar	Sheikhpura	BIHAR
+KPK0194	ArunKumar	Goddi	Sheikhpura	BIHAR
+KPK0195	ManojMittal	Shikarpur	Bulandshahr	UTTAR PRADESH
+KPK0196	HariramPal	Mukimpur Gadhi	Gaziabad	UTTAR PRADESH
+KPK0197	Prashant Kumar Singh	Rampur	Bhojpur	BIHAR
+KPK0198	PramodSingh	Khajuri	West Champaran	BIHAR
+KPK0199	HarichandraPrasad	DhoomNagar Kachahri Tola	Betia	BIHAR
+KPK0200	VinaySingh	BansGaon Parsouni	West Champaran	BIHAR
+KPK0201	RadheyShyamUpadhyay	Sato Epanti	Bhabhua	BIHAR
+KPK0202	RajeshKumar	Saraiya	Bhojpur	BIHAR
+KPK0203	KishanKumar	Kushak Hiranaki	Alipur	DELHI
+KPK0204	Yogesh Chandra Singh	Mastul Barun	Aurangabad	BIHAR
+KPK0205	RamKanwar	Tajnagar	Gurgaon	HARYANA
+KPK0206	Shashi Bhushan Singh	Birpur	Begusarai	BIHAR
+KPK0207	ArvindTyagi	Narangpur	Meerut	UTTAR PRADESH
+KPK0209	SanjayKumar	Madhopur Dih	Nalanda	BIHAR
+KPK0210	AnandiPrasad	Mahamadpur	Nalanda	BIHAR
+KPK0211	Ram Krishna Singh	Rupauli Khurd	Samastipur	BIHAR
+KPK0212	Sunil Kumar Jha	Sanjat	Begusarai	BIHAR
+KPK0213	JamilAnsary	Kutubnagar (Laguraon)	Vaishali	BIHAR
+KPK0214	Rabindra Kumar Pandit	Alawalpur	Vaishali	BIHAR
+KPK0215	Ajay Kumar Singh	Kochas	Rohtas	BIHAR
+KPK0216	Bipin Kumar Rai	Barahuti Kala	Rohtas	BIHAR
+KPK0217	GaneshiPrasad	Kaila	Nalanda	BIHAR
+KPK0218	Chandra Shekhar Bhagat	Sonamuki	Madhepura	BIHAR
+KPK0219	RajneshYadav	Konand	Nalanda	BIHAR
+KPK0220	Ashok Kumar Singh	Sohsa	Rohtas (Sasaram)	BIHAR
+KPK0221	Bijay Kumar Dubey	Allipur	Kaimur	BIHAR
+KPK0222	Ashok Kumar Rastogi	Kudra	Kaimur	BIHAR
+KPK0223	Sukhendra Bahadur Singh	Ghughechihai	Satna	MADHYA PRADESH
+KPK0224	Upendra Nath Sahu	Asarganj	Munger	BIHAR
+KPK0225	Sanjay Kumar Sah	Bhawanipur	Purnea	BIHAR
+KPK0226	Gopal Prasad Singh	Askatia	Purnea	BIHAR
+KPK0227	SumanKumar	Shripur	Purnea	BIHAR
+KPK0228	AshishChaudhary	Rampur	Katihar	BIHAR
+KPK0229	PremchandSingh	Nasriganj	Patna	BIHAR
+KPK0230	Arvind Kumar Yadav	Kuria	Katihar	BIHAR
+KPK0256	HrishiKesh	Rampur	Bhagalpur	BIHAR
+KPK0257	ShantiDevi	Hawanpura	Nalanda	BIHAR
+KPK0258	ArunPrasad	Dola	Nawada	BIHAR
+KPK0259	DhananjayKumar	Patramchak	Nalanda	BIHAR
+KPK0260	AnilKumar	Chhoti Paithana	Nalanda	BIHAR
+KPK0261	ShivlingRajak	Taranpur	Patna	BIHAR
+KPK0262	BijayKumar	Bansipur Bind Tola	Lakhisaray	BIHAR
+KPK0263	ManojKumar	Chitarpur	Hazaribagh	JHARKHAND
+KPK0264	SatishKumar	Gauharpur	Patna	BIHAR
+KPK0265	Jag Jeevan Singh	Gauharpur	Patna	BIHAR
+KPK0266	Krishna Kumar Singh	Baluachak	Patna	BIHAR
+KPK0267	MahadeoKumar	Bairiya	Patna	BIHAR
+KPK0268	Dinesh Prasad Gupta	LF3/57	Patna	BIHAR
+KPK0269	Shambhu Kumar Sinha	Rampur	Bhagalpur	BIHAR
+KPK0270	KaushlendraPrasad	Bhathu Bigha	Nalanda	BIHAR
+KPK0271	NagendraKumar	Dallu Bigha	Nalanda	BIHAR
+KPK0272	Rabindra Kumar Sinha	Kakaria	Nalanda	BIHAR
+KPK0273	RanjitKumar	Bariatt	Nalanda	BIHAR
+KPK0274	SanjuKumari	Muzaffarpur	Nalanda	BIHAR
+KPK0275	RajeshKumar	Muftipur	Nalanda	BIHAR
+KPK0276	DhananjayKumar	Dulchandpur	Nalanda	BIHAR
+KPK0277	SwatantraKumar	Gidiha	Nalanda	BIHAR
+KPK0298	Vikas Bhushan Singh	Narbirpur	Arha	BIHAR
+KPK0299	ShashiSrivastava	Bilauna	Fatehpur	UTTAR PRADESH
+KPK0300	Dilip Kumar Dinesh	Naraideih	Vaishali	BIHAR
+KPK0301	Sanjay Kumar Suman	Horil Bigha	Nalanda	BIHAR
+KPK0302	MayankKumar	Keuti	Sheikhpura	BIHAR
+KPK0303	vinayPrasad	Manpur	Nalanda	BIHAR
+KPK0304	DharamvirKumar	Masarhi	Patna	BIHAR
+KPK0305	Ram Kumar Maurya	"Kumar Bhandar, Mal Road"	Lucknow	UTTAR PRADESH
+KPK0310	RandhirKumar	Chakdaulat	Samastipur	BIHAR
+KPK0311	Sunil Kumar Pandey	Simri	Buxar	BIHAR
+KPK0313	Sunil Kumar Tiwari	Lahri Tiwari Dih	Bhojpur(Ara)	BIHAR
+KPK0314	MaheshKumar	Thanpur	Vaishali	BIHAR
+KPK0315	TafazzulHusain	Husainganj	Siwan	BIHAR
+KPK0331	Shiv Ji Prasad	Pachapakari	East Champaran	BIHAR
+KPK0332	Swami Nath Jaiswal	Guru Bazar	Katihar	BIHAR
+KPK0333	SunitaSinha	Usman Chak	Patna	BIHAR
+KPK0334	Chandra Shekhar Jaiswal	Balua	Katihar	BIHAR
+KPK0335	Pankaj Kumar Chaudhary	Bhawanipur Rajdham	Purnea	BIHAR
+KPK0336	Nawal Kishore Nayyar	Maa Anand Mai Colony	Patna	BIHAR
+KPK0337	TasildarBabu	Nahsi	Bhojpur(Ara)	BIHAR
+KPK0338	SurendraKumar	Sikraul Bal Tola	Bhojpur(Ara)	BIHAR
+KPK0339	HarendraKumar	Mushahari	Nalanda	BIHAR
+KPK0340	AshaSingh	Karjan	Patna	BIHAR
+KPK0341	Md.Quasim	Kabar	Gaya	BIHAR
+KPK0346	GautamKumar	Mathurapur	Samastipur	BIHAR
+KPK0347	SarojKumar	Kochara	Nalanda	BIHAR
+KPK0348	Raj Kumar Sahu	Kashipur	Gonda	UTTAR PRADESH
+KPK0349	Raj Kumar Sharma	Barauna	Gonda	UTTAR PRADESH
+KPK0350	Vijay(Chhotkau) Kumar Sahu	Turka Deeha Baba Kutti	Gonda	UTTAR PRADESH
+KPK0351	Devi Prasad Tripathi	Swami Narayan Chhapiya	Gonda	UTTAR PRADESH
+KPK0352	RamjiGupta	Machili gaon Bazar	Gonda	UTTAR PRADESH
+KPK0353	Virender Kumar Gupta	Babaganj Bazar	Gonda	UTTAR PRADESH
+KPK0354	Jai Prakash Singh	Chatar	Bhojpur(Ara)	BIHAR
+KPK0355	DadhibalSharma	Bandhuganj	Jehanabad	BIHAR
+KPK0356	BinodKumar	Korigawan	Rohtas	BIHAR
+KPK0357	Om Prakash Srivastava	"447-CD European Colony, Mugal Sarai"	Chandauli	UTTAR PRADESH
+KPK0358	Anugrah Narayan Bharti	Dharampur	Nalanda	BIHAR
+KPK0359	ParvatiDevi	Birampur	Bhojpur	BIHAR
+KPK0360	PurshottamKumar	Islampur	Nalanda	BIHAR
+KPK0361	RamprebeshPrasad	Bele	Nalanda	BIHAR
+KPK0362	AwdheshKumar	Murdalichak	Nalanda	BIHAR
+KPK0363	RanjeetKumar	Harnahi	Aurangabad	BIHAR
+KPK0364	Shyam Sundar Prasad	Kachiyama	Nalanda	BIHAR
+KPK0365	DevendraPrasad	Amera	Nalanda	BIHAR
+KPK0366	ShilendraKumar	Oli Bigha	Nalanda	BIHAR
+KPK0367	SudhanshuKumar	Nadda	West Champaran	BIHAR
+KPK0368	ChitranjanSingh	Bhawal	West Champaran	BIHAR
+KPK0369	FanindraSingh	Naunia Patti	West Champaran	BIHAR
+KPK0370	AnilKumar	Bhagatpur	Nalanda	BIHAR
+KPK0371	SunilKumar	Semare	Rohtas	BIHAR
+KPK0372	Hari Prasad Gope	"C/o Leela Bhawan,Prem Nagar Colony,"	Bhagalpur	BIHAR
+KPK0373	Shashi Bhushan Singh	Hemjapur	Munger	BIHAR
+KPK0374	ChandanKumar	Khanpur	Samastipur	BIHAR
+KPK0375	Shiv Shankar Prasad	Andaha	Samastipur	BIHAR
+KPK0376	Praween Kumar Sah	Salempur	Samastipur	BIHAR
+KPK0377	KrishnaYadav	Benda	Kanpur	UTTAR PRADESH
+KPK0378	MithileshSingh	Jahanaganj	Azamgarh	UTTAR PRADESH
+KPK0385	Ram Chandra Singh	Bikramganj	Rohtas	BIHAR
+KPK0386	Shakeel Ahmed Rayeen	Kargahar	Rohtas	BIHAR
+KPK0387	Radhe Shyam Singh	Ramoul	Samastipur	BIHAR
+KPK0388	Sanjeet Kumar Singh	Rampur	Rohtas	BIHAR
+KPK0389	GhanshyamKumar	Chanpur	Banka	BIHAR
+KPK0390	GaneshPrasad	Gandkha	Chapra(Saran)	BIHAR
+KPK0391	VinodKumar	Koeira Nizamath	Muzaffarpur	BIHAR
+KPK0392	Anil Kumar Singh	Kedar Chauri	Rohtas	BIHAR
+KPK0393	RavindraSingh	Dhanaur	Muzaffarpur	BIHAR
+KPK0394	Binod Kumar Singh	Pararia	Rohtas	BIHAR
+KPK0400	Shiv Nath Chaudhary	Gurubazar	Katihar	BIHAR
+KPK0401	Jay Prakash Prasad	Raisa	Nalanda	BIHAR
+KPK0402	Munni Kumari Devi	Phulwarishria	Patna	BIHAR
+KPK0403	TarniPaswan	Rupouli	Purnea	BIHAR
+KPK0404	Guneshwar Prasad Yadav	Simraha	Samastipur	BIHAR
+KPK0405	GyatriDevi	Padma	Madhubani	BIHAR
+KPK0406	Ghan Shyam Prasad	Selhowri	Patna	BIHAR
+KPK0407	ShivKumar	Raunia	Katihar	BIHAR
+KPK0408	JiteendraKumar	Sikaria	Patna	BIHAR
+KPK0409	ManojKumar	Kochara	Nalanda	BIHAR
+KPK0410	Vidya Nand Yadav	Madhuban	Saharsa	BIHAR
+KPK0411	PermanandPrasad	Mananpur (Badhopur)	Samastipur	BIHAR
+KPK0412	ArvindYadav	Katha	Saharsa	BIHAR
+KPK0413	Subodh Kumar Yadav	Chakman Singh	Munger	BIHAR
+KPK0414	AmodKumar	Rahar Diyar	Chapra(Saran)	BIHAR
+KPK0415	Dhananjay Kumar Singh	Madanpur	Chapra	BIHAR
+KPK0416	SachidanandThakur	Paro (Babu Tola)	Muzaffarpur	BIHAR
+KPK0417	InduDevi	Balichapur	Gopalganj	BIHAR
+KPK0418	Amrendra Kumar Verma	Manara	Nalanda	BIHAR
+KPK0419	RajKumar	Sherpur	Patna	BIHAR
+KPK0420	Rabindra Kumar Ravi	Kaushalpur Road	Munger	BIHAR
+KPK0421	Ashok Kumar Gupta	Abhiya Bazar	Bhagalpur	BIHAR
+KPK0426	ParshuramSingh	Barbighi	Begusarai	BIHAR
+KPK0430	Syed Shah Sadruddin	Bibipur	Jehanabad	BIHAR
+KPK0433	Shashi Bhushan Prasad	Habbi Chak	Gaya	BIHAR
+KPK0434	RanjitKumar	Jehanabad	Jehanabad	BIHAR
+KPK0435	PrakashKumar	Makhdumpur	Patna	BIHAR
+KPK0436	SanjayKumar	Nimapur	Nalanda	BIHAR
+KPK0437	Awdhesh Kumar Singh	Kohwara	Katihar	BIHAR
+KPK0438	Vijay Kumar Amritraj	Ganesh Bigha	Jehanabad	BIHAR
+KPK0439	PankajPriyadarshy	Birouli Bazar	Purnea	BIHAR
+KPK0440	TarkeshwarSingh	Dinara	Rohtas (Sasaram)	BIHAR
+KPK0441	DeepakKumar	Khota	Katihar	BIHAR
+KPK0442	Ajay Kumar Singh	Mamadihpur	Vaishali	BIHAR
+KPK0443	ChitraketuPrasad	Sheakhopur	Nalanda	BIHAR
+KPK0444	Ravi Shankar Singh	Shahjahanpur	Patna	BIHAR
+KPK0445	DharmendraKumar	Maudhi	Patna	BIHAR
+KPK0446	RabishKumar	Dubiyani	Muzaffarpur	BIHAR
+KPK0447	KaushalKishor	Raghunathpur	Nalanda	BIHAR
+KPK0448	Kishori Prasad Singh	Wena	Nalanda	BIHAR
+KPK0449	Ravi Khelawan Prasad	Surujpur Muroura	Nalanda	BIHAR
+KPK0450	Shiv Shankar Prasad	Mohanpur	Nalanda	BIHAR
+KPK0451	AnilKumar	Merut	Nalanda	BIHAR
+KPK0452	SanjayKumar	Chauria	Nalanda	BIHAR
+KPK0453	SubhasKumar	Mai	Nalanda	BIHAR
+KPK0454	ShubhamKumar	Koyri Bigha	Sheikhpura	BIHAR
+KPK0455	SanjuKumari	Horil Bigha	Nalanda	BIHAR
+KPK0456	AkhileshKumar	Chandi Dih	Nalanda	BIHAR
+KPK0457	ShankarPrasad	Nanaur	Nalanda	BIHAR
+KPK0458	Anil Kumar Sinha	Paroha	Nalanda	BIHAR
+KPK0459	Prem Lata Devi	Bangow	Banka	BIHAR
+KPK0460	NayhuniSingh	Kamhari	Kaimur	BIHAR
+KPK0461	Uma Shankar Pandey	Mahuari	Rohtas	BIHAR
+KPK0462	Virendra Singh Rajawat	Ratousa	Jhasi	UTTAR PRADESH
+KPK0475	SitaSarojani	Saidpur	Patna	BIHAR
+KPK0480	RekhaDevi	Harbans Bigha	Nalanda	BIHAR
+KPK0481	Laxmi Kant Gupta	Anand Nagar Axani	West Champaran	BIHAR
+KPK0482	Brajesh Kumar Singh	Pakari Biswalia	West Champaran	BIHAR
+KPK0483	FakhreAlam	"Bismillah Rice Mill, Krishi Market"	West Champaran	BIHAR
+KPK0484	Ajay Kumar Tiwari	Patilar	West Champaran	BIHAR
+KPK0485	AftabAlam	Jogia Deoraj	West Champaran	BIHAR
+KPK0486	Amit Kumar Srivastava	Narkatiaganj	West Champaran	BIHAR
+KPK0487	Mohd. Atahar Karim	Harinagar	West Champaran	BIHAR
+KPK0488	Rupesh Kumar Singh	Nuniyapatti	West Champaran	BIHAR
+KPK0489	Shyam Sunder Singh	Nadda	West Champaran	BIHAR
+KPK0490	Satya Narayan Prasad	Beenwalia	West Champaran	BIHAR
+KPK0491	LalitaDevi	Nawalpur	West Champaran	BIHAR
+KPK0492	Sunil Kumar Singh	Dhamur Parshuram	Deoria	UTTAR PRADESH
+KPK0493	Arun Kumar Sharma	Amwalia	West Champaran	BIHAR
+KPK0494	Anil Kumar Bajpayee	Awasthi Tola	Sitapur	UTTAR PRADESH
+KPK0495	Amit Kumar Shukla	Mitauli	Lakhimpur Kheri	UTTAR PRADESH
+KPK0496	Radhey Shyam Singh	Mahwadi	Deoria	UTTAR PRADESH
+KPK0497	Krishna Devi Nag	Khajuri	Barabanki	UTTAR PRADESH
+KPK0498	BaburamRawat	Tehriya	Lucknow	UTTAR PRADESH
+KPK0499	PhoolChand	Tehriya	Lucknow	UTTAR PRADESH
+KPK0500	Veer Vikram Singh	Dhafra Devaria Kala	Sitapur	UTTAR PRADESH
+KPK0501	AshishVerma	Kamapur	Sitapur	UTTAR PRADESH
+KPK0502	LalchandVerma	Lalepurva Devaria Kala	Sitapur	UTTAR PRADESH
+KPK0503	Avdhesh Kumar Verma	Kalupurva Kamhera	Sitapur	UTTAR PRADESH
+KPK0504	MadhusudanSingh	Sigri Mudila	West Champaran	BIHAR
+KPK0505	Shashi Kant Singh	Sasaram	Rohtas	BIHAR
+KPK0506	Mukti Shankar Patel	Satsa	Rohtas	BIHAR
+KPK0507	Santosh Kumar Singh	Satsa	Rohtas	BIHAR
+KPK0516	SanjayKumar	Pura	Nalanda	BIHAR
+KPK0517	BirendraKumar	Amera	Nalanda	BIHAR
+KPK0518	Shyam Sundar Prasad	Kachhiyama	Nalanda	BIHAR
+KPK0519	ZeyaurRahman	Bhogari	West Champaran	BIHAR
+KPK0520	BinayRanjan	Bhathar	Nalanda	BIHAR
+KPK0521	SitaramPrasad	Mahkar	Nalanda	BIHAR
+KPK0522	ShailendraKumar	Muradali Chak	Nalanda	BIHAR
+KPK0523	Dharamveer Kumar Patel	Chand Vra	Nalanda	BIHAR
+KPK0524	Ram Avadesh Singh	Sedhan	Bhojpur	BIHAR
+KPK0525	Shiv Kumar Sah	Pironta	Bhojpur(Ara)	BIHAR
+KPK0526	Hriday Shankar Singh	Gazaipur	Bhojpur	BIHAR
+KPK0527	DineshKumar	BishunPura	Bhojpur	BIHAR
+KPK0528	Ashwini Kumar Verma	Baghi Pakar	Bhojpur	BIHAR
+KPK0529	Naresh Kumar Niraj	Kathoutia	Madhepura	BIHAR
+KPK0530	BhagwanSingh	Uttampur	Buxar	BIHAR
+KPK0531	Rajni Kant Pathak	Pathak Tola	East Champaran	BIHAR
+KPK0546	Suresh Prasad Yadav	Beldari Chak	Patna	BIHAR
+KPK0551	SatyaNarayan	Lerua	Sonbhadra	UTTAR PRADESH
+KPK0559	Ram Kumar Mishra	Gaura Garh	Sidharthnagar	UTTAR PRADESH
+KPK0560	GulamHussain	Deoria	Sidharthnagar	UTTAR PRADESH
+KPK0561	Brajesh Kumar Shukla	Allahpur	Sidharthnagar	UTTAR PRADESH
+KPK0562	Sanjay Kumar Choudhary	Deoria	Sidharthnagar	UTTAR PRADESH
+KPK0563	MaltiDevi	Kamsar	Sidharthnagar	UTTAR PRADESH
+KPK0564	NikhilMishra	Maluhan	Kushi Nagar	UTTAR PRADESH
+KPK0565	Radhe Shyam Kushwah	Basdeela Mahanth	Kushi Nagar	UTTAR PRADESH
+KPK0566	Anil Kumar Gupta	Souhrana	Kushi Nagar	UTTAR PRADESH
+KPK0567	Amit Kumar Gupta	Nautnava	Maharajganj	UTTAR PRADESH
+KPK0568	Shri Niwas Vishwakarma	Pohariya	Maharajganj	UTTAR PRADESH
+KPK0569	Arvind Kumar Mishra	Parsouni Khurd	Maharajganj	UTTAR PRADESH
+KPK0570	Krishnamohan Pratap Rao	Sonbarsa	Maharajganj	UTTAR PRADESH
+KPK0571	Shailesh Chandra Singh	Illahabad	Maharajganj	UTTAR PRADESH
+KPK0572	RamSwarath	Beebiganj Bazar	Jaunpur	UTTAR PRADESH
+KPK0573	P. K. Mohan	Shahganj	Jaunpur	UTTAR PRADESH
+KPK0574	RambughJaisawal	Bilbai Bazar	Sultanpur	UTTAR PRADESH
+KPK0575	MohammadIrfan	Mukhleespur Road	SantKabirNagar	UTTAR PRADESH
+KPK0576	Shyam Bihari Choudhary	Sonhari Bazurg	Basti	UTTAR PRADESH
+KPK0577	Ram Keshar Choudhary	Kamla Market	Basti	UTTAR PRADESH
+KPK0578	Rajesh Kumar Choudhary	Karuvaneeya	Basti	UTTAR PRADESH
+KPK0579	Ranjeet Kumar Choudhary	Vastralaya	Basti	UTTAR PRADESH
+KPK0580	Kripa Shankar Gupta	Uttarpatti	SantKabirNagar	UTTAR PRADESH
+KPK0581	Indra Prakash Choudhary	Ranipur	SantKabirNagar	UTTAR PRADESH
+KPK0582	SurendraYadav	Bhagwanpur	SantKabirNagar	UTTAR PRADESH
+KPK0583	RajkumarChoudhary	Kakarhiya	SantKabirNagar	UTTAR PRADESH
+KPK0584	SunilKumar	Badgo	SantKabirNagar	UTTAR PRADESH
+KPK0585	Rakesh Kumar Sahni	Gandhigram	SantKabirNagar	UTTAR PRADESH
+KPK0586	Someshwar Pratap Singh	Rampur Karkhana	Deoria	UTTAR PRADESH
+KPK0587	GewaDevi	Bhaluani	Deoria	UTTAR PRADESH
+KPK0588	RavindraSingh	Surajpura	Deoria	UTTAR PRADESH
+KPK0589	Arvind Pratap Malla	Padri Malla	Deoria	UTTAR PRADESH
+KPK0590	RenuDubey	SohnaathRoad	Deoria	UTTAR PRADESH
+KPK0591	VijaySingh	Ghusari Buzurg	Sidharthnagar	UTTAR PRADESH
+KPK0592	Jagdish Narayan Jaisawal	Badhni	Sidharthnagar	UTTAR PRADESH
+KPK0593	GhanshyamMishra	Sehundi	Sidharthnagar	UTTAR PRADESH
+KPK0594	AneesAhmed	Mahua	Sidharthnagar	UTTAR PRADESH
+KPK0595	Dileep Kumar Maurya	Khoriya	Sidharthnagar	UTTAR PRADESH
+KPK0596	LalChandJaisawal	Chhechhuapar	Gorakhpur	UTTAR PRADESH
+KPK0597	AniruddhaVishwakarma	Jamak Dumri #1 Dihwa	Gorakhpur	UTTAR PRADESH
+KPK0598	Narendra Lal Kushwaha	Harpur Belhi	Kushi Nagar	UTTAR PRADESH
+KPK0599	KusumSingh	Navjeevan Nursing Home	Kushi Nagar	UTTAR PRADESH
+KPK0600	EstarPrakash	Sudhi Fuana	Gorakhpur	UTTAR PRADESH
+KPK0601	AnjuDubey	Near Pandey Photo Studio	Gorakhpur	UTTAR PRADESH
+KPK0602	SanjaySingh	Pali	Gorakhpur	UTTAR PRADESH
+KPK0603	SavindraKumar	Ghuriyapar	Gorakhpur	UTTAR PRADESH
+KPK0604	JitendraChaurasia	Vijjouya Badhai tola	Gorakhpur	UTTAR PRADESH
+KPK0605	Vishnu ShankarSingh	Bhitani	Gorakhpur	UTTAR PRADESH
+KPK0606	Habibullah-	Sohas	Maharajganj	UTTAR PRADESH
+KPK0607	KushlawatiVerma	Rudrapur	Basti	UTTAR PRADESH
+KPK0608	RameshSoni	Nagar Bazar	Basti	UTTAR PRADESH
+KPK0609	Chanda DeviGupta	PaniyaraBazar	Maharajganj	UTTAR PRADESH
+KPK0610	Krishna Kumar Vishwakarma	Zahda	Maharajganj	UTTAR PRADESH
+KPK0611	Shiv Kumari Gupta	"Gyanchakchonagar,town Area"	Gorakhpur	UTTAR PRADESH
+KPK0612	BabeetaShrivastava	Master Colony	Gorakhpur	UTTAR PRADESH
+KPK0613	Kanhaiya Lal Gupta	Mitholiya	Maharajganj	UTTAR PRADESH
+KPK0614	SanjayTyagi	Chhapia-I	SantKabirNagar	UTTAR PRADESH
+KPK0615	LaljiYadav	Ousani Purwan	SantKabirNagar	UTTAR PRADESH
+KPK0616	ShaheenaPraveen	Khaleelabaad	SantKabirNagar	UTTAR PRADESH
+KPK0624	Kirpa Ram Sahu	GovindPara	Gonda	UTTAR PRADESH
+KPK0625	Parsu Ram Gupta	Mugal Jot	Gonda	UTTAR PRADESH
+KPK0626	Bal Ram Tiwari	Kazi Dewar	Gonda	UTTAR PRADESH
+KPK0627	Jamuna Prasad Tiwari	Rehra Bazar	Balrampur	UTTAR PRADESH
+KPK0628	VipinKumar	Mamudpur	Bulandshahr	UTTAR PRADESH
+KPK0629	VirendraSingh	Jamalpur	Bulandshahr	UTTAR PRADESH
+KPK0635	Udai Veer Singh	Nyamupur	Sitapur	UTTAR PRADESH
+KPK0636	OmkarNath	Murkhana	Sitapur	UTTAR PRADESH
+KPK0637	Ashok Kumar Rajvanshi	Pratappur	Hardoi	UTTAR PRADESH
+KPK0638	Ram Pati Mishra	Krishna Ram Purva	Balrampur	UTTAR PRADESH
+KPK0639	Bhai Lal Yadav	Bhawanipur	Faizabad	UTTAR PRADESH
+KPK0640	ShatrughanTiwari	Raghavpur	Balrampur	UTTAR PRADESH
+KPK0641	Sukhdev Prasad Tiwari	Hariharganj	Balrampur	UTTAR PRADESH
+KPK0642	SudhaVerma	Karawdi Khurd	Barabanki	UTTAR PRADESH
+KPK0643	NirmalaSingh	Sitapur	Sitapur	UTTAR PRADESH
+KPK0644	AbdulHasan	Sikraro	Rampur	UTTAR PRADESH
+KPK0645	MahendraSingh	Rangapur	Shahjahanpur	UTTAR PRADESH
+KPK0646	RakeshKumar	Singhapur Panai	Shahjahanpur	UTTAR PRADESH
+KPK0647	RahmatAli	Nyaypur	Sitapur	UTTAR PRADESH
+KPK0648	SanjaySingh	Tansenganj	Sitapur	UTTAR PRADESH
+KPK0649	Sohan Lal Verma	Ibrahimpur	Sitapur	UTTAR PRADESH
+KPK0656	ChitranjaanSingh	Pakahan	Saran (Chappra)	BIHAR
+KPK0658	VirendraKumar	Rampurva	Barabanki	UTTAR PRADESH
+KPK0659	Lalit Kumar Verma	Jainabad	Faizabad	UTTAR PRADESH
+KPK0660	VijayShankar	Udholi	Barabanki	UTTAR PRADESH
+KPK0661	Anjani Kumar Diwedi	Bauraman	Lucknow	UTTAR PRADESH
+KPK0662	Kamalesh Kumar Verma	Pariyapur	Barabanki	UTTAR PRADESH
+KPK0663	ShivSingh	Piparia	Lakhimpur	UTTAR PRADESH
+KPK0664	Rabish Kumar Verma	Patti Sevai	Sitapur	UTTAR PRADESH
+KPK0665	Mohd.Sareek	Kalli	Sitapur	UTTAR PRADESH
+KPK0666	Kripa Shankar Verma	Semra Khurd	Sitapur	UTTAR PRADESH
+KPK0667	RajendraPrasad	"Sherpur, Naya Gaon"	Sitapur	UTTAR PRADESH
+KPK0668	Kumud Lata Verma	Anand Nagar	Sitapur	UTTAR PRADESH
+KPK0670	JagdishPrasad	Jagdishpur	Bhojpur	BIHAR
+KPK0672	JitendraKumar	Kothwan	Patna	BIHAR
+KPK0673	Rajiv Ranjan Kumar	Bhareti	Nalanda	BIHAR
+KPK0674	UmaShankar	Belchhi	Sheikhpura	BIHAR
+KPK0675	Sanjay Kumar Pandey	Bhojdih	Sheikhpura	BIHAR
+KPK0676	Ram Nath Mahto	Bhittapar	Sheikhpura	BIHAR
+KPK0679	MukeshKumar	Chak sain	Patna	BIHAR
+KPK0680	RabindraKumar	Bhagwanpur	Nalanda	BIHAR
+KPK0686	Upendra Bihari Singh	Dharhara	Patna	BIHAR
+KPK0690	Chandra Mohan Kumar	Jamalpur	Nalanda	BIHAR
+KPK0691	SanjayKumar	Uttra	Nalanda	BIHAR
+KPK0692	ArtiDevi	Baburbanna	Nalanda	BIHAR
+KPK0693	Kamal Kant Singh	Paithna	Nalanda	BIHAR
+KPK0694	BabitaKumari	Basanpur	Nalanda	BIHAR
+KPK0695	BinitaKumari	Nepura	Nalanda	BIHAR
+KPK0696	ArunKumar	Naurojepur	Nalanda	BIHAR
+KPK0697	AbhimanyuKumar	Rahui	Nalanda	BIHAR
+KPK0698	AjayKumar	Giriyak	Nalanda	BIHAR
+KPK0699	VirendraSingh	Jhamuwas	Gurgaon	HARYANA
+KPK0702	Sangita - Singh	Naini	Chapra	BIHAR
+KPK0703	RajeshChoudhary	Mahada	Banka	BIHAR
+KPK0704	Sri Kant Yadav	Hardiabad	Munger	BIHAR
+KPK0705	MaheshKumar	Nawtolia	Munger	BIHAR
+KPK0706	Raja Ram Mandal	Devanpur	Samstipur	BIHAR
+KPK0707	BipinKumar	Parra	Begusarai	BIHAR
+KPK0708	SabitaKumari	Gouchhari	Khagaria	BIHAR
+KPK0711	MahendraPrasad	Sadha	Nalanda	BIHAR
+KPK0712	AjeetKumar	Maniyarpur Pataili	Samastipur	BIHAR
+KPK0713	YogendraSahni	Haravna	Muzaffarpur	BIHAR
+KPK0714	MalaKumari	Maheshpur	Bhagalpur	BIHAR
+KPK0715	RamnareshYadav	War Tole Baherikhar	Aurangabad	BIHAR
+KPK0716	BinduSinha	Bara Hasan	Muzaffarpur	BIHAR
+KPK0717	Saurya KantiDevi	Tari Muhalla	Bhojpur	BIHAR
+KPK0718	Ramesh Kumar Singh	"Mohanpur, Karja"	Bhojpur	BIHAR
+KPK0719	SurendraSharma	Panch Fedhwa	Buxar	BIHAR
+KPK0720	Kameshwari Prasad Singh	Dhima	Purnea	BIHAR
+KPK0722	Bashist Narayan Verma	Mirzapur Pakari	Maharajganj	UTTAR PRADESH
+KPK0723	Shrish Chand Singh	Bhiswa	Kushi Nagar	UTTAR PRADESH
+KPK0724	SitaSingh	Katrari Pertawal	Maharajganj	UTTAR PRADESH
+KPK0725	Hira Lal Gupta	Jarar	Maharajganj	UTTAR PRADESH
+KPK0726	Jawahar Lal Gupta	Mahuawa Tiwari	Maharajganj	UTTAR PRADESH
+KPK0727	IndrajeetRai	Belwa Tikar	Maharajganj	UTTAR PRADESH
+KPK0728	AnilKumar	Khutaha Bazar	Maharajganj	UTTAR PRADESH
+KPK0729	Ram Laut Mishra	Phulhar	Bansgaon	UTTAR PRADESH
+KPK0730	Shiv Shankar Mani Tripathi	Baitalpur	Deoria	UTTAR PRADESH
+KPK0731	AmitKumar	Balwa Chhatraul	West Champaran	BIHAR
+KPK0732	JahirAhmad	Mahue	West Champaran	BIHAR
+KPK0733	KusmawatiGupta	Singhorwa	Gorakhpur	UTTAR PRADESH
+KPK0734	AbdulKhalique	Laxmipur	West Champaran	BIHAR
+KPK0735	PrabhunathUpadhyay	Bahuarwa	West Champaran	BIHAR
+KPK0736	Atmasah	Mehura	West Champaran	BIHAR
+KPK0737	Iltaf Alam Ansari	Kesheria Dhobha	West Champaran	BIHAR
+KPK0738	Ashok Kumar Bharti	Jamunapur Tadwalia	West Champaran	BIHAR
+KPK0739	ImamHussain	Nautanwa	West Champaran	BIHAR
+KPK0740	AnandSrivastava	Santha	SantKabirNagar	UTTAR PRADESH
+KPK0741	VinodPrasad	Maria Fakari	West Champaran	BIHAR
+KPK0742	Md.Luquman	Saveya (De.)	West Champaran	BIHAR
+KPK0743	PramodSingh	Nadda Parsauni	West Champaran	BIHAR
+KPK0744	SantoshChaudhary	Patarawa Gurvaliya	West Champaran	BIHAR
+KPK0745	NathuniDubey	Kurwa Mathia	West Champaran	BIHAR
+KPK0746	DineshChaudhary	Champapur Gonauli	West Champaran	BIHAR
+KPK0747	Pradeep Kumar Giri	"Mahuawa, Katharwa"	West Champaran	BIHAR
+KPK0748	Swami Nath Thakur	Belwa	West Champaran	BIHAR
+KPK0749	AmjadAli	Lagnlaha Chautarwa	West Champaran	BIHAR
+KPK0752	MohammadMashraful	Baltharwa	East Champaran	BIHAR
+KPK0753	DhirendraKumar	Bhandar	East Champaran	BIHAR
+KPK0754	BirendraPrasad	Asthawan	Nalanda	BIHAR
+KPK0755	Prem Kumar Choudhary	Hussainpur	Nalanda	BIHAR
+KPK0756	SanjeevKumar	Dumrawan	Nalanda	BIHAR
+KPK0757	ParbinKumar	Jagatnandanpur	Nalanda	BIHAR
+KPK0758	Arun Kumar Patel	Juafar	Nalanda	BIHAR
+KPK0759	Sheo Kumar Prasad Singh	Jodhan Bigha	Patna	BIHAR
+KPK0760	GirwardhariSingh	Nirpur	Nalanda	BIHAR
+KPK0761	SubhashKumar	Bashnima	Nalanda	BIHAR
+KPK0762	Anuj Kumar Singh	Budhana	Bulandshahr	UTTAR PRADESH
+KPK0763	SabirKhan	Khaij Jallapur	Bulandshahr	UTTAR PRADESH
+KPK0764	SatyendraSingh	Hajratpur	Bulandshahr	UTTAR PRADESH
+KPK0765	Sanjay Kr. Singh	Kamona	Bulandshahr	UTTAR PRADESH
+KPK0766	HarenderSingh	Kaneni Bedrampur	Bulandshahr	UTTAR PRADESH
+KPK0767	Vinod Kr. Singh	Mudi Bakapur	Bulandshahr	UTTAR PRADESH
+KPK0768	PushpenderSingh	Khadana	Bulandshahr	UTTAR PRADESH
+KPK0769	Brijesh Singh Dhankar	Khushaalpur	Bulandshahr	UTTAR PRADESH
+KPK0770	Jai Kishan Gaur	Kailawan	Bulandshahr	UTTAR PRADESH
+KPK0771	Asha Devi Sirohi	Turkipurawas	Bulandshahr	UTTAR PRADESH
+KPK0772	UshaGaud	Sehadpur Bairi	Bulandshahr	UTTAR PRADESH
+KPK0773	JaipalSingh	Naru	Bulandshahr	UTTAR PRADESH
+KPK0774	RajneeDevi	Syalari	Bulandshahr	UTTAR PRADESH
+KPK0775	ShatankurShah	Ahmad Garh	Bulandshahr	UTTAR PRADESH
+KPK0776	Yashpal Singh Bhati	Ghanola	Gautam Buddha Nagar	UTTAR PRADESH
+KPK0777	Rajesh Kumar Singh	Raipur Tikari	Aligarh	UTTAR PRADESH
+KPK0778	MarkandePrasad	Musardhara	Sonbhadra	UTTAR PRADESH
+KPK0779	KfeelMukhtar	Bishrekhi	Sonbhadra	UTTAR PRADESH
+KPK0780	ManishKumar	Kukroan	Purnea	BIHAR
+KPK0781	Rama Shankar Prasad	Satal	Kishanganj	BIHAR
+KPK0782	NishaDevi	Shripur	Bhagalpur	BIHAR
+KPK0783	KumarSahab	Amari Kukron	Purnea	BIHAR
+KPK0784	SunitaGupta	Banipur	Katihar	BIHAR
+KPK0785	VibhaDevi	Babhani	Madhepura	BIHAR
+KPK0786	Om Prakash Sharma	Rahmapur	Aligarh	UTTAR PRADESH
+KPK0788	RampatiPaswan	Karmao	Sonbhadra	UTTAR PRADESH
+KPK0789	Beriya Ram Bharti	Petwedh	Sonbhadra	UTTAR PRADESH
+KPK0790	Shri krishanChander	Lohari	Panipat	HARYANA
+KPK0791	Satish Kumar Malik	Pinana	Sonepat	HARYANA
+KPK0792	Pradeep Kumar Sharma	Ganyawali	Aligarh	UTTAR PRADESH
+KPK0793	GavendraSingh	Skekhoopur	Bulandshahr	UTTAR PRADESH
+KPK0794	Anand Singh Chauhan	Sirsa Tippu	Etah	UTTAR PRADESH
+KPK0795	ChandraBhashkar	Giriya	Sonbhadra	UTTAR PRADESH
+KPK0796	NarSingh	Sirsiyan Jethi	Sonbhadra	UTTAR PRADESH
+KPK0797	Anoop Kumar Singh	Durawal Kalan	Sonbhadra	UTTAR PRADESH
+KPK0799	Mukesh Kumar Khokhra	Bhador	Panipat	HARYANA
+KPK0800	Beerbal Singh Mehla	Mohana	Sonepat	HARYANA
+KPK0801	Ramesh Chandra Rana	Moei	Sonepat	HARYANA
+KPK0802	Jaikaran Satish Singh Balan	Mahlana	Sonepat	HARYANA
+KPK0803	Rammehar Singh Narwal	Waisar	Panipat	HARYANA
+KPK0804	Mahavir Singh Bhim singh Punia	Didwari	Panipat	HARYANA
+KPK0805	Dalveer Singh Kandhol	Alupur	Panipat	HARYANA
+KPK0806	Bijendra Singh Maan	Dhram Garh	Panipat	HARYANA
+KPK0808	Ajmer Singh Knadol	Kurana	Panipat	HARYANA
+KPK0809	SahabSingh	Khanda	Sonepat	HARYANA
+KPK0810	VikashGhanghas	Bandh	Panipat	HARYANA
+KPK0812	JagdishChandra	Mukinpur	Sonepat	HARYANA
+KPK0813	Shri Joginder Singh Chopda	Khandra	panipat	HARYANA
+KPK0814	KamlaPrashad	Broali	Sonbhadra	UTTAR PRADESH
+KPK0815	Chander Singh Malik	Sargthal	Sonepat	HARYANA
+KPK0816	DharmenderSingh	SalimSirMajra	Sonepat	HARYANA
+KPK0817	BijenderSingh	Barwasani	Sonepat	HARYANA
+KPK0820	PraveenKumar	Silana	Sonepat	HARYANA
+KPK0821	SubhashSharma	Ludhpura	Bulandshahr	UTTAR PRADESH
+KPK0822	Subhash Chand Sharma	Raniwala	Bulandshahr	UTTAR PRADESH
+KPK0823	RamdhaniSingh	Kohratha	Sonbhadra	UTTAR PRADESH
+KPK0824	CharanSingh	Ghori Bachera	Gautam Buddha Nagar	UTTAR PRADESH
+KPK0825	Om Dutt Sharma	Patadi	Gautam Buddha Nagar	UTTAR PRADESH
+KPK0826	Karan Singh Chhokar	Kiwada	Panipat	HARYANA
+KPK0827	Shiv Sambhal Tiwari	Madainiya	Sonbhadra	UTTAR PRADESH
+KPK0828	BijendraSingh	Urlana Kalan	Panipat	HARYANA
+KPK0829	RameshKumar	Jondhan Kalan	Panipat	HARYANA
+KPK0830	SurajPrasad	Kanhari	Sonbhadra	UTTAR PRADESH
+KPK0831	ShivSagar	Ghuwaas	Sonbhadra	UTTAR PRADESH
+KPK0832	Kunwar Ram Singh	Persona	Sonbhadra	UTTAR PRADESH
+KPK0833	Kunwar Rampal Singh	Ghuaas Colony	Sonbhadra	UTTAR PRADESH
+KPK0834	AmarNath	Rumma	Sonbhadra	UTTAR PRADESH
+KPK0835	RajKumar	Barondhi	Sonbhadra	UTTAR PRADESH
+KPK0836	DharamJeet	Rumma	Sonbhadra	UTTAR PRADESH
+KPK0837	MishriLal	Rumma	Sonbhadra	UTTAR PRADESH
+KPK0838	AliyaVarsi	Dhanawal	Sonbhadra	UTTAR PRADESH
+KPK0839	Dhirendra Kumar Singh	Khudiya	Sonbhadra	UTTAR PRADESH
+KPK0840	ManojKumar	Sirvit	Sonbhadra	UTTAR PRADESH
+KPK0841	Paras Nath Singh	Murtiya	Sonbhadra	UTTAR PRADESH
+KPK0842	Satendra Kumar Singh	Murtiya	Sonbhadra	UTTAR PRADESH
+KPK0843	SantoshShukla	Kevali	Sonbhadra	UTTAR PRADESH
+KPK0844	RamanandPathak	Kevta	Sonbhadra	UTTAR PRADESH
+KPK0845	Shri Chander Bhushan Tripathi	Devghata Gaharwar	Mirzapur	UTTAR PRADESH
+KPK0848	txtFName1 txtMName1 txtLName1	Chochra	Karnal	HARYANA
+KPK0849	Shri DiwanSingh	Popra	Karnal	HARYANA
+KPK0850	Shri GurdayalSingh	Bassi	Karnal	HARYANA
+KPK0851	Shri Hardeep Singh Sindher	Jai Singh Pura	Karnal	HARYANA
+KPK0852	Shri VirenderKumar	Babail	Panipat	HARYANA
+KPK0853	Shri PardeepKumar	Salvan	Karnal	HARYANA
+KPK0854	Shri YashpalSingh	Gumar	Sonepat	HARYANA
+KPK0855	Shri NasibSingh	Chor Karsa	Karnal	HARYANA
+KPK0856	Shri OmPrakash	Purenia	Mirzapur	UTTAR PRADESH
+KPK0857	Shri Dharmendra Narayan Pandey	Nikrika	Mirzapur	UTTAR PRADESH
+KPK0858	Shri Raj Narayan Singh	Khoradih	Mirzapur	UTTAR PRADESH
+KPK0859	Shri Rishi Narayan Singh	Sonvarsa	Mirzapur	UTTAR PRADESH
+KPK0860	Smt. VidhyawatiPatel	Bhava Bazar	Mirzapur	UTTAR PRADESH
+KPK0861	Shri Sanjay Kumar Patel	Mohanvadi	Sonbhadra	UTTAR PRADESH
+KPK0862	Shri Rana Vijendra Singh	Silhata	Sonbhadra	UTTAR PRADESH
+KPK0863	SheshmaniBeasha	Khaddi Kala	Sidhi	MADHYA PRADESH
+KPK0864	Shri Prem Kumar Sharma Jasmer	Shidpur	Karnal	HARYANA
+KPK0865	Shri Sher SinghIsham Singh	Jamba	Karnal	HARYANA
+KPK0866	Kanwer Pal Rana	Rahara	Karnal	HARYANA
+KPK0867	Tilak Raj Rana	Bahri	Karnal	HARYANA
+KPK0868	Shri Krishan Kumar Deshwal	Atawla	Panipat	HARYANA
+KPK0869	Shri Rakesh.	Sitawali	Sonepat	HARYANA
+KPK0871	Shri SantramArya	Jalmana	Panipat	HARYANA
+KPK0872	Shri Rajbeer.	Puthi	Sonepat	HARYANA
+KPK0873	MangalSingh	Lusa	Mirzapur	UTTAR PRADESH
+KPK0874	JawaharSingh	Kalawari Mafi	Mirzapur	UTTAR PRADESH
+KPK0875	Jagdish Prasad Singh	Purenia	Mirzapur	UTTAR PRADESH
+KPK0876	MadanSingh	Bhawanipur	Mirzapur	UTTAR PRADESH
+KPK0877	Shri RajKishan	Barani Khalsa	Karnal	HARYANA
+KPK0878	Shri KeharSingh	Sangoi	Karnal	HARYANA
+KPK0879	Shri Dev Kumar Singh	Kushumha	Mirzapur	UTTAR PRADESH
+KPK0880	Shri Shiv Bahadur Singh	Amoi	Mirzapur	UTTAR PRADESH
+KPK0881	Shri Lok Mani Mishra	Patehra Kalan	Mirzapur	UTTAR PRADESH
+KPK0882	Shri Rajesh Kumar Pandey	Shobhi	Mirzapur	UTTAR PRADESH
+KPK0883	Shri Prakash Singh	Sugapakh	Mirzapur	UTTAR PRADESH
+KPK0884	Shri Avshesh Kumar Pandey	Devri	Mirzapur	UTTAR PRADESH
+KPK0885	Shrri GulabDube	Sugapakh	Mirzapur	UTTAR PRADESH
+KPK0886	Shri Ravi Shankar Tiwari	Boda	Mirzapur	UTTAR PRADESH
+KPK0887	Shri Dr. Radehey Shyam Morya	Babura Bhairo Dayal	Mirzapur	UTTAR PRADESH
+KPK0888	Shri Vaid Prakash Shukla	Karoda	Mirzapur	UTTAR PRADESH
+KPK0889	Shri YashvantSingh	Layan	Mirzapur	UTTAR PRADESH
+KPK0890	Shri Ram Bahadur Singh	Lalapur	Mirzapur	UTTAR PRADESH
+KPK0891	Shri Kamla Shankar Singh	Nadauli Patehra	Mirzapur	UTTAR PRADESH
+KPK0892	Shri Uday Narayan Singh	Pawari Kalan	Mirzapur	UTTAR PRADESH
+KPK0893	Shri RavinderKumar	Bandha Barauli	Sonbhadra	UTTAR PRADESH
+KPK0894	Shri Ashwani Kumar Gupta	Jogi Pahari Dadar	Sidhi	MADHYA PRADESH
+KPK0895	Shri Anil Kumar Gautam	Gijwar	Sidhi	MADHYA PRADESH
+KPK0896	Smt. PhoolmatiDevi	Lal Ganj	Mirzapur	UTTAR PRADESH
+KPK0897	Shri MoolchandSingh	Sarhara	Mirzapur	UTTAR PRADESH
+KPK0898	Shri Rajesh Kumar Singh	Maphgavan	Mirzapur	UTTAR PRADESH
+KPK0899	Shri Ashok Kumar Tripathi	Dhamharia Kalan	Mirzapur	UTTAR PRADESH
+KPK0900	Smt. ChandravatiDevi	Tilav No. 4	Mirzapur	UTTAR PRADESH
+KPK0901	Shri Om Prakash Agrahari	Haliyan	Mirzapur	UTTAR PRADESH
+KPK0902	Shri Promad Kumar Patel	Ukraha	Sidhi	MADHYA PRADESH
+KPK0905	Shri UmakantDwedi	Tharparsiya	Mirzapur	UTTAR PRADESH
+KPK0916	Shri RajpalSingh	Ghilod Kalan	Rohtak	HARYANA
+KPK0918	Shri Raj Ballabh Tripathi	Dhamhariya Kalan	Mirzapur	UTTAR PRADESH
+KPK0919	Shri Mani Prasad Tiwari	Harshan Purva	Mirzapur	UTTAR PRADESH
+KPK0920	Shri LaxmiKant Singh	Tulsipur	Mirzapur	UTTAR PRADESH
+KPK0921	Shri KuldeepSingh	Thari	Karnal	HARYANA
+KPK0922	Shri PanchdevDube	Ganghara Kalan	Mirzapur	UTTAR PRADESH
+KPK0923	Shri Sushil Kumar Dube	Kharihar Kalan	Mirzapur	UTTAR PRADESH
+KPK0924	Shri RambihariSingh	Bhatvari	Mirzapur	UTTAR PRADESH
+KPK0925	Shri RadhikaPrasad	Tilav 004	Mirzapur	UTTAR PRADESH
+KPK0926	Shri LallooSingh	Tilav 004	Mirzapur	UTTAR PRADESH
+KPK0927	Shri Anuj Kumar Singh	Hinauta	Mirzapur	UTTAR PRADESH
+KPK0928	Shri Shailendra Kumar Dubey	Raipur Pokhta	Mirzapur	UTTAR PRADESH
+KPK0929	Shri DwarikaPrasad	Tilav No. 4	Mirzapur	UTTAR PRADESH
+KPK0930	Narvdeshwar Prasad Mishra	Kolkum Kalan	Mirzapur	UTTAR PRADESH
+KPK0931	Rajendra Prasad Bais	Naikin	Sidhi	MADHYA PRADESH
+KPK0932	Shri Ayodhya Prasad Gupta	Chandohi Dol	Sidhi	MADHYA PRADESH
+KPK0933	Shri RajkumarPatel	Mahuwar	Sidhi	MADHYA PRADESH
+KPK0934	Smt. Kemli Devi Patel	Supela	Sidhi	MADHYA PRADESH
+KPK0935	Shri Nakchedi Prasad Patel	Rajgarh	Sidhi	MADHYA PRADESH
+KPK0936	Shri Din Bandhu Singh Chauhan	Saijanha	Sidhi	MADHYA PRADESH
+KPK0937	Shri BrijendraSingh	Ganjari	Sidhi	MADHYA PRADESH
+KPK0938	Shri Damodar Prasad Gupta	Khadaura	Sidhi	MADHYA PRADESH
+KPK0939	Shri Ram Niwas Jaishwal	Amehiya	Sidhi	MADHYA PRADESH
+KPK0940	Smt. SashiKala	Pondi	Sidhi	MADHYA PRADESH
+KPK0941	Shri Kripa Shankar Mishra	Mishrauli	Mirzapur	UTTAR PRADESH
+KPK0942	Shri NareshKumar	Juan	Sonepat	HARYANA
+KPK0943	Shri Rajendra Prasad Kushwaha	Vaid Pur	Mirzapur	UTTAR PRADESH
+KPK0944	Lal Bhadur Baishya	Badesar	Sidhi	MADHYA PRADESH
+KPK0945	Ganesh Prasad Baish	Tala	Sidhi	MADHYA PRADESH
+KPK0946	Sant Kumar Baishya	Ramgarh	Sidhi	MADHYA PRADESH
+KPK0947	Padma Dhar Singh	Banjari	Sidhi	MADHYA PRADESH
+KPK0948	RamsiyaBaish	Mau	Sidhi	MADHYA PRADESH
+KPK0949	Abdul Naeem Ansari	Rimari	Sidhi	MADHYA PRADESH
+KPK0950	Rajesh Singh Chauhan	Kerehiya	Sidhi	MADHYA PRADESH
+KPK0951	Dharam Das Vaishya	Etaha	Sidhi	MADHYA PRADESH
+KPK0952	Ramayan Prasad Vaishya	Dhanaha	Sidhi	MADHYA PRADESH
+KPK0953	Saukhi Lal Baish	Bajranggarh	Sidhi	MADHYA PRADESH
+KPK0954	Bhaiya Lal Baish	Raghunathpur	Sidhi	MADHYA PRADESH
+KPK0955	Sanjay Kumar Tiwari	Udaykaranpur	Sant Ravidas Nagar	UTTAR PRADESH
+KPK0956	Ramsushil Singh Bais	Tala	Sidhi	MADHYA PRADESH
+KPK0957	Vinod Kumar Tiwari	Padakhuri (Pawai)	Sidhi	MADHYA PRADESH
+KPK0958	Ram Kumar Gupta	Amganw	Sidhi	MADHYA PRADESH
+KPK0959	Shesh Mani Bais	Khantra	Sidhi	MADHYA PRADESH
+KPK0960	Bhola Prasad Patel	Amiliya	Sidhi	MADHYA PRADESH
+KPK0961	Raghuwar Sharan Baishy	Maura	Sidhi	MADHYA PRADESH
+KPK0962	Madan Lal Yadav	Khejroli	Jaipur	RAJASTHAN
+KPK0963	Shaitan Lal Meena	Nagalpurohit	Jaipur	RAJASTHAN
+KPK0964	Lalit Kishor Yadav	Barwara	Jaipur	RAJASTHAN
+KPK0965	Ramesh Kumar Devenda	Rajawas	Jaipur	RAJASTHAN
+KPK0966	Anil Kumar Yadav	Samod	Jaipur	RAJASTHAN
+KPK0967	Shyam Lal Sharma	Kalyanpura	Jaipur	RAJASTHAN
+KPK0968	VinodKumar	Harota	Jaipur	RAJASTHAN
+KPK0969	RadheshyamYadav	Nagal Koju	Jaipur	RAJASTHAN
+KPK0970	Mahesh Kumar Yadav	Samod	Jaipur	RAJASTHAN
+KPK0971	Sharvan Kumar Yadav	Sirsali	Jaipur	RAJASTHAN
+KPK0972	Ram Prakash Sharma	Ladpur	Hathras	UTTAR PRADESH
+KPK0973	Yogendra Kumar Saiger	Gari Dharu	Hathras	UTTAR PRADESH
+KPK0974	RajendraSingh	Nagala Paupa	Hathras	UTTAR PRADESH
+KPK0975	DevendraSingh	Shekhupur Ajeet	Hathras	UTTAR PRADESH
+KPK0976	Raj Pratap Singh	Gwarau	Hathras	UTTAR PRADESH
+KPK0977	ArjunSingh	Komari	Hathras	UTTAR PRADESH
+KPK0978	DronveerSingh	Jahangirpur	Hathras	UTTAR PRADESH
+KPK0979	MaheshChandra	Khera	Hathras	UTTAR PRADESH
+KPK0980	Ashok Kumar Sharma	Vijhari	Hathras	UTTAR PRADESH
+KPK0981	Anup Kumar Sharma	Sasni	Hathras	UTTAR PRADESH
+KPK0982	Shravan Kumar Sangar	Farouli	Hathras	UTTAR PRADESH
+KPK0983	Uma Shankar Rawat	Khorna	Hathras	UTTAR PRADESH
+KPK0984	Bhudev Prasad Rawat	Khorna	Hathras	UTTAR PRADESH
+KPK0985	Mukesh Kumar Pathak	Hauda	Hathras	UTTAR PRADESH
+KPK0986	Mukesh Kumar Sharma	Virkilan	Hathras	UTTAR PRADESH
+KPK0987	PradeepKumar	Vir Nagar	Hathras	UTTAR PRADESH
+KPK0988	Raj Kumar Singh	Gari Singha	Hathras	UTTAR PRADESH
+KPK0989	MotiLal	Lutsau	Hathras	UTTAR PRADESH
+KPK0990	Dharam Veer Sharma	Garhi Jaini	Hathras	UTTAR PRADESH
+KPK0991	HotiSingh	Shekhupur Madan	Hathras	UTTAR PRADESH
+KPK0992	Raj Kumar Singh	Shekhupur Madan	Hathras	UTTAR PRADESH
+KPK0993	AshaDevi	Shekhupur Madan	Hathras	UTTAR PRADESH
+KPK0994	Harendra Kumar Sharma	Gwarau Kala	Hathras	UTTAR PRADESH
+KPK0995	DurgeshUpadaya	Jalal Pur	Hathras	UTTAR PRADESH
+KPK0996	Mukesh Kumar Singh	Gari Singha	Hathras	UTTAR PRADESH
+KPK0997	Sukh Veer Singh	Jafrabad	Hathras	UTTAR PRADESH
+KPK0998	Rajendra Kumar Saini	Nimari	Jaipur	RAJASTHAN
+KPK0999	Puran Mal Saini	Vijaysinghpura	Jaipur	RAJASTHAN
+KPK1000	Rajesh Kumar Yadav	Lalpura	Jaipur	RAJASTHAN
+KPK1001	BanitaThakur	Karlash	Shimla	HIMACHAL PRADESH
+KPK1002	YogeshKumar	Selampur	Aligarh	UTTAR PRADESH
+KPK1003	Gajender Pal Singh	Anhan	Hathras	UTTAR PRADESH
+KPK1004	SodanSingh	Garibalna	Hathras	UTTAR PRADESH
+KPK1005	Yogesh Kumar Sharma	Gahlau	Aligarh	UTTAR PRADESH
+KPK1006	MukeshKumar	Dhatoli	Aligarh	UTTAR PRADESH
+KPK1007	YogendraSingh	Chotiballabh	Aligarh	UTTAR PRADESH
+KPK1008	NULL	Majupur	Aligarh	UTTAR PRADESH
+KPK1009	HardevKumar	Mandhole	Shimla	HIMACHAL PRADESH
+KPK101	Ram Nath Mishra	Bangra Bujurg	Siwan	BIHAR
+KPK1010	RakeshKumar	Sheel	Shimla	HIMACHAL PRADESH
+KPK1011	ManojKumar	Brall	Shimla	HIMACHAL PRADESH
+KPK1012	Sandeep Kumar Chajta	Kathasu	Shimla	HIMACHAL PRADESH
+KPK1013	Pal Dev Thakur	Satoh	Mandi	HIMACHAL PRADESH
+KPK1014	BihariLal	Nalsar	Mandi	HIMACHAL PRADESH
+KPK1015	Lalit Kumar Thakur	Kumi	Mandi	HIMACHAL PRADESH
+KPK1016	CharanSingh	Talesara	Aligarh	UTTAR PRADESH
+KPK1017	JagveerSingh	Dantau	Aligarh	UTTAR PRADESH
+KPK1018	RajkumarSingh	Nagla BalRam	Aligarh	UTTAR PRADESH
+KPK1019	RajneeSharma	Nagla Mallu	Aligarh	UTTAR PRADESH
+KPK1020	OmveerSingh	Gounda	Aligarh	UTTAR PRADESH
+KPK1021	RamjiLal	Garhi Parti Banarasi	Hathras	UTTAR PRADESH
+KPK1022	ManojKumar	Badanpur	Hathras	UTTAR PRADESH
+KPK1023	KrishnaKumar	Hasayan	Hathras	UTTAR PRADESH
+KPK1024	AjayPaurash	Gandola	Hathras	UTTAR PRADESH
+KPK1025	SatyaveerSingh	Mahwala	Aligarh	UTTAR PRADESH
+KPK1026	BalVikas	Subkara	Aligarh	UTTAR PRADESH
+KPK1027	Omeshwar Prasad Yadav	Mandaminda	Jaipur	RAJASTHAN
+KPK1028	Dinesh Kumar Mangal	Badijodi	Jaipur	RAJASTHAN
+KPK1029	Jagdish Prasad Jat	Rampura	Jaipur	RAJASTHAN
+KPK1030	Mangla Ram Gujar	Datali Ki Dhani	Jaipur	RAJASTHAN
+KPK1031	MaliramGujar	Paladi	Jaipur	RAJASTHAN
+KPK1032	Gopal Lal Yadav	Ghinoi	Jaipur	RAJASTHAN
+KPK1033	MangilalYadav	Jaisinghpura	Jaipur	RAJASTHAN
+KPK1034	Kailash Chand Yadav	Khori	Jaipur	RAJASTHAN
+KPK1035	Rameshwar Lal Mehra	Hasthera	Jaipur	RAJASTHAN
+KPK1036	YadramDhabhai	Govindpura	Jaipur	RAJASTHAN
+KPK1037	Hans Raj Gujar	Peeplod Narayan	Jaipur	RAJASTHAN
+KPK1038	PawanKumar	Toshigarh	Aligarh	UTTAR PRADESH
+KPK1039	OmveerSingh	Pipli	Aligarh	UTTAR PRADESH
+KPK1040	HariomSingh	Arniya	Aligarh	UTTAR PRADESH
+KPK1041	LokmanSingh	Garuha	Aligarh	UTTAR PRADESH
+KPK1042	Dr. Brij BhusanPawan Kumar	NayaBansh	Hathras	UTTAR PRADESH
+KPK1043	Sanjeev Kumar Singh	Naya Bansh	Hathras	UTTAR PRADESH
+KPK1044	Manoj Kumar Agnihotri	Packwada	Hathras	UTTAR PRADESH
+KPK1045	Narayan Hari Sharma	Veer Nagar	Hathras	UTTAR PRADESH
+KPK1046	SureshKumar	Payandapur	Aligarh	UTTAR PRADESH
+KPK1047	VijendraKant	Muharia	Hathras	UTTAR PRADESH
+KPK1048	Nitesh Kumar Agnihotri	Datora	Hathras	UTTAR PRADESH
+KPK1049	Parmod Kumar Pathak	Kanau	Hathras	UTTAR PRADESH
+KPK1050	InderjeetSingh	Naya	Aligarh	UTTAR PRADESH
+KPK1051	VirenderSingh	Mai	Aligarh	UTTAR PRADESH
+KPK1052	HarveerSingh	Rampur	Aligarh	UTTAR PRADESH
+KPK1053	DhramveerSingh	Jaitholi	Aligarh	UTTAR PRADESH
+KPK1054	Prabhu Narayan Gurjar	Maid	Jaipur	RAJASTHAN
+KPK1055	Babu Lal Gurjar	Dholaj	Jaipur	RAJASTHAN
+KPK1056	Shiv Ram Gurjar	Talwa	Jaipur	RAJASTHAN
+KPK1057	Phool Chand Yadav	Nawalpura	Jaipur	RAJASTHAN
+KPK1058	Ramesh Chand Gurjar	Mohan Gurjar Ki Dhadi	Jaipur	RAJASTHAN
+KPK1059	KrishnaPawar	Mordongari Kala	Chhindwara	MADHYA PRADESH
+KPK1060	Manoj Kumar Upadhyay	Bapandai	Hathras	UTTAR PRADESH
+KPK1061	DurgeshPawar	Khajri	Chhindwara	MADHYA PRADESH
+KPK1062	Ram Kishor Pawar	Karaboh	Chhindwara	MADHYA PRADESH
+KPK1063	Hukum Chand Suryavanshi	Parpada	Chhindwara	MADHYA PRADESH
+KPK1064	RameshwarThakre	Kundali Kala	Chhindwara	MADHYA PRADESH
+KPK1065	OmkumarChandravanshi	Mankadehi khurd	Chhindwara	Madhya Pradesh
+KPK1066	Prem Kumar Suryavanshi	Bijagora	Chhindwara	MADHYA PRADESH
+KPK1067	Dimak Chand Pawar	Kanhargaon	Chhindwara	MADHYA PRADESH
+KPK1068	Deepak Kumar Sahu	Ner	Chhindwara	MADHYA PRADESH
+KPK1069	Daulat Ram Sahu	Sihora	Chhindwara	MADHYA PRADESH
+KPK1070	Shekh Salam Ansari	Khamihira	Chhindwara	MADHYA PRADESH
+KPK1071	GumantraParteti	Sagoniya	Chhindwara	MADHYA PRADESH
+KPK1072	Chiman Lal Suryavanshi	Sajva	Chhindwara	MADHYA PRADESH
+KPK1073	VishnuPawar	Gajandhoh	Chhindwara	MADHYA PRADESH
+KPK1074	ShripalPawar	Ridhora	Chhindwara	MADHYA PRADESH
+KPK1075	AslekhanYaduvanshi	Richeda	Chhindwara	MADHYA PRADESH
+KPK1076	Mukesh Kumar Yadav	Takrada	Jaipur	RAJASTHAN
+KPK1077	Lala Ram Yadav	Sherpur	Jaipur	RAJASTHAN
+KPK1078	Rohitash Kumar Gurjar	Sirohi	Jaipur	RAJASTHAN
+KPK1079	Nathu Lal Kumawat	Bagwara	Jaipur	RAJASTHAN
+KPK1080	Indrajeet Singh Raghuvanshi	Pindrai Kalan	Chhindwara	MADHYA PRADESH
+KPK1081	Jay Prakash Suryawanshi	Rohana Kalan	Chhindwara	MADHYA PRADESH
+KPK1082	SureshSahu	Umareth	Chhindwara	MADHYA PRADESH
+KPK1083	Purnendra Pinki Pawar	Kacharam	Chhindwara	MADHYA PRADESH
+KPK1084	Sernam Singh Yadav	Sadikpur	Etah	UTTAR PRADESH
+KPK1085	BrimhanandGupta	Sahawar	Etah	UTTAR PRADESH
+KPK1086	OmkarSingh	Hasanpur	Etah	UTTAR PRADESH
+KPK1087	Santosh Kumar Gupta	Sahawar	Etah	UTTAR PRADESH
+KPK1088	Vinay Kumar Sharma	Moh. Kishan	Hathras	UTTAR PRADESH
+KPK1089	PuranSingh	Gopalpur	Hathras	UTTAR PRADESH
+KPK1090	Gaurav Kumar Rana	Kanau	Hathras	UTTAR PRADESH
+KPK1091	Omprakash Akhil Chodhri	Jasrana	Hathras	UTTAR PRADESH
+KPK1092	Parveen Kumar Sharma	Afoya	Hathras	UTTAR PRADESH
+KPK1093	Harendra Kumar Balyan	Ruderpur	Hathras	UTTAR PRADESH
+KPK1094	Om Prakash Sahu	iklehara	Chhindwara	MADHYA PRADESH
+KPK1095	VijayPawar	Heerawadi	Chhindwara	MADHYA PRADESH
+KPK1096	Pankaj Kumar Sahu	Sarna	Chhindwara	MADHYA PRADESH
+KPK1097	KruparamChandrawanshi	Bhajiya	Chhindwara	MADHYA PRADESH
+KPK1098	Ranbeer Kumar Suryawanshi	Siregaon	Chhindwara	MADHYA PRADESH
+KPK1099	Bhudev Prasad Sharma	Dumari	Aligarh	UTTAR PRADESH
+KPK1100	Ashish Kumar Soni	Dagawani Pipariya	Chhindwara	MADHYA PRADESH
+KPK1101	Shiv Nandan Nandwanshi	Khunajhir	Chhindwara	MADHYA PRADESH
+KPK1102	Rukmesh Kumar Singh	Bas Harji	Aligarh	UTTAR PRADESH
+KPK1103	YogeshYadav	Singodi	Chhindwara	MADHYA PRADESH
+KPK1104	YogeshSahu	Rajola	Chhindwara	MADHYA PRADESH
+KPK1105	DhanpalChandrawanshi	Mujawar Mal	Chhindwara	MADHYA PRADESH
+KPK1106	Ram Kishor Joshi	Sahar	Mathura	UTTAR PRADESH
+KPK1107	Bhagat Singh Jadon	Dirawali	Mathura	UTTAR PRADESH
+KPK1108	Shiv Charan Singh	Sei	Mathura	UTTAR PRADESH
+KPK1109	Hemant Kumar Jyoshi	Sahar	Mathura	UTTAR PRADESH
+KPK1110	RamSingh	Basai Bujurg	Mathura	UTTAR PRADESH
+KPK1111	SantoshKarade	Guraiya	Chhindwara	MADHYA PRADESH
+KPK1112	VijendraSingh	Nogaon	Mathura	UTTAR PRADESH
+KPK1113	Sheesh Pal Chodhri	Tumola	Mathura	UTTAR PRADESH
+KPK1114	Devendra Kumar Chandel	Mungapar	Seoni	MADHYA PRADESH
+KPK1115	Sunil Kumar Dixit	Jhagara	Seoni	MADHYA PRADESH
+KPK1116	Tribhuvan Kumar Saxena	Hutera	Seoni	MADHYA PRADESH
+KPK1117	Vinit Kumar Baghel	Khapabazar	Seoni	MADHYA PRADESH
+KPK1118	TarkeshwarTrivedi	Dundaseoni	Seoni	MADHYA PRADESH
+KPK1119	Dinesh Singh Thakur	Bijna	Seoni	MADHYA PRADESH
+KPK1120	Hemant Kumar Raghuwanshi	Kuhiya	Chhindwara	MADHYA PRADESH
+KPK1121	Dinesh Kumar Thakur	Khairapalari	Seoni	MADHYA PRADESH
+KPK1122	Jagdeesh Prasad Chokse	Kareli	Seoni	MADHYA PRADESH
+KPK1123	Niranjan Singh Patel	Lathgaon	Seoni	MADHYA PRADESH
+KPK1124	Manoj Kumar Jhariya	Jhiri	Seoni	MADHYA PRADESH
+KPK1125	Kamalesh Kumar Thakur	Kamli	Seoni	MADHYA PRADESH
+KPK1126	Dilip Kumar Thakur	Badpani	Seoni	MADHYA PRADESH
+KPK1127	Jay Amber Thakre	Sarra	Chhindwara	MADHYA PRADESH
+KPK1128	VinodSisodiya	Babariya Kohka	Seoni	MADHYA PRADESH
+KPK1129	BalveerSingh	Nagla Gajua	Aligarh	UTTAR PRADESH
+KPK1130	Shiv Kumar Sahu	Chavadi	Seoni	MADHYA PRADESH
+KPK1131	Uttam Kumar Sanodiya	Sagar	Seoni	MADHYA PRADESH
+KPK1132	Akhilesh Kumar Mehra	Machwada	Seoni	MADHYA PRADESH
+KPK1133	RamswarupUsrethe	Jamuniya	Chhindwara	MADHYA PRADESH
+KPK1134	Daulat Singh Verma	Gomgaon	Chhindwara	MADHYA PRADESH
+KPK1135	GovindGadhewal	Chand	Chhindwara	MADHYA PRADESH
+KPK1136	Ashish Kumar Suryawanshi	Pagara	Chhindwara	MADHYA PRADESH
+KPK1137	PushpenderKumar	Sikur	Hathras	UTTAR PRADESH
+KPK1138	Sandesh Kumar Jain	Panjara	Chhindwara	MADHYA PRADESH
+KPK1139	MukeshSoni	Bamhani Tura	Chhindwara	MADHYA PRADESH
+KPK1140	Hemant Kumar Sahu	Bakhari	Seoni	MADHYA PRADESH
+KPK1141	Ganga Ram Sanodiya	Chingwar	Seoni	MADHYA PRADESH
+KPK1142	Niranjan Singh Raghuwanshi	Shagpura	Chhindwara	MADHYA PRADESH
+KPK1143	SatishChandrawanshi	Jhurre Mal	Chhindwara	MADHYA PRADESH
+KPK1144	Padam Singh Bajoliya	Umarhar	Chhindwara	MADHYA PRADESH
+KPK1145	ShalikramSahu	Badgaon	Chhindwara	MADHYA PRADESH
+KPK1146	Akhilesh Singh Raghuwanshi	Rampuri (Tola)	Chhindwara	MADHYA PRADESH
+KPK1147	Navrang Singh Choudhary	Ajaniya	Chhindwara	MADHYA PRADESH
+KPK1148	Tara Chand Thakur	Ghansor	Seoni	MADHYA PRADESH
+KPK1149	RameshChander	Punnear	Hathras	UTTAR PRADESH
+KPK1150	Raj Kumar Singh	Farauli	Hathras	UTTAR PRADESH
+KPK1151	Narendra Pal Singh	Udambara	Aligarh	UTTAR PRADESH
+KPK1152	Ram Dattya Sharma	Pettha	Mathura	UTTAR PRADESH
+KPK1153	RaviKant	Ghantholi	Mathura	UTTAR PRADESH
+KPK1154	Kishan Pal Singh	Goverdhan	Mathura	UTTAR PRADESH
+KPK1155	Mahesh Chander Sharma	Bhagosa	Mathura	UTTAR PRADESH
+KPK1156	RajenderSingh	Pali	Mathura	UTTAR PRADESH
+KPK1157	Sishupal Singh Jadon	Garhi Dadhai	Mathura	UTTAR PRADESH
+KPK1158	PooranSingh	Nari	Mathura	UTTAR PRADESH
+KPK1159	Man Mohan Singh	Chattarpur	Hathras	UTTAR PRADESH
+KPK1160	KedarSingh	Parkham Gujar	Mathura	UTTAR PRADESH
+KPK1161	Heera Singh Raghuwanshi	Bamhni Lala	Chhindwara	MADHYA PRADESH
+KPK1162	Bhuwneshwar Prasad Sahu	Badiwada	Chhindwara	MADHYA PRADESH
+KPK1163	RajeshVishvkarma	Umariya (Somji)	Chhindwara	MADHYA PRADESH
+KPK1164	RajendraPawar	Lohangi	Chhindwara	MADHYA PRADESH
+KPK1165	ShahidKhan	Mohkhed	Chhindwara	MADHYA PRADESH
+KPK1166	KiratRam	Mallugarhi	Aligarh	UTTAR PRADESH
+KPK1167	JagveerGujar	Sahpur	Mathura	UTTAR PRADESH
+KPK1168	Durg Pal Singh	Sakhi	Mathura	UTTAR PRADESH
+KPK1169	Govind Singh Jadon	Sehjadpur	Mathura	UTTAR PRADESH
+KPK1170	DeshRaj	Bukrari	Mathura	UTTAR PRADESH
+KPK1171	Sukhdev	Bhadawal	Mathura	UTTAR PRADESH
+KPK1172	Devender Kumar Singh	Pora	Hathras	UTTAR PRADESH
+KPK1173	Rishi Pal Jadon	Sher Nagar	Mathura	UTTAR PRADESH
+KPK1174	RajpalDhakar	Chamargawan	Morena	MADHYA PRADESH
+KPK1175	Ravinder Kumar Dhakar	Madhogarh	Morena	MADHYA PRADESH
+KPK1176	Jagdish Prasad Dhakar	Semai	Morena	MADHYA PRADESH
+KPK1177	Darshan Lal Dhakar	Gulpura	Morena	MADHYA PRADESH
+KPK1178	Hajari Lal Dhakar	Uchad	Morena	MADHYA PRADESH
+KPK1179	RamniwasDhakar	Gastoni	Morena	MADHYA PRADESH
+KPK1180	Bhagwan Singh Dhakar	Baripura	Morena	MADHYA PRADESH
+KPK1181	MatadeenBairagi	Tilojari	Morena	MADHYA PRADESH
+KPK1182	Kripal Singh Dhakar	Boodi Sithra	Morena	MADHYA PRADESH
+KPK1183	Aadi Ram Dhakar	Kot Sirthara	Morena	MADHYA PRADESH
+KPK1184	Vishambar Dayal Sharma	Shekhpur	Morena	MADHYA PRADESH
+KPK1185	Vijay Singh Tyagi	Makuda	Morena	MADHYA PRADESH
+KPK1186	Keshav Prasad Tyagi	Dongara Pur	Morena	MADHYA PRADESH
+KPK1187	Vrindawan Lal Tyagi	Nayagaon	Morena	MADHYA PRADESH
+KPK1188	BabuSingh	Maan Maho	Hathras	UTTAR PRADESH
+KPK1189	GirishUpadhaya	Dhorpur	Hathras	UTTAR PRADESH
+KPK1190	BhoopSingh	Bajzhara	Mathura	UTTAR PRADESH
+KPK1191	Bhudev Parsad Rawat	Khorna	Hathras	UTTAR PRADESH
+KPK1192	KushalPal	Javali	Mathura	UTTAR PRADESH
+KPK1193	Komal Singh Rajput	Tindua	Seoni	MADHYA PRADESH
+KPK1194	Tej Lal Baghel	Baglai	Seoni	MADHYA PRADESH
+KPK1195	Dinesh Kumar Sharma	Baglai	Seoni	MADHYA PRADESH
+KPK1196	JanardanBaghel	Bodhiya	Seoni	MADHYA PRADESH
+KPK1197	Kirti Prasad Thakur	Sunehara	Seoni	MADHYA PRADESH
+KPK1198	Rupesh Kumar Sahu	Barsala(Tigadda)	Seoni	MADHYA PRADESH
+KPK1199	Mahendra Kumar Jaiswal	Sunwara	Seoni	MADHYA PRADESH
+KPK1200	SujitBaghel	Kharsaru	Seoni	MADHYA PRADESH
+KPK1201	Ashish Kumar Sahu	Kanhiwara	Seoni	MADHYA PRADESH
+KPK1202	Lalita Bai Thakur	Khamariya	Seoni	MADHYA PRADESH
+KPK1203	SurendraKinkar	Kamthi	Chhindwara	MADHYA PRADESH
+KPK1204	Balwant Singh Amarodiya	Aamakola	Seoni	MADHYA PRADESH
+KPK1205	Krishna Kumar Thakur	Chandanwada Khurd	Seoni	MADHYA PRADESH
+KPK1206	Dilip Kumar Soni	Kanhiwara	Seoni	MADHYA PRADESH
+KPK1207	Krashna Avtar Sharma	Yakutgang	Etah	UTTAR PRADESH
+KPK1208	AnoopKumar	Sahabar	Etah	UTTAR PRADESH
+KPK1209	DevenderSingh	Dippur	Etah	UTTAR PRADESH
+KPK1210	Raj Pal Upadhayay	Mangatpur	Etah	UTTAR PRADESH
+KPK1211	Fayeem	Samanti Nagla	Etah	UTTAR PRADESH
+KPK1212	UmeshKumar	Tara	Aligarh	UTTAR PRADESH
+KPK1213	Dharmender Partap Singh	Mathurapur	Hathras	UTTAR PRADESH
+KPK1214	Hemraj Kumar Sahu	Belgaon	Chhindwara	MADHYA PRADESH
+KPK1215	Raj Kumar Surele	Dilawar Mohgaon	Chhindwara	MADHYA PRADESH
+KPK1216	Manoj Kumar Yadav	Shahpura	Jaipur	RAJASTHAN
+KPK1217	Ram Narayan Gadwal	Dhanota	Jaipur	RAJASTHAN
+KPK1218	Satyendra Prasad Sharma	Chharsa	Jaipur	RAJASTHAN
+KPK1220	sattya Veer Singh	Nagla Aal	Hathras	UTTAR PRADESH
+KPK1221	Sanjeev Kumar Sharma	Hasayan	Hathras	UTTAR PRADESH
+KPK1222	GhannendraPawar	Ikalbihri	Chhindwara	MADHYA PRADESH
+KPK1223	YashwnatPharkare	Bisapur Khurd	Chhindwara	MADHYA PRADESH
+KPK1224	DhaniramVankhade	Bhaiskola	Chhindwara	MADHYA PRADESH
+KPK1225	RajuSahu	Gubrel	Chhindwara	MADHYA PRADESH
+KPK1226	LakhajiPawar	Khapa	Chhindwara	MADHYA PRADESH
+KPK1227	JaisinghChouriya	Bisapur Kalan	Chhindwara	MADHYA PRADESH
+KPK1228	Mukesh Kumar Meena	Khatepura	Dausa	RAJASTHAN
+KPK1229	Mukesh Kumar Meena	Tunga Road(Bassi)	Dausa	RAJASTHAN
+KPK1230	Arjun Lal Gurjar	Nathawala	Jaipur	RAJASTHAN
+KPK1231	Anil Kumar Sharma	Khora Shyamdas	Jaipur	RAJASTHAN
+KPK1232	Banwari Lal Jat	Bagwara	Jaipur	RAJASTHAN
+KPK1233	Ram Kishan meena	Sindoli	Dausa	RAJASTHAN
+KPK1234	Buddha Ram Meena	Khanawas(Chopada Balaji)	Dausa	RAJASTHAN
+KPK1235	Meetha Lal Meena	Ramgarh Pachwara	Dausa	RAJASTHAN
+KPK1236	SatishPathak	Mohala Kishan	Hathras	UTTAR PRADESH
+KPK1237	Mothu Ram Gurjar	Sundarpura	Jaipur	RAJASTHAN
+KPK1238	PrahaladGurjar	Sirohi	Jaipur	RAJASTHAN
+KPK1239	Ram Phool Gurjar	Jaitpura Khinchi	Jaipur	RAJASTHAN
+KPK1240	Kumma Ram Choudhary	Lakher	Jaipur	RAJASTHAN
+KPK1241	Narottam Prasad Dhakar	Ballu Ka Pura	Morena	MADHYA PRADESH
+KPK1242	Girraj Singh Yadav	Dongar pur Kirar	Morena	MADHYA PRADESH
+KPK1243	Narendra Singh Rajput	Gaon	Morena	MADHYA PRADESH
+KPK1244	Rajpal Singh Yadav	Joura Khurd	Morena	MADHYA PRADESH
+KPK1245	Birendra Singh Thakur	Dhobi Sarra	Seoni	MADHYA PRADESH
+KPK1246	Pramod Kumar Thakre	Linga	Chhindwara	MADHYA PRADESH
+KPK1247	Bhuwan Lal Patel	Mehra Pipariya	Seoni	MADHYA PRADESH
+KPK1248	Ubhay Shankar Chourasiya	Chitapar	Seoni	MADHYA PRADESH
+KPK1249	ShriNiwas Kumar Sharma	Gunpura	Morena	MADHYA PRADESH
+KPK1250	Nawab Singh Yadav	Garodh	Morena	MADHYA PRADESH
+KPK1251	Santosh Kumar Sharma	Kuarpur	Morena	MADHYA PRADESH
+KPK1252	Ram Avatar Chaudhary	Devali (Bhanchi)	Tonk	RAJASTHAN
+KPK1253	Chotu Lal Jat	Dalda Hind	Tonk	RAJASTHAN
+KPK1254	Hanuman Sahay Yadav	Mehandwas	Tonk	RAJASTHAN
+KPK1255	Shankar Lal Chaudhary	Dwvali Bhanchi	Tonk	RAJASTHAN
+KPK1256	DharmeshSharma	Devali Bhanchi	Tonk	RAJASTHAN
+KPK1257	Hanuman Prasad Yadav	Bangla Ki Dhani	Sawai Madhopur	RAJASTHAN
+KPK1258	Parwat Lal Meena	Nindandta	Sawai Madhopur	RAJASTHAN
+KPK1259	Prem Raj Meena	Surwal	Sawai Madhopur	RAJASTHAN
+KPK1260	Bhag Chand Yadav	Sitarampura	Sawai Madhopur	RAJASTHAN
+KPK1261	Jag Ram Meena	Bhobalpura	Dausa	RAJASTHAN
+KPK1262	Pramod Kumar Meena	Navrangpura	Dausa	RAJASTHAN
+KPK1263	Dhaju Lokaji Kasdekar	Karanjkheda	Amravati	MAHARASHTRA
+KPK1264	SANJUBHUSUM	HATRU	Amravati	MAHARASHTRA
+KPK1265	DEVIDAS MANNUJI KASDEKAR	BARUGAVHAN	Amravati	MAHARASHTRA
+KPK1266	MANOHAR SAHEBRAO BELKAR	DHAHENDRI	Amravati	MAHARASHTRA
+KPK1267	TARASING OMKAR KASDEKAR	CHAURAKUND	Amravati	MAHARASHTRA
+KPK1268	CHUNNILAL GANAJI JAMBEKAR	KARADA	Amravati	MAHARASHTRA
+KPK1269	Lokesh Kumar Sahu	Bhoma	Seoni	MADHYA PRADESH
+KPK1277	Shiv Prasad Katare	Partapur	Seoni	MADHYA PRADESH
+KPK1279	Maniram Singh Dhakar	Labhkaran	Morena	MADHYA PRADESH
+KPK1280	Amar Singh Dhakar	BallukaPura	Morena	MADHYA PRADESH
+KPK1281	Rajendra Prashad Gupta	Bagdoli	Sawai Madhopur	RAJASTHAN
+KPK1282	Dalpat Singh Rajawat	Hindupura	Sawai Madhopur	RAJASTHAN
+KPK1283	VidyaDevi	Bagdoli	Sawai Madhopur	RAJASTHAN
+KPK1285	Mali Ram Jat	Jaje Kalan	Jaipur	RAJASTHAN
+KPK1286	Ratan Lal Rager	Kanwada	Tonk	RAJASTHAN
+KPK1287	Jagdishkumhar	Chandli	Tonk	RAJASTHAN
+KPK1288	Gaja Nand Khathi	palai	Tonk	RAJASTHAN
+KPK1289	Mukesh Kumar Gurjer	jhundwa	Tonk	RAJASTHAN
+KPK1290	Rajendra Singh rajawat	dawarawas	Tonk	RAJASTHAN
+KPK1291	kalish chand verma	balunda	Tonk	RAJASTHAN
+KPK1292	Dav lal gurjer	gotor	Sawai Madhopur	RAJASTHAN
+KPK1293	Rameshwar Prasad	Gurie	Tonk	RAJASTHAN
+KPK1294	sabhu Lal meena	badoli	Tonk	RAJASTHAN
+KPK1295	Sitaram Vijay	Teekariya	Tonk	RAJASTHAN
+KPK1296	Kamlesh Kuamr verma	Phuleda	Tonk	RAJASTHAN
+KPK1297	Dasrath Kumar Das	Dhuva Khurda	Tonk	RAJASTHAN
+KPK1298	Mahavir Prashad Meena	Charnet	Tonk	RAJASTHAN
+KPK1299	Ramesh Chand Gurjar	raguvanti	Sawai Madhopur	RAJASTHAN
+KPK1300	JagrupGurjar	Jhanun	Sawai Madhopur	RAJASTHAN
+KPK1301	Hera lal Gurjar	Gotoor	Sawai Madhopur	RAJASTHAN
+KPK1302	Sunil Pareek	Shiwar	Sawai Madhopur	RAJASTHAN
+KPK1303	Shiv Raj yadav	Bangla Ki Dhani	Sawai Madhopur	RAJASTHAN
+KPK1304	Deepak Kumar Jain	Shiwar	Sawai Madhopur	RAJASTHAN
+KPK1305	Rattan Lal Yadav	Sunari	Sawai Madhopur	RAJASTHAN
+KPK1306	Harish Meena	Aatoun Kalan	Sawai Madhopur	RAJASTHAN
+KPK1307	Shivji Ram Gurjar	Gurai	Tonk	RAJASTHAN
+KPK1308	YashwantSingh	Tunna	Mandi	HIMACHAL PRADESH
+KPK1309	Tikam Singh Rana	Jail	Mandi	HIMACHAL PRADESH
+KPK1310	Mahendra Singh Meena	Jhopada	Sawai Madhopur	RAJASTHAN
+KPK1311	Ram Khiladi Gurjar	Medar Khurda	Sawai Madhopur	RAJASTHAN
+KPK1312	MahaveerDhakad	Toda ka Gothada	Tonk	RAJASTHAN
+KPK1313	DevkaranBairava	Dhandholi	Tonk	RAJASTHAN
+KPK1314	Devi Lal Meena	Tokarawas	Tonk	RAJASTHAN
+KPK1315	SitaramMeena	Dikala	Tonk	RAJASTHAN
+KPK1316	MukeshSharma	Bhagvatgarh	Sawai Madhopur	RAJASTHAN
+KPK1317	Ratan Lal jain	Aanva	Tonk	RAJASTHAN
+KPK1318	SitaramMeena	Sitapura	Tonk	RAJASTHAN
+KPK1320	Shiv Charan Jat	Mahapura	Sawai Madhopur	RAJASTHAN
+KPK1321	DevpalGurjar	Jajeda	Sawai Madhopur	RAJASTHAN
+KPK1322	Bharat Lal Gurjar	Jajeda	Sawai Madhopur	RAJASTHAN
+KPK1323	Girraj Singh Dhakar	Ballu ka Pura	Morena	MADHYA PRADESH
+KPK1324	Girraj Singh Dhakar	Nirara	Morena	MADHYA PRADESH
+KPK1325	KedarSharma	Haripura	Tonk	RAJASTHAN
+KPK1326	Mahendra Kumar Kumahar	malera	Tonk	RAJASTHAN
+KPK1327	Rajendra Kumar Nagar	Titaria	Tonk	RAJASTHAN
+KPK1328	Ram Kumar Jat	Dhanvala	Tonk	RAJASTHAN
+KPK1329	Ram Kunwar Gurjar	Sakrampura	Tonk	RAJASTHAN
+KPK1330	Jai Narayan Rager	Nasirda	Tonk	RAJASTHAN
+KPK1331	Nanu Lal Kumahar	Gawali	Tonk	RAJASTHAN
+KPK1332	Sar Lal Barwa	Gandhi Gram	Tonk	RAJASTHAN
+KPK1333	Din Dayal Chaudhary	Sandeda farm	Tonk	RAJASTHAN
+KPK1334	Gopal lal Rager	Bishanpura	Tonk	RAJASTHAN
+KPK1335	Jagdish lal Kumahar	Nivaria	Tonk	RAJASTHAN
+KPK1336	Lakh raj gurjar	Morebhatiyan	Tonk	RAJASTHAN
+KPK1337	sant kumar Meena	Kanwara Bass	Tonk	RAJASTHAN
+KPK1338	Gri Raj Gurjar	dhanbsurya	Tonk	RAJASTHAN
+KPK1339	Babu lal Mali	Ojhapura	Tonk	RAJASTHAN
+KPK1340	Guman Singh Verma	Botunda	Tonk	RAJASTHAN
+KPK1341	Hanuman Gurjar	Khailnya	Tonk	RAJASTHAN
+KPK1342	Dhan Raj Meena	sanodya	Tonk	RAJASTHAN
+KPK1343	Gajja Ram Gurjar	Barwas	Tonk	RAJASTHAN
+KPK1344	Hanuman Verma	Dhdoli	Tonk	RAJASTHAN
+KPK1345	Hari Shankar Meena	Mainpura	Sawai Madhopur	RAJASTHAN
+KPK1346	Ram dayal Mali	Malipura	Tonk	RAJASTHAN
+KPK1347	GhanshyamMaheshwari	Gahlod	Tonk	RAJASTHAN
+KPK1348	KailashLuniwal	Kharkada	Jhunjhunu	RAJASTHAN
+KPK1349	BhadarSingh	Devta Ka Bass	Jhunjhunu	RAJASTHAN
+KPK1350	DalipKumar	Gorir	Jhunjhunu	RAJASTHAN
+KPK1351	Kailash Chandra Gothwal	Mehada Jatuwas	Jhunjhunu	RAJASTHAN
+KPK1352	RajendraDikwal	Basai	Jhunjhunu	RAJASTHAN
+KPK1353	DayaramHarijan	Tayoda	Jhunjhunu	RAJASTHAN
+KPK1354	Babu Lal Rager	Panvad	Tonk	RAJASTHAN
+KPK1355	Om Parkash Tungariya	Devali	Tonk	RAJASTHAN
+KPK1356	Avdhesh Kumar Sharma	Negadiya	Tonk	RAJASTHAN
+KPK1357	ShishupalChaudhary	Kashir	Tonk	RAJASTHAN
+KPK1358	Satya Narayan Aheer	Naya Gaon	Tonk	RAJASTHAN
+KPK1359	Ram Parshad Meena	Kholya	Tonk	RAJASTHAN
+KPK1360	JagdishMeena	Muglana	Tonk	RAJASTHAN
+KPK1361	Ramesh Kumar Meena	Jalsina	Tonk	RAJASTHAN
+KPK1362	Lokesh Kumar Parjapat	kakod	Tonk	RAJASTHAN
+KPK1363	Banwari Lal Verma	Ganeti	Tonk	RAJASTHAN
+KPK1364	Rameshwar Parshad Gurjar	Sedari	Tonk	RAJASTHAN
+KPK1365	Kailash Kumar Parjapat	Gurai	Tonk	RAJASTHAN
+KPK1366	Rati Ram Meena	Vajipura Kalan	Tonk	RAJASTHAN
+KPK1367	Suwa Lal Meena	Gothda	Tonk	RAJASTHAN
+KPK1368	Rajendra Kumar Yadav	Siyada	Baran	RAJASTHAN
+KPK1369	Karam Chand Mehta	Kotda	Baran	RAJASTHAN
+KPK1370	GhanshyamSen	Kotda	Baran	RAJASTHAN
+KPK1371	Bharu Lal Mehta	Koyla	Baran	RAJASTHAN
+KPK1372	Stya Narayan Goshwami	Kotda	Baran	RAJASTHAN
+KPK1373	Mukesh Kumar Mehta	Koyla	Baran	RAJASTHAN
+KPK1374	Indra parkash Goshwami	Kotda	Baran	RAJASTHAN
+KPK1375	Ram Charan Mehta	Koyla	Baran	RAJASTHAN
+KPK1376	PrahladGurjar	Thikariya Gujran	Jaipur	RAJASTHAN
+KPK1377	Mukesh Kumar Saini	Chaksu	Jaipur	RAJASTHAN
+KPK1378	Kalu Ram Meena	Thikariya Bhivan	Jaipur	RAJASTHAN
+KPK1379	Shiv Ram Gurjar	Cheta	Bundi	RAJASTHAN
+KPK1380	Madhu Verma Rager	Mandavra	Bundi	RAJASTHAN
+KPK1381	Sugan Chand Meena	Bijlava	Bundi	RAJASTHAN
+KPK1382	Madan Lal Meena	Bijlawa	Bundi	RAJASTHAN
+KPK1383	Ganpat Lal Meena	Bijlwa	Bundi	RAJASTHAN
+KPK1384	Pardeep Kumar Mehta	Kotdi Sunda	Baran	RAJASTHAN
+KPK1385	Bhart Lal Meena	Kodyai	Sawai Madhopur	RAJASTHAN
+KPK1386	KamleshKushwaha	peepalwara	Sawai Madhopur	RAJASTHAN
+KPK1387	Hari Ram Gurjar	Naiy Goun	Sawai Madhopur	RAJASTHAN
+KPK1388	Taj Prakesh Nawaria	Isharda	Sawai Madhopur	RAJASTHAN
+KPK1389	Subash Chand Indoliya	Nagla maye	Bharatpur	RAJASTHAN
+KPK1390	Arvind Kumar Choudhary	Tohila	Bharatpur	RAJASTHAN
+KPK1391	Brajbhibhri lal Sharma	Bchamadi	Bharatpur	RAJASTHAN
+KPK1392	Sroop Singh Dagur	Gagwana	Bharatpur	RAJASTHAN
+KPK1393	Rajveer Singh	Lakhanpur	Bharatpur	RAJASTHAN
+KPK1394	Rajendra Singh Foujdar	Lulhara	Bharatpur	RAJASTHAN
+KPK1395	BhagirathSharma	Japavali	Dholpur	RAJASTHAN
+KPK1396	RakeshKumar	Bhilgaon	Dholpur	RAJASTHAN
+KPK1397	HemantKumar	Zaulani Har	Dholpur	RAJASTHAN
+KPK1398	BanwariLal	Gurja Paithna	Dholpur	RAJASTHAN
+KPK1399	SukhvirSingh	Rajora	Dholpur	RAJASTHAN
+KPK1400	Rajvir Singh Kushbah	Koluaa	Dholpur	RAJASTHAN
+KPK1401	Kailash Chand Khati	Lasadiya	Ajmer	RAJASTHAN
+KPK1402	Rameshwar Lal Jat	Pnair	Ajmer	RAJASTHAN
+KPK1404	Mohan Lal Meena	Gambhira	Bundi	RAJASTHAN
+KPK1405	Vinod Kumar Nagar	Raghurajpura	Bundi	RAJASTHAN
+KPK1406	PradhanMeena	Kolaheda	Bundi	RAJASTHAN
+KPK1407	HanumanBairwa	Bhairupura	Bundi	RAJASTHAN
+KPK1408	AnjuKanwar	Kotri	Ajmer	RAJASTHAN
+KPK1409	SatnarayanLohar	Rabbass	Ajmer	RAJASTHAN
+KPK1410	Brij Mohan Nagar	Chainpuriya	Bundi	RAJASTHAN
+KPK1411	Ramseh Chand Meena	Haripura	Bundi	RAJASTHAN
+KPK1412	Shyam Lal Meena	Bhainsoka naya gaon	Bundi	RAJASTHAN
+KPK1413	Radhey Shayam Keer	Pagari	Bundi	RAJASTHAN
+KPK1414	Shiv Raj Meena	Ronija	Bundi	RAJASTHAN
+KPK1415	Padam Kumar Nagar	Guda Devji	Bundi	RAJASTHAN
+KPK1416	Sobhag Mal Meena	Bijalava	Bundi	RAJASTHAN
+KPK1417	Chet Ram Nagar	Ganwadi	Bundi	RAJASTHAN
+KPK1418	Dhanna Lal Verma	Sukhpura	Bundi	RAJASTHAN
+KPK1419	MahadevMeghwal	Aakhed	Bundi	RAJASTHAN
+KPK1420	Parsu Ram Meena	Bhainso Ka Naya Gaon	Bundi	RAJASTHAN
+KPK1421	Babu Lal Harijain	Taal	Jhunjhunu	RAJASTHAN
+KPK1422	KishanLal	Jasrapur	Jhunjhunu	RAJASTHAN
+KPK1423	BalveerPrasad	Nagli Saladsingh	Jhunjhunu	RAJASTHAN
+KPK1424	SubashChand	Dada Fathaipura	Jhunjhunu	RAJASTHAN
+KPK1425	SatveerSingh	Dhani Chabdiyan	Jhunjhunu	RAJASTHAN
+KPK1426	VinayKumar	Rojara	Jhunjhunu	RAJASTHAN
+KPK1427	KhaliRam	Gotharda	Jhunjhunu	RAJASTHAN
+KPK1428	GhanShyam	Nalpur	Jhunjhunu	RAJASTHAN
+KPK1429	Jagmal	Babai	Jhunjhunu	RAJASTHAN
+KPK1430	Subhesh	Papurna	Jhunjhunu	RAJASTHAN
+KPK1431	BhimSingh	Ajhai Kurd	Mathura	UTTAR PRADESH
+KPK1432	MordhwajKumar	navipur	Hathras	UTTAR PRADESH
+KPK1433	Bharat Kumar Rawat	hasyan	Hathras	UTTAR PRADESH
+KPK1434	Harish Kumar Sharma	Siktara	Hathras	UTTAR PRADESH
+KPK1435	Satendra Kumar Rahangdale	Saila	Seoni	MADHYA PRADESH
+KPK1436	Asheesh Kumar Saiyam	Borikalan	Seoni	MADHYA PRADESH
+KPK1437	Vijay Kumar Bisen	Luhar	Seoni	MADHYA PRADESH
+KPK1438	Braj Mohan Thakur	Gondgaon	Seoni	MADHYA PRADESH
+KPK1439	Sarwan Kumar Yadav	Khaijroli	Jaipur	RAJASTHAN
+KPK1440	Kana Ram Yadav	Khannipura	Jaipur	RAJASTHAN
+KPK1441	Shyam Sundar Jain	Pchala	Tonk	RAJASTHAN
+KPK1442	OmprakeshMeena	Hedripur	Tonk	RAJASTHAN
+KPK1443	Pushpa kant Suman	Barudhan	Bundi	RAJASTHAN
+KPK1444	Ram Prasad Meena	Asal Ganv	Tonk	RAJASTHAN
+KPK1445	Suresh Kumar Jain	Alighar	Tonk	RAJASTHAN
+KPK1446	Mahendra Kumar Jain	Choru	Tonk	RAJASTHAN
+KPK1447	Raj Kumar Jain	Alighar	Tonk	RAJASTHAN
+KPK1448	Manohar Lal Meena	Gogpura	Bundi	RAJASTHAN
+KPK1449	Om Parkash Bairawa	Khatiyadi	Bundi	RAJASTHAN
+KPK1450	Jambu Kumar Jain	Shop	Tonk	RAJASTHAN
+KPK1451	Ram Savroop Meena	Govardhan Pura	Bundi	RAJASTHAN
+KPK1452	Dudi Mal Meena	Patoli	Tonk	RAJASTHAN
+KPK1453	Rakesh Kumar Meena	Bhasoka Naya Gaon	Bundi	RAJASTHAN
+KPK1454	Paras Chand Jain	Devli	Tonk	RAJASTHAN
+KPK1455	Mahavir Parshad Nagar	Chainpuriya	Bundi	RAJASTHAN
+KPK1456	Bhanwar Singh Hada	Guda Sadavartiya	Bundi	RAJASTHAN
+KPK1457	PrahladChaudhary	Sandeda	Tonk	RAJASTHAN
+KPK1458	Mahavir Parshad Dhakad	Raghuraj Pura	Bundi	RAJASTHAN
+KPK1459	Shiv Lal Saini	Khodi	Bundi	RAJASTHAN
+KPK1460	Sohan Lal Meena	Bhasoka naya Gaon	Bundi	RAJASTHAN
+KPK1461	Mangi Lal Meena	Bijlaba	Bundi	RAJASTHAN
+KPK1462	Bhanwar Lal Meena	Ajeta	Bundi	RAJASTHAN
+KPK1463	Dev Lal Nagar	Bhawanipura	Bundi	RAJASTHAN
+KPK1464	More Pal Meena	Bijlaba	Bundi	RAJASTHAN
+KPK1465	Ashok Kumar Jangid	Gurai	Bundi	RAJASTHAN
+KPK1466	Hira Lal Meena	Gurai	Bundi	RAJASTHAN
+KPK1467	Ram Charan Jat	Hanvatpura	Bundi	RAJASTHAN
+KPK1468	Shivji lal Meena	Gurai	Bundi	RAJASTHAN
+KPK1469	Radhe Shyam Meena	Sahna	Bundi	RAJASTHAN
+KPK147	Anil Kumar Jha	Jagarnath Pur	Samastipur	BIHAR
+KPK1470	Phokhar Mal Meena	Nand Gaon	Bundi	RAJASTHAN
+KPK1471	Mohan Lal Meena	Mundharana	Bundi	RAJASTHAN
+KPK1472	Jagdish Parshad Meena	Rampura	Bundi	RAJASTHAN
+KPK1473	Manoj Kumar Sen	Dablana	Bundi	RAJASTHAN
+KPK1474	Dinesh Chand Jat	Redawat	Sawai Madhopur	RAJASTHAN
+KPK1475	RamavatarJat	Gotda	Sawai Madhopur	RAJASTHAN
+KPK1476	Ram Khiladi Gurjer	Medar Khurad	Sawai Madhopur	RAJASTHAN
+KPK1477	Buddi Prakash Jat	Bharavanda	Sawai Madhopur	RAJASTHAN
+KPK1478	JagmohanJat	Meikala	Sawai Madhopur	RAJASTHAN
+KPK1479	BhanwarVerma	Ghareda	Tonk	RAJASTHAN
+KPK1481	Shiv Lal Jat	Bajeerpur	Tonk	RAJASTHAN
+KPK1482	Atma Ram Jat	Emam Nagar	Tonk	RAJASTHAN
+KPK1483	DhanrajGurjer	Gotda	Tonk	RAJASTHAN
+KPK1484	Dharmendra Kumar Sahu	Gurai	Tonk	RAJASTHAN
+KPK1485	Shwarn Lal Meena	Mohamad Ghar	Tonk	RAJASTHAN
+KPK1486	Rameshwar Prasad Gurjer	Gurai	Tonk	RAJASTHAN
+KPK1487	RamGurjer	Vilashpur	Tonk	RAJASTHAN
+KPK1488	Human Prasad Choudhary	Ajaypura	Tonk	RAJASTHAN
+KPK1489	Ram Singh Regar	Savatghar	Tonk	RAJASTHAN
+KPK1490	Radhe Shyam Dhakad	Nasirda	Tonk	RAJASTHAN
+KPK1491	Ram Dayal Bairwa	Govindpura	Tonk	RAJASTHAN
+KPK1492	Raghuveer Singh Rajawat	Kherda	Tonk	RAJASTHAN
+KPK1493	KedarChaudhary	Loharvada	Tonk	RAJASTHAN
+KPK1494	SukdeoBisandare	BARUGAVAN	Amravati	MAHARASHTRA
+KPK1495	Tajpal singh tomar	sihonia	Morena	MADHYA PRADESH
+KPK1496	KantiKumar	Barthi kamraur	Chandauli	UTTAR PRADESH
+KPK1497	Sunil Kumar singh	Ghoswan	Chandauli	UTTAR PRADESH
+KPK1498	Dharmendra Kumar Singh	Derhganwa	Chandauli	UTTAR PRADESH
+KPK1499	Anil Kumar Singh	Ghosawan	Chandauli	UTTAR PRADESH
+KPK1500	Rajainder Prasad Sharma	Belbaniya	Chandauli	UTTAR PRADESH
+KPK1501	Sharvan Kumar Singh	Chirai	Chandauli	UTTAR PRADESH
+KPK1502	Anmol	Bodara Kalan	Chandauli	UTTAR PRADESH
+KPK1503	Santosh Kumar	Balipur	Aligarh	UTTAR PRADESH
+KPK1504	Mukesh Kumar Sharma	Nidhan	Morena	MADHYA PRADESH
+KPK1505	RanVeer Singh Sikarwar	Mundrabaja	Morena	MADHYA PRADESH
+KPK1506	HariRamTyagi	Nidhan	Morena	MADHYA PRADESH
+KPK1507	Chandraveer Singh	Shahari Madan Gari	Aligarh	UTTAR PRADESH
+KPK1508	Satish Kumar Sharma	Bilgaon	Morena	MADHYA PRADESH
+KPK1509	Ajay Kumar Tiwari	Kumheri	Morena	MADHYA PRADESH
+KPK1510	Jandel Singh Yadav	AlaPur	Morena	MADHYA PRADESH
+KPK1511	Manoj Kumar Tyagi	Mohana	Morena	MADHYA PRADESH
+KPK1512	Kuldeep Kumar Tyagi	Jetpur	Morena	MADHYA PRADESH
+KPK1513	Mahesh Kumar Tyagi	Nidhan	Morena	MADHYA PRADESH
+KPK1514	KanaiyaLalTyagi	Jetpur	Morena	MADHYA PRADESH
+KPK1515	Rajendra Singh Yadav	Meerpur	Morena	MADHYA PRADESH
+KPK1516	Vinod Kumar Tyagi	Agrota	Morena	MADHYA PRADESH
+KPK1517	DevakeeNandanTyagi	Karori	Morena	MADHYA PRADESH
+KPK1518	Satyendra Singh Yadav	MeerPur	Morena	MADHYA PRADESH
+KPK1519	Jitendra Singh Gurjar	ShivLalPura	Morena	MADHYA PRADESH
+KPK1520	Babu Lal Yadav	Saifraguwar	Jhunjhunu	RAJASTHAN
+KPK1521	Ram Pal Harijan	Cheerani	Jhunjhunu	RAJASTHAN
+KPK1522	TarunRahangdale	Chimnakhari	Seoni	MADHYA PRADESH
+KPK1523	Vinod Kumar Bisen	Pandarbani	Seoni	MADHYA PRADESH
+KPK1524	Buddh Singh Tomar	Khadia Behad	Morena	MADHYA PRADESH
+KPK1525	Suresh Singh Mabai	Gulendra	Morena	MADHYA PRADESH
+KPK1526	TajveerTyagi	Kathika	Morena	MADHYA PRADESH
+KPK1527	Shaikh Naim Quraishi	Boriya	Seoni	MADHYA PRADESH
+KPK1528	Dilip Kumar Thakur	Raichour	Seoni	MADHYA PRADESH
+KPK1529	Radhe Shyam Soni	Bamhanwara	Seoni	MADHYA PRADESH
+KPK1530	Virendra Kumar Soni	Dewri Kalan	Seoni	MADHYA PRADESH
+KPK1531	Vishwanath Singh Dehariya	Karirat	Seoni	MADHYA PRADESH
+KPK1532	AnilChoudhary	Birholi	Seoni	MADHYA PRADESH
+KPK1533	Tulsi Ram Sanodiya	Karhaiya	Seoni	MADHYA PRADESH
+KPK1534	Eshwari Prasad Sanodiya	Kanhargaon	Seoni	MADHYA PRADESH
+KPK1535	GangaramChandrawanshi	Jhil Pipariya	Seoni	MADHYA PRADESH
+KPK1536	Sunil Kumar Janghela	Chhui	Chhindwara	MADHYA PRADESH
+KPK1537	BabulalKasdekar	Khatkali	Amravati	MAHARASHTRA
+KPK1538	YeshwantBelsare	Badnapur	Amravati	MAHARASHTRA
+KPK1539	JajuPatel	Raipur	Amravati	MAHARASHTRA
+KPK1540	Mohammad Lahik Usmani	Kali Basai	Morena	MADHYA PRADESH
+KPK1541	SanjayBelkar	Kajaldoah	Amravati	MAHARASHTRA
+KPK1542	ParashramGathe	Katkumbh	Amravati	MAHARASHTRA
+KPK1543	SatishKawade	Koylary	Amravati	MAHARASHTRA
+KPK1544	Yogendra Singh Sikarwar	BagChini	Morena	MADHYA PRADESH
+KPK1545	RameshDhakar	BrajGadi	Morena	MADHYA PRADESH
+KPK1546	Santosh Singh Sikarwar	Beshroli	Morena	MADHYA PRADESH
+KPK1547	Munna Singh Parmar	Chi-Chamble	Morena	MADHYA PRADESH
+KPK1548	Ram bilash Singh Sikarwar	NandPura	Morena	MADHYA PRADESH
+KPK1549	Sanjayaasare	Dhamori	Amravati	MAHARASHTRA
+KPK1550	Kripal Singh Kushwah	Sarkhatpur	Shivpuri	MADHYA PRADESH
+KPK1551	Pritam Singh Kushwah	Jujai	Shivpuri	MADHYA PRADESH
+KPK1552	UmeshSharma	Genoli	Bhilwara	RAJASTHAN
+KPK1553	Kamlesh Kumar Mali	Laadpura	Bhilwara	RAJASTHAN
+KPK1554	Mangi Lal Dhakad	Dhakad Khedi	Bhilwara	RAJASTHAN
+KPK1555	Bhairu Lal Daroga	Tahla	Bhilwara	RAJASTHAN
+KPK1556	Surya Prakash Joshi	Hoda	Bhilwara	RAJASTHAN
+KPK1557	Ratan Lal Teli	Khachrol	Bhilwara	RAJASTHAN
+KPK1558	Shambhu Lal Dhakad	Kalyanpura	Bhilwara	RAJASTHAN
+KPK1559	Sobhagh Chandra Dhakad	Baladrakha	Bhilwara	RAJASTHAN
+KPK1560	Shankar Lal Teli	Jojwa	Bhilwara	RAJASTHAN
+KPK1561	Badri Lal Jat	Singoli	Bhilwara	RAJASTHAN
+KPK1562	Hari Shankar Jat	Vitthalpura	Bhilwara	RAJASTHAN
+KPK1563	Bhanwar Singh Rajput	Barudani	Bhilwara	RAJASTHAN
+KPK1564	Chitar Lal Dhakad	Suraas	Bhilwara	RAJASTHAN
+KPK1565	Kedar Chandra Jat	Khatwada	Bhilwara	RAJASTHAN
+KPK1566	Meba RamSharma	Saanta	Morena	MADHYA PRADESH
+KPK1567	HariramBathekar	Dhakna	Amravati	MAHARASHTRA
+KPK1568	ParashramKasdekar``	Bijudhawadi	Amravati	MAHARASHTRA
+KPK1569	Mr. BalaBhusum	Jamunala	Amravati	MAHARASHTRA
+KPK1570	Mr. VijayLajurkar	Ramagad	Amravati	MAHARASHTRA
+KPK1571	SatishGiri	Gopalpur	Hathras	UTTAR PRADESH
+KPK1572	ParmanandSharma	Devari	Morena	MADHYA PRADESH
+KPK1573	Amar Dutt Sharma	mansar	Solan	HIMACHAL PRADESH
+KPK1574	Samodra Gurjar s	Aarpura	Sawai Madhopur	RAJASTHAN
+KPK1575	Rajendra Prasad Meena	Barnala	Sawai Madhopur	RAJASTHAN
+KPK1576	Sawai Singh	Nidhara	Dholpur	RAJASTHAN
+KPK1577	Dharm Singh	Kuhkani	Dholpur	RAJASTHAN
+KPK1578	Raj Kumar Tyagi	Basai Nabab	Dholpur	RAJASTHAN
+KPK1579	Sugan Lal Gurjar	Mandavas	Ajmer	RAJASTHAN
+KPK1580	Dinesh Chand Jat	Redvad	Sawai Madhopur	RAJASTHAN
+KPK1581	Ram Avaatar Jat	Gotda	Sawai Madhopur	RAJASTHAN
+KPK1582	Manohar Singh Choudhary	Sigor Kala	Sawai Madhopur	RAJASTHAN
+KPK1583	Naresh kumar Veragi	Ajvoti	Sawai Madhopur	RAJASTHAN
+KPK1584	Sateesh Chandra Sharma	Adeeg	Mathura	UTTAR PRADESH
+KPK1585	RetaishKumar	Parash nagar	Jhunjhunu	RAJASTHAN
+KPK1586	Sugan Singh Kushwah	Bard No. 2	Shivpuri	MADHYA PRADESH
+KPK1587	Nand Lal Kharik	Mandal Gad	Bhilwara	RAJASTHAN
+KPK1588	ShreeRam Kumar Sudhar	Sarada	Bhilwara	RAJASTHAN
+KPK1589	pradeep Kumar Vaisnav	Bagera	Ajmer	RAJASTHAN
+KPK1590	Kisan Gopal Mali	Devliya Khurd	Ajmer	RAJASTHAN
+KPK1591	Rameswar Prasad Chodhary	ugai	Ajmer	RAJASTHAN
+KPK1592	KapilSuwalka	Devganv	Ajmer	RAJASTHAN
+KPK1593	Vimal Kumar Solanki	Chopra	Etah	UTTAR PRADESH
+KPK1594	Pankaj Kumar Verma	Chinti nagla	Etah	UTTAR PRADESH
+KPK1595	Gyan Singh Gurjar	Gurjar Koleta	Sawai Madhopur	RAJASTHAN
+KPK1596	Manoj Kumar Sharma	Jagrampura	Sawai Madhopur	RAJASTHAN
+KPK1597	Padam Chand Jain	Kustla	Sawai Madhopur	RAJASTHAN
+KPK1598	Ram Kesh - Meena	Muee	Sawai Madhopur	RAJASTHAN
+KPK1599	VinodKumar	Kehar	Mandi	HIMACHAL PRADESH
+KPK1600	BantiDevi	Jajrot	Mandi	HIMACHAL PRADESH
+KPK1601	Mahendra Kumar Yadav	Ballupura	Sikar	RAJASTHAN
+KPK1602	Hari Ram Harijan	Biharipur	Sikar	RAJASTHAN
+KPK1603	RamkishanChaudhari	Nagariya	Mathura	UTTAR PRADESH
+KPK1604	Krishna Dant Sharma	Khitabata	Mathura	UTTAR PRADESH
+KPK1605	TehendraSingh	Navipur	Mathura	UTTAR PRADESH
+KPK1606	RoopKishor	Navipur	Mathura	UTTAR PRADESH
+KPK1607	VijendraSingh	Nand Gaun	Mathura	UTTAR PRADESH
+KPK1608	BahnuPrakash	Shyamgadi	Aligarh	UTTAR PRADESH
+KPK1609	BhaveshSagane	Kapustalni	Amravati	MAHARASHTRA
+KPK1610	SubhashSakhare	Gaykawadi	Amravati	MAHARASHTRA
+KPK1611	GajananKhadase	Ratnapur	Amravati	MAHARASHTRA
+KPK1612	PramanandChunarkar	Haladwahi	Gadchiroli	MAHARASHTRA
+KPK1613	SukumarBiswas	Jaynagar	Gadchiroli	MAHARASHTRA
+KPK1614	UttamkumarBarai	Gundapalli	Gadchiroli	MAHARASHTRA
+KPK1615	SunilBarsagade	Hivargaon	Gadchiroli	MAHARASHTRA
+KPK1616	Satya Narayan Sharma	Mohanpura	Bhilwara	RAJASTHAN
+KPK1617	ManojWairagada	Murkhada Chak	Gadchiroli	MAHARASHTRA
+KPK1618	Santoshkolhe	Shirajgaon	Yavatmal	MAHARASHTRA
+KPK1619	Dheerendra Singh Kushwah	Narwar	Shivpuri	MADHYA PRADESH
+KPK1620	Kalakh Singh Kushwah	Naya Jetpur	Shivpuri	MADHYA PRADESH
+KPK1621	Hari Singh Kushwah	Ganiyar	Shivpuri	MADHYA PRADESH
+KPK1622	Soor Singh Kushwah	MayramPura	Shivpuri	MADHYA PRADESH
+KPK1623	Ghan ShyamKushwah	KishanPur	Shivpuri	MADHYA PRADESH
+KPK1624	Parwat Singh Kushwah	Narwar	Shivpuri	MADHYA PRADESH
+KPK1625	PawanKumar	Tanda	Mandi	HIMACHAL PRADESH
+KPK1626	DadaraoDalu	Karla	Amravati	MAHARASHTRA
+KPK1627	ChandrashekharKandalkar	Chandikapur	Amravati	MAHARASHTRA
+KPK1628	RamdhanRathod	Kholapuri	Yavatmal	MAHARASHTRA
+KPK1629	MrutunjayMandal	Jaynagar	Gadchiroli	MAHARASHTRA
+KPK1630	HarendranathHaldar	Vikarmpur	Gadchiroli	MAHARASHTRA
+KPK1631	HarishChandra	Kayar	Mathura	UTTAR PRADESH
+KPK1632	Bainami	Kamai	Mathura	UTTAR PRADESH
+KPK1633	Jai Prakash Chaudhari	Bhadokar	Mathura	UTTAR PRADESH
+KPK1634	ShamraoMore	Turkhed	Amravati	MAHARASHTRA
+KPK1635	SumitraKale	Somvarkhada	Amravati	MAHARASHTRA
+KPK1636	KailashSharma	Chiroli	Aligarh	UTTAR PRADESH
+KPK1637	RavindraRajguru	Kumbhargaon	Amravati	MAHARASHTRA
+KPK1638	GajananDeshmukh	Mozar	Yavatmal	MAHARASHTRA
+KPK1639	VijayTake	Khalna	Yavatmal	MAHARASHTRA
+KPK1640	PrakashTambakhe	Khalna	Yavatmal	MAHARASHTRA
+KPK1641	ManojKumar	Painth	Mathura	UTTAR PRADESH
+KPK1642	DeepakSharma	Moongabali	Morena	MADHYA PRADESH
+KPK1643	Pradeep Kumar Ojha	Mirghan	Morena	MADHYA PRADESH
+KPK1644	Buddha Singh Kushwah	Chakrampur	Shivpuri	MADHYA PRADESH
+KPK1645	BerbalSingh	Budnya	Jhunjhunu	RAJASTHAN
+KPK1646	RishikeshPunia	Banghotdi Khurd	Jhunjhunu	RAJASTHAN
+KPK1647	AjayKale	Mahimapur	Amravati	MAHARASHTRA
+KPK1648	GovardhanShekhavat	Chandrapur	Amravati	MAHARASHTRA
+KPK1649	Rajendra Kumar Alaria	Phatarya	Jhunjhunu	RAJASTHAN
+KPK1650	Rajendra Singh Shaktawat	khhachrol	Bhilwara	RAJASTHAN
+KPK1651	Ladu Lal Teli	Khhachrol	Bhilwara	RAJASTHAN
+KPK1652	Birdhi Chand Nagar	Richhnda	Baran	RAJASTHAN
+KPK1653	Ashok kumar sharma	dolia	Kota	RAJASTHAN
+KPK1654	Basanti Lal Saini	Ghaghrana	Kota	RAJASTHAN
+KPK1655	RameshwarNagar	Ladpura	Kota	RAJASTHAN
+KPK1656	Rakesh Kumar Meena	Bhojpura	Kota	RAJASTHAN
+KPK1657	Kanya Lal Gochar	Keshaw Nagar	Bundi	RAJASTHAN
+KPK1658	Jag Mohan Nagar	Kachara	Baran	RAJASTHAN
+KPK1659	Trilok Chand Nagar	Antana	Baran	RAJASTHAN
+KPK1660	Goari Shankar Sharma	Namana	Bundi	RAJASTHAN
+KPK1661	HarbanSingh	Nagla Gopal bag kosi Dehat	Mathura	UTTAR PRADESH
+KPK1662	Bharat Raj Nagar	Aatoun	Baran	RAJASTHAN
+KPK1663	Sampat Raj Nagar	Bamori	Baran	RAJASTHAN
+KPK1664	Mahendra Kumar Nagar	Motpur	Baran	RAJASTHAN
+KPK1665	Sanjay Kumar Gupta	Kawai	Baran	RAJASTHAN
+KPK1666	JagatSingh	Hulwana	Mathura	UTTAR PRADESH
+KPK1667	HarveerSingh	Nahara	Mathura	UTTAR PRADESH
+KPK1668	Satya narayan nagar	Nipania	Baran	RAJASTHAN
+KPK1669	Mukesh kumar nagar	Allahpur	Baran	RAJASTHAN
+KPK1670	Trilok Chand galav	Phul baroda	Baran	RAJASTHAN
+KPK1671	Awad kishore galav	Halgana	Baran	RAJASTHAN
+KPK1672	Bhanwar Singh solenki	Kadiya chatri	Baran	RAJASTHAN
+KPK1673	Rup narayan nagar	Japala	Baran	RAJASTHAN
+KPK1674	Durgesh Kumar Shrma	Indra Colani	Baran	RAJASTHAN
+KPK1675	Naresh Sing Meena	Gopalpada	Baran	RAJASTHAN
+KPK1676	Champa Lal Loga	Nametpur	Baran	RAJASTHAN
+KPK1677	Rajender Kumar Meena	Khouki	Baran	RAJASTHAN
+KPK1678	DeandaylMeena	Umarthana	Baran	RAJASTHAN
+KPK1679	HarnaryanNagar	kishanpura	Baran	RAJASTHAN
+KPK1680	Jugal Kishor Kasat	Sategaon	Amravati	MAHARASHTRA
+KPK1681	VilasraoTale	Nardoda	Amravati	MAHARASHTRA
+KPK1682	AmolPawar	Nimkhed Bazar	Amravati	MAHARASHTRA
+KPK1683	JayprakashKhadase	Nimkhed Bazar	Amravati	MAHARASHTRA
+KPK1684	Dileep Singh Tomar	BhajanKa Pura	Morena	MADHYA PRADESH
+KPK1685	Rambeer Singh Tomar	Durg Ka Pura	Morena	MADHYA PRADESH
+KPK1686	Narendra Singh Tomar	Kontharkalan	Morena	MADHYA PRADESH
+KPK1687	ShrikrishnaMadavi	Murkhala Chakra	Gadchiroli	MAHARASHTRA
+KPK1688	Subhesh Chend Yadav	Agwari	Sikar	RAJASTHAN
+KPK1689	Son Singh Kushwah	Ganiyar	Shivpuri	MADHYA PRADESH
+KPK1690	VitthalBodalkar	Kurul	Gadchiroli	MAHARASHTRA
+KPK1691	Kishan Lal Jat	Prahenra	Ajmer	RAJASTHAN
+KPK1692	Shankar Lal Teli	Piplaj	Ajmer	RAJASTHAN
+KPK1693	Chitar lal Galav	Kothare	Baran	RAJASTHAN
+KPK1694	Giriraj Prasad Sharma	Nipaniya	Baran	RAJASTHAN
+KPK1695	Naval Kisor Mehta	Shekharpur	Baran	RAJASTHAN
+KPK1696	Ram Swaroop Bhargav	Bamhauri	Baran	RAJASTHAN
+KPK1697	Ram Swarup Malav	Udanyanohar	Baran	RAJASTHAN
+KPK1698	Din Dayal Nagar	Madhorajpura	Bundi	RAJASTHAN
+KPK1699	Ramesh Chandra Jadaun	Lodhauli	Mathura	UTTAR PRADESH
+KPK1700	Tunda Ram Kushwah	Pyare ki madaiya	Dholpur	RAJASTHAN
+KPK1701	Ashok Kumar Meena	ShyamNagr	Baran	RAJASTHAN
+KPK1702	Jugal Kishor Suman	Arnetha	Bundi	RAJASTHAN
+KPK1703	Rakesh Kumar Ghochar	Arnaitha	Bundi	RAJASTHAN
+KPK1704	Shri Parm Jit Meena	Deva ka khera	Bundi	RAJASTHAN
+KPK1705	Dinesh Kumar Somani	Gunda Nath v tan	Bundi	RAJASTHAN
+KPK1706	Dhan Raj Nagar	Raniheda	Baran	RAJASTHAN
+KPK1707	ShivDayal	Chauki	Baran	RAJASTHAN
+KPK1708	Radha Kishan Nagar	Jaloda	Bundi	RAJASTHAN
+KPK1709	Prabhu Lal Maalav	Hanuwat Kheda	Baran	RAJASTHAN
+KPK1710	Prem Chand Nagar	Bhawapura	Bundi	RAJASTHAN
+KPK1711	Uma Shankar Nagar	Boradamal	Bundi	RAJASTHAN
+KPK1712	Tulsi Ram Nagar	Jayasthal	Bundi	RAJASTHAN
+KPK1713	Manoj Singh	Karpen	Bundi	RAJASTHAN
+KPK1714	Prithi Raj Meena	Chardana	Bundi	RAJASTHAN
+KPK1715	Dhan Raj Nagar	Kanotiya	Baran	RAJASTHAN
+KPK1716	Mahesh Kumar Nagar	Bordamal	Bundi	RAJASTHAN
+KPK1717	Pappu Lal Suman	Bardhanu	Bundi	RAJASTHAN
+KPK1718	Nand Lal Meena	Hathikhera	Bundi	RAJASTHAN
+KPK1719	RajendraNagar	Badora	Baran	RAJASTHAN
+KPK1720	Jas Raj Singh	Korkya	Bundi	RAJASTHAN
+KPK1721	Gajendra Mohan Nagar	Katawar	Baran	RAJASTHAN
+KPK1722	Bhagwan Singh Handa	anthda	Bundi	RAJASTHAN
+KPK1723	Prem Shankar Nagar	Matunda	Bundi	RAJASTHAN
+KPK1724	Lekh Raj Shringi	Khalunda	Bundi	RAJASTHAN
+KPK1725	Yash Pal Sharma	Matunda	Bundi	RAJASTHAN
+KPK1726	BhuneshwarShangi	Lilera	Bundi	RAJASTHAN
+KPK1727	Dinesh Kumar Nagar	Baran	Baran	RAJASTHAN
+KPK1728	Bhagwati Prasad Meena	Tikariya	Bundi	RAJASTHAN
+KPK1729	Hari Shankar Nagar	Madhorajpura	Bundi	RAJASTHAN
+KPK1730	Narendra Kumar Nagar	Ranoheda	Baran	RAJASTHAN
+KPK1731	Ram Kishan Nagar	Jhapayata	Bundi	RAJASTHAN
+KPK1732	Bal Ram Mehta	Kotda	Baran	RAJASTHAN
+KPK1733	Mohan Lal Meghwal	Kishanganj	Baran	RAJASTHAN
+KPK1734	Ram Gopal Nagar	Bajrangarh	Baran	RAJASTHAN
+KPK1735	Satya Narayan Nagar	Bahranggarh	Baran	RAJASTHAN
+KPK1736	Kamal Kant Nagar	Nahargarh	Baran	RAJASTHAN
+KPK1737	Phool Chand Kumhar	Roshanda	Bundi	RAJASTHAN
+KPK1738	Mukha Pal Meena	Hathi Ka Kheda	Bundi	RAJASTHAN
+KPK1739	Seeta Ram Sharma	Pagara	Bundi	RAJASTHAN
+KPK1740	Udhav Lal Kumawat	Dhanatari	Bundi	RAJASTHAN
+KPK1741	Krishna Murari Nagar	Nohalya	Baran	RAJASTHAN
+KPK1742	Kamal Kumar Gupta	Arnetha	Bundi	RAJASTHAN
+KPK1743	Doulat Ram Saharan	Chunawad	Ganganagar	RAJASTHAN
+KPK1744	SandeepDahiya	Mahiya Wali	Ganganagar	RAJASTHAN
+KPK1745	Kahna Ram Jakhar	10:00 AM	Ganganagar	RAJASTHAN
+KPK1747	Natthhi lal	Barelpura	Dholpur	RAJASTHAN
+KPK1748	Uma Shankar	Brarawat	Dholpur	RAJASTHAN
+KPK1749	Mukesh Kumar Katara	Dulhara	Dholpur	RAJASTHAN
+KPK1750	KayamKhan	Vishambara	Mathura	UTTAR PRADESH
+KPK1751	Mahesh Chandra Sharma	Khayra	Mathura	UTTAR PRADESH
+KPK1752	Kamlesh Kumar Dhakad	Madhorajpura	Bundi	RAJASTHAN
+KPK1754	Devaki Nandan Pokra	Notada	Bundi	RAJASTHAN
+KPK1755	Jagdish Singh Solanki	Kapren	Bundi	RAJASTHAN
+KPK1756	RamdyalPachore	Kudurshi Tola	Gadchiroli	MAHARASHTRA
+KPK1757	DhanrajKannake	Wakadi	Gadchiroli	MAHARASHTRA
+KPK1758	RamchandraSontakke	Murkhala Chak	Gadchiroli	MAHARASHTRA
+KPK1759	WamanSatpute	Khandala	Gadchiroli	MAHARASHTRA
+KPK1760	ChandanSingh	Malonee Khurd	Dholpur	RAJASTHAN
+KPK1761	AnilKumar	Mahiyanwali	Ganganagar	RAJASTHAN
+KPK1762	Rajender Singh Beniwal	doulatpura	Ganganagar	RAJASTHAN
+KPK1763	Rajinder Singh Grewal	Doulatpura	Ganganagar	RAJASTHAN
+KPK1764	Gurupreet Singh Sakhon	7MK	Ganganagar	RAJASTHAN
+KPK1765	BhupenderKumar	8NNA	Ganganagar	RAJASTHAN
+KPK1766	Ram Nayaran Saharan	Manfulsinghwala	Ganganagar	RAJASTHAN
+KPK1767	Dara Singh Brar	31F Aryan	Ganganagar	RAJASTHAN
+KPK1768	AmarjeetSingh	40H Burjwala	Ganganagar	RAJASTHAN
+KPK1769	BheemSingh	Mahiyanwali	Ganganagar	RAJASTHAN
+KPK1770	Balraj Singh Brar	Chak 7Y	Ganganagar	RAJASTHAN
+KPK1771	Gurjant Singh Bhuttar	13G Chhoti	Ganganagar	RAJASTHAN
+KPK1772	Jaswant Singh Sakhoun	Mirzewala	Ganganagar	RAJASTHAN
+KPK1773	Gagandeep Singh Brar	Malkana Khurd	Ganganagar	RAJASTHAN
+KPK1774	Sukhdev Singh sandhu	40BB	Ganganagar	RAJASTHAN
+KPK1775	Gurlab Singh Brar	Roopnagar	Ganganagar	RAJASTHAN
+KPK1776	Amritpal Singh	Mouran	Ganganagar	RAJASTHAN
+KPK1777	RajveerSingh	Akkha(Alawal)	Mathura	UTTAR PRADESH
+KPK1778	DheerendraSingh	Adda	Mathura	UTTAR PRADESH
+KPK1779	Suresh Kumar Dua	Raisinghnagar	Ganganagar	RAJASTHAN
+KPK1780	Sanjay Kumar Manjhu	Muklava	Ganganagar	RAJASTHAN
+KPK1781	Rama Rani Gopta	Gajsinghpur	Ganganagar	RAJASTHAN
+KPK1782	Ravinder Kumar Bishnoi	24PM	Ganganagar	RAJASTHAN
+KPK1783	Bhim Raj Saharan	Maniyanwali	Ganganagar	RAJASTHAN
+KPK1784	Man Singh Kasnia	Mahiyanwali	Ganganagar	RAJASTHAN
+KPK1785	Nand Kishore Bansal	Sangria	Ganganagar	RAJASTHAN
+KPK1786	Vijay Pal Godara	Binjhwala	Ganganagar	RAJASTHAN
+KPK1787	Man Mohan Kumawat	Bajata	Ajmer	RAJASTHAN
+KPK1788	Indra Mal Jain	Ramthala	Tonk	RAJASTHAN
+KPK1789	Ramesh Chandra Kushwah	Rajapur	Dholpur	RAJASTHAN
+KPK1790	Rajesh Kumar Goswami	Bari	Dholpur	RAJASTHAN
+KPK1791	Rajendra Singh	Bijoli	Dholpur	RAJASTHAN
+KPK1792	Lakh Pati Singh	Bijoli	Dholpur	RAJASTHAN
+KPK1793	Nihal Singh Sharma	Husenpur	Dholpur	RAJASTHAN
+KPK1794	Ram Kumar Gurjar	Ulawati	Dholpur	RAJASTHAN
+KPK1795	Ashok Kumar Sharma	Paintha	Mathura	UTTAR PRADESH
+KPK1796	PrahaladSharma	Bharna Khurd	Mathura	UTTAR PRADESH
+KPK1797	ChhailBihari	Palsoan	Mathura	UTTAR PRADESH
+KPK1798	BachchuSingh	Nari	Mathura	UTTAR PRADESH
+KPK1799	BaliRam	Hathiya	Mathura	UTTAR PRADESH
+KPK1800	Ram Chander Bishnoi	19 NP	Ganganagar	RAJASTHAN
+KPK1801	Raghu Veer Singh	Thandewala	Ganganagar	RAJASTHAN
+KPK1802	Rajiv Kumar Bishnoi	33 ML	Ganganagar	RAJASTHAN
+KPK1803	Subhash Chand Bishnoi	20 NP	Ganganagar	RAJASTHAN
+KPK1804	LakshmanSharma	Basai Bujarg	Mathura	UTTAR PRADESH
+KPK1805	CharanSingh	Ranbari	Mathura	UTTAR PRADESH
+KPK1806	Rajan Kumar Gupta	Gajsinghpura	Ganganagar	RAJASTHAN
+KPK1807	Santosh Rani Gupta	Gajsinghpur	Ganganagar	RAJASTHAN
+KPK1808	Virender Singh Brar	32 Gurunagar	Ganganagar	RAJASTHAN
+KPK1809	Satnam Singh Brar	39 GG	Ganganagar	RAJASTHAN
+KPK1810	RajeshSaharan	7F	Ganganagar	RAJASTHAN
+KPK1811	JagdishSharma	Sahibsinghwala	Ganganagar	RAJASTHAN
+KPK1812	Sushil Kumar Bishnoi	2KT	Ganganagar	RAJASTHAN
+KPK1813	MoolchandSharma	Padal	Mathura	UTTAR PRADESH
+KPK1814	SeetaRam	Bukhari	Mathura	UTTAR PRADESH
+KPK1815	YashpalSingh	17PS	Ganganagar	RAJASTHAN
+KPK1816	Jyotish Kumar Bishnoi	Ward No6 Raisinghnagar	Ganganagar	RAJASTHAN
+KPK1817	Jagsir Singh Brad	Thandewala	Ganganagar	RAJASTHAN
+KPK1818	Yogendra Singh Chauhan	Atru	Baran	RAJASTHAN
+KPK1819	Pardeep Kumar Goyal	Raisinghnagar	Ganganagar	RAJASTHAN
+KPK1820	Girdhari Lal Jaat	Tandi	Ganganagar	RAJASTHAN
+KPK1821	Khushveer	3D Choti Sadhuwali	Ganganagar	RAJASTHAN
+KPK1822	Jagvinder Singh Shergill	14PSA	Ganganagar	RAJASTHAN
+KPK1823	KirshanKumar	Ward No. 5 Raisinghnagar	Ganganagar	RAJASTHAN
+KPK1824	Raja Ram Bishnoi	Gharsana	Ganganagar	RAJASTHAN
+KPK1825	JasveerSingh	6NNA	Ganganagar	RAJASTHAN
+KPK1826	Vikram Jeet Singh	9 O	Ganganagar	RAJASTHAN
+KPK1827	RajenderSingh	9 O	Ganganagar	RAJASTHAN
+KPK1828	Jagdish Khileri Jaat	Goudhuwala	Ganganagar	RAJASTHAN
+KPK1829	RamJass	37 MMK	Ganganagar	RAJASTHAN
+KPK1830	Satwinder Singh Arora	18 F	Ganganagar	RAJASTHAN
+KPK1831	AmolGade	Pimpalgaon	Yavatmal	MAHARASHTRA
+KPK1832	AmbadasGujar	Anjangaon	Amravati	MAHARASHTRA
+KPK1833	Subhash Chand Sharan	Nukera	Ganganagar	RAJASTHAN
+KPK1834	Jagdish Kumar Godara	Nukera	Ganganagar	RAJASTHAN
+KPK1835	Kalwant Singh Kumhar	Amarpura	Ganganagar	RAJASTHAN
+KPK1836	Dilawar Singh Karhwasra	Deengarh	Ganganagar	RAJASTHAN
+KPK1837	Trilok Chand Yadav	Manniwala	Ganganagar	RAJASTHAN
+KPK1838	Sandeep Kumar Mittal	Sadhulsahar	Ganganagar	RAJASTHAN
+KPK1839	Avtar Singh Bains	5 G Chhoti	Ganganagar	RAJASTHAN
+KPK1840	Amar Jeet Singh	Nukera	Ganganagar	RAJASTHAN
+KPK1841	Raghuveer Singh Suthar	Nagrana	Ganganagar	RAJASTHAN
+KPK1842	Anil Kumar Ledha	Dhaba	Ganganagar	RAJASTHAN
+KPK1843	Gopal Lal Jat	Kaleda	Ajmer	RAJASTHAN
+KPK1844	Mahaveer Prasad Kumawat	Dhundhari	Ajmer	RAJASTHAN
+KPK1845	Jasbeer Singh Sandhu	9DD	Ganganagar	RAJASTHAN
+KPK1846	Durga Singh Saklani	Khandla	Mandi	HIMACHAL PRADESH
+KPK1847	DhnyaneshwarRathod	Mozar	Yavatmal	MAHARASHTRA
+KPK1848	Jogender Singh	Sujavalpur	Ganganagar	RAJASTHAN
+KPK1849	Vinod Kumar Sai	Takhranwali	Ganganagar	RAJASTHAN
+KPK1850	VishalNain	12 SPM	Hanumangarh	RAJASTHAN
+KPK1851	Roop Singh Gurjar	GudlaNadi	Sawai Madhopur	RAJASTHAN
+KPK1852	Rameshwar Lal	Amarpura	Ganganagar	RAJASTHAN
+KPK1853	SurajMal	Gharsana	Ganganagar	RAJASTHAN
+KPK1854	MadanLal	Anoopgarh	Ganganagar	RAJASTHAN
+KPK1855	Krishan Lal Gopal	SadulShahar	Ganganagar	RAJASTHAN
+KPK1856	Sunil Kumar bagri	SadulShahar	Ganganagar	RAJASTHAN
+KPK1857	IndrajBadhu	Ganganagar	Ganganagar	RAJASTHAN
+KPK1858	Rai Singh Godara	Chak Kera	Ganganagar	RAJASTHAN
+KPK1859	IndrajBeniwal	Dhingwaniya	Ganganagar	RAJASTHAN
+KPK1860	Vishnu Kumar Solanki	Sadulsahar	Ganganagar	RAJASTHAN
+KPK1861	Bhim Sain Suthar	Chayawali	Ganganagar	RAJASTHAN
+KPK1862	ShriramChug	Sadulshahar	Ganganagar	RAJASTHAN
+KPK1863	Umed Singh Nojal	Chayawali	Ganganagar	RAJASTHAN
+KPK1864	Arvind Kumar Sharan	Sadulsahar	Ganganagar	RAJASTHAN
+KPK1865	HariSingh	2 KHN	Hanumangarh	RAJASTHAN
+KPK1866	DevenderSingh	10NP	Ganganagar	RAJASTHAN
+KPK1867	Birabal Ram Dudi	Bashir	Ganganagar	RAJASTHAN
+KPK1868	DharmendreSingh	Tamkot	Ganganagar	RAJASTHAN
+KPK1869	SukhadevRathod	Satefal	Yavatmal	MAHARASHTRA
+KPK1870	GurmeetSingh	37MMK	Hanumangarh	RAJASTHAN
+KPK1871	AnitaBelsare	Talkhar	Amravati	MAHARASHTRA
+KPK1872	ManoharKohale	Nachangaon	Gadchiroli	MAHARASHTRA
+KPK1873	NitinSawarkar	Kokarda	Amravati	MAHARASHTRA
+KPK1874	Bheem Dev Walia	Bhadyar	Mandi	HIMACHAL PRADESH
+KPK1875	JaydeepKohale	Kapustalni	Amravati	MAHARASHTRA
+KPK1876	KalvaRam	Khedameda	Alwar	RAJASTHAN
+KPK1879	LaxmanSingh	Saunkh	Alwar	RAJASTHAN
+KPK1880	KalvaRam	Galakheda	Alwar	RAJASTHAN
+KPK1881	YogendraSingh	Khedameda	Alwar	RAJASTHAN
+KPK1882	Ghan Shyam Sharma	Saukh	Alwar	RAJASTHAN
+KPK508	Ajeetkumar	N.H. Road- Kochas	Rohtas	BIHAR
+KPK509	Rajesh Kumar Singh	Shahmal Khaira	Rohtas	BIHAR
+KPK510	Bipin Bihari Singh	Sorahi	Rohtas	BIHAR
+KPK787	Dinesh kumar Pathak	muriladih	Sonbhadra	UTTAR PRADESH
+KUMAR	SonalalKumar	Jagdishpur Dilua	West Champaran	BIHAR
+KUMODJHA	KumodJha	bela	madhepura	BIHAR
+LALBAHADUR	Lalbahadurprasad	Bataraulia	East Champaran	BIHAR
+LEELASAMAR	Leelasingh	Paisiya	Sitapur	UTTAR PRADESH
+MURARI	Murari Lal Chowdhury	Bara Chakia	East Champaran	BIHAR
+NASEER	Arvind Kumar Sharma	Kauwahan	East Champaran	BIHAR
+NUNU MAHTO	NunuMahto	Khoksaha	Samastipur	BIHAR
+pothulapallivishnu9	VishnuP	Kothakota		ANDHRA PRADESH
+PRASAD	KameshwarPrasad	Mudda Chhapra	East Champaran	BIHAR
+RAHMAN	Md. Motiur Rahman	Muslim Tola Chap	East champaran	BIHAR
+RAHULRAI123	rahulrai	Kattuara	Deoria	UTTAR PRADESH
+RAJEEV	RajeevKumar	Abhiyapur Bazar	Naugachhia	BIHAR
+RAMKUMAR	RamkumarSaini	"41, Jagannath Vihar, DBG Road"	Panipat	HARYANA
+rishikesh2k4	RISHIKESH NARAYAN SINGH	EKANGARSARAI	Nalanda	BIHAR
+RR_74	Ranjeet prasad Singh	Pachupati Jagtapur	Gonda	UTTAR PRADESH
+SAHEBGUNJ	Rakesh Kumar Singh	Rusulpur	Muzaffarpur	BIHAR
+SAINI	NareshSaini	Kalpa	Sonepat	HARYANA
+SAINIK3862	JitendraKumar	Gagaur	Sheikhpura	BIHAR
+SARAN	MurariSaran	Gheriari Chak	East Champaran	BIHAR
+SATYA	Satya Narayan Singh	Patel Nagar Dhaka	East Champaran	BIHAR
+SHAHI	Amrendra Kumar Shahi	Zirat Quarter	East Champaran	BIHAR
+shalu	suchisaraswat	hhkl		HARYANA
+SHAMBHU	Shambhu Saran Prasad Gupta	Uttari Noneya	East Champaran	BIHAR
+SHARMA	UpendraSharma	Ejra	East Champaran	BIHAR
+SINGH	Jaiprakash Kumar Singh	Nagargawa	West Champaran	BIHAR
+suchi	mbbbbmnbb	jk		GUJARAT
+tmp1563	DipmalaThakur	Aladoah	Amravati	MAHARASHTRA
+tmp1582	UmeshSharma	Genoli	Bhilwara	RAJASTHAN
+tmp1941	MAHAVIR PRASAD MEGHWAL	RAM GANJ BALAJI	Bundi	RAJASTHAN
+tmp1954	Shiv Raj Kumawat	RamKhhedi	Ajmer	RAJASTHAN
+tmp1969	Devi Shankar Choudhary	Hathi Dilod	Baran	RAJASTHAN
+tmp1970	Harish Singh Tomar	Bholapura Porsa	Morena	MADHYA PRADESH
+tmp1985	TestTest	test	Alwar	RAJASTHAN
+tmp1986				
+tmp1993				
+tmp1994				
+tmp1995				
+tmp1996				
+tmp2018	Savinkumar	Singahi	Muzaffarpur	BIHAR
+tmp2052	virendra vishwnayh eshwarsheete	shirur anantpal	Latur	MAHARASHTRA
+VIJAY	VIJAY KUMAR GUPTA	N/A	EAST CHAMPARAN	BIHAR
+VIJAYVIR	Vijay Vir Singh	Sonawon	AmbedkarNagar	UTTAR PRADESH
+VIKASVERMA	VikasVerma	Suwa Para Brh.	Baharich	UTTAR PRADESH
+yuvrajrathod1986@gmail.com	yuvraj madhukar rathod	someshwar nagar	Washim	MAHARASHTRA
+

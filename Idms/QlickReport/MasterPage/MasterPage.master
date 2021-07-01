@@ -1,0 +1,133 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<style type="text/css">
+<!--
+
+#demo-container{padding:1px 5px 0 15px;background:#67A897;}
+
+ul#simple-menu{list-style-type:none;width:100%;position:relative;height:27px;font-family:"Trebuchet MS",Arial,sans-serif;font-size:13px;font-weight:bold;margin:0;padding:11px 0 0 0;}
+ul#simple-menu li{display:block;float:left;margin:0 0 0 4px;height:27px;}
+ul#simple-menu li.left{margin:0;}
+ul#simple-menu li a{display:block;float:right;color:#fff;background:#4A6867;line-height:27px;text-decoration:none;padding:0 17px 0 18px;height:27px;}
+ul#simple-menu li a.right{padding-right:19px;}
+ul#simple-menu li a:hover{background:#000000; color:Gold;}
+ul#simple-menu li a.current{color:#2E4560;background:#fff;}
+ul#simple-menu li a.current:hover{color:#2E4560;background:#fff;}
+-->
+</style>
+<script language="javascript" type="text/javascript">
+
+    function callme() {
+        var absd = "<%=url%>";
+        document.frames['frmTarget'].location.href = absd;
+        document.getElementById("divFrm").style.display = 'block';
+        //document.frames['frmTarget'].submit();
+
+    }
+
+</script>
+<title>Welcome Page</title>
+</head>
+<body style="margin-top:0; margin-left:0; margin-right:0; margin-right:0;">
+<form runat="server" id="form1">
+<table style="background-color:#000000; width:100%;" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td style="background-color:#000000;width:40%; height:55px;" valign="middle" align="left">
+        <asp:Image runat="server" ID="logo" ImageUrl="~/images/Black_Logo.gif" ToolTip="QlickReport.Com" CssClass="logo" />
+            <%--<img src="images/Black_logo.gif" alt="QlickReport Logo" border="0" class="logo" title="QlickReport Logo"/>--%>
+        </td>
+        <td style="background-color:#000000;width:60%; height:55px;" align="right">
+            <table style="width:100%" cellpadding="0" cellspacing="0" border="0" align="right">
+                <tr>
+                    <td style="font-family:Verdana; Font-size:11px; color:gold;"><b>Welcome <asp:Label runat="server" ID="username"></asp:Label>&nbsp;&nbsp;</b>|&nbsp;&nbsp;<asp:LinkButton runat="server" ID="hp" CausesValidation="false" Text="Home Page" ForeColor="Gold" Font-Underline="false"></asp:LinkButton>&nbsp;&nbsp;</b>|&nbsp;&nbsp;<asp:HyperLink Font-Underline="false" ForeColor="Gold" ID="changepassword" runat="server" NavigateUrl="~/Misc/ChangePassword.aspx" Text="Change Password"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;<asp:LinkButton runat="server" ID="logout" CausesValidation="false" Text="Logout" ForeColor="Gold" Font-Underline="false"></asp:LinkButton>&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                <td align="center" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:LinkButton ID="useradmin"  runat="server" style="font-size:14px; font-weight:bold;" CssClass="a2" ToolTip="Switch as Admin">Switch As Admin</asp:LinkButton>
+                   <asp:LinkButton ID="useradmin1"  style="font-size:14px; font-weight:bold;"  runat="server" CssClass="a2" ToolTip="Switch as User">Switch As User</asp:LinkButton></td>
+                </tr>
+                <tr>
+                   &nbsp;&nbsp;<td align="center" style="font-family:Verdana; Font-size:11px; color:gold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You are working as a <asp:Label ID="lbmsg" ForeColor="Gold" Font-Bold=true runat="server"></asp:Label> </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <div id="demo-container">
+                <ul id="simple-menu">
+                <%--<li><a href="TableTools/Index.aspx?val=31" title="Home">Tool & Tables</a></li>--%>
+                <li><asp:LinkButton runat="server" ID="lb1" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb2" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb3" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb4" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb5" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb6" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb7" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb8" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="lb9" Visible="false" CssClass="a2"></asp:LinkButton></li>
+                <li><asp:LinkButton runat="server" ID="LinkButton1" Visible="true" Text="Graphs"   CssClass="a2"></asp:LinkButton></li>
+                <%--<li><a href="#" title="Home">Data Manager</a></li>
+                <li><a href="#" title="Home">Data Transfer</a></li>
+                <li><a href="#" title="Home">Report Designer</a></li>--%>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+<table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top" style="width:230px; background-color:#EBEBEB; height:524px;" >
+       <div style="font-weight:Bold;width:200px;height:100%;overflow:hidden;" runat="server" id="divTree" >
+       <table border="0" cellpadding="0" cellspacing="0" width="206">
+				<tr>
+					<td align="left" valign="top" style="width:100px" >
+						<table class="grid">
+							<tr>
+								<td style="width:100px; ">
+									<div id="Divdisplay" style="font-weight:Bold;width:200px;"  runat="server">
+							            <asp:TreeView   id ="menu" runat="server" ExpandDepth="1" CssClass="a2" ForeColor="Black" >
+                                        <ParentNodeStyle   Font-Bold="False" ForeColor="Black"   />
+                                        <HoverNodeStyle  Font-Underline="True" ForeColor="Blue" />
+                                        <SelectedNodeStyle  Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" ForeColor="Blue" />
+                                        <NodeStyle  Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                            <RootNodeStyle ForeColor="Black" />
+                                            <LeafNodeStyle ForeColor="Black" />
+                                        </asp:TreeView>
+									</div>
+                                    
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			 
+		</div><br />   
+        <asp:ContentPlaceHolder ID="LeftPlaceHolder" Visible="false" runat="server">
+         </asp:ContentPlaceHolder>
+        </td>
+        <td style="width:1px; background-color:#67A897; height:524px;" >
+        </td>
+        <td valign="top">
+        <div id="divFrm" style="height:100%;width:100%; display:none;">
+    <iframe id="frmTarget" scrolling="no" frameborder="0" style="height:1000px;width:100%;overflow:hidden;"   title="Reports Panel" ></iframe>
+   </div>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+        
+        </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

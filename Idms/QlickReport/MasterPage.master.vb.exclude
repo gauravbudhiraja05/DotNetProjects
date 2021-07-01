@@ -1,0 +1,69 @@
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration.ConfigurationSettings
+Imports System.Math
+Imports System.Net.Sockets
+Imports System.Reflection
+Partial Class MasterPage
+    Inherits System.Web.UI.MasterPage
+    Dim con As String = AppSettings("ConnectionString")
+    Dim connection As New SqlConnection(con)
+    Dim cmd As New SqlCommand
+    Dim rdr As SqlDataReader
+    Public url = ""
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        username.Text = Session("prefix").ToString() + " " + Session("username").ToString() + " " + "(" + Session("userid").ToString() + ")"
+        menu.Nodes.Clear()
+        If Trim(Request("val")).ToString() <> Nothing Then '<> not equal to sign
+            Dim cmd As New SqlCommand
+
+            If Trim(Request("val")).ToString() = "5" Then
+                Me.LeftPlaceHolder.Visible = True
+                divTree.Visible = False
+            Else
+                Me.LeftPlaceHolder.Visible = False
+            End If
+
+            cmd = New SqlCommand("select distinct menudescription,URLLink,orderby from nlvl_menu,nlvl_menu_rights where nlvl_menu.menuid=nlvl_menu_rights.menuid and nlvl_menu_rights.parentid ='" + Request("val") + "' order by orderby", connection)
+
+            Dim dr1 As SqlDataReader
+            connection.Open()
+            Dim nodeaccount As System.Web.UI.WebControls.TreeNode
+
+            dr1 = cmd.ExecuteReader
+            While dr1.Read()
+
+                nodeaccount = New TreeNode()
+                nodeaccount.Text = dr1("menudescription")
+                nodeaccount.NavigateUrl = "/QlickReport" + dr1("URLLink") + "?val=" + Request("val")
+                nodeaccount.ToolTip = dr1("menudescription")
+                menu.Nodes.Add(nodeaccount)
+
+            End While
+
+        End If
+    End Sub
+
+    Protected Sub logout_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles logout.Click
+        Session.Abandon()
+        Response.Redirect("~/Default.aspx")
+    End Sub
+
+    Protected Sub toolsandtable_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles toolsandtable.Click
+        Response.Redirect("~/TableTools/Index.aspx?val=31")
+    End Sub
+
+    Protected Sub datamanager_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles datamanager.Click
+        Response.Redirect("~/DataManager/DataManagerHome.aspx?val=6")
+    End Sub
+
+    Protected Sub datatransfer_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles datatransfer.Click
+        Response.Redirect("~/DataTransfer/Index.aspx?val=122")
+    End Sub
+
+    Protected Sub reportdesigner_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles reportdesigner.Click
+        Response.Redirect("~/ReportDesigner/Welcome.aspx?val=5")
+    End Sub
+End Class
+

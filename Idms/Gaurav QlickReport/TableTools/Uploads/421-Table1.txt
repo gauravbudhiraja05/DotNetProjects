@@ -1,0 +1,9 @@
+UserID	Name	Age	Salary	Gender
+1	Gaurav	22	20000	Male
+2	Ashok	21	21000	Male
+3	Ashish	23	30000	Male
+4	Arun	24	29000	Male
+5	Pankul	25	25000	Male
+6	Sneha	19	19000	Female
+7	Mahima	19	18500	Female
+

@@ -1,0 +1,11 @@
+empno	empsal	empname	empcity	fathername	
+101	5000	rajeev	delhi	avinash	
+102	10000	mahesh	mumbai	ashok	
+103	20000	rahul	noida	dayaram	
+104	18000	atul	lucknow	ram	
+105	12000	raju	modina	vijay	
+106	17000	kashi	rajnagr	radha	
+107	16000	ajay	meerut	abhishek	
+108	19000	ratan	bombay	sanjeev	
+109	21000	rishi	chenni	rajeev	
+

@@ -1,0 +1,205 @@
+Imports System.Data.SqlClient
+Imports System.Configuration.ConfigurationSettings
+Imports System.Data
+Imports System.IO
+Partial Class TrendingAndSuggestion_VoiceAndNonVoiceHtml
+    Inherits System.Web.UI.Page
+    Dim conn1 As String = AppSettings("ConnectionString")
+
+    Dim con As New SqlConnection(conn1)
+    Dim readquery As SqlDataReader
+    Dim p
+    Dim cmd As New SqlCommand
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Page.IsPostBack = False Then
+
+
+            Dim classobj As New Functions
+            DropDowndept.DataTextField = "departmentname"
+            DropDowndept.DataValueField = "DeptID"
+
+            DropDowndept.DataSource = classobj.bind_Dept()
+            DropDowndept.DataBind()
+            DropDowndept.Items.Insert(0, "---select---")
+        End If
+    End Sub
+
+    Protected Sub DropDowndept_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDowndept.SelectedIndexChanged
+        If DropDowndept.SelectedItem.Text = "---select---" Then
+
+
+            DropDownclient.Items.Clear()
+            DropDownlob.Items.Clear()
+        Else
+            Dim classobj As New Functions
+
+
+
+            DropDownclient.DataTextField = "clientname"
+            DropDownclient.DataValueField = "autoid"
+            DropDownclient.DataSource = classobj.bind_client(DropDowndept.SelectedValue)
+
+            DropDownclient.DataBind()
+            DropDownclient.Items.Insert(0, "---select---")
+            DropDownlob.Items.Clear()
+        End If
+    End Sub
+
+    Protected Sub DropDownclient_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownclient.SelectedIndexChanged
+        If DropDownclient.SelectedItem.Text = "---select---" Then
+
+
+            DropDownlob.Items.Clear()
+        Else
+            Dim classobj As New Functions
+
+            DropDownlob.DataTextField = "lobname"
+            DropDownlob.DataValueField = "autoid"
+            DropDownlob.DataSource = classobj.bind_lob(DropDowndept.SelectedValue, DropDownclient.SelectedValue)
+
+            DropDownlob.DataBind()
+            DropDownlob.Items.Insert(0, "---select---")
+        End If
+    End Sub
+
+    Protected Sub DropDownlob_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownlob.SelectedIndexChanged
+
+    End Sub
+    Public Sub aspnet_msgbox(ByVal message As String)
+        System.Web.HttpContext.Current.Response.Write("<SCRIPT LANGUAGE =""javascript"">" & vbCrLf)
+        System.Web.HttpContext.Current.Response.Write("alert(""" & message & """)" & vbCrLf)
+        System.Web.HttpContext.Current.Response.Write("</SCRIPT>")
+    End Sub
+
+    Protected Sub Button4_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+        If DropDowndept.SelectedItem.Text = "---select---" Then
+            aspnet_msgbox("Select Department")
+            Exit Sub
+        End If
+        Dim repname As String = ""
+        cmd = New SqlCommand("select ReportName as ReportName from voice_nonvoicelobhtml", con)
+        con.Open()
+        readquery = cmd.ExecuteReader
+        While readquery.Read()
+
+            repname = readquery("ReportName")
+            If repname = textreportname.Text Then
+                aspnet_msgbox("Choose Another Report Name")
+                textreportname.Focus()
+                Exit Sub
+            End If
+
+        End While
+        readquery.Close()
+        con.Close()
+
+
+
+
+
+
+
+
+        If textreportname.Text = "" Then
+            aspnet_msgbox("Fill Report Name")
+            textreportname.Focus()
+            Exit Sub
+        End If
+
+        'txtstrdiv.Value = strpretags & txtstrdiv.Value & strposttags
+        Dim str As String = ""
+        Dim fp As StreamWriter
+        If Not Directory.Exists(Server.MapPath("VoiceNon_VoiceLob/")) Then
+            '<----------------------Creating Directory for partcular user--------------------------------->
+            Directory.CreateDirectory(Server.MapPath("VoiceNon_VoiceLob/"))
+            '<----------------------End of Creating Directory for partcular user------------------------>
+        End If
+        '<------------------------End of Creating A main Directory--------------------------------------->
+        Dim Path = "VoiceNon_VoiceLob/" & textreportname.Text & ".html"
+        '<--------------------Creating a new text file---------------------------------->
+        fp = File.CreateText(Server.MapPath(Path))
+        'change
+        fp.WriteLine(Session("nonvoice"))
+        fp.WriteLine(Session("voice"))
+
+        fp.Close()
+        Dim strr As String = ""
+        Dim deptval As String = ""
+        Dim clientval As String = ""
+        Dim lobval As String = ""
+        deptval = DropDowndept.SelectedValue.ToString
+        clientval = DropDownclient.SelectedValue.ToString
+        lobval = DropDownlob.SelectedValue.ToString
+        If DropDowndept.SelectedItem.Text = "---select---" Then
+            aspnet_msgbox("Select Department First")
+            Exit Sub
+        End If
+        If DropDownclient.SelectedItem.Text = "---select---" Then
+
+            DropDownclient.SelectedItem.Text = "0"
+            clientval = "0"
+
+            If DropDownlob.Items.Count = 0 Then
+                lobval = "0"
+                DropDownlob.Items.Insert(0, "0")
+                DropDownlob.SelectedItem.Text = "0"
+                strr = "val"
+            End If
+
+        End If
+
+        If DropDownlob.Items.Count <> 0 Then
+
+
+            If DropDownlob.SelectedItem.Text = "---select---" Or DropDownlob.SelectedItem.Text = "0" Then
+                DropDownlob.SelectedItem.Text = "0"
+                lobval = "0"
+            End If
+        End If
+        cmd = New SqlCommand("insert into voice_nonvoicelobhtml values(@DeptName,@DeptId,@ClientName,@ClientId,@LobName,@LobId,@ReportName,@SavedBy)", con)
+        cmd.Parameters.Add("@DeptName", SqlDbType.VarChar, 50)
+        cmd.Parameters("@DeptName").Value = DropDowndept.SelectedItem.Text
+        cmd.Parameters.Add("@DeptId", SqlDbType.VarChar, 50)
+        cmd.Parameters("@DeptId").Value = deptval
+        cmd.Parameters.Add("@ClientName", SqlDbType.VarChar, 50)
+        cmd.Parameters("@ClientName").Value = DropDownclient.SelectedItem.Text
+        cmd.Parameters.Add("@ClientId", SqlDbType.VarChar, 50)
+        cmd.Parameters("@ClientId").Value = clientval
+        cmd.Parameters.Add("@LobName", SqlDbType.VarChar, 50)
+        cmd.Parameters("@LobName").Value = DropDownlob.SelectedItem.Text
+        cmd.Parameters.Add("@LobId", SqlDbType.VarChar, 50)
+        cmd.Parameters("@LobId").Value = lobval
+        cmd.Parameters.Add("@ReportName", SqlDbType.VarChar, 50)
+        cmd.Parameters("@ReportName").Value = textreportname.Text
+        cmd.Parameters.Add("@SavedBy", SqlDbType.VarChar, 50)
+        cmd.Parameters("@SavedBy").Value = Session("userid")
+
+        '
+        con.Open()
+        cmd.ExecuteNonQuery()
+        con.Close()
+        If DropDownclient.SelectedItem.Text = "0" Then
+
+            DropDownclient.SelectedItem.Text = "---select---"
+
+
+
+        End If
+        If DropDownlob.SelectedItem.Text = "0" Then
+            DropDownlob.SelectedItem.Text = "---select---"
+
+
+
+        End If
+        If strr = "val" Then
+            DropDownlob.Items.Clear()
+
+        End If
+
+
+
+
+        aspnet_msgbox("Report Has Been Saved Successfully")
+    End Sub
+End Class

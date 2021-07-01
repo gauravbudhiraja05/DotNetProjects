@@ -1,0 +1,7 @@
+empid	empname	empcity
+1	a	x
+2	b	y
+3	c	c
+4	d	d
+5	e	g
+

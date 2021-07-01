@@ -1,0 +1,11 @@
+id	name	fathername	salary	city
+101	ravi	pritam singh	25000	saharanpur
+102	mayank	madanpal tyagi	25000	saharanpur
+103	udit	vidhyavilas	20000	roorkee
+104	pankaj	shyam singh	21000	haridwar
+105	vikas	ravindra singh	22000	lakshar
+106	pradeep	prithvi singh	26000	saharanpur
+107	arun	rajansingh	18000	purkaji
+108	rahul	rohan kumar	17000	dehli
+109	suraj	rajkumar	18500	roorkee
+110	anirudh	sohan singh	17500	lakshar

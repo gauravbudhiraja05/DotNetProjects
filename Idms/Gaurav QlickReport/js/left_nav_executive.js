@@ -1,0 +1,26 @@
+document.write("<table width=218 cellpadding=0 cellspacing=0 border=0 class=liteyellow_bg>");
+//document.write("<tr><td align=left style='padding-left:10px;padding-bottom:10px'><b>Welcome " + '<%=Session("proid")%>' + "</b></td></tr>");
+document.write("<tr><td align=center><img src=/V4U/images/myvivah_heading.gif></td></tr>");
+document.write("	<tr>");
+document.write("	<td align=center>");
+document.write("<table border=0 cellspacing=0 cellpadding=0 id=myVivah width=212>");
+document.write("<tr><td>")
+	document.write("<table border=0 cellspacing=0 cellpadding=0  width=100% id=leftProfile>");
+	document.write("<tr><td><img src=/V4U/images/downArrow.gif width=6 height=4 hspace=5><b>My Profile</b></td></tr>");
+	document.write("<tr><td class=leftPadding20><img src=/V4U/images/rightblackarrow.gif width=4 height=6 hspace=5><a href=/V4U/member_profile.aspx class=leftSubLinks>Manage Profile</a></td></tr>");
+	document.write("<tr><td class=leftPadding20><img src=/V4U/images/rightblackarrow.gif width=4 height=6 hspace=5><a href=/V4U/Edit/edit_profile_preferred.aspx class=leftSubLinks>Edit Preffered Partner Profile</a></td></tr>");
+	document.write("<tr><td class=leftPadding20><img src=/V4U/images/rightblackarrow.gif width=4 height=6 hspace=5><a HREF=/V4U/UploadPhotoNVideos.aspx class=leftSubLinks>Manage Photo/ Video</a></td></tr>");
+	document.write("<tr><td class=leftPadding20><img src=/V4U/images/rightblackarrow.gif width=4 height=6 hspace=5><a href=/V4U/Search/BrowseProfile.aspx class=leftSubLinks>Browse Profiles</a></td></tr>");
+	document.write("</table>");
+document.write("</td></tr>");
+document.write("</table>");
+document.write("</td>");
+document.write("	</tr>");
+document.write("	<tr>");
+document.write("	<td valign=top align=center><br><img src=/V4U/images/advance_search_header.gif ></td>");
+document.write("	</tr>");
+document.write("	<tr>");
+document.write("	<td align=center>");
+document.write("<table width=212 cellpadding=2 cellspacing=0 border=0 id=leftSearch>");
+document.write("<tr><td colspan=4><img src=/images/spacer.gif width=1 height=3></td></tr>");
+document.write("<tr>");

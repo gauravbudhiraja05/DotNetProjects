@@ -1,0 +1,10 @@
+s_name	s_rollno	s_marks	s_enrollno	s_address
+pardeep	903814076	345	120001	mohannager
+kumar	903814077	564	120002	ghaziabad
+sandeep	903814078	234	120003	saharanpur
+rajnesh	903814079	453	120004	roorkee
+saini	903814080	387	120005	haridwar
+newton	903814081	299	120006	risikesh
+deepak	903814082	367	120007	rampur
+vivak	903814083	304	120008	sahibabad
+praveen	903814084	401	120009	sharpur

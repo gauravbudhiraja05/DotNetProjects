@@ -1,0 +1,401 @@
+CropName	ItemType	Oct	Nov	Dec	Jan	Feb	Mar	Apr	May	Jun	Jul	Aug	Sep
+Wheat	Seed	0	50	0	0	0	0	0	0	0	0	0	0
+Wheat	Urea	0	28	40	0	0	0	0	0	0	0	0	0
+Wheat	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	DAP	0	30	0	0	0	0	0	0	0	0	0	0
+Wheat	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	MOP	0	20	0	0	0	0	0	0	0	0	0	0
+Wheat	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Chloropyrophos 20 EC	0	0	1.5	0	0	0	0	0	0	0	0	0
+Wheat	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Phorate 10% CG	0	8	0	0	0	0	0	0	0	0	0	0
+Wheat	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Wheat	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Seed	0	40	0	0	0	0	0	0	0	0	0	0
+Barley	Urea	0	18	20	0	0	0	0	0	0	0	0	0
+Barley	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	DAP	0	20	0	0	0	0	0	0	0	0	0	0
+Barley	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	MOP	0	13	0	0	0	0	0	0	0	0	0	0
+Barley	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Chloropyrophos 20 EC	0	0	1.5	0	0	0	0	0	0	0	0	0
+Barley	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Phorate 10% CG	0	8	0	0	0	0	0	0	0	0	0	0
+Barley	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Barley	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Seed	2	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Urea	35	0	0	0	0	0	0	0	0	0	0	0
+Mustard	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	DAP	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	SSP	100	0	0	0	0	0	0	0	0	0	0	0
+Mustard	MOP	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Phorate 10% CG	8	0	0	0	0	0	0	0	0	0	0	0
+Mustard	M P  2% dust	0	10	0	10	0	0	0	0	0	0	0	0
+Mustard	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Mancozeb	0	0	0.8	0	0.8	0	0	0	0	0	0	0
+Mustard	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Mustard	Metalaxyl+M-45 (72%)	0	0	0	0.405	0	0	0	0	0	0	0	0
+Mustard	Sulphur 80% WP	0	0	0	0	1	0	0	0	0	0	0	0
+Mustard	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Seed	33	0	0	0	0	0	0	0	0	0	0	0
+Gram	Urea	9	0	0	0	0	0	0	0	0	0	0	0
+Gram	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	DAP	22	0	0	0	0	0	0	0	0	0	0	0
+Gram	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	MOP	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Profenophos 50% EC	0	0	0.8	0	0	0	0	0	0	0	0	0
+Gram	Profenophos +Cyper 44%	0	0	0	0.8	0	0	0	0	0	0	0	0
+Gram	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Gram	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Seed	0	0	0	0	0	0	0	0	4	0	0	0
+Bajra	Urea	0	0	0	0	0	0	0	0	20	20	0	0
+Bajra	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	DAP	0	0	0	0	0	0	0	0	25	0	0	0
+Bajra	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	MOP	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Bajra	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Seed	0	0	0	0	0	0	0	0	8	0	0	0
+Maize	Urea	0	0	0	0	0	0	0	0	35	15	15	0
+Maize	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	DAP	0	0	0	0	0	0	0	0	30	0	0	0
+Maize	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	MOP	0	0	0	0	0	0	0	0	25	0	0	0
+Maize	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0.25	0	0	0
+Maize	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Phorate 10% CG	0	0	0	0	0	0	0	0	8	0	0	0
+Maize	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Maize	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Seed	0	0	0	0	0	0	0	0	30	0	0	0
+Groundnut	Urea	0	0	0	0	0	0	0	0	15	0	0	0
+Groundnut	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	DAP	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	SSP	0	0	0	0	0	0	0	0	150	0	0	0
+Groundnut	MOP	0	0	0	0	0	0	0	0	25	0	0	0
+Groundnut	Zinc+	0	0	0	0	0	0	0	0	0	4	0	0
+Groundnut	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0.25	0	0	0
+Groundnut	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Phorate 10% CG	0	0	0	0	0	0	0	0	0	8	0	8
+Groundnut	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Mancozeb	0	0	0	0	0	0	0	0	0.12	0	0	8
+Groundnut	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0.8	0
+Groundnut	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Groundnut	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	8	0
+Pea	Seed	40	0	0	0	0	0	0	0	0	0	0	0
+Pea	Urea	10	0	20	0	0	0	0	0	0	0	0	0
+Pea	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	DAP	35	0	0	0	0	0	0	0	0	0	0	0
+Pea	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	MOP	30	0	0	0	0	0	0	0	0	0	0	0
+Pea	Zinc+	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Profenophos 50% EC	0	0	0	0.8	0	0	0	0	0	0	0	0
+Pea	Profenophos +Cyper 44%	0	0	0	0	0.8	0	0	0	0	0	0	0
+Pea	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Pea	Sulphur 80% WP	0	0	0	0	1	0	0	0	0	0	0	0
+Pea	Sulphur 85% dust	0	0	0	8	0	8	0	0	0	0	0	0
+Tomato	Seed	0	0	0.2	0	0	0	0	0	0	0	0	0
+Tomato	Urea	0	0	0	44	25	25	0	0	0	0	0	0
+Tomato	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	DAP	0	0	0	70	0	0	0	0	0	0	0	0
+Tomato	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	MOP	0	0	0	40	0	0	0	0	0	0	0	0
+Tomato	Zinc+	0	0	0	0	4	4	0	0	0	0	0	0
+Tomato	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Profenophos 50% EC	0	0	0	0	0	0.8	0	0	0	0	0	0
+Tomato	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Acetamprid 20% SP	0	0	0	0	0.2	0	0	0	0	0	0	0
+Tomato	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Copper Oxy Chloride 	0	0	0	0	0	1.25	0	0	0	0	0	0
+Tomato	Dicophol 18.5% EC	0	0	0	0	3	0	0	0	0	0	0	0
+Tomato	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Carbendazim + M-45 76%	0	0	0	154	0	0	0	0	0	0	0	0
+Tomato	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Tomato	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Seed	0	0	0.16	0	0	0	0	0.16	0	0	0	0
+Chilli	Urea	0	0	0	50	0	0	0	0	50	0	0	0
+Chilli	CAN	0	0	0	0	35	35	0	0	0	35	35	0
+Chilli	DAP	0	0	0	40	0	0	0	0	40	0	0	0
+Chilli	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	MOP	0	0	0	30	0	0	0	0	30	0	0	0
+Chilli	Zinc+	0	0	0	0	4	4	0	0	0	4	4	0
+Chilli	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Profenophos 50% EC	0	0	0	0	0	0.8	0	0	0	0	0.8	0
+Chilli	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Imidachlorpid 17.8% SL	0	0	0	0	0.2	0.2	0	0	0	0.2	0.2	0
+Chilli	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Mancozeb	0	0	0	0	0	0	0	0	0.8	0	0	0
+Chilli	Carbendazim + M-45 76%	0	0	0	120	0	0	0	0	0	0	0	0
+Chilli	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Chilli	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Seed	0	0	0	0	0.16	0	0	0	0.16	0	0	0
+Brinjal	Urea	0	26	21	0	0	26	0	0	0	26	21	0
+Brinjal	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	DAP	0	100	0	0	0	100	0	0	0	100	0	0
+Brinjal	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	MOP	0	30	0	0	0	30	0	0	0	30	0	0
+Brinjal	Zinc+	0	0	4	4	4	0	4	0	0	0	4	4
+Brinjal	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Profenophos 50% EC	0	0	0	0	0	0	0	0	0.8	0	0	0
+Brinjal	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0.8	0	0	0	0
+Brinjal	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Imidachlorpid 17.8% SL	0	0	0	0	0.2	0	0	0	0	0	0	0.2
+Brinjal	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Ithion 50% EC	0	0	0	0	0	0	0.8	0	0	0	0	0
+Brinjal	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Dicophol 18.5% EC	0	0	0	0	3	0	0	0	0	0	0	3
+Brinjal	Mancozeb	0	0	0	4	0	0	0	0	0	0	0	3.2
+Brinjal	Carbendazim + M-45 76%	0	0	0	4	0	0	0	0	0	0	0	0
+Brinjal	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Brinjal	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Seed	4	0	0	0	0	0	0	0	0	0	0	0
+Onion	Urea	0	0	40	50	40	0	0	0	0	0	0	0
+Onion	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	DAP	0	0	20	40	0	0	0	0	0	0	0	0
+Onion	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	MOP	0	0	67	30	0	0	0	0	0	0	0	0
+Onion	Zinc+	0	0	0	0	4	0	0	0	0	0	0	0
+Onion	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Profenophos 50% EC	0	0	0	0.6	0.8	0	0	0	0	0	0	0
+Onion	Profenophos +Cyper 44%	0	0	0	0	0	0.8	0	0	0	0	0	0
+Onion	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Carbendazim + M-45 76%	0	0	0	120	0	0	0	0	0	0	0	0
+Onion	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Onion	Sulphur 80% WP	0	0	0	0	0.6	0	0	0	0	0	0	0
+Onion	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Seed	0	0	0	0	0	0	0	0	0.3	0	0	0
+Culiflower	Urea	20	0	54	0	0	0	0	0	0	50	0	0
+Culiflower	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	DAP	0	0	0	0	0	0	0	0	0	40	0	0
+Culiflower	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	MOP	0	0	0	0	0	0	0	0	0	30	0	0
+Culiflower	Zinc+	4	0	4	0	0	0	0	0	0	0	0	0
+Culiflower	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Endosulphan 35 EC.	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Phorate 10% CG	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Cypermethrin 25%EC	0.8	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Profenophos 50% EC	0	0.8	0.8	0	0	0	0	0	0	0	0	0
+Culiflower	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Imidachlorpid 17.8% SL	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Culiflower	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Seed	0	0	0	0	8	0	0	0	8	0	0	0
+Bhindi	Urea	0	0	0	0	40	40	40	0	40	40	45	0
+Bhindi	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	DAP	0	0	0	0	25	0	0	0	25	0	0	0
+Bhindi	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	MOP	0	0	0	0	20	0	0	0	20	0	0	0
+Bhindi	Zinc+	0	0	0	0	0	4	4	0	0	4	4	0
+Bhindi	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Endosulphan 35 EC.	0	0	0	0	0	0	1.2	0	0	0	1.2	0
+Bhindi	Phorate 10% CG	0	0	0	0	8	0	0	0	0	0	0	0
+Bhindi	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Cypermethrin 25%EC	0	0	0	0	0	0	0	0.8	0	0	0	0
+Bhindi	Profenophos 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Acetamprid 20% SP	0	0	0	0	0	0	0.2	0	0	0	0.2	0
+Bhindi	Imidachlorpid 17.8% SL	0	0	0	0	0	0.2	0	0	0	0.2	0	0
+Bhindi	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0.005	0	0	0
+Bhindi	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Dicophol 18.5% EC	0	0	0	0	0	0	0	3	0	0	0	0
+Bhindi	Mancozeb	0	0	0	0	0	0.8	0	0	0	0.8	0	0
+Bhindi	Carbendazim + M-45 76%	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Bhindi	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Seed	0	0	0	0	1.5	0	0	0	1.5	0	0	0
+BottelGaurd	Urea	0	0	0	50	30	16	16	0	30	16	30	0
+BottelGaurd	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	DAP	0	0	0	40	30	0	0	0	30	0	0	0
+BottelGaurd	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	MOP	0	0	0	30	25	0	0	0	25	0	0	0
+BottelGaurd	Zinc+	0	0	0	0	0	4	4	0	0	4	4	0
+BottelGaurd	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Endosulphan 35 EC.	0	0	0	0	0	1.2	0	0	1.2	0	0	0
+BottelGaurd	Phorate 10% CG	0	0	0	0	4	0	0	0	0	0	0	0
+BottelGaurd	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Profenophos 50% EC	0	0	0	0	0	0	0.8	0	0	0	0.8	0
+BottelGaurd	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0.8	0	0	0	0
+BottelGaurd	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Imidachlorpid 17.8% SL	0	0	0	0	0.2	0	0	0	0	0	0	0
+BottelGaurd	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Mancozeb	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Carbendazim + M-45 76%	0	0	0	120	0	0	0.8	0	0	0	0.8	0
+BottelGaurd	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0.405	0	0	0	0
+BottelGaurd	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+BottelGaurd	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Seed	0	0	0	0	1.5	0	0	0	0	0	0	0
+Watermelon	Urea	0	0	0	0	30	16	16	0	0	0	0	0
+Watermelon	CAN	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	DAP	0	0	0	0	30	0	0	0	0	0	0	0
+Watermelon	SSP	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	MOP	0	0	0	0	25	0	0	0	0	0	0	0
+Watermelon	Zinc+	0	0	0	0	0	4	4	0	0	0	0	0
+Watermelon	Chloropyrophos 20 EC	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Endosulphan 35 EC.	0	0	0	0	0	0	1.2	0	0	0	0	0
+Watermelon	Phorate 10% CG	0	0	0	0	4	0	0	0	0	0	0	0
+Watermelon	M P  2% dust	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Cypermethrin 25%EC	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Profenophos 50% EC	0	0	0	0	0	0	0	0.8	0	0	0	0
+Watermelon	Profenophos +Cyper 44%	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Acetamprid 20% SP	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Imidachlorpid 17.8% SL	0	0	0	0	0	0.2	0	0	0	0	0	0
+Watermelon	Thiomethoxom 25%WP	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Ithion 50% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Copper Oxy Chloride 	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Dicophol 18.5% EC	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Mancozeb	0	0	0	0	0	0.8	0	0	0	0	0	0
+Watermelon	Carbendazim + M-45 76%	0	0	0	0	0	0	0.8	0	0	0	0	0
+Watermelon	Metalaxyl+M-45 (72%)	0	0	0	0	0	0	0	0.405	0	0	0	0
+Watermelon	Sulphur 80% WP	0	0	0	0	0	0	0	0	0	0	0	0
+Watermelon	Sulphur 85% dust	0	0	0	0	0	0	0	0	0	0	0	0

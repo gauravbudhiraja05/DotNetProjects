@@ -1,0 +1,5 @@
+Student_name	age	roll_no
+nitesh agarwal	22	1
+rahul sainmi	23	2
+sonu	24	3
+

@@ -1,0 +1,7 @@
+stuid	stuname	stusal
+1	a	2334
+2	b	3434
+3	c	23434
+4	d	3554
+5	e	4545
+

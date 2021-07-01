@@ -1,0 +1,26 @@
+ItemType	Price	UOM
+Urea	5	Rs/Kg
+CAN	10	Rs/Kg
+DAP	10	Rs/Kg
+SSP	4.7	Rs/Kg
+MOP	4.7	Rs/Kg
+Zinc+	25	Rs/Kg
+Chloropyrophos 20 EC	180	Rs/Lt
+Endosulphan 35 EC.	240	Rs/Lt
+Phorate 10% CG	45	Rs/Kg
+M P2% dust	10	Rs/Kg
+Cypermethrin 25%EC	400	Rs/Lt
+Profenophos 50% EC	525	Rs/Lt
+Profenophos +Cyper 44%	535	Rs/Lt
+Acetamprid 20% SP	5000	Rs/Kg
+Imidachlorpid 17.8% SL	2000	Rs/Lt
+Thiomethoxom 25%WP	6000	Rs/Kg
+Ithion 50% EC	350	Rs/Lt
+Copper Oxy Chloride	250	Rs/Lt
+Dicophol 18.5% EC	350	Rs/Lt
+Mancozeb	225	Rs/Kg
+Carbendazim + M-45 76%	450	Rs/Kg
+Metalaxyl+M-45 (72%)	1550	Rs/Lt
+Sulphur 80% WP	70	Rs/Kg
+Sulphur 85% dust	15	Rs/Kg
+

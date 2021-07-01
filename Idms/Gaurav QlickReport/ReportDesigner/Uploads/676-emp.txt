@@ -1,0 +1,7 @@
+empid	empname	empsal
+1	a	10000
+2	s	200000
+3	d	30000
+4	f	40000
+5	g	500000
+

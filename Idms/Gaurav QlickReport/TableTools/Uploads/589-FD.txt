@@ -1,0 +1,271 @@
+FName	MName	LName	Village	Post	City	State	MemAge	MemOccupation	UnderKPK	FarmerId	UserId	MemGender	RecId	AnnualIncome	Land	Block
+Shre Naresh		Kumar	Narayna	Narayna	Panipat	HARYANA	32	Farmer	KPK0804	8040008	naresh0804	male	60	300000	30	Samalkha
+Shri Surajmal		Singh	Didwari	Didwari	Panipat	HARYANA	50	Farmer	KPK0804	8040006	suraj0804	male	1276	120000	12	NULL
+Shri Mahendra		Singh	Didwari	Didwari	Panipat	HARYANA	48	Farmer	KPK0804	8040009	mahendra0804	male	863	50000	5	Israna
+Shri Sukhbir		Singh	Didwari	Didwari	Panipat	HARYANA	50	Farmer	KPK0804	8040005	sukhbir0804	male	636	90000	9	NULL
+Shri Suresh		Kumar	Narayna	Narayna	Panipat	HARYANA	32	Farmer	KPK0804	8040007	skumar0804	male	905	100000	10	Samalkha
+Shri Ranbir		Singh	Narayna	Narayna	Panipat	HARYANA	61	Farmer	KPK0804	8040003	ranbir0804	male	1230	80000	8	NULL
+Shri Ajad		Singh	Titana	Israna	Panipat	HARYANA	28	Farmer	KPK0804	8040004	ajad0804	male	1834	90000	9	NULL
+Shri Dharam		Singh	Narayna	Narayna	Panipat	HARYANA	65	Farmer	KPK0804	8040015	dharam0804	male	634	50000	5	Samalkha
+Shri Ranvir		Singh	Didwari	Didwari	Panipat	HARYANA	45	Farmer	KPK0804	8040002	ranvir0804	male	1679	400000	40	NULL
+Shri Dharmendra		Singh	Woodsham	Woodsham	Panipat	HARYANA	32	Farmer	KPK0804	8040010	dharmendra0804	male	899	30000	3	Israna
+Shri Roshan		Lal	Narayna	Narayna	Panipat	HARYANA	50	Farmer	KPK0804	8040013	roshan0804	male	1199	80000	8	Samalkha
+Shri Raay		Singh	Narayna	Narayna	Panipat	HARYANA	0	Farmer	KPK0804	8040012	raay0804	male	1393	80000	8	Samalkha
+Shri Satbir		Singh	Woodsham	Woodsham	Panipat	HARYANA	35	Farmer	KPK0804	8040016	satbir0804	male	119	140000	14	Israna
+Shri Suresh		Kumar	VazirpurTitana	VazirpurTitana	Panipat	HARYANA	34	Farmer	KPK0804	8040011	suresh0804	male	1102	300000	30	Israna
+Shri Nasvir		Singh	Narayna	Narayna	Panipat	HARYANA	35	Farmer	KPK0804	8040014	nasvir0804	male	881	100000	10	Samalkha
+Shri Satyavan		Singh	Didwari	Didwari	Panipat	HARYANA	50	Farmer	KPK0804	8040001	satyavan0804	male	2586	30000	3	NULL
+Suresh	Chand	Yadav	Samod	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660064	suresh0966	male	4924	100000	4	Chomu
+Kailash	Chand	Jat	Kushalpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660020	kailashchand0966	male	2629	50000	5	Chomu
+Pappu	Ram	Sharma	Kushalpura	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660001	pappu0966	male	37	100000	10	Chomu
+Buddi	Prakash	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660041	buddi0966	male	4774	120000	4	Chomu
+Govind	Das Ji	Chaudhary	Samod	Samod	Jaipur	RAJASTHAN	41	Farmer	KPK0966	9660003	govind0966	male	58	80000	8	Chomu
+Bhagwan	Sahay	Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660039	sahay0966	male	4757	100000	10	Chomu
+Ram	Prasad	Saini	Vijaysinghpura	Samod	Jaipur	RAJASTHAN	33	Farmer	KPK0966	9660057	ramprasad0966	female	4885	40000	4	Chomu
+Gopal	Lal	Mali	Vijaysinghpura	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660060	gopal0966	male	4903	750000	2	Chomu
+Ram	Pal	Meena	Deyra	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660054	rampal0966	male	4864	100000	7	Chomu
+Krishan	Kumar	Saini	Samod	Maharkalan	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660051	krishan0966	male	4850	100000	3	Chomu
+Ganga	Ram	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660042	gangamujrli0966	male	4780	10000	8	Chomu
+Ram	Kishor	Yadav	Samod	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660045	ramkishor0966	male	4802	100000	5	Chomu
+Gopi	Lal	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660028	gopi0966	male	4633	50000	2	Chomu
+Shiv	Ram	Gaura	Samod	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660007	shiv0966	male	222	50000	5	Chomu
+Suva	Lal	Meena	Deyra	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660088	suva0966	male	5045	50000	7	Cgomu
+Badri		Prasad	Kanpura	Maharkalan	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660025	badri0966	male	4598	100000	3	Chomu
+Chauth	Mal	Yadav	Samod	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660046	chauth0966	male	4804	120000	4	Chomu
+Babu	Lal	Jat	Samod	Samod	Jaipur	RAJASTHAN	38	Farmer	KPK0966	9660033	babu0966	male	4677	50000	2	Chomu
+Ram	Chander	Saini	Shimbhupura	Maharkalan	Jaipur	RAJASTHAN	36	Farmer	KPK0966	9660053	ramchander0966	male	4860	150000	5	Chomu
+Ram	Lal	Saini	Samod	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660012	ramlal10966	male	292	90000	9	Chomu
+Kailash	Chand	Jat	Kushalpura	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660096	kailash30966	male	5127	25000	4	Chomu
+Mangu	Lal	Meena	Deyra	Samod	Jaipur	RAJASTHAN	52	Farmer	KPK0966	9660056	mangu0966	male	4873	150000	16	Chomu
+Raj	Kumar	Chaudhari	Samod	Samod	Jaipur	RAJASTHAN	41	Farmer	KPK0966	9660074	raj0966	male	4945	150000	6	Chomu
+Mangi	Lal Ji	Sharma	Kushalpura	Samod	Jaipur	RAJASTHAN	38	Farmer	KPK0966	9660017	mangilal10966	male	2555	50000	5	Chomu
+Badri	Narayan	Yadav	Samod	Samod	Jaipur	RAJASTHAN	55	Farmer	KPK0966	9660065	badri40966	male	4926	10000	7	Chomu
+Ram	Gopal	Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660037	ram10966	male	4739	80000	8	Chomu
+Nanu	Ram	Sherawat	Samod	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660070	nanu0966	male	4934	100000	7	Chomu
+Chotu	Lal	Yadav	Samod	Samod	Jaipur	RAJASTHAN	50	Farmer	KPK0966	9660030	chotu0966	male	4659	50000	10	Chomu
+Rudmal		Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	33	Farmer	KPK0966	9660069	rudmal0966	male	4932	100000	3	Chomu
+Sagar	Mal	Yadav	Samod	Samod	Jaipur	RAJASTHAN	21	Farmer	KPK0966	9660082	sagar0966	male	4983	800000	4	Chomu
+Mukesh	Kumar	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660050	mukesh0966	male	4834	120000	8	Chomu
+Ramkunwar		Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660093	ramkunwar0966	male	5087	100000	7	Chomu
+Mali	Ram	Jat	Samod	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660089	mali10966	male	5052	95000	5	Chomu
+Dinesh	Kumar	Chaudhari	Bandol	Samod	Jaipur	RAJASTHAN	32	Farmer	KPK0966	9660043	dinesh0966	male	4791	100000	4	Chomu
+Ram	Lal	Sharma	Samod	Samod	Jaipur	RAJASTHAN	55	Farmer	KPK0966	9660009	rlsharma0966	male	249	250000	25	Chomu
+Shankar	Lal	Meena	Samod	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660077	shankar10966	male	4952	50000	3	Chomu
+Mohan	Lal	Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660066	mohan10966	male	4928	50000	7	Chomu
+Kailash	Chand	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	28	Farmer	KPK0966	9660091	kailash20966	male	5069	120000	7	Chomu
+Kailash		Saini	Samod	Samod	Jaipur	RAJASTHAN	23	Farmer	KPK0966	9660015	kailash0966	male	2375	40000	4	Chomu
+Mohan	Lal	Sharma	Kushalpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660002	mohan0966	male	38	60000	6	Chomu
+Jagannath		Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660047	jagannath0966	male	4813	120000	26	Chomu
+Ram	Chandra	Gujar	Samod	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660023	ram0966	male	4573	100000	15	Chomu
+Rameshwar		Prasad	Kanpura	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660068	rameshwar0966	male	4931	120000	6	Chomu
+Mangal	Ram	Yadav	Samod	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660090	mangal10966	male	5061	50000	3	Chomu
+Badri	Narayan	Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660035	badri10966	male	4698	100000	6	Chomu
+Jagdish	Prasad	Jat	Samod	Samod	Jaipur	RAJASTHAN	37	Farmer	KPK0966	9660092	jagdish10966	male	5076	50000	5	Chomu
+Banshi	Dhar	Sharma	Kushalpura	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660049	banshi20966	male	4826	50000	3	Chomu
+Mali	Ram Ji	Chaudhary	Samod	Samod	Jaipur	RAJASTHAN	43	Farmer	KPK0966	9660008	maliram0966	male	248	80000	8	Chomu
+Surender		Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	18	Farmer	KPK0966	9660032	surender0966	male	4674	100000	4	Chomu
+Lalaram		Haryana	Kushalpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660058	lalaram0966	male	4897	100000	2	Chomu
+Babu	Lal	Sharma	Kushalpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660078	babu20966	male	4953	80000	5	Chomu
+Mohan	Lal	Yadav	Samod	Samod	Jaipur	RAJASTHAN	28	Farmer	KPK0966	9660067	mohan20966	male	4930	85000	4	Chomu
+Dhanna	Lal	Saini	Samod	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660063	dhanna0966	male	4922	50000	6	Chomu
+Ram	Avtar	Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660021	ramavtar0966	male	142	20000	2	Chomu
+Kanahiya	Lal	Saini	Maharkalan	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660019	kanahiya0966	male	2628	40000	4	Chomu
+Jagdish		Prasad	Kanpura	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660061	jagdish0966	male	4908	50000	10	Chomu
+Ravi	Shankar	Yadav	Samod	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660022	ravi0966	male	4560	100000	2	Chomu
+Nand	Lal	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660075	nand0966	male	4947	50000	4	Chomu
+Ram	Singh	Sherawat	Samod	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660024	ramsingh0966	male	4586	10000	5	Chomu
+Bodu	Ram	Bunkar	Kanpura	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660095	bodu10966	male	5116	100000	5	Chomu
+Puran	Mal	Meena	Deyra	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660048	puran0966	male	4818	150000	5	Chomu
+Rakesh	Kumar	Gurjar	Samod	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660087	rakeshnathu0966	male	5034	50000	15	Chomu
+Kalyan	Sahay	Saini	Samod	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660079	kalyan0966	male	4957	100000	10	Chomu
+Badri	Narayan	Yadav	Samod	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660038	badriruda0966	male	4746	50000	3	Chomu
+Ganesh		Ji	Maharkalan	Samod	Jaipur	RAJASTHAN	50	Farmer	KPK0966	9660018	ganesh0966	male	2593	20000	2	Chomu
+Kajod	Mal	Yadav	Samod	Samod	Jaipur	RAJASTHAN	50	Farmer	KPK0966	9660010	kajod0966	male	272	50000	5	Chomu
+Ganga	Ram	Yadav	Samod	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660026	ganga0966	male	4612	90000	2	Chomu
+Devi	Lal	Saini	Samod	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660085	devi0966	male	5003	100000	2	Chomu
+Nandi		Devi	Samod	Samod	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660086	nandi0966	female	5013	150000	5	Chomu
+Shankar	Lal	Saini	Samod	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660062	shankar0966	male	4920	100000	4	Chomu
+Bhagirath		Prasad	Kushalpura	Samod	Jaipur	RAJASTHAN	27	Farmer	KPK0966	9660083	bhagirath0966	male	4990	100000	4	Chomu
+Banshi	Dhar	Yadav	Samod	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660044	banshi10966	male	4799	150000	4	Chomu
+Rameshwar	Prasad	Saini	Samod	Samod	Jaipur	RAJASTHAN	48	Farmer	KPK0966	9660073	rameshwar10966	male	4942	125000	5	Chomu
+Banshi	Dhar	Yadav	Kanpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660040	banshi0966	male	4766	50000	7	Chomu
+Bodu	Ram	Saini	Bandol	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660094	bodu0966	male	5100	40000	4	Chomu
+Mohan	Lal	Yadav	Samod	Samod	Jaipur	RAJASTHAN	42	Farmer	KPK0966	9660084	mohan30966	male	4997	90000	2	Chomu
+Mali	Ram	Meena	Samod	Samod	Jaipur	RAJASTHAN	55	Farmer	KPK0966	9660029	mali0966	male	4649	50000	15	Chomu
+Ganpat	Lal	Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	37	Farmer	KPK0966	9660034	ganpat0966	male	4684	100000	3	Chomu
+Chatar	Singh	Yadav	Samod	Samod	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660072	chatar0966	male	4941	50000	7	Chomu
+Surya	Narayan	Saini	Bandol	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660081	surya0966	male	4973	50000	3	Chomu
+Bhairu	Ram	Yadav	Samod	Samod	Jaipur	RAJASTHAN	52	Farmer	KPK0966	9660031	bhairu0966	male	4667	150000	10	Chomu
+Prakash	Chand	Chaudhary	Kushalpura	Samod	Jaipur	RAJASTHAN	29	Farmer	KPK0966	9660016	prakash0966	male	2518	50000	5	Chomu
+Mangal	Chand	Saini	Bandol	Samod	Jaipur	RAJASTHAN	50	Farmer	KPK0966	9660027	mangal0966	male	4627	100000	6	Chomu
+Kailash	Chand	Saini	Bandol	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660080	kailash10966	male	4966	50000	3	Chomu
+Rakesh		Yadav	Kanpura	Maharkalan	Jaipur	RAJASTHAN	25	Farmer	KPK0966	9660071	rakesh0966	male	4938	100000	5	Chomu
+Lala	Ram	Balesra	Kushalpura	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660013	Lala0966	male	407	50000	5	Chomu
+Lal	Chand	Jat	Samod	Samod	Jaipur	RAJASTHAN	35	Farmer	KPK0966	9660076	lal0966	male	4948	50000	5	Chomu
+Rajiv		Meena	Deyra	Samod	Jaipur	RAJASTHAN	22	Farmer	KPK0966	9660011	rajiv0966	male	290	60000	6	Chomu
+Phool	Chand	Yadav	Samod	Samod	Jaipur	RAJASTHAN	30	Farmer	KPK0966	9660036	phool0966	male	4708	80000	2	Chomu
+Hanuman	Sahay	Sharma	Kushalpura	Samod	Jaipur	RAJASTHAN	45	Farmer	KPK0966	9660059	hanuman0966	male	4898	50000	2	Chomu
+Badri	Narayan	Saini	Samod	Maharkalan	Jaipur	RAJASTHAN	38	Farmer	KPK0966	9660055	badri30966	male	4868	100000	4	Chomu
+Radhey	Shyam	Saini	Maharkalan	Samod	Jaipur	RAJASTHAN	38	Farmer	KPK0966	9660004	radhey0966	male	59	40000	4	Chomu
+Babu	Lal	Saini	Samod	Maharkalan	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660052	babu10966	male	4854	60000	6	Chomu
+Kailash	Chand	Jat	Kushalpura	Samod	Jaipur	RAJASTHAN	0	Farmer	KPK0966	9660005	kcjaat0966	male	145	40000	4	Chomu
+Braj	Mohan	Ji	Samod	Samod	Jaipur	RAJASTHAN	27	Farmer	KPK0966	9660006	Braj0966	male	146	50000	5	Chomu
+Murli	Dhar	Saini	Maharkalan	Maharkalan	Jaipur	RAJASTHAN	40	Farmer	KPK0966	9660014	mdsaini0966	male	410	80000	8	Maharkalan
+Sharvan	Kumar	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700023	skyadav0970	male	131	30000	6	Shahpura
+Chotu	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700002	chotu0970	male	24	30000	4	Shahpura
+Gulab	Chand	Yadav	Jugrajpura	Jodhpura	Jaipur	RAJASTHAN	38	Farmer	KPK0970	9700056	gcyadav0970	male	777	40000	4	Shahpura
+Prabhati	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700048	prabhati0970	male	287	100000	10	Shahpura
+Narayan	Ji	Jaat	Kariri	Kariri	Jaipur	RAJASTHAN	55	Farmer	KPK0970	9700067	narayanji0970	male	3951	80000	8	Shahpura
+Ganga	Baksh	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	55	Farmer	KPK0970	9700061	ganga0970	male	3939	100000	10	Shahpura
+Chhigan	Lal	Yadav	Hanutpura	Bilandarpur	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700011	chhigan0970	male	57	40000	4	Shahpura
+Durgo	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700053	durgo0970	male	678	20000	6	Shahpura
+Smt. Sajna	Devi	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700051	sdyadav	female	405	40000	4	Shahpura
+Govind	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700079	govind0970	male	3963	20000	2	Shahpura
+Chittar	Mal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700030	chittarmal0970	male	165	24000	13	Shahpura
+Prahalad	Sahaya	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700010	psyadav0970	male	53	20000	4	Shahpura
+Prahlad	Sahay	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	25	Farmer	KPK0970	9700021	pra0970	male	115	40000	4	Shahpura
+Kajod	Mal	yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700068	kajod0970	male	3952	80000	8	Shahpura
+Babu	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700045	babu0970	male	271	40000	4	Shahpura
+Kajod		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700076	kyadav0970	male	3960	40000	4	Shahpura
+Madan	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700060	madan0970	male	3936	30000	3	Shahpura
+Smt. Bidami	Devi	Yadav	Bilandarpur	Kariri	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700007	bdyadav0970	female	33	20000	2	Shahpura
+Ram	Chandra	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700072	ram0970	male	3956	20000	2	Shahpura
+Jagdish	Prasad	Yadav	Bilandarpur	Kariri	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700071	jagdish0970	male	3955	20000	2	Shahpura
+Bhoma	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700054	bhomaram0970	male	679	24000	10	Shahpura
+Jai	Narayan	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700033	jnyadav0970	male	194	50000	5	Shahpura
+Ram	Lal	Gurjar	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	42	Farmer	KPK0970	9700077	rlgurjar0970	male	3961	80000	8	Madhopur
+Madan	Lal	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700034	madanlal0970	male	198	40000	4	Shahpura
+Girdhari	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700024	glyadav0970	male	132	24000	6	Shahpura
+Badri	Prasad Yadav	Yadav	Jugrajpura	Jodhpura	Jaipur	RAJASTHAN	55	Farmer	KPK0970	9700055	badri0970	male	772	24000	3	Shahpura
+Sunda	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700031	sunda0970	male	168	110000	11	Shahpura
+Mohan	lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	25	Farmer	KPK0970	9700039	Mohan0970	male	220	20000	2	Shahpura
+Maliram		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700084	maliram0970	male	3968	100000	10	Shahpura
+Ram	Kishor	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700069	ramkishor0970	male	3953	20000	2	Shahpura
+Pappu	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	23	Farmer	KPK0970	9700075	pappu0970	male	3959	20000	2	Shahpura
+Raghunath	Ji	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	52	Farmer	KPK0970	9700029	raghunath0970	male	164	24000	8	Shahpura
+Kanaram		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700057	kanaram0970	male	873	24000	4	Shahpura
+Kajod	Mal	Yadav	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	33	Farmer	KPK0970	9700044	kmal0970	male	269	18000	6	Madhopur
+Kishan	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700052	klyadav0970	male	677	12000	4	Shahpura
+Juntha	Ram	Jaat	Kariri	Kariri	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700074	juntha0970	male	3958	80000	8	Shahpura
+Mohan	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	25	Farmer	KPK0970	9700026	mlyadav	male	135	100000	10	Shahpura
+Ghisha	Lal	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700009	gyadav0970	male	52	24000	2	Shahpura
+Suwa	lal	yadav	Kariri	Kariri	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700064	suwalal0970	male	3947	40000	4	Shahpura
+Prabhu	Dayal	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700038	pyadav0970	male	217	24000	2	Shahpura
+Ramnarayan		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	22	Farmer	KPK0970	9700001	ryadav0970	male	23	25000	6	Shahpura
+Yatender Pal	Singh	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	21	Farmer	KPK0970	9700036	ypsyadav0970	male	215	24000	6	Shahpura
+Bhura	Ram	Jaat	Hanutpura	Badiyawali	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700014	bhura0970	male	81	25000	9	Shahpura
+Lacha	Ram	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700040	lacha0970	male	240	20000	6	Shahpura
+Bhagirath		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700082	bhagi0970	male	3966	80000	8	Shahpura
+Deva	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700027	deva0970	male	138	40000	4	Shahpura
+Daula	Ram	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700059	daula0970	male	2665	40000	4	Shahpura
+Chotu	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700005	Choturam0970	male	28	24000	5	Shahpura
+Ruda	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700008	rudaram0970	male	35	60000	6	Shahpura
+Prabhu	dayal	yadav	Kariri	Kariri	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700018	pdyadav10970	male	92	50000	5	Shahpura
+Rajendar	Parshad	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	25	Farmer	KPK0970	9700019	rpyadav0970	male	109	20000	4	Shahpura
+Girdhari	Lal	Yadav	Bilandarpur	Bilanparpur	Jaipur	RAJASTHAN	28	Farmer	KPK0970	9700025	girdhari0970	male	133	24000	5	Shahpura
+Murli	Dhar	Yadav	Jugrajpura	Jodhpura	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700013	murli0970	male	80	24000	4	Shahpura
+Kalu	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700086	kalu0970	male	7253	24000	5	Shahpura
+Sitaram		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	51	Farmer	KPK0970	9700043	sitaram0970	male	267	3000	4	Shahpura
+Babu	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700066	babulal0970	male	3950	100000	10	Shahpura
+Jagdish	Prasad	Yadav	Bilandarpur	Kariri	Jaipur	RAJASTHAN	33	Farmer	KPK0970	9700073	jpyadav0970	male	3957	50000	5	Shahpura
+Mahesh	Kumar	Jangid	Kariri	Kariri	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700087	mahesh0970	male	7254	24000	10	Shahpura
+Arjun	Lal	Yadav	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	30	Farmer	KPK0970	9700081	arjun0970	male	3965	50000	5	Madhopur
+Girdhari	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700022	girdharilal0970	male	116	40000	4	Shahpura
+Lachu	Ram	Yadav	Jugrajpura	Jodhpura	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700015	lryadav0970	male	82	24000	11	Shahpura
+Nanu	Ram	Yadav	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	35	Farmer	KPK0970	9700041	nryadav	male	243	40000	4	Madhopur
+Kajod	Mal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700089	kajod10970	male	7256	24000	3	Shahpura
+Bhagirath		Yadav	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	40	Farmer	KPK0970	9700078	bhagirath0970	male	3962	20000	2	Madhopur
+Hanuman	Sahaya	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700004	hanuman0970	male	26	24000	15	Shahpura
+Kana	Ram	Jat	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700090	kana10970	male	7257	24000	8	Shahpura
+Raghu	Nath	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	60	Farmer	KPK0970	9700049	raghu0970	male	306	30000	5	Shahpura
+Sona	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700020	sonaram0970	male	112	24000	6	Shahpura
+Narayan	Ji	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700063	narayan0970	male	3944	100000	10	Shahpura
+Rich	Pal	Gurjar	Jugrajpura	Jugrajpura	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700088	rich0970	male	7255	24000	9	Madhopur
+Banwari	Lal	Saini	Jugrajpura	Chand Jihali Diwrali	Sikar	RAJASTHAN	30	Farmer	KPK0970	9700006	blsaini	male	31	40000	4	Madhopur
+Jagmal	Singh	Jaat	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	27	Farmer	KPK0970	9700035	jagmal0970	male	199	100000	10	Shahpura
+Mohan	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	26	Farmer	KPK0970	9700062	mohanlal0970	male	3942	60000	6	Shahpura
+Ram	Chandra Ji	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	42	Farmer	KPK0970	9700065	ramchandra0970	male	3949	50000	5	Shahpura
+Bhagwan	Sahay	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700083	bhagwan0970	male	3967	50000	5	Shahpura
+Bhagvan	Sahaya	Yadav	Jugrajpura	Jodhpura	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700032	bsyadav0970	male	190	24000	5	Shahpura
+Prabhu	Dayal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700037	pdyadav0970	male	216	40000	4	Shahpura
+Nacchuram	Bajya	Jaat	Hanutpura	Hanutpura	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700003	nacchuram0970	male	25	24000	4	Shahpura
+Ganpat	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	55	Farmer	KPK0970	9700050	ganpat0970	male	312	100000	10	Shahpura
+Boduram		Yadav	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	63	Farmer	KPK0970	9700080	boduram0970	male	3964	20000	2	Madhopur
+Kailash	chandra	yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	25	Farmer	KPK0970	9700047	kcyadav0970	female	286	30000	4	Shahpura
+Suvalal		Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	45	Farmer	KPK0970	9700012	suvalal0970	male	78	24000	6	Shahpura
+Mana	Ram	Yadav	Jugrajpura	Jugrajpura	Sikar	RAJASTHAN	23	Farmer	KPK0970	9700058	mana0970	male	2663	40000	4	Madhopur
+Prahlad		Sahaya	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	50	Farmer	KPK0970	9700046	prahlad0970	male	285	40000	4	Shahpura
+Bhairo	Ram Ji	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700017	bryadav	male	89	40000	4	Shahpura
+Prabhu	Dayal	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	30	Farmer	KPK0970	9700085	prabhu0970	male	7252	24000	9	Shahpura
+Banwari	Lal	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	40	Farmer	KPK0970	9700028	banwari0970	male	139	40000	4	Shahpura
+Kishan	Lal	Yadav	Kariri	Kariri	Jaipur	RAJASTHAN	25	Farmer	KPK0970	9700070	kishan0970	male	3954	40000	4	Shahpura
+Shyam	Lal	Jee	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	35	Farmer	KPK0970	9700016	shyam0970	male	84	9000	4	Shahpura
+Godha	Ram	Yadav	Bilandarpur	Bilandarpur	Jaipur	RAJASTHAN	42	Farmer	KPK0970	9700042	godharam0970	male	245	40000	4	Shahpura
+Kalyan	Sahay	Gurzer	Chatarpuri	Khori	Jaipur	RAJASTHAN	40	Farmer	KPK1034	10340048	kalyansahay1034	male	7548	70000	3	Shahpura
+Hemraj		Gurzer	Chatarpuri	Khori	Jaipur	RAJASTHAN	35	Farmer	KPK1034	10340049	hemraj1034	male	7549	70000	1	Shahpura
+Ghetarmal		Gurzer	Nayabas	Khori	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340047	ghetarmal1034	male	7547	50000	1	Shahpura
+Kalyan		Singh	Kishangar	Manoharpur	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340004	kalyan11034	male	7503	100000	1	Shahpura
+Gajesh	Ram	Yadav	Kishangar	Manoherpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340008	gajeshram11034	male	7507	100000	1	Shahpura
+Ruda	Ram	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	45	Farmer	KPK1034	10340050	rudaram11034	male	7551	100000	4	Shahpura
+Gyarse	Lal	Yadav	Sharpura	Khori	Jaipur	RAJASTHAN	52	Farmer	KPK1034	10340018	gyarseyadav1034	male	7517	70000	5	Shahpura
+Babu	Lal	Gurzer	Chatarpura	Khori	Jaipur	RAJASTHAN	40	Farmer	KPK1034	10340021	babulal1034	male	7520	50000	3	Shahpura
+Jagnath		Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340025	jagnathyadav1034	male	7524	30000	1	Shahpura
+Raghuvir	Sharan	Gurzer	Chatarpur	Khori	Jaipur	RAJASTHAN	58	Farmer	KPK1034	10340040	raghuvirsharan1034	male	7539	100000	9	Shahpura
+Ram	Kumar		Khori	Khori	Jaipur	RAJASTHAN	47	Farmer	KPK1034	10340042	ramkumar1034	male	7541	100000	2	Shahpura
+Ghesa	Ram	Yadav	Kishangar	Manoherpur	Jaipur	RAJASTHAN	55	Farmer	KPK1034	10340014	ghesayadav1034	male	7513	100000	4	Shahpura
+Sadhu	Ram	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340024	sadhuram1034	male	7523	60000	2	Shahpura
+Surja	Ram	Gurzer	Chatarpur	Khori	Jaipur	RAJASTHAN	0	Farmer	KPK1034	10340052	surjaram1034	male	7553	40000	7	Shahpura
+Phol		Singh	Kishangar	Manoherpur	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340010	pholsingh11034	male	7509	100000	1	Shahpura
+Lalu	Prasad	Yadav	Kishangar	Manoherpur	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340015	laluyadav1034	male	7514	100000	4	Shahpura
+Laxman		Bunkar	Chatarpura	Khori	Jaipur	RAJASTHAN	55	Farmer	KPK1034	10340020	laxmanbunkar1034	male	7519	30000	3	Shahpura
+Richhyal		Gurzer	Chatarpura	Khori	Jaipur	RAJASTHAN	52	Farmer	KPK1034	10340023	rgurzer1034	male	7522	50000	3	Shahpura
+Dinesh	Kumar	Sharma	Kishangar	Manoharpur	Jaipur	RAJASTHAN	32	Farmer	KPK1034	10340028	dineshsharma1034	male	7527	100000	5	Shahpura
+Ghesa	Ram		Jhadodia ki daghi	Khori	Jaipur	RAJASTHAN	40	Farmer	KPK1034	10340035	ghesaram1034	male	7534	70000	2	Shahpura
+shubux	Gurzer		Chatarpura	Khori	Jaipur	RAJASTHAN	65	Farmer	KPK1034	10340043	shubux1034	male	7542	70000	3	Shahpura
+Gulla	Ram	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	35	Farmer	KPK1034	10340006	gullaram1034	male	7505	60000	2	Shahpura
+Phol		Singh	Kishangar	Manoherpur	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340009	pholsingh1034	male	7508	10000	1	Shahpura
+Jagdish	Prasad	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	47	Farmer	KPK1034	10340026	jagdishyadav1034	male	7525	20000	0	Shahpura
+Meva	Ram	Rawat	Nayabas	Khori	Jaipur	RAJASTHAN	54	Farmer	KPK1034	10340045	mevaram1034	male	7544	50000	3	Shahpura
+Kalyan		Singh	Kishangar	Manoharpur	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340005	kalyan1034	male	7504	100000	1	Shahpura
+Hari	Narayan	Gurzer	Khori	Khori	Jaipur	RAJASTHAN	45	Farmer	KPK1034	10340036	harinarayan1034	male	7535	70000	3	Shahpura
+Raghuvir	Sharan	Gurzer	Chatarpur	Khori	Jaipur	RAJASTHAN	58	Farmer	KPK1034	10340038	raghuvir1034	male	7537	100000	9	Shahpura
+Dhan	Shyam	Yadav	Sharpura	Khori	Jaipur	RAJASTHAN	40	Farmer	KPK1034	10340034	dhanshyam1034	male	7533	50000	2	Shahpura
+Raghuvir	Sharan	Gurzer	Chatarpur	Khori	Jaipur	RAJASTHAN	58	Farmer	KPK1034	10340039	raghuvir11034	male	7538	100000	9	Shahpura
+Ramsahay		Gurzer	Khori(Nayabas)	Khori	Jaipur	RAJASTHAN	40	Farmer	KPK1034	10340001	ramsahay1034	male	7500	40000	1	Shahpura
+Shankerlal		Yadav	Khori(Nayabas)	Khori	Jaipur	RAJASTHAN	35	Farmer	KPK1034	10340003	shankerlal11034	male	7502	100000	3	Shahpura
+Nathu	Ram	Yadav	Sharpura	Khori	Jaipur	RAJASTHAN	50	Farmer	KPK1034	10340016	nathuyadav1034	male	7515	50000	2	Shahpura
+Dinesh	Kumar	Sharma	Kishangar	Manoharpur	Jaipur	RAJASTHAN	32	Farmer	KPK1034	10340029	dineshsharma11034	male	7528	100000	5	Shahpura
+Dhuna	Ram	Yadav	Khori	Khori	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340037	ramyadav1034	male	7536	100000	5	Shahpura
+Banshi	Dhar	Yadav	Sharpura	Khori	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340044	banshidhar1034	male	7543	70000	1	Shahpura
+Ramsahay		Gurzer	Khori(Nayabas)	Khori	Jaipur	RAJASTHAN	40	Farmer	KPK1034	10340002	ramsahay11034	male	7501	40000	1	Shahpura
+Gajesh	Ram	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340007	gajesgram1034	male	7506	100000	1	Shahpura
+Sita	Ram	Yadav	Kishangar	Manoherpur	Jaipur	RAJASTHAN	70	Farmer	KPK1034	10340013	sitayadav1034	male	7512	100000	4	Shahpura
+Dhola	Ram	Gurzer	Khori	Khori	Jaipur	RAJASTHAN	28	Farmer	KPK1034	10340019	dholaram1034	male	7518	50000	7	Shahpura
+Ballu		Singh	Kisangar	Manoharpur	Jaipur	RAJASTHAN	65	Farmer	KPK1034	10340022	ballusingh1034	male	7521	100000	2	Shahpura
+Ruda	Ram	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340030	rudaram1034	male	7529	50000	1	Shahpura
+Bhavar	Lal	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	55	Farmer	KPK1034	10340031	bhavaryadav1034	male	7530	100000	3	Shahpura
+Ganesh	Ram	Yadav	Kishangar	Manoharpur	Jaipur	RAJASTHAN	65	Farmer	KPK1034	10340032	ganeshram1034	male	7531	50000	2	Shahpura
+Ladu	Ram	Gurzer	Nayabas	Khori	Jaipur	RAJASTHAN	62	Farmer	KPK1034	10340033	laduram1034	male	7532	50000	1	Shahpura
+Sadhu	Ram	Gurzer	Chatarpur	Khori	Jaipur	RAJASTHAN	30	Farmer	KPK1034	10340041	sadhuram11034	male	7540	10000	1	Shahpura
+Lela	Ram	Gurzer	Chatarpur	Khori	Jaipur	RAJASTHAN	0	Farmer	KPK1034	10340051	lelaram1034	male	7552	70000	8	Shahpura
+Jagdesh	Prasad	Yadav	Kishangar	Manoherpur	Jaipur	RAJASTHAN	45	Farmer	KPK1034	10340012	jagdeshgyadav1034	male	7511	150000	5	Shahpura
+Gajesh	Ram	Yadav	Kishangar	Manoherpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340011	gajeshyadav1034	male	7510	100000	1	Shahpura
+Ram	Gopal	Sharma	Kishangar	Manoharpur	Jaipur	RAJASTHAN	60	Farmer	KPK1034	10340027	ramsharma1034	male	7526	50000	5	Shahpura
+Meva	Ram	Rawat	Nayabas	Khori	Jaipur	RAJASTHAN	54	Farmer	KPK1034	10340046	mevaram11034	male	7545	50000	3	Shahpura
+Surja	Ram	Gurzer	Nayabas	Khori	Jaipur	RAJASTHAN	55	Farmer	KPK1034	10340017	surjagurzer1034	male	7516	100000	10	Shahpura
+jagnnath		yadav	kakodia ki dhani	manoharpur	Jaipur	RAJASTHAN	60	Farmer	kpk1034	10340059	jnyadav1034	male	10013	30000	1	shahpura
+sadhu	ram	yadav	bishangarh	manoharpur	Jaipur	RAJASTHAN	60	Farmer	kpk1034	10340061	sadhury1034	male	10015	60000	2	shahpura
+babu	lal	gurjar	chattarpura	manoharpur	Jaipur	RAJASTHAN	40	Farmer	kpk1034	10340065	blg1034	male	10020	50000	3	shahpura
+raghuweer	sharan	gurjar	chattarpura	khori	Jaipur	RAJASTHAN	58	Farmer	kpk1034	10340056	raghu	male	10010	100000	9	shahpura
+dhuna	ram	yadav	khori	khori	Jaipur	RAJASTHAN	60	Farmer	kpk1034	10340058	dram1034	male	10012	100000	5	shahpura
+dhola	ram	gurjar	tejaji ki dhani	khori	Jaipur	RAJASTHAN	28	Farmer	kpk1034	10340068	dhola1034	male	10024	50000	7	shahpura
+laxman		bunkar	chattarpura	manoharpur	Jaipur	RAJASTHAN	55	Farmer	kpk1034	10340067	laxman1034	male	10023	30000	3	shahpura
+ramgopal		sharma	bishangarh	manoharpur	Jaipur	RAJASTHAN	60	Farmer	kpk1034	10340055	ramgs1034	male	10007	50000	5	shahpura
+ghanshyam		yadav	sherpura(rail ki dhani)	khori	Jaipur	RAJASTHAN	40	Farmer	kpk1034	10340066	ghanshyam1034	male	10022	50000	2	shahpura
+sadhu	ram	gurjar	chattarpura	khori	Jaipur	RAJASTHAN	30	Farmer	kpk1034	10340053	sadhu1034	male	10002	10000	1	shahpura
+jagdish	prasad	yadav	bishangarh	manoharpur	Jaipur	RAJASTHAN	47	Farmer	kpk1034	10340057	jprasad1034	male	10011	20000	0	shahpura
+ganpat		gurjar	chattarpura	khori	Jaipur	RAJASTHAN	53	Farmer	kpk1034	10340054	ganpat1034	male	10006	30000	3	shahpura
+richpal		gurjar	chattarpura	manoharpur	Jaipur	RAJASTHAN	52	Farmer	kpk1034	10340062	rich1034	male	10016	50000	3	shahpura
+ballu	singh		bishangarh	manoharpur	Jaipur	RAJASTHAN	65	Farmer	kpk1034	10340064	ballu1034	male	10018	100000	2	shahpura
+ghasi	ram	yadav	jhododia ki dhani	khori	Jaipur	RAJASTHAN	40	Farmer	kpk1034	10340063	ghasi1034	male	10017	70000	2	shahpura
+hari	narayan	gurjar	badhana ki dhani	khori	Jaipur	RAJASTHAN	45	Farmer	kpk1034	10340060	hng1034	male	10014	70000	3	shahpura

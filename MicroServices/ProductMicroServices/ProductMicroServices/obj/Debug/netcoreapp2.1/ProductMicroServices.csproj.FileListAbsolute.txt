@@ -1,0 +1,14 @@
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.csproj.CoreCompileInputs.cache
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.AssemblyInfoInputs.cache
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.AssemblyInfo.cs
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\bin\Debug\netcoreapp2.1\ProductMicroServices.deps.json
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\bin\Debug\netcoreapp2.1\ProductMicroServices.runtimeconfig.json
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\bin\Debug\netcoreapp2.1\ProductMicroServices.runtimeconfig.dev.json
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\bin\Debug\netcoreapp2.1\ProductMicroServices.dll
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\bin\Debug\netcoreapp2.1\ProductMicroServices.pdb
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.csprojAssemblyReference.cache
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.RazorAssemblyInfo.cache
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.RazorAssemblyInfo.cs
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.RazorTargetAssemblyInfo.cache
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.dll
+D:\Projects\Test Projects\MicroServices\ProductMicroServices\ProductMicroServices\obj\Debug\netcoreapp2.1\ProductMicroServices.pdb

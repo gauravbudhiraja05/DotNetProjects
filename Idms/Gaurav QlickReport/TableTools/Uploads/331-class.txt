@@ -1,0 +1,53 @@
+S_No	Class Teacher Name	Class	Section
+1 .	Vibha Sharma	VII	A
+2 .	Rashmi	VII	B
+3 .	Rekha Ray	VII	C
+4 .	Deepa sharma	VII	D
+5 .	Abhilasha Sinha	VII	E
+6 .	Ramna Gupta	VII	F
+7 .	Seema Chauhan	VIII	A
+8 .	Renu Sharma	VIII	B
+9 .	Rajalakshmi	VIII	C
+10 .	Sneh Saini	VIII	D
+11 .	Madhurima Sinha	VIII	E
+12 .	Neha Rajput	VIII	F
+13 .	Madhu Kaushik	IX	A
+14 .	Anuj Kumar Sinha	IX	B
+15 .	Raj Dahiya	IX	D
+16 .	Sunil Kumar Bhardwaj	IX	E
+17 .	Leena Sharma	IX	F
+18 .	Neena Miglani	X	A
+19 .	Surender Kumar Yadav	X	B
+20 .	Rajeev Chaturvedi	X	C
+21 .	Aparna Manaktala	X	D
+22 .	veena pandya	X	E
+23 .	Renu Arora	X	F
+24 .	Sarita Ahooja	XI	A
+25 .	Suresh chander uniyal	XI	B
+26 .	Rakesh Kumar Sharma	XI	C
+27 .	Mahavir Taneja	XI	D
+28 .	Vijay Kataria	XI	E
+29 .	Dwijesh Bhatia	XI	F
+30 .	Swati Das	XII	A
+31 .	Krishna kumar jha	XII	B
+32 .	Meera Mathur	XII	C
+33 .	Rachna Sharma	XII	D
+34 .	Bakshish Singh Pradhan	XII	E
+35 .	Tishya MUKHERJI	XII	F
+36 .	Nidhi	II Sec 28	A
+37 .	Babita	II Sec 28	B
+38 .	Ruchira	III Sec 28	A
+39 .	Kanchan Gupta	III Sec 28	B
+40 .	Beena Mudgal	IV Sec 28	A
+41 .	Simi Anand	V Sec 28	A
+42 .	Mamta Manish	VI Sec 28	A
+43 .	Poonam Sood	VII Sec 28	A
+44 .	Swati Marwaha	I Sec 28	A
+45 .	Rakshita Khilani	I Sec 28	B
+46 .	Pooja Malik	I Sec 28	C
+47 .	Smita Yadav	Nur Sec28	A
+48 .	Purnika Miglani Sehgal	Nur Sec28	B
+49 .	Neena Kapoor	Nur Sec28	C
+50 .	Saroj Singh	Prep Sec28	A
+51 .	Mandeep Kaur Jaggi	Prep Sec28	B
+52 .	Deepti Shukla	Prep Sec28	C

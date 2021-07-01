@@ -1,0 +1,5 @@
+"EMPNO,EMPNAME,EMPCOURSE,EMPSAL,EMPCITY"
+"2,jaykesh,mca,10000,mca"
+"5,ronak,mca,30000,mca"
+"1,mohit,mca,10000,gzb"
+"4,suhdansu,mba,25000,lucknow"

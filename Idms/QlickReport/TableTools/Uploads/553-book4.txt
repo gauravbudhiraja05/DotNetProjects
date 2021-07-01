@@ -1,0 +1,9 @@
+bnkid	bnkcity	bnkphn	bankname
+201	mrt	501	pnb
+202	delhi	502	icici
+203	noida	567	sbi
+204	farkbd	578	rajs
+205	raingr	678	axs
+206	rajend	987	uti
+207	rajngr	900	yes
+

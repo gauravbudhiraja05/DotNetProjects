@@ -1,0 +1,7 @@
+plcid	plcst	plcnam	plccity
+100	railw	rakesh	mrt
+101	sadar	ram	delhi
+102	begum	shyam	dhrd
+103	sakat	geeta	avingr
+104	mokh	rahul	luckn
+105	golch	anuj	ahmd

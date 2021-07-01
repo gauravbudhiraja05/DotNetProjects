@@ -1,0 +1,10 @@
+Sr No	Name 	RegNo	Roll No	Course
+1	Anil	123	1	MCA
+2	Sheela	124	2	MCA
+3	Raman	125	3	MCA
+4	Deepak	126	4	MCA
+5	Sunita	127	5	MCA
+6	Arsh	128	6	MCA
+7	Esha	129	7	MCA
+8	Brij	130	8	MCA
+9	Sunil	131	9	MCA
