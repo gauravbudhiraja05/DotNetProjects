@@ -1,0 +1,54 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.MiscSuggestionListGridItemVM
+@{
+    ViewData["Title"] = "Misc Suggestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            <button id="btnAddMiscSuggestion" type="button" class="add_new_list_item">Add New</button>
+            <button id="btnDeleteSelected" type="button" class="delete_list_item">Delete</button>
+        </div>
+
+        <div class="top_filter_right">
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#">Filter by Doctors...</a>
+                        <ul class="drop_menu_sub">
+                            @foreach (var doctor in Model.AllDoctors)
+                            {
+                                <li><a class="doctorClick" href="#" id="@doctor.DoctorId">@doctor.DoctorName</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchMiscSuggestionList" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnDoctorId" />
+                    <input type="hidden" id="hdnDoctorName" />
+                    <input type="hidden" id="hdnDoctor_Back" />
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+        <div class="content_wrap">
+            <div id="partialMiscSuggestion" style="display:none;" class="content_wrap"></div>
+        </div>
+    </div>
+</div>
+<!--End full_width-->
+<!--Modal Popup-->
+<script src="~/js/MiscSuggestion/miscSuggestion.index.js" asp-append-version="true"></script>
+

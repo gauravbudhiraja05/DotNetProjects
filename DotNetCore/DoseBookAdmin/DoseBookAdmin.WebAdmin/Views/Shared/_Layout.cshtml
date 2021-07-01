@@ -1,0 +1,171 @@
+﻿@using System.Security.Claims;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    var roles = HttpContextAccessor.HttpContext.User.Claims?.Where(c => c.Type == ClaimTypes.Role).Select(r => r.Value).ToList();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewData["Title"] - Dose Book Admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!--Global CSS-->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/datepicker.min.css" rel="stylesheet" />
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <!--Theme CSS-->
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/MultiselectFolderTree/jquery.tree-multiselect.css" asp-append-version="true" rel="stylesheet" />
+
+    <!--All JavaScript References-->
+    <!--Custom Js-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-ui.js"></script>
+    <script src="~/lib/jquery/dist/nicEdit-latest.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap-select.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/datepicker.min.js"></script>
+    <script src="~/lib/jquery/dist/datepicker.en.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/sweetalert2.js"></script>
+    <script src="~/js/sweetalert2.promise.min.js"></script>
+    @*<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7.1.0/dist/promise.min.js"></script>*@
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    @*<script src="~/js/MultiselectFolderTree/jquery.tree-multiselect.js" asp-append-version="true"></script>*@
+    <script src="~/lib/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/js/common.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        @RenderSection("Scripts",required: false)
+
+        $(document).ready(function () {
+         @RenderSection("DocumentReady", required: false)
+        });
+    </script>
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+
+    <div class="main_wrapper">
+
+        <div class="header">
+
+            <div class="center_wrap">
+                <div class="top_menu">
+                    <a href="@Url.Action("Dashboard","Home")" class="logo"><img src="~/images/logo_new.png" alt="dosebook" /></a>
+                    <div class="extra_links">
+                        <a href="#" style="padding-top: 10px;text-decoration: none !important;cursor: default !important; color:black !important"><span>DoseBook Admin</span></a>
+                        <a title="Log-out" href="@Url.Action("Logout", "Account")"><span style="margin-top: 10px; color:black !important">Logout</span></a>
+                    </div>
+                    <ul>
+                        <li class="nav-li"><a href="@Url.Action("Dashboard", "Home")">Dashboard</a></li>
+                        <li class="nav-li">
+                            <a href="#">Doctor</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("Index", "Doctor")">Doctor List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("AddDoctor", "Doctor")">Add Doctor</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#">Document</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("Index", "Document")">Document List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("Index", "DoseData")">Dose Meta List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("Index", "ClassificationData")">Classification Data List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("Index", "ClassificationResult")">Classification Result List</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#">Classification Types</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("Index", "DiagnosticTest")">Diagnostic Test List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("Index", "MedicineDose")">Medicine Dose List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("Index", "MiscSuggestion")">Misc Suggestion List</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li" style="display:none;">
+                            <a href="#">User</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("Index", "User")">Patient User List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("AddUser", "User")">Add Patient User</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li" style="display:none;">
+                            <a href="#">Medicines Brand</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("MedicineBrandList", "Medicine")">Medicine Brand List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("AddMedcineBrand", "Medicine")">Add Medicine Brand</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li" style="display:none;">
+                            <a href="#">Medicines Category</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("MedicineCategoryList", "Medicine")">Medicine Category List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("AddMedcineCategory", "Medicine")">Add Medicine Category</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li" style="display:none;">
+                            <a href="#">Medicine Dose</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("Index", "Medicine")">Medicine List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("AddMedicine", "Medicine")">Add Medicine</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-li" style="display:none;">
+                            <a href="#">Dose</a>
+                            <ul class="submenu">
+                                <li class="nav-li"><a href="@Url.Action("Index", "Medicine")">Medicine List</a></li>
+                                <li class="nav-li"><a href="@Url.Action("AddMedicine", "Medicine")">Add Medicine</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--End header-->
+
+        <div id="progress" class="loaderModal">
+            <div class="sk-fading">
+                <div class="sk-fading-circle loaderModal">
+                    <div class="sk-circle1 sk-circle"></div>
+                    <div class="sk-circle2 sk-circle"></div>
+                    <div class="sk-circle3 sk-circle"></div>
+                    <div class="sk-circle4 sk-circle"></div>
+                    <div class="sk-circle5 sk-circle"></div>
+                    <div class="sk-circle6 sk-circle"></div>
+                    <div class="sk-circle7 sk-circle"></div>
+                    <div class="sk-circle8 sk-circle"></div>
+                    <div class="sk-circle9 sk-circle"></div>
+                    <div class="sk-circle10 sk-circle"></div>
+                    <div class="sk-circle11 sk-circle"></div>
+                    <div class="sk-circle12 sk-circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--End Loader Div-->
+
+
+        @RenderBody()
+        <!--End full_width-->
+
+
+
+    </div>
+    <!--End main_wrapper-->
+
+    <div id="partialResetPassword" style="display:none;" class="content_wrap"></div>
+
+
+    <div class="popup_window_overlay"></div>
+
+</body>
+</html>

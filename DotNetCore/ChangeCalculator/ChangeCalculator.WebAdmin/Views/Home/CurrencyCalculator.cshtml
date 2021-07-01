@@ -1,0 +1,29 @@
+﻿@model ChangeCalculator.ViewModels.Calculator.Calculator
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Total Change
+            </th>
+            <th>
+                Denominations List
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                <p>@Model.TotalChange</p>
+            </td>
+            <td>
+                @foreach (var str in Model.Denominations)
+                {
+                    <p>@str</p><br />
+                }
+            </td>
+        </tr>
+        
+    </tbody>
+</table>

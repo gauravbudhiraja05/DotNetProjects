@@ -1,0 +1,135 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.ClassificationTypeListGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Classification Data</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblClassificationDataList" class="table">
+
+        @if (Model.SelectedClassificationType.Type == "TEST")
+        { 
+            <thead>
+                <tr>
+                    <th style="width:50px;">
+                        <button type="button" class="table_title"><i class="icon"></i>Test Id</button>
+                    </th>
+                    <th style="width: 250px;">
+                        <button type="button" class="table_title"><i class="icon"></i>Classification Type </button>
+                    </th>
+                    <th style="width: 250px;">
+                        <button type="button" class="table_title active"><i class="icon asc"></i>Doctor Name</button>
+                    </th>
+                    <th style="width: 250px;">
+                        <button type="button" class="table_title active"><i class="icon asc"></i>Test Name</button>
+                    </th>
+                    <th style="width: 250px;">
+                        <button type="button" class="table_title"><i class="icon"></i>Test Created Date</button>
+                    </th>
+                </tr>
+            </thead>
+        <tbody>
+            @foreach (var diagnosticTest in Model.AllDiagnosticTests)
+            {
+                <tr>
+
+                    <td>#@diagnosticTest.TestId</td>
+                    <td>TEST</td>
+                    <td>@diagnosticTest.DoctorName</td>
+                    <td>@diagnosticTest.TestName</td>
+                    <td>@diagnosticTest.TestCreatedDate</td>
+                </tr>
+            }
+        </tbody>
+        }
+        else if (Model.SelectedClassificationType.Type == "MISC")
+        {
+        <thead>
+            <tr>
+                <th style="width:50px;">
+                    <button type="button" class="table_title"><i class="icon"></i>Test Id</button>
+                </th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title"><i class="icon"></i>Classification Type </button>
+                </th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Doctor Name</button>
+                </th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Test Name</button>
+                </th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title"><i class="icon"></i>Description</button>
+                </th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title"><i class="icon"></i>Misc Created Date</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var miscSuggestion in Model.AllMiscSuggestions)
+            {
+                <tr>
+
+                    <td>#@miscSuggestion.TestId</td>
+                    <td>MISC</td>
+                    <td>@miscSuggestion.DoctorName</td>
+                    <td>@miscSuggestion.TestName</td>
+                    <td>@miscSuggestion.Description</td>
+                    <td>@miscSuggestion.MiscCreatedDate</td>
+                </tr>
+            }
+        </tbody>
+        }
+        else if (Model.SelectedClassificationType.Type == "MEDICINE")
+        {
+        <thead>
+            <tr>
+                <th style="width:50px;">
+                    <button type="button" class="table_title"><i class="icon"></i>Medicine Id</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Classification Type </button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name </button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Medicine Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Label</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Duration</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Created Date</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var medicineDose in Model.AllMedicineDoses)
+            {
+                <tr>
+                    <td>@medicineDose.MedicineId</td>
+                    <td>MEDICINE</td>
+                    <td>@medicineDose.DoctorName</td>
+                    <td>@medicineDose.MedicineName</td>
+                    <td>@medicineDose.Label</td>
+                    <td>@medicineDose.Duration</td>
+                    <td>@medicineDose.DoseCreatedDate</td>
+                </tr>
+            }
+        </tbody>
+        }
+    </table>
+</div>
+<script src="~/js/ClassificationData/classificationData._classificationDatalist.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

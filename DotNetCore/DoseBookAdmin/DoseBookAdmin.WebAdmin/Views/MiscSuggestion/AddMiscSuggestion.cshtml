@@ -1,0 +1,91 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.MiscSuggestion
+@{
+    ViewData["Title"] = "Add Misc Suggestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="AddformMiscSuggestion" name="AddformMiscSuggestion">
+    <div class="tab_menu">
+        <div class="center_wrap">
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","MiscSuggestion")'">Back</button>
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">Misc Suggestion Details</a></li>
+            </ul>
+            <button type="button" id="Save_MiscSuggestion_Btn" class="btn_field tab_save">Save</button>
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+            <div class="content_wrap">
+                <div class="page_heading">
+                    <h1>Add Misc Suggestion</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_ID">Test Id</label>
+                                    <input asp-for="TestId" type="text" disabled>
+                                    <input asp-for="TestId" type="hidden">
+                                </div>
+                                <div class="form_field">
+                                    <label for="MiscSuggestion_Alldoctors">Doctor *<small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select which department this Vacancy item belongs to.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="DoctorId"
+                                                asp-items="@(new SelectList(Model.AllDoctors,"DoctorId", "DoctorName"))"></select>
+                                        <input type="hidden" asp-for="DoctorId" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="DoctorId"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Test Name*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Department Name.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="TestName" type="text">
+                                    <span class="error_label" asp-validation-for="TestName"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Description*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Department Name.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Description" type="text">
+                                    <span class="error_label" asp-validation-for="Description"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!--End form_fields_box-->
+                    </div>
+                </div>
+                <!--End forom_wrap-->
+            </div>
+            <!--End content_wrap-->
+        </div>
+        <!--End center_wrap-->
+    </div>
+</form>
+<!--End full_width-->
+
+<script src="~/js/MiscSuggestion/miscSuggestion.addMiscSuggestion.js" asp-append-version="true"></script>
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

@@ -1,0 +1,4 @@
+D:\Projects\Test Projects\CoreWebApi\CoreWebApi\obj\Debug\netcoreapp2.1\CoreWebApi.csprojAssemblyReference.cache
+D:\Projects\Test Projects\CoreWebApi\CoreWebApi\obj\Debug\netcoreapp2.1\CoreWebApi.csproj.CoreCompileInputs.cache
+D:\Projects\Test Projects\CoreWebApi\CoreWebApi\obj\Debug\netcoreapp2.1\CoreWebApi.AssemblyInfoInputs.cache
+D:\Projects\Test Projects\CoreWebApi\CoreWebApi\obj\Debug\netcoreapp2.1\CoreWebApi.AssemblyInfo.cs

@@ -1,0 +1,76 @@
+﻿@model DoseBookAdmin.ViewModels.DoseData.DoseMetaTypeListGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Dose Data</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblDoseDataList" class="table">
+        <thead>
+            <tr>
+                <th style="width: 40px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th style="width:50px;"><button type="button" class="table_title"><i class="icon asc"></i>ID</button></th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title"><i class="icon asc"></i>Dose Meta Type</button>
+                </th>
+                <th style="width: 250px;">
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Title</button>
+                </th>
+
+                @*<th>
+                    <button type="button" class="table_title"><i class="icon"></i> Department</button>
+                </th>*@
+                @*<th>
+                    <button type="button" class="table_title"><i class="icon"></i> Creation Date</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i> Publish Date</button>
+                </th>
+                <th style="width: 150px;">
+                    <button type="button" class="table_title"><i class="icon"></i> Author Name</button>
+                </th>*@
+                <th style="width:75px;text-align: center;">Edit</th>
+                <th style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doseData in Model.AllDoseDatas)
+            {
+            <tr>
+                <td style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkitem1" class="check_item">
+                        <label for="checkitem1"></label>
+                    </div>
+                </td>
+                <td style="width: 50px;">#@doseData.id</td>
+                <td>@doseData.TypeName</td>
+                <td>
+                    <a onclick="window.location.href='/DoseData/Edit?Id=@doseData.id'">@doseData.Title</a>
+                </td>
+                <td style="width:75px;text-align: center;">
+                    <button type="button" class="edit_item" onclick="EditRedirect(@doseData.id)">edit</button>
+                    <input type="hidden" id="hdnDoseMetaTypeId" value="@Model.SelectedDoseMetaType.Id" />
+                </td>
+                <td style="width:75px;text-align: center;">
+                    <span style="display:none">@doseData.id</span>
+                    <button type="button" class="delete_item doseDataItem">delete</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/DoseData/doseData._doseDatalist.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

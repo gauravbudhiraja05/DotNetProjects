@@ -1,0 +1,64 @@
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.deps.json
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.runtimeconfig.json
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.runtimeconfig.dev.json
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.dll
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.pdb
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.Views.dll
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.Views.pdb
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.csprojAssemblyReference.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.csproj.CoreCompileInputs.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorAssemblyInfo.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorAssemblyInfo.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.AssemblyInfoInputs.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.AssemblyInfo.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.TagHelpers.input.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.TagHelpers.output.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorCoreGenerate.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorTargetAssemblyInfo.cache
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorTargetAssemblyInfo.cs
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.Views.pdb
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.dll
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.pdb
+C:\Users\viraljain\Downloads\Aspnetcore-master\Aspnetcore-master\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.csproj.CopyComplete
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.deps.json
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.runtimeconfig.json
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.runtimeconfig.dev.json
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.dll
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.pdb
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.Views.dll
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\bin\Debug\netcoreapp2.1\ChatApp.Views.pdb
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.csprojAssemblyReference.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.csproj.CoreCompileInputs.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorAssemblyInfo.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorAssemblyInfo.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.AssemblyInfoInputs.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.AssemblyInfo.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.TagHelpers.input.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.TagHelpers.output.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorCoreGenerate.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorTargetAssemblyInfo.cache
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.RazorTargetAssemblyInfo.cs
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.Views.pdb
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.dll
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.pdb
+C:\Users\Gaurav Budhiraja\Downloads\IntroductiontoSignalR\Introduction to SignalR\ChatApp\ChatApp\obj\Debug\netcoreapp2.1\ChatApp.csproj.CopyComplete

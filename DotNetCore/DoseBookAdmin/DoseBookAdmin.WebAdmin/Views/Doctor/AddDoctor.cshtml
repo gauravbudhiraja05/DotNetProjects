@@ -1,0 +1,82 @@
+﻿@model DoseBookAdmin.ViewModels.Doctors.Doctor
+@{
+    ViewData["Title"] = "AddDoctor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="AddformDoctor" name="AddformDoctor">
+    <div class="tab_menu">
+        <div class="center_wrap">
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","Doctor")'">Back</button>
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">Doctor Details</a></li>
+            </ul>
+            <button type="button" id="Save_Doctor_Btn" class="btn_field tab_save">Save</button>
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+            <div class="content_wrap">
+                <div class="page_heading">
+                    <h1>Add Doctor</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_ID">Doctor Id</label>
+                                    <input asp-for="DoctorId" type="text" disabled>
+                                    <input asp-for="DoctorId" type="hidden">
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Doctor Name*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Department Name.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="DoctorName" type="text">
+                                    <span class="error_label" asp-validation-for="DoctorName"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Telephone Number*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="TelephoneNumber" type="text">
+                                    <span class="error_label" asp-validation-for="TelephoneNumber"></span>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!--End form_fields_box-->
+                    </div>
+                </div>
+                <!--End forom_wrap-->
+            </div>
+            <!--End content_wrap-->
+        </div>
+        <!--End center_wrap-->
+    </div>
+</form>
+<!--End full_width-->
+
+<script src="~/js/Doctor/doctor.addDoctor.js" asp-append-version="true"></script>
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

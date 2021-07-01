@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoseBookAdmin.Core", "DoseBookAdmin.Core\DoseBookAdmin.Core.csproj", "{AE893186-E3D2-4BD3-BFB5-D90CA7A56BA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoseBookAdmin.Repo", "DoseBookAdmin.Repo\DoseBookAdmin.Repo.csproj", "{87CA7C87-2DFE-498C-A5DE-77E61FBE724F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoseBookAdmin.Services", "DoseBookAdmin.Services\DoseBookAdmin.Services.csproj", "{5E8AB644-3514-420B-9387-68B67C3A8252}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoseBookAdmin.ViewModels", "DoseBookAdmin.ViewModels\DoseBookAdmin.ViewModels.csproj", "{0A90EDA2-B587-4E5E-A8B3-859E78D613EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoseBookAdmin.WebAdmin", "DoseBookAdmin.WebAdmin\DoseBookAdmin.WebAdmin.csproj", "{659DE2F0-4C6D-4C54-83A1-C66565B9A4E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE893186-E3D2-4BD3-BFB5-D90CA7A56BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE893186-E3D2-4BD3-BFB5-D90CA7A56BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE893186-E3D2-4BD3-BFB5-D90CA7A56BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE893186-E3D2-4BD3-BFB5-D90CA7A56BA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87CA7C87-2DFE-498C-A5DE-77E61FBE724F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87CA7C87-2DFE-498C-A5DE-77E61FBE724F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87CA7C87-2DFE-498C-A5DE-77E61FBE724F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87CA7C87-2DFE-498C-A5DE-77E61FBE724F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8AB644-3514-420B-9387-68B67C3A8252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8AB644-3514-420B-9387-68B67C3A8252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8AB644-3514-420B-9387-68B67C3A8252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8AB644-3514-420B-9387-68B67C3A8252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A90EDA2-B587-4E5E-A8B3-859E78D613EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A90EDA2-B587-4E5E-A8B3-859E78D613EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A90EDA2-B587-4E5E-A8B3-859E78D613EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A90EDA2-B587-4E5E-A8B3-859E78D613EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659DE2F0-4C6D-4C54-83A1-C66565B9A4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659DE2F0-4C6D-4C54-83A1-C66565B9A4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659DE2F0-4C6D-4C54-83A1-C66565B9A4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659DE2F0-4C6D-4C54-83A1-C66565B9A4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EC02FE7-4A8A-4C01-8BAA-B7D4FC4BDECA}
+	EndGlobalSection
+EndGlobal

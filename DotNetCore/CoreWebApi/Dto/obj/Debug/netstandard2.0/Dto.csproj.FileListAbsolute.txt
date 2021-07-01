@@ -1,0 +1,9 @@
+D:\Projects\Test Projects\CoreWebApi\Dto\obj\Debug\netstandard2.0\Dto.csprojAssemblyReference.cache
+D:\Projects\Test Projects\CoreWebApi\Dto\obj\Debug\netstandard2.0\Dto.AssemblyInfoInputs.cache
+D:\Projects\Test Projects\CoreWebApi\Dto\obj\Debug\netstandard2.0\Dto.AssemblyInfo.cs
+D:\Projects\Test Projects\CoreWebApi\Dto\obj\Debug\netstandard2.0\Dto.csproj.CoreCompileInputs.cache
+D:\Projects\Test Projects\CoreWebApi\Dto\bin\Debug\netstandard2.0\Dto.deps.json
+D:\Projects\Test Projects\CoreWebApi\Dto\bin\Debug\netstandard2.0\Dto.dll
+D:\Projects\Test Projects\CoreWebApi\Dto\bin\Debug\netstandard2.0\Dto.pdb
+D:\Projects\Test Projects\CoreWebApi\Dto\obj\Debug\netstandard2.0\Dto.dll
+D:\Projects\Test Projects\CoreWebApi\Dto\obj\Debug\netstandard2.0\Dto.pdb

@@ -1,0 +1,159 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.MedicineDose
+@{
+    ViewData["Title"] = "Add Medicine Dose";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="AddformMedicineDose" name="AddformMedicineDose">
+    <div class="tab_menu">
+        <div class="center_wrap">
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","MedicineDose")'">Back</button>
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">Medicine Dose Details</a></li>
+            </ul>
+            <button type="button" id="Save_MedicineDose_Btn" class="btn_field tab_save">Save</button>
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+            <div class="content_wrap">
+                <div class="page_heading">
+                    <h1>Add Medicine Dose</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_ID">Medicine Id</label>
+                                    <input asp-for="MedicineId" type="text" disabled>
+                                    <input asp-for="MedicineId" type="hidden">
+                                </div>
+                                <div class="form_field">
+                                    <label for="MedicineDose_Alldoctors">Doctor *<small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select which department this Vacancy item belongs to.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="DoctorId"
+                                                asp-items="@(new SelectList(Model.AllDoctors,"DoctorId", "DoctorName"))"></select>
+                                        <input type="hidden" asp-for="DoctorId" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="DoctorId"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Medicine Name*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Department Name.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="MedicineName" type="text">
+                                    <span class="error_label" asp-validation-for="MedicineName"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Frequency*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="Frequency"
+                                                asp-items="@(new SelectList(Model.FrequencyList))"></select>
+                                        <input type="hidden" asp-for="Frequency" />
+                                        <span class="error_label" asp-validation-for="Frequency"></span>
+                                    </div>
+                                    @*<input asp-for="Frequency" type="text">
+                                        <span class="error_label" asp-validation-for="Frequency"></span>*@
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Directions*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="Directions"
+                                                asp-items="@(new SelectList(Model.DirectionList))"></select>
+                                        <input type="hidden" asp-for="Directions" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="Directions"></span>
+                                    @*<input asp-for="Directions" type="text">
+                                        <span class="error_label" asp-validation-for="Directions"></span>*@
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Label*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Label" type="text">
+                                    <span class="error_label" asp-validation-for="Label"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Duration*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="Duration"
+                                                asp-items="@(new SelectList(Model.DurationList))"></select>
+                                        <input type="hidden" asp-for="Duration" />
+                                        <span class="error_label" asp-validation-for="Duration"></span>
+                                    </div>
+                                    @*<input asp-for="Duration" type="text">
+                                        <span class="error_label" asp-validation-for="Duration"></span>*@
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Dose*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="Dose" type="text">
+                                    <span class="error_label" asp-validation-for="Dose"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Dose Unit*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="DoseUnit"
+                                                asp-items="@(new SelectList(Model.DoseUnitList))"></select>
+                                        <input type="hidden" asp-for="DoseUnit" />
+                                        <span class="error_label" asp-validation-for="DoseUnit"></span>
+                                    </div>
+                                    @*<input asp-for="DoseUnit" type="text">
+                                        <span class="error_label" asp-validation-for="DoseUnit"></span>*@
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!--End form_fields_box-->
+                    </div>
+                </div>
+                <!--End forom_wrap-->
+            </div>
+            <!--End content_wrap-->
+        </div>
+        <!--End center_wrap-->
+    </div>
+</form>
+<!--End full_width-->
+
+<script src="~/js/MedicineDose/medicineDose.addMedicineDose.js" asp-append-version="true"></script>
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

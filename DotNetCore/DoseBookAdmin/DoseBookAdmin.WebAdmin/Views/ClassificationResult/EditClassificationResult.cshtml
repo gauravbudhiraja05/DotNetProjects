@@ -1,0 +1,102 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.ClassificationResult
+@{
+    ViewData["Title"] = "Edit Classification Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="EditformClassificationResult" name="EditformClassificationResult">
+    <div class="tab_menu">
+        <div class="center_wrap">
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("Index","ClassificationResult")'">Back</button>
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">Classification Result Details</a></li>
+            </ul>
+            <button type="button" id="Edit_ClassificationResult_Btn" class="btn_field tab_save">Save</button>
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+            <div class="content_wrap">
+                <div class="page_heading">
+                    <h1>Edit Classification Result</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="User_ID">Classification Result Id</label>
+                                    <input asp-for="ClassificationResultId" type="text" disabled>
+                                    <input asp-for="ClassificationResultId" type="hidden">
+                                </div>
+                                <div class="form_field">
+                                    <label for="ClassificationResult_Alldoctors">Doctor *<small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Select which department this Vacancy item belongs to.">Tooltip</small></label>
+                                    <div class="select_div">
+                                        <select asp-for="DoctorId"
+                                                asp-items="@(new SelectList(Model.AllDoctors,"DoctorId", "DoctorName"))"></select>
+                                        <input type="hidden" asp-for="DoctorId" />
+                                    </div>
+                                    <span class="error_label" asp-validation-for="DoctorId"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Classification Result Name*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Department Name.">Tooltip</small>
+                                    </label>
+                                    <input asp-for="ClassificationResultName" type="text">
+                                    <span class="error_label" asp-validation-for="ClassificationResultName"></span>
+                                </div>
+                                <div class="form_field">
+                                    <label for="User_FirstName">
+                                        Classification Type*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select asp-for="ClassificationTypeId"
+                                                asp-items="@(new SelectList(Model.ClassificationTypeList,"Id", "Type"))"></select>
+                                        <input type="hidden" asp-for="ClassificationTypeId" />
+                                        <span class="error_label" asp-validation-for="ClassificationTypeId"></span>
+                                    </div>
+                                </div>
+                                <div class="form_field" id="divClassification">
+                                    <label>
+                                        <span id="lblClassification" style="margin-bottom: 5px; font-size: 14px; font-weight: 500; color: #6d6d6d;"></span>
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <div class="select_div">
+                                        <select id="ddlClassification" asp-for="ClassificationId"></select>
+                                        <input type="hidden" asp-for="ClassificationId" />
+                                        <span class="error_label" asp-validation-for="ClassificationId"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!--End full_width-->
+
+<script src="~/js/ClassificationResult/classificationResult.editClassificationResult.js" asp-append-version="true"></script>
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

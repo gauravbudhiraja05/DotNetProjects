@@ -1,0 +1,107 @@
+﻿@model IEnumerable<DoseBookAdmin.ViewModels.User.User>
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+
+            <button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("AddUser","User")'">Add New</button>
+            <button id="btnDeleteAllCheckedUser" type="button" class="delete_list_item">Delete</button>
+
+        </div>
+
+        <div class="top_filter_right">
+
+
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchUserList" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Patient Users </h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="table_wrap">
+                <table id="tblUsers" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 300px;">
+                                <button type="button" class="table_title active"><i class="icon asc"></i>User Name</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Creation Date</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Is Active</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Contact No</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Created By Type</button>
+                            </th>
+                            <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                            <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td style="width: 70px;">
+                                    <div class="table_checkbox">
+                                        <input type="checkbox" id="checkitem1" class="check_item">
+                                        <label for="checkitem1"></label>
+                                    </div>
+                                </td>
+                                <td>@user.UserName</td>
+                                <td>@user.CreationDateDisplay</td>
+                                <td>@user.IsActive</td>
+                                <td>@user.TelephoneNumber</td>
+                                <td>@user.CreatedByType</td>
+                                <td style="width:75px;text-align: center;">
+                                    <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditDoctor","Doctor",new { Id=user.UserId})'">Edit</button>
+                                </td>
+                                <td style="width:75px;text-align: center;">
+                                    <span style="display:none">@user.UserId</span>
+                                    <button type="button" class="delete_item userItem">delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--End content_wrap-->
+    </div>
+    <!--End center_wrap-->
+</div>
+<!--End full_width-->
+<!--Modal Popup-->
+<script src="~/js/User/user.users.js" asp-append-version="true"></script>
+

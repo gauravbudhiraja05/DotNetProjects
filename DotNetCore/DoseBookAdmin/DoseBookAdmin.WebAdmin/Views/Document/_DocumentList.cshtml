@@ -1,0 +1,66 @@
+﻿@model DoseBookAdmin.ViewModels.Document.DocumentListGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Dose Data</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblDocuments" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th style="width: 300px;">
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Classification Result Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Label</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Description</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var document in Model.AllDocuments)
+            {
+                <tr>
+                    <td style="width: 70px;">
+                        <div class="table_checkbox">
+                            <input type="checkbox" id="checkitem1" class="check_item">
+                            <label for="checkitem1"></label>
+                        </div>
+                    </td>
+                    <td>@document.DoctorName</td>
+                    <td>@document.ClassificationResultName</td>
+                    <td>@document.Label</td>
+                    <td>@document.Description</td>
+                    <td style="width:75px;text-align: center;">
+                        <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditDocument","Document",new { DocumentId = document.DocumentId})'">Edit</button>
+                    </td>
+                    <td style="width:75px;text-align: center;">
+                        <span style="display:none">@document.DocumentId</span>
+                        <button type="button" class="delete_item documentItem">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/Document/document._document.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

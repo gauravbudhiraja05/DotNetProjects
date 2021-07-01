@@ -1,0 +1,66 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.DiagnosticTestListGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Diagnostic Test</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblDiagnosticTests" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title "><i class="icon "></i>Test Id</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Test Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Created Date</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var diagnosticTest in Model.AllDiagnosticTests)
+            {
+                <tr>
+                    <td style="width: 70px;">
+                        <div class="table_checkbox">
+                            <input type="checkbox" id="checkitem1" class="diagnosticTestItem check_item">
+                            <label for="checkitem1"></label>
+                        </div>
+                    </td>
+                    <td>@diagnosticTest.TestId</td>
+                    <td>@diagnosticTest.DoctorName</td>
+                    <td>@diagnosticTest.TestName</td>
+                    <td>@diagnosticTest.TestCreatedDate</td>
+                    <td style="width:75px;text-align: center;">
+                        <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditDiagnosticTest","DiagnosticTest",new { TestId = diagnosticTest.TestId })'">Edit</button>
+                    </td>
+                    <td style="width:75px;text-align: center;">
+                        <span style="display:none">@diagnosticTest.TestId</span>
+                        <button type="button" class="delete_item diagnosticTestItem">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/DiagnosticTest/diagnosticTest._diagnosticTest.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

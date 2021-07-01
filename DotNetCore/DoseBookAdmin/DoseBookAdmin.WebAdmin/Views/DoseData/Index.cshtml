@@ -1,0 +1,51 @@
+﻿@model DoseBookAdmin.ViewModels.DoseData.DoseMetaTypeListGridItemVM
+@{
+    ViewData["Title"] = "Dose Data";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            <button type="button" id="btnAddDoseData" class="add_new_list_item">Add new</button>
+            <button type="button" id="btnDeleteSelected" disabled="disabled" class="delete_list_item">delete</button>
+        </div>
+
+        <div class="top_filter_right">
+
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#">Filter by DoseMetaTypes...</a>
+                        <ul class="drop_menu_sub">
+                            @foreach (var doseMetaType in Model.AllDoseMetaTypes)
+                            {
+                                <li><a class="doseMetaTypeClick" href="#" id="@doseMetaType.Id">@doseMetaType.Type</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearcDoseMetaUp" disabled="disabled" class="form-control" placeholder="Search">
+                    <input type="submit" disabled id="btnSearch" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnDoseMetaTypeId" />
+                    <input type="hidden" id="hdnDoseMetaTypeName" />
+                    <input type="hidden" id="hdnDoseMetaType_Back" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+        <div id="partialDoseData" style="display:none;" class="content_wrap"></div>
+    </div>
+</div>
+<script src="~/js/DoseData/doseData.index.js" asp-append-version="true"></script>
+@*<script src="~/js/common.js"></script>*@

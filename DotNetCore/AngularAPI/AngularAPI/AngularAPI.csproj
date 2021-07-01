@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\student\component\student.component.ts" />
+    <None Remove="ClientApp\student\model\student.model.ts" />
+    <None Remove="ClientApp\student\services\StudentCrud.service .ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\node_modules\font-awesome\css\font-awesome.css" />
+    <Content Include="ClientApp\node_modules\font-awesome\css\font-awesome.min.css" />
+    <Content Include="ClientApp\node_modules\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="ClientApp\node_modules\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="ClientApp\node_modules\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="ClientApp\node_modules\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="ClientApp\node_modules\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="ClientApp\node_modules\font-awesome\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ClientApp\node_modules\font-awesome\.npmignore" />
+    <None Include="ClientApp\node_modules\font-awesome\css\font-awesome.css.map" />
+    <None Include="ClientApp\node_modules\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="ClientApp\node_modules\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="ClientApp\node_modules\font-awesome\less\animated.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\bordered-pulled.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\core.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\fixed-width.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\font-awesome.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\icons.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\larger.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\list.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\mixins.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\path.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\rotated-flipped.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\screen-reader.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\stacked.less" />
+    <None Include="ClientApp\node_modules\font-awesome\less\variables.less" />
+    <None Include="ClientApp\node_modules\font-awesome\README.md" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\font-awesome.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_animated.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_core.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_fixed-width.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_icons.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_larger.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_list.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_mixins.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_path.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_screen-reader.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_stacked.scss" />
+    <None Include="ClientApp\node_modules\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\student\component\student.component.ts" />
+    <TypeScriptCompile Include="ClientApp\student\model\student.model.ts" />
+    <TypeScriptCompile Include="ClientApp\student\services\StudentCrud.service .ts" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,59 @@
+﻿@model ChangeCalculator.ViewModels.Calculator.Calculator
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+</head>
+<body>
+    <div style="text-align:center">
+
+        <h3>Change Calculator</h3>
+        <form asp-action="CurrencyCalculator">
+            <table style="text-align: center; width: 40%;">
+                <tr>
+                    <th>
+                        @foreach (var currency in Model.Currency)
+                        {
+                            <input type="radio" asp-for="CurrencyType" value="@currency" />
+                            @currency
+                        }
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Presented amount
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" asp-for="PresentedAmount" />
+                        <span class="error_label" asp-validation-for="PresentedAmount"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Product Price
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" asp-for="ProductPrice" />
+                        <span class="error_label" asp-validation-for="ProductPrice"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" />
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <a href='@Url.Action("OtherSection","Home")' > Go to Other Section</a>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>

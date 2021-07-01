@@ -1,0 +1,44 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.ClassificationTypeListGridItemVM
+@{
+    ViewData["Title"] = "Classification Types";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_right">
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#">Filter by ClassificationTypes...</a>
+                        <ul class="drop_menu_sub">
+                            @foreach (var classificationType in Model.AllClassificationTypes)
+                            {
+                                <li><a class="ClassificationTypeClick" href="#" id="@classificationType.Id">@classificationType.Type</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchClassificationDataUp" disabled="disabled" class="form-control" placeholder="Search">
+                    <input type="submit" disabled id="btnSearch" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnClassificationTypeId" />
+                    <input type="hidden" id="hdnClassificationTypeName" />
+                    <input type="hidden" id="hdnClassificationType_Back" />
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+        <div id="partialClassificationData" style="display:none;" class="content_wrap"></div>
+    </div>
+</div>
+<script src="~/js/ClassificationData/classificationData.index.js" asp-append-version="true"></script>
+@*<script src="~/js/common.js"></script>*@

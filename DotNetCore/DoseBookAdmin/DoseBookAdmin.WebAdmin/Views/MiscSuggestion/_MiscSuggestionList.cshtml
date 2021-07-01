@@ -1,0 +1,70 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.MiscSuggestionListGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Misc Suggestions</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblMiscSuggestions" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th style="width: 300px;">
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Test Id</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Test Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Description</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Created Date</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var miscSuggestion in Model.AllMiscSuggestions)
+            {
+                <tr>
+                    <td style="width: 70px;">
+                        <div class="table_checkbox">
+                            <input type="checkbox" id="checkitem1" class="miscSuggestionItem check_item">
+                            <label for="checkitem1"></label>
+                        </div>
+                    </td>
+                    <td>@miscSuggestion.TestId</td>
+                    <td>@miscSuggestion.DoctorName</td>
+                    <td>@miscSuggestion.TestName</td>
+                    <td>@miscSuggestion.Description</td>
+                    <td>@miscSuggestion.MiscCreatedDate</td>
+                    <td style="width:75px;text-align: center;">
+                        <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditMiscSuggestion","MiscSuggestion",new { TestId = miscSuggestion.TestId })'">Edit</button>
+                    </td>
+                    <td style="width:75px;text-align: center;">
+                        <span style="display:none">@miscSuggestion.TestId</span>
+                        <button type="button" class="delete_item miscSuggestionItem">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/MiscSuggestion/miscSuggestion._miscSuggestion.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

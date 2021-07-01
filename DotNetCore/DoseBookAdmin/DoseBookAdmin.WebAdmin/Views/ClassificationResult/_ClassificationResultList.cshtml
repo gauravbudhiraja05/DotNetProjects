@@ -1,0 +1,66 @@
+﻿@model DoseBookAdmin.ViewModels.ClassificationData.ClassificationResultListGridItemVM
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Classification Result</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblClassificationResults" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Classification Result Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Classification Type</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Type Name</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var classificationResult in Model.AllClassificationResults)
+            {
+                <tr>
+                    <td style="width: 70px;">
+                        <div class="table_checkbox">
+                            <input type="checkbox" id="checkitem1" class="classificationResultItem check_item">
+                            <label for="checkitem1"></label>
+                        </div>
+                    </td>
+                    <td>@classificationResult.DoctorName</td>
+                    <td>@classificationResult.ClassificationResultName</td>
+                    <td>@classificationResult.ClassificationTypeName</td>
+                    <td>@classificationResult.TypeName</td>
+                    <td style="width:75px;text-align: center;">
+                        <button type="button" class="edit_item" onClick="window.location.href='@Url.Action("EditClassificationResult","ClassificationResult",new { ClassificationResultId = classificationResult.ClassificationResultId})'">Edit</button>
+                    </td>
+                    <td style="width:75px;text-align: center;">
+                        <span style="display:none">@classificationResult.ClassificationResultId</span>
+                        <button type="button" class="delete_item classificationResultItem">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/ClassificationResult/classificationResult._classificationResult.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>
