@@ -1,0 +1,28 @@
+<!-- <div class="search-wrap {{prx?.id ? 'saved' : 'new'}}"> -->
+
+<div class="search-wrap">
+
+   <input type="text" placeholder="Start typing" [(ngModel)]="genericSearchText" (ngModelChange)="inputChanged()"/>
+   <div class="results"  *ngIf="searching">
+      <br>
+      <ion-spinner name="crescent"></ion-spinner> 
+      <br>
+   </div>
+   <div class="results" *ngIf="searchType === 'MEDICINE'">
+      <div *ngFor="let item of (searchResponse$ | async)?.medicines" (click)="medicineSelected(item)">
+         {{item.medicine_name}} <br> <small>{{item.composition}}</small>
+      </div>
+   </div>
+
+   <div class="results" *ngIf="searchType === 'TEST'">
+      <div *ngFor="let item of (searchResponse$ | async)?.tests" (click)="testSelected(item)">
+         {{item.test_name}}
+      </div>
+   </div>
+
+   <div class="results" *ngIf="searchType === 'ADVICE'">
+      <div *ngFor="let item of (searchResponse$ | async)?.advices" (click)="adviceSelected(item)">
+         {{item.description}}
+      </div>
+   </div>
+</div>

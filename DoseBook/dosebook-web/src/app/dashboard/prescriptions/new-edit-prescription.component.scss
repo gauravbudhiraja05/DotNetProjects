@@ -1,0 +1,328 @@
+
+.new{
+	color: #006495;
+	fill:#006495;
+}
+.saved{
+	color: #51ac43;
+	fill: #51ac43;
+}
+
+.row{
+	overflow-y: auto;
+}
+.prx-wrapper {
+    margin-left: 60px;
+	margin-right: -16px;
+	font-family:"Poppins",sans-serif !important;
+}
+ion-row {
+	padding: 0 15px;
+	width: 100%;
+}
+.prx{
+	margin-right: -24px;
+	height: 100vh;
+	overflow: hidden;
+}
+.suggestion{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.prx-header{
+	border-bottom: 1px solid #dadada;
+	svg{
+		width: 56px;
+		display: block;
+		margin: auto;
+	}
+	p{
+		margin-top: 0;
+		small{
+			// color: #51AC43;
+			font-size: 13px;
+			font-weight: 500;
+		}
+	}
+	.copied{
+		display: block;
+		width: 100%;
+		padding: 2px 10px;
+		border: 1px solid currentColor;
+		// color: currentColor;
+		text-align: center;
+		font-weight: 500;
+		margin-top: 8px;
+	}
+	button{
+		text-align: center;
+		width: 100%;
+		display: block;
+		color: #51AC43;
+		background: transparent;
+		border: 0px;
+		svg{
+			width: 22px;
+			display: block;
+			fill: #51AC43;
+			margin-bottom: 4px;
+		}
+		&:hover, &:focus{
+			outline: 0;
+		}
+	}
+}
+
+.healthissue{
+	display: flex;
+	min-width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 0;
+	position: relative;
+	>div{
+		background: #dadada ;
+		border: 1px solid #dadada;
+		width: 54px;
+		flex:0 0 54px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 42px;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		svg{
+			width: 32px;
+			fill: currentColor;
+			path{
+				stroke: currentColor;
+			}
+		}
+	}
+	label{
+		display: block;
+	}
+	input{
+		display: block;
+		padding: 6px;
+		// border: 0px;
+		border: 1px solid #dadada;
+		width: 100%;
+		&:focus{
+			outline: 0;
+		}
+	}
+}
+
+.no-padding{
+	padding: 0 !important;
+}
+
+hr{
+	background: #ccc;
+	margin-top: 30px;
+}
+
+.madicine-table-header{
+	background: #efefef;
+    font-size: 14px;
+	margin-bottom: 20px !important;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 8px 0;
+	ion-col{
+		padding: 0 8px;
+		justify-content: flex-start;
+		font-weight: 500;
+	}
+}
+
+.madicine-table{
+    font-size: 14px;
+	width: 100%;
+	border-bottom: 1px solid #dadada;
+	ion-col{
+		padding: 8px 8px 4px 8px;
+		justify-content: flex-start;
+		.remove{
+			cursor: pointer;
+			&:hover{
+				color: red;
+			}
+		}
+		button{
+			background: transparent;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	small{
+		font-size: 12px;
+		opacity: .7;
+		font-weight: 500;
+	}
+}
+ion-datetime {
+	width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+
+ol {
+	list-style: none;
+	counter-reset: my-awesome-counter;
+	width: 100%;
+	padding-right: 15px;
+  }
+  ol li {
+	counter-increment: my-awesome-counter;
+	position: relative;
+	display: flex;
+    justify-content: space-between;
+	margin-bottom: 10px;
+	.remove{
+		cursor: pointer;
+	}
+  }
+  ol li::before {
+	content: counter(my-awesome-counter) ". ";
+	font-weight: bold;
+	position: absolute;
+    left: -24px;
+  }
+
+  .pr-3{
+	  padding-right: 20px;
+  }
+
+
+  .action{
+	  text-align: center;
+	  button{
+		  display: inline-block;
+		  background:transparent !important;
+		  margin-right: 4px;
+		  padding: 0;
+		  text-align: center;
+		  border:0;
+		  margin-right: 10px;
+		  svg{
+			  width: 18px;
+			  fill: #222;
+			  opacity: .4;
+		  }
+		  &:hover,  &:focus{
+			  background: transparent !important;
+			  svg{
+				  fill:currentColor;
+			  }
+		  }
+	  }
+	  .remove{
+		  position: relative;
+		  svg{
+			  width: 14px;
+		  }
+	  }
+  }
+// ======================= new code
+.prx{
+	height: 100vh;
+	overflow-y: auto;
+	border-left: 1px solid #dadada;
+}
+.btn-flex{
+	display: flex;
+	justify-content: flex-end;
+	button {
+		padding: 10px 20px;
+		margin: 0px 10px 10px 0;
+		color: #fff;
+		border: 1px solid;
+		&:hover, &:focus{
+			color: currentColor;
+			background: transparent;
+			outline: 0;
+
+		}
+	}
+}
+
+.new{
+	button{
+		background: #114978;
+		border-color: #114978;
+	}
+}
+ .saved{
+	button{
+		background: #51ac43;
+		border-color: #51ac43;
+	}
+}
+
+.button {
+	background: transparent;
+	min-width: 100px;
+	text-align: center;
+	padding: 10px 20px;
+	// border-radius: 50px;	
+	transition: all 200ms linear;
+	&:hover, &:focus{
+		outline: none;
+	}
+}
+
+.saved-btn{
+	.button{
+		color: #51ac43;
+		border: 1px solid #51ac43;
+		&:hover, &:focus{
+			background: #51ac43;
+			color: #fff;
+			outline: none;
+		}
+	}
+}
+.new-btn{
+	.button{
+		color: #407BFF;
+		border: 1px solid #407BFF;
+		&:hover, &:focus{
+			background: #407BFF;
+			color: #fff;
+			outline: none;
+		}
+	}
+}
+
+.results {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: #fff;
+    top: 100%;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    padding: 0;
+    min-width: 300px;
+    width: 100%;
+    div {
+        padding: 10px 10px;
+        font-size: 14px;
+        width: 100%;
+        cursor: pointer;
+        transition: all 200ms linear;
+        &:hover{
+            // background: #fff;
+            color: #407BFF;
+        }
+    }
+}

@@ -1,0 +1,350 @@
+﻿@model DoseBookAdmin.Dto.MedicineDose.MedicineDoseDtoList
+@{
+    ViewData["Title"] = "Master Medicine Dose List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .modal-header, h4, .close {
+        background-color: #5cb85c;
+        color: white !important;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .modal-footer {
+        background-color: #f9f9f9;
+    }
+
+    .ui-autocomplete-input {
+        border: none;
+        font-size: 14px;
+        width: 300px;
+        height: 24px;
+        margin-bottom: 5px;
+        padding-top: 2px;
+        border: 1px solid #DDD !important;
+        padding-top: 0px !important;
+        z-index: 1511;
+        position: relative;
+    }
+
+    .ui-menu .ui-menu-item a {
+        font-size: 12px;
+    }
+
+    .ui-autocomplete {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        z-index: 1051 !important;
+        float: left;
+        display: none;
+        min-width: 160px;
+        width: 160px;
+        padding: 4px 0;
+        margin: 2px 0 0 0;
+        list-style: none;
+        background-color: #ffffff;
+        border-color: #ccc;
+        border-color: rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 1px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        *border-right-width: 2px;
+        *border-bottom-width: 2px;
+    }
+
+    .ui-menu-item > a.ui-corner-all {
+        display: block;
+        padding: 3px 15px;
+        clear: both;
+        font-weight: normal;
+        line-height: 18px;
+        color: #555555;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .ui-state-hover, .ui-state-active {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #0088cc;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        background-image: none;
+    }
+</style>
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            @*<button type="button" class="add_new_list_item" onClick="window.location.href='@Url.Action("AddMasterMedicineDose","MedicineDose")'">Add New</button>*@
+            <button type="button" id="btnAddMasterMedicineDose" class="add_new_list_item">Add New</button>
+            <button id="btnDeleteAllCheckedMasterMedicineDose" type="button" class="delete_list_item">Delete</button>
+        </div>
+
+        <div class="top_filter_right">
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchMasterMedicineDoseList" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Master Medicine Dose List</h1>
+            </div>
+            <!--End page_heading-->
+
+            <div class="table_wrap">
+                <table id="tblMasterMedicineDoses" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title active"><i class="icon asc"></i>Medicine Name</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Composition</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Duration</button>
+                            </th>
+                            <th>
+                                <button type="button" class="table_title"><i class="icon"></i>Directions</button>
+                            </th>
+                            <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                            <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var medicineDoseDto in Model)
+                        {
+                            <tr>
+                                <td style="width: 70px;">
+                                    <div class="table_checkbox">
+                                        <input type="checkbox" id="checkitem1" class="check_item">
+                                        <label for="checkitem1"></label>
+                                    </div>
+                                </td>
+                                <td>@medicineDoseDto.MedicineName</td>
+                                <td>@medicineDoseDto.Composition</td>
+                                <td>@medicineDoseDto.Duration</td>
+                                <td>@medicineDoseDto.Directions</td>
+                                <td style="width:75px;text-align: center;">
+                                    <button type="button" class="edit_item" onClick="EditMasterMedicineDose(@medicineDoseDto.MedicineId)">Edit</button>
+                                </td>
+                                <td style="width:75px;text-align: center;">
+                                    <span style="display:none">@medicineDoseDto.MedicineId</span>
+                                    <button type="button" class="delete_item masterMedicineDoseItem">delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End full_width-->
+
+<!--Modal Popup-->
+<!-- Modal -->
+<div class="modal fade" id="AddMasterMedicineModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" id="btnAddHeaderClose" class="close">&times;</button>
+                <h4><span class="glyphicon glyphicon-lock"></span>Add Master Medicine Dose</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+                <form role="form">
+                    <div class="form_fields_box">
+                        <fieldset>
+                            <div class="form_field">
+                                <label> Medicine Id </label>
+                                <input type="text" disabled id="txtAddMedicineId">
+                            </div>
+                            <div class="form_field">
+                                <label> Medicine Name* </label>
+                                <input type="text" id="txtAddMedicineName">
+                                <span class="error_label" id="txtAddMedicineNameError"></span>
+                            </div>
+                            <div class="form_field">
+                                <label> Frequency* </label>
+                                <div class="select_div">
+                                    <select id="ddlAddFrequency"></select>
+                                    <span class="error_label" id="ddlAddFrequncyError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <label> Directions*</label>
+                                <div class="select_div">
+                                    <select id="ddlAddDirections"></select>
+                                    <span class="error_label" id="ddlAddDirectionsError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <button id="btnAddCancel" type="button" style="width:100%" class="btn btn-danger btn-default pull-left"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form_fields_box">
+                        <fieldset>
+                            <div class="form_field">
+                                <label> Composition* </label>
+                                <input type="text" id="txtAddComposition">
+                                <span class="error_label" id="txtAddCompositionError"></span>
+                            </div>
+                            <div class="form_field">
+                                <label> Duration* </label>
+                                <div class="select_div">
+                                    <select id="ddlAddDuration"></select>
+                                    <span class="error_label" id="ddlAddDurationError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <label> Dose Unit*</label>
+                                <div class="select_div">
+                                    <select id="ddlAddDoseUnit"></select>
+                                    <span class="error_label" id="ddlAddDoseUnitError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <label> Dose * </label>
+                                <div class="select_div">
+                                    <select id="ddlAddDose"></select>
+                                    <span class="error_label" id="ddlAddDoseError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <button id="btnAddSave" type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Save</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End Modal Popup-->
+
+<!--Modal Popup-->
+<!-- Modal -->
+<div class="modal fade" id="EditMasterMedicineModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" id="btnEditHeaderClose" class="close">&times;</button>
+                <h4><span class="glyphicon glyphicon-lock"></span>Edit Master Medicine Dose</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+                <form role="form">
+                    <div class="form_fields_box">
+                        <fieldset>
+                            <div class="form_field">
+                                <label> Medicine Id </label>
+                                <input type="text" disabled id="txtEditMedicineId">
+                            </div>
+                            <div class="form_field">
+                                <label> Medicine Name* </label>
+                                <input type="text" id="txtEditMedicineName">
+                                <span class="error_label" id="txtEditMedicineNameError"></span>
+                            </div>
+                            <div class="form_field">
+                                <label> Frequency* </label>
+                                <div class="select_div">
+                                    <select id="ddlEditFrequency"></select>
+                                    <span class="error_label" id="ddlEditFrequncyError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <label> Directions*</label>
+                                <div class="select_div">
+                                    <select id="ddlEditDirections"></select>
+                                    <span class="error_label" id="ddlEditDirectionsError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <button id="btnEditCancel" type="button" style="width:100%" class="btn btn-danger btn-default pull-left"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form_fields_box">
+                        <fieldset>
+                            <div class="form_field">
+                                <label> Composition* </label>
+                                <input type="text" id="txtEditComposition">
+                                <span class="error_label" id="txtEditCompositionError"></span>
+                            </div>
+                            <div class="form_field">
+                                <label> Duration* </label>
+                                <div class="select_div">
+                                    <select id="ddlEditDuration"></select>
+                                    <span class="error_label" id="ddlEditDurationError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <label> Dose Unit*</label>
+                                <div class="select_div">
+                                    <select id="ddlEditDoseUnit"></select>
+                                    <span class="error_label" id="ddlEditDoseUnitError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <label> Dose * </label>
+                                <div class="select_div">
+                                    <select id="ddlEditDose"></select>
+                                    <span class="error_label" id="ddlEditDoseError"></span>
+                                </div>
+                            </div>
+                            <div class="form_field">
+                                <button id="btnEditUpdate" type="button" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Update</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End Modal Popup-->
+
+<script src="~/js/MedicineDose/medicineDose.masterMedicineDose.js" asp-append-version="true"></script>
+
+
+@* For AutoComplete *@
+<link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />

@@ -1,0 +1,61 @@
+﻿@model DoseBookAdmin.Dto.Doctor.DoctorDtoList
+@{
+    ViewData["Title"] = "Doctor Advice List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            <button type="button" id="AddRow" class="add_new_list_item">Add new</button>
+            <button id="btnDeleteSelected" type="button" class="delete_list_item">Delete</button>
+        </div>
+        <button type="button" id="Save_DoctorAdvice_Btn" class="btn_field_new" style="">Save</button>
+        <div class="top_filter_right">
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#">Filter by Doctors...</a>
+                        <ul class="drop_menu_sub">
+                            @foreach (var doctorDto in Model)
+                            {
+                                <li><a class="doctorClick" href="#" id="@doctorDto.DoctorId">@doctorDto.DoctorName</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchDoctorAdviceUp" class="form-control" placeholder="Search">
+                    <input type="button" id="btnSearchDoctorAdviceUp" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnDoctorId" />
+                    <input type="hidden" id="hdnDoctorName" />
+                    <input type="hidden" id="hdnDoctor_Back" />
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+        <div class="content_wrap">
+            <div id="partialAdvice" style="display:none;" class="content_wrap"></div>
+        </div>
+    </div>
+</div>
+<!--End full_width-->
+<!--Modal Popup-->
+<script src="~/js/Advice/advice.doctorAdvice.js" asp-append-version="true"></script>
+
+@* For AutoComplete *@
+<link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
+@* For Tags *@
+<script src="~/js/magicsuggest.js"></script>
+<link href="~/css/magicsuggest.css" rel="stylesheet" />
+

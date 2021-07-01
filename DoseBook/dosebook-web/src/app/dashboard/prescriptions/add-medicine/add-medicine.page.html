@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Medicine</ion-title>
+    <ion-button slot="end" (click)="dismiss()">Cancel</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-searchbar placeholder="Start Typing" (ionChange)="search($event)"></ion-searchbar>
+  </ion-row>
+
+  <div class="search-results" *ngIf="medicines.length > 0">
+      <ion-row *ngFor="let medicineDose of medicines" (click)="selectMedicine(medicineDose)">
+        <ion-col>{{medicineDose.medicineName}}</ion-col>
+        <ion-col>{{medicineDose.dose}} {{medicineDose.doseUnit}}</ion-col>  
+        <ion-col>{{medicineDose.frequency}}</ion-col>
+        <ion-col>{{medicineDose.duration}}</ion-col>
+        <ion-col><ion-button (click)="selectMedicine(medicineDose)">Select</ion-button></ion-col>
+      </ion-row>
+  </div>
+
+</ion-content>

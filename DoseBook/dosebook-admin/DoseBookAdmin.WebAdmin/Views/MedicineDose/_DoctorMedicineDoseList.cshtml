@@ -1,0 +1,70 @@
+﻿@model DoseBookAdmin.Dto.MedicineDose.MedicineDoseListGridItemDto
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Doctor Medicine Dose List</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblMedicineDoses" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Medicine Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Composition</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Duration</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Directions</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var medicineDoseDto in Model.MedicineDoseDtoList)
+            {
+                <tr>
+                    <td style="width: 70px;">
+                        <div class="table_checkbox">
+                            <input type="checkbox" id="checkitem1" class="check_item">
+                            <label for="checkitem1"></label>
+                        </div>
+                    </td>
+                    <td>@medicineDoseDto.DoctorName</td>
+                    <td>@medicineDoseDto.MedicineName</td>
+                    <td>@medicineDoseDto.Composition</td>
+                    <td>@medicineDoseDto.Duration</td>
+                    <td>@medicineDoseDto.Directions</td>
+                    <td style="width:75px;text-align: center;">
+                        <button type="button" class="edit_item" onClick="EditDoctorMedicineDose(@medicineDoseDto.MedicineId)">Edit</button>
+                    </td>
+                    <td style="width:75px;text-align: center;">
+                        <span style="display:none">@medicineDoseDto.MedicineId</span>
+                        <button type="button" class="delete_item medicineDoseItem">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/MedicineDose/medicineDose._medicineDoseList.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

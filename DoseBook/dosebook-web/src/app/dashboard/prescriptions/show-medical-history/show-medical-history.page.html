@@ -1,0 +1,33 @@
+<ion-item>
+  <ion-button (click)="closePopup()" slot="end">Cancel</ion-button>
+</ion-item>
+<ion-row>
+  <ion-button (click)="showHistoryForm(true)">Add History</ion-button>
+  <ion-col>
+    <h1>Known history of ... </h1>
+    <div *ngFor="let record of knownHistory">
+      {{record.record}}
+    </div>
+    <div class="record" *ngIf="addHistoryForm">
+      <ion-item>
+        <ion-input placeholder="Type here..." [(ngModel)]="historyRecordValue"></ion-input>
+        <ion-button slot="end" (click)="addHistory()">Save</ion-button>
+      </ion-item>
+    </div>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-button (click)="showAllergicRecordForm(true)">Add Alergic Info</ion-button> 
+  <ion-col>
+    <h1>Allergic to ... </h1>
+    <div *ngFor="let record of allergicTo">
+      {{record.record}}
+    </div>
+    <div class="record" *ngIf="addAllergicForm">
+      <ion-item>
+        <ion-input placeholder="Type here..." [(ngModel)]="allergicRecordValue"></ion-input>
+        <ion-button slot="end" (click)="addAllergy()">Save</ion-button>
+      </ion-item>
+    </div>
+  </ion-col>
+</ion-row>

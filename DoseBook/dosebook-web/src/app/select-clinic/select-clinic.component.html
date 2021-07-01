@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-row>
+
+    <ion-col *ngFor="let clinic of clinics" (click)="selectClinic(clinic.id)">
+      {{clinic.name}}
+    </ion-col>
+  
+  </ion-row>
+  
+  <ion-row>
+    <ion-button [disabled]="selectedClinicId == null" [routerLink]="'/dashboard'">Start</ion-button>
+  </ion-row>
+  
+</ion-content>
+

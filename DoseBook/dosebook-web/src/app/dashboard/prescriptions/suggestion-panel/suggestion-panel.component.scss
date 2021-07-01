@@ -1,0 +1,253 @@
+.tab-panel {
+	font-family:"Poppins",sans-serif !important;
+    ion-col {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 15px;
+	}
+	.tab {
+		background: #fff;
+		padding: 8px 12px;
+		white-space: nowrap;
+		font-size: 14px;
+		margin-right: -1px;
+		border: 1px solid #dadada;
+		text-align: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: all 200ms linear;
+		color: #222;
+		font-weight: 500;
+        position: relative;
+        margin-bottom: 10px;
+		&:hover {
+			// background: #51AC43;
+			opacity: 1;
+			z-index: 1;
+			svg{
+				fill: #51AC43;
+			}
+		}
+		svg{
+			width: 26px;
+			display: block;
+			margin-right: 10px;
+			fill: #222;
+		}
+	}
+	.selected {
+		background: #fff;
+		opacity: 1;
+		z-index: 1;
+	}
+
+}
+
+.new{
+	.tab{
+		&:hover{
+			border: 1px solid #114978;
+			color: #114978;
+			svg{
+				fill: #114978;
+			}
+		}
+	}
+	.selected {
+		border: 1px solid #114978;
+		color: #114978;
+		svg{
+			fill: #114978;
+		}
+	}
+}
+.saved{
+	.tab{
+		&:hover{
+			border: 1px solid #51ac43;
+			color: #51ac43;
+			svg{
+				fill: #51ac43;
+			}
+		}
+	}
+	.selected {
+		border: 1px solid #51ac43;
+		color: #51ac43;
+		svg{
+			fill: #51ac43;
+		}
+	}
+}
+
+.inputsearch {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	width: 100%;
+  
+	input {
+	  width: 100%;
+	  border: 0;
+	  border-bottom: 1px solid #dadada;
+	  padding: 10px;
+  
+	  &:focus {
+		outline: 0;
+	  }
+	}
+  
+	svg {
+	  display: block;
+	  cursor: pointer;
+	  margin-right: 10px;
+	}
+}
+
+
+.table{
+	margin-left: -28px;
+	margin-right: -6px;
+    .medicine-list-header{
+        background: #e9e9e9;
+        ion-col {
+            padding: 10px 12px;
+            font-weight: 500;
+			text-align: left;
+			&:first-child{
+				padding-left: 28px;
+			}
+        }
+    }
+    .medicine-list{
+        background: #fff;
+        ion-col {
+            padding: 10px 12px;
+            font-weight: 400;
+            text-align: left;
+            display: block;
+            cursor: pointer;
+			border-bottom: 1px solid #DEE7FC;
+			&:first-child{
+				padding-left: 28px;
+			}
+			small{
+				display: block;
+				font-size: 12px;
+				font-weight: 500;
+				opacity: .6;
+			}
+        }
+        &:hover{
+            background: #DEE7FC;
+           ion-col{
+            font-weight: 500;
+           }
+        }
+    }
+    .view{
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        background: #51AC43;
+        padding: 6px 6px;
+        border-radius: 2px;
+        border: 1px solid #51AC43;
+        transition: all 300ms linear;
+        svg{
+            display: block;
+            width: 18px;
+            margin-right: 5px;
+            fill: #fff;
+        }
+        &:hover, &:focus{
+            outline: 0;
+            color: #51AC43;
+            background: transparent;
+            svg{
+                fill: #51AC43;
+            }
+        }
+    }
+    .remove{
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        color: #000;
+        background: transparent;
+        padding: 6px 6px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        transition: all 300ms linear;
+        background: transparent;
+        margin-left: 5px;
+        opacity: .5;
+        svg{
+            display: block;
+            width: 14px;
+            margin-right: 5px;
+        }
+        &:hover, &:focus{
+            color: red;
+            background: transparent;
+            opacity: 1;
+            svg{
+                fill: red;
+            }
+        }
+    }
+}
+
+.test-prediction{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	svg{
+		width: 22px;
+	}
+}
+
+ion-row{
+	width: 100%;
+}
+
+ol {
+	list-style: none;
+	counter-reset: my-awesome-counter;
+	width: 100%;
+	margin-left: 0;
+    margin-right: 10px;
+    padding-left: 30px;
+}
+ol li {
+	counter-increment: my-awesome-counter;
+	position: relative;
+    cursor: pointer;
+    padding:6px 6px 6px 24px;
+    &:hover{
+        background: #DEE7FC;
+    }
+}
+  ol li::before {
+	content: counter(my-awesome-counter) ". ";
+	font-weight: bold;
+	position: absolute;
+    left: 4px;
+}
+
+
+
+.new{
+	button{
+		background: #114978;
+		border-color: #114978;
+	}
+}
+ .saved{
+	button{
+		background: #51ac43;
+		border-color: #51ac43;
+	}
+}

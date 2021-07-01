@@ -1,0 +1,55 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1180px;
+    margin: auto;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    .logo{
+        max-width: 150px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    form{
+        width: 100%;
+        max-width: 400px;
+        ion-item{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        h4{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        button {
+            background: #51AC43;
+            border: 1px solid #51AC43;
+            color: #fff;
+            padding: 14px 50px;
+            text-transform: uppercase;
+            font-size: 14px;
+            border-radius: 50px;
+            text-align: center;
+            transition: all 200ms linear;
+            &:hover, &:focus{
+                outline: none;
+                color: #51AC43;
+                background: #fff;
+            }
+        }
+        
+    }
+}
+.green{
+    color: #51AC43;
+}
+.blue{
+    color: #046696;
+}
+ion-footer {
+    position: absolute;
+    bottom: 0;
+}

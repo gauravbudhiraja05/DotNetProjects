@@ -1,0 +1,54 @@
+<table>
+  <thead>
+    <tr>
+      <td>
+        <strong>Patient: </strong>
+      </td>
+      <td>
+        <div class="header-space">
+          <!-- <p>Name : {{ prx?.patient.name }}, {{ prx?.patient.dob | age }}</p> -->
+        </div>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><h1>Medicines</h1></td>
+    </tr>
+    <tr *ngFor="let medicine of prx?.medicines">
+      <td>
+        {{ medicine.medicineName }}, {{ medicine.dose }} {{ medicine.doseUnit }}, {{ medicine.directions }}, {{ medicine.frequency }},
+        {{ medicine.duration }}
+      </td>
+    </tr>
+
+    <tr>
+      <td><h1>Test</h1></td>
+    </tr>
+    <tr *ngFor="let test of prx?.tests">
+      <td>
+        {{ test.testName }}
+      </td>
+    </tr>
+
+    <tr>
+      <td><h1>Suggestions</h1></td>
+    </tr>
+    <tr *ngFor="let suggestion of prx?.suggestsions">
+      <td>
+        {{ suggestion.description }}
+      </td>
+    </tr>
+
+    <tr>
+      <!-- <td>Next Visit Due: {{ prx?.nextVisitDue | date }}</td> -->
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>
+        <div class="footer-space">&nbsp;</div>
+      </td>
+    </tr>
+  </tfoot>
+</table>

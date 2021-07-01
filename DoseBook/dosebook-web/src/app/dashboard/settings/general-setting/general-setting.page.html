@@ -1,0 +1,38 @@
+<ion-card >
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>General Setting</ion-label>
+  </ion-item>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Clinic Name</ion-label>
+      <ion-input>HealthCare Point</ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Allow Uploads by Users</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Notify for every purchase</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Notify for every uploads</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-card>
+
+<ion-card >
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>Pin Setting</ion-label>
+    <ion-button slot="end" (click)="resetPinModal()">Reset Pin</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ask for pin after lock</ion-label>
+    <ion-toggle slot="end"></ion-toggle>
+  </ion-item>
+</ion-card>

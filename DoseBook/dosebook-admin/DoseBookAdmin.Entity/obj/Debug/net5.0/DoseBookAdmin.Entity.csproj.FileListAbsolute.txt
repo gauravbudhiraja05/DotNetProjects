@@ -1,0 +1,15 @@
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\bin\Debug\net5.0\DoseBookAdmin.Entity.deps.json
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\bin\Debug\net5.0\DoseBookAdmin.Entity.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\bin\Debug\net5.0\ref\DoseBookAdmin.Entity.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\bin\Debug\net5.0\DoseBookAdmin.Entity.pdb
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\bin\Debug\net5.0\DoseBookAdmin.Common.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\bin\Debug\net5.0\DoseBookAdmin.Common.pdb
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.csprojAssemblyReference.cache
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.AssemblyInfoInputs.cache
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.AssemblyInfo.cs
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.csproj.CoreCompileInputs.cache
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.csproj.CopyComplete
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\ref\DoseBookAdmin.Entity.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Entity\obj\Debug\net5.0\DoseBookAdmin.Entity.pdb

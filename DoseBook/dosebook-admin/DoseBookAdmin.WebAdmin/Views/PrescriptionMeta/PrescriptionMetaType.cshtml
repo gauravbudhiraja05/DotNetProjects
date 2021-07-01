@@ -1,0 +1,91 @@
+﻿@model DoseBookAdmin.Dto.PrescriptionMeta.PrescriptionMetaTypeDtoList
+@{
+    ViewData["Title"] = "Prescription Meta Type List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            <button type="button" id="AddRow" class="add_new_list_item">Add new</button>
+            <button id="btnDeleteAllCheckedPrescriptionMetaType" type="button" class="delete_list_item">Delete</button>
+        </div>
+        <button type="button" id="Save_PrescriptionMetaType_Btn" class="btn_field_new" style="">Save</button>
+        <div class="top_filter_right">
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearchPrescriptionMetaTypeList" class="form-control" placeholder="Search">
+                    <input type="button" class="search_btn" value="go" />
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+
+        <div class="content_wrap">
+
+            <div class="page_heading">
+                <h1>Prescription Meta Type List</h1>
+            </div>
+            <div class="table_wrap">
+                <table id="tblPrescriptionMetaTypes" class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">
+                                <div class="table_checkbox">
+                                    <input type="checkbox" id="checkall" class="check_all">
+                                    <label for="checkall">Accept</label>
+                                </div>
+                            </th>
+                            <th style="width: 500px;">
+                                <button type="button" class="table_title active"><i class="icon asc"></i>Test Name</button>
+                            </th>
+                            <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                            <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int index = 0;
+                            foreach (var prescriptionMetaTypeDto in Model)
+                            {
+                                if (prescriptionMetaTypeDto.Type != "All")
+                                {
+                                    index = index + 1;
+                                    <tr>
+                                        <td style="width: 70px;">
+                                            <div class="table_checkbox">
+                                                <input type="checkbox" id="checkitem1" class="check_item">
+                                                <label for="checkitem1"></label>
+                                            </div>
+                                        </td>
+                                        <td style="width: 500px;">@prescriptionMetaTypeDto.Type</td>
+                                        <td style="width:75px;text-align: center;">
+                                            <button type="button" class="edit_item" onClick="EditRedirect(@prescriptionMetaTypeDto.Id, @index)">Edit</button>
+                                        </td>
+                                        <td style="width:75px;text-align: center;">
+                                            <span style="display:none">@prescriptionMetaTypeDto.Id</span>
+                                            <button type="button" class="delete_item prescriptionMetaTypeItem">delete</button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End full_width-->
+<!--Modal Popup-->
+<script src="~/js/PrescriptionMeta/prescriptionMeta.prescriptionMetaType.js" asp-append-version="true"></script>
+@* For AutoComplete *@
+<link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />

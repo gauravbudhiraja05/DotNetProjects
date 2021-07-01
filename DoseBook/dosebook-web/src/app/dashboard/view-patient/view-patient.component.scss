@@ -1,0 +1,208 @@
+ion-col{
+    font-family: "Poppins", sans-serif !important;
+}
+
+.content-center {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.patient-detail{
+    ion-col{
+        small{
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            opacity: .6;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+.button {
+    background: #51AC43;
+    color: #Fff;
+    padding: 10px 16px;
+    border-radius: 50px;
+    transition: all 200ms linear;
+    border: 1px solid #51AC43;
+    white-space: nowrap;
+    margin-left: 6px;
+    &:hover, &:focus{
+        background: transparent;
+        color: #51AC43;
+        outline: none;
+    }
+}
+.button2 {
+    background: #DEE7FC;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: all 200ms linear;
+    border: 1px solid #dadada;
+    &:hover, &:focus{
+        background: transparent;
+        color: #000;
+        outline: none;
+    }
+}
+
+
+hr {
+    height: 1px;
+    border-width: 0;
+    box-sizing: content-box;
+    margin: 10px 0 0 0;
+    opacity: .7;
+    background: #dadada;
+}
+
+.healthissue{
+    font-size: 14px;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        display: flex;
+        align-items: center;
+    }
+    svg{
+        display: inline-block;
+        margin-right: 6px;
+    }
+    span{
+        opacity: .6;
+        display: inline-block;
+        margin-right: 6px;
+        font-weight: 500;
+    }
+}
+
+
+.prx{
+    .patient-list-header{
+        background: #DEE7FC;
+        ion-col {
+            padding: 10px 12px;
+            font-weight: 500;
+            text-align: left;
+        }
+    }
+    .patient-list{
+        background: #fff;
+        ion-col {
+            padding: 10px 12px;
+            font-weight: 400;
+            text-align: left;
+            border-bottom: 1px solid #DEE7FC;
+            small{
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                opacity: .6;
+            }
+        }
+    }
+}
+
+
+.sectionright{
+    height: 100vh;
+    overflow-y: auto;
+    border-left: 1px solid #dadada;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif !important;
+    h5{
+        border-bottom: 1px solid #dadada;
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        font-size: 15px;
+        margin-bottom: 16px;
+        svg{
+            display: block;
+            margin-right: 6px;
+        }
+    }
+}
+
+
+
+
+.col{
+    min-height: 40vh;
+}
+
+
+
+.noprx{
+    display: flex;
+    justify-content: center;
+    span{
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        svg{
+            opacity: .5;
+        }
+    }
+}
+.prx {
+    position: relative;
+    overflow-y: auto;
+    height: 60vh;
+    @media(min-width: 1920px){
+        height: 70vh;
+    }
+}
+
+.btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 32px;
+    button {
+        background: #51AC43;
+        color: #Fff;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: all 200ms linear;
+        border: 1px solid #51AC43;
+        &:hover, &:focus{
+            background: transparent;
+            color: #51AC43;
+            outline: none;
+        }
+        &:first-child{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:last-child{
+            margin-left: 10px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+
+p, li{
+    font-size: 14px;
+}
+
+ol{
+    font-family: "Poppins", sans-serif !important;
+    li{
+        margin-bottom: 6px;
+        font-weight: 400;
+    }
+}
+

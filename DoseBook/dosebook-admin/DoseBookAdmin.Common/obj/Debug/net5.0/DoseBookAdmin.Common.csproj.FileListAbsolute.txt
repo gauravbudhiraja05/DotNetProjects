@@ -1,0 +1,12 @@
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\bin\Debug\net5.0\DoseBookAdmin.Common.deps.json
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\bin\Debug\net5.0\DoseBookAdmin.Common.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\bin\Debug\net5.0\ref\DoseBookAdmin.Common.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\bin\Debug\net5.0\DoseBookAdmin.Common.pdb
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.AssemblyInfoInputs.cache
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.AssemblyInfo.cs
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.csproj.CoreCompileInputs.cache
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\ref\DoseBookAdmin.Common.dll
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.pdb
+D:\Projects\Git Projects\dosebook-admin\DoseBookAdmin.Common\obj\Debug\net5.0\DoseBookAdmin.Common.csprojAssemblyReference.cache

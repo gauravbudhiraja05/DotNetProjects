@@ -1,0 +1,18 @@
+.prediction-word {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    border:1px solid #1f1f1f;
+    margin-right: 6px;
+    margin-top: 6px;
+    color: #1f1f1f;
+    padding: 4px 12px 4px 12px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 200ms linear;
+    &:hover{
+        color: #1f1f1f;
+        background: transparent;
+    }
+}

@@ -1,0 +1,66 @@
+﻿@model DoseBookAdmin.Dto.Test.TestListGridItemDto
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Doctor Test List</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblDoctorTestList" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Test Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Problem Tags</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = 0;
+                foreach (var testDto in Model.TestDtoList)
+                {
+                    index = index + 1;
+                    <tr>
+                        <td style="width: 70px;">
+                            <div class="table_checkbox">
+                                <input type="checkbox" id="checkitem1" class="diagnosticTestItem check_item">
+                                <label for="checkitem1"></label>
+                            </div>
+                        </td>
+                        <td>@testDto.DoctorName</td>
+                        <td>@testDto.TestName</td>
+                        <td>@testDto.ProblemTags</td>
+                        <td style="width:125px;text-align: center;">
+                            <button type="button" class="edit_item" onClick="EditRedirect(@testDto.Id, @index)">Edit</button>
+                        </td>
+                        <td style="width:125px;text-align: center;">
+                            <span style="display:none">@testDto.Id</span>
+                            <button type="button" class="delete_item testItem">delete</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/Test/test._doctorTestList.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

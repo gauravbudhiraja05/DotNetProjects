@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-row>
+    <ion-col>Prx No.</ion-col>
+    <ion-col>Patient Name</ion-col>
+    <ion-col>Prx Date</ion-col>
+    <ion-col>Purchase Value</ion-col>
+    <ion-col>Commission</ion-col>
+    <ion-col>Actions</ion-col>
+
+  </ion-row>
+
+  <div *ngIf="transactions.length > 0; else noRecords">
+    <ion-row *ngFor="let transaction of transactions">
+      <ion-col>{{transaction.id}}</ion-col>
+      <ion-col>{{transaction.patientName}}</ion-col>
+      <ion-col>{{transaction.prescriptionDate}}</ion-col>
+      <ion-col>{{transaction.billAmount}}</ion-col>
+      <ion-col>{{transaction.commission}}</ion-col>
+      <ion-col>
+        <ion-button>View Prescription</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ng-template #noRecords> 
+    <ion-row class="ion-justify-content-center ion-margin">
+      No Records 
+    </ion-row>
+  </ng-template>
+</ion-content>
+
+

@@ -1,0 +1,30 @@
+<ion-row>
+  <ion-col size="3">
+    <ion-row (click)="changeStep(1)">
+      <ion-item>General Setting</ion-item>
+    </ion-row>
+
+    <ion-row  (click)="changeStep(2)">
+      <ion-item>Medicine Setting</ion-item>
+    </ion-row>
+
+    <ion-row (click)="changeStep(3)">
+      <ion-item>Prescription Setting</ion-item>
+    </ion-row>
+
+    <ion-row (click)="changeStep(4)">
+      <ion-item>Payment Setting</ion-item>
+    </ion-row>
+  </ion-col>
+  <ion-col size="9">
+    <!-- Step 1 -->
+    <app-general-setting *ngIf="step === 1"></app-general-setting>
+
+    <app-medicine-setting *ngIf="step === 2"></app-medicine-setting>
+    
+    <app-prescription-setting *ngIf="step === 3"></app-prescription-setting>
+
+    <app-payment-setting *ngIf="step === 4"></app-payment-setting>
+    
+  </ion-col>
+</ion-row>

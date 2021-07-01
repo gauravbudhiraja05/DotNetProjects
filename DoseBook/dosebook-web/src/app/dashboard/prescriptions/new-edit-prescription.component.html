@@ -1,0 +1,203 @@
+
+<div class="prx-wrapper ">
+	<ion-row>
+		<ion-col size="5" class="suggestion">
+			<p class="{{prx?.id ? 'saved' : 'new'}}">Diagnosis:</p>		
+			<div  class="healthissue" >
+					<div>
+						<svg class="{{prx?.id ? 'saved' : 'new'}}" viewBox="0 0 31.337 23.87"><g transform="translate(-3838.13 -6147.114)"><path d="M31.337,17.7H0L3.541,0H26.734l4.6,17.7ZM9.87,6.719v4h4v4h4v-4h4v-4h-4v-4h-4v4Z" transform="translate(3838.13 6153.28)" /><path d="M3840.284,6269.165v-6.551h9.738v6.551" transform="translate(9 -115)" fill="none" stroke-width="1"/></g></svg>
+						<!-- <svg viewBox="0 0 59.776 60"><g transform="translate(-2 -2)"><path d="M23,41a7,7,0,0,1,0-14,1,1,0,0,0,0-2,9,9,0,0,0,0,18,1,1,0,0,0,0-2Z"/><path d="M61.01,5a3,3,0,0,0-2.24-1H56V3a1,1,0,0,0-2,0V7a1,1,0,0,0,2,0V6h2.77a1,1,0,0,1,1,1.11l-2.57,24a1.006,1.006,0,0,1-1,.89H45.8a1.006,1.006,0,0,1-1-.89l-2.57-24a1,1,0,0,1,1-1.11H46V7a1,1,0,0,0,2,0V3a1,1,0,0,0-2,0V4H43.23a3,3,0,0,0-2.99,3.32l2.57,24A3,3,0,0,0,45.8,34H50V53a7,7,0,1,1-14,0V38a5,5,0,0,0-5-5H27.9a5,5,0,1,0,0,2H31a3.009,3.009,0,0,1,3,3V53a9,9,0,0,0,18,0V34h4.2a3,3,0,0,0,2.99-2.68l2.57-24A3.017,3.017,0,0,0,61.01,5ZM23,37a3,3,0,1,1,3-3,3,3,0,0,1-3,3Z"/><path d="M19.473,46.279c-.6.575-1.1,1.044-1.472,1.378C15.154,45.058,4,34.4,4,27a7.008,7.008,0,0,1,7-7,6.859,6.859,0,0,1,6.125,3.485,1.041,1.041,0,0,0,1.75,0A6.859,6.859,0,0,1,25,20a7.008,7.008,0,0,1,7,7,1,1,0,0,0,2,0,9.011,9.011,0,0,0-9-9,8.916,8.916,0,0,0-7,3.222A8.916,8.916,0,0,0,11,18a9.011,9.011,0,0,0-9,9c0,9.349,14.719,22.213,15.345,22.756a1,1,0,0,0,1.31,0c.036-.031.893-.776,2.2-2.035a1,1,0,1,0-1.385-1.442Z"/></g></svg> -->
+					</div>
+					<!-- <span>Health Conditions</span> -->
+					<input [(ngModel)]="problemText" name="problem" autocomplete="off" #problemInput minlength="4" (ngModelChange)="inputChanged()"/>
+				<ion-row class="results">
+					<div class="result-item" *ngFor="let item of searchResults" (click)="applyPrediction(item)">
+						{{item}}
+					</div>
+				</ion-row>
+			</div>
+			
+
+			<app-suggestion-panel (selected)="addToPrescription($event)"></app-suggestion-panel>
+		</ion-col>
+
+
+		<ion-col size="7" class="prx">
+			<!-- PRESCRIPTION HEADER -->
+			<ion-row class="prx-header ion-align-items-top">
+				<ion-col size="2" >
+					<svg viewBox="0 0 80.989 84.547"><path  class="  {{prx?.id ? 'saved' : 'new'}}" d="M45.42,84.547H27.088L42.411,62.658,25.172,35.57H19.153V59.922H0V0H42.411a15.863,15.863,0,0,1,5.643,3.249,16.4,16.4,0,0,1,3.937,5.177A20.322,20.322,0,0,1,53.9,16.964a15.536,15.536,0,0,1-2.065,8.409,15.1,15.1,0,0,1-4.81,4.9,20.248,20.248,0,0,1-7.08,2.839L53.9,53.081l7.115-11.218H79.622L65.394,62.658,80.989,84.545l-19.973,0L53.9,71.96,45.42,84.547ZM18.92,12.255V24.33H32.241c.035-.012,3.517-1.223,3.8-4.422.3-3.366-.24-4.791-1.134-5.9a4.387,4.387,0,0,0-2.664-1.361Z"/></svg>
+					<span class="copied {{prx?.id ? 'saved' : 'new'}}">{{prx?.id ? 'SAVED' : 'NEW'}}</span>
+					<br>
+				</ion-col>
+				<ion-col size="10">
+					<ion-row>
+						<ion-col size="9" class="ion-no-padding">
+							<ion-row  class="no-padding">
+								<ion-col><small class="{{prx?.id ? 'saved' : 'new'}}">Name:</small> <br><b> {{prx?.patient?.name}}</b></ion-col>
+								<ion-col><small class="{{prx?.id ? 'saved' : 'new'}}">Age & Gender</small> <br><b> {{prx?.patient?.dob | age}} Yrs, {{prx?.patient?.gender}}</b></ion-col>
+							</ion-row>
+						</ion-col>
+						<!-- <ion-col size="3">
+							<button (click)="showMedicalHistory()">
+								<svg  viewBox="0 0 551.13 482.239"><g transform="translate(0 -34.445)"><path d="M275.531,172.228l-.05,120.493a17.207,17.207,0,0,0,5.046,12.177l86.2,86.181,24.354-24.354-81.153-81.136.05-113.361Z"/><path d="M310.011,34.445c-121.23,0-221.563,90.033-238.367,206.674H0l86.114,86.114,86.114-86.114h-65.78C122.925,143.53,207.8,68.891,310.011,68.891c113.966,0,206.674,92.707,206.674,206.674S423.978,482.239,310.011,482.239a205.6,205.6,0,0,1-162.978-79.555l-27.146,21.192a239.859,239.859,0,0,0,190.124,92.808c132.955,0,241.119-108.181,241.119-241.119S442.966,34.446,310.011,34.445Z"/></g></svg>
+								View History
+							</button>
+						</ion-col> -->
+					</ion-row>
+
+
+					
+
+					
+				</ion-col>
+				
+				
+			</ion-row>
+			
+			<!-- PRESCRIPTION HEADER  ENDS HERE-->
+			
+			<ion-row>
+				<ion-col size="8">
+					<h6>Medicines</h6>
+				</ion-col>
+				<ion-col size="4" class="ion-text-right {{prx?.id ? 'saved-btn' : 'new-btn'}}">
+					<button class="button" (click)="addMedicine()">+ Add Medicine</button>
+				</ion-col>
+			</ion-row>
+			
+			<div *ngIf="prx.medicines.length > 0; else noMedicines">
+				<ion-row class="madicine-table-header">
+					<ion-col size="11" style="padding: 0;">
+						<ion-row style="padding: 0;">
+							<ion-col size="3">Medicine Name</ion-col>
+							<ion-col size="2">Dose</ion-col>
+							<ion-col size="2" style="padding: 0;">Frequency</ion-col>
+							<ion-col size="3">Directions</ion-col>
+							<ion-col size="2">Duration</ion-col>
+						</ion-row>
+					</ion-col>
+					<ion-col size="1"></ion-col>
+				</ion-row>
+				
+				<div class="madicine-table" *ngFor="let medicine of prx.medicines; let i = index;">
+					<ion-row class="ion-align-items-center">
+						<ion-col size="11" style="padding: 0;">
+							<app-edit-dose [medicineDose]="medicine"></app-edit-dose>
+						</ion-col>
+
+						<ion-col size="1" class="action">
+							<button class="remove" (click)="removeFromPrescription(medicine)">
+								<svg viewBox="0 0 11.5 11.37"><g transform="translate(-395 -140)" opacity="0.4"><path d="M13.21,11.877l4.3-4.3a.813.813,0,0,0-1.151-1.147L11.487,11.3a.811.811,0,0,0-.024,1.12l4.894,4.9a.813.813,0,0,0,1.151-1.147Z" transform="translate(388.749 133.806)"/><path d="M15.791,11.877l-4.3-4.3A.813.813,0,0,1,12.64,6.431L17.514,11.3a.811.811,0,0,1,.024,1.12l-4.894,4.9a.813.813,0,1,1-1.151-1.147Z" transform="translate(383.749 133.806)"/></g></svg>
+							</button>
+						</ion-col>
+					</ion-row>
+					<!-- <div *ngIf="editIndex === i">
+						<app-edit-dose [medicineDose]="medicine"></app-edit-dose>
+					</div> -->
+				</div>
+			</div>
+			<ng-template #noMedicines>
+				<ion-row class="ion-justify-content-center ion-margin">
+					<ion-col class="ion-text-center">
+						<svg style="width:32px;opacity:.6" viewBox="0 0 24 24"><path d="M12,24A12,12,0,1,1,24,12,12.013,12.013,0,0,1,12,24ZM12,1A11,11,0,1,0,23,12,11.013,11.013,0,0,0,12,1Z"/><path d="M11.5.333h1V23.668h-1Z" transform="translate(-4.971 12) rotate(-45)"/><path d="M16.98,13.24a.5.5,0,0,1-.167-.972C18.183,11.783,19,11.122,19,10.5,19,9.317,16.125,8,12,8c-.06,0-.129,0-.189.006a.5.5,0,0,1-.121-.993A2.669,2.669,0,0,1,12,7c4.561,0,8,1.5,8,3.5,0,1.1-1.013,2.058-2.853,2.711a.481.481,0,0,1-.167.029Z"/><path d="M12,14c-4.561,0-8-1.505-8-3.5C4,9.2,5.4,8.1,7.847,7.485a.5.5,0,0,1,.246.97C6.243,8.924,5,9.746,5,10.5,5,11.683,7.875,13,12,13c.476,0,.941-.02,1.4-.058a.512.512,0,0,1,.54.456.5.5,0,0,1-.456.541C13,13.979,12.5,14,12,14Z"/><path d="M18.91,15.17a.5.5,0,0,1-.343-.863A1.143,1.143,0,0,0,19,13.5v-3a.5.5,0,0,1,1,0v3a2.1,2.1,0,0,1-.746,1.533A.5.5,0,0,1,18.91,15.17Z"/><path d="M12,17c-4.561,0-8-1.505-8-3.5v-3a.5.5,0,0,1,1,0v3C5,14.683,7.875,16,12,16a16.373,16.373,0,0,0,3.909-.455.5.5,0,0,1,.242.97A17.411,17.411,0,0,1,12,17Z"/></svg>
+					<br>
+					No Medicines
+					</ion-col>
+				</ion-row>
+			</ng-template>
+	
+			<hr>
+
+			<ion-row>
+				<ion-col size="8">
+					<h6><h6>Test/Vaccine</h6></h6>
+				</ion-col>
+				<ion-col size="4" class="ion-text-right {{prx?.id ? 'saved-btn' : 'new-btn'}}">
+					<button class="button"  (click)="addTest()">+ Add Test/Vaccine</button>
+				</ion-col>
+			</ion-row>
+			
+
+			<div *ngIf="prx.tests.length > 0; else noTests">
+
+				<ion-row class="test-prediction ion-align-items-center" *ngFor="let test of prx.tests ; let i = index">
+					<ion-col size="1"><span>{{i + 1}}</span></ion-col>
+					<ion-col size="10">
+						<div *ngIf="test.testId">
+							{{test.testName}}
+						</div>
+						<div *ngIf="!test.testId">
+							<app-generic-search [searchType]="'TEST'" (selected)="testSelected($event, test)"></app-generic-search>
+						</div>
+					</ion-col>
+					<ion-col size="1">
+						<div class="remove" (click)="removeTestFromPrescription(test)">
+							<svg width="11.5" height="11.37" style="margin-top: 10px;" viewBox="0 0 11.5 11.37"><g transform="translate(-395 -140)" opacity="0.4"><path d="M13.21,11.877l4.3-4.3a.813.813,0,0,0-1.151-1.147L11.487,11.3a.811.811,0,0,0-.024,1.12l4.894,4.9a.813.813,0,0,0,1.151-1.147Z" transform="translate(388.749 133.806)"/><path d="M15.791,11.877l-4.3-4.3A.813.813,0,0,1,12.64,6.431L17.514,11.3a.811.811,0,0,1,.024,1.12l-4.894,4.9a.813.813,0,1,1-1.151-1.147Z" transform="translate(383.749 133.806)"/></g></svg>
+						</div>
+					</ion-col>
+				</ion-row>
+			</div>
+			<ng-template #noTests>
+				<ion-row class="ion-justify-content-center ion-margin">
+					<ion-col class="ion-text-center ">
+						<svg  style="width:32px;opacity:.6" viewBox="0 0 512 512"><path d="M437.02,74.98A256,256,0,0,0,74.98,437.02,256,256,0,0,0,437.02,74.98ZM96.194,415.806A225.994,225.994,0,0,1,85.942,107.155L196.96,218.173l-50.1,50.047,3.849,72.005L110.129,379.68l20.912,21.51,42.137-40.967,70.015,3.793,49.974-49.636L404.845,426.058A225.994,225.994,0,0,1,96.194,415.806ZM347.336,218.292l-54.1,53.733L239.4,218.184,293.339,164.3Zm-75.383,74.874-40.446,40.173-51.271-2.778-2.685-50.235,21.908,21.908,21.213-21.213-22.078-22.078,19.578-19.558Zm154.1,111.679L314.451,293.238l75.383-74.874-38.469-38.469L375.82,155.44l30.355,30.355,21.213-21.213L348.067,85.261l-21.213,21.213,27.753,27.753-24.455,24.455-36.8-36.8-75.167,75.091L107.155,85.942a226,226,0,0,1,318.9,318.9Z"/></svg> 
+						<br>	
+						No Tests
+					</ion-col>
+				</ion-row>
+			</ng-template>
+
+			<hr>
+	
+			<ion-row>
+				<ion-col size="8">
+					<h6>Advice (If any)</h6>
+				</ion-col>
+				<ion-col size="4" class="ion-text-right {{prx?.id ? 'saved-btn' : 'new-btn'}}">
+					<button class="button"  (click)="addAdvice()">+ Add Advice</button>
+				</ion-col>
+			</ion-row>
+
+			<div *ngIf="prx.suggestsions.length > 0; else noAdvice">
+				<ion-row class="box ion-align-items-center" *ngFor="let advice of prx.suggestsions; let i =index">
+					<ion-col size="1"><span>{{i + 1}}</span></ion-col>
+					<ion-col size="10">
+						<div *ngIf="advice.id">
+							{{advice.description}}
+						</div>
+						<div *ngIf="!advice.id">
+							<app-generic-search [searchType]="'ADVICE'" (selected)="adviceSelected($event, advice)"></app-generic-search>
+						</div>
+					</ion-col>
+					<ion-col size="1">
+						<div class="remove" (click)="removeAdviceFromPrescription(advice)">
+							<svg width="11.5" height="11.37"  style="margin-top: 10px;" viewBox="0 0 11.5 11.37"><g transform="translate(-395 -140)" opacity="0.4"><path d="M13.21,11.877l4.3-4.3a.813.813,0,0,0-1.151-1.147L11.487,11.3a.811.811,0,0,0-.024,1.12l4.894,4.9a.813.813,0,0,0,1.151-1.147Z" transform="translate(388.749 133.806)"/><path d="M15.791,11.877l-4.3-4.3A.813.813,0,0,1,12.64,6.431L17.514,11.3a.811.811,0,0,1,.024,1.12l-4.894,4.9a.813.813,0,1,1-1.151-1.147Z" transform="translate(383.749 133.806)"/></g></svg>
+						</div>
+					</ion-col>
+				</ion-row>
+			</div>
+
+			<ng-template #noAdvice>
+				<ion-row class="ion-justify-content-center ion-margin">
+					<ion-col class="ion-text-center">
+						<svg  style="width:32px;opacity:.6" viewBox="0 0 512.043 449.354"><g transform="translate(0 -31.345)"><path d="M37.847,101.831l197.63,332.775a23.891,23.891,0,0,0,41.091,0L474.2,101.832a23.883,23.883,0,0,0-20.545-36.1H58.392A23.882,23.882,0,0,0,37.847,101.831ZM461.3,94.172,263.671,426.947a8.891,8.891,0,0,1-15.3,0L50.743,94.172a8.886,8.886,0,0,1,7.648-13.438H453.654A8.886,8.886,0,0,1,461.3,94.172Z"/><path d="M255.9,342.071a30.833,30.833,0,1,0-30.833-30.833A30.869,30.869,0,0,0,255.9,342.071Zm0-46.666a15.833,15.833,0,1,1-15.833,15.833A15.852,15.852,0,0,1,255.9,295.405Z"/><path d="M453.654,31.345H273.522a7.5,7.5,0,0,0,0,15H453.655c33.588,0,54.379,36.486,37.216,65.386L293.239,444.506c-16.768,28.234-57.643,28.272-74.434,0L21.177,111.731C4.025,82.85,24.78,46.345,58.392,46.345h180.13a7.5,7.5,0,0,0,0-15H58.392c-45.216,0-73.222,49.138-50.111,88.046L205.91,452.165c22.574,38.016,77.617,38.073,100.227,0L503.767,119.39c23.089-38.877-4.859-88.045-50.113-88.045Z"/><path d="M255.9,262.4a30.869,30.869,0,0,0,30.834-30.833V208.9a7.5,7.5,0,0,0-15,0V231.57a15.833,15.833,0,0,1-31.667,0V151.228a15.834,15.834,0,0,1,31.667,0V173.9a7.5,7.5,0,0,0,15,0V151.228a30.833,30.833,0,0,0-61.667,0V231.57A30.868,30.868,0,0,0,255.9,262.4Z"/></g></svg>
+						<br>
+						No Advice
+					</ion-col>
+				</ion-row>
+			</ng-template>
+
+			<hr>
+			<h6 >Next Visit (Optional)</h6>
+			<ion-datetime displayFormat="DD-MM-YYYY" max="2020-12-09"></ion-datetime>
+			<br>
+			<div class="btn-flex  {{prx?.id ? 'saved' : 'new'}}"  *ngIf="prx.patient">
+				<button [disabled]="!isValidPrescrription() || loader.loading" (click)="prescribe()">PRINT AND SAVE</button>
+				<button [routerLink]="['/dashboard/view-patient', prx.patient.id]" routerDirection="back">DISCARD</button>
+			</div>
+			<app-edit-dose *ngIf="showEditDose" [medicineDose]="selectedMedicineDose" (closeModal)="closeEditDoseModal()">
+			</app-edit-dose>
+		</ion-col>
+	</ion-row>
+</div>

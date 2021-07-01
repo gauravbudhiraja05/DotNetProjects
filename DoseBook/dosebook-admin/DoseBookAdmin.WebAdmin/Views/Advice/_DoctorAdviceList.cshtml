@@ -1,0 +1,66 @@
+﻿@model DoseBookAdmin.Dto.Advice.AdviceListGridItemDto
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Doctor Advice List</h1>
+</div>
+
+<div class="table_wrap">
+    <table id="tblDoctorAdviceList" class="table">
+        <thead>
+            <tr>
+                <th style="width: 70px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Doctor Name</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Description</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Problem Tags</button>
+                </th>
+                <th class="editEndUser" style="width:75px;text-align: center;">Edit</th>
+                <th class="deleteEndUser" style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = 0;
+                foreach (var doctorAdvice in Model.AdviceDtoList)
+                {
+                    index = index + 1;
+                    <tr>
+                        <td style="width: 70px;">
+                            <div class="table_checkbox">
+                                <input type="checkbox" id="checkitem1" class="doctorAdviceItem check_item">
+                                <label for="checkitem1"></label>
+                            </div>
+                        </td>
+                        <td>@doctorAdvice.DoctorName</td>
+                        <td>@doctorAdvice.Description</td>
+                        <td>@doctorAdvice.ProblemTags</td>
+                        <td style="width:75px;text-align: center;">
+                            <button type="button" class="edit_item" onClick="EditRedirect(@doctorAdvice.Id, @index)">Edit</button>
+                        </td>
+                        <td style="width:75px;text-align: center;">
+                            <span style="display:none">@doctorAdvice.Id</span>
+                            <button type="button" class="delete_item adviceItem">delete</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/Advice/advice._doctorAdviceList.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

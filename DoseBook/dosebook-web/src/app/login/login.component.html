@@ -1,0 +1,41 @@
+<div class="container">
+    
+</div>
+
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <img src="assets/logo.png" alt="Dosebook" class="logo">
+    <h4>Login to Your <span class="blue">Dose</span><span class="green">book</span> Account</h4>
+    <ion-row class="ion-justify-content-center ion-align-items-center"> 
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+    </ion-row>
+  
+    <ion-row class="ion-justify-content-center ion-align-items-center"> 
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-row>
+
+      <ion-row class="ion-justify-content-center ">
+        <button type="submit" [disabled]="!loginForm.valid || loader.loading">Login</button>
+    </ion-row>
+
+  </form>
+
+</div>
+<!-- 
+<ion-footer>
+  <ion-row class="ion-justify-content-around">
+    <ion-col class="ion-text-left">
+      Request Demo
+    </ion-col>
+    <ion-col class="ion-text-right">
+      Forgot Password
+    </ion-col>
+  </ion-row>
+</ion-footer> -->
+

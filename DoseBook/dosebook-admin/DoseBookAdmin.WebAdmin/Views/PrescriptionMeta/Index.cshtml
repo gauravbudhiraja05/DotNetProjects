@@ -1,0 +1,50 @@
+﻿@model DoseBookAdmin.Dto.PrescriptionMeta.PrescriptionMetaTypeDtoList
+@{
+    ViewData["Title"] = "Dose Meta";
+}
+
+<div class="top_filter_bar">
+    <div class="center_wrap">
+
+        <div class="top_filter_left">
+            <button type="button" id="AddRow" class="add_new_list_item">Add new</button>
+            <button type="button" id="btnDeleteSelected" disabled="disabled" class="delete_list_item">delete</button>
+
+        </div>
+        <button type="button" id="Save_PrescriptionMetaData_Btn" class="btn_field_new" style="">Save</button>
+        <div class="top_filter_right">
+
+            <div class="drop_menu">
+                <ul>
+                    <li>
+                        <a href="#">Filter by PrescriptionMetaType...</a>
+                        <ul class="drop_menu_sub">
+                            @foreach (var prescriptionMetaTypeDto in Model)
+                            {
+                                <li><a class="prescriptionMetaTypeClick" href="#" id="@prescriptionMetaTypeDto.Type">@prescriptionMetaTypeDto.Type</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="form_group">
+                <fieldset>
+                    <input type="text" id="txtSearcPrescriptionMetaDataUp" disabled="disabled" class="form-control" placeholder="Search">
+                    <input type="submit" disabled id="btnSearchPrescriptionMetaDataUp" class="search_btn" value="go" />
+                    <input type="hidden" id="hdnPrescriptionMetaTypeId" />
+                    <input type="hidden" id="hdnPrescriptionMetaTypeName" />
+                    <input type="hidden" id="hdnPrescriptionMetaType_Back" />
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End top_filter_bar-->
+
+
+<div class="full_width">
+    <div class="center_wrap">
+        <div id="partialPrescriptionMetaData" style="display:none;" class="content_wrap"></div>
+    </div>
+</div>
+<script src="~/js/PrescriptionMeta/prescriptionMeta.index.js" asp-append-version="true"></script>

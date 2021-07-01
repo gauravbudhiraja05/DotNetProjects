@@ -1,0 +1,22 @@
+ion-select{
+    --padding-start: 0;
+    display: inline-flex;
+}
+
+.select-icon{
+    left: -6px;
+}
+
+select {
+    border: 1px solid #dadada;
+    padding: 4px 4px;
+    width: 99%;
+    &:focus, &:hover{
+        border: 1px solid #dadada;
+        outline: 0;
+    }
+}
+
+
+// ===========================
+

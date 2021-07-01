@@ -1,0 +1,130 @@
+
+.iosearch{
+    display: flex;
+    input{
+        width: 100%;
+        border: 0px;
+        padding: 10px;
+        &:focus{
+            border: 0;
+            outline: 0;
+        }
+    }
+    span{
+        display: flex;
+        width: 40px;
+        flex: 0 0 40px;
+        align-items: center;
+        justify-content: center;
+        background: #DEE7FC;
+        cursor: pointer;
+        border-left: 1px solid #dadada;
+        svg{
+            width: 18px;
+        }
+    }
+}
+
+
+.table{
+    padding: 10px 6px;
+    .prx-list-header{
+        background: #EFEFEF;
+        ion-col {
+            padding: 10px 12px;
+            font-weight: 500;
+            text-align: left;
+        }
+    }
+    .prx-list{
+        background: #fff;
+        ion-col {
+            padding: 10px 12px;
+            font-weight: 400;
+            text-align: left;
+            border-bottom: 1px solid #DEE7FC;
+        }
+        &:hover{
+            background: #DEE7FC;
+           ion-col{
+            font-weight: 500;
+           }
+        }
+    }
+    .view{
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        background: #51AC43;
+        padding: 6px 6px;
+        border-radius: 2px;
+        border: 1px solid #51AC43;
+        transition: all 300ms linear;
+        width: 70px;
+        justify-content: center;
+        svg{
+            display: block;
+            width: 18px;
+            margin-right: 5px;
+            fill: #fff;
+        }
+        &:hover, &:focus{
+            outline: 0 !important;
+            color: #51AC43;
+            background: transparent;
+            svg{
+                fill: #51AC43;
+            }
+        }
+    }
+    .edit{
+        cursor: pointer;
+        display: inline-flex;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        background: transparent;
+        padding: 5px 6px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        transition: all 300ms linear;
+        background: transparent;
+        margin-left: 5px;
+        opacity: .5;
+        svg{
+            display: block;
+            width: 14px;
+            margin-right: 5px;
+        }
+        &:hover, &:focus{
+            color: #51AC43;
+            background: transparent;
+            opacity: 1;
+            border-color: #51AC43;
+            outline: 0!important;
+            svg{
+                fill: #51AC43;
+            }
+        }
+    }
+}
+
+.flex{
+    display: flex;
+}
+span.new {
+    position: relative;
+    left: -25px;
+    top: -10px;
+    background: #FAC630;
+    transform: rotate(-45deg);
+    padding: 0 18px;
+    display: inline-block;
+    font-size: 13px;
+    margin-right: -45px;
+    margin-left: -20px;
+}  
+
+// ========

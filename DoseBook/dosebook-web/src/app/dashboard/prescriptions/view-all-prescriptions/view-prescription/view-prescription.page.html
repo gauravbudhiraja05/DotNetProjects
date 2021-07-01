@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{prescription.patient.name}} <br>
+     <small> {{prescription.patient.dob | date:'dd MM yyyy a'}}</small>
+    </ion-title>
+    <ion-button slot="end" (click)="dismiss()">Cancel</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="madicine-table">
+  <ion-row class="madicine-table">
+    <ion-col size="4"><b>Medicine Name</b></ion-col>
+    <ion-col size="2"><b>Dose</b></ion-col>
+    <ion-col size="2"><b>Direaction</b></ion-col>
+    <ion-col size="2"><b>Count</b></ion-col>
+    <ion-col size="2"><b>Duration</b></ion-col>
+  </ion-row>
+  <ion-row *ngFor="let medicine of prescription.medicines">
+    <ion-col size="4">{{medicine.medicineName}} <br> <small>{{medicine.salt}}</small></ion-col>
+    <ion-col size="2">{{medicine.dose}} {{medicine.doseUnit}}</ion-col>
+    <ion-col size="2">{{medicine.directions}}</ion-col>
+    <ion-col  size="2">{{medicine.frequency}}</ion-col>
+    <ion-col size="2">{{medicine.duration}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <button (click)="copyPrx()">Use this</button>
+  </ion-row>
+</ion-content>

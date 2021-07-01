@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DoseBookAdmin.Entity/1.0.0": {
+        "dependencies": {
+          "DoseBookAdmin.Common": "1.0.0"
+        },
+        "runtime": {
+          "DoseBookAdmin.Entity.dll": {}
+        }
+      },
+      "DoseBookAdmin.Common/1.0.0": {
+        "runtime": {
+          "DoseBookAdmin.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DoseBookAdmin.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DoseBookAdmin.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

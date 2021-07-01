@@ -1,0 +1,55 @@
+<ion-row class="ion-align-items-center">
+	 <!-- {{prx?.id ? 'saved' : 'new'}} -->
+	<ion-col size="3" *ngIf="medicineDose.id">
+		<span>
+			{{medicineDose.medicineName}} <br><small>{{medicineDose.composition}}</small>
+		</span>
+	</ion-col>
+	<ion-col size="3" *ngIf="!medicineDose.id" class="ion-no-padding">
+			<app-generic-search [searchType]="'MEDICINE'" (selected)="medicineSelected($event)"></app-generic-search>
+	</ion-col>
+	<ion-col size="2">
+		<ion-row size="3" *ngIf="!medicineDose.id" class="ion-no-padding">
+			<ion-col class="ion-no-padding">
+				<select class="custom-options" interface="popover" [(ngModel)]="medicineDose.dose">
+					<option *ngFor="let item of allDoses" [value]="item">
+						{{item}}
+					</option>
+				</select>
+			</ion-col>
+			<ion-col class="ion-no-padding">
+				<select class="custom-options" interface="popover" [(ngModel)]="medicineDose.doseUnit">
+					<option *ngFor="let item of doseUnits" [value]="item">
+						{{item}}
+					</option>
+				</select>
+			</ion-col>
+		</ion-row>
+		<select class="custom-options" interface="popover" [(ngModel)]="medicineDose.dose" *ngIf="medicineDose.id">
+			<option *ngFor="let item of allDoses" [selected]="item === medicineDose.dose" [value]="item">
+				{{item}} {{medicineDose.doseUnit}}
+			</option>
+		</select>
+	</ion-col>
+	<ion-col size="2">
+		<select class="custom-options" interface="popover" [(ngModel)]="medicineDose.frequency">
+			<option *ngFor="let item of allFrequencies" [selected]="item === medicineDose.frequency" [value]="item">
+				{{item}}
+			</option>
+		</select>
+	</ion-col>
+	<ion-col size="3">
+		<select class="custom-options" interface="popover" [(ngModel)]="medicineDose.directions">
+			<option *ngFor="let item of allDirections" [selected]="item === medicineDose.directions" [value]="item">
+				{{item}}
+			</option>
+		</select>
+	</ion-col>
+	<ion-col size="2">
+		<select class="custom-options" interface="popover" [(ngModel)]="medicineDose.duration">
+			<option *ngFor="let item of allDurations" [selected]="item === medicineDose.duration" [value]="item">
+				{{item}}
+			</option>
+		</select>
+	</ion-col>
+</ion-row>

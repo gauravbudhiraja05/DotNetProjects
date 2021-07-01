@@ -1,0 +1,163 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 6px 0;
+    border-bottom: 1px solid #dadada;
+    font-size: 16px;
+    margin: 0 20px;
+    font-weight: 500;
+    color: #000;
+    span{
+        display: flex;
+        align-items: center;
+        svg{
+            display: block;
+            margin-right: 6px;
+        }
+    }
+    button{
+        background: transparent;
+        border: 0px;
+        outline: 0;
+    }
+}
+
+.inputwrap{
+    position: relative;
+    z-index: 1;
+    ion-input{
+        width: 100%;
+        padding: 0px 10px 2px 10px !important;
+        border: 1px solid #dadada;
+        border-radius: 40px;
+    }
+    ion-label{
+        position: absolute;
+        top: -10px;
+        background: #fff;
+        z-index: 4;
+        left: 18px;
+        color:rgba($color: #000000, $alpha: .6) ;
+    }
+}
+.inputwrap-date{
+    position: relative;
+    z-index: 1;
+    ion-datetime{
+        width: 100%;
+        padding:10px 16px 14px 16px !important;
+        border: 1px solid #dadada;
+        border-radius: 40px;
+    }
+    ion-label{
+        position: absolute;
+        top: -28px;
+        background: #fff;
+        z-index: 4;
+        left: 18px;
+        color:rgba($color: #000000, $alpha: .6) ;
+    }
+}
+
+h5{
+    margin-left: 24px;
+    margin-top: 40px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    ion-row{
+        width: 100%;
+        margin: 0 10px;
+    }
+    ion-col{
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+.flex{
+    width: 100%  !important;
+    flex: 0 0 100% !important;
+    display: flex;
+    justify-content: center;
+    button {
+        color: #fff;
+        border: 1px solid #51AC43;
+        padding: 12px 40px;
+        background: #51AC43;
+        border-radius: 40px;
+        transition: all 300ms linear;
+        &:hover, &:focus{
+            outline: 0;
+            background: transparent;
+            color: #51AC43;
+        }
+    }
+    .cancel {
+        background: #fc8016 ;
+        border-color: #fc8016 ;
+        opacity: .6;
+        margin-left: 8px;
+        &:hover, &:focus{
+            outline: 0;
+            opacity: 1;
+            background: transparent;
+            color: #fc8016;
+        }
+    }
+}
+
+
+.gender{
+    ion-label{
+        display: block;
+        color:rgba($color: #000000, $alpha: .6) ;
+        margin-bottom: 8px;
+        margin-top: -6px;
+    }
+    label{
+        cursor: pointer;
+        padding-right: 10px;
+        margin-top: 8px;
+        position: relative;
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        i{
+            display: block;
+            width: 14px;
+            height: 14px;
+            margin-right: 6px;
+            border-radius: 100%;
+            border: 3px solid #ccc;
+            position: relative;
+            margin-left: 4px;
+            &:after{
+                border-radius: 100%;
+                content: '';
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                transform-origin: center;
+                transform: scale(2);
+                position: absolute;
+            }
+        }
+        input{
+            position: absolute;
+            visibility: hidden;
+            margin-right: 6px;
+            &:checked ~ i{
+                border-color: transparent;
+                &:after{
+                    background:  rgba(81, 172, 67, .5);
+                    border: 2px solid #51AC43;
+                }
+            } 
+        }
+    }
+}

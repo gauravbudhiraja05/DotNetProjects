@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reset Pin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input [(ngModel)]="inputValue"></ion-input>
+  </ion-item>
+
+  <ion-row class="number-row">
+    <ion-col class="number" (click)="numberClicked(1)">1</ion-col>
+    <ion-col class="number" (click)="numberClicked(2)">2</ion-col>
+    <ion-col class="number" (click)="numberClicked(3)">3</ion-col>
+  </ion-row>
+
+  <ion-row class="number-row">
+    <ion-col class="number" (click)="numberClicked(4)">4</ion-col>
+    <ion-col class="number" (click)="numberClicked(5)">5</ion-col>
+    <ion-col class="number" (click)="numberClicked(6)">6</ion-col>
+  </ion-row>
+
+  <ion-row class="number-row">
+    <ion-col class="number" (click)="numberClicked(7)">7</ion-col>
+    <ion-col class="number" (click)="numberClicked(8)">8</ion-col>
+    <ion-col class="number" (click)="numberClicked(9)">9</ion-col>
+  </ion-row>
+  <ion-row class="number-row">
+    <ion-col></ion-col>
+    <ion-col class="number" (click)="numberClicked(0)">0</ion-col>
+    <ion-col class="number" (click)="numberClicked('D')">D</ion-col>
+  </ion-row>
+
+  <ion-item>
+    <ion-button>Next</ion-button>
+  </ion-item>
+</ion-content>

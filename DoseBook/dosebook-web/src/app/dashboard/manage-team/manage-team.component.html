@@ -1,0 +1,42 @@
+<div class="team">
+
+  <ion-row>
+    <ion-item>
+      <ion-button slot="end">Add New</ion-button>
+    </ion-item>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>Name</ion-col>
+      <ion-col>Email</ion-col>
+      <ion-col>Mobile</ion-col>
+      <ion-col>Created</ion-col>
+      <ion-col>Last Login</ion-col>
+      <ion-col>Actions</ion-col>
+    </ion-row>
+
+    <div *ngIf="members.length > 0; else noMembers">
+
+      <ion-row *ngFor="let member of members">
+        <ion-col>{{member.name}}</ion-col>
+        <ion-col>{{member.email}}</ion-col>
+        <ion-col>{{member.mobile}}</ion-col>
+        <ion-col>{{member.createdAt | date: 'dd/MM/yyyy'}}</ion-col>
+        <ion-col>{{member.lastLoginAt | date: 'dd/MM/yyyy'}}</ion-col>
+        <ion-col>
+          <ion-button>Reset Password</ion-button>
+          <ion-button>Make Inactive</ion-button>
+          <ion-button>Delete</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ng-template #noMembers>
+      <ion-row class="ion-justify-content-center ion-margin">
+        No members yet
+      </ion-row>
+    </ng-template>
+  </ion-grid>
+
+</div>

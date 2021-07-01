@@ -1,0 +1,53 @@
+<div class="app-wrapper">
+	<ion-row class="ion-justify-content-between">
+		<ion-col></ion-col>
+		<ion-col size="5">
+		  	<div class="ion-text-end">
+				<div class="iosearch">
+					<ion-searchbar debounce="500" placeholder="Dosebook ID or Name or Mobile or Prx Id" (ionChange)="filterPrx($event)"></ion-searchbar>
+				</div>
+            </div>
+		</ion-col>
+	</ion-row>
+
+	<div class="table">
+
+		<ion-row class="prx-list-header">
+			<ion-col>Prx Id</ion-col>
+			<ion-col>Patient Name</ion-col>
+			<ion-col>Patient Age</ion-col>
+			<ion-col>Problem</ion-col>
+			<ion-col>Prescribed At</ion-col>
+			<ion-col>Next Visit Due</ion-col>
+			<ion-col>Actions</ion-col>
+		</ion-row>
+
+		<div *ngIf="prescriptions.length > 0; else noPrescriptions" class="prx-list">
+			<ion-row *ngFor="let prescription of prescriptions">
+				<ion-col>{{prescription.id}}</ion-col>
+				<ion-col>{{prescription.patient.name}}</ion-col>
+				<ion-col>{{prescription.patient.dob | age}}</ion-col>
+				<ion-col>{{prescription.problem}}</ion-col>
+				<ion-col>{{prescription.created | date: 'dd-MM-yyyy' }}</ion-col>
+				<ion-col>{{prescription.nextVisitDue | date: 'mm-dd-yyyy'}}</ion-col>
+				<ion-col>
+					<button class="view" (click)="viewPrescription(prescription)">
+						<svg viewBox="0 0 469.334 320"><g transform="translate(0 -74.667)"><path d="M234.667,170.667a64,64,0,1,0,64,64A64.05,64.05,0,0,0,234.667,170.667Z"/><path d="M234.667,74.667C128,74.667,36.907,141.013,0,234.667c36.907,93.653,128,160,234.667,160,106.773,0,197.76-66.347,234.667-160C432.427,141.013,341.44,74.667,234.667,74.667Zm0,266.666A106.667,106.667,0,1,1,341.334,234.667,106.706,106.706,0,0,1,234.667,341.333Z"/></g></svg>
+                    	View
+					</button>
+					<button class="edit">
+						<svg  height="16" viewBox="0 0 193.144 193.141"><g transform="translate(0 -0.004)"><g transform="translate(0 13.8)"><path d="M158.652,116.912a6.9,6.9,0,0,0-6.9,6.9v68.979a6.9,6.9,0,0,1-6.9,6.9H20.694a6.9,6.9,0,0,1-6.9-6.9V54.831a6.9,6.9,0,0,1,6.9-6.9h82.775a6.9,6.9,0,1,0,0-13.8H20.694A20.694,20.694,0,0,0,0,54.831V192.789a20.694,20.694,0,0,0,20.694,20.694H144.856a20.694,20.694,0,0,0,20.694-20.694V123.81A6.9,6.9,0,0,0,158.652,116.912Z" transform="translate(0 -34.137)"/></g><g transform="translate(41.391 0.004)"><path d="M246.429,7.739a26.4,26.4,0,0,0-37.348,0L118.222,98.6a6.974,6.974,0,0,0-1.662,2.7l-13.8,41.387a6.9,6.9,0,0,0,6.539,9.078,7.007,7.007,0,0,0,2.18-.352l41.387-13.8a6.9,6.9,0,0,0,2.7-1.669l90.859-90.859A26.406,26.406,0,0,0,246.429,7.739Zm-9.756,27.6L147,125.008l-26.792,8.946,8.919-26.757,89.707-89.673a12.6,12.6,0,1,1,17.838,17.81Z" transform="translate(-102.409 -0.004)"/></g></g></svg>
+						Edit
+					</button>
+				</ion-col>
+			</ion-row>
+		</div>
+  </div>
+
+  <ng-template #noPrescriptions> 
+    <ion-row class="ion-justify-content-center ion-margin">
+      No Prescriptions 
+    </ion-row>
+  </ng-template>
+
+</div>

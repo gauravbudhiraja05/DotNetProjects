@@ -1,0 +1,75 @@
+﻿@model DoseBookAdmin.Dto.PrescriptionMeta.PrescriptionMetaDataListGridItemDto
+@{
+    Layout = null;
+}
+@section Styles{
+    <link href="~/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+}
+
+<div class="page_heading">
+    <h1>Prescription Meta Data List</h1>
+</div>
+
+<div class="table_wrap">
+
+    <table id="tblPrescriptionMetaDataList" class="table">
+        <thead>
+            <tr>
+                <th style="width: 40px;">
+                    <div class="table_checkbox">
+                        <input type="checkbox" id="checkall" class="check_all">
+                        <label for="checkall">Accept</label>
+                    </div>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Type</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title active"><i class="icon asc"></i>Value</button>
+                </th>
+                <th>
+                    <button type="button" class="table_title"><i class="icon"></i>Display Order</button>
+                </th>
+                <th style="width:75px;text-align: center;">Edit</th>
+                <th style="width:75px;text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = 0;
+                foreach (var prescriptionMetaDataDto in Model.PrescriptionMetaDataDtoList)
+                {
+                    index = index + 1;
+                    <tr>
+                        <td style="width: 70px;">
+                            <div class="table_checkbox">
+                                <input type="checkbox" id="checkitem1" class="check_item">
+                                <label for="checkitem1"></label>
+                            </div>
+                        </td>
+                        <td>@prescriptionMetaDataDto.Type</td>
+                        <td>@prescriptionMetaDataDto.Value</td>
+                        <td>@prescriptionMetaDataDto.DisplayOrderNumber</td>
+                        <td style="width:75px;text-align: center;">
+                            <button type="button" class="edit_item" onclick="EditRedirect(@prescriptionMetaDataDto.Id, @index)">edit</button>
+                            @if (Model.PrescriptionMetaTypeDto != null && !string.IsNullOrEmpty(Model.PrescriptionMetaTypeDto.Type))
+                            {
+                                <input type="hidden" id="hdnDoseMetaTypeName" value="@Model.PrescriptionMetaTypeDto.Type" />
+                            }
+                            else
+                            {
+                                <input type="hidden" id="hdnDoseMetaTypeName" value="All" />
+                            }
+                        </td>
+                        <td style="width:75px;text-align: center;">
+                            <span style="display:none">@prescriptionMetaDataDto.Id</span>
+                            <button type="button" class="delete_item prescriptionMetaDataItem">delete</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/PrescriptionMeta/prescriptionMeta._prescriptionMetaDatalist.js" asp-append-version="true"></script>
+<script src="~/js/_commonpartial.js" asp-append-version="true"></script>

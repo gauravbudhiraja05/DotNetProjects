@@ -1,0 +1,125 @@
+﻿@model DoseBookAdmin.Dto.User.AuthUserDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DoseBook Admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="header">
+
+            <div class="center_wrap">
+                <div class="top_menu">
+                    <a href="#" class="logo"><img src="~/images/logo_new.png" alt="dosebook" /></a>
+                    <div class="extra_links">
+                        <a href="#" style="padding-top: 10px;text-decoration: none !important;cursor: default !important; color:black !important"><span>DoseBook Admin</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="full_width">
+            <div class="banner" style="background-image:url('https://www.infoxen.com/wp-content/themes/infoxen/images/team2.jpg');"></div>
+            <div class="center_wrap">
+
+                <div class="content_wrap login_content">
+
+                    <div class="page_heading">
+                        <h2>Login to the DoseBook Administration System</h2>
+                    </div>
+                    <!--End page_heading-->
+
+                    <form asp-action="Login">
+                        <div class="form_wrap">
+
+                            <div class="login_panel">
+                                @if (TempData["UserLoginFailed"] != null)
+                                {
+                                    @*class="alert alert-danger"*@
+                                    <p class="error_label">@TempData["UserLoginFailed"]</p>
+                                }
+                                <div class="form_fields_box">
+                                    <fieldset>
+
+                                        <div class="form_field">
+                                            <label for="Email">Username</label>
+                                            <input  type="text" asp-for="Email">
+                                            <span class="error_label" asp-validation-for="Email"></span>
+
+                                        </div>
+
+                                        <div class="form_field">
+                                            <label for="userpassword">Password</label>
+                                            <input type="password" asp-for="Password" />
+                                            <span class="error_label" asp-validation-for="Password"></span>
+                                        </div>
+
+                                        <div class="form_field" style="text-align:center; margin-bottom:0px;">
+                                            <button type="submit" class="btn_field">Login</button>
+                                        </div>
+                                      
+
+                                    </fieldset>
+
+                                </div>
+                                <!--End form_fields_box-->
+
+                            </div>
+
+
+                        </div>
+                        <!--End forom_wrap-->
+                    </form>
+
+
+
+                </div>
+                <!--End content_wrap-->
+
+
+            </div>
+            <!--End center_wrap-->
+        </div>
+
+
+    </div>
+    <!--End main_wrapper-->
+    <div id="progress" class="loaderModal">
+        <div class="sk-fading">
+            <div class="sk-fading-circle loaderModal">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/Account/account.login.js" asp-append-version="true"></script>
+    <script src="~/js/sweetalert2.js"></script>
+    <script src="~/js/sweetalert2.promise.min.js"></script>
+</body>
+</html>
