@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
+      "projectUniqueName": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
       "projectName": "HiveReport.Entity",
-      "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
+      "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
       "packagesPath": "C:\\Users\\Gaurav Budhiraja\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\obj\\",
+      "outputPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

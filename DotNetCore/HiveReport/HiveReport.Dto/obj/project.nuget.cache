@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/T2piHSYVUUHsCqvXvphmRRetPhT9tIRVCXGuG/lKL2XxGm9KvnsWI4G32jtvTP3W6bzT7nJQ1PFH7XyBo3zg==",
+  "dgSpecHash": "LnA8t8X8ZFI5MNdHDLLlvvjQpBxLgnkaIH/KUCayjBjy+46xhBePAS6tszLanLqsn0Sb5A0fZLcqXChs61LliQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
+  "projectFilePath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

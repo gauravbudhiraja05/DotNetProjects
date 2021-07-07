@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj": {}
+    "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {
+    "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
+        "projectUniqueName": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
         "projectName": "HiveReport.Dto",
-        "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
+        "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
         "packagesPath": "C:\\Users\\Gaurav Budhiraja\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\obj\\",
+        "outputPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj": {
+    "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
+        "projectUniqueName": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
         "projectName": "HiveReport.Entity",
-        "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
+        "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj",
         "packagesPath": "C:\\Users\\Gaurav Budhiraja\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\obj\\",
+        "outputPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj": {
+    "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj",
+        "projectUniqueName": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj",
         "projectName": "HiveReport.WebAdmin",
-        "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj",
+        "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\HiveReport.WebAdmin.csproj",
         "packagesPath": "C:\\Users\\Gaurav Budhiraja\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\obj\\",
+        "outputPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.WebAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -151,11 +151,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {
-                "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj"
+              "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {
+                "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj"
               },
-              "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj": {
-                "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj"
+              "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj": {
+                "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Entity\\HiveReport.Entity.csproj"
               }
             }
           }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {}
+    "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {
+    "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
+        "projectUniqueName": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
         "projectName": "HiveReport.Dto",
-        "projectPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
+        "projectPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\HiveReport.Dto.csproj",
         "packagesPath": "C:\\Users\\Gaurav Budhiraja\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Git Projects\\DotNet\\DotNetCore\\HiveReport\\HiveReport.Dto\\obj\\",
+        "outputPath": "D:\\Projects\\Git\\DotNetProjects\\DotNetCore\\HiveReport\\HiveReport.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
