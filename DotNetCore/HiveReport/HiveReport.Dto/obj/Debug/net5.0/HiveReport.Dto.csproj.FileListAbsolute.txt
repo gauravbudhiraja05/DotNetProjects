@@ -10,3 +10,15 @@ D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\n
 D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.dll
 D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\ref\HiveReport.Dto.dll
 D:\Projects\Git Projects\DotNet\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.pdb
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\bin\Debug\net5.0\HiveReport.Dto.deps.json
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\bin\Debug\net5.0\HiveReport.Dto.dll
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\bin\Debug\net5.0\ref\HiveReport.Dto.dll
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\bin\Debug\net5.0\HiveReport.Dto.pdb
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.csprojAssemblyReference.cache
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.AssemblyInfoInputs.cache
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.AssemblyInfo.cs
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.csproj.CoreCompileInputs.cache
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.dll
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\ref\HiveReport.Dto.dll
+D:\Projects\Git\DotNetProjects\DotNetCore\HiveReport\HiveReport.Dto\obj\Debug\net5.0\HiveReport.Dto.pdb
