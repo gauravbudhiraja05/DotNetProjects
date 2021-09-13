@@ -1,5 +1,4 @@
-﻿using HiveReport.Entity.Common;
-using HiveReport.Entity.User;
+﻿using HiveReport.Entity.User;
 
 namespace HiveReport.WebAdmin.Dashboard.Service
 {

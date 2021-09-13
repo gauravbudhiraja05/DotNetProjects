@@ -4,18 +4,13 @@ using HiveReport.WebAdmin.Common.Af;
 using HiveReport.WebAdmin.Dashboard.Af;
 using HiveReport.WebAdmin.Models;
 using HiveReport.WebAdmin.Utility;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Security.Claims;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace HiveReport.WebAdmin.Controllers
 {

@@ -1,16 +1,16 @@
-﻿using HiveReport.WebAdmin.Utility;
+﻿using HiveReport.Dto.Common;
 using HiveReport.Dto.User;
+using HiveReport.WebAdmin.Account.Af;
+using HiveReport.WebAdmin.Common.Af;
 using HiveReport.WebAdmin.User.Af;
+using HiveReport.WebAdmin.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Security.Claims;
 using System.Linq;
-using HiveReport.WebAdmin.Common.Af;
-using HiveReport.Dto.Common;
-using HiveReport.WebAdmin.Account.Af;
+using System.Security.Claims;
 
 namespace HiveReport.WebAdmin.Controllers
 {

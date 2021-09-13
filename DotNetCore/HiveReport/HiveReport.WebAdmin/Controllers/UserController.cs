@@ -1,6 +1,5 @@
 ﻿using HiveReport.Dto.Common;
 using HiveReport.Dto.User;
-using HiveReport.WebAdmin.Dashboard.Af;
 using HiveReport.WebAdmin.User.Af;
 using HiveReport.WebAdmin.Utility;
 using Microsoft.AspNetCore.Mvc;

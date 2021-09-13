@@ -1,6 +1,5 @@
 ﻿using HiveReport.Dto.Common;
 using HiveReport.Entity.Common;
-using System;
 
 namespace HiveReport.WebAdmin.Common.Mapping
 {

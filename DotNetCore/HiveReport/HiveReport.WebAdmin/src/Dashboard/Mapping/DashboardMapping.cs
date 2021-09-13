@@ -1,6 +1,4 @@
-﻿using HiveReport.Dto.Common;
-using HiveReport.Dto.User;
-using HiveReport.Entity.Common;
+﻿using HiveReport.Dto.User;
 using HiveReport.Entity.User;
 using System;
 

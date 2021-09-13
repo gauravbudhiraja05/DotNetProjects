@@ -1,6 +1,4 @@
-﻿using HiveReport.Entity.Common;
-using HiveReport.Entity.User;
-using System.Collections.Generic;
+﻿using HiveReport.Entity.User;
 
 namespace HiveReport.WebAdmin.Dashboard.Repository
 {
