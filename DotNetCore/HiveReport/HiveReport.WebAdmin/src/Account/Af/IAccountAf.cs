@@ -5,7 +5,7 @@ namespace HiveReport.WebAdmin.Account.Af
 {
     public interface IAccountAf
     {
-        List<string> GetDesignationList();
+        Dictionary<int, string> GetDesignationList();
 
         Dictionary<int, string> GetDepartmentList(string savedBy);
 

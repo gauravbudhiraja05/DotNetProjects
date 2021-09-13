@@ -7,6 +7,7 @@ using HiveReport.WebAdmin.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -142,7 +143,7 @@ namespace HiveReport.WebAdmin.Controllers
         {
             try
             {
-                return Json(_accountAf.GetDesignationList());
+                return Json(JsonConvert.SerializeObject(_accountAf.GetDesignationList()));
             }
             catch (Exception ex)
             {
@@ -151,13 +152,14 @@ namespace HiveReport.WebAdmin.Controllers
             }
         }
 
+        [HttpGet]
         public JsonResult GetDepartmentList()
         {
             try
             {
                 var claims = (HttpContext.User.Identity as ClaimsIdentity).Claims;
-                string userName = claims.Where(x => x.Type == "username").FirstOrDefault().Value;
-                return Json(_accountAf.GetDepartmentList(userName));
+                string userId = claims.Where(x => x.Type == "userid").FirstOrDefault().Value;
+                return Json(JsonConvert.SerializeObject(_accountAf.GetDepartmentList(userId)));
             }
             catch (Exception ex)
             {
@@ -166,11 +168,12 @@ namespace HiveReport.WebAdmin.Controllers
             }
         }
 
+        [HttpGet]
         public JsonResult GetClientList(int departmentId)
         {
             try
             {
-                return Json(_accountAf.GetClientList(departmentId));
+                return Json(JsonConvert.SerializeObject(_accountAf.GetClientList(departmentId)));
             }
             catch (Exception ex)
             {
@@ -179,11 +182,12 @@ namespace HiveReport.WebAdmin.Controllers
             }
         }
 
+        [HttpGet]
         public JsonResult GetLOBList(int departmentId, int clientId)
         {
             try
             {
-                return Json(_accountAf.GetLOBList(departmentId, clientId));
+                return Json(JsonConvert.SerializeObject(_accountAf.GetLOBList(departmentId, clientId)));
             }
             catch (Exception ex)
             {
@@ -191,6 +195,7 @@ namespace HiveReport.WebAdmin.Controllers
                 return Json(null);
             }
         }
+
 
         public ActionResult SearchUser(int id)
         {
@@ -198,6 +203,7 @@ namespace HiveReport.WebAdmin.Controllers
             return View();
         }
 
+        [HttpGet]
         public JsonResult GetSearchedResult(string dropdownValue, string txtValue)
         {
             try

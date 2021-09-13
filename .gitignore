@@ -1,3 +1,8 @@
 .vs
 /DotNetCore/HiveReport/HiveReport.WebAdmin/bin
 /DotNetCore/HiveReport/HiveReport.WebAdmin/obj
+/DotNetCore/HiveReport/HiveReport.Dto/obj
+/DotNetCore/HiveReport/HiveReport.Dto/bin
+/DotNetCore/HiveReport/HiveReport.Entity/obj
+/DotNetCore/HiveReport/HiveReport.Entity/bin
+/DotNetCore/HiveReport/HiveReport.Dto/bin/Debug

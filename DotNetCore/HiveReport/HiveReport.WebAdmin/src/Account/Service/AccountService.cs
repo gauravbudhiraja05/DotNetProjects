@@ -29,7 +29,7 @@ namespace HiveReport.WebAdmin.Account.Service
             _userDao = userDao;
         }
 
-        public List<string> GetDesignationList()
+        public Dictionary<int, string> GetDesignationList()
         {
             return _accountDao.GetDesignationList();
         }

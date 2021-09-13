@@ -35,7 +35,7 @@ namespace HiveReport.WebAdmin.Account.Af
             _userMapping = new UserMapping();
         }
 
-        public List<string> GetDesignationList()
+        public Dictionary<int, string> GetDesignationList()
         {
             return _accountService.GetDesignationList();
         }

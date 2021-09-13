@@ -13,23 +13,23 @@
 
     $('#ddlDepartmentName').bind("change", function () {
 
-        if (this.val() == "0") {
+        if ($(this).val() == "0") {
             $('#ddlClientName').empty();
             $('#ddlLOBName').empty();
         }
         else {
-            BindClient(this.val());
+            BindClient($(this).val());
         }
     });
 
 
     $('#ddlClientName').bind("change", function () {
 
-        if (this.val() == "0") {
+        if ($(this).val() == "0") {
             $('#ddlLOBName').empty();
         }
         else {
-            BindLOB($('#ddlDepartmentName').val(), this.val());
+            BindLOB($('#ddlDepartmentName').val(), $(this).val());
         }
     });
 
@@ -286,14 +286,14 @@ function BindDesignation() {
 
     $.ajax({
         type: "GET",
-        url: '/Account/GetDesignationList/',
+        url: '/Account/GetDesignationList',
         success: function (designationList) {
             if (designationList != null && designationList.length > 0) {
-                $.each(designationList, function (value) {
-                    $('#ddlDesignation').append('<option value="' + value + '">' + value + '</option>');
-                });
-
+                $('#ddlDesignation').empty();
                 $('#ddlDesignation').append('<option value="None">Select Designation</option>');
+                $.each(JSON.parse(designationList), function (key, value) {
+                    $('#ddlDesignation').append('<option value="' + key + '">' + value + '</option>');
+                });
             }
         },
         error: function (response) {
@@ -309,14 +309,14 @@ function BindDepartment() {
 
     $.ajax({
         type: "GET",
-        url: '/Account/GetDepartmentList/',
+        url: '/Account/GetDepartmentList',
         success: function (departmentList) {
             if (departmentList != null && departmentList.length > 0) {
-                $.each(departmentList, function (key, value) {
+                $('#ddlDepartmentName').empty();
+                $('#ddlDepartmentName').append('<option value="0">Select Department</option>');
+                $.each(JSON.parse(departmentList), function (key, value) {
                     $('#ddlDepartmentName').append('<option value="' + key + '">' + value + '</option>');
                 });
-
-                $('#ddlDepartmentName').append('<option value="0">Select Department</option>');
             }
         },
         error: function (response) {
@@ -334,15 +334,16 @@ function BindClient(departmentId) {
 
         $.ajax({
             type: "GET",
-            url: '/Account/GetClientList/',
-            data: '{departmentId: ' + departmentId + '}',
+            url: "/Account/GetClientList",
+            dataType: "JSON",
+            data: { departmentId: departmentId },
             success: function (clientList) {
+                $('#ddlClientName').empty();
+                $('#ddlClientName').append('<option value="0">Select Client</option>');
                 if (clientList != null && clientList.length > 0) {
-                    $.each(clientList, function (key, value) {
+                    $.each(JSON.parse(clientList), function (key, value) {
                         $('#ddlClientName').append('<option value="' + key + '">' + value + '</option>');
                     });
-
-                    $('#ddlClientName').append('<option value="0">Select Client</option>');
                 }
             },
             error: function (response) {
@@ -361,15 +362,15 @@ function BindLOB(departmentId, clientId) {
 
         $.ajax({
             type: "GET",
-            url: '/Account/GetLOBList/',
-            data: '{departmentId: ' + departmentId + ', clientId: ' + clientId + '}',
+            url: '/Account/GetLOBList',
+            data: { departmentId: departmentId, clientId: clientId },
             success: function (lobList) {
+                $('#ddlLOBName').empty();
+                $('#ddlLOBName').append('<option value="0">Select LOB</option>');
                 if (lobList != null && lobList.length > 0) {
-                    $.each(lobList, function (key, value) {
+                    $.each(JSON.parse(lobList), function (key, value) {
                         $('#ddlLOBName').append('<option value="' + key + '">' + value + '</option>');
                     });
-
-                    $('#ddlLOBName').append('<option value="0">Select LOB</option>');
                 }
             },
             error: function (response) {

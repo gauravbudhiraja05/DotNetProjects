@@ -23,10 +23,10 @@ namespace HiveReport.WebAdmin.Account.Repository
             _sqlServerHelper = sqlServerHelper;
         }
 
-        public List<string> GetDesignationList()
+        public Dictionary<int, string> GetDesignationList()
         {
-            List<string> designationList = new List<string>();
-            string sql = @$"Select Designationname from {TableDB.DesignationMaster}";
+            Dictionary<int, string> designationList = new Dictionary<int, string>();
+            string sql = @$"Select DesignationId, Designationname from {TableDB.DesignationMaster}";
 
             SqlDataReader reader = null;
             SqlConnection connection = new SqlConnection();
@@ -41,7 +41,11 @@ namespace HiveReport.WebAdmin.Account.Repository
                     while (reader.Read())
                     {
                         fieldIdx = 0;
-                        designationList.Add(_sqlServerHelper.ReaderGetString(reader, fieldIdx++));
+                        designationList.Add
+                            (
+                                _sqlServerHelper.ReaderGetInteger(reader, fieldIdx++),
+                                _sqlServerHelper.ReaderGetString(reader, fieldIdx++)
+                            );
                     }
                 }
             }
@@ -144,7 +148,7 @@ namespace HiveReport.WebAdmin.Account.Repository
         public Dictionary<int, string> GetLOBList(int departmentId, int clientId)
         {
             Dictionary<int, string> lobList = new Dictionary<int, string>();
-            string sql = @$"Select AutoID, ClientName from {TableDB.LOB} where DeptID= %DeptId% And  ClientId = %ClientId%";
+            string sql = @$"Select AutoID, LOBName from {TableDB.LOB} where DeptID= %DeptId% And  ClientId = %ClientId%";
 
             SqlDataReader reader = null;
             SqlConnection connection = new SqlConnection();
