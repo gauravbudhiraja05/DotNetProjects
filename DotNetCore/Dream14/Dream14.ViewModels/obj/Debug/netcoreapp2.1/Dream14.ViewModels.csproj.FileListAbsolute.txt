@@ -1,0 +1,9 @@
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\obj\Debug\netcoreapp2.1\Dream14.ViewModels.csproj.CoreCompileInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\obj\Debug\netcoreapp2.1\Dream14.ViewModels.AssemblyInfoInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\obj\Debug\netcoreapp2.1\Dream14.ViewModels.AssemblyInfo.cs
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\bin\Debug\netcoreapp2.1\Dream14.ViewModels.deps.json
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\bin\Debug\netcoreapp2.1\Dream14.ViewModels.dll
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\bin\Debug\netcoreapp2.1\Dream14.ViewModels.pdb
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\obj\Debug\netcoreapp2.1\Dream14.ViewModels.dll
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\obj\Debug\netcoreapp2.1\Dream14.ViewModels.pdb
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.ViewModels\obj\Debug\netcoreapp2.1\Dream14.ViewModels.csprojAssemblyReference.cache

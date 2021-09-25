@@ -1,0 +1,124 @@
+﻿@model Dream14.ViewModels.SuperAdmin.AdminUser
+@{
+    ViewData["Title"] = "Add Admin User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="formAdmin" name="formAdmin">
+    <div class="tab_menu">
+        <div class="center_wrap">
+
+            <button type="button" class="back_btn" onClick="window.location.href='@Url.Action("AdminUsers","SuperAdmin")'">Back</button>
+
+            <ul class="tab_list">
+                <li class="current"><a href="#tab_1">Admin User Details</a></li>
+            </ul>
+
+            <button type="button" id="Save_Admin_Btn" class="btn_field tab_save">Save</button>
+
+        </div>
+    </div>
+    <!--End tab_menu-->
+
+    <div class="full_width">
+        <div class="center_wrap">
+
+            <div class="content_wrap">
+
+                <div class="page_heading">
+                    <h1>Add Admin User</h1>
+                </div>
+                <!--End page_heading-->
+
+                <div class="form_wrap">
+
+                    <div class="tab_content" id="tab_1">
+
+                        <div class="form_fields_box">
+                            <fieldset>
+                                <div class="form_field">
+                                    <label for="AdminUser_Id">Admin Id</label>
+                                    <input type="text" disabled>
+                                    <input type="hidden" id="Id" value="@Model.Id" />
+                                </div>
+                                <div class="form_field">
+                                    <label for="AdminUser_FullName">
+                                        Name*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Department Name.">Tooltip</small>
+                                    </label>
+                                    <input id="FullName" value="@Model.FullName" type="text">
+                                    <span class="error_label" id="FullName_Error"></span>
+                                </div>
+
+                                <div class="form_field">
+                                    <label for="AdminUser_EmailAddress">
+                                        Email Address*
+                                        <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                    </label>
+                                    <input id="EmailAddress" value="@Model.EmailAddress" type="text">
+                                    <span class="error_label" id="EmailAddress_Error"></span>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                        <div class="form_fields_box">
+
+                            <div class="form_field">
+                                <label for="AdminUser_Password">
+                                    Password*
+                                    <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Enter the main phone number for the department.">Tooltip</small>
+                                </label>
+                                <input id="Password" value="@Model.Password" type="text">
+                                <span class="error_label" id="Password_Error"></span>
+                            </div>
+
+                            <div class="form_field">
+                                <label for="User_CreationDate">
+                                    Creation Date*
+                                    <small class="info_icon" data-toggle="tooltip" data-placement="right" title="(Required) Creation Date.">Tooltip</small>
+                                </label>
+                                <input id="CreationDate" placeholder="MM/DD/YYYY" disabled="disabled" type="text">
+                                <span class="error_label" id="CreationDate_Error"></span>
+                            </div>
+
+                        </div>
+                        <!--End form_fields_box-->
+
+                    </div>
+
+
+
+                </div>
+                <!--End forom_wrap-->
+
+
+            </div>
+            <!--End content_wrap-->
+
+
+        </div>
+        <!--End center_wrap-->
+    </div>
+
+</form>
+<!--End full_width-->
+
+<script src="~/js/SuperAdmin/superAdmin.addAdminUser.js" asp-append-version="true"></script>
+
+@section DocumentReady{
+    var currentTab = location.hash
+    if (currentTab) {
+    $(".tab_list li").removeClass("current");
+    $(".tab_list li>a[href=" + currentTab + "]").closest("li").addClass("current");
+    $(".tab_content").hide();
+    $(currentTab).show();
+    $(currentTab + "_btn").show()
+    }
+
+    //Select Current Menu
+    $('.nav-li').removeClass('current');
+    $('#menuItemFAQs').addClass('current');
+}

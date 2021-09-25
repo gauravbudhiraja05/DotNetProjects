@@ -40,3 +40,17 @@ D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCru
 D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.csproj.CopyComplete
 D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.dll
 D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.deps.json
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.ViewModels.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.ViewModels.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.csprojAssemblyReference.cache
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.csproj.CoreCompileInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.AssemblyInfoInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.AssemblyInfo.cs
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.csproj.CopyComplete
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Repo\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Repo.pdb

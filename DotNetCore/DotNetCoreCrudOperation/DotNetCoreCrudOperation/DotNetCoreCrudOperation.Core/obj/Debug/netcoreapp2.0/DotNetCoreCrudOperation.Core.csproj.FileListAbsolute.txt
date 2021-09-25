@@ -34,3 +34,15 @@ D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCru
 D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.csproj.CopyComplete
 D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.dll
 D:\Projects\Git Projects\DotNet\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.deps.json
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.ViewModels.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\bin\Debug\netcoreapp2.0\DotNetCoreCrudOperation.ViewModels.pdb
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.csprojAssemblyReference.cache
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.csproj.CoreCompileInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.AssemblyInfoInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.AssemblyInfo.cs
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.csproj.CopyComplete
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.dll
+D:\GitHub\DotNetProjects\DotNetCore\DotNetCoreCrudOperation\DotNetCoreCrudOperation\DotNetCoreCrudOperation.Core\obj\Debug\netcoreapp2.0\DotNetCoreCrudOperation.Core.pdb

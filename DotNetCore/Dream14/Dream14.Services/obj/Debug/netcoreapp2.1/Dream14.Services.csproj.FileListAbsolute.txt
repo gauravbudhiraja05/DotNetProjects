@@ -1,0 +1,14 @@
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.Services.deps.json
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.Services.dll
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.Services.pdb
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.Core.dll
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.ViewModels.dll
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.Core.pdb
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\bin\Debug\netcoreapp2.1\Dream14.ViewModels.pdb
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.csprojAssemblyReference.cache
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.csproj.CoreCompileInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.AssemblyInfoInputs.cache
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.AssemblyInfo.cs
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.csproj.CopyComplete
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.dll
+D:\GitHub\DotNetProjects\DotNetCore\Dream14\Dream14.Services\obj\Debug\netcoreapp2.1\Dream14.Services.pdb

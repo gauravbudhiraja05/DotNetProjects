@@ -1,0 +1,158 @@
+﻿@model Dream14.ViewModels.AuthUserVM
+@{ 
+    Layout = null;
+}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Dream14</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true"/>
+</head>
+
+<body>
+
+    <div class="main_wrapper">
+        <div class="header">
+
+            <div class="center_wrap">
+                <div class="top_menu">
+                    <a href="@Url.Action("Dashboard","Home")" class="logo"><img src="@Url.Content("~/images/pickfords_logo_w.png")" alt="pickfords" /></a>
+                    <div class="extra_links">
+                        <a href="#" style="padding-top: 10px;text-decoration: none !important;cursor: default !important;"><span>Dream14 Admin</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="full_width">
+            <div class="banner" style="background-image:url(@Url.Content("~/images/filter_banner.jpg"));"></div>
+            <div class="center_wrap">
+
+                <div class="content_wrap login_content">
+
+                    <div class="page_heading">
+                        <h2>Login to the Dream14 Administration System</h2>
+                    </div>
+                    <!--End page_heading-->
+
+                    <form asp-action="Login">
+                        <div class="form_wrap">
+
+                            <div class="login_panel">
+                                @if (TempData["UserLoginFailed"] != null)
+                                {
+                                    @*class="alert alert-danger"*@
+                                    <p class="error_label">@TempData["UserLoginFailed"]</p>
+                                }
+                                <div class="form_fields_box">
+                                    <fieldset>
+
+                                        <div class="form_field">
+                                            <label for="userid">Username</label>
+                                            <input asp-for="Email" type="text" autocomplete="off">
+                                            <span class="error_label" asp-validation-for="Email"></span>
+
+                                        </div>
+
+                                        <div class="form_field">
+                                            <label for="userpassword">Password</label>
+                                            <input type="password" asp-for="Password" autocomplete="off" />
+                                            <span class="error_label" asp-validation-for="Password"></span>
+                                        </div>
+
+                                        <div class="form_field" style="text-align:center; margin-bottom:0px;">
+                                            <button type="submit" class="btn_field">Login</button>
+                                        </div>
+                                        <a href="#" style="float:right;margin-bottom: 10px" class="overlay_account">Forgot Password ?</a>
+
+
+                                    </fieldset>
+
+                                </div>
+                                <!--End form_fields_box-->
+
+                            </div>
+
+
+                        </div>
+                        <!--End forom_wrap-->
+                    </form>
+
+
+
+                </div>
+                <!--End content_wrap-->
+
+
+            </div>
+            <!--End center_wrap-->
+        </div>
+
+
+    </div>
+    <!--End main_wrapper-->
+    <div id="progress" class="loaderModal">
+        <div class="sk-fading">
+            <div class="sk-fading-circle loaderModal">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_window" id="resetpassword_popup">
+
+        <button type="button" class="popup_close_btn"></button>
+
+        <div class="popup_title">Forgot Password</div>
+
+        <div class="popup_form_fields">
+
+            <fieldset>
+                @*<div class="form_field">
+                        <h4 style="text-align: center">Forget Password</h4>
+                    </div>*@
+                <div class="form_field">
+                    <label for="userid">Your email address </label>
+                    <input type="text" id="yourEmail">
+                    <span class="error_label field-validation-valid" id="yourEmailInputError"></span>
+
+                </div>
+                <div class="form_field" style="text-align: center;">
+                    <a id="btnForgetSubmit" style="text-align: center;" href="#" class="btn_field reset">Submit</a>
+                </div>
+
+
+            </fieldset>
+
+        </div>
+
+
+    </div>
+    <div class="popup_window_overlay"></div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/Account/account.login.js" asp-append-version="true"></script>
+    <script src="~/js/sweetalert2.js"></script>
+    <script src="~/js/sweetalert2.promise.min.js"></script>
+</body>
+
+</html>
